@@ -1,0 +1,91 @@
+footer {
+    background-color: #1C6D97;
+    color: #fff; /* White text */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Top Section - Logo and Description */
+.footer-top {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-description {
+    font-size: 14px;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+/* Navigation Links */
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px 0;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav li {
+    margin: 5px 0;
+}
+
+.footer-nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-nav a:hover {
+    color: #fff;
+}
+
+/* Bottom Section - Copyright Information */
+.footer-bottom {
+    text-align: center;
+    font-size: 12px;
+    color: #FFFFFF;
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+}
+
+/* Social Links and Preferences */
+.footer-social {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.footer-social p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.social-links {
+    color: #FFFFFF;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #fff;
+}
+
+img {
+  height: 100vh;}

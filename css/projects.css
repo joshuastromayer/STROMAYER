@@ -1,0 +1,313 @@
+
+.google-advert {
+    width: 100%;
+    height: 227px;
+    margin-top: 74px;
+    display: flex;
+    align-items: center;
+}
+  
+.google-advert-box {
+    height: 227px;
+    width: 800px;
+    background-color: lightgrey;
+    margin: 0 auto;
+}
+
+.main-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.center-content {
+    margin-top: 30px;
+    width: 75vw;
+    padding-left: 10vw;
+}
+
+.section-divider {
+    width: 100%;
+    height: 1px;
+    background-color: black; /* Black line */
+    margin: 2rem 0; /* Space above and below the line */
+}
+
+.project {
+    display: flex;
+    flex: column;
+}
+
+.project-info {
+    width: 60%;  /* Adjust this to fit your desired ratio */
+    padding: 20px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-info h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.project-info h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.project-info p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.project-info a {
+    font-size: 1rem;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.project-info a:hover {
+    color: #0056b3;
+}
+
+.project-preview-container iframe {
+    width: 1200px;
+    height: 850px;
+    zoom: 0.4;
+}
+
+.right-column {
+    width: 25vw;
+    margin-top:50px ;
+}
+
+/* More Projects Section */
+/* More Projects Section */
+.more-projects {
+    width: 306px;
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.more-projects h2 {
+    margin-bottom: 20px;
+}
+
+/* Styling for the project items */
+.project-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.project-item img {
+    width: 50px; /* You can adjust this depending on the size you want for the images */
+    height: auto;
+    margin-right: 10px; /* Space between the image and text */
+}
+
+.project-description a {
+    font-size: 1.1rem;
+    max-width: 200px;
+    text-decoration: none;
+    color: black; /* Link color */
+    transition: color 0.3s;
+    display: block; /* Makes the anchor tag block-level */
+    overflow: hidden; /* Prevents text from overflowing */
+    text-overflow: ellipsis; /* Adds '...' if text overflows */
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.project-description a:hover {
+    color: #0056b3; /* Darker shade when hovering */
+}
+
+.iframe-container {
+    width: 80px; /* Set the width of your container */
+    height: 80px; /* Set the height of your container */
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.iframe-container iframe {
+    width: 100%; /* This will make the iframe take up the full width of the container */
+    height: 100%; /* This will make the iframe take up the full height of the container */
+    transform: scale(0.9); /* Adjust this scale to fit the iframe content within the container */
+    transform-origin: center; /* Ensures scaling starts from the top left corner */
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    zoom: 0.1;
+}
+
+.code-for-project {
+    background: grey;
+}
+
+/* Basic styling */
+.tabs {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.tab-button {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.tab-button:hover {
+    background-color: #ddd;
+}
+
+.tab-button.active {
+    background-color: #7a72e8;
+    color: white;
+}
+
+.code-container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.code-container h2 {
+    margin-bottom: 20px;
+}
+
+.code-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.code-tab {
+    display: none;
+}
+
+.code-tab.active-tab {
+    display: block;
+}
+
+pre {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: monospace;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.submit-project-section {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+.subscibe-button-vw-width h3 {
+    margin-bottom: 15px;
+}
+  
+  #submitProjectBtn {
+    padding: 10px 20px;
+    margin: 20px 0;
+    font-size: 1.2rem;
+    background-color: #7a72e8;
+    color: white; /* Blue color for text */
+    border: 2px solid white; /* Blue border to match */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+  
+  #submitProjectBtn:hover {
+    background-color: #9f8df7;
+  }
+  
+  .dropdown-form {
+    display: none; /* Hidden by default */
+    margin-top: 20px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .dropdown-form p {
+    margin-top: 10px;
+  }
+  
+  #submitProjectBtn.active + .dropdown-form {
+    display: block; /* Shows the form when button is clicked */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="file"] {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+  
+.file-input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.file-input {
+    text-align: center;
+    padding: 10px;
+}
+
+button[type="submit"] {
+    background-color: #7a72e8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+  
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+.subscibe-button-vw-width {
+    width: 1076px;
+    margin: 20px auto;
+}
+
+button[type="submit-subscription"] {
+    background-color: #7a72e8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+  
+button[type="submit-subscription"]:hover {
+    background-color: #9f8df7;
+}

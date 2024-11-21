@@ -1,0 +1,312 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#sticky-header {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 1470px; /* Fixed width based on your reference screen width */
+    height: 72px; /* 4vw converted to px: 4% of 1470px */
+    background-color: white; /* Adjust to match your design */
+}
+
+/* Header Styling */
+.sticky-header {
+    background-color: white; /* Adjust color as needed */
+    color: black;
+    height: 72px; /* 7vh converted to px: 7% of 840px */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center header content horizontally */
+    z-index: 1000;
+}
+
+.sticky-header-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1470px; /* Fixed width based on your reference screen width */
+    max-width: 100vw;
+    height: 72px; /* 7vh converted to px */
+    padding: 0; /* Adjust padding as needed */
+    white-space: nowrap;
+}
+
+/* Sticky Logo */
+.sticky-logo {
+    font-size: 23.52px; /* 1.6vw converted to px: 1.6% of 1470px */
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+    margin-left: 50px;
+    width: 194.81px;
+}
+
+.sticky-logo:hover {
+    color: grey;
+}
+
+/* Sticky Header Right Section */
+.sticky-header-right {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin: 0;
+    max-width: 1112.4px; /* 75.7vw converted to px: 75.7% of 1470px */
+    max-height: 58.8px; /* 7vh converted to px: 7% of 840px */
+    height: 58.8px; /* Fixed height */
+    margin-right: 39.69px; /* 2.7vw converted to px: 2.7% of 1470px */
+}
+
+/* Sticky Header Icons Section */
+.sticky-header-icons {
+    display: flex;
+    gap: 32.34px; /* 2.2vw converted to px: 2.2% of 1470px */
+    margin-left: 79.38px; /* 5.4vw converted to px: 5.4% of 1470px */
+    height: 100%;
+}
+
+/* Sticky Icon Styling */
+.sticky-icon {
+    font-size: 16.17px; /* 1.1vw converted to px: 1.1% of 1470px */
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Sticky Icon Navigation */
+.sticky-icon-navigation {
+    background-color: white;
+    border: none;
+}
+
+/* Navigation buttons */
+
+.sticky-c-sitePrimaryMenu_item {
+    height: 33.6px; /* 4vh converted to px: 4% of 840px */
+    background-color: white;
+    border: none;
+    font-size: 14.11px; /* 0.96vw converted to px: 0.96% of 1470px */
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Active Menu Item (adds a red underline) */
+.sticky-c-sitePrimaryMenu_item.active {
+    border-bottom: 3px solid red; 
+}
+
+/* Hover Effect for Menu Items */
+.sticky-c-sitePrimaryMenu_item:hover {
+    color: #c8c8c8; /* Example hover color */
+}
+
+/* Sticky Navigation Shelf */
+.sticky-navigation-shelf {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0px 46.98px; /* 3.4vw converted to px: 3.4% of 1470px */
+}
+
+/* Media Queries for Different Screen Sizes */
+
+/* Tablet Screens (up to 768px wide) */
+@media (max-width: 768px) {
+    #sticky-header {
+        width: 100%; /* Use 100% width for smaller screens */
+        height: 60px; /* Adjust the header height for smaller screens */
+    }
+
+    .sticky-header {
+        height: 60px; /* Adjust the height of the sticky header */
+    }
+
+    .sticky-header-container {
+        width: 100%; /* Use 100% width for smaller screens */
+        height: 60px; /* Adjust height */
+    }
+    .sticky-logo-section {
+        height: 60px; /* Adjust height for smaller screens */
+        max-width: 200px; /* Adjust max-width for tablet */
+    }
+
+    .sticky-logo {
+        font-size: 20px; /* Adjust font-size for smaller screens */
+    }
+    .sticky-header-right {
+        max-width: 600px;  /* Adjust max-width for tablets */
+        height: 50px; /* Adjust header height */
+        margin-right: 20px;  /* Adjust margin for smaller screens */
+    }
+
+    .sticky-header-icons {
+        gap: 15px;  /* Adjust the gap between icons */
+        margin-left: 20px; /* Adjust margin for icons */
+    }
+
+    .sticky-icon {
+        font-size: 14px;  /* Adjust font-size for mobile */
+    }
+    .sticky-c-sitePrimaryMenu_item {
+        height: 30px; /* Adjust height for tablet screens */
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+
+    .sticky-navigation-shelf {
+        margin: 0px 20px; /* Adjust margin for tablet screens */
+    }
+}
+
+/* Mobile Screens (up to 480px wide) */
+@media (max-width: 480px) {
+    #sticky-header {
+        width: 100%; /* Full width for mobile */
+        height: 50px; /* Smaller height for mobile screens */
+    }
+
+    .sticky-header {
+        height: 50px; /* Adjust for mobile */
+    }
+
+    .sticky-header-container {
+        width: 100%; /* Full width */
+        height: 50px; /* Smaller height */
+    }
+    .sticky-logo-section {
+        height: 50px; /* Adjust height for mobile screens */
+        max-width: 150px; /* Adjust max-width for mobile */
+    }
+
+    .sticky-logo {
+        font-size: 18px; /* Adjust font-size for mobile screens */
+    }
+    .sticky-header-right {
+        max-width: 350px;  /* Adjust max-width for mobile */
+        height: 40px;  /* Smaller header height for mobile */
+        margin-right: 10px; /* Adjust margin */
+    }
+
+    .sticky-header-icons {
+        gap: 10px;  /* Adjust gap for mobile screens */
+        margin-left: 10px; /* Adjust margin */
+    }
+
+    .sticky-icon {
+        font-size: 12px;  /* Smaller font size for mobile */
+    }
+    .sticky-c-sitePrimaryMenu_item {
+        height: 25px; /* Adjust height for mobile screens */
+        font-size: 10px; /* Smaller font size for mobile */
+    }
+
+    .sticky-navigation-shelf {
+        margin: 0px 10px; /* Adjust margin for mobile */
+    }
+}
+
+
+  /* Basic Footer Styles */
+  footer {
+    background-color: white;
+    color: black; /* White text */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Top Section - Logo and Description */
+.footer-top {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-description {
+    font-size: 14px;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+/* Navigation Links */
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px 0;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav li {
+    margin: 5px 0;
+}
+
+.footer-nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-nav a:hover {
+    color: grey;
+}
+
+/* Bottom Section - Copyright Information */
+.footer-bottom {
+    text-align: center;
+    font-size: 12px;
+    color: black;
+    padding: 10px 0;
+    border-bottom: 1px solid grey;
+}
+
+/* Social Links and Preferences */
+.footer-social {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.footer-social p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.social-links {
+    color: black;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: grey;
+}
