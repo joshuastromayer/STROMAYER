@@ -1,3 +1,5 @@
+https://stromayer.netlify.app/* https://stromayer.com/:splat 301!
+
 / /index.html 200
 /contact-us /contact-us.html 200
 /about-us /about-us.html 200
