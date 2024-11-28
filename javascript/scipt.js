@@ -159,3 +159,13 @@ missedBtn.addEventListener("click", () => {
 
 // Initial Load: Show Upcoming Releases
 renderReleases(upcomingReleases);
+
+// Script to rewrite URLs without .html
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll("a").forEach(link => {
+        if (link.href.endsWith(".html")) {
+            // Replace '.html' in the URL with nothing
+            link.href = link.href.replace(".html", "");
+        }
+    });
+});
