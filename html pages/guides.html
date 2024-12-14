@@ -1,119 +1,512 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Niche Blog</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8345072588628632"
-     crossorigin="anonymous"></script>
-</head>
-<body>
-    <!-- Header Section -->
-  
+/* General Article Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333;
+}
 
-    <!-- Sticky Header Section -->
-    <header id="sticky-header">
-        <link rel="stylesheet" href="../css/header.css">
-        <div class="sticky-header-container">
-            <!-- Left Section: Logo -->
-            <div class="sticky-logo-section">
-                <a href="../index.html" class="sticky-logo">S T R O M A Y E R</a>
-            </div>
+/* Container for the guides */
+.guides-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70vh; /* Make it cover the full viewport height */
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f9f9f9; /* Light background for a clean look */
+}
 
-            <!-- Right Section: Contains Top Row and Navigation Links -->
-            <div class="sticky-header-right">
-              
-                <div class="sticky-navigation-shelf"> 
-                        <button onclick="window.location.href='../html pages/news.html'" class="sticky-c-sitePrimaryMenu_item">
-                            <span class="sticky-c-sitePrimaryMenu_text">NEWS</span>
-                        </button>
-                        <button onclick="window.location.href='../html pages/projects.html'" class="sticky-c-sitePrimaryMenu_item">
-                            <span class="c-sitePrimaryMenu_text">PROJECTS</span>
-                        </button>
-                        <button onclick="window.location.href='../html pages/reviews.html'" class="sticky-c-sitePrimaryMenu_item">
-                            <span class="c-sitePrimaryMenu_text">REVIEWS</span>
-                        </button>
-                        <button onclick="window.location.href='../html pages/releases.html'" class="sticky-c-sitePrimaryMenu_item">
-                            <span class="c-sitePrimaryMenu_text">RELEASES</span>
-                        </button>
-                        <button onclick="window.location.href='../html pages/guides.html'" class="sticky-c-sitePrimaryMenu_item">
-                            <span class="c-sitePrimaryMenu_text">GUIDES</span>
-                        </button>
-                </div>
+/* Each guide category */
+.guide-category {
+    flex: 1; /* Equal width for all sections */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+}
 
-                    <div class="sticky-header-icons">
-                        <button class="sticky-icon-navigation"><a href="search.html" class="sticky-icon" title="Search">🔍</a></button>
-                        <button class="sticky-icon-navigation"><a href="../html pages/profile.html" class="sticky-icon" title="Profile">👤</a></button> 
-                        <button class="sticky-icon-navigation"><a href="menu.html" class="sticky-icon" title="Menu">🔲</a></button> 
-                    </div>
-            </div>
-        </div>
-    </header>
-    <main>
+/* Guide buttons */
+.guide-button {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Button-specific styles */
+.guide-category:nth-child(1) .guide-button {
+    background-color: rgb(255, 170, 170); /* Blue for THIS OR THAT */
+    background-image: url('your-this-or-that-image.jpg'); /* Optional background image */
+}
+
+.guide-category:nth-child(2) .guide-button {
+    background-color: #7de4fb91; /* Orange for CODING GUIDE */
+    background-image: url('your-coding-guide-image.jpg'); /* Optional background image */
+}
+
+.guide-category:nth-child(3) .guide-button {
+    background-color: #95ffbc; /* Green for HOW TO- */
+    background-image: url('your-how-to-image.jpg'); /* Optional background image */
+}
+
+/* Text styling */
+.guide-button h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.guide-button p {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+/* Hover effect */
+.guide-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.article-container-2024xyz {
+    background-color: white;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.8;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+}
+
+.article-container-2024xyz img {
+    width: 600px;
+}
+
+.article-header-2024xyz {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.article-header-2024xyz h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.article-header-2024xyz p {
+    font-size: 20px;
+    color: #555;
+}
+
+.article-section-2024xyz {
+    margin-bottom: 40px;
+}
+
+.article-section-2024xyz h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.article-section-2024xyz p {
+    margin: 10px 0;
+}
+
+.article-image-2024xyz {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.article-image-2024xyz img {
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.article-image-2024xyz figcaption {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Related Link Section */
+.related-link-2024xyz {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.related-link-2024xyz p {
+    font-size: 18px;
+    color: #333;
+}
+
+.related-link-button-2024xyz {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #0073e6;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.related-link-button-2024xyz:hover {
+    background-color: #005bb5;
+}
 
 
-    </main>
+.coding-guides-content-9384adsa {
+    height: 1000px;
+}
 
-    <footer>
-        <!-- Logo and Description -->
-        <div class="footer-top">
-            <div class="footer-logo">JS ORG</div>
-            <p class="footer-description">
-                Your blog is where ideas come to life. We’re committed to bringing you fresh insights, stories, and tips across various topics, inspiring you to explore new perspectives and deepen your knowledge.
-            </p>
-        </div>
-    
-        <!-- Navigation Links -->
-        <div class="footer-nav">
-            <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                
-            </ul>
-            <ul>
-                <li><a href="#">Terms of Service</a></li>
-                <li><a href="#">Affiliate Disclosure</a></li>
-                <li><a href="#">Editorial Standards</a></li>
-                <li><a href="#">Reviews</a></li>
-            </ul>
-            <ul>
-                
-                <li><a href="#">Buying Guides</a></li>
-                <li><a href="#">Tutorials</a></li>
-                <li><a href="#">Product Comparisons</a></li>
-                <li><a href="#">Trending Topics</a></li>
-            </ul>
-        </div>
-    
-        <!-- Copyright Information -->
-        <div class="footer-bottom">
-            <p>© 2024 Your Blog Name. All rights reserved.</p>
-            <p>Content may not be reproduced, distributed, or transmitted without permission.</p>
-        </div>
-    
-        <!-- Social Links and Manage Preferences -->
-        <div class="footer-social">
-            <p>Manage Preferences</p>
-            <p class="social-links">
-                Twitter | Facebook | Instagram | LinkedIn | YouTube | TikTok
-            </p>
-        </div>
-    </footer>
+.coding-guides-row-9384adsa {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    padding: 10px;
+    gap: 10px;
+}
 
-    <script>
-        function openInNewWindow(event) {
-            event.preventDefault(); // Prevent default link behavior
-            window.open(
-                event.currentTarget.href, 
-                '_blank', 
-                'noopener,noreferrer,width=800,height=600'
-            );
-        }
-        </script>
+.guide-dropdown-9384adsa {
+    position: relative;
+    display: inline-block;
+    width: 22%; /* Adjust to fit all guides in a row */
+}
 
-        <script src="../javascript/scipt.js"></script>
-        </body>
-        </html>
+.guide-btn-9384adsa {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.guide-btn-9384adsa:hover {
+    background-color: #555;
+}
+
+.guide-dropdown-content-9384adsa {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.guide-dropdown-content-9384adsa a {
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.guide-dropdown-content-9384adsa a:hover {
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+.guide-dropdown-9384adsa:hover .guide-dropdown-content-9384adsa {
+    display: block;
+}
+
+
+/* coding-guides styling */
+
+/* General Styles */
+body.html-css-guide-body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header Styles */
+
+.html-css-guide-header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.html-css-guide-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.html-css-guide-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.html-css-guide-nav ul li a:hover {
+    background-color: #fff;
+    color: #ff5722;
+    border-color: #fff;
+}
+
+/* Section Styles */
+.html-css-guide-section {
+    margin: 40px auto;
+    margin-top: 0;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.html-css-guide-section h2 {
+    color: black;
+    margin-top: 0;
+    font-size: 32px;
+}
+
+.html-css-guide-section h3 {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.html-css-guide-section p {
+    margin-bottom: 20px;
+}
+
+.html-css-guide-section ul {
+    padding-left: 20px;
+    margin: 10px 0 20px;
+}
+
+.html-css-guide-section ul li {
+    margin-bottom: 10px;
+}
+
+/* Code Block Styles */
+.html-css-guide-code-block {
+    background-color: #272822;
+    color: #f8f8f2;
+    padding: 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+}
+
+.box-shadow-div {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);    
+    padding: 20px;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.html-css-guide-section #beginner {
+    padding-top: 80px;
+}
+
+.html-css-guide-section #intermediate {
+    padding-top: 80px;
+}
+
+.html-css-guide-section #advanced {
+    padding-top: 80px;
+}
+
+
+/* where should i start? coding guide page styling */
+
+.start-page-abc123 {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 0;
+    color: #333;
+    padding-left: 120px;
+    width: 1170px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+h1.title-abc123 {
+    text-align: center;
+    color: black;
+    font-weight: 500;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.quick-list-container-abc123 {
+    background-color: #f5f5f5;
+    padding: 15px;
+    margin: 0 100px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.quick-list-container-abc123 h2 {
+    margin-bottom: 30px;
+}
+
+.quick-list-container-abc123-display {
+    display: flex;
+    justify-content: space-around;
+}
+
+.quick-list-container-abc123-display a {
+    text-decoration: none;
+    color: #4a90e2;
+    font-weight: bold;
+}
+
+.quick-list-container-abc123-display h2 {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.quick-list-container-abc123 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.quick-list-container-abc123 ul li {
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.main-article-content-294829348 hr {
+    margin: 10px auto;
+    margin-bottom: 30px;
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    border: none;
+    border-top: 1px solid rgb(181, 181, 181);
+}
+
+.main-article-content-294829348 {
+    width: 1050px;
+}
+
+.section-container-abc123 {
+    margin-bottom: 40px;
+    width: 1050px;
+}
+
+.section-container-abc123 h2 {
+    color: #4a90e2;
+}
+
+.section-container-abc123 p {
+    margin-bottom: 15px;
+    line-height: 36px;
+    font-size: 18px;
+}
+
+/* how to setup vscode styling */
+.vscode-setup-guide {
+    padding: 20px;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif; /* Consistent font */
+}
+
+.vscode-setup-guide h2 {
+    font-size: 36px;
+    color: black; 
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.vscode-setup-guide h3 {
+    font-size: 1.5rem;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.vscode-setup-guide p {
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.vscode-setup-guide ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.vscode-setup-guide ul li {
+    margin-bottom: 10px;
+}
+
+.vscode-setup-guide a {
+    color: #4fa3d8;
+    text-decoration: none;
+}
+
+.vscode-setup-guide a:hover {
+    text-decoration: underline;
+}
+
+.vscode-setup-guide pre {
+    background-color: #2d2d2d; /* Dark background for code blocks */
+    color: #f1f1f1; /* Light text for code */
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin: 10px 0;
+}
+
+/* advert styling */
+.stuff-on-right {
+    width: 430px;
+    padding-left: 5rem;
+}
+
+.ad-placeholder {
+    width: 200px; 
+    height: 650px; 
+    background-color: #f0f0f0;
+    border: 1px dashed #ccc;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    padding: 0;
+}
