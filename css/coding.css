@@ -1,0 +1,619 @@
+/* Styling for the coding page header */
+html {
+    scroll-padding-top: 82px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* main coding page */
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    background:#4a90e2;
+    color: white;
+    padding: 50px 20px;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: white;
+    color: #4a90e2;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #4fa3d8;
+    color: white;
+}
+
+.main-coding-page h2 {
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    margin: 5px 0;
+    padding: 20px;
+}
+
+/* Language Selection Grid */
+.language-selection {
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 2px;
+}
+
+.language-card {
+    background-color: white;
+    height: 170px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.language-card:hover {
+    transform: scale(1.01); /* Slightly enlarges on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow on hover */
+}
+
+#every-other-box {
+    background-color: rgb(242, 242, 242);
+}
+
+.language-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.learn-more {
+    text-decoration: none;
+    color: #4fa3d8;
+    font-weight: bold;
+}
+
+.learn-more:hover {
+    text-decoration: underline;
+}
+
+/* Learning Paths */
+.learning-paths {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    gap: 2px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.path-card {
+    margin: 0px auto;
+    padding: 20px;
+    background: white;
+    height: 100%;
+    width: 100%;
+}
+
+.path-card:hover {
+    transform: scale(1.01); /* Slightly enlarges on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow on hover */
+}
+
+.path-card h3 {
+    color: #4fa3d8;
+    margin-bottom: 10px;
+}
+
+.path-card a {
+    text-decoration: none;
+    color: #4fa3d8;    
+}
+
+.path-card a:hover {
+    text-decoration: underline;
+}
+
+.coding-header-9321pookie {
+    background-color: #2a2a2a;
+    padding: 15px 20px;
+}
+
+.coding-nav-9321pookie {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.coding-nav-links-9321pookie {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.coding-nav-links-9321pookie li {
+    margin: 0;
+}
+
+.coding-nav-links-9321pookie li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.coding-nav-links-9321pookie li a.active {
+    color: #ff9800; /* Highlight the active link */
+}
+
+.coding-nav-links-9321pookie li a:hover {
+    color: #ff9800;
+}
+
+
+
+
+
+/* coding main page test styling */ 
+
+/* Styling for the overall section container */
+.coding-sections-9429abc {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100vw;
+}
+
+/* Frontend Box */
+#frontend-box-9429abc,
+#backend-box-9429abc {
+    background-color: #fce4ec; /* Frontend: Pastel pink */
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    transition: transform 0.5s; /* Subtle hover effect */
+}
+
+/* Make the Backend box pastel blue */
+#backend-box-9429abc {
+    background-color: #e3f2fd; /* Backend: Pastel blue */
+}
+
+/* Hover effect for both boxes */
+#frontend-box-9429abc:hover,
+#backend-box-9429abc:hover {
+    transform: scale(1.05);
+}
+
+/* Titles */
+#frontend-box-9429abc h2,
+#backend-box-9429abc h2 {
+    margin-bottom: 15px;
+    font-size: 44px;
+    color: black; /* Pinkish-red for Frontend */
+}
+
+
+/* Descriptions */
+#frontend-box-9429abc p,
+#backend-box-9429abc p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: black; /* Slightly darker text */
+}
+
+/* Language Dividers */
+.frontend-languages-9429abc,
+.backend-languages-9429abc {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.language-link-9429abc {
+    text-decoration: none; /* Remove default link styling */
+    display: block;
+    transition: transform 0.2s;
+}
+
+.language-9429abc {
+    background-color: #ffe6eb; /* Light pink for language blocks */
+    padding: 15px;
+    border-radius: 28px;
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+    color: #d81b60;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+/* Use a different shade for Backend languages */
+#backend-box-9429abc .language-9429abc {
+    background-color: #dbe9f6; /* Light blue for language blocks */
+    color: #1565c0;
+}
+
+/* Hover effect for language blocks */
+.language-link-9429abc:hover .language-9429abc {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Styling for the small navigation link */
+.nav-small-link-9429abc {
+    margin: 20px 0;
+    text-align: center; /* Centers the nav link */
+}
+
+.small-nav-link-9429abc {
+    font-size: 17px; /* Slightly smaller font size */
+    text-decoration: none; /* Removes underline */
+    color: black; /* Subtle purple to match a sleek look */
+    font-weight: bold;
+    background-color: #f5f5f5; /* Light, neutral background */
+    padding: 8px 15px;
+    border-radius: 20px; /* Rounded edges for a sleek button feel */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for the nav link */
+.small-nav-link-9429abc:hover {
+    background-color: rgb(236, 236, 236); /* Slightly darker pastel purple on hover */
+
+    transform: scale(1.05); /* Subtle zoom-in effect */
+}
+
+
+/* html page styling */
+/* Global Styles */
+body.html-page-klm123 {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header Section */
+.html-header-klm123 {
+    text-align: center;
+    padding: 20px;
+    background-color: #4a90e2; /* HTML Orange */
+    color: white;
+}
+
+.html-header-klm123 h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.html-header-klm123 p {
+    font-size: 1.2rem;
+}
+
+.html-introduction-section h2 {
+    color: #4fa3d8; /* Blue heading */
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.html-introduction-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #333; /* Neutral text color */
+}
+
+.html-introduction-section ul {
+    margin-left: 20px;
+    list-style-type: disc;
+    margin-bottom: 15px;
+}
+
+.html-introduction-section ul li {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.html-introduction-section a {
+    color: #4fa3d8; /* Link color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.html-introduction-section a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Main Content */
+.html-main-klm123 {
+    padding: 10px;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+}
+
+/* Quick Start Plan */
+.quick-start-klm123 {
+    position: sticky; /* Sticky position to stay fixed at the top */
+    top: 82px; /* Stick to the top of the viewport */
+    height: calc(90vh); /* Sidebar height limited to the viewport */
+    overflow-y: auto; /* Allow the sidebar content to scroll independently */
+    width: 250px; /* Fixed width for the sidebar */
+    min-width: 250px;
+    border-right: 1px solid #ddd; /* Optional: Divider for separation */
+    padding: 20px; /* Optional: Adjust padding */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    margin-bottom: 10px;
+}
+.quick-start-klm123 a {
+    display: block;
+    margin: 0;
+    text-decoration: none;
+    color: black;
+    width: auto;
+}
+
+.quick-start-klm123 h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 500;
+}
+
+.quick-plan-list-klm123 a {
+    display: block;
+    margin: 0;
+    padding-left: 20px;
+    text-decoration: none;
+    color: black;
+    width: auto;
+}
+.quick-plan-list-klm123 a:hover {
+    text-decoration: underline;
+}
+
+.quick-plan-list-klm123 li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Toggle Button Styling */
+.toggle-button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.toggle-button:hover {
+    background-color: #eaeaea;
+}
+
+/* Collapsible Content */
+.collapsible-content {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+
+.collapsible-content li a {
+    text-decoration: none;
+}
+
+.collapsible-content li a:hover {
+    color: #4b4b4b;
+}
+
+/* Detailed Plan */
+.detailed-plan-klm123 {
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 1090px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.detailed-plan-klm123 h2 {
+    font-size: 30px;
+    color: black; 
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.detailed-plan-klm123 h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.detailed-plan-klm123 p {
+    margin-bottom: 15px;
+}
+
+.paragraph-coding-language-guide-padding {
+    padding-left: 60px;
+}
+
+.detailed-plan-klm123 hr {
+    margin: 20px 0;
+    margin-right: 10px;
+}
+
+.detailed-plan-klm123 ul {
+    padding: 0 20px;
+    padding-bottom: 20px;
+}
+
+.detailed-plan-klm123 ol {
+    padding: 0 20px;
+    padding-bottom: 20px;
+    line-height: 35px;
+}
+
+.detailed-plan-klm123 a {
+    color: #4fa3d8; /* Link color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.detailed-plan-klm123 td, th {
+    padding: 10px; /* Add spacing inside cells */
+
+}
+
+.paragraph-note-html-page {
+    font-size: 14px;
+}
+
+.code-example-html {
+    height: auto;
+    min-height: 10px;
+    max-width: 1050px;
+    width: auto;
+    text-wrap: wrap;
+    background-color: rgb(237, 237, 237);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+#code-example-html-ul-list {
+    padding-left: 30px;
+}
+
+.coding-language-taught01 {
+    padding-left: 10px;
+}
+
+.coding-language-taught01 a {
+    font-weight: bold;
+    color: #4a90e2;
+}
+
+/* submit project here */ 
+.submit-your-own-projects {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.submit-your-own-projects h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.submit-your-own-projects p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.submit-project-form {
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+.github-guide-link {
+    display: inline-block;
+    font-size: 14px;
+    color: #007BFF;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.github-guide-link:hover {
+    text-decoration: underline;
+}
+
+/* Submit Button */
+.submit-btn {
+    display: inline-block;
+    background: #4fa3d8;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background: #3b8cc4;
+    transform: scale(1.01);
+}
