@@ -1,512 +1,173 @@
-/* General Article Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: white;
-    color: #333;
-}
-
-/* Container for the guides */
-.guides-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 70vh; /* Make it cover the full viewport height */
-    gap: 20px;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: #f9f9f9; /* Light background for a clean look */
-}
-
-/* Each guide category */
-.guide-category {
-    flex: 1; /* Equal width for all sections */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-    height: 100%;
-}
-
-/* Guide buttons */
-.guide-button {
-    text-decoration: none;
-    color: #fff;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 20px;
-    border-radius: 12px;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-/* Button-specific styles */
-.guide-category:nth-child(1) .guide-button {
-    background-color: rgb(255, 170, 170); /* Blue for THIS OR THAT */
-    background-image: url('your-this-or-that-image.jpg'); /* Optional background image */
-}
-
-.guide-category:nth-child(2) .guide-button {
-    background-color: #7de4fb91; /* Orange for CODING GUIDE */
-    background-image: url('your-coding-guide-image.jpg'); /* Optional background image */
-}
-
-.guide-category:nth-child(3) .guide-button {
-    background-color: #95ffbc; /* Green for HOW TO- */
-    background-image: url('your-how-to-image.jpg'); /* Optional background image */
-}
-
-/* Text styling */
-.guide-button h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.guide-button p {
-    font-size: 1rem;
-    line-height: 1.5;
-    font-weight: 300;
-}
-
-/* Hover effect */
-.guide-button:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.article-container-2024xyz {
-    background-color: white;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-    line-height: 1.8;
-    font-size: 18px;
-    display: flex;
-    flex-direction: row;
-}
-
-.article-container-2024xyz img {
-    width: 600px;
-}
-
-.article-header-2024xyz {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.article-header-2024xyz h1 {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.article-header-2024xyz p {
-    font-size: 20px;
-    color: #555;
-}
-
-.article-section-2024xyz {
-    margin-bottom: 40px;
-}
-
-.article-section-2024xyz h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #111;
-}
-
-.article-section-2024xyz p {
-    margin: 10px 0;
-}
-
-.article-image-2024xyz {
-    margin: 20px 0;
-    text-align: center;
-}
-
-.article-image-2024xyz img {
-    max-width: 100%;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.article-image-2024xyz figcaption {
-    font-size: 14px;
-    color: #555;
-    margin-top: 5px;
-}
-
-/* Related Link Section */
-.related-link-2024xyz {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.related-link-2024xyz p {
-    font-size: 18px;
-    color: #333;
-}
-
-.related-link-button-2024xyz {
-    display: inline-block;
-    margin-top: 10px;
-    margin-left: 10px;
-    padding: 5px 10px;
-    font-size: 16px;
-    color: #fff;
-    background-color: #0073e6;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.related-link-button-2024xyz:hover {
-    background-color: #005bb5;
-}
-
-
-.coding-guides-content-9384adsa {
-    height: 1000px;
-}
-
-.coding-guides-row-9384adsa {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 20px auto;
-    padding: 10px;
-    gap: 10px;
-}
-
-.guide-dropdown-9384adsa {
-    position: relative;
-    display: inline-block;
-    width: 22%; /* Adjust to fit all guides in a row */
-}
-
-.guide-btn-9384adsa {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    text-align: center;
-    width: 100%;
-    border-radius: 5px;
-}
-
-.guide-btn-9384adsa:hover {
-    background-color: #555;
-}
-
-.guide-dropdown-content-9384adsa {
-    display: none;
-    position: absolute;
-    background-color: white;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    width: 100%;
-    border-radius: 5px;
-}
-
-.guide-dropdown-content-9384adsa a {
-    color: #333;
-    padding: 10px 15px;
-    text-decoration: none;
-    display: block;
-    font-size: 14px;
-}
-
-.guide-dropdown-content-9384adsa a:hover {
-    background-color: #f1f1f1;
-    color: #000;
-}
-
-.guide-dropdown-9384adsa:hover .guide-dropdown-content-9384adsa {
-    display: block;
-}
-
-
-/* coding-guides styling */
-
-/* General Styles */
-body.html-css-guide-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    background-color: #f9f9f9;
-}
-
-/* Header Styles */
-
-.html-css-guide-header h1 {
-    margin: 0;
-    font-size: 2rem;
-}
-
-.html-css-guide-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.html-css-guide-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    padding: 10px 20px;
-    border: 2px solid transparent;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-}
-
-.html-css-guide-nav ul li a:hover {
-    background-color: #fff;
-    color: #ff5722;
-    border-color: #fff;
-}
-
-/* Section Styles */
-.html-css-guide-section {
-    margin: 40px auto;
-    margin-top: 0;
-    padding: 20px;
-    max-width: 800px;
-    background-color: #fff;
-    border-radius: 8px;
-}
-
-.html-css-guide-section h2 {
-    color: black;
-    margin-top: 0;
-    font-size: 32px;
-}
-
-.html-css-guide-section h3 {
-    margin-bottom: 10px;
-    color: #555;
-}
-
-.html-css-guide-section p {
-    margin-bottom: 20px;
-}
-
-.html-css-guide-section ul {
-    padding-left: 20px;
-    margin: 10px 0 20px;
-}
-
-.html-css-guide-section ul li {
-    margin-bottom: 10px;
-}
-
-/* Code Block Styles */
-.html-css-guide-code-block {
-    background-color: #272822;
-    color: #f8f8f2;
-    padding: 15px;
-    border-radius: 6px;
-    overflow-x: auto;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 0.9rem;
-}
-
-.box-shadow-div {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);    
-    padding: 20px;
-    max-width: 800px;
-    background-color: #fff;
-    border-radius: 8px;
-}
-
-.html-css-guide-section #beginner {
-    padding-top: 80px;
-}
-
-.html-css-guide-section #intermediate {
-    padding-top: 80px;
-}
-
-.html-css-guide-section #advanced {
-    padding-top: 80px;
-}
-
-
-/* where should i start? coding guide page styling */
-
-.start-page-abc123 {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 20px;
-    padding: 0;
-    color: #333;
-    padding-left: 120px;
-    width: 1170px;
-    display: flex;
-    flex-direction: row;
-}
-
-
-h1.title-abc123 {
-    text-align: center;
-    color: black;
-    font-weight: 500;
-    padding-top: 20px;
-    margin-bottom: 20px;
-}
-
-.quick-list-container-abc123 {
-    background-color: #f5f5f5;
-    padding: 15px;
-    margin: 0 100px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.quick-list-container-abc123 h2 {
-    margin-bottom: 30px;
-}
-
-.quick-list-container-abc123-display {
-    display: flex;
-    justify-content: space-around;
-}
-
-.quick-list-container-abc123-display a {
-    text-decoration: none;
-    color: #4a90e2;
-    font-weight: bold;
-}
-
-.quick-list-container-abc123-display h2 {
-    margin-bottom: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.quick-list-container-abc123 ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.quick-list-container-abc123 ul li {
-    padding: 10px 0;
-    font-size: 18px;
-}
-
-.main-article-content-294829348 hr {
-    margin: 10px auto;
-    margin-bottom: 30px;
-    width: 98%;
-    display: flex;
-    justify-content: center;
-    border: none;
-    border-top: 1px solid rgb(181, 181, 181);
-}
-
-.main-article-content-294829348 {
-    width: 1050px;
-}
-
-.section-container-abc123 {
-    margin-bottom: 40px;
-    width: 1050px;
-}
-
-.section-container-abc123 h2 {
-    color: #4a90e2;
-}
-
-.section-container-abc123 p {
-    margin-bottom: 15px;
-    line-height: 36px;
-    font-size: 18px;
-}
-
-/* how to setup vscode styling */
-.vscode-setup-guide {
-    padding: 20px;
-    margin-bottom: 20px;
-    font-family: Arial, sans-serif; /* Consistent font */
-}
-
-.vscode-setup-guide h2 {
-    font-size: 36px;
-    color: black; 
-    margin-bottom: 10px;
-    font-weight: 500;
-}
-
-.vscode-setup-guide h3 {
-    font-size: 1.5rem;
-    color: black;
-    margin-bottom: 10px;
-}
-
-.vscode-setup-guide p {
-    line-height: 1.6;
-    color: #333;
-    margin-bottom: 15px;
-}
-
-.vscode-setup-guide ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    margin-bottom: 15px;
-}
-
-.vscode-setup-guide ul li {
-    margin-bottom: 10px;
-}
-
-.vscode-setup-guide a {
-    color: #4fa3d8;
-    text-decoration: none;
-}
-
-.vscode-setup-guide a:hover {
-    text-decoration: underline;
-}
-
-.vscode-setup-guide pre {
-    background-color: #2d2d2d; /* Dark background for code blocks */
-    color: #f1f1f1; /* Light text for code */
-    padding: 10px;
-    border-radius: 5px;
-    overflow-x: auto;
-    margin: 10px 0;
-}
-
-/* advert styling */
-.stuff-on-right {
-    width: 430px;
-    padding-left: 5rem;
-}
-
-.ad-placeholder {
-    width: 200px; 
-    height: 650px; 
-    background-color: #f0f0f0;
-    border: 1px dashed #ccc;
-    text-align: center;
-    font-size: 14px;
-    color: #666;
-    padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STROMAYER - Projects</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="../css/manage.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8345072588628632"
+     crossorigin="anonymous"></script>
+</head>
+
+    <header id="sticky-header01">
+        <link rel="stylesheet" href="../css/header.css">
+        <div class="sticky-header-container">
+            <!-- Left Section: Logo -->
+            <div class="sticky-logo-section">
+                <a href="../index.html" class="sticky-logo">
+                    <img src="/images/stromayer (2).png" class="logo" alt="Stromayer Logo">
+                </a>
+            </div>
+
+            <!-- Right Section: Contains Top Row and Navigation Links -->
+            <div class="sticky-header-right">
+              
+                <div class="sticky-navigation-shelf"> 
+                        <button onclick="window.location.href='../html pages/news.html'" class="sticky-c-sitePrimaryMenu_item">
+                            <span class="c-sitePrimaryMenu_text">News</span>
+                        </button>
+                        <button onclick="window.location.href='../html pages/projects.html'" class="sticky-c-sitePrimaryMenu_item">
+                            <span class="c-sitePrimaryMenu_text">Projects</span>
+                        </button>
+                        <button onclick="window.location.href='../html pages/reviews.html'" class="sticky-c-sitePrimaryMenu_item">
+                            <span class="c-sitePrimaryMenu_text">Reviews</span>
+                        </button>
+                        <button onclick="window.location.href='../html pages/releases.html'" class="sticky-c-sitePrimaryMenu_item">
+                            <span class="c-sitePrimaryMenu_text">Releases</span>
+                        </button>
+                        <button onclick="window.location.href='../html pages/guides.html'" class="sticky-c-sitePrimaryMenu_item">
+                            <span class="c-sitePrimaryMenu_text">Guides</span>
+                        </button>
+                        <button onclick="window.location.href='../html pages/coding.html'" class="sticky-c-sitePrimaryMenu_item">
+                            <span class="c-sitePrimaryMenu_text">Coding</span>
+                        </button>
+                </div>
+
+                    <div class="sticky-header-icons">
+                        <button class="sticky-icon-navigation"><a href="../html pages/manage-subscriptions.html" class="sticky-icon" title="Profile"><img  class="icon-images" src="/images/profile-icon.webp" alt=""></a></button>
+                        <button class="menu-button">
+                            <img src="/images/hamburger-menu-icon.webp" id="menu-button" alt="Menu Icon" class="icon-images">
+                          </button>
+                    </div>
+            </div>
+        </div>
+        
+    </header>
+    <div id="dropdown-menu" class="dropdown-menu">
+        <header id="sticky-header">
+            <link rel="stylesheet" href="../css/header.css">
+            <div class="sticky-header-container">
+                <!-- Left Section: Logo -->
+                <div class="sticky-logo-section">
+                    <a href="../index.html" class="sticky-logo">
+                        <img src="/images/stromayer (2).png" class="logo" alt="Stromayer Logo">
+                    </a>
+                </div>
+    
+                <!-- Right Section: Contains Top Row and Navigation Links -->
+                <div class="sticky-header-right">
+                  
+    
+    
+                        <div class="sticky-header-icons">
+                            <button id="close-button" class="close-button">X</button>
+                        </div>
+                </div>
+            </div>
+        </header>
+       <div class="dropdown-links" >
+        <!-- Current Nav Links -->
+        <ul class="dropdown-nav-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="../html pages/projects.html">Projects</a></li>
+            <li><a href="../html pages/reviews.html">Reviews</a></li>
+            <li><a href="../html pages/releases.html">Releases</a></li>
+            <li><a href="../html pages/guides.html">Guides</a></li>
+          </ul>
+        
+          <!-- Footer Nav Links -->
+          <ul class="dropdown-footer-links">
+            <li><a href="../html pages/contact-us.html">Contact Us</a></li>
+            <li><a href="../html pages/about-us.html">About Us</a></li>
+            <li><a href="../html pages/privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../html pages/terms-of-service.html">Terms and Conditions</a></li>
+            <li><a href="../html pages/manage-subscriptions.html">Manage Preferences</a></li>
+          </ul>
+      </div>
+      </div>
+    <main>
+        <link rel="stylesheet" href="../css/guides.css">
+        <div class="guides-container">
+            <div class="guide-category">
+                <a href="../guides/this-or-that-guides.html" class="guide-button">
+                    <h2>THIS OR THAT?</h2>
+                    <p>Compare options and make informed decisions.</p>
+                </a>
+            </div>
+            <div class="guide-category">
+                <a href="../guides/coding-guides.html" class="guide-button">
+                    <h2>CODING</h2>
+                    <p>Learn to code or enhance your skills step by step.</p>
+                </a>
+            </div>
+            <div class="guide-category">
+                <a href="../guides/how-to-guides.html" class="guide-button">
+                    <h2>HOW TO</h2>
+                    <p>Practical guides for tackling everyday challenges.</p>
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <link rel="stylesheet" href="../css/header.css">
+        <!-- Logo and Description -->
+        
+    
+        <!-- Navigation Links -->
+        <div class="footer-nav">
+            <ul> 
+                <div class="footer-logo-div">
+                <a href="../index.html" class="footer-logo">
+                    <img src="/images/stromayer (3).png" class="footer-logo" alt="Stromayer Logo">
+                </a>
+                </div>
+                </ul>
+           
+            <ul>
+                <li><a href="/html pages/about-us.html">About Us</a></li>
+                <li><a href="/html pages/contact-us.html">Contact Us</a></li>
+                <li><a href="/html pages/privacy-policy.html">Privacy Policy</a></li>
+                
+            </ul>
+            <ul>
+                <li><a href="/html pages/careers.html">Careers</a></li>
+                <li><a href="/html pages/affiliation-disclosure.html">Affiliate Disclosure</a></li>
+                <li><a href="/html pages/terms-of-service.html">Terms and Conditions</a></li>
+            </ul>
+            <ul>
+                <li>E: info@stromayer.com</li>
+                <li><div class="footer-social">
+                </div>
+            </li>
+            </ul>
+        </div>
+        
+    
+        <div class="footer-social">
+            <a href="../html pages/manage-subscriptions.html" class="p">Manage Preferences</a>
+        </div>
+    
+        <!-- Copyright Information -->
+        <div class="footer-bottom">
+            <p>© 2024 Your Blog Name. All rights reserved.</p>
+        </div>
+    
+    </footer>
+    
+    <script src="../javascript/scipt.js"></script>
+</body>
+
+    </html>
