@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Borders - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="/styles/coding.css">
+</head>
+
+<div id="header-container"></div>
+<body class="html-page-klm123">
+    <link rel="stylesheet" href="../styles/coding.css">
+<main class="html-main-klm123">
+    <!-- Quick Start Plan -->
+    <div id="css-quick-menu"></div>
+
+    <!-- Detailed Plan -->
+    <div class="main-tutorial-content">
+        <div class="detailed-plan-klm123" id="css-borders-tutorial">
+            <h2>CSS Borders</h2>
+            <p>
+                Borders in CSS are used to surround an element, helping to define its edges and improve the visual structure of your webpage. You can customize borders in terms of width, style, and color to create visually appealing designs.
+            </p>
+        
+            <h3>Basic Border Properties</h3>
+            <p>The following are the essential properties for working with borders:</p>
+            <ul>
+                <li><strong>border-width</strong>: Specifies the thickness of the border.</li>
+                <li><strong>border-style</strong>: Specifies the style of the border (e.g., solid, dashed, dotted).</li>
+                <li><strong>border-color</strong>: Specifies the color of the border.</li>
+            </ul>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;border-width: 2px;<br>
+                    &nbsp;&nbsp;border-style: solid;<br>
+                    &nbsp;&nbsp;border-color: blue;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;This is a bordered div&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>Shorthand Border Property</h3>
+            <p>
+                CSS provides a shorthand property, <strong>border</strong>, to specify all three properties (width, style, and color) in a single line.
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;border: 2px dashed green;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;This div has a dashed border&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>Border Radius</h3>
+            <p>
+                The <strong>border-radius</strong> property allows you to create rounded corners for an element. You can specify the radius in pixels or percentages.
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;border: 2px solid red;<br>
+                    &nbsp;&nbsp;border-radius: 10px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;This div has rounded corners&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>Individual Border Sides</h3>
+            <p>
+                You can apply different border styles, widths, and colors to each side of an element using the following properties:
+            </p>
+            <ul>
+                <li><strong>border-top</strong></li>
+                <li><strong>border-right</strong></li>
+                <li><strong>border-bottom</strong></li>
+                <li><strong>border-left</strong></li>
+            </ul>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;border-top: 4px solid black;<br>
+                    &nbsp;&nbsp;border-right: 2px dotted blue;<br>
+                    &nbsp;&nbsp;border-bottom: 3px dashed red;<br>
+                    &nbsp;&nbsp;border-left: 5px double green;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;This div has custom borders on each side&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>Transparent and Hidden Borders</h3>
+            <p>
+                The <strong>border-style</strong> property allows you to set borders to <strong>transparent</strong> (completely invisible but still takes up space) or <strong>hidden</strong> (invisible and does not take up space).
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;border: 3px solid transparent;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;This div has a transparent border&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>Practical Example</h3>
+            <p>
+                Here’s an example combining different border properties:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 200px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;border: 3px solid black;<br>
+                    &nbsp;&nbsp;border-radius: 15px;<br>
+                    &nbsp;&nbsp;background-color: lightyellow;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;Custom border example&lt;/div&gt;
+                </code>
+            </div>
+        
+            <p>
+                <a href="./css-borders.html#css-borders-exercises" class="">Ready to test your knowledge? Head to the exercises section!</a>
+            </p>
+        </div>
+        <div class="detailed-plan-klm123" id="css-borders-exercises">
+            <h2>CSS Borders: Exercises</h2>
+        
+            <h3>1. Add a Solid Border</h3>
+            <p>
+                Create a &lt;div&gt; with a width of 200px and a height of 100px. Add a solid border that is 2px thick and black in color.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-1">Reveal Answer</button>
+            <div id="answer-1" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 200px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;border: 2px solid black;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>2. Add a Dotted Border</h3>
+            <p>
+                Create a &lt;div&gt; with a height of 150px and a dotted border that is blue and 4px thick.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-2">Reveal Answer</button>
+            <div id="answer-2" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;height: 150px;<br>
+                    &nbsp;&nbsp;border: 4px dotted blue;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>3. Add Different Borders on Each Side</h3>
+            <p>
+                Create a &lt;div&gt; with the following borders:
+                <ul>
+                    <li>Top border: 5px solid red</li>
+                    <li>Right border: 3px dashed green</li>
+                    <li>Bottom border: 4px dotted blue</li>
+                    <li>Left border: 2px solid black</li>
+                </ul>
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-3">Reveal Answer</button>
+            <div id="answer-3" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;border-top: 5px solid red;<br>
+                    &nbsp;&nbsp;border-right: 3px dashed green;<br>
+                    &nbsp;&nbsp;border-bottom: 4px dotted blue;<br>
+                    &nbsp;&nbsp;border-left: 2px solid black;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>4. Add a Rounded Border</h3>
+            <p>
+                Create a &lt;div&gt; with a width of 200px, a height of 100px, and a solid border. Make the corners rounded with a radius of 10px.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-4">Reveal Answer</button>
+            <div id="answer-4" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 200px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;border: 1px solid black;<br>
+                    &nbsp;&nbsp;border-radius: 10px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>5. Add a Double Border</h3>
+            <p>
+                Create a &lt;div&gt; with a height of 150px and a double border that is 6px thick and purple in color.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-5">Reveal Answer</button>
+            <div id="answer-5" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;height: 150px;<br>
+                    &nbsp;&nbsp;border: 6px double purple;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <div class="navigation-buttons">
+                <a href="./css-backgrounds.html" class="navigation-button prev-button neutral">← CSS Backgrounds</a>
+                <a href="./css-margins.html" class="navigation-button next-button neutral">CSS Margins →</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <div id="footer-container"></div>
+    
+    <script src="/script.js?v=2"></script>
+</body>
+</html>

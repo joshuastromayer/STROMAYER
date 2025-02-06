@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Width and Heights - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="/styles/coding.css">
+</head>
+
+<div id="header-container"></div>
+<body class="html-page-klm123">
+    <link rel="stylesheet" href="../styles/coding.css">
+<main class="html-main-klm123">
+    <!-- Quick Start Plan -->
+    <div id="css-quick-menu"></div>
+
+    <!-- Detailed Plan -->
+    <div class="main-tutorial-content">
+        <div class="detailed-plan-klm123" id="css-width-height-tutorial">
+            <h2>CSS Width and Height</h2>
+            <p>
+                The <code>width</code> and <code>height</code> properties in CSS are used to define the dimensions of an element. These properties are essential for controlling the size of block-level and inline elements.
+            </p>
+        
+            <h3>Setting Width and Height</h3>
+            <p>
+                You can set the width and height of an element using various units such as pixels (<code>px</code>), percentages (<code>%</code>), or other unit types like <code>em</code> and <code>rem</code>.
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 300px;<br>
+                    &nbsp;&nbsp;height: 150px;<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;This is a box&lt;/div&gt;
+                </code>
+            </div>
+            <p>The above code creates a box with a width of 300px and a height of 150px.</p>
+        
+            <h3>Using Percentages</h3>
+            <p>
+                When using percentages, the width and height are calculated relative to the parent element's dimensions.
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 50%;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightgreen;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;This box is 50% of the parent width&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>Min and Max Width/Height</h3>
+            <p>
+                CSS provides the <code>min-width</code>, <code>max-width</code>, <code>min-height</code>, and <code>max-height</code> properties to set constraints on an element's size. These properties prevent the element from becoming too small or too large.
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 100%;<br>
+                    &nbsp;&nbsp;max-width: 600px;<br>
+                    &nbsp;&nbsp;height: 200px;<br>
+                    &nbsp;&nbsp;background-color: lightcoral;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;This box will not exceed 600px&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>Auto Value</h3>
+            <p>
+                The <code>auto</code> value allows the browser to calculate the width or height based on the element's content or other factors, such as margins.
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: auto;<br>
+                    &nbsp;&nbsp;height: auto;<br>
+                    &nbsp;&nbsp;background-color: lightyellow;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;This box adjusts to its content&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>Box Sizing</h3>
+            <p>
+                The <code>box-sizing</code> property affects how the width and height of an element are calculated. The two most common values are:
+            </p>
+            <ul>
+                <li><code>content-box</code> (default): Width and height apply only to the content, excluding padding and borders.</li>
+                <li><code>border-box</code>: Width and height include content, padding, and borders.</li>
+            </ul>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 300px;<br>
+                    &nbsp;&nbsp;height: 150px;<br>
+                    &nbsp;&nbsp;box-sizing: border-box;<br>
+                    &nbsp;&nbsp;padding: 20px;<br>
+                    &nbsp;&nbsp;border: 5px solid black;<br>
+                    &nbsp;&nbsp;background-color: lightgray;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;Border-Box Example&lt;/div&gt;
+                </code>
+            </div>
+            <p><a href="./css-width-height.html#css-width-height-exercises" class="neutral"></a>
+                    Ready to test your knowledge? Head to the exercises section!
+                </a></p>
+                
+            </div>
+
+            <div class="detailed-plan-klm123" id="css-width-height-exercises">
+                <h2>CSS Width and Height: Exercises</h2>
+                
+                <h3>1. Fixed Width and Height</h3>
+                <p>Create a <code>&lt;div&gt;</code> with the following properties:</p>
+                <ul>
+                    <li>Width: 300px</li>
+                    <li>Height: 150px</li>
+                    <li>Background color: lightblue</li>
+                </ul>
+                <button class="reveal-answer-btn" data-answer-id="answer-1">Reveal Answer</button>
+                <div id="answer-1" class="code-example-html blurred-answer">
+                    <code>
+                        &lt;style&gt;<br>
+                        div {<br>
+                        &nbsp;&nbsp;width: 300px;<br>
+                        &nbsp;&nbsp;height: 150px;<br>
+                        &nbsp;&nbsp;background-color: lightblue;<br>
+                        }<br>
+                        &lt;/style&gt;<br>
+                        &lt;div&gt;This is a fixed size box&lt;/div&gt;
+                    </code>
+                </div>
+                
+                <h3>2. Percentage-Based Dimensions</h3>
+                <p>Create a <code>&lt;div&gt;</code> with the following properties:</p>
+                <ul>
+                    <li>Width: 50% of the viewport</li>
+                    <li>Height: 25% of the viewport</li>
+                    <li>Background color: lightgreen</li>
+                </ul>
+                <button class="reveal-answer-btn" data-answer-id="answer-2">Reveal Answer</button>
+                <div id="answer-2" class="code-example-html blurred-answer">
+                    <code>
+                        &lt;style&gt;<br>
+                        div {<br>
+                        &nbsp;&nbsp;width: 50%;<br>
+                        &nbsp;&nbsp;height: 25vh;<br>
+                        &nbsp;&nbsp;background-color: lightgreen;<br>
+                        }<br>
+                        &lt;/style&gt;<br>
+                        &lt;div&gt;Percentage dimensions&lt;/div&gt;
+                    </code>
+                </div>
+                
+                <h3>3. Minimum and Maximum Dimensions</h3>
+                <p>
+                    Create a <code>&lt;div&gt;</code> with the following properties:
+                    <ul>
+                        <li>Minimum Width: 200px</li>
+                        <li>Minimum Height: 100px</li>
+                        <li>Maximum Width: 400px</li>
+                        <li>Maximum Height: 300px</li>
+                        <li>Background color: lightcoral</li>
+                    </ul>
+                    Resize the browser to observe how the box behaves.
+                </p>
+                <button class="reveal-answer-btn" data-answer-id="answer-3">Reveal Answer</button>
+                <div id="answer-3" class="code-example-html blurred-answer">
+                    <code>
+                        &lt;style&gt;<br>
+                        div {<br>
+                        &nbsp;&nbsp;min-width: 200px;<br>
+                        &nbsp;&nbsp;min-height: 100px;<br>
+                        &nbsp;&nbsp;max-width: 400px;<br>
+                        &nbsp;&nbsp;max-height: 300px;<br>
+                        &nbsp;&nbsp;background-color: lightcoral;<br>
+                        }<br>
+                        &lt;/style&gt;<br>
+                        &lt;div&gt;This box has min and max dimensions&lt;/div&gt;
+                    </code>
+                </div>
+            
+                <h3>4. Responsive Square</h3>
+                <p>
+                    Create a <code>&lt;div&gt;</code> that is always a square and scales with the viewport width.
+                    <ul>
+                        <li>Width: 20% of the viewport</li>
+                        <li>Height: Same as the width</li>
+                        <li>Background color: lightyellow</li>
+                    </ul>
+                </p>
+                <button class="reveal-answer-btn" data-answer-id="answer-4">Reveal Answer</button>
+                <div id="answer-4" class="code-example-html blurred-answer">
+                    <code>
+                        &lt;style&gt;<br>
+                        div {<br>
+                        &nbsp;&nbsp;width: 20vw;<br>
+                        &nbsp;&nbsp;height: 20vw;<br>
+                        &nbsp;&nbsp;background-color: lightyellow;<br>
+                        }<br>
+                        &lt;/style&gt;<br>
+                        &lt;div&gt;Responsive square&lt;/div&gt;
+                    </code>
+                </div>
+                
+                <div class="navigation-buttons">
+                    <a href="./css-box-model.html" class="navigation-button prev-button neutral">← CSS Box Model</a>
+                    <a href="./css-units.html" class="navigation-button next-button neutral">CSS Units →</a>
+                </div>
+        
+        </div>
+    </div>
+</main>
+
+    <div id="footer-container"></div>
+    
+    <script src="/script.js?v=2"></script>
+</body>
+</html>

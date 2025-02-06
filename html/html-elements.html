@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Elements - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="../styles/coding.css">
+</head>
+<div id="header-container"></div>
+      <body class="html-page-klm123">
+<link rel="stylesheet" href="../styles/coding.css">
+
+    
+        <main class="html-main-klm123">
+            <!-- Quick Start Plan -->
+            <div id="html-quick-menu"></div>
+    
+            <!-- Detailed Plan -->
+            <div class="main-tutorial-content">
+                <div class="detailed-plan-klm123" id="html-elements-tutorial">
+                    <h2>HTML Elements</h2>
+                
+                    <p>
+                        HTML is built around the concept of elements. An HTML element consists of a start tag, some content, and an end tag. Together, they form the structure and content of a webpage. Understanding elements is the foundation of learning HTML.
+                    </p>
+                
+                    <h3>What Is an HTML Element?</h3>
+                    <p>
+                        An HTML element is a combination of a start tag, content, and an end tag. For example:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;h1&gt;This is a heading&lt;/h1&gt;
+                        </code>
+                    </div>
+                    <p>
+                        Here:
+                    </p>
+                    <ul>
+                        <li><strong>Start tag:</strong> <code>&lt;h1&gt;</code></li>
+                        <li><strong>Content:</strong> "This is a heading"</li>
+                        <li><strong>End tag:</strong> <code>&lt;/h1&gt;</code></li>
+                    </ul>
+                    <p>
+                        The start tag defines the beginning of the element, and the end tag defines its closure. Some elements, such as <code>&lt;br&gt;</code>, are self-closing and don’t require an end tag.
+                    </p>
+                
+                    <h3>Nesting Elements</h3>
+                    <p>
+                        HTML elements can be nested within each other to create a structure. For example:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;div&gt;<br>
+                            &nbsp;&nbsp;&lt;h1&gt;Welcome&lt;/h1&gt;<br>
+                            &nbsp;&nbsp;&lt;p&gt;This is a paragraph inside a div.&lt;/p&gt;<br>
+                            &lt;/div&gt;
+                        </code>
+                    </div>
+                    <p>
+                        In this example, the <code>&lt;h1&gt;</code> and <code>&lt;p&gt;</code> elements are nested inside the <code>&lt;div&gt;</code> element.
+                    </p>
+                
+                    <h3>Attributes in Elements</h3>
+                    <p>
+                        Elements can have attributes that provide additional information. Attributes are included in the opening tag. For example:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;
+                        </code>
+                    </div>
+                    <p>
+                        Here, <code>href</code> is an attribute that specifies the link's destination. Attributes always follow this pattern: <code>name="value"</code>.
+                    </p>
+                
+                    <h3>Empty Elements</h3>
+                    <p>
+                        Some elements don’t have any content or closing tags. They are called empty elements. Examples include:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;br&gt; &lt;img src="image.png" alt="Description"&gt;
+                        </code>
+                    </div>
+                    <p>
+                        Empty elements are useful for things like line breaks (<code>&lt;br&gt;</code>) or adding images (<code>&lt;img&gt;</code>).
+                    </p>
+                
+                    <h3>Common Mistakes</h3>
+                    <ul>
+                        <li><strong>Forgetting to close tags:</strong> Always close elements unless they are self-closing.</li>
+                        <li><strong>Incorrect nesting:</strong> Make sure nested elements are properly structured. For example, this is invalid: <code>&lt;p&gt;&lt;div&gt;Text&lt;/div&gt;&lt;/p&gt;</code>.</li>
+                        <li><strong>Misspelling tag names:</strong> Tags are case-insensitive but should be consistent (prefer lowercase).</li>
+                    </ul>
+                
+                    <h3>Next Steps</h3>
+                    <p>
+                        Now that you've learned about HTML elements, let’s move on to understanding "Attributes" and how they provide additional context to elements.
+                    </p>
+                    <p>
+                        <a href="#html-elements-exercises" class="neutral">
+                            Ready to practice? Head to the exercises section!
+                        </a>
+                    </p>
+                </div>
+
+
+                <div class="detailed-plan-klm123" id="html-elements-exercises">
+    <h2>HTML Elements: Exercises</h2>
+
+    <h3>1. What is an HTML element?</h3>
+    <p>
+        Describe what an HTML element consists of.
+    </p>
+    <button class="reveal-answer-btn" data-answer-id="answer-1">Reveal Answer</button>
+    <div id="answer-1" class="code-example-html blurred-answer">
+        <p>
+            An HTML element consists of a start tag, content, and an end tag. For example, <code>&lt;h1&gt;Heading&lt;/h1&gt;</code>.
+        </p>
+    </div>
+
+    <h3>2. Write an example of a nested HTML structure.</h3>
+    <p>
+        Create a nested HTML structure where a heading and a paragraph are inside a <code>&lt;div&gt;</code> tag.
+    </p>
+    <button class="reveal-answer-btn" data-answer-id="answer-2">Reveal Answer</button>
+    <div id="answer-2" class="code-example-html blurred-answer">
+        <code>
+            &lt;div&gt;<br>
+            &nbsp;&nbsp;&lt;h1&gt;Welcome&lt;/h1&gt;<br>
+            &nbsp;&nbsp;&lt;p&gt;This is inside a div.&lt;/p&gt;<br>
+            &lt;/div&gt;
+        </code>
+    </div>
+
+    <h3>3. What is the purpose of attributes in HTML?</h3>
+    <p>
+        Explain why attributes are used in HTML elements.
+    </p>
+    <button class="reveal-answer-btn" data-answer-id="answer-3">Reveal Answer</button>
+    <div id="answer-3" class="code-example-html blurred-answer">
+        <p>
+            Attributes provide additional information about an element, such as a link destination for <code>&lt;a&gt;</code> or the source of an image for <code>&lt;img&gt;</code>.
+        </p>
+    </div>
+
+    <h3>4. Identify the mistake in the following code:</h3>
+    <div class="code-example-html">
+        <code>
+            &lt;p&gt;<br>
+            &nbsp;&nbsp;This is a paragraph.<br>
+            &nbsp;&nbsp;&lt;div&gt;This is invalid nesting.&lt;/div&gt;<br>
+            &lt;/p&gt;
+        </code>
+    </div>
+    <p>
+        What is wrong with the code above?
+    </p>
+    <button class="reveal-answer-btn" data-answer-id="answer-4">Reveal Answer</button>
+    <div id="answer-4" class="code-example-html blurred-answer">
+        <p>
+            A <code>&lt;p&gt;</code> element cannot contain block-level elements like <code>&lt;div&gt;</code>. Instead, the <code>&lt;div&gt;</code> should be outside the <code>&lt;p&gt;</code> tag.
+        </p>
+    </div>
+
+    <h3>5. Create an example of an empty HTML element.</h3>
+    <p>
+        Write code to demonstrate two examples of empty HTML elements.
+    </p>
+    <button class="reveal-answer-btn" data-answer-id="answer-5">Reveal Answer</button>
+    <div id="answer-5" class="code-example-html blurred-answer">
+        <code>
+            &lt;br&gt; <!-- Line break --><br>
+            &lt;img src="image.png" alt="Description"&gt; <!-- Image element -->
+        </code>
+    </div>
+
+    <p>
+        <a href="./html-attributes.html#html-attributes-tutorial" class="neutral">
+            Ready to move on to Attributes? Let’s go!
+        </a>
+    </p>
+</div>
+        </main>
+
+        <div id="footer-container"></div>
+    
+        <script src="/script.js?v=2"></script>
+    </body>
+</html>

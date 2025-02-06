@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Javascript - Control Flow</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <script src="/script.js" defer></script>
+</head>
+
+<div id="header-container"></div>
+<body class="html-page-klm123">
+    <link rel="stylesheet" href="../styles/coding.css">
+        <header class="html-header-klm123">
+        <h1>Master JavaScript: Build Dynamic Experiences</h1>
+        <p>Step into the world of dynamic and interactive web development.</p>
+    </header>
+
+    <main class="html-main-klm123">
+        <!-- Quick Start Plan -->
+        <section class="quick-start-klm123">
+            <div class="quick-plan-list-klm123">
+                <div id="tutorials-section">
+                    <h3>JS Tutorial</h3>
+                    <div class="chapter"> <!-- Introduction -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-introduction')">Introduction</button>
+                        <ul id="javascript-introduction" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript.html#javascript-introduction-tutorial" class="menu-link neutral">What is JavaScript?</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript.html#javascript-why-learn-tutorial" class="menu-link neutral">Why Learn JavaScript?</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript.html#javascript-setting-up-tutorial" class="menu-link neutral">Setting Up JavaScript</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript.html#javascript-first-script-tutorial" class="menu-link neutral">Your First JavaScript Script</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript.html#javascript-console-log-tutorial" class="menu-link neutral">Using console.log</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- Variables and Data Types -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-variables-section')">Variables and Data Types</button>
+                        <ul id="javascript-variables-section" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-variables.html#javascript-variables-intro-tutorial" class="menu-link neutral">Introduction to Variables</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-variables.html#javascript-const-let-var-tutorial" class="menu-link neutral">Const, Let, and Var</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-variables.html#javascript-dynamic-typing-tutorial" class="menu-link neutral">Dynamic Typing in JavaScript</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-variables.html#javascript-variable-scope-tutorial" class="menu-link neutral">Variable Scope</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- Operators -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-operators')">Operators</button>
+                        <ul id="javascript-operators" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-operators.html#javascript-arithmetic-operators-tutorial" class="menu-link neutral">Arithmetic Operators</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-operators.html#javascript-comparison-operators-tutorial" class="menu-link neutral">Comparison Operators</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-operators.html#javascript-logical-operators-tutorial" class="menu-link neutral">Logical Operators</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-operators.html#javascript-assignment-operators-tutorial" class="menu-link neutral">Assignment Operators</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-operators.html#javascript-bitwise-operators-tutorial" class="menu-link neutral">Bitwise Operators</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-operators.html#javascript-ternary-operators-tutorial" class="menu-link neutral">Ternary Operators</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- Control Flow -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-control-flow')">Control Flow</button>
+                        <ul id="javascript-control-flow" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-control-flow.html#javascript-if-else-tutorial" class="menu-link neutral">If, Else, and Else If</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-control-flow.html#javascript-switch-tutorial" class="menu-link neutral">Switch Statements</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-control-flow.html#javascript-ternary-operator-tutorial" class="menu-link neutral">Ternary Operator</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-control-flow.html#javascript-nested-conditionals-tutorial" class="menu-link neutral">Nested Conditionals</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-control-flow.html#javascript-short-circuiting-tutorial" class="menu-link neutral">Short-Circuiting</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- Loops -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-loops')">Loops</button>
+                        <ul id="javascript-loops" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-loops.html#javascript-for-loops-tutorial" class="menu-link neutral">For Loops</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-loops.html#javascript-while-loops-tutorial" class="menu-link neutral">While Loops</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-loops.html#javascript-do-while-loops-tutorial" class="menu-link neutral">Do While Loops</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-loops.html#javascript-break-and-continue-tutorial" class="menu-link neutral">Break and Continue</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-loops.html#javascript-nested-loops-tutorial" class="menu-link neutral">Nested Loops</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- Functions -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-functions')">Functions</button>
+                        <ul id="javascript-functions" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-functions.html#javascript-what-are-functions-tutorial" class="menu-link neutral">What are Functions?</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-functions.html#javascript-function-declarations-tutorial" class="menu-link neutral">Function Declarations</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-functions.html#javascript-function-expressions-tutorial" class="menu-link neutral">Function Expressions</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-functions.html#javascript-arrow-functions-tutorial" class="menu-link neutral">Arrow Functions</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-functions.html#javascript-parameters-and-arguments-tutorial" class="menu-link neutral">Parameters and Arguments</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-functions.html#javascript-return-values-tutorial" class="menu-link neutral">Return Values</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- Objects -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-objects')">Objects</button>
+                        <ul id="javascript-objects" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-objects.html#javascript-what-are-objects-tutorial" class="menu-link neutral">What are Objects?</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-objects.html#javascript-creating-objects-tutorial" class="menu-link neutral">Creating Objects</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-objects.html#javascript-accessing-properties-tutorial" class="menu-link neutral">Accessing Properties</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-objects.html#javascript-modifying-objects-tutorial" class="menu-link neutral">Modifying Objects</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-objects.html#javascript-nested-objects-tutorial" class="menu-link neutral">Nested Objects</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-objects.html#javascript-object-methods-tutorial" class="menu-link neutral">Object Methods</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- Arrays -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-arrays')">Arrays</button>
+                        <ul id="javascript-arrays" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-arrays.html#javascript-what-are-arrays-tutorial" class="menu-link neutral">What are Arrays?</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-arrays.html#javascript-creating-arrays-tutorial" class="menu-link neutral">Creating Arrays</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-arrays.html#javascript-accessing-elements-tutorial" class="menu-link neutral">Accessing Elements</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-arrays.html#javascript-modifying-arrays-tutorial" class="menu-link neutral">Modifying Arrays</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-arrays.html#javascript-array-methods-tutorial" class="menu-link neutral">Array Methods</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-arrays.html#javascript-multidimensional-arrays-tutorial" class="menu-link neutral">Multidimensional Arrays</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- Events -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-events')">Events</button>
+                        <ul id="javascript-events" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-events.html#javascript-introduction-to-events-tutorial" class="menu-link neutral">Introduction to Events</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-events.html#javascript-event-listeners-tutorial" class="menu-link neutral">Event Listeners</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-events.html#javascript-common-events-tutorial" class="menu-link neutral">Common Events</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-events.html#javascript-event-bubbling-capturing-tutorial" class="menu-link neutral">Event Bubbling and Capturing</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-events.html#javascript-preventing-default-tutorial" class="menu-link neutral">Preventing Default Behavior</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-events.html#javascript-delegation-tutorial" class="menu-link neutral">Event Delegation</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- DOM Manipulation -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-dom-manipulation')">DOM Manipulation</button>
+                        <ul id="javascript-dom-manipulation" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-dom-manipulation.html#javascript-what-is-dom-tutorial" class="menu-link neutral">What is the DOM?</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-dom-manipulation.html#javascript-selecting-elements-tutorial" class="menu-link neutral">Selecting Elements</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-dom-manipulation.html#javascript-modifying-elements-tutorial" class="menu-link neutral">Modifying Elements</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-dom-manipulation.html#javascript-adding-removing-elements-tutorial" class="menu-link neutral">Adding and Removing Elements</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-dom-manipulation.html#javascript-styling-elements-tutorial" class="menu-link neutral">Styling Elements</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-dom-manipulation.html#javascript-navigating-dom-tutorial" class="menu-link neutral">Navigating the DOM</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Exercise Section -->
+            </div>
+        </section>
+        
+        <!-- Detailed Plan -->
+        <div class="main-tutorial-content">
+            <!-- Tutorials -->
+            <div id="javascript-if-else-tutorial" class="detailed-plan-klm123">
+                <h2>If, Else, and Else If</h2>
+                <p>
+                    Conditional statements allow your code to make decisions and execute different blocks of code based on specific conditions. 
+                    The <code>if</code>, <code>else</code>, and <code>else if</code> statements are fundamental tools for control flow in JavaScript.
+                </p>
+            
+                <h3>If Statement</h3>
+                <p>
+                    The <code>if</code> statement executes a block of code only if a specified condition is <code>true</code>.
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        let age = 18;<br>
+                        if (age >= 18) {<br>
+                            &nbsp;&nbsp;console.log("You are eligible to vote.");<br>
+                        }
+                    </code>
+                </div>
+            
+                <h3>If-Else Statement</h3>
+                <p>
+                    The <code>else</code> statement specifies a block of code to execute if the condition in the <code>if</code> statement is <code>false</code>.
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        let age = 16;<br>
+                        if (age >= 18) {<br>
+                            &nbsp;&nbsp;console.log("You are eligible to vote.");<br>
+                        } else {<br>
+                            &nbsp;&nbsp;console.log("You are not eligible to vote.");<br>
+                        }
+                    </code>
+                </div>
+            
+                <h3>If-Else If Statement</h3>
+                <p>
+                    The <code>else if</code> statement allows you to test multiple conditions sequentially. 
+                    Once a condition evaluates to <code>true</code>, the corresponding block of code is executed, and the rest are skipped.
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        let score = 85;<br>
+                        if (score >= 90) {<br>
+                            &nbsp;&nbsp;console.log("Grade: A");<br>
+                        } else if (score >= 80) {<br>
+                            &nbsp;&nbsp;console.log("Grade: B");<br>
+                        } else {<br>
+                            &nbsp;&nbsp;console.log("Grade: C");<br>
+                        }
+                    </code>
+                </div>
+            
+                <h3>Comparison Operators in Conditions</h3>
+                <p>
+                    Conditions often use comparison operators. Here are some examples:
+                </p>
+                <ul>
+                    <li><code>==</code> and <code>===</code>: Checks equality.</li>
+                    <li><code>&gt;</code> and <code>&lt;</code>: Checks greater than or less than.</li>
+                    <li><code>&gt;=</code> and <code>&lt;=</code>: Checks greater than or equal to, less than or equal to.</li>
+                </ul>
+                <div class="code-example-html">
+                    <code>
+                        let num = 10;<br>
+                        if (num % 2 === 0) {<br>
+                            &nbsp;&nbsp;console.log("The number is even.");<br>
+                        } else {<br>
+                            &nbsp;&nbsp;console.log("The number is odd.");<br>
+                        }
+                    </code>
+                </div>
+            
+                <h3>Best Practices</h3>
+                <ul>
+                    <li>Always use <code>===</code> for strict equality checks to avoid unexpected type coercion.</li>
+                    <li>Use <code>else</code> only when necessary to handle default cases.</li>
+                    <li>Keep conditions simple and easy to understand.</li>
+                </ul>
+            
+                <h3>Next Steps</h3>
+                <p>
+                    The <code>if</code>, <code>else</code>, and <code>else if</code> statements are the foundation of control flow in JavaScript. 
+                    Up next, we’ll explore **Switch Statements**, which provide an alternative for handling multiple conditions.
+                </p>
+                <a href="./javascript-control-flow.html#javascript-switch-tutorial" class="neutral">Ready to learn about Switch Statements?</a>
+                <h3>Questions</h3>
+<ol>
+    <li><strong>What is the purpose of the <code>if</code> statement in JavaScript?</strong></li>
+    <li><strong>How does the <code>if-else</code> statement differ from the <code>if</code> statement? Provide an example for each.</strong></li>
+    <li><strong>Explain the role of the <code>else if</code> statement. Why is it useful for handling multiple conditions?</strong></li>
+    <li><strong>Evaluate the following code and explain the output:</strong>
+        <div class="code-example-html">
+            <code>
+                let temperature = 35;<br>
+                if (temperature > 40) {<br>
+                    &nbsp;&nbsp;console.log("It's extremely hot!");<br>
+                } else if (temperature > 30) {<br>
+                    &nbsp;&nbsp;console.log("It's hot.");<br>
+                } else {<br>
+                    &nbsp;&nbsp;console.log("It's a comfortable day.");<br>
+                }
+            </code>
+        </div>
+    </li>
+    <li><strong>Write a conditional statement using <code>if</code>, <code>else if</code>, and <code>else</code> to assign a grade based on a score:</strong>
+        <ul>
+            <li><strong>A:</strong> Score is 90 or above</li>
+            <li><strong>B:</strong> Score is between 80 and 89</li>
+            <li><strong>C:</strong> Score is between 70 and 79</li>
+            <li><strong>F:</strong> Score is below 70</li>
+        </ul>
+    </li>
+</ol>
+
+<p>
+    <a href="./javascript-control-flow.html#javascript-if-else-exercises" class="neutral">
+        Ready to check your answers? Head to the exercises section!
+    </a>
+</p>
+            </div>
+            <div class="detailed-plan-klm123" id="javascript-switch-tutorial">
+                <h2>Switch Statements</h2>
+                <p>Switch statements in JavaScript are used for decision-making and provide an alternative to multiple <code>if</code>/<code>else if</code> statements when dealing with a single variable or expression. They allow you to test a variable against multiple possible values and execute specific code based on the match.</p>
+            
+                <h3>Syntax</h3>
+                <div class="code-example-html">
+                    switch (expression) {<br>
+                    &nbsp;&nbsp;case value1:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;// Code to execute if expression === value1<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+                    &nbsp;&nbsp;case value2:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;// Code to execute if expression === value2<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+                    &nbsp;&nbsp;default:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;// Code to execute if no case matches<br>
+                    }
+                </div>
+                <p>The <code>break</code> statement prevents the code from "falling through" to the next case. The <code>default</code> block is optional and executes if no matching case is found.</p>
+            
+                <h3>Example 1: Basic Usage</h3>
+                <p>Here's an example where we use a <code>switch</code> statement to determine the day of the week:</p>
+                <div class="code-example-html">
+                    const day = 3;<br>
+                    let dayName;<br>
+                    <br>
+                    switch (day) {<br>
+                    &nbsp;&nbsp;case 1:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;dayName = "Monday";<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+                    &nbsp;&nbsp;case 2:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;dayName = "Tuesday";<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+                    &nbsp;&nbsp;case 3:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;dayName = "Wednesday";<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+                    &nbsp;&nbsp;case 4:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;dayName = "Thursday";<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+                    &nbsp;&nbsp;case 5:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;dayName = "Friday";<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+                    &nbsp;&nbsp;default:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;dayName = "Weekend";<br>
+                    }<br>
+                    <br>
+                    console.log(dayName); // Output: Wednesday
+                </div>
+            
+                <h3>Example 2: Falling Through</h3>
+                <p>In JavaScript, if you omit the <code>break</code> statement, the code will "fall through" to the next case:</p>
+                <div class="code-example-html">
+                    const color = "yellow";<br>
+                    <br>
+                    switch (color) {<br>
+                    &nbsp;&nbsp;case "red":<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;console.log("Red");<br>
+                    &nbsp;&nbsp;case "yellow":<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;console.log("Yellow");<br>
+                    &nbsp;&nbsp;case "green":<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;console.log("Green");<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+                    &nbsp;&nbsp;default:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;console.log("Unknown color");<br>
+                    }<br>
+                    <br>
+                    // Output:<br>
+                    // Yellow<br>
+                    // Green<br>
+                </div>
+                <p>Notice how <code>Yellow</code> and <code>Green</code> are both logged because there is no <code>break</code> after the <code>case "yellow"</code>.</p>
+            
+                <h3>Best Practices</h3>
+                <ul>
+                    <li>Always use <code>break</code> unless you intentionally want the code to fall through to the next case.</li>
+                    <li>Use the <code>default</code> block to handle unexpected values.</li>
+                    <li>Consider using <code>if</code>/<code>else if</code> statements for complex conditions or ranges.</li>
+                </ul>
+            
+                <h3>When to Use a Switch Statement</h3>
+                <p>A <code>switch</code> statement is best used when:</p>
+                <ul>
+                    <li>You are testing a single variable or expression against multiple possible values.</li>
+                    <li>The conditions are straightforward and non-overlapping.</li>
+                    <li>You want to improve readability compared to multiple <code>if</code>/<code>else if</code> statements.</li>
+                </ul>
+            
+                <h3>Next Steps</h3>
+                <p>Now that you've learned about switch statements, the next section will explore the <code>ternary operator</code>, a shorthand for simple conditionals.</p>
+                <p>
+                    <a href="./javascript-control-flow.html#javascript-ternary-operator-tutorial" class="neutral">
+                        Ready to learn about the ternary operator?
+                    </a>
+                </p>
+                <h3>Questions</h3>
+<ol>
+    <li><strong>What is the purpose of a <code>switch</code> statement in JavaScript?</strong></li>
+    <li><strong>What happens if you forget to include a <code>break</code> statement in a <code>switch</code> case?</strong></li>
+    <li><strong>Explain the role of the <code>default</code> block in a <code>switch</code> statement. Is it mandatory?</strong></li>
+    <li><strong>Write a <code>switch</code> statement that assigns "Morning", "Afternoon", or "Evening" to a variable based on the value of an <code>hour</code> variable (e.g., 6 = Morning, 14 = Afternoon, 20 = Evening).</strong></li>
+    <li><strong>What are some scenarios where using a <code>switch</code> statement is preferable to <code>if</code>/<code>else if</code>?</strong></li>
+</ol>
+<p>
+    <a href="./javascript-control-flow.html#javascript-switch-exercises" class="neutral">
+        Ready to check your answers? Head to the exercises section!
+    </a>
+</p>
+            </div>
+            <div class="detailed-plan-klm123" id="javascript-ternary-operator-tutorial">
+                <h2>Ternary Operator</h2>
+            
+                <p>The ternary operator is a concise way to write conditional statements in JavaScript. It's often used as a shorthand for simple <code>if...else</code> statements. The ternary operator uses the following syntax:</p>
+            
+                <div class="code-example-html">
+                    <code>
+                        condition ? expressionIfTrue : expressionIfFalse;
+                    </code>
+                </div>
+            
+                <p>Here's how it works:</p>
+                <ul>
+                    <li>If the <code>condition</code> evaluates to <code>true</code>, the <code>expressionIfTrue</code> is executed.</li>
+                    <li>If the <code>condition</code> evaluates to <code>false</code>, the <code>expressionIfFalse</code> is executed.</li>
+                </ul>
+            
+                <h3>Example: Checking Eligibility</h3>
+                <p>Suppose you want to determine if a person is old enough to vote:</p>
+            
+                <div class="code-example-html">
+                    <code>
+                        const age = 18;<br>
+                        const canVote = (age >= 18) ? "Yes, eligible to vote" : "No, not eligible to vote";<br>
+                        console.log(canVote); // Outputs: "Yes, eligible to vote"
+                    </code>
+                </div>
+            
+                <h3>Chaining Ternary Operators</h3>
+                <p>You can chain ternary operators for multiple conditions, but it can reduce code readability if overused. Here's an example:</p>
+            
+                <div class="code-example-html">
+                    <code>
+                        const score = 85;<br>
+                        const grade = (score >= 90) ? "A" : (score >= 80) ? "B" : (score >= 70) ? "C" : "F";<br>
+                        console.log(grade); // Outputs: "B"
+                    </code>
+                </div>
+            
+                <p><strong>Note:</strong> If the logic gets too complex, it's better to use <code>if...else</code> for clarity.</p>
+            
+                <h3>Use Cases</h3>
+                <p>The ternary operator is great for situations where you need to assign values conditionally. Some common use cases include:</p>
+                <ul>
+                    <li>Setting default values:</li>
+                    <div class="code-example-html">
+                        <code>
+                            const name = userInput ? userInput : "Guest";<br>
+                            console.log(name); // Outputs the userInput value or "Guest" if userInput is falsy.
+                        </code>
+                    </div>
+                    <li>Inline conditional rendering in frameworks like React.</li>
+                </ul>
+            
+                <h3>Advantages</h3>
+                <ul>
+                    <li>Concise and readable for simple conditions.</li>
+                    <li>Can be used inline, making it useful for quick assignments.</li>
+                </ul>
+            
+                <h3>Disadvantages</h3>
+                <ul>
+                    <li>Can become difficult to read if overused or chained extensively.</li>
+                    <li>Not suitable for complex conditions involving multiple statements.</li>
+                </ul>
+            
+                <h3>Next Steps</h3>
+                <p>Now that you've mastered the ternary operator, the next section will cover nested conditionals, where you'll learn how to handle complex decision-making structures.</p>
+                <p>
+                    <a href="./javascript-control-flow.html#javascript-nested-conditionals-tutorial" class="neutral">
+                        Ready to explore nested conditionals?
+                    </a>
+                </p>
+                <h3>Questions</h3>
+<ol>
+    <li><strong>What is the syntax of the ternary operator in JavaScript?</strong></li>
+    <li><strong>How does the ternary operator differ from an <code>if...else</code> statement?</strong></li>
+    <li><strong>Write an example of a ternary operator that determines if a number is positive, negative, or zero.</strong></li>
+    <li><strong>What are the advantages of using a ternary operator over <code>if...else</code> statements?</strong></li>
+    <li><strong>Why should you avoid excessive chaining of ternary operators?</strong></li>
+</ol>
+<p>
+    <a href="./javascript-control-flow.html#javascript-ternary-operator-exercises" class="neutral">
+        Ready to check your answers? Head to the exercises section!
+    </a>
+</p>
+            </div>
+            <div class="detailed-plan-klm123" id="javascript-nested-conditionals-tutorial">
+                <h2>Nested Conditionals</h2>
+            
+                <p>
+                    Sometimes in programming, we need to evaluate multiple conditions that are dependent on each other. Nested conditionals are a way to use one conditional statement inside another to create more complex decision-making structures. While this can be powerful, it should be used with caution to avoid overly complex and hard-to-read code.
+                </p>
+            
+                <h3>What Are Nested Conditionals?</h3>
+                <p>
+                    Nested conditionals occur when an <code>if</code>, <code>else if</code>, or <code>else</code> block contains another <code>if</code> statement. This allows for more granular checks within a condition.
+                </p>
+            
+                <h3>Basic Example</h3>
+                <div class="code-example-html">
+                    <code>
+                        const age = 18;<br>
+                        const hasLicense = true;<br>
+                        <br>
+                        if (age >= 18) {<br>
+                        &nbsp;&nbsp;console.log("You are old enough to drive.");<br>
+                        &nbsp;&nbsp;if (hasLicense) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;console.log("You are allowed to drive!");<br>
+                        &nbsp;&nbsp;} else {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;console.log("You need a license to drive.");<br>
+                        &nbsp;&nbsp;}<br>
+                        } else {<br>
+                        &nbsp;&nbsp;console.log("You are too young to drive.");<br>
+                        }
+                    </code>
+                </div>
+                <p>In this example, the program first checks if the person is old enough to drive. If so, it then checks if they have a license.</p>
+            
+                <h3>Practical Use Case</h3>
+                <p>Imagine an online store where you want to apply a discount based on the customer's membership status and their total purchase amount:</p>
+                <div class="code-example-html">
+                    <code>
+                        const isMember = true;<br>
+                        const totalAmount = 150;<br>
+                        <br>
+                        if (isMember) {<br>
+                        &nbsp;&nbsp;if (totalAmount > 100) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;console.log("You get a 20% discount!");<br>
+                        &nbsp;&nbsp;} else {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;console.log("You get a 10% discount!");<br>
+                        &nbsp;&nbsp;}<br>
+                        } else {<br>
+                        &nbsp;&nbsp;if (totalAmount > 100) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;console.log("You get a 5% discount!");<br>
+                        &nbsp;&nbsp;} else {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;console.log("No discount available.");<br>
+                        &nbsp;&nbsp;}<br>
+                        }
+                    </code>
+                </div>
+                <p>In this example, nested conditionals allow for specific actions based on membership and purchase amount.</p>
+            
+                <h3>Tips for Using Nested Conditionals</h3>
+                <ul>
+                    <li><strong>Keep them readable:</strong> Avoid excessive nesting, as it can make the code hard to follow.</li>
+                    <li><strong>Use functions:</strong> When nested conditionals become too complex, consider refactoring parts of the code into functions.</li>
+                    <li><strong>Comment your code:</strong> Leave comments to explain the logic behind the nested structure.</li>
+                </ul>
+            
+                <h3>Common Mistakes</h3>
+                <ul>
+                    <li><strong>Not using <code>else</code> blocks:</strong> Ensure that all potential conditions are handled to avoid unexpected behavior.</li>
+                    <li><strong>Overusing nested conditionals:</strong> Too much nesting can lead to code that's hard to debug and maintain.</li>
+                </ul>
+            
+                <h3>Next Steps</h3>
+                <p>
+                    Now that you've learned about nested conditionals, it's time to explore the concept of "Short-Circuiting" in JavaScript, which can help simplify conditional checks.
+                </p>
+                <p>
+                    <a href="./javascript-control-flow.html#javascript-short-circuiting-tutorial" class="neutral">
+                        Ready to learn about short-circuiting? Let's go!
+                    </a>
+                </p>
+                <h3>Questions</h3>
+<ol>
+    <li><strong>What are nested conditionals, and why are they used in programming?</strong></li>
+    <li><strong>Write a simple example of a nested conditional that checks if a number is positive and even.</strong></li>
+    <li><strong>What is the primary disadvantage of using too many nested conditionals?</strong></li>
+    <li><strong>In the following code, what will be logged to the console if <code>age = 20</code> and <code>hasLicense = false</code>?</strong>
+        <div class="code-example-html">
+            <code>
+                const age = 20;<br>
+                const hasLicense = false;<br>
+                <br>
+                if (age >= 18) {<br>
+                &nbsp;&nbsp;console.log("You are old enough to drive.");<br>
+                &nbsp;&nbsp;if (hasLicense) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log("You are allowed to drive!");<br>
+                &nbsp;&nbsp;} else {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log("You need a license to drive.");<br>
+                &nbsp;&nbsp;}<br>
+                } else {<br>
+                &nbsp;&nbsp;console.log("You are too young to drive.");<br>
+                }
+            </code>
+        </div>
+    </li>
+    <li><strong>How can you simplify overly complex nested conditionals in your code?</strong></li>
+</ol>
+
+<p>
+    <a href="./javascript-control-flow.html#javascript-nested-conditionals-exercises" class="neutral">
+        Ready to check your answers? Head to the exercises section!
+    </a>
+</p>
+            </div>
+            <div class="detailed-plan-klm123" id="javascript-short-circuiting-tutorial">
+                <h2>Short-Circuiting</h2>
+            
+                <p>
+                    Short-circuiting is a concept in JavaScript where logical operators like <code>&&</code> (AND) and <code>||</code> (OR) stop evaluating as soon as the result of the expression is determined. This behavior can be leveraged to write more efficient and concise code.
+                </p>
+            
+                <h3>Logical Operators and Short-Circuiting</h3>
+                <ul>
+                    <li><strong><code>&&</code> (AND):</strong> Evaluates to <code>true</code> only if all conditions are <code>true</code>. If the first condition is <code>false</code>, it stops and returns <code>false</code>.</li>
+                    <li><strong><code>||</code> (OR):</strong> Evaluates to <code>true</code> if any condition is <code>true</code>. If the first condition is <code>true</code>, it stops and returns <code>true</code>.</li>
+                </ul>
+            
+                <h3>Examples</h3>
+                <h4>Using <code>&&</code></h4>
+                <div class="code-example-html">
+                    <code>
+                        const user = { name: "Alice", isLoggedIn: true };<br>
+                        user.isLoggedIn && console.log("Welcome, " + user.name);<br>
+                        <br>
+                        // Output: "Welcome, Alice"<br>
+                        // If isLoggedIn is false, the second condition is not executed.
+                    </code>
+                </div>
+            
+                <h4>Using <code>||</code></h4>
+                <div class="code-example-html">
+                    <code>
+                        const userName = "";<br>
+                        const displayName = userName || "Guest";<br>
+                        console.log(displayName);<br>
+                        <br>
+                        // Output: "Guest"<br>
+                        // If userName is empty, the default "Guest" is returned.
+                    </code>
+                </div>
+            
+                <h3>Common Use Cases</h3>
+                <ul>
+                    <li><strong>Default Values:</strong> Use <code>||</code> to assign default values when variables are falsy (e.g., <code>undefined</code>, <code>null</code>, <code>false</code>, <code>""</code>, <code>0</code>).</li>
+                    <li><strong>Conditional Execution:</strong> Use <code>&&</code> to execute code only when a condition is <code>true</code>.</li>
+                </ul>
+            
+                <h3>Important Notes</h3>
+                <ul>
+                    <li>The <code>||</code> operator stops at the first truthy value, while the <code>&&</code> operator stops at the first falsy value.</li>
+                    <li>Be cautious when using short-circuiting with non-boolean values, as the results might be unexpected in certain cases.</li>
+                </ul>
+            
+                <h3>Example: Combining Short-Circuiting</h3>
+                <div class="code-example-html">
+                    <code>
+                        const isMember = true;<br>
+                        const discount = isMember && "20%";<br>
+                        console.log(discount); // Output: "20%"<br>
+                        <br>
+                        const userInput = "";<br>
+                        const output = userInput || "Default value";<br>
+                        console.log(output); // Output: "Default value"
+                    </code>
+                </div>
+            
+                <h3>Next Steps</h3>
+                <p>
+                    Now that you understand short-circuiting, you've completed the Control Flow chapter! Continue exploring other topics in JavaScript or review what you've learned.
+                </p>
+                <p>
+                    <a href="./javascript-loops.html" class="neutral">Ready to jump to Javascript Loops?</a>
+                </p>
+                <h3>Questions</h3>
+<ol>
+    <li><strong>What is short-circuiting in JavaScript, and which logical operators exhibit this behavior?</strong></li>
+    <li><strong>Explain how the <code>&&</code> operator short-circuits with an example.</strong></li>
+    <li><strong>Explain how the <code>||</code> operator short-circuits with an example.</strong></li>
+    <li><strong>What will be the output of the following code?</strong>
+        <div class="code-example-html">
+            <code>
+                const isLoggedIn = false;<br>
+                const user = isLoggedIn && "Welcome, User";<br>
+                console.log(user);
+            </code>
+        </div>
+    </li>
+    <li><strong>Write a short-circuiting expression using <code>||</code> to assign a default value to a variable if the user input is empty.</strong></li>
+</ol>
+<p>
+    <a href="./javascript-control-flow.html#javascript-short-circuiting-exercises" class="neutral">
+        Ready to check your answers? Head to the exercises section!
+    </a>
+</p>
+            </div>
+            <!-- Exercises -->
+            <div id="javascript-if-else-exercises" class="detailed-plan-klm123">
+                <h2>If, Else, and Else If: Exercises</h2>
+            
+                <!-- Question 1 -->
+                <h3>What is the purpose of the <code>if</code> statement in JavaScript?</h3>
+                <div class="code-example-html">
+                    <p>
+                        The <code>if</code> statement is used to execute a block of code only if a specified condition is <code>true</code>. 
+                        It allows for decision-making in programs.
+                    </p>
+                </div>
+            
+                <!-- Question 2 -->
+                <h3>How does the <code>if-else</code> statement differ from the <code>if</code> statement? Provide an example for each.</h3>
+                <div class="code-example-html">
+                    <p>
+                        The <code>if</code> statement runs code only when a condition is <code>true</code>. The <code>if-else</code> statement 
+                        provides an additional block of code to execute if the condition is <code>false</code>.
+                    </p>
+                    <code>
+                        // Example of if statement<br>
+                        let age = 20;<br>
+                        if (age >= 18) {<br>
+                            &nbsp;&nbsp;console.log("You can vote.");<br>
+                        }<br><br>
+            
+                        // Example of if-else statement<br>
+                        if (age >= 18) {<br>
+                            &nbsp;&nbsp;console.log("You can vote.");<br>
+                        } else {<br>
+                            &nbsp;&nbsp;console.log("You cannot vote yet.");<br>
+                        }
+                    </code>
+                </div>
+            
+                <!-- Question 3 -->
+                <h3>Explain the role of the <code>else if</code> statement. Why is it useful for handling multiple conditions?</h3>
+                <div class="code-example-html">
+                    <p>
+                        The <code>else if</code> statement is used to test additional conditions after the initial <code>if</code> condition. 
+                        It is useful for handling multiple mutually exclusive scenarios in an organized way.
+                    </p>
+                    <code>
+                        let score = 75;<br>
+                        if (score >= 90) {<br>
+                            &nbsp;&nbsp;console.log("Grade: A");<br>
+                        } else if (score >= 80) {<br>
+                            &nbsp;&nbsp;console.log("Grade: B");<br>
+                        } else if (score >= 70) {<br>
+                            &nbsp;&nbsp;console.log("Grade: C");<br>
+                        } else {<br>
+                            &nbsp;&nbsp;console.log("Grade: F");<br>
+                        }
+                    </code>
+                </div>
+            
+                <!-- Question 4 -->
+                <h3>Evaluate the following code and explain the output:</h3>
+                <div class="code-example-html">
+                    <code>
+                        let temperature = 35;<br>
+                        if (temperature > 40) {<br>
+                            &nbsp;&nbsp;console.log("It's extremely hot!");<br>
+                        } else if (temperature > 30) {<br>
+                            &nbsp;&nbsp;console.log("It's hot.");<br>
+                        } else {<br>
+                            &nbsp;&nbsp;console.log("It's a comfortable day.");<br>
+                        }
+                    </code>
+                    <p>
+                        Output: "It's hot."<br>
+                        Explanation: The first condition (<code>temperature > 40</code>) is false, but the second condition (<code>temperature > 30</code>) is true. 
+                        The corresponding block is executed, and subsequent blocks are skipped.
+                    </p>
+                </div>
+            
+                <!-- Question 5 -->
+                <h3>Write a conditional statement using <code>if</code>, <code>else if</code>, and <code>else</code> to assign a grade based on a score:</h3>
+                <div class="code-example-html">
+                    <code>
+                        let score = 85;<br>
+                        if (score >= 90) {<br>
+                            &nbsp;&nbsp;console.log("Grade: A");<br>
+                        } else if (score >= 80) {<br>
+                            &nbsp;&nbsp;console.log("Grade: B");<br>
+                        } else if (score >= 70) {<br>
+                            &nbsp;&nbsp;console.log("Grade: C");<br>
+                        } else {<br>
+                            &nbsp;&nbsp;console.log("Grade: F");<br>
+                        }
+                    </code>
+                </div>
+            
+                <!-- Link to the next tutorial -->
+                <p>
+                    <a href="./javascript-control-flow.html#javascript-switch-tutorial" class="neutral">
+                        Ready to move on to Switch Statements?
+                    </a>
+                </p>
+            </div>
+            <div class="detailed-plan-klm123" id="javascript-switch-exercises">
+                <h2>Switch Statements: Exercises</h2>
+            
+                <h3>1. What is the purpose of a switch statement?</h3>
+                <div class="code-example-html">
+                    <p>A switch statement is used to evaluate an expression and execute code blocks based on matching cases. It provides a cleaner alternative to multiple if/else if statements.</p>
+                </div>
+            
+                <h3>2. What happens if a case does not include a break statement?</h3>
+                <div class="code-example-html">
+                    <p>If a case does not include a <code>break</code> statement, the code will "fall through" to the next case, executing its code block as well.</p>
+                </div>
+            
+                <h3>3. Write a switch statement that outputs the type of a fruit based on its name. Use "apple" (fruit), "carrot" (vegetable), and "bread" (unknown).</h3>
+                <div class="code-example-html">
+                    <code>
+                        const item = "apple";<br>
+                        let type;<br>
+                        <br>
+                        switch (item) {<br>
+                            &nbsp;&nbsp;case "apple":<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;type = "fruit";<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+                            &nbsp;&nbsp;case "carrot":<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;type = "vegetable";<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+                            &nbsp;&nbsp;default:<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;type = "unknown";<br>
+                        }<br>
+                        <br>
+                        console.log(type); // Outputs: "fruit"
+                    </code>
+                </div>
+            
+                <h3>4. What is the role of the default case in a switch statement?</h3>
+                <div class="code-example-html">
+                    <p>The <code>default</code> case executes if no other case matches the expression. It acts as a fallback option.</p>
+                </div>
+            
+                <h3>5. Fix the following switch statement so it outputs "Correct!" when the value of <code>answer</code> is 42:</h3>
+                <div class="code-example-html">
+                    <code>
+                        const answer = 42;<br>
+                        switch (answer) {<br>
+                            &nbsp;&nbsp;case 41:<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;console.log("Incorrect!");<br>
+                            &nbsp;&nbsp;case 42:<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;console.log("Correct!");<br>
+                            &nbsp;&nbsp;default:<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;console.log("Invalid!");<br>
+                        }
+                    </code>
+                </div>
+                <p><strong>Fixed Code:</strong></p>
+                <div class="code-example-html">
+                    <code>
+                        const answer = 42;<br>
+                        switch (answer) {<br>
+                            &nbsp;&nbsp;case 41:<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;console.log("Incorrect!");<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+                            &nbsp;&nbsp;case 42:<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;console.log("Correct!");<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+                            &nbsp;&nbsp;default:<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;console.log("Invalid!");<br>
+                        }
+                    </code>
+                </div>
+            
+                <h3>Ready for the next topic?</h3>
+                <p>
+                    <a href="./javascript-control-flow.html#javascript-ternary-operator-tutorial" class="neutral">
+                        Learn about the Ternary Operator!
+                    </a>
+                </p>
+            </div>
+            <div class="detailed-plan-klm123" id="javascript-ternary-operator-exercises">
+                <h2>Ternary Operator: Exercises</h2>
+            
+                <h3>1. What is the syntax of the ternary operator in JavaScript?</h3>
+                <div class="code-example-html">
+                    <p>The syntax of the ternary operator is:</p>
+                    <p><code>condition ? expressionIfTrue : expressionIfFalse</code></p>
+                </div>
+            
+                <h3>2. How does the ternary operator differ from an <code>if...else</code> statement?</h3>
+                <div class="code-example-html">
+                    <p>The ternary operator is a more concise way to write a simple <code>if...else</code> statement. It is used for expressions and returns a value, whereas <code>if...else</code> is used for executing blocks of code.</p>
+                </div>
+            
+                <h3>3. Write an example of a ternary operator that determines if a number is positive, negative, or zero.</h3>
+                <div class="code-example-html">
+                    <code>
+                        const number = 5;<br>
+                        const result = number > 0 ? "Positive" : (number < 0 ? "Negative" : "Zero");<br>
+                        console.log(result); // Output: Positive
+                    </code>
+                </div>
+            
+                <h3>4. What are the advantages of using a ternary operator over <code>if...else</code> statements?</h3>
+                <div class="code-example-html">
+                    <ul>
+                        <li>More concise and easier to read for simple conditions.</li>
+                        <li>Returns a value directly, making it useful for inline assignments.</li>
+                    </ul>
+                </div>
+            
+                <h3>5. Why should you avoid excessive chaining of ternary operators?</h3>
+                <div class="code-example-html">
+                    <p>Excessive chaining of ternary operators can make the code harder to read and maintain. It can introduce ambiguity and reduce code clarity.</p>
+                </div>
+            
+                <p>
+                    <a href="./javascript-control-flow.html#javascript-nested-conditionals-tutorial" class="neutral">
+                        Ready to move on to Nested Conditionals? Let's go!
+                    </a>
+                </p>
+            </div>
+            <div class="detailed-plan-klm123" id="javascript-nested-conditionals-exercises">
+                <h2>Nested Conditionals: Exercises</h2>
+            
+                <h3>1. What are nested conditionals, and why are they used in programming?</h3>
+                <div class="code-example-html">
+                    <p>Nested conditionals are conditional statements inside another conditional statement. They are used when you need to make more specific decisions based on previous conditions, allowing for more granular control over the logic.</p>
+                </div>
+            
+                <h3>2. Write a simple example of a nested conditional that checks if a number is positive and even.</h3>
+                <div class="code-example-html">
+                    <code>
+                        const number = 8;<br>
+                        if (number > 0) {<br>
+                        &nbsp;&nbsp;if (number % 2 === 0) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;console.log("The number is positive and even.");<br>
+                        &nbsp;&nbsp;} else {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;console.log("The number is positive but odd.");<br>
+                        &nbsp;&nbsp;}<br>
+                        } else {<br>
+                        &nbsp;&nbsp;console.log("The number is not positive.");<br>
+                        }
+                    </code>
+                </div>
+            
+                <h3>3. What is the primary disadvantage of using too many nested conditionals?</h3>
+                <div class="code-example-html">
+                    <p>The primary disadvantage is reduced readability and maintainability of the code. Excessive nesting can make the logic hard to follow and debug.</p>
+                </div>
+            
+                <h3>4. In the following code, what will be logged to the console if <code>age = 20</code> and <code>hasLicense = false</code>?</h3>
+                <div class="code-example-html">
+                    <code>
+                        const age = 20;<br>
+                        const hasLicense = false;<br>
+                        <br>
+                        if (age >= 18) {<br>
+                        &nbsp;&nbsp;console.log("You are old enough to drive.");<br>
+                        &nbsp;&nbsp;if (hasLicense) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;console.log("You are allowed to drive!");<br>
+                        &nbsp;&nbsp;} else {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;console.log("You need a license to drive.");<br>
+                        &nbsp;&nbsp;}<br>
+                        } else {<br>
+                        &nbsp;&nbsp;console.log("You are too young to drive.");<br>
+                        }
+                    </code>
+                </div>
+                <div class="code-example-html">
+                    <p>Output:</p>
+                    <p>"You are old enough to drive."<br>"You need a license to drive."</p>
+                </div>
+            
+                <h3>5. How can you simplify overly complex nested conditionals in your code?</h3>
+                <div class="code-example-html">
+                    <ul>
+                        <li>Use functions to break down complex logic into smaller, reusable pieces.</li>
+                        <li>Consider using logical operators like <code>&&</code> or <code>||</code> to combine conditions.</li>
+                        <li>Refactor deeply nested blocks into flat structures, if possible.</li>
+                    </ul>
+                </div>
+            
+                <p>
+                    <a href="./javascript-control-flow.html#javascript-short-circuiting-tutorial" class="neutral">
+                        Ready to move on to Short-Circuiting? Let's go!
+                    </a>
+                </p>
+            </div>
+            <div class="detailed-plan-klm123" id="javascript-short-circuiting-exercises">
+                <h2>Short-Circuiting: Exercises</h2>
+            
+                <h3>1. What is short-circuiting in JavaScript, and which logical operators exhibit this behavior?</h3>
+                <div class="code-example-html">
+                    <p>Short-circuiting in JavaScript is the behavior where logical operators stop evaluating as soon as the result of the expression is determined. The operators that exhibit this behavior are <code>&&</code> (AND) and <code>||</code> (OR).</p>
+                </div>
+            
+                <h3>2. Explain how the <code>&&</code> operator short-circuits with an example.</h3>
+                <div class="code-example-html">
+                    <p>The <code>&&</code> operator short-circuits when the first condition is <code>false</code>, as the entire expression cannot be <code>true</code>. For example:</p>
+                    <code>
+                        const isAdult = false;<br>
+                        isAdult && console.log("You are eligible to vote.");<br>
+                        <br>
+                        // Output: Nothing is logged, as the first condition is false.
+                    </code>
+                </div>
+            
+                <h3>3. Explain how the <code>||</code> operator short-circuits with an example.</h3>
+                <div class="code-example-html">
+                    <p>The <code>||</code> operator short-circuits when the first condition is <code>true</code>, as the entire expression is already <code>true</code>. For example:</p>
+                    <code>
+                        const userName = "Alice";<br>
+                        const displayName = userName || "Guest";<br>
+                        console.log(displayName); // Output: "Alice"
+                    </code>
+                </div>
+            
+                <h3>4. What will be the output of the following code?</h3>
+                <div class="code-example-html">
+                    <code>
+                        const isLoggedIn = false;<br>
+                        const user = isLoggedIn && "Welcome, User";<br>
+                        console.log(user);
+                    </code>
+                </div>
+                <div class="code-example-html">
+                    <p>Output:</p>
+                    <p><code>false</code>, because the first condition <code>isLoggedIn</code> is <code>false</code>, and the second part of the expression is not evaluated.</p>
+                </div>
+            
+                <h3>5. Write a short-circuiting expression using <code>||</code> to assign a default value to a variable if the user input is empty.</h3>
+                <div class="code-example-html">
+                    <code>
+                        const userInput = "";<br>
+                        const output = userInput || "Default Value";<br>
+                        console.log(output); // Output: "Default Value"
+                    </code>
+                </div>
+            
+                <p>
+                    <a href="./javascript-loops.html" class="neutral">
+                        Ready to jump to Javascript Loops?
+                    </a>
+                </p>
+            </div>
+            </div>
+    </main>
+
+    <div id="footer-container"></div>
+    </body>
+</html>

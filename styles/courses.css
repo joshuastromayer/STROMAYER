@@ -1,0 +1,896 @@
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  body {
+    /* This style below will be inherited */
+    font-family: Roboto, Arial;
+    margin: 0;
+    background-color: rgb(241, 247, 253);
+  }
+
+  body.video-sharing-platform {
+    padding-top: 80px;
+    padding-left: 96px;
+    padding-right: 24px;
+    background-color: rgb(244, 244, 244);
+  }
+
+  a {
+    color: #4fa3d8;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .header {
+    height: 55px;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+  
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(228, 228, 228);
+  }
+  
+  .left-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .hamburger-menu {
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  
+  .youtube-logo {
+    height: 20px;
+  }
+  
+  .middle-section {
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar {
+    flex: 1;
+    height: 36px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    width: 0;
+  }
+  
+  .search-bar::placeholder {
+    font-size: 16px;
+  }
+  
+  .search-button {
+    height: 40px;
+    width: 66px;
+    background-color: rgb(240, 240, 240);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    margin-left: -1px;
+    margin-right: 10px;
+  }
+  
+  .search-button,
+  .voice-search-button,
+  .upload-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .search-button .tooltip,
+  .voice-search-button .tooltip,
+  .upload-icon-container .tooltip {
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+  
+  .search-button:hover .tooltip,
+  .voice-search-button:hover .tooltip,
+  .upload-icon-container:hover .tooltip {
+    opacity: 1;
+  }
+  
+  .search-icon {
+    height: 25px;
+  }
+  
+  .voice-search-button {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(245, 245, 245);
+  }
+  
+  .voice-search-icon {
+    height: 24px;
+  }
+  
+  .right-section {
+    width: 180px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+  }
+  
+  .upload-icon {
+    height: 24px;
+  }
+  
+  .youtube-apps-icon {
+    height: 24px;
+  }
+  
+  .notifications-icon {
+    height: 24px;
+  }
+  
+  .notifications-icon-container {
+    position: relative;
+  }
+  
+  .notifications-count {
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    background-color: rgb(200, 0, 0);
+    color: white;
+    font-size: 11px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+  }
+  
+  .current-user-picture {
+    height: 32px;
+    border-radius: 16px;
+  }
+
+  .sidebar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    background-color: white;
+    width: 72px;
+    z-index: 200;
+    padding-top: 5px;
+  }
+  
+  .sidebar-link {
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .sidebar-link:hover {
+    background-color: rgb(235, 235, 235);
+  }
+  
+  .sidebar-link img {
+    height: 24px;
+    margin-bottom: 4px;
+  }
+  
+  .sidebar-link div {
+    font-size: 10px;
+  }
+
+  .thumbnail {
+    width: 100%;
+    border-radius: 7px;
+  }
+  
+  .video-title {
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+  }
+  
+  .profile-picture {
+    width: 36px;
+    border-radius: 50px;
+  }
+  
+  .thumbnail-row {
+    margin-bottom: 8px;
+    position: relative;
+  }
+  
+  .video-author,
+  .video-stats {
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+  }
+  
+  .video-author {
+    margin-bottom: 4px;
+  }
+  
+  .video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+  }
+  
+  @media (max-width: 750px) {
+    .video-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (min-width: 751px) and (max-width: 999px) {
+    .video-grid {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    .video-grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+  
+  .video-time {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px;
+    border-radius: 2px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+  }
+
+  body.course-setup-page-unique-001 {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.setup-container-unique-002 {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1.header-title-unique-003,
+h2.subheading-title-unique-004 {
+    color: #4a90e2;
+}
+
+h1.header-title-unique-003 {
+    text-align: center;
+}
+
+h2.subheading-title-unique-004 {
+    margin-top: 20px;
+}
+
+ul.list-items-unique-005 {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+li.list-item-single-unique-006 {
+    margin-bottom: 10px;
+}
+
+code.inline-code-unique-007 {
+    background: #f4f4f4;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: Consolas, monospace;
+}
+
+pre.code-block-unique-008 {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+a.link-styles-unique-009 {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+a.link-styles-unique-009:hover {
+    text-decoration: underline;
+}
+
+/* video-sharing course quick menu styling */
+
+body.course-page {
+    padding-top: 20px;
+    background-color: rgb(235, 244, 255);
+}
+
+.vsp-quick-menu-sk9 {
+    margin: 0;
+    padding: 0;
+}
+
+.vsp-quick-menu-container {
+    position: fixed;
+    background-color: rgb(235, 244, 255);
+    height: 100%;
+    width: 262px;
+    padding: 5px;
+    margin: 0;
+    margin-top: 117px;
+    top: 0;
+    overflow-y: auto;
+    padding-bottom: 117px;
+}
+
+#unique-quick-menu {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    width: 250px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#unique-quick-menu-active {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    width: 250px;
+    background-color: blue;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Chapter Buttons */
+.unique-chapter-button {
+    width: 100%;
+    text-align: left;
+    background-color: #007BFF;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.unique-chapter-button:hover {
+    background-color: #0056b3;
+}
+
+/* Completion Circle for Chapter */
+.unique-chapter-button .completion-circle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px !important;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: transparent;
+}
+
+.unique-chapter-button .completion-circle.completed {
+    background-color: green;
+    width: 20px !important;
+    min-width: 20px;
+    flex-shrink: 0;
+    display: inline-block;
+}
+
+/* Topic Links */
+.unique-topic-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    width: auto;
+}
+
+/* Subtopics Container */
+.unique-subtopics-container {
+    display: block; /* Shown by default */
+    padding-left: 20px; /* Indent subtopics */
+}
+
+/* Folder Styling */
+.unique-topic-folder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.unique-topic-folder:hover {
+    background-color: #e9ecef;
+}
+
+/* Folder Completion Circle */
+.folder-circle {
+    width: 15px;
+    height: 15px;
+    background-color: lightgrey;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* Circle styling for folders */
+.folder-circle {
+    width: 15px;
+    height: 15px;
+    background-color: lightgrey;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+/* Completion Button inside Topic */
+.completion-button {
+    background-color: transparent !important;
+    border: 2px solid lightgrey !important;
+}
+
+/* Default State */
+.completion-circle {
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    border-radius: 50%; /* Circle */
+    border: 2px solid gray;
+    background-color: transparent; /* Default no color */
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Completed State */
+.completion-circle.completed {
+    background-color: rgb(45, 211, 45); /* Green background */
+    border: none;
+    min-width: 20px !important;
+}
+
+/* Hamburger Menu Button */
+.hamburger-menu-button {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    background-color: rgb(235, 244, 255);
+    color: #007bff;
+    border: none;
+    padding: 4px 10px;
+    font-size: 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000; /* Ensure it stays above the quick menu */
+}
+
+/* Hide the quick menu by default */
+.hidden {
+    display: none;
+}
+
+/* Progress Bar Container */
+#topic-header-container {
+    width: 100%;
+    height: 45px;
+    background-color: rgb(235, 244, 255);
+    border-radius: 5px;
+    overflow: hidden;
+    position: fixed; /* Keeps it at the top of the page */
+    left: 0;
+    top: 72px;
+    z-index: 1000; /* Ensures it's above other elements */
+    display: flex;
+}
+
+/* Progress Bar (Fill) */
+#topic-progress-bar {
+    width: 100%; /* Default progress is 0 */
+    height: 10%;
+    display: flex;
+    border-radius: 10px;
+    margin: auto 90px;
+    background-color: lightgrey; /* Green fill */
+    transition: width 0.3s ease; /* Smooth filling animation */
+    z-index: 100;
+}
+
+#topic-progress-bar-fill {
+    width: 0%; /* Default progress is 0 */
+    height: 100%;
+    border-radius: 10px;
+    background-color: #007bff; 
+    transition: width 0.3s ease; /* Smooth filling animation */
+    z-index: 1000;
+}
+
+/* General Page Styling */
+main.html-introduction-template {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+    line-height: 1.6;
+    background-color: rgb(235, 244, 255);
+    color: #333;
+}
+
+/* Header Container */
+#unique-header-container-001 {
+    position: relative;
+    top: 40px;
+    left: 262px;
+    width: 100%;
+    height: 50px;
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    z-index: 1000;
+}
+
+/* Section Styling */
+.unique-section-container-001 {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #fff;
+    display: block; /* Ensure it's block-level */
+    margin-left: 272px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+#html-tags-elements-q1 {
+    width: 40px;
+    margin-left: 5px;
+}
+
+.unique-section-container-001 li {
+    margin-left: 20px;
+}
+
+.unique-preview-container {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #fff;
+    display: block; /* Ensure it's block-level */
+    margin-left: 272px;
+    margin-right: 160px;
+    border-radius: 10px;
+}
+
+.unique-preview-container li {
+    margin-left: 20px;
+}
+
+.unique-completion-button-001 {
+    background-color: gray;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#final-completion-button {
+    background-color: #28a745;
+}
+
+.unique-completion-button-001 a {
+    text-decoration: none;
+    color: white;
+}
+
+.unique-completion-button-001.complete {
+    background-color: green;
+    cursor: default;
+}
+
+.unique-topic-link .completion-button {
+    margin-left: 10px;
+    background-color: gray;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.unique-topic-link .completion-button.complete {
+    background-color: green;
+}
+
+/* First section visible by default */
+#unique-html-introduction-001 {
+    display: block;
+}
+
+/* Section Title */
+.unique-section-title-001 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Code Example Styling */
+.unique-code-example-html-001 {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: monospace;
+    overflow-x: auto;
+}
+
+/* Completion Button */
+.unique-completion-button-001 {
+    display: block;
+    margin: 15px 0;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.unique-completion-button-001:hover {
+    background-color: #0056b3;
+}
+
+/* exercise sections in courses*/
+
+.input-text-check-button {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.submit-answers {
+    background-color: #007bff;
+    height: 35.5px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    padding: 4px 10px;
+}
+
+.user-answer {
+    border: 2px solid lightgrey;
+    padding: 8px;
+    width: 80%;
+    display: block;
+}
+
+.user-answer::placeholder {
+    color: transparent;
+}
+
+input:focus {
+    border: green;
+}
+
+.user-answer.correct {
+    border-color: green;
+    background-color: #d4f8d4; /* Light green background for correct answers */
+}
+
+.user-answer.incorrect {
+    border-color: red;
+    background-color: #f8d4d4; /* Light red background for incorrect answers */
+}
+
+.feedback {
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.code-example-html {
+    height: auto;
+    overflow-wrap: break-word;
+    min-height: 10px;
+    max-width: 1050px;
+    background-color: rgb(237, 237, 237);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+#course-question {
+    display: flex;
+}
+
+.code-example-html input {
+    background-color: lightgrey;
+    border: none;
+}
+
+.code-example-html-w-image {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: auto;
+}
+
+.html-code-example-image {
+    width: 400px;
+    border-radius: 14px;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 9px;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.inline-code-container {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5; /* Light gray for the code block */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 16px;
+    color: #333;
+    width: fit-content;
+}
+
+.inline-code-input {
+    border: none;
+    border-bottom: 2px solid #007bff;
+    font-family: monospace;
+    font-size: 16px;
+    padding: 2px 5px;
+    margin: 0 5px;
+    outline: none;
+    color: #333;
+}
+
+.inline-code-input:focus {
+    border-bottom: 2px solid #0056b3; /* Slightly darker blue on focus */
+    background-color: #e6f7ff; /* Light blue for focus */
+}
+
+.inline-code-container code {
+    margin-right: 5px; /* Add spacing between code and input */
+}
+
+.inline-code-container:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.inline-code-input:focus {
+    transition: border-bottom-color 0.3s ease;
+}
+
+
+.project-task-container {
+    background-color: #29354d;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.project-task-container ul {
+    list-style-type: square; /* Different bullet points */
+    margin-left: 20px;
+}
+
+.mcq-options {
+    background-color: #29354d;
+    color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.mcq-options label {
+    margin-bottom: 30px;
+}
+
+#mcq-options-horizontal {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#mcq-options-horizontal label {
+    flex: 1;
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-weight: bold;
+    background-color: #303f5c;
+    border: 10px solid #303f5c;
+    margin: 0;
+}
+
+#mcq-options-horizontal label:hover {
+    background-color: #36476a;
+}

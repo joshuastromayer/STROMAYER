@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shapes - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="/styles/coding.css">
+</head>
+
+<div id="header-container"></div>
+<body class="html-page-klm123">
+    <link rel="stylesheet" href="../styles/coding.css">
+<main class="html-main-klm123">
+    <!-- Quick Start Plan -->
+    <div id="css-quick-menu"></div>
+
+    <!-- Detailed Plan -->
+    <div class="main-tutorial-content">
+        <div class="detailed-plan-klm123" id="css-shapes-tutorial">
+            <h2>CSS Shapes</h2>
+            <p>
+                CSS Shapes allow you to define geometric shapes for content wrapping around elements. This feature enables text and other inline content to flow naturally around custom shapes, creating visually engaging layouts.
+            </p>
+        
+            <h3>The shape-outside Property</h3>
+            <p>
+                The <code>shape-outside</code> property defines the shape around which text content wraps. It works with floated elements and accepts various values, including:
+            </p>
+            <ul>
+                <li><strong>circle()</strong>: Defines a circular shape.</li>
+                <li><strong>ellipse()</strong>: Defines an elliptical shape.</li>
+                <li><strong>polygon()</strong>: Defines a custom polygonal shape.</li>
+                <li><strong>inset()</strong>: Defines a rectangular shape with optional offsets and rounded corners.</li>
+            </ul>
+        
+            <h3>Using shape-outside with Shapes</h3>
+        
+            <h4>1. Circle</h4>
+            <p>
+                Wrap text around a circular shape:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    .circle {<br>
+                    &nbsp;&nbsp;width: 150px;<br>
+                    &nbsp;&nbsp;height: 150px;<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;float: left;<br>
+                    &nbsp;&nbsp;shape-outside: circle(50%);<br>
+                    &nbsp;&nbsp;clip-path: circle(50%);<br>
+                    &nbsp;&nbsp;margin: 20px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="circle"&gt;&lt;/div&gt;<br>
+                    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum venenatis tincidunt libero, sit amet convallis purus malesuada nec. Integer tincidunt luctus leo, non consequat urna malesuada in.&lt;/p&gt;
+                </code>
+            </div>
+        
+            <h4>2. Ellipse</h4>
+            <p>
+                Wrap text around an elliptical shape:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    .ellipse {<br>
+                    &nbsp;&nbsp;width: 200px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightcoral;<br>
+                    &nbsp;&nbsp;float: left;<br>
+                    &nbsp;&nbsp;shape-outside: ellipse(50% 50% at 50% 50%);<br>
+                    &nbsp;&nbsp;clip-path: ellipse(50% 50% at 50% 50%);<br>
+                    &nbsp;&nbsp;margin: 20px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="ellipse"&gt;&lt;/div&gt;<br>
+                    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Ut non urna tincidunt, auctor est non, venenatis lorem.&lt;/p&gt;
+                </code>
+            </div>
+        
+            <h4>3. Polygon</h4>
+            <p>
+                Wrap text around a polygonal shape:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    .polygon {<br>
+                    &nbsp;&nbsp;width: 200px;<br>
+                    &nbsp;&nbsp;height: 200px;<br>
+                    &nbsp;&nbsp;background-color: lightgreen;<br>
+                    &nbsp;&nbsp;float: left;<br>
+                    &nbsp;&nbsp;shape-outside: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);<br>
+                    &nbsp;&nbsp;clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);<br>
+                    &nbsp;&nbsp;margin: 20px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="polygon"&gt;&lt;/div&gt;<br>
+                    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel vestibulum risus, eget consequat justo. Curabitur id nunc sit amet ligula lacinia dictum.&lt;/p&gt;
+                </code>
+            </div>
+        
+            <h4>4. Inset</h4>
+            <p>
+                Wrap text around a rectangular shape with offsets:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    .inset {<br>
+                    &nbsp;&nbsp;width: 200px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightpink;<br>
+                    &nbsp;&nbsp;float: left;<br>
+                    &nbsp;&nbsp;shape-outside: inset(10px 20px 10px 20px round 10px);<br>
+                    &nbsp;&nbsp;clip-path: inset(10px 20px 10px 20px round 10px);<br>
+                    &nbsp;&nbsp;margin: 20px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="inset"&gt;&lt;/div&gt;<br>
+                    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Ut fringilla lacus in magna aliquet, vel dapibus nulla ultrices.&lt;/p&gt;
+                </code>
+            </div>
+        
+            <h3>Practical Applications</h3>
+            <p>
+                CSS Shapes can be used for:
+            </p>
+            <ul>
+                <li>Creating visually engaging layouts where text flows naturally around shapes.</li>
+                <li>Highlighting content by wrapping it around design elements.</li>
+                <li>Creating magazine-like layouts or unique web designs.</li>
+            </ul>
+        
+            <p>
+                <a href="./css-shapes.html#css-shapes-exercises" class="neutral">
+                    Ready to test your knowledge? Head to the exercises section!
+                </a>
+            </p>
+        </div>
+
+        <div class="detailed-plan-klm123" id="css-shapes-exercises">
+            <h2>CSS Shapes: Exercises</h2>
+        
+            <h3>1. Circle Shape</h3>
+            <p>
+                Create a circular shape with the following styles:
+                <ul>
+                    <li>Width: 150px</li>
+                    <li>Height: 150px</li>
+                    <li>Background color: lightblue</li>
+                    <li>Float: left</li>
+                    <li>Shape outside: circle(50%)</li>
+                </ul>
+                Add a paragraph of text to observe how the content wraps around the circle.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-1">Reveal Answer</button>
+            <div id="answer-1" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .circle {<br>
+                    &nbsp;&nbsp;width: 150px;<br>
+                    &nbsp;&nbsp;height: 150px;<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;float: left;<br>
+                    &nbsp;&nbsp;shape-outside: circle(50%);<br>
+                    &nbsp;&nbsp;clip-path: circle(50%);<br>
+                    &nbsp;&nbsp;margin: 20px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="circle"&gt;&lt;/div&gt;<br>
+                    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum venenatis tincidunt libero.&lt;/p&gt;
+                </code>
+            </div>
+        
+            <h3>2. Ellipse Shape</h3>
+            <p>
+                Create an elliptical shape with the following styles:
+                <ul>
+                    <li>Width: 200px</li>
+                    <li>Height: 100px</li>
+                    <li>Background color: lightcoral</li>
+                    <li>Float: left</li>
+                    <li>Shape outside: ellipse(50% 50% at 50% 50%)</li>
+                </ul>
+                Add a paragraph of text to observe how the content wraps around the ellipse.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-2">Reveal Answer</button>
+            <div id="answer-2" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .ellipse {<br>
+                    &nbsp;&nbsp;width: 200px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightcoral;<br>
+                    &nbsp;&nbsp;float: left;<br>
+                    &nbsp;&nbsp;shape-outside: ellipse(50% 50% at 50% 50%);<br>
+                    &nbsp;&nbsp;clip-path: ellipse(50% 50% at 50% 50%);<br>
+                    &nbsp;&nbsp;margin: 20px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="ellipse"&gt;&lt;/div&gt;<br>
+                    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Ut non urna tincidunt.&lt;/p&gt;
+                </code>
+            </div>
+        
+            <h3>3. Polygon Shape</h3>
+            <p>
+                Create a polygonal shape with the following styles:
+                <ul>
+                    <li>Width: 200px</li>
+                    <li>Height: 200px</li>
+                    <li>Background color: lightgreen</li>
+                    <li>Float: left</li>
+                    <li>Shape outside: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)</li>
+                </ul>
+                Add a paragraph of text to observe how the content wraps around the polygon.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-3">Reveal Answer</button>
+            <div id="answer-3" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .polygon {<br>
+                    &nbsp;&nbsp;width: 200px;<br>
+                    &nbsp;&nbsp;height: 200px;<br>
+                    &nbsp;&nbsp;background-color: lightgreen;<br>
+                    &nbsp;&nbsp;float: left;<br>
+                    &nbsp;&nbsp;shape-outside: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);<br>
+                    &nbsp;&nbsp;clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);<br>
+                    &nbsp;&nbsp;margin: 20px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="polygon"&gt;&lt;/div&gt;<br>
+                    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel vestibulum risus.&lt;/p&gt;
+                </code>
+            </div>
+        
+            <h3>4. Inset Shape</h3>
+            <p>
+                Create a rectangular shape with rounded corners and offsets using the following styles:
+                <ul>
+                    <li>Width: 200px</li>
+                    <li>Height: 100px</li>
+                    <li>Background color: lightpink</li>
+                    <li>Float: left</li>
+                    <li>Shape outside: inset(10px 20px 10px 20px round 10px)</li>
+                </ul>
+                Add a paragraph of text to observe how the content wraps around the inset shape.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-4">Reveal Answer</button>
+            <div id="answer-4" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .inset {<br>
+                    &nbsp;&nbsp;width: 200px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightpink;<br>
+                    &nbsp;&nbsp;float: left;<br>
+                    &nbsp;&nbsp;shape-outside: inset(10px 20px 10px 20px round 10px);<br>
+                    &nbsp;&nbsp;clip-path: inset(10px 20px 10px 20px round 10px);<br>
+                    &nbsp;&nbsp;margin: 20px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="inset"&gt;&lt;/div&gt;<br>
+                    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti.&lt;/p&gt;
+                </code>
+            </div>
+        
+            <div class="navigation-buttons">
+                <a href="./css-filters.html" class="navigation-button prev-button neutral">← CSS Filters</a>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+    <div id="footer-container"></div>
+    
+    <script src="/script.js?v=2"></script>
+</body>
+</html>

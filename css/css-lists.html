@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Lists - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="/styles/coding.css">
+</head>
+
+<div id="header-container"></div>
+<body class="html-page-klm123">
+    <link rel="stylesheet" href="../styles/coding.css">
+<main class="html-main-klm123">
+    <!-- Quick Start Plan -->
+    <div id="css-quick-menu"></div>
+
+    <!-- Detailed Plan -->
+    <div class="main-tutorial-content">
+        <div class="detailed-plan-klm123" id="css-lists-tutorial">
+            <h2>CSS Lists</h2>
+            <p>
+                Lists in HTML are a great way to organize content, and CSS allows you to style them in various ways to make them visually appealing and fit your design.
+            </p>
+        
+            <h3>Types of Lists</h3>
+            <p>
+                HTML offers three main types of lists:
+            </p>
+            <ul>
+                <li><strong>Ordered Lists (&lt;ol&gt;):</strong> Displays items with numbers or letters.</li>
+                <li><strong>Unordered Lists (&lt;ul&gt;):</strong> Displays items with bullets or other markers.</li>
+                <li><strong>Definition Lists (&lt;dl&gt;):</strong> Displays terms and their descriptions.</li>
+            </ul>
+        
+            <h3>Styling List Markers</h3>
+            <p>
+                You can use the <code>list-style-type</code> property to change the markers of lists:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    ul {<br>
+                    &nbsp;&nbsp;list-style-type: square;<br>
+                    }<br>
+                    ol {<br>
+                    &nbsp;&nbsp;list-style-type: upper-roman;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;ul&gt;<br>
+                    &nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;<br>
+                    &lt;/ul&gt;<br>
+                    &lt;ol&gt;<br>
+                    &nbsp;&nbsp;&lt;li&gt;First&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&lt;li&gt;Second&lt;/li&gt;<br>
+                    &lt;/ol&gt;
+                </code>
+            </div>
+        
+            <h3>Removing List Markers</h3>
+            <p>
+                To remove the default markers, use <code>list-style-type: none;</code>:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    ul {<br>
+                    &nbsp;&nbsp;list-style-type: none;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;ul&gt;<br>
+                    &nbsp;&nbsp;&lt;li&gt;No markers here!&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&lt;li&gt;Just plain text&lt;/li&gt;<br>
+                    &lt;/ul&gt;
+                </code>
+            </div>
+        
+            <h3>Custom List Markers</h3>
+            <p>
+                You can use images or custom markers with the <code>list-style-image</code> property:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    ul {<br>
+                    &nbsp;&nbsp;list-style-image: url('marker.png');<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;ul&gt;<br>
+                    &nbsp;&nbsp;&lt;li&gt;Custom marker 1&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&lt;li&gt;Custom marker 2&lt;/li&gt;<br>
+                    &lt;/ul&gt;
+                </code>
+            </div>
+        
+            <h3>Nested Lists</h3>
+            <p>
+                Lists can be nested inside each other, and you can style each level differently using CSS selectors:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    ul ul {<br>
+                    &nbsp;&nbsp;list-style-type: circle;<br>
+                    }<br>
+                    ul ul ul {<br>
+                    &nbsp;&nbsp;list-style-type: square;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;ul&gt;<br>
+                    &nbsp;&nbsp;&lt;li&gt;Level 1&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&lt;ul&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Level 2&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Level 3&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
+                    &nbsp;&nbsp;&lt;/ul&gt;<br>
+                    &lt;/ul&gt;
+                </code>
+            </div>
+        
+            <h3>Controlling List Position</h3>
+            <p>
+                The <code>list-style-position</code> property controls whether the marker is inside or outside the list item:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    ul {<br>
+                    &nbsp;&nbsp;list-style-position: inside;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;ul&gt;<br>
+                    &nbsp;&nbsp;&lt;li&gt;Marker is inside the text.&lt;/li&gt;<br>
+                    &lt;/ul&gt;
+                </code>
+            </div>
+        
+            <p>
+                <a href="./css-lists.html#css-lists-exercises" class="neutral">
+                    Ready to test your knowledge? Head to the exercises section!
+                </a>
+            </p>
+        </div>
+
+        <div class="detailed-plan-klm123" id="css-lists-exercises">
+            <h2>CSS Lists: Exercises</h2>
+        
+            <h3>1. Change List Markers</h3>
+            <p>
+                Create an unordered list (`&lt;ul&gt;`) with three items. Change the list markers to squares using CSS.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-1">Reveal Answer</button>
+            <div id="answer-1" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    ul {<br>
+                    &nbsp;&nbsp;list-style-type: square;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;ul&gt;<br>
+                    &nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&lt;li&gt;Item 3&lt;/li&gt;<br>
+                    &lt;/ul&gt;
+                </code>
+            </div>
+        
+            <h3>2. Remove List Markers</h3>
+            <p>
+                Create an ordered list (`&lt;ol&gt;`) with three items. Remove the default list markers using CSS.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-2">Reveal Answer</button>
+            <div id="answer-2" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    ol {<br>
+                    &nbsp;&nbsp;list-style-type: none;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;ol&gt;<br>
+                    &nbsp;&nbsp;&lt;li&gt;First&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&lt;li&gt;Second&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&lt;li&gt;Third&lt;/li&gt;<br>
+                    &lt;/ol&gt;
+                </code>
+            </div>
+        
+            <h3>3. Use Custom Markers</h3>
+            <p>
+                Create an unordered list (`&lt;ul&gt;`) with three items. Use a custom image as the list marker.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-3">Reveal Answer</button>
+            <div id="answer-3" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    ul {<br>
+                    &nbsp;&nbsp;list-style-image: url('marker.png');<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;ul&gt;<br>
+                    &nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&lt;li&gt;Item 3&lt;/li&gt;<br>
+                    &lt;/ul&gt;
+                </code>
+            </div>
+        
+            <h3>4. Style Nested Lists</h3>
+            <p>
+                Create a nested list (`&lt;ul&gt;` inside another `&lt;ul&gt;`). Use circles as the marker for the inner list and squares for the outer list.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-4">Reveal Answer</button>
+            <div id="answer-4" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    ul {<br>
+                    &nbsp;&nbsp;list-style-type: square;<br>
+                    }<br>
+                    ul ul {<br>
+                    &nbsp;&nbsp;list-style-type: circle;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;ul&gt;<br>
+                    &nbsp;&nbsp;&lt;li&gt;Outer Item 1&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&lt;li&gt;Outer Item 2<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Inner Item 1&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Inner Item 2&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
+                    &nbsp;&nbsp;&lt;/li&gt;<br>
+                    &lt;/ul&gt;
+                </code>
+            </div>
+        
+            <h3>5. List Markers Inside and Outside</h3>
+            <p>
+                Create an unordered list with three items. Place the list markers inside the text for one list and outside for another.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-5">Reveal Answer</button>
+            <div id="answer-5" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    ul.inside {<br>
+                    &nbsp;&nbsp;list-style-position: inside;<br>
+                    }<br>
+                    ul.outside {<br>
+                    &nbsp;&nbsp;list-style-position: outside;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;ul class="inside"&gt;<br>
+                    &nbsp;&nbsp;&lt;li&gt;Inside marker 1&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&lt;li&gt;Inside marker 2&lt;/li&gt;<br>
+                    &lt;/ul&gt;<br>
+                    &lt;ul class="outside"&gt;<br>
+                    &nbsp;&nbsp;&lt;li&gt;Outside marker 1&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&lt;li&gt;Outside marker 2&lt;/li&gt;<br>
+                    &lt;/ul&gt;
+                </code>
+            </div>
+        
+            <div class="navigation-buttons">
+                <a href="./css-links.html" class="navigation-button prev-button neutral">← CSS Links</a>
+                <a href="./css-position.html" class="navigation-button next-button neutral">CSS Position →</a>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+    <div id="footer-container"></div>
+    
+    <script src="/script.js?v=2"></script>
+</body>
+</html>

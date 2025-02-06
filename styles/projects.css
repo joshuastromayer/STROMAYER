@@ -1,0 +1,530 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.google-advert {
+    width: 100%;
+    height: 227px;
+    margin-top: 74px;
+    display: flex;
+    align-items: center;
+}
+  
+.google-advert-box {
+    height: 227px;
+    width: 800px;
+    background-color: lightgrey;
+    margin: 0 auto;
+}
+
+.main-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.center-content {
+    margin-top: 30px;
+    width: 75vw;
+    padding-left: 10vw;
+}
+
+.section-divider {
+    width: 100%;
+    height: 1px;
+    background-color: black; /* Black line */
+    margin: 2rem 0; /* Space above and below the line */
+}
+
+.project {
+    display: flex;
+    flex: column;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#b4 {
+    margin-bottom: 100px;
+}
+
+.projects-wsdfsgsfd {
+    width: 80%;
+}
+
+.project-info {
+    width: 60%;  /* Adjust this to fit your desired ratio */
+    padding: 20px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-info h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.project-info h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.project-info p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.project-info a {
+    font-size: 1rem;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.project-info a:hover {
+    color: #0056b3;
+}
+
+.project-preview-container iframe {
+    width: 1200px;
+    height: 850px;
+    zoom: 0.4;
+}
+
+.right-column {
+    width: 25vw;
+    margin-top:50px ;
+}
+
+/* More Projects Section */
+/* More Projects Section */
+.more-projects {
+    width: 306px;
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.more-projects h2 {
+    margin-bottom: 20px;
+}
+
+/* Container for Today's Top Project */
+.top-project-card {
+    width: 400px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    height: 457px;
+    padding: 0;
+}
+
+/* Preview section */
+.top-project-preview {
+    width: 400px;
+    background-color: #f9f9f9;
+}
+
+.top-project-preview iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* Information section */
+.top-project-info {
+    padding: 1rem;
+    display: block;
+    height: auto;
+}
+
+.project-title {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.project-author {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.project-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.project-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.project-tags {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.open-project-in-new-tab {
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.tag {
+    background-color: #f0f0f0;
+    color: #555;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+}
+
+.view-full-button {
+    margin-left: 40px; /* Pushes the button to the far right */
+    background-color: #ff9900;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.view-full-button:hover {
+    background-color: #e58900;
+}
+
+.iframe-container {
+    width: 100%; /* Set the width of your container */
+    height: 310px; /* Set the height of your container */
+    overflow: hidden;
+    position: relative;
+}
+
+.iframe-container iframe {
+    width: 100%; /* This will make the iframe take up the full width of the container */
+    height: 100%; /* This will make the iframe take up the full height of the container */
+    position: absolute;
+    top: 0;
+    left: 0;
+    zoom: 0.4;
+}
+
+
+#top-projects-h2 {
+    font-size: 24px;
+}
+
+.projects-wsdfsgsfd {
+    margin: 20px 80px;
+}
+
+.tag {
+    background-color: #f0f0f0;
+    color: #555;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+}
+
+/* Button styling for opening the project in a new tab */
+.view-full-button {
+    display: inline-block;
+    background-color: #ff9900;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.view-full-button:hover {
+    background-color: #e58900;
+}
+.tab-button {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.tab-button:hover {
+    background-color: #ddd;
+}
+
+.tab-button.active {
+    background-color: #7a72e8;
+    color: white;
+}
+
+.code-container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.code-container h2 {
+    margin-bottom: 20px;
+}
+
+.code-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.code-tab {
+    display: none;
+}
+
+.code-tab.active-tab {
+    display: block;
+}
+
+pre {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: monospace;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.submit-project-section {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+.subscibe-button-vw-width h3 {
+    margin-bottom: 15px;
+}
+  
+  #submitProjectBtn {
+    padding: 10px 20px;
+    margin: 20px 0;
+    font-size: 1.2rem;
+    background-color: #7a72e8;
+    color: white; /* Blue color for text */
+    border: 2px solid white; /* Blue border to match */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+  
+  #submitProjectBtn:hover {
+    background-color: #9f8df7;
+  }
+  
+  .dropdown-form {
+    display: none; /* Hidden by default */
+    margin-top: 20px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .dropdown-form p {
+    margin-top: 10px;
+  }
+  
+  #submitProjectBtn.active + .dropdown-form {
+    display: block; /* Shows the form when button is clicked */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="file"] {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+  
+.file-input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.file-input {
+    text-align: center;
+    padding: 10px;
+}
+
+button[type="submit"] {
+    background: #333; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+  
+button[type="submit"]:hover {
+    background: #444; 
+}
+
+.subscibe-button-vw-width {
+    width: 1076px;
+    margin: 20px auto;
+}
+
+button[type="submit-subscription"] {
+    background: #333; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+  
+button[type="submit-subscription"]:hover {
+    background: #444; 
+}
+
+/* Section Container */
+.submit-your-own-projects {
+    text-align: center;
+    margin: 30px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.submit-your-own-projects h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.submit-your-own-projects p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.submit-project-form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+.github-guide-link {
+    display: inline-block;
+    font-size: 14px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.github-guide-link:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* Submit Button */
+.submit-btn {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background: #555;
+    transform: scale(1.01);
+}
+
+
+.right-section {
+    width: 250px;
+}
+
+.ad-placeholder {
+    width: 100%; 
+    height: 650px; 
+    background-color: #f0f0f0;
+    border: 1px dashed #ccc;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    margin: 650px 0;
+}
+
+#a6 {
+    margin-top: 600px;
+}

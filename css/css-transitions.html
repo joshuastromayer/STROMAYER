@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="/styles/coding.css">
+</head>
+
+<div id="header-container"></div>
+<body class="html-page-klm123">
+    <link rel="stylesheet" href="../styles/coding.css">
+<main class="html-main-klm123">
+    <!-- Quick Start Plan -->
+    <div id="css-quick-menu"></div>
+
+    <!-- Detailed Plan -->
+    <div class="main-tutorial-content">
+        <div class="detailed-plan-klm123" id="css-transitions-tutorial">
+            <h2>CSS Transitions</h2>
+            <p>
+                CSS Transitions allow you to create smooth animations when an element changes from one state to another. You can transition properties like colors, sizes, and positions over a specified duration, making your designs more interactive and visually appealing.
+            </p>
+        
+            <h3>Basic Syntax</h3>
+            <p>
+                A CSS Transition is defined using the <code>transition</code> property. The basic syntax includes:
+            </p>
+            <ul>
+                <li><strong>Property:</strong> The CSS property you want to animate (e.g., <code>background-color</code>).</li>
+                <li><strong>Duration:</strong> The time the transition takes (e.g., <code>0.5s</code>).</li>
+                <li><strong>Timing Function:</strong> The speed curve of the animation (e.g., <code>ease</code>, <code>linear</code>, <code>ease-in</code>, etc.).</li>
+                <li><strong>Delay:</strong> The time to wait before starting the transition (optional).</li>
+            </ul>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 100px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;transition: background-color 0.5s ease;<br>
+                    }<br>
+                    div:hover {<br>
+                    &nbsp;&nbsp;background-color: lightcoral;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+            <p>
+                In this example, the background color of the box smoothly changes when you hover over it.
+            </p>
+        
+            <h3>Transitioning Multiple Properties</h3>
+            <p>
+                You can transition multiple properties by separating them with commas:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 100px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;border-radius: 0;<br>
+                    &nbsp;&nbsp;transition: background-color 0.5s ease, border-radius 0.5s ease;<br>
+                    }<br>
+                    div:hover {<br>
+                    &nbsp;&nbsp;background-color: lightgreen;<br>
+                    &nbsp;&nbsp;border-radius: 50%;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>Using Shorthand</h3>
+            <p>
+                The <code>transition</code> property is a shorthand for the individual transition properties:
+            </p>
+            <ul>
+                <li><code>transition-property</code>: Specifies the property to animate.</li>
+                <li><code>transition-duration</code>: Specifies the duration of the animation.</li>
+                <li><code>transition-timing-function</code>: Specifies the speed curve.</li>
+                <li><code>transition-delay</code>: Specifies the delay before the transition starts.</li>
+            </ul>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 100px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightyellow;<br>
+                    &nbsp;&nbsp;transition-property: background-color;<br>
+                    &nbsp;&nbsp;transition-duration: 0.3s;<br>
+                    &nbsp;&nbsp;transition-timing-function: ease-in;<br>
+                    &nbsp;&nbsp;transition-delay: 0.2s;<br>
+                    }<br>
+                    div:hover {<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>Timing Functions</h3>
+            <p>
+                The <code>transition-timing-function</code> determines how the speed of the animation changes over time. Common values include:
+            </p>
+            <ul>
+                <li><strong>linear:</strong> The animation progresses at the same speed throughout.</li>
+                <li><strong>ease:</strong> The animation starts slow, accelerates, and then slows down.</li>
+                <li><strong>ease-in:</strong> The animation starts slow and speeds up.</li>
+                <li><strong>ease-out:</strong> The animation starts fast and slows down.</li>
+                <li><strong>ease-in-out:</strong> The animation starts slow, speeds up, and then slows down.</li>
+            </ul>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 100px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightcoral;<br>
+                    &nbsp;&nbsp;transition: background-color 1s ease-in-out;<br>
+                    }<br>
+                    div:hover {<br>
+                    &nbsp;&nbsp;background-color: lightgreen;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>Combining Transitions with Other Effects</h3>
+            <p>
+                CSS transitions can be combined with transformations like scaling or rotating to create more dynamic effects:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 100px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;transition: transform 0.5s ease, background-color 0.5s ease;<br>
+                    }<br>
+                    div:hover {<br>
+                    &nbsp;&nbsp;background-color: lightpink;<br>
+                    &nbsp;&nbsp;transform: scale(1.5);<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <p>
+                <a href="./css-transitions.html#css-transitions-exercises" class="neutral">
+                    Ready to test your knowledge? Head to the exercises section!
+                </a>
+            </p>
+        </div>
+
+        <div class="detailed-plan-klm123" id="css-transitions-exercises">
+            <h2>CSS Transitions: Exercises</h2>
+        
+            <h3>1. Basic Transition</h3>
+            <p>
+                Create a box with the following styles:
+                <ul>
+                    <li>Width: 150px</li>
+                    <li>Height: 150px</li>
+                    <li>Background color: lightblue</li>
+                    </ul>
+                Add a transition to change the background color to lightcoral when you hover over it. Make the transition last 0.5 seconds.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-1">Reveal Answer</button>
+            <div id="answer-1" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 150px;<br>
+                    &nbsp;&nbsp;height: 150px;<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;transition: background-color 0.5s;<br>
+                    }<br>
+                    div:hover {<br>
+                    &nbsp;&nbsp;background-color: lightcoral;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>2. Transitioning Multiple Properties</h3>
+            <p>
+                Create a circular element with a 100px width and height. Add transitions to:
+                <ul>
+                    <li>Change the background color to lightgreen when hovered.</li>
+                    <li>Change the size to 150px by 150px when hovered.</li>
+                    </ul>
+                Set the transition duration for both properties to 0.7 seconds.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-2">Reveal Answer</button>
+            <div id="answer-2" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 100px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;border-radius: 50%;<br>
+                    &nbsp;&nbsp;transition: background-color 0.7s, width 0.7s, height 0.7s;<br>
+                    }<br>
+                    div:hover {<br>
+                    &nbsp;&nbsp;background-color: lightgreen;<br>
+                    &nbsp;&nbsp;width: 150px;<br>
+                    &nbsp;&nbsp;height: 150px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>3. Timing Functions</h3>
+            <p>
+                Create a box that smoothly changes its background color from yellow to pink over 2 seconds when hovered. Use the <code>ease-in-out</code> timing function to make the animation more dynamic.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-3">Reveal Answer</button>
+            <div id="answer-3" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 200px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: yellow;<br>
+                    &nbsp;&nbsp;transition: background-color 2s ease-in-out;<br>
+                    }<br>
+                    div:hover {<br>
+                    &nbsp;&nbsp;background-color: pink;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>4. Combining Transformations</h3>
+            <p>
+                Create a square box that:
+                <ul>
+                    <li>Scales to 1.5 times its size when hovered.</li>
+                    <li>Rotates by 45 degrees during the same hover.</li>
+                    </ul>
+                Use a transition duration of 1 second for both effects.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-4">Reveal Answer</button>
+            <div id="answer-4" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 100px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightcoral;<br>
+                    &nbsp;&nbsp;transition: transform 1s;<br>
+                    }<br>
+                    div:hover {<br>
+                    &nbsp;&nbsp;transform: scale(1.5) rotate(45deg);<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>5. Transition Delay</h3>
+            <p>
+                Create a button that changes its background color to green when hovered. Add a 0.5-second delay before the transition begins, and make the transition last 1 second.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-5">Reveal Answer</button>
+            <div id="answer-5" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    button {<br>
+                    &nbsp;&nbsp;padding: 10px 20px;<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;border: none;<br>
+                    &nbsp;&nbsp;transition: background-color 1s ease 0.5s;<br>
+                    }<br>
+                    button:hover {<br>
+                    &nbsp;&nbsp;background-color: green;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;button&gt;Hover Me&lt;/button&gt;
+                </code>
+            </div>
+        
+            <div class="navigation-buttons">
+                <a href="./css-responsive.html" class="navigation-button prev-button neutral">← CSS Responsive</a>
+                <a href="./css-animations.html" class="navigation-button next-button neutral">CSS Animations →</a>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+    <div id="footer-container"></div>
+    
+    <script src="/script.js?v=2"></script>
+</body>
+</html>

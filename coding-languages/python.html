@@ -1,0 +1,3451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Python with CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="/styles/coding.css">
+    <style>
+        #header-container {
+          height: 72px; /* Match header height */
+          background-color: white; /* Same as header's background */
+          width: 100%; /* Full width */
+          position: sticky;
+          top: 0;
+          z-index: 1000;
+        }
+      </style>
+</head>
+<div id="header-container"></div>
+<body class="html-page-klm123">
+    <link rel="stylesheet" href="/styles/coding.css">
+        <div class="html-header-klm123">
+        <h1>Master Python: Build Versatile Solutions</h1>
+        <p>Your guide to mastering Python for web development, data analysis, and beyond.</p>
+        </div>
+
+    <main class="html-main-klm123">
+        <section class="quick-start-klm123">
+            <ol class="quick-plan-list-klm123">
+              <h2>Learn Python</h2>
+              <div class="chapter">
+                <button class="toggle-button" onclick="toggleChapter('python-introduction')">Introduction</button>
+                <ul id="python-introduction" class="collapsible-content">
+                    <li>
+                        <div class="menu-item">
+                            <a href="#python-what-is-python-tutorial" class="menu-link neutral">What is Python?</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item">
+                            <a href="#python-installation-tutorial" class="menu-link neutral">Installing Python and Setting Up</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item">
+                            <a href="#python-running-programs-tutorial" class="menu-link neutral">Running Python Programs</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item">
+                            <a href="#python-syntax-basics-tutorial" class="menu-link neutral">Python Syntax Basics</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item">
+                            <a href="#python-first-script-tutorial" class="menu-link neutral">Writing Your First Python Script</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+              <div class="chapter">
+                <button class="toggle-button" onclick="toggleChapter('python-variables-data-types')">Variables and Data Types</button>
+                <ul id="python-variables-data-types" class="collapsible-content">
+                    <li>
+                        <div class="menu-item">
+                            <a href="#python-variables-tutorial" class="menu-link neutral">Variables in Python</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item">
+                            <a href="#python-data-types-tutorial" class="menu-link neutral">Python Data Types</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item">
+                            <a href="#python-mutable-immutable-tutorial" class="menu-link neutral">Mutable vs Immutable Types</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item">
+                            <a href="#python-constants-naming-conventions-tutorial" class="menu-link neutral">Naming Conventions</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item">
+                            <a href="#python-dynamic-typing-tutorial" class="menu-link neutral">Dynamic Typing in Python</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="chapter">
+                <button class="toggle-button" onclick="toggleChapter('operators-section')">Operators</button>
+                <ul id="operators-section" class="collapsible-content">
+                    <li>
+                        <div class="menu-item">
+                            <a href="#python-arithmetic-operators-tutorial" class="menu-link neutral">Arithmetic Operators</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item">
+                            <a href="#python-comparison-operators-tutorial" class="menu-link neutral">Comparison Operators</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item">
+                            <a href="#python-logical-operators-tutorial" class="menu-link neutral">Logical Operators</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item">
+                            <a href="#python-assignment-operators-tutorial" class="menu-link neutral">Assignment Operators</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item">
+                            <a href="#python-membership-operators-tutorial" class="menu-link neutral">Membership Operators</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item">
+                            <a href="#python-identity-operators-tutorial" class="menu-link neutral">Identity Operators</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item">
+                            <a href="#python-bitwise-operators-tutorial" class="menu-link neutral">Bitwise Operators</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="chapter">
+                <button class="toggle-button" onclick="toggleChapter('control-flow-section')">Control Flow</button>
+                <ul id="control-flow-section" class="collapsible-content">
+                    <li>
+                        <div class="menu-item">
+                            <a href="#python-control-flow-tutorial" class="menu-link neutral">If, Elif, and Else</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item">
+                            <a href="#python-nested-conditions-tutorial" class="menu-link neutral">Nested Conditions</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item">
+                            <a href="#python-pass-statement-tutorial" class="menu-link neutral">The Pass Statement</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item">
+                            <a href="#python-ternary-operators-tutorial" class="menu-link neutral">Ternary Operators</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="chapter">
+                <button class="toggle-button" onclick="toggleChapter('loops-tutorials')">Loops</button>
+                <ul id="loops-tutorials" class="collapsible-content">
+                    <li>
+                        <div class="menu-item">
+                            <a href="#python-for-loops-tutorial" class="menu-link neutral">For Loops</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item">
+                            <a href="#python-while-loops-tutorial" class="menu-link neutral">While Loops</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item">
+                            <a href="#python-break-statement-tutorial" class="menu-link neutral">The Break Statement</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item">
+                            <a href="#python-continue-statement-tutorial" class="menu-link neutral">The Continue Statement</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item">
+                            <a href="#python-else-clause-loops-tutorial" class="menu-link neutral">The Else Clause in Loops</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item">
+                            <a href="#python-nested-loops-tutorial" class="menu-link neutral">Nested Loops</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+              <!-- Exercises -->
+                  <h2>Practice</h2>
+                  <div class="chapter">
+                    <button class="toggle-button" onclick="toggleChapter('python-introduction-exercises')">Introduction</button>
+                    <ul id="python-introduction-exercises" class="collapsible-content">
+                        <li>
+                            <div class="menu-item">
+                                <a href="#python-syntax-basics-exercise" class="menu-link neutral">Python Syntax Basics</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="chapter">
+                    <button class="toggle-button" onclick="toggleChapter('python-variables-data-types-exercises')">Variables and Data Types</button>
+                    <ul id="python-variables-data-types-exercises" class="collapsible-content">
+                        <li>
+                            <div class="menu-item">
+                                <a href="#python-variables-exercise" class="menu-link neutral">Variables in Python</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-item">
+                                <a href="#python-data-types-exercise" class="menu-link neutral">Python Data Types</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-item">
+                                <a href="#python-mutable-immutable-exercise" class="menu-link neutral">Mutable vs Immutable Types</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="chapter">
+                    <button class="toggle-button" onclick="toggleChapter('control-flow-exercises')">Control Flow</button>
+                    <ul id="control-flow-exercises" class="collapsible-content">
+                        <li>
+                            <div class="menu-item">
+                                <a href="#python-control-flow-exercise" class="menu-link neutral">If, Elif, and Else</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-item">
+                                <a href="#python-nested-conditions-exercise" class="menu-link neutral">Nested Conditions</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-item">
+                                <a href="#python-pass-statement-exercise" class="menu-link neutral">The Pass Statement</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-item">
+                                <a href="#python-ternary-operators-exercise" class="menu-link neutral">Ternary Operators</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="chapter">
+                    <button class="toggle-button" onclick="toggleChapter('loops-exercises')">Loops</button>
+                    <ul id="loops-exercises" class="collapsible-content">
+                        <li>
+                            <div class="menu-item">
+                                <a href="#python-for-loops-exercise" class="menu-link neutral">For Loops</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-item">
+                                <a href="#python-while-loops-exercise" class="menu-link neutral">While Loops</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-item">
+                                <a href="#python-break-statement-exercise" class="menu-link neutral">The Break Statement</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-item">
+                                <a href="#python-continue-statement-exercise" class="menu-link neutral">The Continue Statement</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-item">
+                                <a href="#python-else-clause-loops-exercise" class="menu-link neutral">The Else Clause in Loops</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-item">
+                                <a href="#python-nested-loops-exercise" class="menu-link neutral">Nested Loops</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                </ol>
+              </section>
+
+        <!-- Detailed Plan -->
+        <div class="main-tutorial-content">
+            <!-- Tutorials -->
+            <div class="detailed-plan-klm123" id="python-what-is-python-tutorial">
+                <section>
+                  <h2>What is Python?</h2>
+                  <p>
+                    Python is a popular, high-level, and versatile programming language known for its simplicity and readability. It is widely used for web development, data analysis, machine learning, automation, and much more. 
+                  </p>
+                  <p>
+                    Created by <strong>Guido van Rossum</strong> in 1991, Python is designed to emphasize code readability with its clean and straightforward syntax, making it a perfect language for beginners and professionals alike.
+                  </p>
+              
+                  <h3>Key Features of Python</h3>
+                  <ul>
+                    <li><strong>Easy to Learn and Use:</strong> Python’s simple syntax makes it ideal for beginners.</li>
+                    <li><strong>Interpreted Language:</strong> Python executes code line by line, allowing you to test small chunks of code easily.</li>
+                    <li><strong>Versatility:</strong> Python supports various programming paradigms, including procedural, object-oriented, and functional programming.</li>
+                    <li><strong>Extensive Libraries:</strong> Python offers a vast range of libraries and frameworks for everything from web development to data science.</li>
+                    <li><strong>Community Support:</strong> Python has a large and active community, so you’ll never feel stuck.</li>
+                  </ul>
+              
+                  <h3>What Can You Do with Python?</h3>
+                  <p>
+                    Python can be used for almost anything. Here are just a few examples:
+                  </p>
+                  <ul>
+                    <li><strong>Web Development:</strong> Use frameworks like Django and Flask to build websites and web applications.</li>
+                    <li><strong>Data Analysis and Visualization:</strong> Analyze data using libraries like Pandas and NumPy and create visualizations with Matplotlib and Seaborn.</li>
+                    <li><strong>Machine Learning:</strong> Use libraries like TensorFlow and Scikit-learn to build predictive models.</li>
+                    <li><strong>Automation:</strong> Automate repetitive tasks with Python scripts.</li>
+                    <li><strong>Game Development:</strong> Create games with libraries like Pygame.</li>
+                  </ul>
+              
+                  <h3>Why Should You Learn Python?</h3>
+                  <ul>
+                    <li><strong>Beginner-Friendly:</strong> Python’s syntax is straightforward, allowing new programmers to focus on logic rather than syntax errors.</li>
+                    <li><strong>High Demand:</strong> Python is one of the most in-demand programming languages in the tech industry.</li>
+                    <li><strong>Flexibility:</strong> You can use Python for web development, artificial intelligence, scripting, and more.</li>
+                    <li><strong>Job Opportunities:</strong> Python opens up a wide range of career opportunities across multiple industries.</li>
+                  </ul>
+              
+                  <h3>Python Syntax Example</h3>
+                  <p>
+                    Here’s a simple Python program to print "Hello, World!" to the screen:
+                  </p>
+                  <div class="code-example-html">
+                    <code>
+                      print("Hello, World!") <br>
+                    </code>
+                  </div>
+                  <p>
+                    That’s it! Just one line of code to get started with Python.
+                  </p>
+              
+                  <h3>Next Steps</h3>
+                  <p>
+                    Now that you know what Python is and what it can do, let’s move on to the next topic: 
+                    <a href="#python-installation-tutorial">Installing Python and Setting Up an Environment</a>.
+                  </p>
+                </section>
+            </div>
+            <div class="detailed-plan-klm123" id="python-installation-tutorial">
+            <section>
+              <h2>Installing Python and Setting Up an Environment</h2>
+              <p>
+                To start programming in Python, you’ll first need to install Python on your system and set up a proper environment. This guide will walk you through the installation process step-by-step for all major operating systems.
+              </p>
+          
+              <h3>Step 1: Check if Python is Already Installed</h3>
+              <p>
+                Python might already be installed on your system. To check, open a terminal or command prompt and type:
+              </p>
+              <div class="code-example-html">
+                <code>
+                  python --version <br>
+                  python3 --version
+                </code>
+              </div>
+              <p>
+                If Python is installed, you’ll see a version number (e.g., <strong>Python 3.10.7</strong>). If not, follow the steps below to install it.
+              </p>
+          
+              <h3>Step 2: Download Python</h3>
+              <p>
+                Visit the official Python website: <a href="https://www.python.org" target="_blank">https://www.python.org</a>. Navigate to the Downloads section, and choose the installer for your operating system:
+              </p>
+              <ul>
+                <li><strong>Windows:</strong> Download the executable installer.</li>
+                <li><strong>macOS:</strong> Download the .pkg file.</li>
+                <li><strong>Linux:</strong> Use your distribution’s package manager (e.g., <code>apt</code>, <code>dnf</code>, or <code>yum</code>).</li>
+              </ul>
+          
+              <h3>Step 3: Install Python</h3>
+              <h4>For Windows:</h4>
+              <ol>
+                <li>Run the downloaded installer.</li>
+                <li><strong>Important:</strong> Check the box labeled <strong>Add Python to PATH</strong>.</li>
+                <li>Click Install Now and follow the instructions.</li>
+              </ol>
+          
+              <h4>For macOS:</h4>
+              <ol>
+                <li>Run the downloaded .pkg file.</li>
+                <li>Follow the installation instructions.</li>
+              </ol>
+          
+              <h4>For Linux:</h4>
+              <p>
+                Open a terminal and run the following commands (for Ubuntu/Debian-based distributions):
+              </p>
+              <div class="code-example-html">
+                <code>
+                  sudo apt update <br>
+                  sudo apt install python3
+                </code>
+              </div>
+          
+              <h3>Step 4: Verify the Installation</h3>
+              <p>
+                After installation, open a terminal or command prompt and type:
+              </p>
+              <div class="code-example-html">
+                <code>
+                  python --version <br>
+                  python3 --version
+                </code>
+              </div>
+              <p>
+                If Python is installed successfully, you’ll see the Python version number displayed.
+              </p>
+          
+              <h3>Step 5: Install a Code Editor (Optional)</h3>
+              <p>
+                While you can write Python code in any text editor, it’s recommended to use a dedicated code editor or IDE (Integrated Development Environment) for a better experience. Here are some popular options:
+              </p>
+              <ul>
+                <li><strong>VS Code:</strong> A lightweight, feature-rich code editor. (<a href="https://code.visualstudio.com/" target="_blank">Download VS Code</a>)</li>
+                <li><strong>PyCharm:</strong> An IDE specifically designed for Python development. (<a href="https://www.jetbrains.com/pycharm/" target="_blank">Download PyCharm</a>)</li>
+                <li><strong>Jupyter Notebook:</strong> Excellent for data science and exploratory programming.</li>
+              </ul>
+          
+              <h3>Step 6: Test Your Installation</h3>
+              <p>
+                To test your Python installation, open a terminal or command prompt and enter the Python interactive shell by typing:
+              </p>
+              <div class="code-example-html">
+                <code>
+                  python <br>
+                  # or <br>
+                  python3
+                </code>
+              </div>
+              <p>
+                Once inside the shell, type:
+              </p>
+              <div class="code-example-html">
+                <code>
+                  print("Hello, Python!")
+                </code>
+              </div>
+              <p>
+                If the message <strong>Hello, Python!</strong> appears, you’ve successfully installed Python and are ready to start coding!
+              </p>
+          
+              <h3>Next Steps</h3>
+              <p>
+                Now that you’ve set up Python, let’s move on to the next topic: 
+                <a href="#python-running-programs-tutorial">Running Python Programs</a>.
+              </p>
+            </section>
+             </div>
+             <div class="detailed-plan-klm123" id="python-running-programs-tutorial">
+                <section>
+                    <h2>Running Python Programs</h2>
+                    <p>
+                        Once Python is installed, you can start running Python code. This section explores different ways to execute Python programs depending on your setup and preferences.
+                    </p>
+            
+                    <h3>Running Python Code in the Terminal</h3>
+                    <p>
+                        You can run Python code directly in your terminal or command prompt. Here's how:
+                    </p>
+                    <ol>
+                        <li>
+                            Open your terminal (Command Prompt on Windows, Terminal on macOS/Linux).
+                        </li>
+                        <li>
+                            Type <code>python</code> or <code>python3</code> (depending on your setup) and press Enter. You will enter the interactive Python shell.
+                        </li>
+                        <li>
+                            Type Python commands and press Enter to execute them.
+                        </li>
+                    </ol>
+                    <div class="code-example-html">
+                        <code>
+                            >>> print("Hello, Python!")<br>
+                            Hello, Python!
+                        </code>
+                    </div>
+                    <p>
+                        To exit the interactive shell, type <code>exit()</code> or press <code>Ctrl+D</code>.
+                    </p>
+            
+                    <h3>Running Python Scripts</h3>
+                    <p>
+                        Python scripts are saved in files with the extension <code>.py</code>. To run a script:
+                    </p>
+                    <ol>
+                        <li>Create a Python file (e.g., <code>hello.py</code>).</li>
+                        <li>Write your Python code in the file. For example:</li>
+                    </ol>
+                    <div class="code-example-html">
+                        <code>
+                            # hello.py<br>
+                            print("Hello, World!")
+                        </code>
+                    </div>
+                    <ol start="3">
+                        <li>
+                            Open the terminal and navigate to the directory containing the file.
+                        </li>
+                        <li>
+                            Run the script by typing <code>python hello.py</code> (or <code>python3 hello.py</code>).
+                        </li>
+                    </ol>
+                    <p>
+                        You should see the output <code>Hello, World!</code> displayed in the terminal.
+                    </p>
+            
+                    <h3>Running Code in an IDE <span class="subtle-text">(recommended)</span></h3>
+                    <p>
+                        Integrated Development Environments (IDEs) like VS Code and PyCharm make running Python programs easier. Here’s how:
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>In VS Code:</strong> Open a Python file, and click the play button <strong>Run</strong> at the top-right corner or press <code>F5</code>.
+                        </li>
+                        <li>
+                            <strong>In PyCharm:</strong> Open your Python file, and click the green play button or press <code>Shift+F10</code>.
+                        </li>
+                    </ul>
+                    <p>
+                        Using an IDE can provide additional benefits like debugging tools, syntax highlighting, and real-time error checking.
+                    </p>
+            
+                    <h3>Running Python Code in Jupyter Notebook</h3>
+                    <p>
+                        Jupyter Notebook is an interactive tool often used in data science and machine learning. To run Python code in Jupyter:
+                    </p>
+                    <ol>
+                        <li>Install Jupyter Notebook if it’s not already installed. Run <code>pip install notebook</code> in your terminal.</li>
+                        <li>Start Jupyter by typing <code>jupyter notebook</code> in your terminal.</li>
+                        <li>
+                            A web page will open. Create a new Python notebook and type Python code in the cells. Press <code>Shift+Enter</code> to run a cell.
+                        </li>
+                    </ol>
+            
+                    <h3>Next Step</h3>
+                    <p>
+                        Now that you know how to run Python programs, let’s explore the <a href="#python-syntax-basics-tutorial">Syntax Basics</a> in the next section.
+                    </p>
+                </section>
+            </div>
+            <div class="detailed-plan-klm123" id="python-syntax-basics-tutorial">
+                <section>
+                    <h2>Python Syntax Basics</h2>
+                    <p>
+                        Python's syntax is simple and beginner-friendly, making it one of the most accessible programming languages to learn. In this section, we’ll explore the fundamental rules and conventions you need to know to write Python code effectively.
+                    </p>
+            
+                    <h3>Case Sensitivity</h3>
+                    <p>
+                        Python is case-sensitive, which means that <code>Variable</code> and <code>variable</code> are considered two different identifiers. Always be mindful of capitalization when naming variables, functions, or other identifiers.
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            myVar = 5 <br>
+                            MyVar = 10 <br>
+                            print(myVar)  # Outputs 5 <br>
+                            print(MyVar)  # Outputs 10
+                        </code>
+                    </div>
+            
+                    <h3>Indentation</h3>
+                    <p>
+                        Unlike many other programming languages that use braces (<code>{}</code>) to define code blocks, Python relies on indentation to structure code. Indentation levels must be consistent, or Python will throw an error.
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            if 5 > 3: <br>
+                            &nbsp;&nbsp;print("5 is greater than 3")  # Indented block <br>
+                            # Correct indentation is crucial
+                        </code>
+                    </div>
+                    <p>
+                        Best practice: Use four spaces per indentation level.
+                    </p>
+            
+                    <h3>Comments</h3>
+                    <p>
+                        Comments are used to explain code or make it more readable. They are ignored by the Python interpreter. Use the hash symbol (<code>#</code>) to write a single-line comment.
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            # This is a comment <br>
+                            print("Hello, World!")  # This prints a message
+                        </code>
+                    </div>
+                    <p>For multi-line comments, use triple quotes:</p>
+                    <div class="code-example-html">
+                        <code>
+                            """ <br>
+                            This is a <br>
+                            multi-line comment <br>
+                            """
+                        </code>
+                    </div>
+            
+                    <h3>Printing Output</h3>
+                    <p>
+                        The <code>print()</code> function is used to display output in Python.
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            print("Welcome to Python!")  # Outputs: Welcome to Python! <br>
+                            print(5 + 3)  # Outputs: 8
+                        </code>
+                    </div>
+            
+                    <h3>Taking Input</h3>
+                    <p>
+                        Use the <code>input()</code> function to take user input. The input is always returned as a string.
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            name = input("Enter your name: ") <br>
+                            print("Hello, " + name + "!") <br>
+                            # If you enter "Alex", it will print: Hello, Alex!
+                        </code>
+                    </div>
+            
+                    <h3>Ending a Statement</h3>
+                    <p>
+                        In Python, statements typically end at the end of a line. There’s no need for semicolons (<code>;</code>), though they can be used if you want to write multiple statements on a single line.
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            print("Hello, World!")  # Single statement <br>
+                            print("Python is fun!"); print("Let's learn!")  # Multiple statements
+                        </code>
+                    </div>
+            
+                    <h3>Next Step</h3>
+                    <p>
+                        Practice these basics by completing the <a href="#python-syntax-basics-exercise">exercise section</a>.
+                    </p>
+                </section>
+            </div>
+            <div class="detailed-plan-klm123" id="python-first-script-tutorial">
+                <section>
+                    <h2>Writing Your First Python Script</h2>
+                    <p>
+                        A Python script is simply a file containing Python code, typically saved with the <code>.py</code> extension. Scripts allow you to write programs that can be saved and executed later, making them more powerful than running commands in the interactive Python REPL.
+                    </p>
+            
+                    <h3>What is a Python Script?</h3>
+                    <p>
+                        A script is a way to write multiple lines of Python code and save them for future use. Unlike the Python REPL, where code is executed line by line, scripts allow you to store a full program in a file and execute it as needed.
+                    </p>
+            
+                    <h3>Creating Your First Python Script</h3>
+                    <ol>
+                        <li>
+                            Open your favorite text editor or IDE, such as <a href="#python-running-programs-tutorial">VS Code or PyCharm</a>.
+                        </li>
+                        <li>
+                            Create a new file and name it <code>hello_world.py</code>. Make sure to save it with the <code>.py</code> extension.
+                        </li>
+                        <li>
+                            In the file, type the following code:
+                            <div class="code-example-html">
+                                <code>
+                                    print("Hello, World!")
+                                </code>
+                            </div>
+                        </li>
+                        <li>
+                            Save the file.
+                        </li>
+                    </ol>
+            
+                    <h3>Running the Script</h3>
+                    <p>
+                        To run the script, follow these steps:
+                    </p>
+                    <ul>
+                        <li>
+                            If you're using an IDE like VS Code, press the run button. The output will appear in the terminal section of the IDE.
+                        </li>
+                        <li>
+                            If you're using the command line:
+                            <ol>
+                                <li>Open your terminal or command prompt.</li>
+                                <li>Navigate to the folder where you saved the <code>hello_world.py</code> file using the <code>cd</code> command.</li>
+                                <li>Type the following and press Enter:
+                                    <div class="code-example-html">
+                                        <code>
+                                            python hello_world.py
+                                        </code>
+                                    </div>
+                                </li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <p>
+                        You should see the message <strong>Hello, World!</strong> printed in the terminal.
+                    </p>
+            
+                    <h3>Common Errors When Running Scripts</h3>
+                    <ul>
+                        <li><strong>Forgot to save the file:</strong> Make sure you save your script before running it.</li>
+                        <li><strong>Incorrect file path:</strong> Ensure you are in the correct folder in the terminal.</li>
+                        <li><strong>Typing errors:</strong> Double-check your code and commands for typos.</li>
+                    </ul>
+            
+                    <h3>Practice Task</h3>
+                    <p>
+                        Modify the <code>hello_world.py</code> script to include:
+                    </p>
+                    <ul>
+                        <li>Print your name.</li>
+                        <li>Print your favorite quote or fun fact.</li>
+                    </ul>
+            
+                    <h3>Next Step</h3>
+                    <p>
+                        Once you've written and run your first Python script, you're ready to dive into the <a href="#python-variables-tutorial">Variables</a>.
+                    </p>
+                </section>
+            </div>
+            <div class="detailed-plan-klm123" id="python-variables-tutorial">
+                <section>
+                    <h2>Variables in Python</h2> 
+                    
+                    <p>
+                        Variables are used to store data in Python. Think of them as labeled containers that hold information which you can use and manipulate throughout your program.
+                    </p>
+            
+                    <h3>Declaring Variables</h3>
+                    <p>
+                        In Python, you don’t need to specify the type of a variable when declaring it. The interpreter assigns the type automatically based on the value you provide.
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            name = "Jemima"  # A string variable <br>
+                            age = 25  # An integer variable <br>
+                            height = 5.7  # A float variable
+                        </code>
+                    </div>
+            
+                    <h3>Updating Variables</h3>
+                    <p>
+                        You can update the value of a variable by simply assigning it a new value:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            age = 25 <br>
+                            age = 26  # Updates the value of age to 26
+                        </code>
+                    </div>
+            
+                    <h3>Naming Conventions</h3>
+                    <p>
+                        Variable names in Python must follow these rules:
+                    </p>
+                    <ul>
+                        <li>Must start with a letter or an underscore (<code>_</code>).</li>
+                        <li>Can contain letters, numbers, and underscores.</li>
+                        <li>Cannot be a Python keyword (e.g., <code>if</code>, <code>while</code>, <code>for</code>).</li>
+                        <li>Are case-sensitive (e.g., <code>name</code> and <code>Name</code> are different).</li>
+                    </ul>
+                    <div class="code-example-html">
+                        <code>
+                            valid_variable = 10 <br>
+                            _anotherVariable = 20 <br>
+                            Invalid-Variable = 30  # This will throw an error
+                        </code>
+                    </div>
+            
+                    <h3>Multiple Assignments</h3>
+                    <p>
+                        Python allows you to assign values to multiple variables in a single line:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            x, y, z = 5, 10, 15  # x=5, y=10, z=15
+                        </code>
+                    </div>
+                    <p>
+                        You can also assign the same value to multiple variables:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            a = b = c = 0  # All variables are set to 0
+                        </code>
+                    </div>
+            
+                    <h3>Printing Variables</h3>
+                    <p>
+                        Use the <code>print()</code> function to display the value of a variable:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            name = "Alicia" <br>
+                            print("My name is", name)
+                        </code>
+                    </div>
+                    <p>
+                        You can also use formatted strings to include variables in output:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            age = 25 <br>
+                            print(f"I am {age} years old")  # Outputs: I am 25 years old
+                        </code>
+                    </div>
+                    <p>
+                        <strong>What is the <code>f</code> in f-strings?</strong> The <code>f</code> allows you to embed variables directly inside the curly braces <code>{ }</code> within the string. It's a clean and modern way to format output, introduced in Python 3.6.
+                    </p>
+
+                    <h3>Next Step</h3>
+                    <p>
+                        Practice these basics by completing the <a href="#python-variables-exercise">exercise section</a>.
+                    </p>
+                </section>
+            </div>
+            <div class="detailed-plan-klm123" id="python-data-types-tutorial">
+                <section>
+                    <h2>Data Types in Python</h2>
+                    <p>
+                        Python provides several built-in data types to categorize the kind of data you work with in your programs. Understanding data types is essential for writing effective and error-free code.
+                    </p>
+            
+                    <h3>Basic Data Types</h3>
+                    <ul>
+                        <li>
+                            <strong>Integers:</strong> Whole numbers, such as <code>5</code>, <code>-10</code>, <code>42</code>.
+                            <div class="code-example-html">
+                                <code>
+                                    age = 25  # Integer
+                                </code>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>Floats:</strong> Numbers with decimal points, such as <code>3.14</code>, <code>-7.5</code>.
+                            <div class="code-example-html">
+                                <code>
+                                    price = 19.99  # Float
+                                </code>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>Strings:</strong> A sequence of characters, enclosed in single or double quotes, such as <code>"Hello"</code>.
+                            <div class="code-example-html">
+                                <code>
+                                    name = "Jessica"  # String
+                                </code>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>Booleans:</strong> True or False values, used for logical operations.
+                            <div class="code-example-html">
+                                <code>
+                                    is_active = True  # Boolean
+                                </code>
+                            </div>
+                        </li>
+                    </ul>
+            
+                    <h3>Type Checking</h3>
+                    <p>
+                        You can use the <code>type()</code> function to check the data type of a variable:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            age = 25 <br>
+                            print(type(age))  # Outputs: &lt;class 'int'&gt;
+                        </code>
+                    </div>
+            
+                    <h3>Type Conversion</h3>
+                    <p>
+                        Python allows you to convert data from one type to another using built-in functions:
+                    </p>
+                    <ul>
+                        <li><code>int()</code>: Converts data to an integer.</li>
+                        <li><code>float()</code>: Converts data to a float.</li>
+                        <li><code>str()</code>: Converts data to a string.</li>
+                        <li><code>bool()</code>: Converts data to a boolean.</li>
+                    </ul>
+                    <div class="code-example-html">
+                        <code>
+                            age = "25"  # String <br>
+                            age = int(age)  # Now an integer <br>
+                            print(type(age))  # Outputs: &lt;class 'int'&gt;
+                        </code>
+                    </div>
+            
+                    <h3>Practice Task</h3>
+                    <p>
+                        Try the following to practice working with data types:
+                    </p>
+                    <ul>
+                        <li>Create variables of each type: integer, float, string, and boolean.</li>
+                        <li>Use the <code>type()</code> function to verify their data types.</li>
+                        <li>Convert an integer to a float and then to a string.</li>
+                        <li>Print a boolean value and explain its meaning.</li>
+                    </ul>
+            
+                    <h3>Next Step</h3>
+                    <p>
+                        Practice these basics by completing the <a href="#python-data-types-exercise">exercise section</a>.
+                    </p>
+                </section>
+            </div>
+            <div class="detailed-plan-klm123" id="python-mutable-immutable-tutorial">
+                <section>
+                    <h2>Mutable vs Immutable Types in Python</h2>
+                    <p>
+                        In Python, data types can be categorized into two groups based on whether their values can be changed after creation:
+                    </p>
+                    <ul>
+                        <li><strong>Mutable Types</strong>: These are data types whose values can be changed or modified in place.
+                            Examples: <code>list</code>, <code>dict</code>, <code>set</code>, and <code>bytearray</code>.
+                        </li>
+                        <li><strong>Immutable Types</strong>: These are data types whose values cannot be changed after creation.
+                            Examples: <code>int</code>, <code>float</code>, <code>str</code>, <code>tuple</code>, <code>frozenset</code>, and <code>bytes</code>.
+                        </li>
+                    </ul>
+            
+                    <h3>Why is this Important?</h3>
+                    <p>
+                        Understanding mutability helps you:
+                    </p>
+                    <ul>
+                        <li>Avoid unexpected side effects when passing data to functions.</li>
+                        <li>Write safer and more predictable code, especially when working with collections or shared data.</li>
+                    </ul>
+            
+                    <h3>Mutable Types: Lists</h3>
+                    <p>
+                        Lists are mutable. This means you can add, remove, or modify their elements.
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            fruits = ["apple", "banana", "cherry"] <br>
+                            fruits[0] = "blueberry"  # Modify the first element <br>
+                            print(fruits)  # Outputs: ["blueberry", "banana", "cherry"] <br>
+                        </code>
+                    </div>
+            
+                    <h3>Immutable Types: Strings</h3>
+                    <p>
+                        Strings are immutable. This means you cannot change a string's content after it is created. Any modification results in a new string being created.
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            name = "Jessica" <br>
+                            name[0] = "B"  # This will raise a TypeError <br>
+                            name = "Bobby"  # This is valid because a new string is created <br>
+                        </code>
+                    </div>
+            
+                    <h3>Behavior of Mutable and Immutable Types</h3>
+                    <h4>1. Mutable Types Are Shared</h4>
+                    <p>
+                        When you modify a mutable object, all references to that object will see the change.
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            nums = [1, 2, 3] <br>
+                            nums_copy = nums  # Both variables point to the same list <br>
+                            nums[0] = 99 <br>
+                            print(nums_copy)  # Outputs: [99, 2, 3] <br>
+                        </code>
+                    </div>
+            
+                    <h4>2. Immutable Types Create Copies</h4>
+                    <p>
+                        When you modify an immutable object, a new object is created, leaving the original object unchanged.
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            age = 30 <br>
+                            new_age = age  # Both variables initially point to the same value <br>
+                            age = 31  # A new integer object is created <br>
+                            print(new_age)  # Outputs: 30 <br>
+                        </code>
+                    </div>
+            
+                    <h3>Practical Use Cases</h3>
+                    <ul>
+                        <li><strong>Use mutable types</strong> when you need to modify data in place, such as maintaining a growing list of items.</li>
+                        <li><strong>Use immutable types</strong> for keys in dictionaries (e.g., tuples) or when you need to ensure the integrity of the data.</li>
+                    </ul>
+            
+                    <h3>Next Steps</h3>
+                    <p>
+                        Learn more by completing the <a href="#python-mutable-immutable-exercise">exercise section</a>.
+                    </p>
+                </section>
+            </div>
+            <div class="detailed-plan-klm123" id="python-constants-naming-conventions-tutorial">
+                <section>
+                    <h2>Constants and Naming Conventions in Python</h2>
+                    <p>
+                        In this section, you will learn about constants in Python and best practices for naming variables, constants, and other elements in your code to make it clear, readable, and maintainable.
+                    </p>
+            
+                    <h3>Constants in Python</h3>
+                    <p>
+                        A constant is a value that should not change during the program's execution. Although Python does not have built-in support for constants like some other programming languages, developers conventionally use all-uppercase variable names to indicate a constant.
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            PI = 3.14159  <br>
+                            SPEED_OF_LIGHT = 299792458  <br>
+                            EARTH_GRAVITY = 9.8  <br>
+                        </code>
+                    </div>
+                    <p>
+                        While Python does not enforce immutability, the use of all-uppercase names signals to other developers that these values should not be modified.
+                    </p>
+            
+                    <h3>Best Practices for Naming Conventions</h3>
+                    <p>
+                        Naming conventions are essential for creating clean and understandable code. Follow these Python naming conventions to ensure readability:
+                    </p>
+                    <ul>
+                        <li><strong>Variables and Functions:</strong> Use <code>snake_case</code> (e.g., <code>student_name</code>, <code>calculate_area</code>).</li>
+                        <li><strong>Constants:</strong> Use <code>UPPERCASE_WITH_UNDERSCORES</code> (e.g., <code>MAX_LIMIT</code>, <code>DEFAULT_TIMEOUT</code>).</li>
+                        <li><strong>Classes:</strong> Use <code>PascalCase</code> (e.g., <code>StudentRecord</code>, <code>DatabaseConnection</code>).</li>
+                        <li><strong>Private Variables:</strong> Prefix with an underscore (e.g., <code>_private_variable</code>).</li>
+                        <li><strong>Module Names:</strong> Use <code>snake_case</code> (e.g., <code>math_utils.py</code>).</li>
+                    </ul>
+            
+                    <h3>Why Follow Naming Conventions?</h3>
+                    <p>
+                        Following consistent naming conventions has several benefits:
+                    </p>
+                    <ul>
+                        <li>It improves code readability and helps other developers understand your code more easily.</li>
+                        <li>It ensures consistency across projects, making it easier to collaborate on large teams.</li>
+                        <li>It reduces the chances of naming conflicts or errors in your program.</li>
+                    </ul>
+            
+                    <h3>Common Pitfalls to Avoid</h3>
+                    <p>
+                        When naming variables or constants, avoid the following:
+                    </p>
+                    <ul>
+                        <li>Using single-character names like <code>x</code> or <code>y</code> unless in loops or mathematical contexts.</li>
+                        <li>Starting variable names with numbers (e.g., <code>2nd_place</code> is invalid).</li>
+                        <li>Using Python reserved keywords like <code>def</code>, <code>class</code>, or <code>if</code> as variable names.</li>
+                        <li>Mixing <code>snake_case</code> and <code>camelCase</code> in the same project.</li>
+                    </ul>
+            
+                    <h3>Next Step</h3>
+                    <p>
+                        Ready to practice? Head to the <a href="#python-constants-naming-conventions-exercise">exercise section</a> to test your knowledge.
+                    </p>
+                </section>
+            </div>
+            <div class="detailed-plan-klm123" id="python-dynamic-typing-tutorial">
+                <section>
+                    <h2>Dynamic Typing in Python</h2>
+                    <p>
+                        Python is a dynamically typed language, which means you don’t need to declare the data type of a variable when creating it. The data type is determined at runtime based on the value assigned to the variable.
+                    </p>
+            
+                    <h3>What Does Dynamic Typing Mean?</h3>
+                    <p>
+                        In dynamically typed languages like Python, variables can change their data type during the program’s execution. For example:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            value = 42  # value is an integer <br>
+                            print(type(value))  # Outputs: &lt;class 'int'&gt; <br>
+                            value = "Hello"  # value is now a string <br>
+                            print(type(value))  # Outputs: &lt;class 'str'&gt; <br>
+                            value = 3.14  # value is now a float <br>
+                            print(type(value))  # Outputs: &lt;class 'float'&gt;
+                        </code>
+                    </div>
+            
+                    <h3>Advantages of Dynamic Typing</h3>
+                    <ul>
+                        <li>Easy and quick to write code, as you don’t need to declare variable types explicitly.</li>
+                        <li>Allows for more flexibility, especially in prototyping or writing simple scripts.</li>
+                    </ul>
+            
+                    <h3>Potential Drawbacks</h3>
+                    <ul>
+                        <li>Can lead to runtime errors if variable types are not handled carefully.</li>
+                        <li>May make code harder to understand or debug in larger projects due to unexpected type changes.</li>
+                    </ul>
+            
+                    <h3>Best Practices for Dynamic Typing</h3>
+                    <ul>
+                        <li>Use meaningful variable names to describe the data they hold.</li>
+                        <li>Minimize unnecessary changes to variable types to avoid confusion.</li>
+                        <li>Use the <code>type()</code> function to check the data type if needed.</li>
+                    </ul>
+                    <div class="code-example-html">
+                        <code>
+                            data = "123"  # A string <br>
+                            if type(data) == int: <br>
+                            &nbsp;&nbsp;print("Data is an integer.") <br>
+                            else: <br>
+                            &nbsp;&nbsp;print("Data is not an integer.")
+                        </code>
+                    </div>
+            
+                    <h3>Practice Task</h3>
+                    <p>
+                        Try creating a Python program where:
+                    </p>
+                    <ul>
+                        <li>You assign a value to a variable.</li>
+                        <li>Change its type by assigning a different value.</li>
+                        <li>Print the variable and its type before and after the change.</li>
+                    </ul>
+            
+                    <h3>Next Step</h3>
+                    <p>
+                        Now that you understand dynamic typing, move on to the next topic: <a href="#python-arithmetic-operators-tutorial">Operators in Python</a>.
+                    </p>
+                </section>
+            </div>
+            <div class="detailed-plan-klm123" id="python-arithmetic-operators-tutorial">
+                <section>
+                    <h2>Arithmetic Operators in Python</h2>
+                    <p>
+                        Arithmetic operators in Python are used to perform basic mathematical operations. These include addition, subtraction, multiplication, division, and more.
+                    </p>
+            
+                    <h3>List of Arithmetic Operators</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Operator</th>
+                                <th>Description</th>
+                                <th>Example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>+</code></td>
+                                <td>Addition</td>
+                                <td><code>3 + 2 = 5</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>-</code></td>
+                                <td>Subtraction</td>
+                                <td><code>7 - 4 = 3</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>*</code></td>
+                                <td>Multiplication</td>
+                                <td><code>6 * 3 = 18</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>/</code></td>
+                                <td>Division</td>
+                                <td><code>10 / 2 = 5.0</code> (always returns a float)</td>
+                            </tr>
+                            <tr>
+                                <td><code>//</code></td>
+                                <td>Floor Division</td>
+                                <td><code>10 // 3 = 3</code> (discards remainder)</td>
+                            </tr>
+                            <tr>
+                                <td><code>%</code></td>
+                                <td>Modulus</td>
+                                <td><code>10 % 3 = 1</code> (returns the remainder)</td>
+                            </tr>
+                            <tr>
+                                <td><code>**</code></td>
+                                <td>Exponentiation</td>
+                                <td><code>2 ** 3 = 8</code> (2 raised to the power of 3)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+            
+                    <h3>Examples of Arithmetic Operators</h3>
+                    <p>Here are some examples of how arithmetic operators can be used in Python:</p>
+                    <div class="code-example-html">
+                        <code>
+                            # Basic operations <br>
+                            x = 10 <br>
+                            y = 3 <br>
+                            print(x + y)  # Outputs: 13 <br>
+                            print(x - y)  # Outputs: 7 <br>
+                            print(x * y)  # Outputs: 30 <br>
+                            print(x / y)  # Outputs: 3.3333... <br><br>
+            
+                            # Additional operations <br>
+                            print(x // y)  # Outputs: 3 (floor division) <br>
+                            print(x % y)   # Outputs: 1 (modulus) <br>
+                            print(x ** y)  # Outputs: 1000 (exponentiation)
+                        </code>
+                    </div>
+            
+                    <h3>Common Use Cases</h3>
+                    <ul>
+                        <li><strong>Addition/Subtraction:</strong> Calculating totals, differences, etc.</li>
+                        <li><strong>Multiplication:</strong> Repeated addition or scaling values.</li>
+                        <li><strong>Division:</strong> Splitting or averaging values.</li>
+                        <li><strong>Modulus:</strong> Checking divisibility or finding remainders (e.g., even/odd checks).</li>
+                        <li><strong>Exponentiation:</strong> Calculating powers or square roots.</li>
+                    </ul>
+            
+                    <h3>Practice Task</h3>
+                    <p>
+                        Try writing a program that uses all arithmetic operators to calculate and print the results of the following:
+                    </p>
+                    <ol>
+                        <li>The sum of 15 and 8.</li>
+                        <li>The difference between 25 and 7.</li>
+                        <li>The product of 12 and 4.</li>
+                        <li>The quotient of 45 divided by 9.</li>
+                        <li>The remainder when 29 is divided by 5.</li>
+                        <li>2 raised to the power of 5.</li>
+                    </ol>
+            
+                    <h3>Next Step</h3>
+                    <p>
+                        Ready to move on? Check out the <a href="#python-arithmetic-operators-exercise">exercise section</a> to test your knowledge.
+                    </p>
+                </section>
+            </div>
+            <div class="detailed-plan-klm123" id="python-comparison-operators-tutorial">
+                <section>
+                    <h2>Comparison Operators in Python</h2>
+                    <p>Comparison operators are used to compare two values. The result of a comparison is a boolean value: <code>True</code> or <code>False</code>. These operators are fundamental for decision-making and conditional statements.</p>
+            
+                    <h3>Comparison Operators</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Operator</th>
+                                <th>Description</th>
+                                <th>Example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>==</code></td>
+                                <td>Equal to</td>
+                                <td><code>5 == 5</code> → <code>True</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>!=</code></td>
+                                <td>Not equal to</td>
+                                <td><code>5 != 3</code> → <code>True</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>></code></td>
+                                <td>Greater than</td>
+                                <td><code>7 > 5</code> → <code>True</code></td>
+                            </tr>
+                            <tr>
+                                <td><code><</code></td>
+                                <td>Less than</td>
+                                <td><code>3 < 8</code> → <code>True</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>>=</code></td>
+                                <td>Greater than or equal to</td>
+                                <td><code>9 >= 9</code> → <code>True</code></td>
+                            </tr>
+                            <tr>
+                                <td><code><=</code></td>
+                                <td>Less than or equal to</td>
+                                <td><code>4 <= 5</code> → <code>True</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+            
+                    <h3>Examples</h3>
+                    <p>Let’s see comparison operators in action:</p>
+                    <div class="code-example-html">
+                        <code>
+                            x = 10 <br>
+                            y = 20 <br>
+                            print(x == y)  # Outputs: False<br>
+                            print(x != y)  # Outputs: True<br>
+                            print(x < y)   # Outputs: True<br>
+                            print(x > y)   # Outputs: False<br>
+                        </code>
+                    </div>
+            
+                    <p>In this example:</p>
+                    <ul>
+                        <li><code>x == y</code> checks if <code>x</code> is equal to <code>y</code>.</li>
+                        <li><code>x != y</code> checks if <code>x</code> is not equal to <code>y</code>.</li>
+                        <li><code>x < y</code> checks if <code>x</code> is less than <code>y</code>.</li>
+                        <li><code>x > y</code> checks if <code>x</code> is greater than <code>y</code>.</li>
+                    </ul>
+            
+                    <h3>Why Use Comparison Operators?</h3>
+                    <p>Comparison operators are essential for:</p>
+                    <ul>
+                        <li>Making decisions in your program.</li>
+                        <li>Creating conditions in <code>if</code>, <code>elif</code>, and <code>else</code> statements.</li>
+                        <li>Working with loops that depend on a condition.</li>
+                    </ul>
+            
+                    <h3>Next Step</h3>
+                    <p>Practice these concepts by completing the <a href="#python-comparison-operators-exercise">exercise section</a>.</p>
+                </section>
+            </div>
+            <div class="detailed-plan-klm123" id="python-logical-operators-tutorial">
+                <section>
+                    <h2>Logical Operators in Python</h2>
+                    <p>
+                        Logical operators allow you to combine multiple conditions or perform logical operations on Boolean values. 
+                        Python provides three main logical operators: <code>and</code>, <code>or</code>, and <code>not</code>.
+                    </p>
+            
+                    <h3>Logical Operators Overview</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Operator</th>
+                                <th>Description</th>
+                                <th>Example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>and</code></td>
+                                <td>Returns <code>True</code> if both conditions are true.</td>
+                                <td><code>True and False</code> → <code>False</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>or</code></td>
+                                <td>Returns <code>True</code> if at least one condition is true.</td>
+                                <td><code>True or False</code> → <code>True</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>not</code></td>
+                                <td>Reverses the Boolean value.</td>
+                                <td><code>not True</code> → <code>False</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+            
+                    <h3>Examples with Boolean Values</h3>
+                    <div class="code-example-html">
+                        <code>
+                            x = True <br>
+                            y = False <br>
+                            print(x and y)  # Outputs: False <br>
+                            print(x or y)   # Outputs: True <br>
+                            print(not x)    # Outputs: False
+                        </code>
+                    </div>
+            
+                    <h3>Examples with Variables</h3>
+                    <p>Logical operators can also be used to combine comparisons:</p>
+                    <div class="code-example-html">
+                        <code>
+                            age = 20 <br>
+                            is_student = True <br>
+                            <br>
+                            # Combine conditions <br>
+                            print(age > 18 and is_student)  # Outputs: True <br>
+                            print(age < 18 or is_student)   # Outputs: True <br>
+                            print(not is_student)          # Outputs: False
+                        </code>
+                    </div>
+            
+                    <h3>Activity: Eligibility Checker</h3>
+                    <p>
+                        You can use logical operators to calculate eligibility. For example, let’s check if someone is eligible to drive:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            has_license = True <br>
+                            passed_test = False <br>
+                            eligible = has_license and passed_test <br>
+                            print(f"Eligible to drive: {eligible}")  # Outputs: False
+                        </code>
+                    </div>
+            
+                    <h3>Next Step</h3>
+                    <p>
+                        Practice these concepts by completing the 
+                        <a href="#python-logical-operators-exercise">exercise section</a>.
+                    </p>
+                </section>
+            </div>
+            <div class="detailed-plan-klm123" id="python-assignment-operators-tutorial">
+                <section>
+                    <h2>Assignment Operators in Python</h2>
+                    <p>
+                        Assignment operators are used to assign values to variables in Python. The most common is the <code>=</code> operator, but Python also provides a range of compound assignment operators for performing operations and assigning the result in one step.
+                    </p>
+            
+                    <h3>List of Assignment Operators</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Operator</th>
+                                <th>Description</th>
+                                <th>Example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>=</code></td>
+                                <td>Assigns a value to a variable.</td>
+                                <td><code>x = 10</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>+=</code></td>
+                                <td>Adds a value to the variable and assigns the result.</td>
+                                <td><code>x += 5</code> → <code>x = x + 5</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>-=</code></td>
+                                <td>Subtracts a value from the variable and assigns the result.</td>
+                                <td><code>x -= 3</code> → <code>x = x - 3</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>*=</code></td>
+                                <td>Multiplies the variable by a value and assigns the result.</td>
+                                <td><code>x *= 2</code> → <code>x = x * 2</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>/=</code></td>
+                                <td>Divides the variable by a value and assigns the result.</td>
+                                <td><code>x /= 4</code> → <code>x = x / 4</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>//=</code></td>
+                                <td>Performs floor division and assigns the result.</td>
+                                <td><code>x //= 3</code> → <code>x = x // 3</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>%=</code></td>
+                                <td>Calculates the remainder and assigns the result.</td>
+                                <td><code>x %= 2</code> → <code>x = x % 2</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>**=</code></td>
+                                <td>Raises the variable to a power and assigns the result.</td>
+                                <td><code>x **= 3</code> → <code>x = x ** 3</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+            
+                    <h3>Examples of Assignment Operators</h3>
+                    <p>Here are some examples demonstrating how assignment operators work:</p>
+                    <div class="code-example-html">
+                        <code>
+                            x = 10  # Assign 10 to x<br>
+                            x += 5  # Add 5 to x, now x = 15<br>
+                            x -= 3  # Subtract 3 from x, now x = 12<br>
+                            x *= 2  # Multiply x by 2, now x = 24<br>
+                            x /= 4  # Divide x by 4, now x = 6.0<br>
+                            x %= 2  # Find remainder when x is divided by 2, now x = 0.0<br>
+                            x **= 3  # Raise x to the power of 3, now x = 0.0<br>
+                        </code>
+                    </div>
+            
+                    <h3>Practical Use Cases</h3>
+                    <ul>
+                        <li><strong>+= and -=:</strong> Useful for counters or accumulating totals.</li>
+                        <li><strong>*=:</strong> Scaling values (e.g., calculating discounts).</li>
+                        <li><strong>/= and //=:</strong> Distributing values evenly.</li>
+                    </ul>
+            
+                    <h3>Practice Task</h3>
+                    <p>
+                        Write a Python program to:
+                    </p>
+                    <ul>
+                        <li>Start with a variable <code>x</code> initialized to 10.</li>
+                        <li>Apply all the assignment operators listed above and print the result after each operation.</li>
+                    </ul>
+            
+                    <h3>Next Step</h3>
+                    <p>
+                        Ready to practice? Try the <a href="#python-assignment-operators-exercise">exercise section</a> to test your understanding.
+                    </p>
+                </section>
+            </div>
+            <div class="detailed-plan-klm123" id="python-membership-operators-tutorial">
+                <section>
+                    <h2>Membership Operators in Python</h2>
+                    <p>
+                        Membership operators are used to check if a value is present in a sequence, such as a string, list, tuple, or dictionary. Python provides two membership operators: <code>in</code> and <code>not in</code>.
+                    </p>
+            
+                    <h3>Membership Operators Overview</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Operator</th>
+                                <th>Description</th>
+                                <th>Example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>in</code></td>
+                                <td>Returns <code>True</code> if the value exists in the sequence.</td>
+                                <td><code>'a' in 'apple'</code> → <code>True</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>not in</code></td>
+                                <td>Returns <code>True</code> if the value does not exist in the sequence.</td>
+                                <td><code>'b' not in 'apple'</code> → <code>True</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+            
+                    <h3>Using Membership Operators</h3>
+                    <p>
+                        Here’s how membership operators work with different data types:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            # Membership with a string <br>
+                            print('a' in 'apple')  # Outputs: True <br>
+                            print('z' not in 'apple')  # Outputs: True <br><br>
+            
+                            # Membership with a list <br>
+                            fruits = ['apple', 'banana', 'cherry'] <br>
+                            print('banana' in fruits)  # Outputs: True <br>
+                            print('grape' not in fruits)  # Outputs: True <br><br>
+            
+                            # Membership with a dictionary (checks keys only) <br>
+                            scores = {'Alice': 85, 'Bob': 90} <br>
+                            print('Alice' in scores)  # Outputs: True <br>
+                            print(85 in scores)  # Outputs: False (checks keys, not values)
+                        </code>
+                    </div>
+            
+                    <h3>Common Use Cases</h3>
+                    <ul>
+                        <li>Checking if a substring exists within a string.</li>
+                        <li>Validating if an item exists in a list, tuple, or set.</li>
+                        <li>Determining if a key exists in a dictionary.</li>
+                    </ul>
+            
+                    <h3>Practice Task</h3>
+                    <p>
+                        Try writing a program where:
+                    </p>
+                    <ul>
+                        <li>You create a list of numbers and check if a specific number is present in the list.</li>
+                        <li>You create a string and check if a character is present or absent using both <code>in</code> and <code>not in</code>.</li>
+                    </ul>
+            
+                    <h3>Next Step</h3>
+                    <p>
+                        Ready to practice? Try the <a href="#python-membership-operators-exercise">exercise section</a> to test your understanding.
+                    </p>
+                </section>
+            </div>
+            <div class="detailed-plan-klm123" id="python-identity-operators-tutorial">
+                <section>
+                    <h2>Identity Operators in Python</h2>
+                    <p>
+                        Identity operators are used to compare the memory locations of two objects. They check whether two variables refer to the same object in memory. Python provides two identity operators: <code>is</code> and <code>is not</code>.
+                    </p>
+            
+                    <h3>Identity Operators Overview</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Operator</th>
+                                <th>Description</th>
+                                <th>Example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>is</code></td>
+                                <td>Returns <code>True</code> if both variables refer to the same object.</td>
+                                <td><code>x is y</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>is not</code></td>
+                                <td>Returns <code>True</code> if both variables do not refer to the same object.</td>
+                                <td><code>x is not y</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+            
+                    <h3>Examples of Identity Operators</h3>
+                    <p>Let’s see some examples to understand how identity operators work:</p>
+                    <div class="code-example-html">
+                        <code>
+                            # Example 1: Same object <br>
+                            x = [1, 2, 3] <br>
+                            y = x <br>
+                            print(x is y)  # Outputs: True (x and y refer to the same object) <br><br>
+            
+                            # Example 2: Different objects with the same value <br>
+                            x = [1, 2, 3] <br>
+                            y = [1, 2, 3] <br>
+                            print(x is y)  # Outputs: False (x and y are different objects) <br>
+                            print(x == y)  # Outputs: True (x and y have the same value) <br><br>
+            
+                            # Example 3: Using is not <br>
+                            x = [1, 2, 3] <br>
+                            y = [4, 5, 6] <br>
+                            print(x is not y)  # Outputs: True (x and y are different objects)
+                        </code>
+                    </div>
+            
+                    <h3>When to Use Identity Operators?</h3>
+                    <ul>
+                        <li><strong>Object Comparison:</strong> Use <code>is</code> to check if two variables refer to the same object in memory.</li>
+                        <li><strong>Reference Checks:</strong> Useful when comparing complex objects like lists or custom objects.</li>
+                    </ul>
+            
+                    <h3>Practice Task</h3>
+                    <p>
+                        Write a Python program to:
+                    </p>
+                    <ul>
+                        <li>Create two variables, <code>x</code> and <code>y</code>, that refer to the same list object.</li>
+                        <li>Check if <code>x</code> and <code>y</code> are the same object using <code>is</code>.</li>
+                        <li>Create another variable, <code>z</code>, with a new list that has the same values as <code>x</code>.</li>
+                        <li>Check if <code>z</code> is the same object as <code>x</code>.</li>
+                        <li>Print all results.</li>
+                    </ul>
+            
+                    <h3>Next Step</h3>
+                    <p>
+                        Once you’ve understood identity operators, test your knowledge with the 
+                        <a href="#python-identity-operators-exercise">exercise section</a>.
+                    </p>
+                </section>
+            </div>
+            <div class="detailed-plan-klm123" id="python-bitwise-operators-tutorial">
+                <section>
+                    <h2>Bitwise Operators in Python</h2>
+                    <p>
+                        Bitwise operators perform operations on the binary representations of integers. These operators are useful for low-level programming tasks, such as working with binary data or optimizing performance in certain algorithms.
+                    </p>
+
+                    <h3>Bitwise Operators Overview</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Operator</th>
+                                <th>Description</th>
+                                <th>Example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>&</code></td>
+                                <td>Bitwise AND: Sets each bit to 1 if both bits are 1.</td>
+                                <td><code>5 & 3</code> → <code>1</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>|</code></td>
+                                <td>Bitwise OR: Sets each bit to 1 if one of the bits is 1.</td>
+                                <td><code>5 | 3</code> → <code>7</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>^</code></td>
+                                <td>Bitwise XOR: Sets each bit to 1 if only one of the bits is 1.</td>
+                                <td><code>5 ^ 3</code> → <code>6</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>~</code></td>
+                                <td>Bitwise NOT: Inverts all the bits.</td>
+                                <td><code>~5</code> → <code>-6</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>&lt;&lt;</code></td>
+                                <td>Bitwise Left Shift: Shifts bits to the left, adding zeros on the right.</td>
+                                <td><code>5 &lt;&lt; 1</code> → <code>10</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>&gt;&gt;</code></td>
+                                <td>Bitwise Right Shift: Shifts bits to the right, discarding bits on the right.</td>
+                                <td><code>5 &gt;&gt; 1</code> → <code>2</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="binary-guide-section" style="margin: 20px 0; text-align: center;">
+                        <p>
+                            <strong>New to Binary?</strong> 
+                            Understanding binary is key to mastering bitwise operators. 
+                            <a href="../guides/binary.html" style="text-decoration: none; color: #007BFF;">
+                                Learn the Basics of Binary Here.
+                            </a>
+                        </p>
+                    </div>
+                    <h3>Examples of Bitwise Operations</h3>
+                    <p>Here’s how bitwise operators work:</p>
+                    <div class="code-example-html">
+                        <code>
+                            # Example 1: Bitwise AND <br>
+                            print(5 & 3)  # Outputs: 1 (binary 0101 & 0011 = 0001) <br><br>
+            
+                            # Example 2: Bitwise OR <br>
+                            print(5 | 3)  # Outputs: 7 (binary 0101 | 0011 = 0111) <br><br>
+            
+                            # Example 3: Bitwise XOR <br>
+                            print(5 ^ 3)  # Outputs: 6 (binary 0101 ^ 0011 = 0110) <br><br>
+            
+                            # Example 4: Bitwise NOT <br>
+                            print(~5)     # Outputs: -6 (inverts all bits of 5) <br><br>
+            
+                            # Example 5: Left Shift <br>
+                            print(5 << 1) # Outputs: 10 (binary 0101 becomes 1010) <br><br>
+            
+                            # Example 6: Right Shift <br>
+                            print(5 >> 1) # Outputs: 2 (binary 0101 becomes 0010)
+                        </code>
+                    </div>
+            
+                    <h3>Use Cases for Bitwise Operators</h3>
+                    <ul>
+                        <li>Efficient calculations in low-level programming.</li>
+                        <li>Working with binary data (e.g., file operations or network protocols).</li>
+                        <li>Optimizing performance in certain algorithms (e.g., cryptography).</li>
+                    </ul>
+            
+                    <h3>Practice Task</h3>
+                    <p>
+                        Write a Python program to:
+                    </p>
+                    <ul>
+                        <li>Apply each bitwise operator to two integers of your choice and print the results.</li>
+                        <li>Use left and right shifts to multiply and divide a number by 2.</li>
+                    </ul>
+            
+                    <h3>Next Step</h3>
+                    <p>
+                        Once you've explored bitwise operators, test your knowledge in the 
+                        <a href="#python-bitwise-operators-exercise">exercise section</a>.
+                    </p>
+                </section>
+            </div>
+            <div class="detailed-plan-klm123" id="python-control-flow-tutorial">
+                <section>
+                    <h2>Control Flow in Python</h2>
+                    <p>
+                        Control flow statements are essential for writing programs that can make decisions based on conditions. These statements allow your program to execute specific blocks of code depending on the logic you define.
+                    </p>
+                    
+                    <h3>if, elif, and else Statements</h3>
+                    <p>
+                        Conditional statements let your program perform actions based on whether certain conditions are true or false. In Python, the keywords <strong>if</strong>, <strong>elif</strong>, and <strong>else</strong> are used for this purpose.
+                    </p>
+            
+                    <p>
+                        <b>The `if` statement</b> executes a block of code when the condition provided evaluates to <code>True</code>.
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            temperature = 25 <br>
+                            if temperature > 20: <br>
+                            &nbsp;&nbsp;print("It's a warm day!") <br>
+                        </code>
+                    </div>
+                    <p>
+                        In this example, the program checks if the <code>temperature</code> variable is greater than 20. If it is, the message "It's a warm day!" is printed.
+                    </p>
+            
+                    <p>
+                        <b>The `else` statement</b> provides an alternative block of code to run when the `if` condition is false.
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            temperature = 10 <br>
+                            if temperature > 20: <br>
+                            &nbsp;&nbsp;print("It's a warm day!") <br>
+                            else: <br>
+                            &nbsp;&nbsp;print("It's a cold day!") <br>
+                        </code>
+                    </div>
+                    <p>
+                        Here, the condition <code>temperature > 20</code> evaluates to false, so the program runs the code inside the <code>else</code> block.
+                    </p>
+            
+                    <p>
+                        <b>The `elif` (short for "else if") statement</b> allows you to test multiple conditions in sequence. It is executed if the previous conditions are false, and its own condition is true.
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            temperature = 15 <br>
+                            if temperature > 20: <br>
+                            &nbsp;&nbsp;print("It's a warm day!") <br>
+                            elif temperature > 10: <br>
+                            &nbsp;&nbsp;print("It's a cool day!") <br>
+                            else: <br>
+                            &nbsp;&nbsp;print("It's a cold day!") <br>
+                        </code>
+                    </div>
+                    <p>
+                        In this example, the program evaluates conditions in order. Since <code>temperature > 20</code> is false but <code>temperature > 10</code> is true, it prints "It's a cool day!".
+                    </p>
+            
+                    <h3>Best Practices</h3>
+                    <ul>
+                        <li>Use clear and concise conditions for better readability.</li>
+                        <li>Always use proper indentation to ensure your code executes correctly.</li>
+                        <li>Use `elif` to avoid multiple separate `if` statements for related conditions.</li>
+                    </ul>
+            
+                    <h3>Next Step</h3>
+                    <p>
+                        Practice writing conditional statements by completing the 
+                        <a href="#python-control-flow-exercise">exercise section</a>.
+                    </p>
+                </section>
+            </div>
+            <div class="detailed-plan-klm123" id="python-nested-conditions-tutorial">
+                <section>
+                    <h2>Nested Conditions in Python</h2>
+                    <p>
+                        Nested conditions are conditions placed inside other conditions. They allow you to handle more complex decision-making logic by evaluating multiple criteria in a hierarchical manner.
+                    </p>
+            
+                    <h3>What Are Nested Conditions?</h3>
+                    <p>
+                        Nested conditions occur when an <code>if</code> (or <code>elif</code>, <code>else</code>) statement is inside another <code>if</code> or <code>else</code> statement. This allows your program to evaluate additional conditions only if the outer condition is true.
+                    </p>
+            
+                    <h3>Syntax of Nested Conditions</h3>
+                    <p>The basic structure of nested conditions looks like this:</p>
+                    <div class="code-example-html">
+                        <code>
+                            if outer_condition: <br>
+                            &nbsp;&nbsp;if inner_condition: <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;# Execute this block if both conditions are true <br>
+                            &nbsp;&nbsp;else: <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;# Execute this block if inner_condition is false <br>
+                            else: <br>
+                            &nbsp;&nbsp;# Execute this block if outer_condition is false <br>
+                        </code>
+                    </div>
+            
+                    <h3>Example 1: Loan Eligibility</h3>
+                    <p>
+                        Suppose you are checking if someone qualifies for a loan based on their age and income:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            age = 25 <br>
+                            income = 40000 <br>
+                            if age >= 18: <br>
+                            &nbsp;&nbsp;if income >= 30000: <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;print("You qualify for the loan!") <br>
+                            &nbsp;&nbsp;else: <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;print("You need a higher income to qualify.") <br>
+                            else: <br>
+                            &nbsp;&nbsp;print("You must be at least 18 years old to qualify.") <br>
+                        </code>
+                    </div>
+                    <p>
+                        In this example, the program first checks if the person is 18 or older. If true, it then checks their income.
+                    </p>
+            
+                    <h3>Example 2: Grading System</h3>
+                    <p>
+                        Nested conditions can also be used in a grading system:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            score = 85 <br>
+                            if score >= 60: <br>
+                            &nbsp;&nbsp;if score >= 90: <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;print("Grade: A") <br>
+                            &nbsp;&nbsp;elif score >= 80: <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;print("Grade: B") <br>
+                            &nbsp;&nbsp;elif score >= 70: <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;print("Grade: C") <br>
+                            &nbsp;&nbsp;else: <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;print("Grade: D") <br>
+                            else: <br>
+                            &nbsp;&nbsp;print("Grade: F") <br>
+                        </code>
+                    </div>
+                    <p>
+                        In this example, the outer condition checks if the score is 60 or higher, and the inner conditions evaluate the exact grade.
+                    </p>
+            
+                    <h3>Best Practices</h3>
+                    <ul>
+                        <li>Keep nested levels to a minimum to ensure readability.</li>
+                        <li>Use clear and descriptive variable names to make your logic easy to follow.</li>
+                        <li>Consider breaking down deeply nested conditions into functions for better code organization.</li>
+                    </ul>
+            
+                    <h3>Next Step</h3>
+                    <p>
+                        Practice using nested conditions by completing the 
+                        <a href="#python-nested-conditions-exercise">exercise section</a>.
+                    </p>
+                </section>
+            </div>
+            <div class="detailed-plan-klm123" id="python-pass-statement-tutorial">
+                <section>
+                    <h2>The pass Statement in Python</h2>
+                    <p>
+                        The pass statement in Python is a placeholder that allows you to create empty code blocks without causing errors. It is useful when you want to define a block of code but leave it empty for now.
+                    </p>
+            
+                    <h3>What is the `pass` Statement?</h3>
+                    <p>
+                        The `pass` statement is a "do nothing" statement. It tells Python to skip executing anything in the block where it is used, without breaking the program's syntax.
+                    </p>
+            
+                    <h3>Syntax of the `pass` Statement</h3>
+                    <p>The `pass` statement is extremely simple. Here is its syntax:</p>
+                    <div class="code-example-html">
+                        <code>
+                            if True: <br>
+                            &nbsp;&nbsp;pass <br>
+                            print("Program continues...") <br>
+                        </code>
+                    </div>
+                    <p>
+                        In this example, the `if` block contains the `pass` statement, so nothing happens inside the block. The program then moves to the next line.
+                    </p>
+            
+                    <h3>When to Use `pass`</h3>
+                    <ul>
+                        <li><strong>Placeholder for Incomplete Code:</strong> Use `pass` to temporarily define empty loops, functions, or classes during development.</li>
+                        <li><strong>Empty Blocks:</strong> Use `pass` in places where a block is syntactically required but no action is needed.</li>
+                    </ul>
+            
+                    <h3>Example 1: Placeholder for a Function</h3>
+                    <p>
+                        You can define a function without implementing it yet using `pass`:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            def future_function(): <br>
+                            &nbsp;&nbsp;pass <br>
+                            print("Function defined but not implemented.") <br>
+                        </code>
+                    </div>
+            
+                    <h3>Example 2: Placeholder in a Loop</h3>
+                    <p>
+                        You can use `pass` in loops where no action is needed for certain iterations:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            for i in range(5): <br>
+                            &nbsp;&nbsp;if i == 3: <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;pass  # Do nothing for i = 3 <br>
+                            &nbsp;&nbsp;else: <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;print(i) <br>
+                        </code>
+                    </div>
+                    <p>
+                        In this example, when `i` equals 3, the loop simply "passes" over that iteration without performing any action.
+                    </p>
+            
+                    <h3>Key Points to Remember</h3>
+                    <ul>
+                        <li>The `pass` statement is purely a placeholder; it performs no operation.</li>
+                        <li>It's often replaced by actual code during later stages of development.</li>
+                    </ul>
+            
+                    <h3>Next Step</h3>
+                    <p>
+                        Try using the `pass` statement in different scenarios by completing the 
+                        <a href="#python-pass-statement-exercise">exercise section</a>.
+                    </p>
+                </section>
+            </div>
+            <div class="detailed-plan-klm123" id="python-ternary-operators-tutorial">
+                <section>
+                    <h2>Ternary (Conditional) Operators in Python</h2>
+                    <p>
+                        A ternary operator is a shorthand way of writing a simple <code>if</code>...<code>else</code> statement. It allows you to evaluate a condition and return a value in a single line of code, making your code more concise.
+                    </p>
+            
+                    <h3>Syntax of Ternary Operators</h3>
+                    <p>
+                        The syntax of a ternary operator in Python is:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            value_if_true if condition else value_if_false <br>
+                        </code>
+                    </div>
+                    <p>
+                        This expression evaluates the condition. If it is true, it returns <code>value_if_true</code>. Otherwise, it returns <code>value_if_false</code>.
+                    </p>
+            
+                    <h3>Example 1: Checking a Number</h3>
+                    <p>
+                        Suppose you want to check if a number is positive or negative:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            num = 5 <br>
+                            result = "Positive" if num > 0 else "Negative" <br>
+                            print(result)  # Output: Positive <br>
+                        </code>
+                    </div>
+                    <p>
+                        In this example, the condition <code>num > 0</code> evaluates to <code>True</code>, so <code>"Positive"</code> is assigned to <code>result</code>.
+                    </p>
+            
+                    <h3>Example 2: Even or Odd</h3>
+                    <p>
+                        You can use a ternary operator to determine if a number is even or odd:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            num = 8 <br>
+                            result = "Even" if num % 2 == 0 else "Odd" <br>
+                            print(result)  # Output: Even <br>
+                        </code>
+                    </div>
+            
+                    <h3>Example 3: Assigning Based on Multiple Conditions</h3>
+                    <p>
+                        You can also use ternary operators with more complex conditions:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            age = 18 <br>
+                            category = "Adult" if age >= 18 else "Minor" <br>
+                            print(category)  # Output: Adult <br>
+                        </code>
+                    </div>
+            
+                    <h3>Best Practices for Using Ternary Operators</h3>
+                    <ul>
+                        <li>Use ternary operators for simple, concise conditional statements.</li>
+                        <li>Avoid using them for complex logic, as it can reduce code readability.</li>
+                        <li>Always ensure your code remains easy to understand by others.</li>
+                    </ul>
+            
+                    <h3>Next Step</h3>
+                    <p>
+                        Practice ternary operators by completing the 
+                        <a href="#python-ternary-operators-exercise">exercise section</a>.
+                    </p>
+                </section>
+            </div>
+            <div class="detailed-plan-klm123" id="python-for-loops-tutorial">
+                <section>
+                    <h2>For Loops in Python</h2>
+                    <p>
+                        A <code>for</code> loop in Python is used to iterate over a sequence (such as a list, tuple, string, or range) and execute a block of code for each item in the sequence. It’s one of the most powerful and commonly used features in Python.
+                    </p>
+            
+                    <h3>How Does a for Loop Work?</h3>
+                    <p>
+                        The <code>for</code> loop iterates through items in a sequence, executing the block of code inside the loop for each item. The syntax is:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            for variable in sequence: <br>
+                            &nbsp;&nbsp;# Code to execute for each item in the sequence <br>
+                        </code>
+                    </div>
+                    <p>
+                        Here, <code>variable</code> takes the value of each item in the sequence, one at a time, and the loop runs until all items in the sequence are processed.
+                    </p>
+            
+                    <h3>Example 1: Iterating Through a List</h3>
+                    <p>Here’s a simple example of a <code>for</code> loop iterating through a list:</p>
+                    <div class="code-example-html">
+                        <code>
+                            fruits = ["apple", "banana", "cherry"] <br>
+                            for fruit in fruits: <br>
+                            &nbsp;&nbsp;print(fruit) <br>
+                            # Output: <br>
+                            # apple <br>
+                            # banana <br>
+                            # cherry <br>
+                        </code>
+                    </div>
+            
+                    <h3>Example 2: Using the range() Function</h3>
+                    <p>
+                        The <code>range()</code> function generates a sequence of numbers. It’s commonly used with <code>for</code> loops:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            for i in range(5): <br>
+                            &nbsp;&nbsp;print(i) <br>
+                            # Output: <br>
+                            # 0 <br>
+                            # 1 <br>
+                            # 2 <br>
+                            # 3 <br>
+                            # 4 <br>
+                        </code>
+                    </div>
+                    <p>
+                        By default, <code>range(start, stop)</code> starts at 0 and goes up to (but does not include) the <code>stop</code> value.
+                    </p>
+            
+                    <h3>Example 3: Iterating Over Strings</h3>
+                    <p>
+                        Strings are also sequences, so you can iterate over each character in a string:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            name = "Python" <br>
+                            for letter in name: <br>
+                            &nbsp;&nbsp;print(letter) <br>
+                            # Output: <br>
+                            # P <br>
+                            # y <br>
+                            # t <br>
+                            # h <br>
+                            # o <br>
+                            # n <br>
+                        </code>
+                    </div>
+            
+                    <h3>Using else with a for Loop</h3>
+                    <p>
+                        Python allows you to use an <code>else</code> block with a <code>for</code> loop. The <code>else</code> block executes when the loop completes all iterations without encountering a <code>break</code> statement:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            for i in range(3): <br>
+                            &nbsp;&nbsp;print(i) <br>
+                            else: <br>
+                            &nbsp;&nbsp;print("Loop completed!") <br>
+                            # Output: <br>
+                            # 0 <br>
+                            # 1 <br>
+                            # 2 <br>
+                            # Loop completed! <br>
+                        </code>
+                    </div>
+            
+                    <h3>Best Practices</h3>
+                    <ul>
+                        <li>Use descriptive variable names in your loops, like <code>item</code>, <code>num</code>, or <code>fruit</code>.</li>
+                        <li>Be cautious when modifying the sequence being iterated over during the loop.</li>
+                        <li>Use <code>range()</code> for generating sequences of numbers efficiently.</li>
+                    </ul>
+            
+                    <h3>Next Step</h3>
+                    <p>
+                        Practice writing <code>for</code> loops by completing the 
+                        <a href="#python-for-loops-exercise">exercise section</a>.
+                    </p>
+                </section>
+            </div>
+            <div class="detailed-plan-klm123" id="python-while-loops-tutorial">
+                <section>
+                    <h2>While Loops in Python</h2>
+                    <p>
+                        A <code>while</code> loop in Python is used to repeatedly execute a block of code as long as a specified condition remains true. It’s particularly useful when the number of iterations is not known in advance and depends on a condition.
+                    </p>
+            
+                    <h3>How Does a While Loop Work?</h3>
+                    <p>
+                        The <code>while</code> loop keeps running as long as the condition evaluates to <code>True</code>. The syntax is:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            while condition: <br>
+                            &nbsp;&nbsp;# Code to execute repeatedly <br>
+                        </code>
+                    </div>
+                    <p>
+                        If the condition becomes <code>False</code>, the loop stops executing and the program moves to the next statement after the loop.
+                    </p>
+            
+                    <h3>Example 1: Counting Numbers</h3>
+                    <p>
+                        Let’s write a program that counts from 1 to 5 using a <code>while</code> loop:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            count = 1 <br>
+                            while count <= 5: <br>
+                            &nbsp;&nbsp;print(count) <br>
+                            &nbsp;&nbsp;count += 1  # Increment the count <br>
+                            # Output: <br>
+                            # 1 <br>
+                            # 2 <br>
+                            # 3 <br>
+                            # 4 <br>
+                            # 5 <br>
+                        </code>
+                    </div>
+            
+                    <h3>Example 2: Sum of Numbers</h3>
+                    <p>
+                        You can use a <code>while</code> loop to calculate the sum of numbers:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            total = 0 <br>
+                            num = 1 <br>
+                            while num <= 10: <br>
+                            &nbsp;&nbsp;total += num <br>
+                            &nbsp;&nbsp;num += 1 <br>
+                            print(total)  # Output: 55 <br>
+                        </code>
+                    </div>
+            
+                    <h3>Infinite Loops</h3>
+                    <p>
+                        A <code>while</code> loop can run indefinitely if the condition never becomes <code>False</code>. This is called an infinite loop:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            while True: <br>
+                            &nbsp;&nbsp;print("This is an infinite loop!") <br>
+                        </code>
+                    </div>
+                    <p>
+                        To stop an infinite loop, use <code>Ctrl+C</code> in the terminal or close the program. Always ensure that your loop includes a way to exit.
+                    </p>
+            
+                    <h3>Using Else with While Loops</h3>
+                    <p>
+                        Similar to <code>for</code> loops, <code>while</code> loops can also have an <code>else</code> block. The <code>else</code> block executes after the loop condition becomes <code>False</code>, provided the loop was not terminated by a <code>break</code> statement.
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            num = 1 <br>
+                            while num < 3: <br>
+                            &nbsp;&nbsp;print(num) <br>
+                            &nbsp;&nbsp;num += 1 <br>
+                            else: <br>
+                            &nbsp;&nbsp;print("Loop finished!") <br>
+                            # Output: <br>
+                            # 1 <br>
+                            # 2 <br>
+                            # Loop finished! <br>
+                        </code>
+                    </div>
+            
+                    <h3>Best Practices</h3>
+                    <ul>
+                        <li>Always ensure the loop condition will eventually become <code>False</code> to avoid infinite loops.</li>
+                        <li>Use <code>break</code> statements judiciously to exit loops prematurely.</li>
+                        <li>Be mindful of the condition to prevent unexpected behavior.</li>
+                    </ul>
+            
+                    <h3>Next Step</h3>
+                    <p>
+                        Practice writing <code>while</code> loops by completing the 
+                        <a href="#python-while-loops-exercise">exercise section</a>.
+                    </p>
+                </section>
+            </div>
+            <div class="detailed-plan-klm123" id="python-break-statement-tutorial">
+                <h2>The Break Statement</h2>
+                <p>
+                  The <code>break</code> statement in Python is used to exit a loop prematurely, before the loop condition is met or the loop has iterated through all items. This can be useful when a specific condition is met, and you no longer need to continue the loop.
+                </p>
+              
+                <h3>How the <code>break</code> Statement Works</h3>
+                <p>Here’s the syntax for using the <code>break</code> statement in a loop:</p>
+                <div class="code-example-html">
+                  &lt;div class="code-example-html"&gt;<br>
+                  &nbsp;&nbsp;while condition:<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;# Some code<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;if break_condition:<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break  &lt;!-- Exit the loop --&gt;<br>
+                  &nbsp;&nbsp;# Code after the loop<br>
+                  &lt;/div&gt;
+                </div>
+              
+                <h3>Example: Exiting a Loop Early</h3>
+                <p>Consider a scenario where you want to stop a loop once a specific condition is met:</p>
+                <div class="code-example-html">
+                  &lt;div class="code-example-html"&gt;<br>
+                  &nbsp;&nbsp;numbers = [1, 2, 3, 4, 5]<br>
+                  &nbsp;&nbsp;for num in numbers:<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;if num == 3:<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;print(num)<br>
+                  <br>
+                  &nbsp;&nbsp;# Output:<br>
+                  &nbsp;&nbsp;# 1<br>
+                  &nbsp;&nbsp;# 2<br>
+                  &lt;/div&gt;
+                </div>
+              
+                <h3>Using <code>break</code> in a While Loop</h3>
+                <p>Here’s another example, but this time with a <code>while</code> loop:</p>
+                <div class="code-example-html">
+                  &lt;div class="code-example-html"&gt;<br>
+                  &nbsp;&nbsp;x = 0<br>
+                  &nbsp;&nbsp;while x &lt; 10:<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;if x == 5:<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;print(x)<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;x += 1<br>
+                  <br>
+                  &nbsp;&nbsp;# Output:<br>
+                  &nbsp;&nbsp;# 0<br>
+                  &nbsp;&nbsp;# 1<br>
+                  &nbsp;&nbsp;# 2<br>
+                  &nbsp;&nbsp;# 3<br>
+                  &nbsp;&nbsp;# 4<br>
+                  &lt;/div&gt;
+                </div>
+              
+                <h3>When to Use the <code>break</code> Statement</h3>
+                <p>Some common use cases for the <code>break</code> statement include:</p>
+                <ul>
+                  <li>Exiting a loop when a certain condition is met.</li>
+                  <li>Preventing infinite loops by setting a manual exit condition.</li>
+                  <li>Stopping the search for an item once it’s found.</li>
+                </ul>
+              
+                <a href="#python-break-statement-exercise">Ready to practice using The Break Statement?</a>
+              </div>
+
+        <!-- Exercises -->
+        <div class="detailed-plan-klm123" id="python-syntax-basics-exercise">
+            <section>
+                <h2>Python Syntax Basics: Exercises</h2>
+                <p>
+                    Test your understanding of Python's syntax basics by completing the following exercises. These tasks will help reinforce what you've learned about case sensitivity, indentation, comments, printing, and taking input.
+                </p>
+        
+                <strong>1. Case Sensitivity</strong>
+                <p>
+                    Create two variables: one named <code>myVariable</code> and another named <code>MYVARIABLE</code>. Assign them different values and print both to observe the difference.
+                </p>
+        
+                <strong>2. Indentation</strong>
+                <p>
+                    Write an <code>if</code> statement to check if a number is positive. Inside the <code>if</code> block, print "Positive number". Be sure to indent correctly.
+                </p>
+        
+                <div class="code-example-html">
+                    <code>
+                        # Example structure: <br>
+                        number = 5 <br>
+                        # Your if statement goes here!
+                    </code>
+                </div>
+        
+                <strong>3. Comments</strong>
+                <p>
+                    Add a single-line comment to explain what the following line of code does:
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        print("Learning Python!") <br>
+                    </code>
+                </div>
+                <p>
+                    Then, write a multi-line comment explaining what Python is used for.
+                </p>
+        
+                <strong>4. Printing Output</strong>
+                <p>
+                    Use the <code>print()</code> function to display the following:
+                </p>
+                <ul>
+                    <li>Your favorite programming language</li>
+                    <li>The sum of 15 and 20</li>
+                    <li>A sentence that includes a number, such as "I have 3 apples."</li>
+                </ul>
+
+                <strong>6. Ending Statements</strong>
+                <p>
+                    Write a Python script that includes two print statements on the same line, separated by a semicolon (<code>;</code>). Then, rewrite the code without using the semicolon.
+                </p>
+        
+                <h3>Next Step</h3>
+                <p>
+                    Once you’ve completed these exercises, move on to the next topic: <a href="#python-variables-tutorial">Variables in Python</a>.
+                </p>
+            </section>
+        </div>
+        <div class="detailed-plan-klm123" id="python-variables-exercise">
+            <section>
+                <h2>Variables in Python: Exercises</h2>
+                <p>
+                    Test your understanding of Python variables with these exercises. These tasks cover declaring, updating, and printing variables, as well as following proper naming conventions.
+                </p>
+        
+                <strong>1. Declaring and Updating Variables</strong>
+                <p>
+                    Create a variable called <code>favorite_food</code> and set it to your favorite food. Later, update it to a different food and print both values.
+                </p>
+        
+                <strong>2. Naming Conventions</strong>
+                <p>
+                    Identify which of the following variable names are valid and which are not:
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        1name = "John" <br>
+                        my_name = "Sherlock" <br>
+                        favorite-food = "Pizza" <br>
+                        MyName = "Bobby" <br>
+                        return = 25
+                    </code>
+                </div>
+                <p>
+                    For the invalid ones, explain why they are incorrect.
+                </p>
+        
+                <strong>3. Multiple Assignments</strong>
+                <p>
+                    Assign the values <code>10</code>, <code>20</code>, and <code>30</code> to the variables <code>x</code>, <code>y</code>, and <code>z</code> in a single line. Print their values to verify.
+                </p>
+        
+                <strong>4. Printing Variables</strong>
+                <p>
+                    Create variables for your first name, last name, and age. Use the <code>print()</code> function to display a sentence introducing yourself, such as:
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        My name is Sherlock Johnson, and I am 25 years old.
+                    </code>
+                </div>
+        
+                <strong>5. Formatted Strings</strong>
+                <p>
+                    Rewrite the previous exercise using an <code>f-string</code> to include the variables in the output.
+                </p>
+        
+                <h3>Next Step</h3>
+                <p>
+                    Once you’ve completed these exercises, move on to the next topic: <a href="#python-data-types-tutorial">Data Types in Python</a>.
+                </p>
+            </section>
+        </div>
+        <div class="detailed-plan-klm123" id="python-data-types-exercise">
+            <section>
+                <h2>Python Data Types: Exercises</h2>
+                <p>
+                    Test your understanding of Python data types by completing these exercises. These questions are designed to help you identify and work with various data types in Python.
+                </p>
+        
+                <strong>1. Identifying Data Types</strong>
+                <p>
+                    Write a Python program to print the data type of the following variables:
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        name = "Jessica" <br>
+                        age = 30 <br>
+                        height = 5.6 <br>
+                        is_student = True <br>
+                        print(type(name))  <br>
+                        print(type(age))  <br>
+                        print(type(height))  <br>
+                        print(type(is_student))  <br>
+                    </code>
+                </div>
+                <p>
+                    What will the output be for each of the <code>type()</code> calls? Write down your answers and verify them by running the code.
+                </p>
+        
+                <strong>2. Convert Data Types</strong>
+                <p>
+                    Write a Python program to perform the following conversions:
+                </p>
+                <ol>
+                    <li>Convert an integer <code>age = 25</code> to a string.</li>
+                    <li>Convert a string <code>height = "5.6"</code> to a float.</li>
+                    <li>Convert a float <code>weight = 72.5</code> to an integer.</li>
+                </ol>
+                <p>Print the results of each conversion.</p>
+        
+                <strong>3. Boolean Values</strong>
+                <p>
+                    Write a Python program that evaluates the following expressions and prints the results:
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        print(bool(0))  <br>
+                        print(bool(1))  <br>
+                        print(bool(""))  <br>
+                        print(bool("Hello"))  <br>
+                        print(bool([]))  <br>
+                        print(bool([1, 2, 3]))  <br>
+                    </code>
+                </div>
+                <p>
+                    Based on your results, explain when a value is considered <code>True</code> or <code>False</code> in Python.
+                </p>
+        
+                <h3>Next Step</h3>
+                <p> 
+                Ready to move on to <a href="#python-mutable-immutable-tutorial">Mutable vs Immutable Types</a>?
+                </p>
+            </section>
+        </div>
+        <div class="detailed-plan-klm123" id="python-mutable-immutable-exercise">
+            <section>
+                <h2>Mutable vs Immutable Types: Exercises</h2>
+                <p>
+                    Test your understanding of mutable and immutable types by solving the following exercises.
+                </p>
+        
+                <strong>1. Identify Mutability</strong>
+                <p>
+                    Below is a list of Python data types. Identify whether each one is mutable or immutable:
+                </p>
+                <ul>
+                    <li><code>int</code></li>
+                    <li><code>list</code></li>
+                    <li><code>str</code></li>
+                    <li><code>dict</code></li>
+                    <li><code>tuple</code></li>
+                </ul>
+                <p>Write down your answers and check if they are correct.</p>
+        
+                <strong>2. Experiment with Mutability</strong>
+                <p>
+                    Write a Python program that performs the following tasks:
+                </p>
+                <ol>
+                    <li>Create a list called <code>students</code> with the values <code>["John", "Emily", "Mark"]</code>.</li>
+                    <li>Modify the second value in the list to <code>"Emma"</code>.</li>
+                    <li>Print the updated list to verify the change.</li>
+                </ol>
+                <p>
+                    Then, try the same with a tuple called <code>teachers</code> initialized as <code>("Mr. Brown", "Ms. Green")</code>. Attempt to modify the second value and observe the result.
+                </p>
+        
+                <strong>3. Mutable Default Argument (Challenge)</strong>
+                <p>
+                    Consider the following Python function:
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        def add_student(student, student_list=[]): <br>
+                            &nbsp;&nbsp;student_list.append(student) <br>
+                            &nbsp;&nbsp;return student_list <br>
+                    </code>
+                </div>
+                <p>
+                    Answer the following:
+                </p>
+                <ul>
+                    <li>Why might using a mutable default argument like <code>student_list=[]</code> be problematic?</li>
+                    <li>Modify the function to avoid this issue.</li>
+                </ul>
+        
+                <h3>Next Step</h3>
+                <p>
+                    Once you've completed these exercises, move on to the next topic: <a href="#python-constants-naming-conventions-tutorial">Constants and Naming Conventions</a>.
+                </p>
+            </section>
+        </div>
+        <div class="detailed-plan-klm123" id="python-constants-naming-conventions-exercise">
+            <section>
+                <h2>Constants and Naming Conventions: Exercises</h2>
+                <p>
+                    Test your understanding of constants and naming conventions in Python with these exercises.
+                </p>
+        
+                <strong>1. Identifying Constants</strong>
+                <p>
+                    Below is a list of variables. Identify which ones are intended to be constants and explain why:
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        PI = 3.14159 <br>
+                        gravity = 9.8 <br>
+                        MAX_LIMIT = 100 <br>
+                        speedOfLight = 299792458 <br>
+                    </code>
+                </div>
+        
+                <strong>2. Applying Naming Conventions</strong>
+                <p>
+                    Rewrite the following variable names to follow Python’s recommended naming conventions:
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        StudentName = "Alice" <br>
+                        totalMarks = 85 <br>
+                        MAXSPEED = 120 <br>
+                        _secretValue = 42 <br>
+                    </code>
+                </div>
+        
+                <strong>3. Consistency in Naming</strong>
+                <p>
+                    Review the code snippet below. Identify and fix any inconsistencies in the naming conventions:
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        student_name = "Alice" <br>
+                        studentAge = 20 <br>
+                        total_marks = 95 <br>
+                        FinalGrade = "A" <br>
+                    </code>
+                </div>
+        
+                <strong>4. Creating Constants</strong>
+                <p>
+                    Define three constants for your program:
+                </p>
+                <ul>
+                    <li>The value of <code>PI</code>.</li>
+                    <li>A default timeout for network requests.</li>
+                    <li>The maximum allowed number of retries for a failed operation.</li>
+                </ul>
+        
+                <strong>5. Practical Application</strong>
+                <p>
+                    Write a Python program that:
+                </p>
+                <ul>
+                    <li>Defines a constant for the tax rate (<code>TAX_RATE</code>) and sets it to 0.07.</li>
+                    <li>Calculates the total cost after tax for an item costing $100.</li>
+                    <li>Prints the total cost in a sentence.</li>
+                </ul>
+        
+                <h3>Next Step</h3>
+                <p>
+                    Once you’ve completed these exercises, move on to the next topic: <a href="#python-dynamic-typing-tutorial">Dynamic Typing</a>.
+                </p>
+            </section>
+        </div>
+        <div class="detailed-plan-klm123" id="python-arithmetic-operators-exercise">
+            <section>
+                <h2>Arithmetic Operators: Exercises</h2>
+                <p>Test your understanding of Python's arithmetic operators with the following exercises.</p>
+                
+                <strong>1. Basic Arithmetic</strong>
+                <p>Write a Python program to calculate the following:</p>
+                <ul>
+                    <li>The sum of 45 and 78</li>
+                    <li>The difference when 100 is subtracted from 35</li>
+                    <li>The product of 12 and 9</li>
+                    <li>The division of 144 by 12</li>
+                </ul>
+                <p>Print each result with a descriptive message.</p>
+        
+                <strong>2. Using Floor Division</strong>
+                <p>Write a Python program to divide 83 by 7 using floor division. Then, calculate the remainder using the modulus operator.</p>
+        
+                <strong>3. Exponentiation</strong>
+                <p>Create a program that calculates:</p>
+                <ul>
+                    <li>5 raised to the power of 3</li>
+                    <li>2 raised to the power of 10</li>
+                </ul>
+                <p>Print the results with a message explaining the calculation.</p>
+        
+                <strong>4. Combine Operations</strong>
+                <p>Write a Python expression to calculate the following in one line:</p>
+                <ul>
+                    <li>Multiply 10 by 5, add 20, and divide the result by 3.</li>
+                </ul>
+                <p>Print the final result.</p>
+        
+                <strong>5. Practice with Variables</strong>
+                <p>Write a Python program that:</p>
+                <ul>
+                    <li>Defines a variable <code>length</code> as 10 and <code>width</code> as 15.</li>
+                    <li>Calculates the area of a rectangle using the formula: <code>area = length * width</code>.</li>
+                    <li>Prints the result with the message: "The area of the rectangle is [area]".</li>
+                </ul>
+        
+                <h3>Next Step</h3>
+                <p>Ready to move on to the next topic? Check out the <a href="#python-comparison-operators-tutorial">Comparison Operators</a> section.</p>
+            </section>
+        </div>
+        <div class="detailed-plan-klm123" id="python-comparison-operators-exercise">
+            <section>
+                <h2>Comparison Operators: Exercises</h2>
+                <p>
+                    Practice using Python's comparison operators to understand their functionality. These exercises will test your ability to use operators like `==`, `!=`, `<`, `<=`, `>`, and `>=` in real-world scenarios.
+                </p>
+        
+                <strong>1. Simple Comparison</strong>
+                <p>
+                    Write a Python script that compares two numbers, 15 and 10, using the following comparison operators:
+                </p>
+                <ul>
+                    <li>`==` (equal to)</li>
+                    <li>`!=` (not equal to)</li>
+                    <li>`>` (greater than)</li>
+                    <li>`>=` (greater than or equal to)</li>
+                    <li>`<` (less than)</li>
+                    <li>`<=` (less than or equal to)</li>
+                </ul>
+                <p>
+                    Print the results of each comparison.
+                </p>
+        
+                <strong>2. Comparing Strings</strong>
+                <p>
+                    Create a program that compares two strings, `"apple"` and `"banana"`, using the comparison operators:
+                </p>
+                <ul>
+                    <li>`==` (equal to)</li>
+                    <li>`!=` (not equal to)</li>
+                    <li>`>` (greater than – checks alphabetical order)</li>
+                    <li>`<` (less than – checks alphabetical order)</li>
+                </ul>
+                <p>
+                    Print the result of each comparison.
+                </p>
+        
+                <h3>Next Step</h3>
+                <p>
+                    Ready to learn about logical operators? Check out <a href="#python-logical-operators-tutorial">Logical Operators</a>.
+                </p>
+            </section>
+        </div>
+        <div class="detailed-plan-klm123" id="python-logical-operators-exercise">
+            <section>
+                <h2>Logical Operators: Exercises</h2>
+                <p>
+                    Practice using Python's logical operators with the following beginner-friendly exercises.
+                </p>
+        
+                <strong>1. Combining Booleans</strong>
+                <p>
+                    Write a Python program that evaluates the following and prints the results:
+                </p>
+                <ul>
+                    <li><code>True and False</code></li>
+                    <li><code>True or False</code></li>
+                    <li><code>not True</code></li>
+                    <li><code>not (True and False)</code></li>
+                </ul>
+        
+                <strong>2. Combining Conditions</strong>
+                <p>
+                    Create a Python program that defines two variables: <code>age</code> and <code>is_student</code>. Assign any values you like. Use logical operators to:
+                </p>
+                <ul>
+                    <li>Check if the age is greater than 18 and the person is a student.</li>
+                    <li>Check if the age is less than 18 or the person is a student.</li>
+                    <li>Invert the result of the first condition using the <code>not</code> operator.</li>
+                </ul>
+                <p>
+                    Print the results of each condition.
+                </p>
+        
+                <strong>3. Eligibility Checker</strong>
+                <p>
+                    Define two variables: <code>has_license</code> and <code>passed_test</code>. Assign boolean values (<code>True</code> or <code>False</code>) to them.
+                </p>
+                <ul>
+                    <li>Create a variable called <code>eligible</code> and use the <code>and</code> operator to check if the person is eligible to drive.</li>
+                    <li>Print "Eligible to drive: True" or "Eligible to drive: False" based on the value of <code>eligible</code>.</li>
+                </ul>
+        
+                <strong>4. Experiment with Variables</strong>
+                <p>
+                    Define two new variables:
+                </p>
+                <ul>
+                    <li><code>is_weekend</code> (set to <code>True</code> or <code>False</code>).</li>
+                    <li><code>has_free_time</code> (set to <code>True</code> or <code>False</code>).</li>
+                </ul>
+                <p>
+                    Combine these variables using the <code>and</code> and <code>or</code> operators to determine:
+                </p>
+                <ul>
+                    <li>If you can relax (<code>is_weekend or has_free_time</code>).</li>
+                    <li>If you can study (<code>not has_free_time</code>).</li>
+                </ul>
+        
+                <h3>Next Step</h3>
+                <p>
+                    Once you’ve completed these exercises, move on to the next topic: 
+                    <a href="#python-assignment-operators-tutorial">Assignment Operators</a>.
+                </p>
+            </section>
+        </div>
+        <div class="detailed-plan-klm123" id="python-assignment-operators-exercise">
+            <section>
+                <h2>Assignment Operators: Exercises</h2>
+                <p>
+                    Test your understanding of Python's assignment operators with the following exercises.
+                </p>
+        
+                <strong>1. Basic Assignments</strong>
+                <p>
+                    Write a Python script that:
+                </p>
+                <ul>
+                    <li>Assigns the value <code>20</code> to a variable <code>x</code>.</li>
+                    <li>Prints the value of <code>x</code>.</li>
+                    <li>Uses the <code>+=</code> operator to add <code>10</code> to <code>x</code> and prints the result.</li>
+                </ul>
+        
+                <strong>2. Compound Assignments</strong>
+                <p>
+                    Start with a variable <code>y</code> set to <code>50</code>. Perform the following operations and print the result after each step:
+                </p>
+                <ul>
+                    <li>Subtract <code>15</code> using <code>-=</code>.</li>
+                    <li>Multiply by <code>2</code> using <code>*=</code>.</li>
+                    <li>Divide by <code>5</code> using <code>/=</code>.</li>
+                    <li>Find the remainder when divided by <code>3</code> using <code>%=</code>.</li>
+                </ul>
+        
+                <strong>3. Exponentiation and Floor Division</strong>
+                <p>
+                    Write a Python program that:
+                </p>
+                <ul>
+                    <li>Initializes a variable <code>z</code> to <code>4</code>.</li>
+                    <li>Raises <code>z</code> to the power of <code>3</code> using <code>**=</code>.</li>
+                    <li>Performs floor division by <code>7</code> using <code>//=</code>.</li>
+                    <li>Prints the final result.</li>
+                </ul>
+        
+                <strong>4. Practice with User Input</strong>
+                <p>
+                    Create a Python program that:
+                </p>
+                <ul>
+                    <li>Asks the user to input a number and stores it in a variable <code>num</code>.</li>
+                    <li>Adds <code>5</code> to <code>num</code> using <code>+=</code>.</li>
+                    <li>Multiplies <code>num</code> by <code>2</code> using <code>*=</code>.</li>
+                    <li>Prints the final value of <code>num</code>.</li>
+                </ul>
+        
+                <h3>Next Step</h3>
+                <p>
+                    Once you’ve completed these exercises, move on to the next topic: 
+                    <a href="#python-membership-operators-tutorial">Membership Operators</a>.
+                </p>
+            </section>
+        </div>
+        <div class="detailed-plan-klm123" id="python-membership-operators-exercise">
+            <section>
+                <h2>Membership Operators: Exercises</h2>
+                <p>
+                    Practice using Python's <code>in</code> and <code>not in</code> operators with these exercises.
+                </p>
+        
+                <strong>1. Checking Strings</strong>
+                <p>
+                    Write a Python program to:
+                </p>
+                <ul>
+                    <li>Check if the character <code>'p'</code> is present in the string <code>"apple"</code>.</li>
+                    <li>Check if the character <code>'z'</code> is not present in the string <code>"banana"</code>.</li>
+                    <li>Print the results of each check.</li>
+                </ul>
+        
+                <strong>2. Working with Lists</strong>
+                <p>
+                    Create a Python program that:
+                </p>
+                <ul>
+                    <li>Defines a list of fruits: <code>['apple', 'banana', 'cherry']</code>.</li>
+                    <li>Checks if <code>'banana'</code> is in the list.</li>
+                    <li>Checks if <code>'grape'</code> is not in the list.</li>
+                    <li>Prints the results of each check.</li>
+                </ul>
+        
+                <strong>3. Dictionary Keys</strong>
+                <p>
+                    Write a Python program that:
+                </p>
+                <ul>
+                    <li>Defines a dictionary of scores: <code>{'Alice': 85, 'Bob': 90, 'Charlie': 78}</code>.</li>
+                    <li>Checks if <code>'Alice'</code> is a key in the dictionary.</li>
+                    <li>Checks if <code>'David'</code> is not a key in the dictionary.</li>
+                    <li>Prints the results of each check.</li>
+                </ul>
+        
+                <strong>4. Bonus Challenge</strong>
+                <p>
+                    Write a Python program that:
+                </p>
+                <ul>
+                    <li>Defines a string <code>"membership"</code>.</li>
+                    <li>Checks if any of the vowels (<code>'a', 'e', 'i', 'o', 'u'</code>) are in the string.</li>
+                    <li>Prints which vowels are present in the string.</li>
+                </ul>
+        
+                <h3>Next Step</h3>
+                <p>
+                    Once you’ve completed these exercises, move on to the next topic: 
+                    <a href="#python-identity-operators-tutorial">Identity Operators</a>.
+                </p>
+            </section>
+        </div>
+        <div class="detailed-plan-klm123" id="python-identity-operators-exercise">
+            <section>
+                <h2>Identity Operators: Exercises</h2>
+                <p>
+                    Practice using Python's identity operators <code>is</code> and <code>is not</code> with these exercises.
+                </p>
+        
+                <strong>1. Comparing Objects</strong>
+                <p>
+                    Write a Python program that:
+                </p>
+                <ul>
+                    <li>Creates two variables, <code>a</code> and <code>b</code>, both referring to the same list object: <code>[1, 2, 3]</code>.</li>
+                    <li>Checks if <code>a is b</code>.</li>
+                    <li>Creates a new variable <code>c</code> with a separate list <code>[1, 2, 3]</code>.</li>
+                    <li>Checks if <code>c is a</code> and if <code>c is not a</code>.</li>
+                    <li>Prints all results.</li>
+                </ul>
+        
+                <strong>2. Using is with None</strong>
+                <p>
+                    Write a Python program that:
+                </p>
+                <ul>
+                    <li>Creates a variable <code>x</code> and sets it to <code>None</code>.</li>
+                    <li>Checks if <code>x is None</code>.</li>
+                    <li>Changes <code>x</code> to a number, such as <code>10</code>.</li>
+                    <li>Checks if <code>x is not None</code>.</li>
+                    <li>Prints the results.</li>
+                </ul>
+        
+                <strong>3. Comparing Strings</strong>
+                <p>
+                    Write a Python program to:
+                </p>
+                <ul>
+                    <li>Create two variables, <code>str1</code> and <code>str2</code>, both set to the same string: <code>'hello'</code>.</li>
+                    <li>Check if <code>str1 is str2</code> and print the result.</li>
+                    <li>Create a new string variable <code>str3</code> with the value <code>'hello'</code>.</li>
+                    <li>Check if <code>str3 is str1</code> and if <code>str3 is not str1</code>.</li>
+                    <li>Print all results.</li>
+                </ul>
+        
+                <strong>4. Bonus Challenge</strong>
+                <p>
+                    Write a program to compare two dictionaries:
+                </p>
+                <ul>
+                    <li>Create two dictionary variables, <code>dict1</code> and <code>dict2</code>, both with the same key-value pairs.</li>
+                    <li>Check if <code>dict1 is dict2</code>.</li>
+                    <li>Check if <code>dict1 == dict2</code>.</li>
+                    <li>Print the results and explain the difference between <code>is</code> and <code>==</code> in this case.</li>
+                </ul>
+        
+                <h3>Next Step</h3>
+                <p>
+                    Once you’ve completed these exercises, move on to the next topic: 
+                    <a href="#python-bitwise-operators-tutorial">Bitwise Operators</a>.
+                </p>
+            </section>
+        </div>
+        <div class="detailed-plan-klm123" id="python-bitwise-operators-exercise">
+            <section>
+                <h2>Bitwise Operators: Exercises</h2>
+                <p>
+                    Test your understanding of Python’s bitwise operators with these exercises.
+                </p>
+        
+                <strong>1. Understanding Bitwise AND</strong>
+                <p>
+                    Write a Python program that:
+                </p>
+                <ul>
+                    <li>Defines two integers, <code>a = 12</code> and <code>b = 6</code>.</li>
+                    <li>Uses the <code>&</code> operator to calculate their bitwise AND.</li>
+                    <li>Prints the result.</li>
+                </ul>
+        
+                <strong>2. Using Bitwise OR and XOR</strong>
+                <p>
+                    Write a Python program that:
+                </p>
+                <ul>
+                    <li>Defines two integers, <code>x = 9</code> and <code>y = 5</code>.</li>
+                    <li>Calculates their bitwise OR using the <code>|</code> operator and prints the result.</li>
+                    <li>Calculates their bitwise XOR using the <code>^</code> operator and prints the result.</li>
+                </ul>
+        
+                <strong>3. Bitwise NOT</strong>
+                <p>
+                    Write a Python program that:
+                </p>
+                <ul>
+                    <li>Defines an integer <code>z = 7</code>.</li>
+                    <li>Applies the <code>~</code> operator to invert its bits.</li>
+                    <li>Prints the result.</li>
+                </ul>
+        
+                <strong>4. Shifting Bits</strong>
+                <p>
+                    Write a Python program to:
+                </p>
+                <ul>
+                    <li>Define an integer <code>n = 4</code>.</li>
+                    <li>Shift its bits one place to the left using <code>&lt;&lt;</code> and print the result.</li>
+                    <li>Shift its bits one place to the right using <code>&gt;&gt;</code> and print the result.</li>
+                </ul>
+        
+                <strong>5. Bonus Challenge</strong>
+                <p>
+                    Write a Python program that:
+                </p>
+                <ul>
+                    <li>Defines two integers, <code>a = 29</code> and <code>b = 15</code>.</li>
+                    <li>Calculates the result of <code>(a & b) | (~b)</code> and prints it.</li>
+                    <li>Explains the result in a comment.</li>
+                </ul>
+        
+                <h3>Next Step</h3>
+                <p>
+                    Once you’ve completed these exercises, you’re ready to move on to <a href="#python-control-flow-tutorial">Control Flow</a>.
+                </p>
+            </section>
+        </div>
+        <div class="detailed-plan-klm123" id="python-control-flow-exercise">
+            <section>
+                <h2>if, elif, and else Statements: Exercises</h2>
+                <p>
+                    Test your understanding of conditional statements with these exercises. Use what you've learned about <code>if</code>, <code>elif</code>, and <code>else</code> to complete the challenges.
+                </p>
+        
+                <strong>1. Temperature Check</strong>
+                <p>
+                    Use the predefined variable <code>temperature</code> and write a program that categorizes the weather:
+                </p>
+                <ul>
+                    <li>If the temperature is above 30, print "It's hot!".</li>
+                    <li>If the temperature is between 20 and 30 (inclusive), print "It's warm."</li>
+                    <li>If the temperature is below 20, print "It's cold!".</li>
+                </ul>
+                <div class="code-example-html">
+                    <code>
+                        # Example variable <br>
+                        temperature = 25 <br>
+                        # Your conditional logic here
+                    </code>
+                </div>
+        
+                <strong>2. Grading System</strong>
+                <p>
+                    Use a predefined variable <code>score</code> and write a program to print the corresponding grade based on this scale:
+                </p>
+                <ul>
+                    <li>90 and above: "Grade: A"</li>
+                    <li>80 to 89: "Grade: B"</li>
+                    <li>70 to 79: "Grade: C"</li>
+                    <li>60 to 69: "Grade: D"</li>
+                    <li>Below 60: "Grade: F"</li>
+                </ul>
+                <p>
+                    Use <code>if</code>, <code>elif</code>, and <code>else</code> to structure your solution.
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        # Example variable <br>
+                        score = 85 <br>
+                        # Your conditional logic here
+                    </code>
+                </div>
+        
+                <strong>3. Number Categorizer</strong>
+                <p>
+                    Use a predefined variable <code>number</code> and write a program to categorize it as:
+                </p>
+                <ul>
+                    <li>"Positive" if the number is greater than 0.</li>
+                    <li>"Negative" if the number is less than 0.</li>
+                    <li>"Zero" if the number is exactly 0.</li>
+                </ul>
+                <div class="code-example-html">
+                    <code>
+                        # Example variable <br>
+                        number = -5 <br>
+                        # Your conditional logic here
+                    </code>
+                </div>
+        
+                <h3>Next Step</h3>
+                <p>
+                    Ready to move on? Check out the <a href="#python-nested-conditions-tutorial">Nested Conditions</a> tutorial!
+                </p>
+            </section>
+        </div>
+        <div class="detailed-plan-klm123" id="python-nested-conditions-exercise">
+            <section>
+                <h2>Nested Conditions: Exercises</h2>
+                <p>
+                    Test your understanding of nested conditions with these exercises. Use what you've learned to solve these challenges.
+                </p>
+        
+                <strong>1. Loan Eligibility</strong>
+                <p>
+                    Write a program that asks the user for their <code>age</code> and <code>income</code>. Use nested conditions to:
+                </p>
+                <ul>
+                    <li>Check if the user is 18 or older.</li>
+                    <li>If true, check if their income is 30,000 or more.</li>
+                    <li>Print "Eligible for loan" if both conditions are true.</li>
+                    <li>Otherwise, print an appropriate message (e.g., "Income too low" or "Not old enough").</li>
+                </ul>
+        
+                <strong>2. Grading System</strong>
+                <p>
+                    Create a program that asks the user for their exam score and prints their grade using the following logic:
+                </p>
+                <ul>
+                    <li>Score 90 or above: "Grade: A"</li>
+                    <li>Score 80-89: "Grade: B"</li>
+                    <li>Score 70-79: "Grade: C"</li>
+                    <li>Score 60-69: "Grade: D"</li>
+                    <li>Below 60: "Grade: F"</li>
+                </ul>
+                <p>
+                    Use nested conditions to structure your solution.
+                </p>
+        
+                <strong>3. BMI Classification</strong>
+                <p>
+                    Write a program that calculates a person's BMI using their weight (kg) and height (m) and classifies them:
+                </p>
+                <ul>
+                    <li>If BMI is below 18.5: "Underweight"</li>
+                    <li>If BMI is between 18.5 and 24.9: "Normal weight"</li>
+                    <li>If BMI is between 25 and 29.9: "Overweight"</li>
+                    <li>If BMI is 30 or higher: "Obesity"</li>
+                </ul>
+                <p>
+                    Use nested conditions to evaluate and classify the BMI.
+                </p>
+        
+                <strong>4. Advanced Challenge: Multi-Criteria Check</strong>
+                <p>
+                    Write a program that checks if a person qualifies for a fitness competition based on:
+                </p>
+                <ul>
+                    <li><strong>Age</strong>: Must be between 18 and 40.</li>
+                    <li><strong>BMI</strong>: Must be between 18.5 and 25.</li>
+                    <li><strong>Experience</strong>: Must have 2 or more years of training.</li>
+                </ul>
+                <p>
+                    Use nested conditions to validate each criterion and print the appropriate message.
+                </p>
+        
+                <h3>Next Step</h3>
+                <p>
+                    Ready to continue? Check out the <a href="#python-pass-statement-tutorial">pass Statement</a> tutorial!
+                </p>
+            </section>
+        </div>
+        <div class="detailed-plan-klm123" id="python-pass-statement-exercise">
+            <section>
+                <h2>The `pass` Statement: Exercises</h2>
+                <p>
+                    Practice using the `pass` statement with these simple exercises. Focus on creating empty blocks of code where necessary.
+                </p>
+        
+                <strong>1. Empty Conditional</strong>
+                <p>
+                    Use the `pass` statement to create a program with an empty <code>if</code> condition. For example:
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        x = 10 <br>
+                        if x > 5: <br>
+                        &nbsp;&nbsp;# Add your pass statement here <br>
+                        print("The program runs without errors.") <br>
+                    </code>
+                </div>
+        
+                <strong>2. Placeholder Function</strong>
+                <p>
+                    Define a function called <code>future_feature</code> that does not perform any operations yet. Use the `pass` statement to make it valid Python syntax.
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        def future_feature(): <br>
+                        &nbsp;&nbsp;# Add your pass statement here <br>
+                        print("This function is under development.") <br>
+                    </code>
+                </div>
+        
+                <h3>Next Step</h3>
+                <p>
+                    Ready to continue? Check out the 
+                    <a href="#python-ternary-operators-tutorial">Ternary Operators</a> tutorial!
+                </p>
+            </section>
+        </div>
+        <div class="detailed-plan-klm123" id="python-ternary-operators-exercise">
+            <section>
+                <h2>Ternary Operators: Exercises</h2>
+                <p>
+                    Test your understanding of Python's ternary operators with these exercises. Use the shorthand syntax to make your conditional statements concise.
+                </p>
+        
+                <strong>1. Even or Odd</strong>
+                <p>
+                    Write a program that determines if a number is even or odd using a ternary operator. Use the predefined variable <code>num</code> as shown below:
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        num = 7  # Example value <br>
+                        # Use a ternary operator to set the result variable <br>
+                        result = ...  # Your code here <br>
+                        print(result)  # Output: "Odd" <br>
+                    </code>
+                </div>
+        
+                <strong>2. Positive, Negative, or Zero</strong>
+                <p>
+                    Write a program that categorizes a number as positive, negative, or zero using nested ternary operators. Use the predefined variable <code>number</code>.
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        number = -3  # Example value <br>
+                        # Use nested ternary operators to set the category variable <br>
+                        category = ...  # Your code here <br>
+                        print(category)  # Output: "Negative" <br>
+                    </code>
+                </div>
+        
+                <strong>3. Age Category</strong>
+                <p>
+                    Use a ternary operator to determine the age category of a person. The predefined variable <code>age</code> should classify the person as "Adult" if 18 or older, otherwise "Minor".
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        age = 15  # Example value <br>
+                        # Use a ternary operator to set the age_category variable <br>
+                        age_category = ...  # Your code here <br>
+                        print(age_category)  # Output: "Minor" <br>
+                    </code>
+                </div>
+        
+                <h3>Next Step</h3>
+                <p>
+                    Ready to continue? Check out the <a href="#python-for-loops-tutorial">for Loops</a> tutorial!
+                </p>
+            </section>
+        </div>
+        <div class="detailed-plan-klm123" id="python-for-loops-exercise">
+            <section>
+                <h2>For Loops: Exercises</h2>
+                <p>
+                    Practice your understanding of <code>for</code> loops with these challenges. Use loops to iterate over lists, ranges, and strings.
+                </p>
+        
+                <strong>1. Sum of Numbers</strong>
+                <p>
+                    Write a program that calculates the sum of numbers from 1 to 10 using a <code>for</code> loop.
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        # Your code here <br>
+                        # Hint: Use range() to generate numbers from 1 to 10 <br>
+                    </code>
+                </div>
+        
+                <strong>2. Print Even Numbers</strong>
+                <p>
+                    Write a program that prints all the even numbers between 1 and 20 using a <code>for</code> loop.
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        # Your code here <br>
+                        # Hint: Check if a number is even using the modulo operator (%) <br>
+                    </code>
+                </div>
+        
+                <strong>3. List Iteration</strong>
+                <p>
+                    Given the list <code>colors = ["red", "blue", "green", "yellow"]</code>, write a program that prints each color using a <code>for</code> loop.
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        colors = ["red", "blue", "green", "yellow"] <br>
+                        # Your code here <br>
+                    </code>
+                </div>
+        
+                <strong>4. Counting Characters in a String</strong>
+                <p>
+                    Write a program that counts the number of characters in the string <code>"Python is fun!"</code> using a <code>for</code> loop. Ignore spaces.
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        text = "Python is fun!" <br>
+                        # Your code here <br>
+                    </code>
+                </div>
+        
+                <strong>5. Multiplication Table</strong>
+                <p>
+                    Write a program that prints the multiplication table of 3 (from 1 to 10) using a <code>for</code> loop.
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        # Your code here <br>
+                        # Hint: Multiply 3 by each number in range(1, 11) <br>
+                    </code>
+                </div>
+        
+                <h3>Next Step</h3>
+                <p>
+                    Ready to continue? Check out the <a href="#python-while-loops-tutorial">while Loops</a> tutorial next!
+                </p>
+            </section>
+        </div>
+        <div class="detailed-plan-klm123" id="python-while-loops-exercise">
+            <h2>While Loops: Exercises</h2>
+            <p>Test your understanding of while loops with the following exercises.</p>
+          
+            <div class="exercise-question">
+              <strong>1. Print Numbers from 1 to 5</strong><br>
+              Write a program that uses a <code>while</code> loop to print the numbers from 1 to 5.
+              <div class="code-example-html">
+                &lt;!-- Your code here --&gt;<br>
+              </div>
+            </div>
+          
+            <div class="exercise-question">
+              <strong>2. Even Numbers Between 2 and 10</strong><br>
+              Use a <code>while</code> loop to print all the even numbers from 2 to 10.
+              <div class="code-example-html">
+                &lt;!-- Your code here --&gt;<br>
+              </div>
+            </div>
+          
+            <div class="exercise-question">
+              <strong>3. Sum of Natural Numbers</strong><br>
+              Write a program that uses a <code>while</code> loop to calculate the sum of numbers from 1 to 10. Print the final result.<br>
+              <div class="code-example-html">
+                &lt;!-- Your code here --&gt;<br>
+              </div>
+            </div>
+          
+            <div class="exercise-question">
+              <strong>4. Countdown to Zero</strong><br>
+              Write a program that counts down from 5 to 1 using a <code>while</code> loop and prints each number.<br>
+              <div class="code-example-html">
+                &lt;!-- Your code here --&gt;<br>
+              </div>
+            </div>
+          
+            <div class="exercise-question">
+              <strong>5. Keep Asking Until Correct</strong><br>
+              Write a program that keeps asking the user to enter the number <code>7</code> until they get it right. Use a <code>while</code> loop.<br>
+              <em>Hint:</em> Use <code>input()</code> to ask the user for a number.<br>
+              <div class="code-example-html">
+                &lt;!-- Your code here --&gt;<br>
+              </div>
+            </div>
+          
+            <a href="#python-break-statement-tutorial">Ready to move on to The Break Statement?</a>
+          </div>
+
+        </div>
+    </main>
+    <footer>
+        <link rel="stylesheet" href="../styles/header.css">
+        <!-- Logo and Description -->
+        
+    
+        <!-- Navigation Links -->
+        <div class="footer-nav">
+            <ul> 
+                <div class="footer-logo-div">
+                <a href="../index.html" class="footer-logo">
+                    <img src="/images/stromayer (3).png" class="footer-logo" alt="Stromayer Logo">
+                </a>
+                </div>
+                </ul>
+           
+            <ul>
+                <li><a href="/html pages/about-us.html">About Us</a></li>
+                <li><a href="/html pages/contact-us.html">Contact Us</a></li>
+                <li><a href="/html pages/privacy-policy.html">Privacy Policy</a></li>
+                
+            </ul>
+            <ul>
+                <li><a href="/html pages/careers.html">Careers</a></li>
+                <li><a href="/html pages/affiliation-disclosure.html">Affiliate Disclosure</a></li>
+                <li><a href="/html pages/terms-of-service.html">Terms and Conditions</a></li>
+            </ul>
+            <ul>
+                <li>E: info@stromayer.com</li>
+                <li><div class="footer-social">
+                </div>
+            </li>
+            </ul>
+        </div>
+        
+    
+        <div class="footer-social">
+            <a href="../html pages/manage-subscriptions.html" class="p">Manage Preferences</a>
+        </div>
+    
+        <!-- Copyright Information -->
+        <div class="footer-bottom">
+            <p>© 2024 Your Blog Name. All rights reserved.</p>
+        </div>
+    
+    </footer>
+    
+    <script src="/script.js?v=2"></script>
+</body>
+
+    </html>

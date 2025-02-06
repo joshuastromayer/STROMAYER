@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Responsive - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="/styles/coding.css">
+</head>
+
+<div id="header-container"></div>
+<body class="html-page-klm123">
+    <link rel="stylesheet" href="../styles/coding.css">
+<main class="html-main-klm123">
+    <!-- Quick Start Plan -->
+    <div id="css-quick-menu"></div>
+
+    <!-- Detailed Plan -->
+    <div class="main-tutorial-content">
+        <div class="detailed-plan-klm123" id="css-responsive-tutorial">
+            <h2>CSS Responsive Design</h2>
+            <p>
+                Responsive design ensures that a website looks and functions well across a wide range of devices, screen sizes, and orientations. It adapts the layout, styles, and content to provide a consistent user experience.
+            </p>
+        
+            <h3>Core Principles of Responsive Design</h3>
+            <p>
+                To create responsive designs, consider the following principles:
+            </p>
+            <ul>
+                <li><strong>Fluid Grids:</strong> Use percentages or fractional units for widths instead of fixed pixel values.</li>
+                <li><strong>Flexible Images:</strong> Ensure images resize within their containers without overflowing.</li>
+                <li><strong>Media Queries:</strong> Adjust styles based on the user's device or viewport size.</li>
+            </ul>
+        
+            <h3>Using Fluid Grids</h3>
+            <p>
+                A fluid grid divides the page layout into flexible columns. Instead of using fixed widths (e.g., 200px), use percentages or the <code>fr</code> unit:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    .container {<br>
+                    &nbsp;&nbsp;display: grid;<br>
+                    &nbsp;&nbsp;grid-template-columns: 1fr 2fr 1fr;<br>
+                    &nbsp;&nbsp;gap: 10px;<br>
+                    }<br>
+                    .box {<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;padding: 20px;<br>
+                    &nbsp;&nbsp;text-align: center;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="container"&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="box"&gt;1&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="box"&gt;2&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="box"&gt;3&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>Flexible Images</h3>
+            <p>
+                To make images responsive, use the <code>max-width</code> property. Setting <code>max-width: 100%</code> ensures that images resize to fit their containers:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    img {<br>
+                    &nbsp;&nbsp;max-width: 100%;<br>
+                    &nbsp;&nbsp;height: auto;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;img src="example.jpg" alt="Responsive Image"&gt;
+                </code>
+            </div>
+        
+            <h3>Combining Media Queries</h3>
+            <p>
+                Media queries allow you to adapt layouts based on breakpoints. For example:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    .container {<br>
+                    &nbsp;&nbsp;display: flex;<br>
+                    &nbsp;&nbsp;flex-wrap: wrap;<br>
+                    }<br>
+                    .box {<br>
+                    &nbsp;&nbsp;width: 30%;<br>
+                    &nbsp;&nbsp;margin: 1%;<br>
+                    &nbsp;&nbsp;background-color: lightgreen;<br>
+                    &nbsp;&nbsp;text-align: center;<br>
+                    &nbsp;&nbsp;padding: 10px;<br>
+                    }<br>
+                    @media (max-width: 768px) {<br>
+                    &nbsp;&nbsp;.box {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;width: 100%;<br>
+                    &nbsp;&nbsp;}<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="container"&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="box"&gt;Box 1&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="box"&gt;Box 2&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="box"&gt;Box 3&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                </code>
+            </div>
+            <p>
+                In this example, the boxes are arranged in a row for larger screens. On smaller screens (768px or smaller), they stack vertically.
+            </p>
+        
+            <h3>Viewport Meta Tag</h3>
+            <p>
+                The <code>&lt;meta&gt;</code> viewport tag is essential for responsive design. It ensures that the page scales correctly on different devices. Add this to the <code>&lt;head&gt;</code> of your HTML:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                </code>
+            </div>
+        
+            <h3>Practical Example</h3>
+            <p>
+                Combine these techniques to create a responsive layout. For example:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    .container {<br>
+                    &nbsp;&nbsp;display: grid;<br>
+                    &nbsp;&nbsp;grid-template-columns: repeat(3, 1fr);<br>
+                    &nbsp;&nbsp;gap: 20px;<br>
+                    }<br>
+                    .box {<br>
+                    &nbsp;&nbsp;background-color: lightcoral;<br>
+                    &nbsp;&nbsp;padding: 20px;<br>
+                    &nbsp;&nbsp;text-align: center;<br>
+                    }<br>
+                    @media (max-width: 768px) {<br>
+                    &nbsp;&nbsp;.container {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;grid-template-columns: 1fr;<br>
+                    &nbsp;&nbsp;}<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="container"&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="box"&gt;1&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="box"&gt;2&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="box"&gt;3&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="box"&gt;4&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                </code>
+            </div>
+        
+            <p>
+                <a href="./css-responsive.html#css-responsive-exercises" class="neutral">
+                    Ready to test your knowledge? Head to the exercises section!
+                </a>
+            </p>
+        </div>
+
+        <div class="detailed-plan-klm123" id="css-responsive-exercises">
+            <h2>CSS Responsive Design: Exercises</h2>
+        
+            <h3>1. Fluid Grid</h3>
+            <p>
+                Create a responsive grid layout using the following specifications:
+                <ul>
+                    <li>Three columns, each taking 1/3 of the available width.</li>
+                    <li>A gap of 15px between columns.</li>
+                    <li>When the viewport width is 768px or smaller, switch to a single-column layout.</li>
+                </ul>
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-1">Reveal Answer</button>
+            <div id="answer-1" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .container {<br>
+                    &nbsp;&nbsp;display: grid;<br>
+                    &nbsp;&nbsp;grid-template-columns: repeat(3, 1fr);<br>
+                    &nbsp;&nbsp;gap: 15px;<br>
+                    }<br>
+                    .box {<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;padding: 20px;<br>
+                    &nbsp;&nbsp;text-align: center;<br>
+                    }<br>
+                    @media (max-width: 768px) {<br>
+                    &nbsp;&nbsp;.container {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;grid-template-columns: 1fr;<br>
+                    &nbsp;&nbsp;}<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="container"&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="box"&gt;1&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="box"&gt;2&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="box"&gt;3&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>2. Flexible Images</h3>
+            <p>
+                Add an image to your page and make it responsive by ensuring it never overflows its container. Use the following specifications:
+                <ul>
+                    <li>Set the image to resize proportionally.</li>
+                    <li>Ensure the container width is 80% of the viewport width.</li>
+                </ul>
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-2">Reveal Answer</button>
+            <div id="answer-2" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .container {<br>
+                    &nbsp;&nbsp;width: 80%;<br>
+                    &nbsp;&nbsp;margin: auto;<br>
+                    }<br>
+                    img {<br>
+                    &nbsp;&nbsp;max-width: 100%;<br>
+                    &nbsp;&nbsp;height: auto;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="container"&gt;<br>
+                    &nbsp;&nbsp;&lt;img src="example.jpg" alt="Responsive Image"&gt;<br>
+                    &lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>3. Hiding Elements</h3>
+            <p>
+                Create a navigation bar (<code>&lt;nav&gt;</code>) and hide it when the viewport width is smaller than 600px. Use <code>display: none</code> to hide the navigation bar.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-3">Reveal Answer</button>
+            <div id="answer-3" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    nav {<br>
+                    &nbsp;&nbsp;background-color: lightgreen;<br>
+                    &nbsp;&nbsp;padding: 10px;<br>
+                    }<br>
+                    @media (max-width: 600px) {<br>
+                    &nbsp;&nbsp;nav {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;display: none;<br>
+                    &nbsp;&nbsp;}<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;nav&gt;Navigation Bar&lt;/nav&gt;
+                </code>
+            </div>
+        
+            <h3>4. Adjusting Font Sizes</h3>
+            <p>
+                Use media queries to adjust the font size of your page's content based on the viewport width:
+                <ul>
+                    <li>For viewports 600px or smaller, set the font size to 14px.</li>
+                    <li>For viewports between 601px and 1200px, set the font size to 16px.</li>
+                    <li>For viewports larger than 1200px, set the font size to 18px.</li>
+                </ul>
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-4">Reveal Answer</button>
+            <div id="answer-4" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    body {<br>
+                    &nbsp;&nbsp;font-size: 16px;<br>
+                    }<br>
+                    @media (max-width: 600px) {<br>
+                    &nbsp;&nbsp;body {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;font-size: 14px;<br>
+                    &nbsp;&nbsp;}<br>
+                    }<br>
+                    @media (min-width: 1201px) {<br>
+                    &nbsp;&nbsp;body {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;font-size: 18px;<br>
+                    &nbsp;&nbsp;}<br>
+                    }<br>
+                    &lt;/style&gt;
+                </code>
+            </div>
+        
+            <h3>5. Responsive Layout with Flexbox</h3>
+            <p>
+                Create a responsive layout using Flexbox with the following specifications:
+                <ul>
+                    <li>Three boxes aligned horizontally on larger screens.</li>
+                    <li>On screens smaller than 768px, stack the boxes vertically.</li>
+                </ul>
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-5">Reveal Answer</button>
+            <div id="answer-5" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .container {<br>
+                    &nbsp;&nbsp;display: flex;<br>
+                    &nbsp;&nbsp;gap: 10px;<br>
+                    }<br>
+                    .box {<br>
+                    &nbsp;&nbsp;background-color: lightcoral;<br>
+                    &nbsp;&nbsp;padding: 20px;<br>
+                    &nbsp;&nbsp;text-align: center;<br>
+                    }<br>
+                    @media (max-width: 768px) {<br>
+                    &nbsp;&nbsp;.container {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;flex-direction: column;<br>
+                    &nbsp;&nbsp;}<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="container"&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="box"&gt;1&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="box"&gt;2&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="box"&gt;3&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                </code>
+            </div>
+        
+            <div class="navigation-buttons">
+                <a href="./css-media-queries.html" class="navigation-button prev-button neutral">← CSS Media Queries</a>
+                <a href="./css-transitions.html" class="navigation-button next-button neutral">CSS Transitions →</a>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+    <div id="footer-container"></div>
+    
+    <script src="/script.js?v=2"></script>
+</body>
+</html>

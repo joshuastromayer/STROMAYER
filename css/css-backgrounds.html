@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Backgrounds - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="/styles/coding.css">
+</head>
+
+<div id="header-container"></div>
+<body class="html-page-klm123">
+    <link rel="stylesheet" href="../styles/coding.css">
+<main class="html-main-klm123">
+    <!-- Quick Start Plan -->
+    <div id="css-quick-menu"></div>
+
+    <!-- Detailed Plan -->
+    <div class="main-tutorial-content">
+        <div class="detailed-plan-klm123" id="css-backgrounds-tutorial">
+            <h2>CSS Backgrounds</h2>
+            <p>
+                CSS backgrounds are a powerful way to enhance the look and feel of your webpage. You can style backgrounds with colors, images, gradients, and even patterns, allowing for greater design flexibility and creativity.
+            </p>
+        
+            <h3>Background Color</h3>
+            <p>
+                The <code>background-color</code> property sets the background color of an element. You can use color names, HEX values, RGB, RGBA, or HSL values.
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;padding: 20px;<br>
+                    &nbsp;&nbsp;text-align: center;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;This div has a light blue background.&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>Background Image</h3>
+            <p>
+                Use the <code>background-image</code> property to set an image as the background of an element. You can specify the image using the <code>url()</code> function.
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;background-image: url('background.jpg');<br>
+                    &nbsp;&nbsp;background-size: cover;<br>
+                    &nbsp;&nbsp;height: 200px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>Background Size</h3>
+            <p>
+                The <code>background-size</code> property specifies the size of the background image. Common values include:
+            </p>
+            <ul>
+                <li><code>cover</code>: Ensures the background image covers the entire element.</li>
+                <li><code>contain</code>: Ensures the background image fits within the element.</li>
+                <li>Custom sizes like <code>50%</code> or <code>100px</code>.</li>
+            </ul>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;background-image: url('background.jpg');<br>
+                    &nbsp;&nbsp;background-size: cover;<br>
+                    &nbsp;&nbsp;height: 300px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>Background Repeat</h3>
+            <p>
+                The <code>background-repeat</code> property controls whether the background image is repeated. Values include:
+            </p>
+            <ul>
+                <li><code>repeat</code>: Default value; repeats the image.</li>
+                <li><code>no-repeat</code>: Prevents the image from repeating.</li>
+                <li><code>repeat-x</code>: Repeats the image horizontally.</li>
+                <li><code>repeat-y</code>: Repeats the image vertically.</li>
+            </ul>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;background-image: url('pattern.png');<br>
+                    &nbsp;&nbsp;background-repeat: repeat-x;<br>
+                    &nbsp;&nbsp;height: 200px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>Background Position</h3>
+            <p>
+                The <code>background-position</code> property specifies the starting position of a background image. Values can include keywords (e.g., <code>center</code>, <code>top left</code>) or coordinates (e.g., <code>50% 50%</code> or <code>10px 20px</code>).
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;background-image: url('image.jpg');<br>
+                    &nbsp;&nbsp;background-position: center;<br>
+                    &nbsp;&nbsp;height: 200px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>Background Attachment</h3>
+            <p>
+                The <code>background-attachment</code> property determines whether the background image scrolls with the page or remains fixed:
+            </p>
+            <ul>
+                <li><code>scroll</code>: The background image scrolls with the content (default).</li>
+                <li><code>fixed</code>: The background image remains fixed when scrolling.</li>
+            </ul>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;background-image: url('background.jpg');<br>
+                    &nbsp;&nbsp;background-attachment: fixed;<br>
+                    &nbsp;&nbsp;height: 300px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <p>
+                <a href="./css-backgrounds.html#css-backgrounds-exercises" class="neutral">Ready to test your knowledge? Head to the exercises section!</a>
+            </p>
+        </div>
+
+        <div class="detailed-plan-klm123" id="css-backgrounds-exercises">
+            <h2>CSS Backgrounds: Exercises</h2>
+        
+            <h3>1. Add a Background Color</h3>
+            <p>Set the background color of a &lt;div&gt; to lightgreen and add some text inside it. The text should be clear and visible.</p>
+            <button class="reveal-answer-btn" data-answer-id="answer-1">Reveal Answer</button>
+            <div id="answer-1" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;background-color: lightgreen;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;color: red; /* color must not be similar to lightgreen */<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;This is a lightgreen background&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>2. Add a Background Image</h3>
+            <p>Set an image as the background of a &lt;div&gt;. Make sure the image covers the entire &lt;div&gt; and does not repeat.</p>
+            <button class="reveal-answer-btn" data-answer-id="answer-2">Reveal Answer</button>
+            <div id="answer-2" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;background-image: url('background.jpg');<br>
+                    &nbsp;&nbsp;background-size: cover;<br>
+                    &nbsp;&nbsp;background-repeat: no-repeat;<br>
+                    &nbsp;&nbsp;height: 200px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>3. Use Background Position</h3>
+            <p>Create a &lt;div&gt; with a background image and position it at the bottom-right corner of the &lt;div&gt;.</p>
+            <button class="reveal-answer-btn" data-answer-id="answer-3">Reveal Answer</button>
+            <div id="answer-3" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;background-image: url('image.jpg');<br>
+                    &nbsp;&nbsp;background-position: bottom right;<br>
+                    &nbsp;&nbsp;height: 150px;<br>
+                    &nbsp;&nbsp;width: 300px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>4. Create a Fixed Background</h3>
+            <p>Create a &lt;div&gt; with a height of 500px and set a fixed background image that does not scroll with the content.</p>
+            <button class="reveal-answer-btn" data-answer-id="answer-4">Reveal Answer</button>
+            <div id="answer-4" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;background-image: url('fixed-background.jpg');<br>
+                    &nbsp;&nbsp;background-attachment: fixed;<br>
+                    &nbsp;&nbsp;background-size: cover;<br>
+                    &nbsp;&nbsp;height: 500px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>5. Combine Background Properties</h3>
+            <p>
+                Create a &lt;div&gt; with the following background properties: 
+                <ul>
+                    <li>A background image of your choice</li>
+                    <li>Centered horizontally and vertically</li>
+                    <li>No repetition</li>
+                    <li>Covers the entire &lt;div&gt;</li>
+                </ul>
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-5">Reveal Answer</button>
+            <div id="answer-5" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;background-image: url('example.jpg');<br>
+                    &nbsp;&nbsp;background-size: cover;<br>
+                    &nbsp;&nbsp;background-position: center;<br>
+                    &nbsp;&nbsp;background-repeat: no-repeat;<br>
+                    &nbsp;&nbsp;height: 250px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <div class="navigation-buttons">
+                <a href="./css-colors.html" class="navigation-button prev-button neutral">← CSS Colors</a>
+                <a href="./css-borders.html" class="navigation-button next-button neutral">CSS Borders →</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <div id="footer-container"></div>
+    
+    <script src="/script.js?v=2"></script>
+</body>
+</html>

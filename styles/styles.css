@@ -1,0 +1,76 @@
+.courses-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.course-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  max-width: 400px;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.course-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.course-content {
+  padding: 15px;
+}
+
+.course-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.course-description {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.course-stats {
+  font-size: 13px;
+  color: #333;
+}
+
+.course-stats span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Sample images */
+.html-course {
+  background-image: url('https://via.placeholder.com/400x200?text=HTML+Course');
+}
+
+.css-course {
+  background-image: url('https://via.placeholder.com/400x200?text=CSS+Course');
+}
+
+.js-course {
+  background-image: url('https://via.placeholder.com/400x200?text=JavaScript+Course');
+}
+
+.python-course {
+  background-image: url('https://via.placeholder.com/400x200?text=Python+Course');
+}
+
+.java-course {
+  background-image: url('https://via.placeholder.com/400x200?text=Java+Course');
+}
+
+.sql-course {
+  background-image: url('https://via.placeholder.com/400x200?text=SQL+Course');
+}

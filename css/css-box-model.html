@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="/styles/coding.css">
+</head>
+
+<div id="header-container"></div>
+<body class="html-page-klm123">
+    <link rel="stylesheet" href="../styles/coding.css">
+<main class="html-main-klm123">
+    <!-- Quick Start Plan -->
+    <div id="css-quick-menu"></div>
+
+    <!-- Detailed Plan -->
+    <div class="main-tutorial-content">
+        <div class="detailed-plan-klm123" id="css-box-model-tutorial">
+            <h2>CSS Box Model</h2>
+            <p>
+                The CSS Box Model is a fundamental concept that defines how elements are structured and interact with other elements on a webpage. Understanding the Box Model is crucial for controlling layout, spacing, and the appearance of HTML elements.
+            </p>
+        
+            <h3>What is the CSS Box Model?</h3>
+            <p>
+                Every element in a web page is treated as a rectangular box, consisting of the following layers:
+            </p>
+            <ul>
+                <li><strong>Content:</strong> The actual content of the element, such as text, images, or other content.</li>
+                <li><strong>Padding:</strong> Space between the content and the element's border.</li>
+                <li><strong>Border:</strong> The edge surrounding the padding (or content if no padding is set).</li>
+                <li><strong>Margin:</strong> Space between the element and other elements on the page.</li>
+            </ul>
+        
+            <h3>Box Model Structure</h3>
+            <p>The structure of the Box Model can be visualized as:</p>
+            <div class="code-example-html">
+                <code>
+                    &lt;div style="margin: 10px; border: 2px solid black; padding: 15px;"&gt;<br>
+                    &nbsp;&nbsp;This is the content area.<br>
+                    &lt;/div&gt;
+                </code>
+            </div>
+            <p>
+                In this example:
+                <ul>
+                    <li>The content is the text: "This is the content area."</li>
+                    <li>The padding adds 15px space inside the border.</li>
+                    <li>The border is 2px thick and solid black.</li>
+                    <li>The margin creates 10px space around the element.</li>
+                </ul>
+            </p>
+        
+            <h3>Box Model Properties</h3>
+            <p>The Box Model is controlled by the following CSS properties:</p>
+            <ul>
+                <li><strong>Width and Height:</strong> Defines the size of the content area.</li>
+                <li><strong>Padding:</strong> Specifies the space between the content and the border.</li>
+                <li><strong>Border:</strong> Sets the style, width, and color of the border.</li>
+                <li><strong>Margin:</strong> Specifies the space around the element.</li>
+            </ul>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 200px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;padding: 20px;<br>
+                    &nbsp;&nbsp;border: 5px solid blue;<br>
+                    &nbsp;&nbsp;margin: 15px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;Box Model Example&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>Border-Box vs. Content-Box</h3>
+            <p>
+                By default, the Box Model uses the <code>content-box</code> model, where width and height only include the content area. You can switch to the <code>border-box</code> model, where width and height include padding and border, using:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;box-sizing: border-box;<br>
+                    }<br>
+                    &lt;/style&gt;
+                </code>
+            </div>
+            <p>
+                Using <code>box-sizing: border-box;</code> simplifies layout management by ensuring the total size of the element includes padding and border.
+            </p>
+        
+            <h3>Practice Example</h3>
+            <p>
+                Create a box with the following specifications:
+                <ul>
+                    <li>Width: 300px</li>
+                    <li>Height: 150px</li>
+                    <li>Padding: 10px</li>
+                    <li>Border: 5px solid red</li>
+                    <li>Margin: 20px</li>
+                </ul>
+                Observe how the Box Model affects the total size of the box.
+            </p>
+        
+            <p>
+                <a href="./css-box-model.html#css-box-model-exercises" class="neutral">
+                    Ready to test your knowledge? Head to the exercises section!
+                </a>
+            </p>
+        </div>
+
+        <div class="detailed-plan-klm123" id="css-box-model-exercises">
+            <h2>CSS Box Model: Exercises</h2>
+            
+            <h3>1. Understanding Margins</h3>
+            <p>Create a <code>&lt;div&gt;</code> with the following properties:</p>
+            <ul>
+                <li>Width: 200px</li>
+                <li>Height: 100px</li>
+                <li>Margin: 20px</li>
+                <li>Border: 2px solid black</li>
+                <li>Background color: lightblue</li>
+            </ul>
+            <button class="reveal-answer-btn" data-answer-id="answer-1">Reveal Answer</button>
+            <div id="answer-1" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 200px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;margin: 20px;<br>
+                    &nbsp;&nbsp;border: 2px solid black;<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;Box with Margin&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>2. Adding Padding</h3>
+            <p>
+                Create a <code>&lt;div&gt;</code> with the following properties:
+                <ul>
+                    <li>Width: 250px</li>
+                    <li>Height: 150px</li>
+                    <li>Padding: 15px</li>
+                    <li>Border: 3px dashed green</li>
+                    <li>Background color: lightcoral</li>
+                </ul>
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-2">Reveal Answer</button>
+            <div id="answer-2" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 250px;<br>
+                    &nbsp;&nbsp;height: 150px;<br>
+                    &nbsp;&nbsp;padding: 15px;<br>
+                    &nbsp;&nbsp;border: 3px dashed green;<br>
+                    &nbsp;&nbsp;background-color: lightcoral;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;Box with Padding&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>3. Exploring Border-Box</h3>
+            <p>
+                Create a <code>&lt;div&gt;</code> with the following properties and apply <code>box-sizing: border-box;</code>:
+                <ul>
+                    <li>Width: 300px</li>
+                    <li>Height: 150px</li>
+                    <li>Padding: 20px</li>
+                    <li>Border: 5px solid blue</li>
+                    <li>Background color: lightgreen</li>
+                </ul>
+                Observe how the box size is calculated differently.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-3">Reveal Answer</button>
+            <div id="answer-3" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 300px;<br>
+                    &nbsp;&nbsp;height: 150px;<br>
+                    &nbsp;&nbsp;padding: 20px;<br>
+                    &nbsp;&nbsp;border: 5px solid blue;<br>
+                    &nbsp;&nbsp;background-color: lightgreen;<br>
+                    &nbsp;&nbsp;box-sizing: border-box;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;Border-Box Example&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>4. Combining Box Model Properties</h3>
+            <p>
+                Create a <code>&lt;div&gt;</code> with the following properties:
+                <ul>
+                    <li>Width: 400px</li>
+                    <li>Height: 200px</li>
+                    <li>Margin: 10px</li>
+                    <li>Padding: 25px</li>
+                    <li>Border: 4px dotted red</li>
+                    <li>Background color: lightyellow</li>
+                </ul>
+                Use <code>box-sizing: content-box;</code> to observe the default behavior.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-4">Reveal Answer</button>
+            <div id="answer-4" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 400px;<br>
+                    &nbsp;&nbsp;height: 200px;<br>
+                    &nbsp;&nbsp;margin: 10px;<br>
+                    &nbsp;&nbsp;padding: 25px;<br>
+                    &nbsp;&nbsp;border: 4px dotted red;<br>
+                    &nbsp;&nbsp;background-color: lightyellow;<br>
+                    &nbsp;&nbsp;box-sizing: content-box;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;Combined Box Model Example&lt;/div&gt;
+                </code>
+            </div>
+        
+            <div class="navigation-buttons">
+                <a href="./css-padding.html" class="navigation-button prev-button neutral">← CSS Padding</a>
+                <a href="./css-width-height.html" class="navigation-button next-button neutral">CSS Width and Height →</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <div id="footer-container"></div>
+    
+    <script src="/script.js?v=2"></script>
+</body>
+</html>

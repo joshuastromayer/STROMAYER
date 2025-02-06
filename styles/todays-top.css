@@ -1,0 +1,109 @@
+/* Container for Today's Top Project */
+.top-project-card {
+    width: 400px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+/* Preview section */
+.top-project-preview {
+    width: 400px;
+    height: 350px; /* Adjust height as needed */
+    background-color: #f9f9f9;
+}
+
+.top-project-preview iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* Information section */
+.top-project-info {
+    padding: 1rem;
+    display: block;
+}
+
+.project-title {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.project-author {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.project-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.project-tags {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.tag {
+    background-color: #f0f0f0;
+    color: #555;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+}
+
+.view-full-button {
+    margin-left: auto; /* Pushes the button to the far right */
+    background-color: #ff9900;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.view-full-button:hover {
+    background-color: #e58900;
+}
+
+.iframe-container {
+    width: 400px; /* Set the width of your container */
+    height: 300px; /* Set the height of your container */
+    overflow: hidden;
+    position: relative;
+}
+
+.iframe-container iframe {
+    width: 100%; /* This will make the iframe take up the full width of the container */
+    height: 100%; /* This will make the iframe take up the full height of the container */
+    transform: scale(0.9); /* Adjust this scale to fit the iframe content within the container */
+    transform-origin: center; /* Ensures scaling starts from the top left corner */
+    position: absolute;
+    top: 0;
+    left: 0;
+    zoom: 0.4;
+}
+
+
+#top-projects-h2 {
+    font-size: 24px;
+}
+
+.projects-wsdfsgsfd {
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
+.project-container {
+    margin-top: 40px;
+}

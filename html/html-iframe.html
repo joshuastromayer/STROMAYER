@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Iframe - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="../styles/coding.css">
+</head>
+<div id="header-container"></div>
+      <body class="html-page-klm123">
+<link rel="stylesheet" href="../styles/coding.css">
+
+    
+        <main class="html-main-klm123">
+            <!-- Quick Start Plan -->
+            <div id="html-quick-menu"></div>
+    
+            <!-- Detailed Plan -->
+            <div class="main-tutorial-content">
+                <div class="detailed-plan-klm123" id="html-iframe-tutorial">
+                    <h2>HTML Iframes</h2>
+                
+                    <p>
+                        An <code>&lt;iframe&gt;</code> (short for inline frame) is an HTML element used to embed another HTML document within the current document. It allows you to display web pages, videos, or other content from external sources directly on your page.
+                    </p>
+                
+                    <h3>What is an Iframe?</h3>
+                    <p>
+                        An iframe acts as a window to another web page. It is useful for embedding content such as maps, videos, or third-party widgets. However, iframes should be used judiciously as they can slow down page performance and introduce security risks if not managed properly.
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;iframe src="https://www.example.com" width="600" height="400"&gt;&lt;/iframe&gt;
+                        </code>
+                    </div>
+                    <p>The above example embeds the webpage <code>https://www.example.com</code> into the current page.</p>
+                
+                    <h3>Attributes of Iframes</h3>
+                    <p>Iframes come with several attributes that help customize their behavior:</p>
+                    <ul>
+                        <li><strong>src:</strong> Specifies the URL of the page to be embedded.</li>
+                        <li><strong>width:</strong> Sets the width of the iframe (in pixels or percentage).</li>
+                        <li><strong>height:</strong> Sets the height of the iframe (in pixels or percentage).</li>
+                        <li><strong>title:</strong> Provides a text description for accessibility.</li>
+                        <li><strong>allow:</strong> Specifies what the iframe is allowed to do, such as autoplay videos or access the clipboard.</li>
+                        <li><strong>loading:</strong> Determines when the iframe should load (<code>lazy</code> or <code>eager</code>).</li>
+                    </ul>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;iframe src="https://www.example.com" width="600" height="400" title="Example Site" loading="lazy"&gt;&lt;/iframe&gt;
+                        </code>
+                    </div>
+                
+                    <h3>Styling Iframes</h3>
+                    <p>
+                        You can style iframes using CSS to adjust their appearance. For example, you can add borders, round corners, or set margins.
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;style&gt;<br>
+                            &nbsp;&nbsp;iframe {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;border: 2px solid #4fa3d8;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;border-radius: 10px;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);<br>
+                            &nbsp;&nbsp;}<br>
+                            &lt;/style&gt;<br>
+                            <br>
+                            &lt;iframe src="https://www.example.com" width="600" height="400"&gt;&lt;/iframe&gt;
+                        </code>
+                    </div>
+                
+                    <h3>Embedding Videos with Iframes</h3>
+                    <p>
+                        Iframes are commonly used to embed videos from platforms like YouTube. For example:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+                        </code>
+                    </div>
+                
+                    <h3>Limitations of Iframes</h3>
+                    <ul>
+                        <li>Some websites may restrict embedding their content using iframes for security reasons.</li>
+                        <li>Iframes can affect page performance, especially if the embedded content is heavy.</li>
+                        <li>Not all content is mobile-friendly within an iframe.</li>
+                    </ul>
+                
+                    <h3>Best Practices for Iframes</h3>
+                    <ul>
+                        <li>Use the <code>title</code> attribute for accessibility.</li>
+                        <li>Set a fixed <code>width</code> and <code>height</code> to avoid layout shifts.</li>
+                        <li>Use <code>loading="lazy"</code> to improve performance by deferring the loading of iframes until they come into view.</li>
+                    </ul>
+                
+                    <h3>Example: Embedding a Map</h3>
+                    <p>
+                        Here's an example of embedding a Google Map using an iframe:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;iframe<br>
+                            &nbsp;&nbsp;src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509423!2d144.9537363153178!3d-37.8162791797517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577f1d2c2c13c0!2sMelbourne%2C%20Australia!5e0!3m2!1sen!2sus!4v1615000000000!5m2!1sen!2sus"<br>
+                            &nbsp;&nbsp;width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"&gt;&lt;/iframe&gt;
+                        </code>
+                    </div>
+                
+                    <p>
+                        <a href="./html-iframe.html#html-iframe-exercises" class="neutral">
+                            Ready to test your knowledge? Head to the exercises section!
+                        </a>
+                    </p>
+                </div>
+
+                <div class="detailed-plan-klm123" id="html-iframe-exercises">
+                    <h2>HTML Iframes: Exercises</h2>
+                
+                    <h3>1. Embed a Web Page</h3>
+                    <p>
+                        Create an iframe that embeds the homepage of <code>https://example.com</code>. Set the iframe width to 800 pixels and height to 600 pixels.
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-1">Reveal Answer</button>
+                    <div id="answer-1" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;iframe src="https://example.com" width="800" height="600"&gt;&lt;/iframe&gt;
+                        </code>
+                    </div>
+                
+                    <h3>2. Add a Title and Lazy Loading</h3>
+                    <p>
+                        Modify the previous iframe to include a title of "Example Homepage" and enable lazy loading.
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-2">Reveal Answer</button>
+                    <div id="answer-2" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;iframe src="https://example.com" width="800" height="600" title="Example Homepage" loading="lazy"&gt;&lt;/iframe&gt;
+                        </code>
+                    </div>
+                
+                    <h3>3. Embed a YouTube Video</h3>
+                    <p>
+                        Embed the YouTube video with the ID <code>dQw4w9WgXcQ</code>. Set the width to 560 pixels and height to 315 pixels. Ensure the iframe allows fullscreen mode.
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-3">Reveal Answer</button>
+                    <div id="answer-3" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+                        </code>
+                    </div>
+                
+                    <h3>4. Style an Iframe</h3>
+                    <p>
+                        Embed an iframe that displays <code>https://example.com</code>. Add CSS to give the iframe a border of 3px solid blue and rounded corners with a radius of 10px.
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-4">Reveal Answer</button>
+                    <div id="answer-4" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;style&gt;<br>
+                            &nbsp;&nbsp;iframe {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;border: 3px solid blue;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;border-radius: 10px;<br>
+                            &nbsp;&nbsp;}<br>
+                            &lt;/style&gt;<br>
+                            <br>
+                            &lt;iframe src="https://example.com" width="800" height="600"&gt;&lt;/iframe&gt;
+                        </code>
+                    </div>
+                    <p>
+                        <a href="./html-css.html" class="neutral">
+                            Ready to learn about CSS? Let's go!
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <div id="footer-container"></div>
+    
+        <script src="/script.js?v=2"></script>
+    </body>
+</html>

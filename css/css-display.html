@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="/styles/coding.css">
+</head>
+
+<div id="header-container"></div>
+<body class="html-page-klm123">
+    <link rel="stylesheet" href="../styles/coding.css">
+<main class="html-main-klm123">
+    <!-- Quick Start Plan -->
+    <div id="css-quick-menu"></div>
+
+    <!-- Detailed Plan -->
+    <div class="main-tutorial-content">
+        <div class="detailed-plan-klm123" id="css-display-tutorial">
+            <h2>CSS Display</h2>
+            <p>
+                The <code>display</code> property in CSS determines how an element is displayed on the webpage. It defines the layout behavior of the element and impacts its interaction with other elements. Common values for the <code>display</code> property include:
+                <strong>block</strong>, <strong>inline</strong>, <strong>inline-block</strong>, <strong>none</strong>, <strong>flex</strong>, and <strong>grid</strong>.
+            </p>
+        
+            <h3>Block Display</h3>
+            <p>
+                Elements with a <code>display</code> value of <code>block</code> take up the full width of their container and start on a new line. Examples of block elements include <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, and <code>&lt;section&gt;</code>.
+            </p>
+            <div class="code-example-html code-example-html-w-image">
+                <div class="code-block">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;display: block;<br>
+                    &nbsp;&nbsp;width: 100%;<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;padding: 10px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;This is a block element.&lt;/div&gt;
+                </code>
+                </div>
+                <div class="image-block">
+                    <style>
+                        .qsdf929349239 {
+                          display: block;
+                          width: 100%;
+                          background-color: lightblue;
+                          padding: 10px;
+                        }
+                        </style>
+                        <div class="qsdf929349239">This is a block element.</div>
+                </div>
+            </div>
+        
+            <h3>Inline Display</h3>
+            <p>
+                Inline elements do not start on a new line and only take up as much width as necessary. Examples include <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>, and <code>&lt;strong&gt;</code>.
+            </p>
+            <div class="code-example-html code-example-html-w-image">
+                <div class="code-block">
+                <code>
+                    &lt;style&gt;<br>
+                    span {<br>
+                    &nbsp;&nbsp;display: inline;<br>
+                    &nbsp;&nbsp;background-color: lightcoral;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;p&gt;This is an example of <span>inline</span> display.&lt;/p&gt;
+                </code>
+                </div>
+                <div class="image-block">
+                    <style>
+                        .fk291239 {
+                          display: inline;
+                          background-color: lightcoral;
+                        }
+                        </style>
+                        <p class="fk291239">This is an example of inline display.</p>
+                </div>
+            </div>
+        
+            <h3>Inline-Block Display</h3>
+            <p>
+                Inline-block elements are similar to inline elements, but they allow setting width and height. They do not start on a new line.
+            </p>
+            <div class="code-example-html code-example-html-w-image">
+                <div class="code-block">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;display: inline-block;<br>
+                    &nbsp;&nbsp;width: 100px;<br>
+                    &nbsp;&nbsp;height: 50px;<br>
+                    &nbsp;&nbsp;background-color: lightgreen;<br>
+                    &nbsp;&nbsp;margin: 5px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;Box 1&lt;/div&gt;&lt;div&gt;Box 2&lt;/div&gt;
+                </code>
+                </div>
+                <div class="image-block"><style>
+                    .kj908128312h {
+                      display: inline-block;
+                      width: 100px;
+                      height: 50px;
+                      background-color: lightgreen;
+                      margin: 5px;
+                    }
+                    </style>
+                    <div class="kj908128312h">Box 1</div><div class="kj908128312h">Box 2</div></div>
+            </div>
+        
+            <h3>None Display</h3>
+            <p>
+                The <code>none</code> value hides an element from the webpage, removing it from the layout. The element does not occupy any space.
+            </p>
+            <div class="code-example-html code-example-html-w-image">
+                <div class="code-block">
+                <code>
+                    &lt;style&gt;<br>
+                    p.hidden {<br>
+                    &nbsp;&nbsp;display: none;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;p&gt;This paragraph is visible.&lt;/p&gt;<br>
+                    &lt;p class="hidden"&gt;This paragraph is hidden.&lt;/p&gt;
+                </code>
+                </div>
+                <div class="image-block"><style>
+                    p.hiddenq4234 {
+                      display: none;
+                    }
+                    </style>
+                    <p>This paragraph is visible.</p>
+                    <p class="hiddenq4234">This paragraph is hidden.</p></div>
+            </div>
+        
+            <h3>Flex Display</h3>
+            <p>
+                The <code>flex</code> value creates a flexible layout container. Its children are aligned according to the specified flexbox properties, such as <code>justify-content</code> and <code>align-items</code>.
+            </p>
+            <div class="code-example-html code-example-html-w-image">
+                <div class="code-block">
+                <code>
+                    &lt;style&gt;<br>
+                    .flex-container {<br>
+                    &nbsp;&nbsp;display: flex;<br>
+                    }<br>
+                    .flex-item {<br>
+                    &nbsp;&nbsp;width: 100px;<br>
+                    &nbsp;&nbsp;height: 50px;<br>
+                    &nbsp;&nbsp;background-color: lightyellow;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="flex-container"&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="flex-item"&gt;Item 1&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="flex-item"&gt;Item 2&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="flex-item"&gt;Item 3&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                </code>
+                </div>
+                <div class="image-block">
+                    <style>
+                    .flex-container {
+                      display: flex;
+                    }
+                    .flex-item {
+                      width: 100px;
+                      height: 50px;
+                      background-color: lightyellow;
+                    }
+                    </style>
+                    <div class="flex-container">
+                      <div class="flex-item">Item 1</div>
+                      <div class="flex-item">Item 2</div>
+                      <div class="flex-item">Item 3</div>
+                    </div></div>
+            </div>
+        
+            <h3>Grid Display</h3>
+            <p>
+                The <code>grid</code> value creates a grid-based layout. You can define rows, columns, and areas to organize elements.
+            </p>
+            <div class="code-example-html code-example-html-w-image">
+                <div class="code-block">
+                <code>
+                    &lt;style&gt;<br>
+                    .grid-container {<br>
+                    &nbsp;&nbsp;display: grid;<br>
+                    &nbsp;&nbsp;grid-template-columns: repeat(3, 1fr);<br>
+                    &nbsp;&nbsp;gap: 10px;<br>
+                    }<br>
+                    .grid-item {<br>
+                    &nbsp;&nbsp;background-color: lightgray;<br>
+                    &nbsp;&nbsp;text-align: center;<br>
+                    &nbsp;&nbsp;padding: 10px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="grid-container"&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;1&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;2&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;3&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;4&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;5&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;6&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                </code>
+                </div>
+                <div class="image-block">
+                    <style>
+                        .grid-container {
+                          display: grid;
+                          grid-template-columns: repeat(3, 1fr);
+                          gap: 10px;
+                        }
+                        .grid-item {
+                          background-color: lightgray;
+                          text-align: center;
+                          padding: 10px;
+                        }
+                        </style>
+                        <div class="grid-container">
+                          <div class="grid-item">1</div>
+                          <div class="grid-item">2</div>
+                          <div class="grid-item">3</div>
+                          <div class="grid-item">4</div>
+                          <div class="grid-item">5</div>
+                          <div class="grid-item">6</div>
+                        </div>
+                </div>
+            </div>
+        
+            <p>
+                <a href="./css-display.html#css-display-exercises" class="neutral">
+                    Ready to test your knowledge? Head to the exercises section!
+                </a>
+            </p>
+        </div>
+
+        <div class="detailed-plan-klm123" id="css-display-exercises">
+            <h2>CSS Display: Exercises</h2>
+        
+            <h3>1. Block Display</h3>
+            <p>
+                Create a &lt;div&gt; with a block display and apply the following styles:
+            </p>
+            <ul>
+                <li>Width: 300px</li>
+                <li>Height: 150px</li>
+                <li>Background color: lightblue</li>
+            </ul>
+            <p>Observe how it starts on a new line and takes up the full width of its container.</p>
+            <button class="reveal-answer-btn" data-answer-id="answer-1">Reveal Answer</button>
+            <div id="answer-1" class="code-example-html  code-example-html-w-image">
+                <div class="code-block">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;display: block;<br>
+                    &nbsp;&nbsp;width: 300px;<br>
+                    &nbsp;&nbsp;height: 150px;<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;Block Element&lt;/div&gt;
+                </code>
+                </div>
+                <div class="image-block">
+                    <style>
+                        .bvd898ds9d88 {
+                          display: block;
+                          width: 300px;
+                          height: 150px;
+                          background-color: lightblue;
+                        }
+                        </style>
+                        <div class="bvd898ds9d88">Block Element</div>
+                </div>
+            </div>
+        
+            <h3>2. Inline Display</h3>
+            <p>
+                Create a paragraph containing inline elements. Style the inline elements with a yellow background color and padding. Example inline elements to style: &lt;span&gt;, &lt;a&gt;.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-2">Reveal Answer</button>
+            <div id="answer-2" class="code-example-html code-example-html-w-image blurred-answer">
+                <div class="code-block">
+                <code>
+                    &lt;style&gt;<br>
+                    span, a {<br>
+                    &nbsp;&nbsp;display: inline;<br>
+                    &nbsp;&nbsp;background-color: yellow;<br>
+                    &nbsp;&nbsp;padding: 5px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;p&gt;This is a &lt;span&gt;styled span&lt;/span&gt; and a &lt;a href="#"&gt;styled link&lt;/a&gt;.&lt;/p&gt;
+                </code>
+                </div>
+                <div class="image-block">
+                    <style>
+                        .ncvmxls88293, .l923-sdf-23 {
+                          display: inline;
+                          background-color: yellow;
+                          padding: 5px;
+                        }
+                        </style>
+                        <p>This is a <span class="ncvmxls88293">styled span</span> and a <a href="#" class="l923-sdf-23">styled link</a>.</p>
+                </div>
+            </div>
+        
+            <h3>3. Inline-Block Display</h3>
+            <p>
+                Create two &lt;div&gt; elements with an inline-block display. Style them with the following properties:
+            </p>
+            <ul>
+                <li>Width: 120px</li>
+                <li>Height: 60px</li>
+                <li>Background color: lightgreen</li>
+                <li>Margin: 10px</li>
+            </ul>
+            <p>Observe how they appear next to each other.</p>
+            <button class="reveal-answer-btn" data-answer-id="answer-3">Reveal Answer</button>
+            <div id="answer-3" class="code-example-html code-example-html-w-image blurred-answer">
+                <div class="code-block">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;display: inline-block;<br>
+                    &nbsp;&nbsp;width: 120px;<br>
+                    &nbsp;&nbsp;height: 60px;<br>
+                    &nbsp;&nbsp;background-color: lightgreen;<br>
+                    &nbsp;&nbsp;margin: 10px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;Box 1&lt;/div&gt;&lt;div&gt;Box 2&lt;/div&gt;
+                </code>
+                </div>
+                <div class="image-block">
+                    <style>
+                        .xc9q8989sdhf {
+                          display: inline-block;
+                          width: 120px;
+                          height: 60px;
+                          background-color: lightgreen;
+                          margin: 10px;
+                        }
+                        </style>
+                        <div class="xc9q8989sdhf">Box 1</div><div class="xc9q8989sdhf">Box 2</div>
+                </div>
+            </div>
+        
+            <h3>4. None Display</h3>
+            <p>
+                Create two paragraphs. Set one of them to <code>display: none</code>. Observe how it is removed from the document layout.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-4">Reveal Answer</button>
+            <div id="answer-4" class="code-example-html code-example-html-w-image blurred-answer">
+                <div class="code-block">
+                <code>
+                    &lt;style&gt;<br>
+                    p.hidden {<br>
+                    &nbsp;&nbsp;display: none;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;p&gt;This paragraph is visible.&lt;/p&gt;<br>
+                    &lt;p class="hidden"&gt;This paragraph is hidden.&lt;/p&gt;
+                </code>
+                </div>
+                <div class="image-block">
+                    <style>
+                        p.hidden091823123 {
+                          display: none;
+                        }
+                        </style>
+                        <p>This paragraph is visible.</p>
+                        <p class="hidden091823123">This paragraph is hidden.</p>
+                </div>
+            </div>
+        
+            <h3>5. Grid Display</h3>
+            <p>
+                Create a grid container with six child elements. Style the container with the following properties:
+            </p>
+            <ul>
+                <li>Display: grid</li>
+                <li>Three columns of equal width</li>
+                <li>Gap: 10px</li>
+            </ul>
+            <p>Style the child elements with a lightgray background and centered text.</p>
+            <button class="reveal-answer-btn" data-answer-id="answer-6">Reveal Answer</button>
+            <div id="answer-6" class="code-example-html code-example-html-w-image blurred-answer">
+                <div class="code-block">
+                <code>
+                    &lt;style&gt;<br>
+                    .grid-container {<br>
+                    &nbsp;&nbsp;display: grid;<br>
+                    &nbsp;&nbsp;grid-template-columns: repeat(3, 1fr);<br>
+                    &nbsp;&nbsp;gap: 10px;<br>
+                    }<br>
+                    .grid-item {<br>
+                    &nbsp;&nbsp;background-color: lightgray;<br>
+                    &nbsp;&nbsp;text-align: center;<br>
+                    &nbsp;&nbsp;padding: 10px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="grid-container"&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;1&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;2&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;3&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;4&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;5&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;6&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                </code>
+                </div>
+                <div class="image-block">
+                    <style>
+                        .grid-container53 {
+                          display: grid;
+                          grid-template-columns: repeat(3, 1fr);
+                          gap: 10px;
+                        }
+                        .grid-item53 {
+                          background-color: lightgray;
+                          text-align: center;
+                          padding: 10px;
+                        }
+                        </style>
+                        <div class="grid-container53">
+                          <div class="grid-item53">1</div>
+                          <div class="grid-item53">2</div>
+                          <div class="grid-item53">3</div>
+                          <div class="grid-item53">4</div>
+                          <div class="grid-item53">5</div>
+                          <div class="grid-item53">6</div>
+                        </div>
+                        
+                </div>
+            </div>
+        
+            <div class="navigation-buttons">
+                <a href="./css-position.html" class="navigation-button prev-button neutral">← CSS Position</a>
+                <a href="./css-grid.html" class="navigation-button next-button neutral">CSS Grid →</a>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+    <div id="footer-container"></div>
+    
+    <script src="/script.js?v=2"></script>
+</body>
+</html>

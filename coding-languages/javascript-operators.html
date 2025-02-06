@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Javascript - Operators</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <script src="/script.js" defer></script>
+    <style>
+        #header-container {
+          height: 72px; /* Match header height */
+          background-color: white; /* Same as header's background */
+          width: 100%; /* Full width */
+          position: sticky;
+          top: 0;
+          z-index: 1000;
+        }
+      </style>
+</head>
+
+<div id="header-container"></div>
+<body class="html-page-klm123">
+    <link rel="stylesheet" href="../styles/coding.css">
+        <header class="html-header-klm123">
+        <h1>Master JavaScript: Build Dynamic Experiences</h1>
+        <p>Step into the world of dynamic and interactive web development.</p>
+    </header>
+
+    <main class="html-main-klm123">
+        <!-- Quick Start Plan -->
+        <section class="quick-start-klm123">
+            <div class="quick-plan-list-klm123">
+                <div id="tutorials-section">
+                    <h3>JS Tutorial</h3>
+                    <div class="chapter"> <!-- Introduction -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-introduction')">Introduction</button>
+                        <ul id="javascript-introduction" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript.html#javascript-introduction-tutorial" class="menu-link neutral">What is JavaScript?</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript.html#javascript-why-learn-tutorial" class="menu-link neutral">Why Learn JavaScript?</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript.html#javascript-setting-up-tutorial" class="menu-link neutral">Setting Up JavaScript</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript.html#javascript-first-script-tutorial" class="menu-link neutral">Your First JavaScript Script</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript.html#javascript-console-log-tutorial" class="menu-link neutral">Using console.log</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- Variables and Data Types -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-variables-section')">Variables and Data Types</button>
+                        <ul id="javascript-variables-section" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-variables.html#javascript-variables-intro-tutorial" class="menu-link neutral">Introduction to Variables</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-variables.html#javascript-const-let-var-tutorial" class="menu-link neutral">Const, Let, and Var</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-variables.html#javascript-dynamic-typing-tutorial" class="menu-link neutral">Dynamic Typing in JavaScript</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-variables.html#javascript-variable-scope-tutorial" class="menu-link neutral">Variable Scope</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- Operators -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-operators')">Operators</button>
+                        <ul id="javascript-operators" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-operators.html#javascript-arithmetic-operators-tutorial" class="menu-link neutral">Arithmetic Operators</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-operators.html#javascript-comparison-operators-tutorial" class="menu-link neutral">Comparison Operators</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-operators.html#javascript-logical-operators-tutorial" class="menu-link neutral">Logical Operators</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-operators.html#javascript-assignment-operators-tutorial" class="menu-link neutral">Assignment Operators</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-operators.html#javascript-bitwise-operators-tutorial" class="menu-link neutral">Bitwise Operators</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-operators.html#javascript-ternary-operators-tutorial" class="menu-link neutral">Ternary Operators</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- Control Flow -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-control-flow')">Control Flow</button>
+                        <ul id="javascript-control-flow" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-control-flow.html#javascript-if-else-tutorial" class="menu-link neutral">If, Else, and Else If</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-control-flow.html#javascript-switch-tutorial" class="menu-link neutral">Switch Statements</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-control-flow.html#javascript-ternary-operator-tutorial" class="menu-link neutral">Ternary Operator</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-control-flow.html#javascript-nested-conditionals-tutorial" class="menu-link neutral">Nested Conditionals</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-control-flow.html#javascript-short-circuiting-tutorial" class="menu-link neutral">Short-Circuiting</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- Loops -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-loops')">Loops</button>
+                        <ul id="javascript-loops" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-loops.html#javascript-for-loops-tutorial" class="menu-link neutral">For Loops</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-loops.html#javascript-while-loops-tutorial" class="menu-link neutral">While Loops</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-loops.html#javascript-do-while-loops-tutorial" class="menu-link neutral">Do While Loops</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-loops.html#javascript-break-and-continue-tutorial" class="menu-link neutral">Break and Continue</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-loops.html#javascript-nested-loops-tutorial" class="menu-link neutral">Nested Loops</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- Functions -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-functions')">Functions</button>
+                        <ul id="javascript-functions" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-functions.html#javascript-what-are-functions-tutorial" class="menu-link neutral">What are Functions?</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-functions.html#javascript-function-declarations-tutorial" class="menu-link neutral">Function Declarations</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-functions.html#javascript-function-expressions-tutorial" class="menu-link neutral">Function Expressions</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-functions.html#javascript-arrow-functions-tutorial" class="menu-link neutral">Arrow Functions</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-functions.html#javascript-parameters-and-arguments-tutorial" class="menu-link neutral">Parameters and Arguments</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-functions.html#javascript-return-values-tutorial" class="menu-link neutral">Return Values</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- Objects -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-objects')">Objects</button>
+                        <ul id="javascript-objects" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-objects.html#javascript-what-are-objects-tutorial" class="menu-link neutral">What are Objects?</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-objects.html#javascript-creating-objects-tutorial" class="menu-link neutral">Creating Objects</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-objects.html#javascript-accessing-properties-tutorial" class="menu-link neutral">Accessing Properties</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-objects.html#javascript-modifying-objects-tutorial" class="menu-link neutral">Modifying Objects</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-objects.html#javascript-nested-objects-tutorial" class="menu-link neutral">Nested Objects</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-objects.html#javascript-object-methods-tutorial" class="menu-link neutral">Object Methods</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- Arrays -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-arrays')">Arrays</button>
+                        <ul id="javascript-arrays" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-arrays.html#javascript-what-are-arrays-tutorial" class="menu-link neutral">What are Arrays?</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-arrays.html#javascript-creating-arrays-tutorial" class="menu-link neutral">Creating Arrays</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-arrays.html#javascript-accessing-elements-tutorial" class="menu-link neutral">Accessing Elements</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-arrays.html#javascript-modifying-arrays-tutorial" class="menu-link neutral">Modifying Arrays</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-arrays.html#javascript-array-methods-tutorial" class="menu-link neutral">Array Methods</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-arrays.html#javascript-multidimensional-arrays-tutorial" class="menu-link neutral">Multidimensional Arrays</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- Events -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-events')">Events</button>
+                        <ul id="javascript-events" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-events.html#javascript-introduction-to-events-tutorial" class="menu-link neutral">Introduction to Events</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-events.html#javascript-event-listeners-tutorial" class="menu-link neutral">Event Listeners</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-events.html#javascript-common-events-tutorial" class="menu-link neutral">Common Events</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-events.html#javascript-event-bubbling-capturing-tutorial" class="menu-link neutral">Event Bubbling and Capturing</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-events.html#javascript-preventing-default-tutorial" class="menu-link neutral">Preventing Default Behavior</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-events.html#javascript-delegation-tutorial" class="menu-link neutral">Event Delegation</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- DOM Manipulation -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-dom-manipulation')">DOM Manipulation</button>
+                        <ul id="javascript-dom-manipulation" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-dom-manipulation.html#javascript-what-is-dom-tutorial" class="menu-link neutral">What is the DOM?</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-dom-manipulation.html#javascript-selecting-elements-tutorial" class="menu-link neutral">Selecting Elements</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-dom-manipulation.html#javascript-modifying-elements-tutorial" class="menu-link neutral">Modifying Elements</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-dom-manipulation.html#javascript-adding-removing-elements-tutorial" class="menu-link neutral">Adding and Removing Elements</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-dom-manipulation.html#javascript-styling-elements-tutorial" class="menu-link neutral">Styling Elements</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-dom-manipulation.html#javascript-navigating-dom-tutorial" class="menu-link neutral">Navigating the DOM</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Exercise Section -->
+            </div>
+        </section>
+        
+        <!-- Detailed Plan -->
+        <div class="main-tutorial-content">
+            <!-- Tutorials -->
+            <div id="javascript-arithmetic-operators-tutorial" class="detailed-plan-klm123">
+                <h2>Arithmetic Operators</h2>
+                <p>
+                    Arithmetic operators in JavaScript are used to perform mathematical calculations like addition, subtraction, multiplication, 
+                    and more. They are the foundation for working with numbers in JavaScript.
+                </p>
+                
+                <h3>List of Arithmetic Operators</h3>
+                <ul>
+                    <li><strong>+ (Addition):</strong> Adds two numbers together.</li>
+                    <li><strong>- (Subtraction):</strong> Subtracts the second number from the first.</li>
+                    <li><strong>* (Multiplication):</strong> Multiplies two numbers.</li>
+                    <li><strong>/ (Division):</strong> Divides the first number by the second.</li>
+                    <li><strong>% (Modulus):</strong> Returns the remainder of a division.</li>
+                    <li><strong>** (Exponentiation):</strong> Raises the first number to the power of the second.</li>
+                    <li><strong>++ (Increment):</strong> Increases a number by one.</li>
+                    <li><strong>-- (Decrement):</strong> Decreases a number by one.</li>
+                </ul>
+                
+                <h3>Examples</h3>
+                <div class="code-example-html">
+                    <code>
+                        let a = 10;<br>
+                        let b = 3;<br><br>
+                        
+                        console.log(a + b); // Output: 13 (Addition)<br>
+                        console.log(a - b); // Output: 7 (Subtraction)<br>
+                        console.log(a * b); // Output: 30 (Multiplication)<br>
+                        console.log(a / b); // Output: 3.333... (Division)<br>
+                        console.log(a % b); // Output: 1 (Modulus)<br>
+                        console.log(a ** b); // Output: 1000 (Exponentiation)<br><br>
+                        
+                        let x = 5;<br>
+                        x++; // Increment<br>
+                        console.log(x); // Output: 6<br>
+                        x--; // Decrement<br>
+                        console.log(x); // Output: 5
+                    </code>
+                </div>
+                
+                <h3>Special Notes</h3>
+                <ul>
+                    <li><strong>Division:</strong> Dividing by zero in JavaScript results in <code>Infinity</code>.</li>
+                    <li><strong>Modulus:</strong> Works with both integers and floating-point numbers.</li>
+                    <li><strong>Increment and Decrement:</strong> Can be used as pre-increment (<code>++x</code>) or post-increment (<code>x++</code>), 
+                        which affects when the value changes in an expression.</li>
+                    </ul>
+                    
+                    <h3>Best Practices</h3>
+                    <ul>
+                        <li>Use parentheses to clarify the order of operations, especially in complex expressions.</li>
+                        <li>Be cautious with division and modulus when working with floating-point numbers, as results may not be exact.</li>
+                        <li>Always initialize variables before using increment or decrement operators.</li>
+                    </ul>
+                    
+                    <h3>Next Steps</h3>
+                    <p>
+                        Arithmetic operators are a fundamental part of JavaScript programming. Mastering these will help you perform mathematical 
+                        operations and solve problems effectively. The next section will introduce **Comparison Operators**.
+                    </p>
+                    <a href="./javascript-operators.html#javascript-comparison-operators-tutorial" class="neutral">Ready to learn about Comparison Operators?</a>
+                    <h3>Questions</h3>
+                    <ol>
+                        <li><strong>What are the basic arithmetic operators in JavaScript?</strong></li>
+                        <li><strong>What is the difference between the <code>++</code> operator in pre-increment and post-increment?</strong></li>
+                        <li><strong>Write a code snippet to demonstrate the modulus operator. What does it calculate?</strong></li>
+                        <li><strong>What will happen if you divide a number by zero in JavaScript?</strong></li>
+                        <li><strong>Explain the purpose of the <code>**</code> operator in JavaScript. Provide an example.</strong></li>
+                    </ol>
+                    
+                    <p>
+                        <a href="./javascript-operators.html#javascript-arithmetic-operators-exercises" class="neutral">
+                            Ready to check your answers? Head to the exercises section!
+                        </a>
+                    </p>
+                </div>
+                <div id="javascript-comparison-operators-tutorial" class="detailed-plan-klm123">
+                    <h2>Comparison Operators</h2>
+                    <p>
+                        Comparison operators in JavaScript are used to compare two values. These comparisons always return a Boolean result: 
+                        <code>true</code> or <code>false</code>. They are essential for making decisions in your code using conditionals, such 
+                        as <code>if</code> statements.
+                    </p>
+                
+                    <h3>List of Comparison Operators</h3>
+                    <ul>
+                        <li><strong>== (Equal To):</strong> Compares two values for equality, but does not check the data type.</li>
+                        <li><strong>=== (Strict Equal To):</strong> Compares two values for equality and also checks the data type.</li>
+                        <li><strong>!= (Not Equal To):</strong> Compares two values for inequality, ignoring data type.</li>
+                        <li><strong>!== (Strict Not Equal To):</strong> Compares two values for inequality and checks the data type.</li>
+                        <li><strong>&gt; (Greater Than):</strong> Checks if the left value is greater than the right value.</li>
+                        <li><strong>&lt; (Less Than):</strong> Checks if the left value is less than the right value.</li>
+                        <li><strong>&gt;= (Greater Than or Equal To):</strong> Checks if the left value is greater than or equal to the right value.</li>
+                        <li><strong>&lt;= (Less Than or Equal To):</strong> Checks if the left value is less than or equal to the right value.</li>
+                    </ul>
+                
+                    <h3>Examples</h3>
+                    <div class="code-example-html">
+                        <code>
+                            let a = 5;<br>
+                            let b = "5";<br>
+                            let c = 10;<br><br>
+                
+                            console.log(a == b);  // Output: true (Values are equal, but types are ignored)<br>
+                            console.log(a === b); // Output: false (Values are equal, but types are different)<br>
+                            console.log(a != c);  // Output: true (5 is not equal to 10)<br>
+                            console.log(a !== b); // Output: true (Values are equal, but types are different)<br><br>
+                
+                            console.log(c > a);   // Output: true (10 is greater than 5)<br>
+                            console.log(c < a);   // Output: false (10 is not less than 5)<br>
+                            console.log(c >= a);  // Output: true (10 is greater than or equal to 5)<br>
+                            console.log(a <= b);  // Output: true (5 is less than or equal to "5")
+                        </code>
+                    </div>
+                
+                    <h3>Special Notes</h3>
+                    <ul>
+                        <li><strong>== vs ===:</strong> Always prefer <code>===</code> (strict equality) to avoid unexpected results due to 
+                        type coercion.</li>
+                        <li><strong>!= vs !==:</strong> Use <code>!==</code> (strict inequality) for the same reason as above.</li>
+                        <li><strong>Comparison with strings:</strong> JavaScript compares strings lexicographically (based on Unicode values).</li>
+                    </ul>
+                
+                    <h3>Best Practices</h3>
+                    <ul>
+                        <li>Always use strict equality (<code>===</code>) and strict inequality (<code>!==</code>) unless type coercion is intentional.</li>
+                        <li>Use parentheses in complex conditions to clarify precedence.</li>
+                    </ul>
+                
+                    <h3>Next Steps</h3>
+                    <p>
+                        Comparison operators allow you to make decisions in your code. Up next, we’ll explore **Logical Operators**, which combine 
+                        multiple conditions.
+                    </p>
+                    <a href="./javascript-operators.html#javascript-logical-operators-tutorial" class="neutral">Ready to learn about Logical Operators?</a>
+                    <h3>Questions</h3>
+<ol>
+    <li><strong>What is the difference between <code>==</code> and <code>===</code> in JavaScript?</strong></li>
+    <li><strong>Write a code snippet to demonstrate the use of <code>!=</code> and <code>!==</code>. What is the difference between them?</strong></li>
+    <li><strong>Explain what happens when you compare two strings in JavaScript. How are they evaluated?</strong></li>
+    <li><strong>What will the following code output, and why?</strong>
+        <div class="code-example-html">
+            <code>
+                console.log(5 > "3");<br>
+                console.log("apple" < "banana");<br>
+                console.log(10 == "10");<br>
+                console.log(10 === "10");
+            </code>
+        </div>
+    </li>
+    <li><strong>Provide an example where using <code>==</code> instead of <code>===</code> can lead to unexpected results.</strong></li>
+</ol>
+
+<p>
+    <a href="./javascript-operators.html#javascript-comparison-operators-exercises" class="neutral">
+        Ready to check your answers? Head to the exercises section!
+    </a>
+</p>
+                </div>
+                <div id="javascript-logical-operators-tutorial" class="detailed-plan-klm123">
+                    <h2>Logical Operators</h2>
+                    <p>
+                        Logical operators in JavaScript are used to combine multiple conditions or to invert the logic of a condition. 
+                        These operators are often used in conditional statements like <code>if</code>, <code>while</code>, and <code>for</code> loops.
+                    </p>
+                
+                    <h3>List of Logical Operators</h3>
+                    <ul>
+                        <li><strong>&& (Logical AND):</strong> Returns <code>true</code> if both conditions are true.</li>
+                        <li><strong>|| (Logical OR):</strong> Returns <code>true</code> if at least one of the conditions is true.</li>
+                        <li><strong>! (Logical NOT):</strong> Inverts the truth value of the condition.</li>
+                    </ul>
+                
+                    <h3>Examples</h3>
+                    <div class="code-example-html">
+                        <code>
+                            let a = true;<br>
+                            let b = false;<br><br>
+                
+                            // Logical AND<br>
+                            console.log(a && b); // Output: false (both conditions must be true)<br><br>
+                
+                            // Logical OR<br>
+                            console.log(a || b); // Output: true (only one condition needs to be true)<br><br>
+                
+                            // Logical NOT<br>
+                            console.log(!a); // Output: false (inverts true to false)<br>
+                            console.log(!b); // Output: true (inverts false to true)
+                        </code>
+                    </div>
+                
+                    <h3>Combining Logical Operators</h3>
+                    <p>
+                        Logical operators can be combined to form complex conditions. For example:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            let age = 25;<br>
+                            let hasPermission = true;<br><br>
+                
+                            // Check if the age is within a range and permission is granted<br>
+                            if (age >= 18 && age <= 30 && hasPermission) {<br>
+                                &nbsp;&nbsp;console.log("Access granted.");<br>
+                            } else {<br>
+                                &nbsp;&nbsp;console.log("Access denied.");<br>
+                            }
+                        </code>
+                    </div>
+                
+                    <h3>Truthiness and Falsiness</h3>
+                    <p>
+                        JavaScript treats certain values as "truthy" or "falsy" in logical expressions:
+                    </p>
+                    <ul>
+                        <li><strong>Falsy values:</strong> <code>false</code>, <code>0</code>, <code>""</code> (empty string), <code>null</code>, <code>undefined</code>, and <code>NaN</code>.</li>
+                        <li><strong>Truthy values:</strong> Everything else, including <code>{}</code> (empty object) and <code>[]</code> (empty array).</li>
+                    </ul>
+                    <div class="code-example-html">
+                        <code>
+                            console.log(Boolean(0)); // Output: false<br>
+                            console.log(Boolean("hello")); // Output: true<br>
+                            console.log(Boolean([])); // Output: true
+                        </code>
+                    </div>
+                
+                    <h3>Special Notes</h3>
+                    <ul>
+                        <li><strong>Short-Circuit Evaluation:</strong> Logical operators stop evaluating as soon as the result is determined. For example:
+                            <div class="code-example-html">
+                                <code>
+                                    console.log(false && someFunction()); // Output: false (does not call <code>someFunction()</code>)<br>
+                                    console.log(true || someFunction()); // Output: true (does not call <code>someFunction()</code>)
+                                </code>
+                            </div>
+                        </li>
+                        <li><strong>Use parentheses:</strong> To clarify precedence when combining multiple logical operators.</li>
+                    </ul>
+                
+                    <h3>Next Steps</h3>
+                    <p>
+                        Logical operators are essential for building complex conditions in JavaScript. Next, we’ll dive into **Assignment Operators**, 
+                        which are used to assign values to variables in JavaScript.
+                    </p>
+                    <a href="./javascript-operators.html#javascript-assignment-operators-tutorial" class="neutral">Ready to learn about Assignment Operators?</a>
+                    <h3>Questions</h3>
+<ol>
+    <li><strong>What are the three main logical operators in JavaScript, and what do they do?</strong></li>
+    <li><strong>What is "short-circuit evaluation" in JavaScript? Provide an example for both <code>||</code> and <code>&&</code>.</strong></li>
+    <li><strong>What are "truthy" and "falsy" values in JavaScript? List at least three examples of each.</strong></li>
+    <li><strong>Evaluate the following expressions and explain the result:</strong>
+        <div class="code-example-html">
+            <code>
+                console.log(true && false);<br>
+                console.log(false || "hello");<br>
+                console.log(!0);<br>
+                console.log("apple" && 0 && true);<br>
+                console.log(false || (5 > 3));
+            </code>
+        </div>
+    </li>
+    <li><strong>Write a conditional statement using logical operators to check if:</strong>
+        <ul>
+            <li>A person’s age is between 18 and 60, inclusive.</li>
+            <li>They have a valid ID (<code>hasID</code> is <code>true</code>).</li>
+        </ul>
+    </li>
+</ol>
+
+<p>
+    <a href="./javascript-operators.html#javascript-logical-operators-exercises" class="neutral">
+        Ready to check your answers? Head to the exercises section!
+    </a>
+</p>
+                </div>
+                <div id="javascript-assignment-operators-tutorial" class="detailed-plan-klm123">
+                    <h2>Assignment Operators</h2>
+                    <p>
+                        Assignment operators in JavaScript are used to assign values to variables. 
+                        They can also perform an operation (like addition or multiplication) and assign the result to the variable in one step.
+                    </p>
+                
+                    <h3>List of Assignment Operators</h3>
+                    <ul>
+                        <li><strong>= (Assignment):</strong> Assigns a value to a variable.</li>
+                        <li><strong>+= (Addition Assignment):</strong> Adds a value to the current value of the variable and assigns the result.</li>
+                        <li><strong>-= (Subtraction Assignment):</strong> Subtracts a value from the current value of the variable and assigns the result.</li>
+                        <li><strong>*= (Multiplication Assignment):</strong> Multiplies the current value of the variable by a value and assigns the result.</li>
+                        <li><strong>/= (Division Assignment):</strong> Divides the current value of the variable by a value and assigns the result.</li>
+                        <li><strong>%= (Modulus Assignment):</strong> Takes the remainder when the current value of the variable is divided by a value and assigns the result.</li>
+                        <li><strong>**= (Exponentiation Assignment):</strong> Raises the current value of the variable to the power of a value and assigns the result.</li>
+                    </ul>
+                
+                    <h3>Examples</h3>
+                    <div class="code-example-html">
+                        <code>
+                            let x = 10;<br><br>
+                
+                            // Basic Assignment<br>
+                            x = 5;<br>
+                            console.log(x); // Output: 5<br><br>
+                
+                            // Addition Assignment<br>
+                            x += 3;<br>
+                            console.log(x); // Output: 8<br><br>
+                
+                            // Subtraction Assignment<br>
+                            x -= 2;<br>
+                            console.log(x); // Output: 6<br><br>
+                
+                            // Multiplication Assignment<br>
+                            x *= 4;<br>
+                            console.log(x); // Output: 24<br><br>
+                
+                            // Division Assignment<br>
+                            x /= 3;<br>
+                            console.log(x); // Output: 8<br><br>
+                
+                            // Modulus Assignment<br>
+                            x %= 5;<br>
+                            console.log(x); // Output: 3<br><br>
+                
+                            // Exponentiation Assignment<br>
+                            x **= 2;<br>
+                            console.log(x); // Output: 9
+                        </code>
+                    </div>
+                
+                    <h3>Combining Assignment Operators</h3>
+                    <p>
+                        Assignment operators allow you to write shorter, more concise code. For example:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            let total = 0;<br>
+                            total += 10; // Adds 10<br>
+                            total -= 3;  // Subtracts 3<br>
+                            console.log(total); // Output: 7
+                        </code>
+                    </div>
+                
+                    <h3>Special Notes</h3>
+                    <ul>
+                        <li>Assignment operators are right-associative, meaning the expression is evaluated from right to left. For example:
+                            <div class="code-example-html">
+                                <code>
+                                    let a = b = 10;<br>
+                                    console.log(a); // Output: 10<br>
+                                    console.log(b); // Output: 10
+                                </code>
+                            </div>
+                        </li>
+                        <li>Always initialize variables before using assignment operators to avoid errors.</li>
+                    </ul>
+                
+                    <h3>Next Steps</h3>
+                    <p>
+                        Assignment operators simplify updating variable values. Next, we’ll explore **Bitwise Operators**, which operate directly on binary representations of numbers.
+                    </p>
+                    <a href="./javascript-operators.html#javascript-bitwise-operators-tutorial" class="neutral">Ready to learn about Bitwise Operators?</a>
+                    <h3>Questions</h3>
+<ol>
+    <li><strong>What is the purpose of assignment operators in JavaScript?</strong></li>
+    <li><strong>Explain the difference between <code>=</code> and <code>+=</code> in JavaScript. Provide an example for each.</strong></li>
+    <li><strong>What does the <code>**=</code> operator do? Write a code snippet to demonstrate it.</strong></li>
+    <li><strong>Evaluate the following code and explain the results:</strong>
+        <div class="code-example-html">
+            <code>
+                let x = 8;<br>
+                x += 4;<br>
+                x /= 2;<br>
+                x **= 3;<br>
+                console.log(x);
+            </code>
+        </div>
+    </li>
+    <li><strong>Write a short script using at least three different assignment operators to update a variable's value. Explain how each operator affects the value.</strong></li>
+</ol>
+
+<p>
+    <a href="./javascript-operators.html#javascript-assignment-operators-exercises" class="neutral">
+        Ready to check your answers? Head to the exercises section!
+    </a>
+</p>
+                </div>
+                <div id="javascript-bitwise-operators-tutorial" class="detailed-plan-klm123">
+                    <h2>Bitwise Operators</h2>
+                    <p>
+                        Bitwise operators in JavaScript operate directly on the binary representation of numbers. They are primarily used in low-level programming 
+                        tasks, such as working with flags, masks, or performance-critical code.
+                    </p>
+                
+                    <h3>List of Bitwise Operators</h3>
+                    <ul>
+                        <li><strong>& (AND):</strong> Sets each bit to 1 if both corresponding bits are 1.</li>
+                        <li><strong>| (OR):</strong> Sets each bit to 1 if at least one of the corresponding bits is 1.</li>
+                        <li><strong>^ (XOR):</strong> Sets each bit to 1 if the corresponding bits are different.</li>
+                        <li><strong>~ (NOT):</strong> Inverts all the bits (0 becomes 1, and 1 becomes 0).</li>
+                        <li><strong>&lt;&lt; (Left Shift):</strong> Shifts bits to the left, filling with 0s, and effectively multiplying the number by 2 for each shift.</li>
+                        <li><strong>&gt;&gt; (Right Shift):</strong> Shifts bits to the right, preserving the sign bit (for signed numbers).</li>
+                        <li><strong>&gt;&gt;&gt; (Zero-Fill Right Shift):</strong> Shifts bits to the right, filling with 0s regardless of the sign.</li>
+                    </ul>
+                
+                    <h3>Examples</h3>
+                    <div class="code-example-html">
+                        <code>
+                            let a = 5;  // Binary: 0101<br>
+                            let b = 3;  // Binary: 0011<br><br>
+                
+                            console.log(a & b);  // Output: 1 (Binary: 0001)<br>
+                            console.log(a | b);  // Output: 7 (Binary: 0111)<br>
+                            console.log(a ^ b);  // Output: 6 (Binary: 0110)<br>
+                            console.log(~a);     // Output: -6 (Inverts bits: 1010 becomes -6 in 2's complement)<br><br>
+                
+                            console.log(a &lt;&lt; 1); // Output: 10 (Binary: 1010, 5 shifted left by 1)<br>
+                            console.log(a &gt;&gt; 1); // Output: 2 (Binary: 0010, 5 shifted right by 1)<br>
+                            console.log(a &gt;&gt;&gt; 1); // Output: 2 (Binary: 0010, same as above for unsigned numbers)
+                        </code>
+                    </div>
+                
+                    <h3>Bitwise vs Logical Operators</h3>
+                    <p>
+                        While bitwise operators work on individual bits of numbers, logical operators work with entire Boolean expressions. 
+                        For example, <code>&</code> is bitwise AND, whereas <code>&&</code> is logical AND.
+                    </p>
+                
+                    <h3>Applications of Bitwise Operators</h3>
+                    <ul>
+                        <li>Setting or clearing specific bits in a number (using masks).</li>
+                        <li>Efficiently checking whether a number is even or odd (using <code>& 1</code>).</li>
+                        <li>Optimizing certain mathematical or logical computations.</li>
+                    </ul>
+                
+                    <h3>Special Notes</h3>
+                    <ul>
+                        <li>Bitwise operators treat numbers as 32-bit signed integers internally.</li>
+                        <li>Be cautious with <code>~</code>, as it inverts all bits, including the sign bit, potentially leading to negative results.</li>
+                    </ul>
+                
+                    <h3>Next Steps</h3>
+                    <p>
+                        Bitwise operators are powerful tools for specific use cases. Up next, we’ll cover the **Ternary Operator**, a concise way to write conditional statements.
+                    </p>
+                    <a href="./javascript-operators.html#javascript-ternary-operators-tutorial" class="neutral">Ready to learn about Ternary Operators?</a>
+                    <h3>Questions</h3>
+<ol>
+    <li><strong>What are bitwise operators, and how do they differ from logical operators in JavaScript?</strong></li>
+    <li><strong>Write a code snippet to demonstrate the use of the <code>&</code> (AND) and <code>|</code> (OR) operators. Explain the output.</strong></li>
+    <li><strong>What is the result of applying the <code>~</code> operator to the number <code>5</code>? Explain how the result is calculated.</strong></li>
+    <li><strong>Evaluate the following expressions and explain the results:</strong>
+        <div class="code-example-html">
+            <code>
+                console.log(6 & 3);<br>
+                console.log(6 | 3);<br>
+                console.log(6 ^ 3);<br>
+                console.log(6 &lt;&lt; 2);<br>
+                console.log(6 &gt;&gt; 1);
+            </code>
+        </div>
+    </li>
+    <li><strong>Explain a practical use case for the <code>&lt;&lt;</code> (Left Shift) and <code>&gt;&gt;</code> (Right Shift) operators.</strong></li>
+</ol>
+
+<p>
+    <a href="./javascript-operators.html#javascript-bitwise-operators-exercises" class="neutral">
+        Ready to check your answers? Head to the exercises section!
+    </a>
+</p>
+                </div>
+                <div id="javascript-ternary-operators-tutorial" class="detailed-plan-klm123">
+                    <h2>Ternary Operators</h2>
+                    <p>
+                        The ternary operator is a concise way to write conditional statements in JavaScript. 
+                        It evaluates a condition and returns one of two values based on whether the condition is <code>true</code> or <code>false</code>.
+                    </p>
+                
+                    <h3>Syntax</h3>
+                    <div class="code-example-html">
+                        <code>
+                            condition ? valueIfTrue : valueIfFalse;
+                        </code>
+                    </div>
+                    <p>
+                        The <code>condition</code> is evaluated first. If it is <code>true</code>, the expression after the <code>?</code> 
+                        is returned. If it is <code>false</code>, the expression after the <code>:</code> is returned.
+                    </p>
+                
+                    <h3>Examples</h3>
+                    <div class="code-example-html">
+                        <code>
+                            let age = 18;<br>
+                            let canVote = (age >= 18) ? "Yes" : "No";<br>
+                            console.log(canVote); // Output: "Yes"<br><br>
+                
+                            let number = 5;<br>
+                            let isEven = (number % 2 === 0) ? "Even" : "Odd";<br>
+                            console.log(isEven); // Output: "Odd"
+                        </code>
+                    </div>
+                
+                    <h3>Chaining Ternary Operators</h3>
+                    <p>
+                        Ternary operators can be chained for more complex conditions, but be cautious as it can affect readability:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            let score = 85;<br>
+                            let grade = (score >= 90) ? "A" : (score >= 80) ? "B" : "C";<br>
+                            console.log(grade); // Output: "B"
+                        </code>
+                    </div>
+                
+                    <h3>Best Practices</h3>
+                    <ul>
+                        <li>Use the ternary operator for simple conditions to keep your code concise.</li>
+                        <li>Avoid chaining multiple ternary operators if it reduces code readability.</li>
+                        <li>For complex conditions, consider using an <code>if-else</code> statement instead.</li>
+                    </ul>
+                
+                    <h3>Common Use Cases</h3>
+                    <ul>
+                        <li>Setting default values based on a condition.</li>
+                        <li>Rendering different outputs in UI frameworks like React.</li>
+                        <li>Quick decision-making in one-liners.</li>
+                    </ul>
+                
+                    <h3>Next Steps</h3>
+                    <p>
+                        The ternary operator is a great tool for writing concise conditional logic. This concludes the Operators chapter! 
+                        Next, we’ll move on to the **Control Flow** chapter, starting with <code>if</code> statements.
+                    </p>
+                    <a href="./javascript-control-flow.html#javascript-if-else-tutorial" class="neutral">Ready to move on to Control Flow?</a>
+                    <h3>Questions</h3>
+<ol>
+    <li><strong>What is the syntax of the ternary operator in JavaScript?</strong></li>
+    <li><strong>Write a code snippet using the ternary operator to check if a number is positive, negative, or zero.</strong></li>
+    <li><strong>What are the advantages of using a ternary operator over an <code>if-else</code> statement? When should you avoid using it?</strong></li>
+    <li><strong>Evaluate the following code and explain the result:</strong>
+        <div class="code-example-html">
+            <code>
+                let age = 16;<br>
+                let canDrive = (age >= 18) ? "Yes" : "No";<br>
+                console.log(canDrive);<br><br>
+
+                let score = 45;<br>
+                let result = (score >= 50) ? "Pass" : (score >= 40) ? "Retake" : "Fail";<br>
+                console.log(result);
+            </code>
+        </div>
+    </li>
+    <li><strong>Write a chained ternary operator to assign a grade (A, B, or C) based on the following conditions:</strong>
+        <ul>
+            <li><strong>A:</strong> Score is 90 or above</li>
+            <li><strong>B:</strong> Score is between 80 and 89</li>
+            <li><strong>C:</strong> Score is below 80</li>
+        </ul>
+    </li>
+</ol>
+
+<p>
+    <a href="./javascript-operators.html#javascript-ternary-operators-exercises" class="neutral">
+        Ready to check your answers? Head to the exercises section!
+    </a>
+</p>
+                </div>
+                
+                
+                <!-- Exercises -->
+                <div id="javascript-arithmetic-operators-exercises" class="detailed-plan-klm123">
+                    <h2>Arithmetic Operators: Exercises</h2>
+                
+                    <!-- Question 1 -->
+                    <h3>What are the basic arithmetic operators in JavaScript?</h3>
+                    <div class="code-example-html">
+                        <p>
+                            The basic arithmetic operators in JavaScript are:
+                        </p>
+                        <ul>
+                            <li><code>+ (Addition):</code> Adds two numbers.</li>
+                            <li><code>- (Subtraction):</code> Subtracts one number from another.</li>
+                            <li><code>* (Multiplication):</code> Multiplies two numbers.</li>
+                            <li><code>/ (Division):</code> Divides one number by another.</li>
+                            <li><code>% (Modulus):</code> Returns the remainder of a division.</li>
+                            <li><code>** (Exponentiation):</code> Raises one number to the power of another.</li>
+                        </ul>
+                    </div>
+                
+                    <!-- Question 2 -->
+                    <h3>What is the difference between the <code>++</code> operator in pre-increment and post-increment?</h3>
+                    <div class="code-example-html">
+                        <p>
+                            The <code>++</code> operator increases a variable by one. The difference lies in the timing of the increment:
+                        </p>
+                        <ul>
+                            <li><strong>Pre-increment (<code>++x</code>):</strong> The variable is incremented first, and then its value is used.</li>
+                            <li><strong>Post-increment (<code>x++</code>):</strong> The variable’s current value is used first, and then it is incremented.</li>
+                        </ul>
+                        <code>
+                            let x = 5;<br>
+                            console.log(++x); // Output: 6 (Pre-increment)<br>
+                            console.log(x++); // Output: 6 (Post-increment, but x becomes 7 after this line)<br>
+                        </code>
+                    </div>
+                
+                    <!-- Question 3 -->
+                    <h3>Write a code snippet to demonstrate the modulus operator. What does it calculate?</h3>
+                    <div class="code-example-html">
+                        <p>
+                            The modulus operator (<code>%</code>) returns the remainder of a division. Example:
+                        </p>
+                        <code>
+                            let a = 10;<br>
+                            let b = 3;<br>
+                            console.log(a % b); // Output: 1 (10 divided by 3 leaves a remainder of 1)
+                        </code>
+                    </div>
+                
+                    <!-- Question 4 -->
+                    <h3>What will happen if you divide a number by zero in JavaScript?</h3>
+                    <div class="code-example-html">
+                        <p>
+                            Dividing a number by zero in JavaScript will result in <code>Infinity</code> for positive numbers or 
+                            <code>-Infinity</code> for negative numbers.
+                        </p>
+                        <code>
+                            console.log(10 / 0); // Output: Infinity<br>
+                            console.log(-10 / 0); // Output: -Infinity
+                        </code>
+                    </div>
+                
+                    <!-- Question 5 -->
+                    <h3>Explain the purpose of the <code>**</code> operator in JavaScript. Provide an example.</h3>
+                    <div class="code-example-html">
+                        <p>
+                            The <code>**</code> operator is used for exponentiation, which raises the first number to the power of the second.
+                        </p>
+                        <code>
+                            let base = 2;<br>
+                            let exponent = 3;<br>
+                            console.log(base ** exponent); // Output: 8 (2 raised to the power of 3)
+                        </code>
+                    </div>
+                
+                    <!-- Link to the next tutorial -->
+                    <p>
+                        <a href="./javascript-operators.html#javascript-comparison-operators-tutorial" class="neutral">
+                            Ready to move on to Comparison Operators?
+                        </a>
+                    </p>
+                </div>
+                <div id="javascript-comparison-operators-exercises" class="detailed-plan-klm123">
+                    <h2>Comparison Operators: Exercises</h2>
+                
+                    <!-- Question 1 -->
+                    <h3>What is the difference between <code>==</code> and <code>===</code> in JavaScript?</h3>
+                    <div class="code-example-html">
+                        <p>
+                            The <code>==</code> operator compares two values for equality but ignores their data types (type coercion occurs). 
+                            The <code>===</code> operator compares both the value and the data type (strict equality).
+                        </p>
+                        <code>
+                            console.log(5 == "5");  // Output: true (type coercion: "5" is converted to a number)<br>
+                            console.log(5 === "5"); // Output: false (value is the same, but types are different)
+                        </code>
+                    </div>
+                
+                    <!-- Question 2 -->
+                    <h3>Write a code snippet to demonstrate the use of <code>!=</code> and <code>!==</code>. What is the difference between them?</h3>
+                    <div class="code-example-html">
+                        <p>
+                            The <code>!=</code> operator checks if two values are not equal, ignoring their data types. The <code>!==</code> 
+                            operator checks if two values are not equal and also considers their data types.
+                        </p>
+                        <code>
+                            console.log(5 != "5");  // Output: false (type coercion: "5" is treated as a number)<br>
+                            console.log(5 !== "5"); // Output: true (value is the same, but types are different)
+                        </code>
+                    </div>
+                
+                    <!-- Question 3 -->
+                    <h3>Explain what happens when you compare two strings in JavaScript. How are they evaluated?</h3>
+                    <div class="code-example-html">
+                        <p>
+                            Strings in JavaScript are compared lexicographically (alphabetically), based on their Unicode values. For example:
+                        </p>
+                        <code>
+                            console.log("apple" < "banana"); // Output: true (alphabetical order)<br>
+                            console.log("apple" > "Apple"); // Output: true ("a" has a higher Unicode value than "A")
+                        </code>
+                    </div>
+                
+                    <!-- Question 4 -->
+                    <h3>What will the following code output, and why?</h3>
+                    <div class="code-example-html">
+                        <code>
+                            console.log(5 > "3");        // Output: true (type coercion: "3" is converted to a number)<br>
+                            console.log("apple" < "banana"); // Output: true (alphabetical order)<br>
+                            console.log(10 == "10");    // Output: true (type coercion: "10" is converted to a number)<br>
+                            console.log(10 === "10");   // Output: false (value is the same, but types are different)
+                        </code>
+                    </div>
+                
+                    <!-- Question 5 -->
+                    <h3>Provide an example where using <code>==</code> instead of <code>===</code> can lead to unexpected results.</h3>
+                    <div class="code-example-html">
+                        <p>
+                            Using <code>==</code> can cause unexpected results due to type coercion. For example:
+                        </p>
+                        <code>
+                            console.log(false == 0);  // Output: true (false is coerced to 0)<br>
+                            console.log(false === 0); // Output: false (strict comparison; no type coercion occurs)
+                        </code>
+                    </div>
+                
+                    <!-- Link to the next tutorial -->
+                    <p>
+                        <a href="./javascript-operators.html#javascript-logical-operators-tutorial" class="neutral">
+                            Ready to move on to Logical Operators?
+                        </a>
+                    </p>
+                </div>
+                <div id="javascript-logical-operators-exercises" class="detailed-plan-klm123">
+                    <h2>Logical Operators: Exercises</h2>
+                
+                    <!-- Question 1 -->
+                    <h3>What are the three main logical operators in JavaScript, and what do they do?</h3>
+                    <div class="code-example-html">
+                        <ul>
+                            <li><code>&& (Logical AND):</code> Returns <code>true</code> if all conditions are true.</li>
+                            <li><code>|| (Logical OR):</code> Returns <code>true</code> if at least one condition is true.</li>
+                            <li><code>! (Logical NOT):</code> Inverts the truth value of the condition.</li>
+                        </ul>
+                    </div>
+                
+                    <!-- Question 2 -->
+                    <h3>What is "short-circuit evaluation" in JavaScript? Provide an example for both <code>||</code> and <code>&&</code>.</h3>
+                    <div class="code-example-html">
+                        <p>
+                            Short-circuit evaluation stops further evaluation as soon as the result of a logical expression is determined.
+                        </p>
+                        <code>
+                            // Example with || (Logical OR)<br>
+                            console.log(true || someFunction()); // Output: true (does not call someFunction())<br><br>
+                
+                            // Example with && (Logical AND)<br>
+                            console.log(false && someFunction()); // Output: false (does not call someFunction())
+                        </code>
+                    </div>
+                
+                    <!-- Question 3 -->
+                    <h3>What are "truthy" and "falsy" values in JavaScript? List at least three examples of each.</h3>
+                    <div class="code-example-html">
+                        <p><strong>Falsy values:</strong> These are treated as <code>false</code> in logical expressions:</p>
+                        <ul>
+                            <li><code>false</code></li>
+                            <li><code>0</code></li>
+                            <li><code>""</code> (empty string)</li>
+                            <li><code>null</code></li>
+                            <li><code>undefined</code></li>
+                            <li><code>NaN</code></li>
+                        </ul>
+                        <p><strong>Truthy values:</strong> Everything else is considered truthy. Examples include:</p>
+                        <ul>
+                            <li><code>"hello"</code> (non-empty string)</li>
+                            <li><code>42</code> (non-zero number)</li>
+                            <li><code>{}</code> (empty object)</li>
+                            <li><code>[]</code> (empty array)</li>
+                        </ul>
+                    </div>
+                
+                    <!-- Question 4 -->
+                    <h3>Evaluate the following expressions and explain the result:</h3>
+                    <div class="code-example-html">
+                        <code>
+                            console.log(true && false);  // Output: false (AND requires both to be true)<br>
+                            console.log(false || "hello");  // Output: "hello" (OR returns the first truthy value)<br>
+                            console.log(!0);  // Output: true (NOT inverts falsy 0 to true)<br>
+                            console.log("apple" && 0 && true);  // Output: 0 (AND returns the first falsy value)<br>
+                            console.log(false || (5 > 3));  // Output: true (OR evaluates the second condition as true)
+                        </code>
+                    </div>
+                
+                    <!-- Question 5 -->
+                    <h3>Write a conditional statement using logical operators to check if:</h3>
+                    <ul>
+                        <li>A person’s age is between 18 and 60, inclusive.</li>
+                        <li>They have a valid ID (<code>hasID</code> is <code>true</code>).</li>
+                    </ul>
+                    <div class="code-example-html">
+                        <code>
+                            let age = 25;<br>
+                            let hasID = true;<br><br>
+                
+                            if (age >= 18 && age <= 60 && hasID) {<br>
+                                &nbsp;&nbsp;console.log("Access granted.");<br>
+                            } else {<br>
+                                &nbsp;&nbsp;console.log("Access denied.");<br>
+                            }
+                        </code>
+                    </div>
+                
+                    <!-- Link to the next tutorial -->
+                    <p>
+                        <a href="./javascript-operators.html#javascript-assignment-operators-tutorial" class="neutral">
+                            Ready to move on to Assignment Operators?
+                        </a>
+                    </p>
+                </div>
+                <div id="javascript-assignment-operators-exercises" class="detailed-plan-klm123">
+                    <h2>Assignment Operators: Exercises</h2>
+                
+                    <!-- Question 1 -->
+                    <h3>What is the purpose of assignment operators in JavaScript?</h3>
+                    <div class="code-example-html">
+                        <p>
+                            Assignment operators are used to assign values to variables and perform operations on them 
+                            (like addition, multiplication, etc.) in a concise way.
+                        </p>
+                    </div>
+                
+                    <!-- Question 2 -->
+                    <h3>Explain the difference between <code>=</code> and <code>+=</code> in JavaScript. Provide an example for each.</h3>
+                    <div class="code-example-html">
+                        <p>
+                            The <code>=</code> operator assigns a value directly to a variable, while <code>+=</code> adds a value to the 
+                            current value of the variable and then assigns the result.
+                        </p>
+                        <code>
+                            // Using =<br>
+                            let x = 10;<br>
+                            console.log(x); // Output: 10<br><br>
+                
+                            // Using +=<br>
+                            x += 5;<br>
+                            console.log(x); // Output: 15
+                        </code>
+                    </div>
+                
+                    <!-- Question 3 -->
+                    <h3>What does the <code>**=</code> operator do? Write a code snippet to demonstrate it.</h3>
+                    <div class="code-example-html">
+                        <p>
+                            The <code>**=</code> operator raises the current value of a variable to the power of another value and assigns the result.
+                        </p>
+                        <code>
+                            let y = 2;<br>
+                            y **= 3;<br>
+                            console.log(y); // Output: 8 (2 raised to the power of 3)
+                        </code>
+                    </div>
+                
+                    <!-- Question 4 -->
+                    <h3>Evaluate the following code and explain the results:</h3>
+                    <div class="code-example-html">
+                        <code>
+                            let x = 8;<br>
+                            x += 4;  // x = 8 + 4 = 12<br>
+                            x /= 2;  // x = 12 / 2 = 6<br>
+                            x **= 3; // x = 6 ** 3 = 216<br>
+                            console.log(x); // Output: 216
+                        </code>
+                    </div>
+                
+                    <!-- Question 5 -->
+                    <h3>Write a short script using at least three different assignment operators to update a variable's value. Explain how each operator affects the value.</h3>
+                    <div class="code-example-html">
+                        <code>
+                            let z = 10;<br>
+                            z += 5;  // Adds 5 to z (z = 15)<br>
+                            z *= 2;  // Multiplies z by 2 (z = 30)<br>
+                            z %= 7;  // Finds the remainder when z is divided by 7 (z = 2)<br>
+                            console.log(z); // Output: 2
+                        </code>
+                        <p>
+                            Explanation:<br>
+                            - The <code>+=</code> operator adds 5 to the initial value of 10.<br>
+                            - The <code>*=</code> operator multiplies the new value (15) by 2.<br>
+                            - The <code>%=</code> operator calculates the remainder when 30 is divided by 7, resulting in 2.
+                        </p>
+                    </div>
+                
+                    <!-- Link to the next tutorial -->
+                    <p>
+                        <a href="./javascript-operators.html#javascript-bitwise-operators-tutorial" class="neutral">
+                            Ready to move on to Bitwise Operators?
+                        </a>
+                    </p>
+                </div>
+                <div id="javascript-bitwise-operators-exercises" class="detailed-plan-klm123">
+                    <h2>Bitwise Operators: Exercises</h2>
+                
+                    <!-- Question 1 -->
+                    <h3>What are bitwise operators, and how do they differ from logical operators in JavaScript?</h3>
+                    <div class="code-example-html">
+                        <p>
+                            Bitwise operators work directly on the binary representation of numbers. They manipulate individual bits in a number.
+                            Logical operators, on the other hand, work with Boolean values (<code>true</code> or <code>false</code>) 
+                            and evaluate entire expressions.
+                        </p>
+                    </div>
+                
+                    <!-- Question 2 -->
+                    <h3>Write a code snippet to demonstrate the use of the <code>&</code> (AND) and <code>|</code> (OR) operators. Explain the output.</h3>
+                    <div class="code-example-html">
+                        <code>
+                            let a = 5;  // Binary: 0101<br>
+                            let b = 3;  // Binary: 0011<br><br>
+                
+                            console.log(a & b);  // Output: 1 (Binary: 0001, only the last bit is 1 in both numbers)<br>
+                            console.log(a | b);  // Output: 7 (Binary: 0111, at least one bit is 1 in each position)
+                        </code>
+                        <p>
+                            Explanation:<br>
+                            - The <code>&</code> operator sets each bit to 1 only if both bits are 1.<br>
+                            - The <code>|</code> operator sets each bit to 1 if at least one of the bits is 1.
+                        </p>
+                    </div>
+                
+                    <!-- Question 3 -->
+                    <h3>What is the result of applying the <code>~</code> operator to the number <code>5</code>? Explain how the result is calculated.</h3>
+                    <div class="code-example-html">
+                        <code>
+                            let a = 5; // Binary: 00000000000000000000000000000101<br>
+                            console.log(~a); // Output: -6
+                        </code>
+                        <p>
+                            Explanation:<br>
+                            The <code>~</code> operator inverts all bits. In JavaScript, numbers are treated as 32-bit signed integers:
+                            <ul>
+                                <li><code>00000000000000000000000000000101</code> (5)</li>
+                                <li>Inverting the bits gives <code>11111111111111111111111111111010</code>, which represents -6 in two's complement.</li>
+                            </ul>
+                        </p>
+                    </div>
+                
+                    <!-- Question 4 -->
+                    <h3>Evaluate the following expressions and explain the results:</h3>
+                    <div class="code-example-html">
+                        <code>
+                            console.log(6 & 3);  // Output: 2 (Binary: 0110 & 0011 = 0010)<br>
+                            console.log(6 | 3);  // Output: 7 (Binary: 0110 | 0011 = 0111)<br>
+                            console.log(6 ^ 3);  // Output: 5 (Binary: 0110 ^ 0011 = 0101)<br>
+                            console.log(6 &lt;&lt; 2); // Output: 24 (Binary: 0110 shifted left by 2 becomes 11000)<br>
+                            console.log(6 &gt;&gt; 1); // Output: 3 (Binary: 0110 shifted right by 1 becomes 0011)
+                        </code>
+                    </div>
+                
+                    <!-- Question 5 -->
+                    <h3>Explain a practical use case for the <code>&lt;&lt;</code> (Left Shift) and <code>&gt;&gt;</code> (Right Shift) operators.</h3>
+                    <div class="code-example-html">
+                        <p>
+                            A common use case for bitwise shift operators is efficient multiplication or division by powers of 2:
+                        </p>
+                        <ul>
+                            <li><code>&lt;&lt;</code> (Left Shift): Multiplies a number by 2 for each shift.
+                                <div class="code-example-html">
+                                    <code>
+                                        let x = 3; // Binary: 0011<br>
+                                        console.log(x &lt;&lt; 2); // Output: 12 (3 * 2^2 = 12)
+                                    </code>
+                                </div>
+                            </li>
+                            <li><code>&gt;&gt;</code> (Right Shift): Divides a number by 2 for each shift, preserving the sign bit.
+                                <div class="code-example-html">
+                                    <code>
+                                        let y = 16; // Binary: 10000<br>
+                                        console.log(y &gt;&gt; 2); // Output: 4 (16 / 2^2 = 4)
+                                    </code>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                
+                    <!-- Link to the next tutorial -->
+                    <p>
+                        <a href="./javascript-operators.html#javascript-ternary-operators-tutorial" class="neutral">
+                            Ready to move on to Ternary Operators?
+                        </a>
+                    </p>
+                </div>
+                <div id="javascript-ternary-operators-exercises" class="detailed-plan-klm123">
+                    <h2>Ternary Operators: Exercises</h2>
+                
+                    <!-- Question 1 -->
+                    <h3>What is the syntax of the ternary operator in JavaScript?</h3>
+                    <div class="code-example-html">
+                        <p>
+                            The syntax of the ternary operator is:
+                        </p>
+                        <code>
+                            condition ? valueIfTrue : valueIfFalse;
+                        </code>
+                        <p>
+                            If the <code>condition</code> is true, <code>valueIfTrue</code> is returned; otherwise, <code>valueIfFalse</code> is returned.
+                        </p>
+                    </div>
+                
+                    <!-- Question 2 -->
+                    <h3>Write a code snippet using the ternary operator to check if a number is positive, negative, or zero.</h3>
+                    <div class="code-example-html">
+                        <code>
+                            let number = -5;<br>
+                            let result = (number > 0) ? "Positive" : (number < 0) ? "Negative" : "Zero";<br>
+                            console.log(result); // Output: "Negative"
+                        </code>
+                    </div>
+                
+                    <!-- Question 3 -->
+                    <h3>What are the advantages of using a ternary operator over an <code>if-else</code> statement? When should you avoid using it?</h3>
+                    <div class="code-example-html">
+                        <p><strong>Advantages:</strong></p>
+                        <ul>
+                            <li>It makes the code concise and reduces verbosity.</li>
+                            <li>Useful for simple conditions where readability is not affected.</li>
+                        </ul>
+                        <p><strong>When to avoid:</strong></p>
+                        <ul>
+                            <li>If the condition is complex, as it can make the code harder to read.</li>
+                            <li>When multiple nested conditions are needed (prefer <code>if-else</code> for clarity).</li>
+                        </ul>
+                    </div>
+                
+                    <!-- Question 4 -->
+                    <h3>Evaluate the following code and explain the result:</h3>
+                    <div class="code-example-html">
+                        <code>
+                            let age = 16;<br>
+                            let canDrive = (age >= 18) ? "Yes" : "No";<br>
+                            console.log(canDrive); // Output: "No"<br><br>
+                
+                            let score = 45;<br>
+                            let result = (score >= 50) ? "Pass" : (score >= 40) ? "Retake" : "Fail";<br>
+                            console.log(result); // Output: "Retake"
+                        </code>
+                        <p>
+                            Explanation:<br>
+                            - The first condition checks if age is 18 or more; since age is 16, it evaluates to "No".<br>
+                            - In the second example, the score is between 40 and 49, so the "Retake" condition is triggered.
+                        </p>
+                    </div>
+                
+                    <!-- Question 5 -->
+                    <h3>Write a chained ternary operator to assign a grade (A, B, or C) based on the following conditions:</h3>
+                    <ul>
+                        <li><strong>A:</strong> Score is 90 or above</li>
+                        <li><strong>B:</strong> Score is between 80 and 89</li>
+                        <li><strong>C:</strong> Score is below 80</li>
+                    </ul>
+                    <div class="code-example-html">
+                        <code>
+                            let score = 85;<br>
+                            let grade = (score >= 90) ? "A" : (score >= 80) ? "B" : "C";<br>
+                            console.log(grade); // Output: "B"
+                        </code>
+                    </div>
+                
+                    <!-- Link to the next chapter -->
+                    <p>
+                        <a href="./javascript-control-flow.html#javascript-if-else-tutorial" class="neutral">
+                            Ready to move on to Control Flow?
+                        </a>
+                    </p>
+                </div>
+            </div>
+    </main>
+
+    <div id="footer-container"></div>
+    </body>
+</html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="/styles/coding.css">
+</head>
+
+<div id="header-container"></div>
+<body class="html-page-klm123">
+    <link rel="stylesheet" href="../styles/coding.css">
+<main class="html-main-klm123">
+    <!-- Quick Start Plan -->
+    <div id="css-quick-menu"></div>
+
+    <!-- Detailed Plan -->
+    <div class="main-tutorial-content">
+        <div class="detailed-plan-klm123" id="css-grid-tutorial">
+            <h2>CSS Grid</h2>
+            <p>
+                The <code>grid</code> property in CSS is used to create two-dimensional layouts on the web. It allows you to design layouts with rows and columns, providing greater control over the placement of elements.
+            </p>
+        
+            <h3>Setting Up a Grid</h3>
+            <p>
+                To create a grid layout, you use the <code>display: grid</code> property on a container element. Child elements within the grid container automatically become grid items.
+            </p>
+            <div class="code-example-html code-example-html-w-image">
+                <div class="code-block">
+                <code>
+                    &lt;style&gt;<br>
+                    .grid-container {<br>
+                    &nbsp;&nbsp;display: grid;<br>
+                    &nbsp;&nbsp;grid-template-columns: 100px 100px 100px;<br>
+                    &nbsp;&nbsp;gap: 10px;<br>
+                    }<br>
+                    .grid-item {<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;padding: 20px;<br>
+                    &nbsp;&nbsp;text-align: center;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="grid-container"&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;1&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;2&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;3&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;4&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;5&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;6&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                </code>
+                </div>
+                <div class="image-block">
+                    <style>
+                        .vbsd89232834-grid-container {
+                          display: grid;
+                          grid-template-columns: 100px 100px 100px;
+                          gap: 10px;
+                        }
+                        .vn2938238429348-grid-item {
+                          background-color: lightblue;
+                          padding: 20px;
+                          text-align: center;
+                        }
+                        </style>
+                        <div class="vbsd89232834-grid-container">
+                          <div class="vn2938238429348-grid-item">1</div>
+                          <div class="vn2938238429348-grid-item">2</div>
+                          <div class="vn2938238429348-grid-item">3</div>
+                          <div class="vn2938238429348-grid-item">4</div>
+                          <div class="vn2938238429348-grid-item">5</div>
+                          <div class="vn2938238429348-grid-item">6</div>
+                        </div>
+                </div>
+            </div>
+        
+            <h3>Grid Template Columns and Rows</h3>
+            <p>
+                The <code>grid-template-columns</code> and <code>grid-template-rows</code> properties define the number and size of columns and rows in the grid. You can specify sizes in pixels, percentages, or the <code>fr</code> unit, which stands for "fraction of available space."
+            </p>
+            <div class="code-example-html code-example-html-w-image">
+                <div class="code-block">
+                <code>
+                    &lt;style&gt;<br>
+                    .grid-container {<br>
+                    &nbsp;&nbsp;display: grid;<br>
+                    &nbsp;&nbsp;grid-template-columns: 1fr 2fr 1fr;<br>
+                    &nbsp;&nbsp;grid-template-rows: 50px 100px;<br>
+                    &nbsp;&nbsp;gap: 10px;<br>
+                    }<br>
+                    .grid-item {<br>
+                    &nbsp;&nbsp;background-color: lightcoral;<br>
+                    &nbsp;&nbsp;padding: 10px;<br>
+                    &nbsp;&nbsp;text-align: center;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="grid-container"&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;A&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;B&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;C&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;D&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                </code>
+                </div>
+                <div class="image-block">
+                    <style>
+                        .unique9384745-grid-container {
+                          display: grid;
+                          grid-template-columns: 1fr 2fr 1fr;
+                          grid-template-rows: 50px 100px;
+                          gap: 10px;
+                        }
+                        .unique4728391-grid-item {
+                          background-color: lightcoral;
+                          padding: 10px;
+                          text-align: center;
+                        }
+                        </style>
+                        <div class="unique9384745-grid-container">
+                          <div class="unique4728391-grid-item">A</div>
+                          <div class="unique4728391-grid-item">B</div>
+                          <div class="unique4728391-grid-item">C</div>
+                          <div class="unique4728391-grid-item">D</div>
+                        </div>
+                </div>
+            </div>
+        
+            <h3>Placing Items in the Grid</h3>
+            <p>
+                You can control the placement of grid items using the <code>grid-column</code> and <code>grid-row</code> properties. These properties define where an item starts and how many columns or rows it spans.
+            </p>
+            <div class="code-example-html code-example-html-w-image">
+                <div class="code-block">
+                <code>
+                    &lt;style&gt;<br>
+                    .grid-container {<br>
+                    &nbsp;&nbsp;display: grid;<br>
+                    &nbsp;&nbsp;grid-template-columns: repeat(3, 1fr);<br>
+                    &nbsp;&nbsp;grid-template-rows: repeat(2, 100px);<br>
+                    &nbsp;&nbsp;gap: 10px;<br>
+                    }<br>
+                    .grid-item:nth-child(1) {<br>
+                    &nbsp;&nbsp;grid-column: 1 / 3;<br>
+                    &nbsp;&nbsp;grid-row: 1;<br>
+                    }<br>
+                    .grid-item:nth-child(2) {<br>
+                    &nbsp;&nbsp;grid-column: 3;<br>
+                    &nbsp;&nbsp;grid-row: 1 / 3;<br>
+                    }<br>
+                    .grid-item {<br>
+                    &nbsp;&nbsp;background-color: lightgreen;<br>
+                    &nbsp;&nbsp;text-align: center;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="grid-container"&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;1&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;2&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;3&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;4&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                </code>
+                </div>
+                <div class="image-block">
+                    <style>
+                        .unique9832476-grid-container {
+                          display: grid;
+                          grid-template-columns: repeat(3, 1fr);
+                          grid-template-rows: repeat(2, 100px);
+                          gap: 10px;
+                          width: 500px; /* Set a fixed width */
+                          margin: 0 auto; /* Center the grid */
+                        }
+                        .unique4723985-grid-item:nth-child(1) {
+                          grid-column: 1 / 3;
+                          grid-row: 1;
+                        }
+                        .unique4723985-grid-item:nth-child(2) {
+                          grid-column: 3;
+                          grid-row: 1 / 3;
+                        }
+                        .unique4723985-grid-item {
+                          background-color: lightgreen;
+                          text-align: center;
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                        }
+                        </style>
+                        <div class="unique9832476-grid-container">
+                          <div class="unique4723985-grid-item">1</div>
+                          <div class="unique4723985-grid-item">2</div>
+                          <div class="unique4723985-grid-item">3</div>
+                          <div class="unique4723985-grid-item">4</div>
+                        </div>
+                </div>
+            </div>
+        
+            <h3>Gap Property</h3>
+            <p>
+                The <code>gap</code> property defines the space between rows and columns in a grid. You can set a uniform gap or specify different values for rows and columns using <code>row-gap</code> and <code>column-gap</code>.
+            </p>
+            <div class="code-example-html code-example-html-w-image">
+                <div class="code-block">
+                <code>
+                    &lt;style&gt;<br>
+                    .grid-container {<br>
+                    &nbsp;&nbsp;display: grid;<br>
+                    &nbsp;&nbsp;grid-template-columns: repeat(3, 1fr);<br>
+                    &nbsp;&nbsp;gap: 20px 10px;<br>
+                    }<br>
+                    .grid-item {<br>
+                    &nbsp;&nbsp;background-color: lightpink;<br>
+                    &nbsp;&nbsp;text-align: center;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="grid-container"&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;1&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;2&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;3&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;4&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;5&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;6&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                </code>
+                </div>
+                <div class="image-block">
+                    <style>
+                        .unique3489211-grid-container {
+                          display: grid;
+                          grid-template-columns: repeat(3, 1fr);
+                          gap: 20px 10px; /* 20px row gap, 10px column gap */
+                          width: 500px; /* Fixed width to ensure proper display */
+                          margin: 0 auto; /* Center the grid */
+                        }
+                        .unique3489211-grid-item {
+                          background-color: lightpink;
+                          text-align: center;
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                          height: 100px; /* Consistent height for items */
+                        }
+                        </style>
+                        <div class="unique3489211-grid-container">
+                          <div class="unique3489211-grid-item">1</div>
+                          <div class="unique3489211-grid-item">2</div>
+                          <div class="unique3489211-grid-item">3</div>
+                          <div class="unique3489211-grid-item">4</div>
+                          <div class="unique3489211-grid-item">5</div>
+                          <div class="unique3489211-grid-item">6</div>
+                        </div>
+                </div>
+            </div>
+        
+            <p>
+                <a href="./css-grid.html#css-grid-exercises" class="neutral">
+                    Ready to test your knowledge? Head to the exercises section!
+                </a>
+            </p>
+        </div>
+
+        <div class="detailed-plan-klm123" id="css-grid-exercises">
+            <h2>CSS Grid: Exercises</h2>
+        
+            <h3>1. Basic Grid Layout</h3>
+            <p>
+                Create a grid container with the following styles:
+                <ul>
+                    <li>Three columns, each 100px wide</li>
+                    <li>A row gap of 20px</li>
+                </ul>
+                Add six child elements and observe the layout.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-1">Reveal Answer</button>
+            <div id="answer-1" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .grid-container {<br>
+                    &nbsp;&nbsp;display: grid;<br>
+                    &nbsp;&nbsp;grid-template-columns: 100px 100px 100px;<br>
+                    &nbsp;&nbsp;row-gap: 20px;<br>
+                    }<br>
+                    .grid-item {<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;text-align: center;<br>
+                    &nbsp;&nbsp;padding: 10px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="grid-container"&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;1&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;2&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;3&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;4&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;5&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;6&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>2. Grid with Fractional Units</h3>
+            <p>
+                Create a grid container where the first column takes 1 fraction of the available space, the second column takes 2 fractions, and the third column takes 1 fraction. Add four child elements and observe their positions.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-2">Reveal Answer</button>
+            <div id="answer-2" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .grid-container {<br>
+                    &nbsp;&nbsp;display: grid;<br>
+                    &nbsp;&nbsp;grid-template-columns: 1fr 2fr 1fr;<br>
+                    &nbsp;&nbsp;gap: 10px;<br>
+                    }<br>
+                    .grid-item {<br>
+                    &nbsp;&nbsp;background-color: lightcoral;<br>
+                    &nbsp;&nbsp;text-align: center;<br>
+                    &nbsp;&nbsp;padding: 10px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="grid-container"&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;A&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;B&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;C&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;D&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>3. Spanning Columns</h3>
+            <p>
+                Create a grid container with three columns. Add four child elements and style them so:
+                <ul>
+                    <li>The first item spans all three columns</li>
+                    <li>The second and third items span one column each</li>
+                    <li>The fourth item spans two columns</li>
+                </ul>
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-3">Reveal Answer</button>
+            <div id="answer-3" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .grid-container {<br>
+                    &nbsp;&nbsp;display: grid;<br>
+                    &nbsp;&nbsp;grid-template-columns: repeat(3, 1fr);<br>
+                    &nbsp;&nbsp;gap: 10px;<br>
+                    }<br>
+                    .grid-item:nth-child(1) {<br>
+                    &nbsp;&nbsp;grid-column: 1 / 4;<br>
+                    }<br>
+                    .grid-item:nth-child(4) {<br>
+                    &nbsp;&nbsp;grid-column: 1 / 3;<br>
+                    }<br>
+                    .grid-item {<br>
+                    &nbsp;&nbsp;background-color: lightgreen;<br>
+                    &nbsp;&nbsp;text-align: center;<br>
+                    &nbsp;&nbsp;padding: 10px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="grid-container"&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;1&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;2&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;3&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;4&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>4. Gap Property</h3>
+            <p>
+                Create a grid container with three columns and two rows. Use the <code>gap</code> property to add:
+                <ul>
+                    <li>20px between rows</li>
+                    <li>10px between columns</li>
+                </ul>
+                Add six child elements and observe the layout.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-4">Reveal Answer</button>
+            <div id="answer-4" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .grid-container {<br>
+                    &nbsp;&nbsp;display: grid;<br>
+                    &nbsp;&nbsp;grid-template-columns: repeat(3, 1fr);<br>
+                    &nbsp;&nbsp;grid-template-rows: repeat(2, 100px);<br>
+                    &nbsp;&nbsp;gap: 20px 10px;<br>
+                    }<br>
+                    .grid-item {<br>
+                    &nbsp;&nbsp;background-color: lightpink;<br>
+                    &nbsp;&nbsp;text-align: center;<br>
+                    &nbsp;&nbsp;padding: 10px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="grid-container"&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;1&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;2&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;3&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;4&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;5&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="grid-item"&gt;6&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                </code>
+            </div>
+        
+            <div class="navigation-buttons">
+                <a href="./css-display.html" class="navigation-button prev-button neutral">← CSS Display</a>
+                <a href="./css-flex.html" class="navigation-button next-button neutral">CSS Flex →</a>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+    <div id="footer-container"></div>
+    
+    <script src="/script.js?v=2"></script>
+</body>
+</html>

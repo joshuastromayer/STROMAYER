@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Padding - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="/styles/coding.css">
+</head>
+
+<div id="header-container"></div>
+<body class="html-page-klm123">
+    <link rel="stylesheet" href="../styles/coding.css">
+<main class="html-main-klm123">
+    <!-- Quick Start Plan -->
+    <div id="css-quick-menu"></div>
+
+    <!-- Detailed Plan -->
+    <div class="main-tutorial-content">
+        <div class="detailed-plan-klm123" id="css-padding-tutorial">
+            <h2>CSS Padding</h2>
+            <p>
+                Padding is the space between the content of an element and its border. It controls the internal spacing within an element, providing breathing room for its content.
+                Unlike margins, which create space outside an element, padding affects the inside.
+            </p>
+        
+            <h3>How Padding Works</h3>
+            <p>
+                Padding is added inside an element’s border and around its content. It is invisible but creates space that separates the content from the element’s edges.
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;border: 1px solid black;<br>
+                    &nbsp;&nbsp;padding: 20px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;This div has 20px of padding.&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>Specifying Padding</h3>
+            <p>
+                Padding can be specified using shorthand or individual properties for each side: <code>padding-top</code>, <code>padding-right</code>, <code>padding-bottom</code>, and <code>padding-left</code>.
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;border: 1px solid black;<br>
+                    &nbsp;&nbsp;padding: 10px 15px 20px 25px; /* Top, Right, Bottom, Left */<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;Custom padding for each side.&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>Padding and Box Model</h3>
+            <p>
+                Padding is a key part of the CSS box model. It sits between the content and the border of an element. When combined with other box model properties (like margin and border), padding helps control the overall size of an element.
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 200px;<br>
+                    &nbsp;&nbsp;border: 2px solid black;<br>
+                    &nbsp;&nbsp;padding: 20px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;This box demonstrates padding.&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>Padding vs. Margins</h3>
+            <p>
+                While padding adds space inside an element, margins create space outside an element. Both are used for spacing but serve different purposes. Here’s a visual comparison:
+            </p>
+            <div class="code-example-html code-example-html-w-image">
+                <div class="code-block">
+                <code>
+                    &lt;style&gt;<br>
+                    .with-padding {<br>
+                    &nbsp;&nbsp;border: 1px solid black;<br>
+                    &nbsp;&nbsp;padding: 20px;<br>
+                    &nbsp;&nbsp;background-color: blue;<br>
+                    &nbsp;&nbsp;color: white;<br>
+                }<br>
+                    .with-margin {<br>
+                    &nbsp;&nbsp;border: 1px solid black;<br>
+                    &nbsp;&nbsp;margin: 20px;<br>
+                    &nbsp;&nbsp;background-color: green;<br>
+                    &nbsp;&nbsp;color: white;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="with-padding"&gt;Padding Example&lt;/div&gt;<br>
+                    &lt;div class="with-margin"&gt;Margin Example&lt;/div&gt;
+                </code>
+                </div>
+                <div class="image-block">
+                    <style>
+                        .with-padding {
+                          border: 1px solid black;
+                          padding: 20px;
+                          background-color: blue;
+                          color: white;
+                        }
+                        .with-margin {
+                          border: 1px solid black;
+                          margin: 20px;
+                          background-color: green;
+                          color: white;
+                        }
+                        </style>
+                        <div class="with-padding">Padding Example</div>
+                        <div class="with-margin">Margin Example</div>
+                </div>
+            </div>
+        
+            <h3>Best Practices</h3>
+            <p>
+                - Use padding to create comfortable spacing for content inside an element.<br>
+                - Avoid excessive padding as it might cause layout issues.<br>
+                - Combine padding with other box model properties to create balanced designs.
+            </p>
+        
+            <p>
+                <a href="./css-padding.html#css-padding-exercises" class="">Ready to test your knowledge? Head to the exercises section!</a>
+            </p>
+        </div>
+
+        <div class="detailed-plan-klm123" id="css-padding-exercises">
+            <h2>CSS Padding: Exercises</h2>
+        
+            <h3>1. Add Padding to a Paragraph</h3>
+            <p>
+                Create a paragraph with 20px padding on all sides. Add some text inside the paragraph.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-1">Reveal Answer</button>
+            <div id="answer-1" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    p {<br>
+                    &nbsp;&nbsp;padding: 20px;<br>
+                    &nbsp;&nbsp;border: 1px solid black;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;p&gt;This paragraph has padding of 20px on all sides.&lt;/p&gt;
+                </code>
+            </div>
+        
+            <h3>2. Add Different Padding</h3>
+            <p>
+                Create a div with different padding: 10px on the top, 15px on the right, 20px on the bottom, and 25px on the left.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-2">Reveal Answer</button>
+            <div id="answer-2" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;padding: 10px 15px 20px 25px;<br>
+                    &nbsp;&nbsp;border: 1px solid black;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;This div has different padding.&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>3. Create a Box with Text Inside</h3>
+            <p>
+                Create a box (a div) with a width of 200px and height of 100px. Add 10px padding inside and some centered text.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-3">Reveal Answer</button>
+            <div id="answer-3" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 200px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;padding: 10px;<br>
+                    &nbsp;&nbsp;border: 1px solid black;<br>
+                    &nbsp;&nbsp;text-align: center;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;This is a box with padding.&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>4. Compare Padding and Margin</h3>
+            <p>
+                Create two divs: one with 20px padding and one with 20px margin. Add text to demonstrate the difference visually.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-4">Reveal Answer</button>
+            <div id="answer-4" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .padding-box {<br>
+                    &nbsp;&nbsp;padding: 20px;<br>
+                    &nbsp;&nbsp;border: 1px solid black;<br>
+                    }<br>
+                    .margin-box {<br>
+                    &nbsp;&nbsp;margin: 20px;<br>
+                    &nbsp;&nbsp;border: 1px solid black;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="padding-box"&gt;This box has padding.&lt;/div&gt;<br>
+                    &lt;div class="margin-box"&gt;This box has margin.&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>5. Combine Padding and Border</h3>
+            <p>
+                Create a div with a solid border and 15px padding inside. Add some text to see how the padding works with the border.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-5">Reveal Answer</button>
+            <div id="answer-5" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;padding: 15px;<br>
+                    &nbsp;&nbsp;border: 2px solid black;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;This div has padding and a border.&lt;/div&gt;
+                </code>
+            </div>
+        
+            <div class="navigation-buttons">
+                <a href="./css-margins.html" class="navigation-button prev-button neutral">← CSS Margins</a>
+                <a href="./css-box-model.html" class="navigation-button next-button neutral">CSS Box Model →</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <div id="footer-container"></div>
+    
+    <script src="/script.js?v=2"></script>
+</body>
+</html>

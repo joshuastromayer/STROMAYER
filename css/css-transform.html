@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="/styles/coding.css">
+</head>
+
+<div id="header-container"></div>
+<body class="html-page-klm123">
+    <link rel="stylesheet" href="../styles/coding.css">
+<main class="html-main-klm123">
+    <!-- Quick Start Plan -->
+    <div id="css-quick-menu"></div>
+
+    <!-- Detailed Plan -->
+    <div class="main-tutorial-content">
+        <div class="detailed-plan-klm123" id="css-transform-tutorial">
+            <h2>CSS Transform</h2>
+            <p>
+                The <code>transform</code> property in CSS allows you to apply 2D and 3D transformations to elements. You can move, rotate, scale, and skew elements to create dynamic and visually engaging designs.
+            </p>
+        
+            <h3>Basic Syntax</h3>
+            <p>
+                The <code>transform</code> property accepts transformation functions as its value. For example:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 100px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;transform: rotate(45deg);<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+            <p>
+                In this example, the element is rotated 45 degrees clockwise.
+            </p>
+        
+            <h3>Transform Functions</h3>
+            <p>
+                Common 2D transform functions include:
+            </p>
+            <ul>
+                <li><strong><code>translate(x, y)</code></strong>: Moves the element along the X and Y axes.</li>
+                <li><strong><code>rotate(angle)</code></strong>: Rotates the element by the specified angle (e.g., <code>45deg</code>).</li>
+                <li><strong><code>scale(x, y)</code></strong>: Resizes the element horizontally and vertically.</li>
+                <li><strong><code>skew(x-angle, y-angle)</code></strong>: Skews the element along the X and Y axes.</li>
+            </ul>
+        
+            <h3>Translate</h3>
+            <p>
+                Use <code>translate</code> to move an element:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 100px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightcoral;<br>
+                    &nbsp;&nbsp;transform: translate(50px, 20px);<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+            <p>
+                This moves the element 50px to the right and 20px down.
+            </p>
+        
+            <h3>Rotate</h3>
+            <p>
+                Use <code>rotate</code> to rotate an element:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 100px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightgreen;<br>
+                    &nbsp;&nbsp;transform: rotate(30deg);<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+            <p>
+                This rotates the element 30 degrees clockwise.
+            </p>
+        
+            <h3>Scale</h3>
+            <p>
+                Use <code>scale</code> to resize an element:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 100px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;transform: scale(1.5, 2);<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+            <p>
+                This scales the element to 1.5 times its original width and 2 times its original height.
+            </p>
+        
+            <h3>Skew</h3>
+            <p>
+                Use <code>skew</code> to distort an element:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 100px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightyellow;<br>
+                    &nbsp;&nbsp;transform: skew(20deg, 10deg);<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+            <p>
+                This skews the element 20 degrees along the X-axis and 10 degrees along the Y-axis.
+            </p>
+        
+            <h3>Combining Transforms</h3>
+            <p>
+                You can combine multiple transformations in a single <code>transform</code> property:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 100px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightpink;<br>
+                    &nbsp;&nbsp;transform: translate(50px, 20px) rotate(45deg) scale(1.2);<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+            <p>
+                This moves the element, rotates it, and scales it simultaneously.
+            </p>
+        
+            <p>
+                <a href="./css-transform.html#css-transform-exercises" class="neutral">
+                    Ready to test your knowledge? Head to the exercises section!
+                </a>
+            </p>
+        </div>
+
+        <div class="detailed-plan-klm123" id="css-transform-exercises">
+            <h2>CSS Transform: Exercises</h2>
+        
+            <h3>1. Translate</h3>
+            <p>
+                Create a square box with the following styles:
+                <ul>
+                    <li>Width: 100px</li>
+                    <li>Height: 100px</li>
+                    <li>Background color: lightblue</li>
+                </ul>
+                Use the <code>translate</code> function to move the box 50px to the right and 30px down.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-1">Reveal Answer</button>
+            <div id="answer-1" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 100px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;transform: translate(50px, 30px);<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>2. Rotate</h3>
+            <p>
+                Create a rectangular box with the following styles:
+                <ul>
+                    <li>Width: 150px</li>
+                    <li>Height: 75px</li>
+                    <li>Background color: lightgreen</li>
+                </ul>
+                Use the <code>rotate</code> function to rotate the box 45 degrees clockwise.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-2">Reveal Answer</button>
+            <div id="answer-2" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 150px;<br>
+                    &nbsp;&nbsp;height: 75px;<br>
+                    &nbsp;&nbsp;background-color: lightgreen;<br>
+                    &nbsp;&nbsp;transform: rotate(45deg);<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>3. Scale</h3>
+            <p>
+                Create a circular element with the following styles:
+                <ul>
+                    <li>Width: 100px</li>
+                    <li>Height: 100px</li>
+                    <li>Background color: lightcoral</li>
+                    <li>Border-radius: 50%</li>
+                </ul>
+                Use the <code>scale</code> function to double the size of the element (both width and height).
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-3">Reveal Answer</button>
+            <div id="answer-3" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 100px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightcoral;<br>
+                    &nbsp;&nbsp;border-radius: 50%;<br>
+                    &nbsp;&nbsp;transform: scale(2);<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>4. Skew</h3>
+            <p>
+                Create a square box with the following styles:
+                <ul>
+                    <li>Width: 100px</li>
+                    <li>Height: 100px</li>
+                    <li>Background color: lightyellow</li>
+                </ul>
+                Use the <code>skew</code> function to skew the element 20 degrees along the X-axis and 10 degrees along the Y-axis.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-4">Reveal Answer</button>
+            <div id="answer-4" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 100px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightyellow;<br>
+                    &nbsp;&nbsp;transform: skew(20deg, 10deg);<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>5. Combining Transforms</h3>
+            <p>
+                Create a square box with the following styles:
+                <ul>
+                    <li>Width: 100px</li>
+                    <li>Height: 100px</li>
+                    <li>Background color: lightpink</li>
+                </ul>
+                Use the <code>transform</code> property to:
+                <ul>
+                    <li>Move the box 50px to the right and 20px down.</li>
+                    <li>Rotate the box 30 degrees.</li>
+                    <li>Scale the box to 1.5 times its original size.</li>
+                </ul>
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-5">Reveal Answer</button>
+            <div id="answer-5" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 100px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightpink;<br>
+                    &nbsp;&nbsp;transform: translate(50px, 20px) rotate(30deg) scale(1.5);<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <div class="navigation-buttons">
+                <a href="./css-animations.html" class="navigation-button prev-button neutral">← CSS Animations</a>
+                <a href="./css-shadows.html" class="navigation-button next-button neutral">CSS Shadows →</a>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+    <div id="footer-container"></div>
+    
+    <script src="/script.js?v=2"></script>
+</body>
+</html>

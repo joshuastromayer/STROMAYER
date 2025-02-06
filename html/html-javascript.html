@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML JavaScript - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="../styles/coding.css">
+</head>
+<div id="header-container"></div>
+      <body class="html-page-klm123">
+<link rel="stylesheet" href="../styles/coding.css">
+
+    
+        <main class="html-main-klm123">
+            <!-- Quick Start Plan -->
+            <div id="html-quick-menu"></div>
+    
+            <!-- Detailed Plan -->
+            <div class="main-tutorial-content">
+                <div class="detailed-plan-klm123" id="html-javascript-tutorial">
+                    <h2>Introduction to JavaScript</h2>
+                    <p>
+                        JavaScript is a powerful programming language that enables interactivity on websites. It allows you to add dynamic features such as animations, form validations, and real-time content updates. If HTML is the skeleton and CSS is the skin, JavaScript is the muscles that bring your webpage to life!
+                    </p>
+                
+                    <h3>What is JavaScript?</h3>
+                    <p>
+                        JavaScript is a high-level, interpreted programming language commonly used for creating interactive effects on web pages. It works alongside HTML and CSS to make websites more engaging and functional.
+                    </p>
+                    <p>
+                        JavaScript can:
+                    </p>
+                    <ul>
+                        <li>Validate form inputs.</li>
+                        <li>Update content dynamically without refreshing the page.</li>
+                        <li>Create interactive elements such as sliders and pop-ups.</li>
+                        <li>Fetch data from servers using APIs.</li>
+                        <li>Build entire web applications!</li>
+                    </ul>
+                
+                    <h3>Adding JavaScript to Your HTML</h3>
+                    <p>
+                        You can add JavaScript to your HTML in two ways:
+                    </p>
+                    <ul>
+                        <li><strong>Inline:</strong> By using the <code>onclick</code> or other event attributes within HTML elements.</li>
+                        <li><strong>External:</strong> By linking a separate JavaScript file using the <code>&lt;script&gt;</code> tag.</li>
+                    </ul>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;!-- Inline JavaScript --&gt;<br>
+                            &lt;button onclick="alert('Hello, World!')"&gt;Click Me!&lt;/button&gt;<br><br>
+                
+                            &lt;!-- External JavaScript File --&gt;<br>
+                            &lt;script src="app.js"&gt;&lt;/script&gt;
+                        </code>
+                    </div>
+                
+                    <h3>Interactive Example</h3>
+                    <p>
+                        Here’s a simple example of JavaScript in action:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;button id="greetButton"&gt;Say Hello&lt;/button&gt;<br>
+                            &lt;script&gt;<br>
+                            &nbsp;&nbsp;document.getElementById('greetButton').addEventListener('click', () => {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;alert('Hello, JavaScript!');<br>
+                            &nbsp;&nbsp;});<br>
+                            &lt;/script&gt;
+                        </code>
+                    </div>
+                    <button id="greetButton">Say Hello</button>
+<script>
+  document.getElementById('greetButton').addEventListener('click', () => {
+    alert('Hello, JavaScript!');
+  });
+</script>
+                
+                    <h3>Why Learn JavaScript?</h3>
+                    <p>
+                        JavaScript is an essential skill for any web developer. It powers the interactivity of the web, making it a cornerstone technology alongside HTML and CSS. Here are just a few reasons to learn JavaScript:
+                    </p>
+                    <ul>
+                        <li>It’s versatile: Use it for frontend and backend development.</li>
+                        <li>High demand: JavaScript developers are in high demand in the job market.</li>
+                        <li>Rich ecosystem: Access countless libraries and frameworks like React, Vue, and Node.js.</li>
+                    </ul>
+                
+                    <h3>Ready to Dive Deeper?</h3>
+                    <p>
+                        This tutorial provides just a sneak peek into the world of JavaScript. In our full JavaScript course, you’ll explore topics like variables, operators, control flow, loops, functions, and much more. You’ll also build interactive projects to apply your skills in real-world scenarios!
+                    </p>
+                    <p>Ready to explore more? 
+                        <a href="/coding-languages/javascript.html" class="neutral">
+                            Check out our JavaScript course!
+                        </a>
+                        Or continue onto <a href="html-file-paths.html">File Paths!</a>
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <div id="footer-container"></div>
+    
+        <script src="/script.js?v=2"></script>
+    </body>
+</html>

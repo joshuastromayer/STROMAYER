@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="/styles/coding.css">
+</head>
+
+<div id="header-container"></div>
+<body class="html-page-klm123">
+    <link rel="stylesheet" href="/styles/coding.css">
+<main class="html-main-klm123">
+    <!-- Quick Start Plan -->
+    <div id="css-quick-menu"></div>
+
+    <!-- Detailed Plan -->
+    <div class="main-tutorial-content">
+        <div class="detailed-plan-klm123" id="css-flex-tutorial">
+            <h2>CSS Flex</h2>
+            <p>
+                The <code>flex</code> property in CSS (short for Flexbox) is used to create one-dimensional layouts where items are aligned and distributed efficiently along a row or column. Flexbox is ideal for creating responsive layouts and handling alignment and spacing.
+            </p>
+        
+            <h3>Setting Up a Flex Container</h3>
+            <p>
+                To use Flexbox, set <code>display: flex</code> on the container element. The direct children of this container automatically become flex items.
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    .flex-container {<br>
+                    &nbsp;&nbsp;display: flex;<br>
+                    &nbsp;&nbsp;background-color: lightgray;<br>
+                    &nbsp;&nbsp;padding: 10px;<br>
+                    }<br>
+                    .flex-item {<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;padding: 20px;<br>
+                    &nbsp;&nbsp;text-align: center;<br>
+                    &nbsp;&nbsp;margin: 5px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="flex-container"&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="flex-item"&gt;1&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="flex-item"&gt;2&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="flex-item"&gt;3&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>Direction of Flex Items</h3>
+            <p>
+                Use the <code>flex-direction</code> property to set the direction of the flex items:
+                <ul>
+                    <li><strong>row</strong> (default): Items are placed in a row, from left to right.</li>
+                    <li><strong>row-reverse</strong>: Items are placed in a row, from right to left.</li>
+                    <li><strong>column</strong>: Items are placed in a column, from top to bottom.</li>
+                    <li><strong>column-reverse</strong>: Items are placed in a column, from bottom to top.</li>
+                </ul>
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    .flex-container {<br>
+                    &nbsp;&nbsp;display: flex;<br>
+                    &nbsp;&nbsp;flex-direction: row-reverse;<br>
+                    &nbsp;&nbsp;background-color: lightcoral;<br>
+                    &nbsp;&nbsp;padding: 10px;<br>
+                    }<br>
+                    .flex-item {<br>
+                    &nbsp;&nbsp;background-color: lightgreen;<br>
+                    &nbsp;&nbsp;padding: 20px;<br>
+                    &nbsp;&nbsp;text-align: center;<br>
+                    &nbsp;&nbsp;margin: 5px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="flex-container"&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="flex-item"&gt;1&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="flex-item"&gt;2&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="flex-item"&gt;3&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>Alignment Along the Main Axis</h3>
+            <p>
+                Use the <code>justify-content</code> property to control how flex items are aligned along the main axis:
+                <ul>
+                    <li><strong>flex-start</strong> (default): Items are aligned at the start of the main axis.</li>
+                    <li><strong>flex-end</strong>: Items are aligned at the end of the main axis.</li>
+                    <li><strong>center</strong>: Items are aligned in the center of the main axis.</li>
+                    <li><strong>space-between</strong>: Items are evenly distributed with space between them.</li>
+                    <li><strong>space-around</strong>: Items are evenly distributed with space around them.</li>
+                </ul>
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    .flex-container {<br>
+                    &nbsp;&nbsp;display: flex;<br>
+                    &nbsp;&nbsp;justify-content: space-around;<br>
+                    &nbsp;&nbsp;background-color: lightyellow;<br>
+                    &nbsp;&nbsp;padding: 10px;<br>
+                    }<br>
+                    .flex-item {<br>
+                    &nbsp;&nbsp;background-color: lightpink;<br>
+                    &nbsp;&nbsp;padding: 20px;<br>
+                    &nbsp;&nbsp;text-align: center;<br>
+                    &nbsp;&nbsp;margin: 5px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="flex-container"&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="flex-item"&gt;A&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="flex-item"&gt;B&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="flex-item"&gt;C&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>Alignment Along the Cross Axis</h3>
+            <p>
+                Use the <code>align-items</code> property to control how flex items are aligned along the cross axis:
+                <ul>
+                    <li><strong>stretch</strong> (default): Items stretch to fill the container.</li>
+                    <li><strong>flex-start</strong>: Items are aligned at the start of the cross axis.</li>
+                    <li><strong>flex-end</strong>: Items are aligned at the end of the cross axis.</li>
+                    <li><strong>center</strong>: Items are aligned at the center of the cross axis.</li>
+                    <li><strong>baseline</strong>: Items are aligned along their baseline.</li>
+                </ul>
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    .flex-container {<br>
+                    &nbsp;&nbsp;display: flex;<br>
+                    &nbsp;&nbsp;align-items: flex-end;<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;padding: 10px;<br>
+                    height: 150px;<br>
+                    }<br>
+                    .flex-item {<br>
+                    &nbsp;&nbsp;background-color: lightgray;<br>
+                    &nbsp;&nbsp;padding: 20px;<br>
+                    &nbsp;&nbsp;text-align: center;<br>
+                    &nbsp;&nbsp;margin: 5px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="flex-container"&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="flex-item"&gt;X&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="flex-item"&gt;Y&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="flex-item"&gt;Z&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                </code>
+            </div>
+        
+            <p>
+                <a href="./css-flex.html#css-flex-exercises" class="neutral">
+                    Ready to test your knowledge? Head to the exercises section!
+                </a>
+            </p>
+        </div>
+
+        <div class="detailed-plan-klm123" id="css-flex-exercises">
+            <h2>CSS Flex: Exercises</h2>
+        
+            <h3>1. Basic Flex Layout</h3>
+            <p>
+                Create a flex container and three child elements. Apply the following styles to the container:
+                <ul>
+                    <li><code>display: flex</code></li>
+                    <li>Background color: lightgray</li>
+                    <li>Padding: 20px</li>
+                </ul>
+                Style each child element with a lightblue background, 10px margin, and centered text. Observe how they align in a row.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-1">Reveal Answer</button>
+            <div id="answer-1" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .flex-container {<br>
+                    &nbsp;&nbsp;display: flex;<br>
+                    &nbsp;&nbsp;background-color: lightgray;<br>
+                    &nbsp;&nbsp;padding: 20px;<br>
+                    }<br>
+                    .flex-item {<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;margin: 10px;<br>
+                    &nbsp;&nbsp;text-align: center;<br>
+                    &nbsp;&nbsp;padding: 10px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="flex-container"&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="flex-item"&gt;1&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="flex-item"&gt;2&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="flex-item"&gt;3&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>2. Changing Flex Direction</h3>
+            <p>
+                Create a flex container with five child elements. Style the container to use <code>flex-direction: column</code> and add a 15px gap between items. Observe how the items stack vertically.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-2">Reveal Answer</button>
+            <div id="answer-2" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .flex-container {<br>
+                    &nbsp;&nbsp;display: flex;<br>
+                    &nbsp;&nbsp;flex-direction: column;<br>
+                    &nbsp;&nbsp;gap: 15px;<br>
+                    }<br>
+                    .flex-item {<br>
+                    &nbsp;&nbsp;background-color: lightcoral;<br>
+                    &nbsp;&nbsp;text-align: center;<br>
+                    &nbsp;&nbsp;padding: 10px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="flex-container"&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="flex-item"&gt;A&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="flex-item"&gt;B&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="flex-item"&gt;C&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="flex-item"&gt;D&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="flex-item"&gt;E&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>3. Justifying Content</h3>
+            <p>
+                Create a flex container with four child elements. Style the container to:
+                <ul>
+                    <li>Use <code>justify-content: space-between</code></li>
+                    <li>Set the background color to lightgreen</li>
+                </ul>
+                Observe how the items are evenly spaced along the main axis.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-3">Reveal Answer</button>
+            <div id="answer-3" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .flex-container {<br>
+                    &nbsp;&nbsp;display: flex;<br>
+                    &nbsp;&nbsp;justify-content: space-between;<br>
+                    &nbsp;&nbsp;background-color: lightgreen;<br>
+                    &nbsp;&nbsp;padding: 10px;<br>
+                    }<br>
+                    .flex-item {<br>
+                    &nbsp;&nbsp;background-color: lightgray;<br>
+                    &nbsp;&nbsp;text-align: center;<br>
+                    &nbsp;&nbsp;padding: 10px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="flex-container"&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="flex-item"&gt;1&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="flex-item"&gt;2&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="flex-item"&gt;3&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="flex-item"&gt;4&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>4. Aligning Items</h3>
+            <p>
+                Create a flex container with four child elements. Set the container height to 300px and use <code>align-items: flex-end</code> to align the items at the bottom of the container.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-4">Reveal Answer</button>
+            <div id="answer-4" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .flex-container {<br>
+                    &nbsp;&nbsp;display: flex;<br>
+                    &nbsp;&nbsp;align-items: flex-end;<br>
+                    &nbsp;&nbsp;background-color: lightyellow;<br>
+                    &nbsp;&nbsp;height: 300px;<br>
+                    padding: 10px;<br>
+                    }<br>
+                    .flex-item {<br>
+                    &nbsp;&nbsp;background-color: lightpink;<br>
+                    &nbsp;&nbsp;text-align: center;<br>
+                    &nbsp;&nbsp;padding: 10px;<br>
+                    &nbsp;&nbsp;margin: 5px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="flex-container"&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="flex-item"&gt;A&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="flex-item"&gt;B&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="flex-item"&gt;C&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="flex-item"&gt;D&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                </code>
+            </div>
+        
+            <div class="navigation-buttons">
+                <a href="./css-grid.html" class="navigation-button prev-button neutral">← CSS Grid</a>
+                <a href="./css-float-clear.html" class="navigation-button next-button neutral">CSS Float and Clear →</a>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+    <div id="footer-container"></div>
+    
+    <script src="/script.js?v=2"></script>
+</body>
+</html>

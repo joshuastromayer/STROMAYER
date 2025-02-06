@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Divs - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="../styles/coding.css">
+</head>
+<div id="header-container"></div>
+      <body class="html-page-klm123">
+<link rel="stylesheet" href="../styles/coding.css">
+
+    
+        <main class="html-main-klm123">
+            <!-- Quick Start Plan -->
+            <div id="html-quick-menu"></div>
+    
+            <!-- Detailed Plan -->
+            <div class="main-tutorial-content">
+                <div class="detailed-plan-klm123" id="html-divs-tutorial">
+                    <h2>HTML Divs</h2>
+                    <p>
+                        A &lt;div&gt; (short for division) is one of the most versatile and commonly used elements in HTML. It is a container element used to group content together, which can then be styled or manipulated as a single unit.
+                    </p>
+                
+                    <h3>What is a Div?</h3>
+                    <p>
+                        A &lt;div&gt; is essentially a block-level element that is used to organize content. It doesn’t have any inherent visual representation on its own—it’s purely structural. However, with CSS, you can style it to create visually appealing and organized layouts.
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;div&gt;<br>
+                            &nbsp;&nbsp;&lt;p&gt;This is a paragraph inside a div.&lt;/p&gt;<br>
+                            &nbsp;&nbsp;&lt;p&gt;This is another paragraph inside the same div.&lt;/p&gt;<br>
+                            &lt;/div&gt;
+                        </code>
+                    </div>
+                
+                    <h3>Grouping Content</h3>
+                    <p>
+                        The main purpose of a &lt;div&gt; is to group elements together. This is especially useful when you want to apply the same styling or behavior to multiple elements.
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;div&gt;<br>
+                            &nbsp;&nbsp;&lt;h2&gt;Section Title&lt;/h2&gt;<br>
+                            &nbsp;&nbsp;&lt;p&gt;This is a paragraph in the section.&lt;/p&gt;<br>
+                            &nbsp;&nbsp;&lt;ul&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item 3&lt;/li&gt;<br>
+                            &nbsp;&nbsp;&lt;/ul&gt;<br>
+                            &lt;/div&gt;
+                        </code>
+                    </div>
+                
+                    <h3>Divs and Layout</h3>
+                    <p>
+                        While divs themselves don’t create layouts, they are essential building blocks for layouts when combined with CSS. By using CSS, you can customize divs to control alignment, spacing, and more.
+                    </p>
+                    <p>
+                        Examples of what you can achieve with CSS and divs include horizontal or vertical alignment of content, flexible grids, and responsive designs. While this topic focuses only on HTML, keep in mind that divs are a powerful tool when styled with CSS.
+                    </p>
+                
+                    <h3>Nested Divs</h3>
+                    <p>
+                        Divs can be nested inside each other to create complex structures. Nested divs are helpful for creating hierarchical layouts where each section can be independently styled or organized.
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;div&gt;<br>
+                            &nbsp;&nbsp;&lt;div&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is inside a nested div.&lt;/p&gt;<br>
+                            &nbsp;&nbsp;&lt;/div&gt;<br>
+                            &nbsp;&nbsp;&lt;p&gt;This is inside the parent div but outside the nested div.&lt;/p&gt;<br>
+                            &lt;/div&gt;
+                        </code>
+                    </div>
+                
+                    <h3>Best Practices for Using Divs</h3>
+                    <p>
+                        Although divs are incredibly versatile, it's important to use them responsibly to maintain semantic HTML:
+                    </p>
+                    <ul>
+                        <li>Use divs for grouping and layout purposes.</li>
+                        <li>For specific types of content (e.g., navigation, headers, footers), use semantic elements like &lt;header&gt;, &lt;nav&gt;, or &lt;footer&gt; instead of a &lt;div&gt;.</li>
+                        <li>Give your divs meaningful class or ID names for easier identification and styling.</li>
+                    </ul>
+                
+                    <div class="code-example-html">
+                        <code>
+                            &lt;div class="content-section"&gt;<br>
+                            &nbsp;&nbsp;&lt;h2&gt;Welcome&lt;/h2&gt;<br>
+                            &nbsp;&nbsp;&lt;p&gt;This is a content section.&lt;/p&gt;<br>
+                            &lt;/div&gt;
+                        </code>
+                    </div>
+                
+                    <h3>Example: Simple Page Layout</h3>
+                    <p>
+                        Here’s an example of how divs can be used to structure a simple webpage layout:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;div class="header"&gt;<br>
+                            &nbsp;&nbsp;&lt;h1&gt;My Website&lt;/h1&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;div class="main-content"&gt;<br>
+                            &nbsp;&nbsp;&lt;p&gt;Welcome to my website!&lt;/p&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;div class="footer"&gt;<br>
+                            &nbsp;&nbsp;&lt;p&gt;Copyright 2025&lt;/p&gt;<br>
+                            &lt;/div&gt;
+                        </code>
+                    </div>
+                
+                    <p>
+                        <a href="./html-divs.html#html-divs-exercises" class="neutral">
+                            Ready to test your knowledge? Head to the exercises section!
+                        </a>
+                    </p>
+                </div>
+                <div class="detailed-plan-klm123" id="html-divs-exercises">
+                    <h2>HTML Divs: Exercises</h2>
+                
+                    <h3>1. Group Paragraphs Inside a Div</h3>
+                    <p>
+                        Create a div that contains two paragraphs with the following text:
+                        <ul>
+                            <li>First paragraph: "HTML Divs are versatile!"</li>
+                            <li>Second paragraph: "They help structure your content."</li>
+                        </ul>
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-1">Reveal Answer</button>
+                    <div id="answer-1" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;div&gt;<br>
+                            &nbsp;&nbsp;&lt;p&gt;HTML Divs are versatile!&lt;/p&gt;<br>
+                            &nbsp;&nbsp;&lt;p&gt;They help structure your content.&lt;/p&gt;<br>
+                            &lt;/div&gt;
+                        </code>
+                    </div>
+                
+                    <h3>2. Create a Section with a Header and List</h3>
+                    <p>
+                        Use a div to group the following elements:
+                        <ul>
+                            <li>An h2 heading with the text: "My Favorite Fruits"</li>
+                            <li>An unordered list with items: "Apples", "Bananas", "Cherries"</li>
+                        </ul>
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-2">Reveal Answer</button>
+                    <div id="answer-2" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;div&gt;<br>
+                            &nbsp;&nbsp;&lt;h2&gt;My Favorite Fruits&lt;/h2&gt;<br>
+                            &nbsp;&nbsp;&lt;ul&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Apples&lt;/li&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Bananas&lt;/li&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Cherries&lt;/li&gt;<br>
+                            &nbsp;&nbsp;&lt;/ul&gt;<br>
+                            &lt;/div&gt;
+                        </code>
+                    </div>
+                
+                    <h3>3. Use Nested Divs</h3>
+                    <p>
+                        Create a parent div with the class "container" and a nested div inside it with the class "content". 
+                        The nested div should contain the text: "Nested divs are powerful!".
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-3">Reveal Answer</button>
+                    <div id="answer-3" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;div class="container"&gt;<br>
+                            &nbsp;&nbsp;&lt;div class="content"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Nested divs are powerful!<br>
+                            &nbsp;&nbsp;&lt;/div&gt;<br>
+                            &lt;/div&gt;
+                        </code>
+                    </div>
+                
+                    <h3>4. Simple Page Layout</h3>
+                    <p>
+                        Create a basic page layout using divs with the following structure:
+                        <ul>
+                            <li>A div with the class "header" containing an h1 with the text: "Welcome to My Page"</li>
+                            <li>A div with the class "main" containing a paragraph with the text: "This is the main content."</li>
+                            <li>A div with the class "footer" containing a paragraph with the text: "Footer Information"</li>
+                        </ul>
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-4">Reveal Answer</button>
+                    <div id="answer-4" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;div class="header"&gt;<br>
+                            &nbsp;&nbsp;&lt;h1&gt;Welcome to My Page&lt;/h1&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;div class="main"&gt;<br>
+                            &nbsp;&nbsp;&lt;p&gt;This is the main content.&lt;/p&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;div class="footer"&gt;<br>
+                            &nbsp;&nbsp;&lt;p&gt;Footer Information&lt;/p&gt;<br>
+                            &lt;/div&gt;
+                        </code>
+                    </div>
+                
+                    <h3>5. Add a Class and ID</h3>
+                    <p>
+                        Create a div with the class "highlighted" and the id "unique-section". Inside it, add a paragraph with the text: "This is a unique section!".
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-5">Reveal Answer</button>
+                    <div id="answer-5" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;div class="highlighted" id="unique-section"&gt;<br>
+                            &nbsp;&nbsp;&lt;p&gt;This is a unique section!&lt;/p&gt;<br>
+                            &lt;/div&gt;
+                        </code>
+                    </div>
+                
+                    <p>
+                        <a href="./html-classes.html" class="neutral">
+                            Ready to move on? Head to the HTML Classes tutorial!
+                        </a>
+                    </p>
+                </div>
+
+            </div>
+        </main>
+
+        <div id="footer-container"></div>
+    
+        <script src="/script.js?v=2"></script>
+    </body>
+</html>

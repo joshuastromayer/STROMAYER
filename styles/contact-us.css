@@ -1,0 +1,99 @@
+/* Basic Reset */
+body, h1, h2, p, a, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.html-page-klm123 {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+
+.contact-main {
+    max-width: 800px;
+    background: #fff;
+    padding: 20px;
+    padding-bottom: 0px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    margin-top: 80px;
+}
+
+/* Section Titles */
+h1, h2 {
+    margin-bottom: 15px;
+    color: #222;
+}
+
+/* Intro Section */
+.contact-intro {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-intro p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Contact Info */
+.contact-info {
+    margin-bottom: 30px;
+}
+
+.email-link {
+    display: inline-block;
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.email-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Contact Form */
+.contact-form {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: bold;
+    color: #222;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+

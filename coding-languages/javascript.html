@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Javascript with CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <script src="/script.js" defer></script>
+</head>
+    
+<body class="html-page-klm123">
+    <div id="header-container"></div>
+    <link rel="stylesheet" href="/styles/coding.css">
+        <header class="html-header-klm123">
+        <h1>Master JavaScript: Build Dynamic Experiences</h1>
+        <p>Step into the world of dynamic and interactive web development.</p>
+        </header>
+    <main class="html-main-klm123">
+        <!-- Quick Start Plan -->
+        <section class="quick-start-klm123">
+            <div class="quick-plan-list-klm123">
+                <div id="tutorials-section">
+                    <h3>JS Tutorial</h3>
+                    <div class="chapter"> <!-- Introduction -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-introduction')">Introduction</button>
+                        <ul id="javascript-introduction" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript.html#javascript-introduction-tutorial" class="menu-link neutral">What is JavaScript?</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript.html#javascript-why-learn-tutorial" class="menu-link neutral">Why Learn JavaScript?</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript.html#javascript-setting-up-tutorial" class="menu-link neutral">Setting Up JavaScript</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript.html#javascript-first-script-tutorial" class="menu-link neutral">Your First JavaScript Script</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript.html#javascript-console-log-tutorial" class="menu-link neutral">Using console.log</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- Variables and Data Types -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-variables-section')">Variables and Data Types</button>
+                        <ul id="javascript-variables-section" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-variables.html#javascript-variables-intro-tutorial" class="menu-link neutral">Introduction to Variables</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-variables.html#javascript-const-let-var-tutorial" class="menu-link neutral">Const, Let, and Var</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-variables.html#javascript-dynamic-typing-tutorial" class="menu-link neutral">Dynamic Typing in JavaScript</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-variables.html#javascript-variable-scope-tutorial" class="menu-link neutral">Variable Scope</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- Operators -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-operators')">Operators</button>
+                        <ul id="javascript-operators" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-operators.html#javascript-arithmetic-operators-tutorial" class="menu-link neutral">Arithmetic Operators</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-operators.html#javascript-comparison-operators-tutorial" class="menu-link neutral">Comparison Operators</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-operators.html#javascript-logical-operators-tutorial" class="menu-link neutral">Logical Operators</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-operators.html#javascript-assignment-operators-tutorial" class="menu-link neutral">Assignment Operators</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-operators.html#javascript-bitwise-operators-tutorial" class="menu-link neutral">Bitwise Operators</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-operators.html#javascript-ternary-operators-tutorial" class="menu-link neutral">Ternary Operators</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- Control Flow -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-control-flow')">Control Flow</button>
+                        <ul id="javascript-control-flow" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-control-flow.html#javascript-if-else-tutorial" class="menu-link neutral">If, Else, and Else If</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-control-flow.html#javascript-switch-tutorial" class="menu-link neutral">Switch Statements</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-control-flow.html#javascript-ternary-operator-tutorial" class="menu-link neutral">Ternary Operator</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-control-flow.html#javascript-nested-conditionals-tutorial" class="menu-link neutral">Nested Conditionals</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-control-flow.html#javascript-short-circuiting-tutorial" class="menu-link neutral">Short-Circuiting</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- Loops -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-loops')">Loops</button>
+                        <ul id="javascript-loops" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-loops.html#javascript-for-loops-tutorial" class="menu-link neutral">For Loops</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-loops.html#javascript-while-loops-tutorial" class="menu-link neutral">While Loops</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-loops.html#javascript-do-while-loops-tutorial" class="menu-link neutral">Do While Loops</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-loops.html#javascript-break-and-continue-tutorial" class="menu-link neutral">Break and Continue</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-loops.html#javascript-nested-loops-tutorial" class="menu-link neutral">Nested Loops</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- Functions -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-functions')">Functions</button>
+                        <ul id="javascript-functions" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-functions.html#javascript-what-are-functions-tutorial" class="menu-link neutral">What are Functions?</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-functions.html#javascript-function-declarations-tutorial" class="menu-link neutral">Function Declarations</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-functions.html#javascript-function-expressions-tutorial" class="menu-link neutral">Function Expressions</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-functions.html#javascript-arrow-functions-tutorial" class="menu-link neutral">Arrow Functions</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-functions.html#javascript-parameters-and-arguments-tutorial" class="menu-link neutral">Parameters and Arguments</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-functions.html#javascript-return-values-tutorial" class="menu-link neutral">Return Values</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- Objects -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-objects')">Objects</button>
+                        <ul id="javascript-objects" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-objects.html#javascript-what-are-objects-tutorial" class="menu-link neutral">What are Objects?</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-objects.html#javascript-creating-objects-tutorial" class="menu-link neutral">Creating Objects</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-objects.html#javascript-accessing-properties-tutorial" class="menu-link neutral">Accessing Properties</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-objects.html#javascript-modifying-objects-tutorial" class="menu-link neutral">Modifying Objects</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-objects.html#javascript-nested-objects-tutorial" class="menu-link neutral">Nested Objects</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-objects.html#javascript-object-methods-tutorial" class="menu-link neutral">Object Methods</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- Arrays -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-arrays')">Arrays</button>
+                        <ul id="javascript-arrays" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-arrays.html#javascript-what-are-arrays-tutorial" class="menu-link neutral">What are Arrays?</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-arrays.html#javascript-creating-arrays-tutorial" class="menu-link neutral">Creating Arrays</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-arrays.html#javascript-accessing-elements-tutorial" class="menu-link neutral">Accessing Elements</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-arrays.html#javascript-modifying-arrays-tutorial" class="menu-link neutral">Modifying Arrays</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-arrays.html#javascript-array-methods-tutorial" class="menu-link neutral">Array Methods</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-arrays.html#javascript-multidimensional-arrays-tutorial" class="menu-link neutral">Multidimensional Arrays</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- Events -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-events')">Events</button>
+                        <ul id="javascript-events" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-events.html#javascript-introduction-to-events-tutorial" class="menu-link neutral">Introduction to Events</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-events.html#javascript-event-listeners-tutorial" class="menu-link neutral">Event Listeners</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-events.html#javascript-common-events-tutorial" class="menu-link neutral">Common Events</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-events.html#javascript-event-bubbling-capturing-tutorial" class="menu-link neutral">Event Bubbling and Capturing</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-events.html#javascript-preventing-default-tutorial" class="menu-link neutral">Preventing Default Behavior</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-events.html#javascript-delegation-tutorial" class="menu-link neutral">Event Delegation</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- DOM Manipulation -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-dom-manipulation')">DOM Manipulation</button>
+                        <ul id="javascript-dom-manipulation" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-dom-manipulation.html#javascript-what-is-dom-tutorial" class="menu-link neutral">What is the DOM?</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-dom-manipulation.html#javascript-selecting-elements-tutorial" class="menu-link neutral">Selecting Elements</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-dom-manipulation.html#javascript-modifying-elements-tutorial" class="menu-link neutral">Modifying Elements</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-dom-manipulation.html#javascript-adding-removing-elements-tutorial" class="menu-link neutral">Adding and Removing Elements</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-dom-manipulation.html#javascript-styling-elements-tutorial" class="menu-link neutral">Styling Elements</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-dom-manipulation.html#javascript-navigating-dom-tutorial" class="menu-link neutral">Navigating the DOM</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Exercise Section -->
+            </div>
+        </section>
+
+        <!-- Detailed Plan -->
+        <div class="main-tutorial-content">
+            <!-- Tutorial Content -->
+            <div id="javascript-introduction-tutorial" class="detailed-plan-klm123">
+                <h2>What is JavaScript?</h2>
+                <p>JavaScript is a powerful programming language used to make websites interactive. It's one of the core technologies of web development, alongside HTML and CSS. While HTML structures the content and CSS styles it, JavaScript brings it to life with dynamic functionality.</p>
+            
+                <h2>Why is JavaScript Important?</h2>
+                <p>Imagine a website where nothing moves, no buttons work, and you can’t interact with anything—that’s a website without JavaScript. With JavaScript, you can:</p>
+                <ul>
+                    <li>Create interactive elements like buttons, forms, and menus.</li>
+                    <li>Update content dynamically without reloading the page.</li>
+                    <li>Develop games, web apps, and even control hardware!</li>
+                </ul>
+            
+                <h2>Where Does JavaScript Run?</h2>
+                <p>JavaScript originally ran only in web browsers. It allows websites to respond to user interactions, making it a cornerstone of front-end development. But today, JavaScript can also run outside the browser thanks to environments like <strong>Node.js</strong>, allowing developers to create server-side applications.</p>
+            
+                <h2>What Can You Build with JavaScript?</h2>
+                <p>JavaScript is incredibly versatile. Here are some examples:</p>
+                <ul>
+                    <li>Interactive websites (like social media or e-commerce platforms).</li>
+                    <li>Games playable in the browser.</li>
+                    <li>Mobile apps with frameworks like React Native.</li>
+                    <li>Server-side applications with Node.js.</li>
+                    <li>Even control robots and IoT devices!</li>
+                </ul>
+            
+                <h2>A Brief History</h2>
+                <p>JavaScript was created in 1995 by Brendan Eich in just 10 days while working at Netscape. Despite its quick beginnings, it has become one of the most popular programming languages in the world. Today, JavaScript is standardized by <strong>ECMAScript</strong>, which ensures consistency across different browsers.</p>
+            
+                <h2>Why Should You Learn JavaScript?</h2>
+                <p>JavaScript is an essential skill for web developers and is in high demand. Whether you want to build websites, develop apps, or explore new technologies, JavaScript is the perfect starting point.</p>
+            
+                <p><strong>Fun Fact:</strong> Over 98% of websites use JavaScript, making it an indispensable tool for modern web development.</p>
+            
+                <p>Now that you know what JavaScript is, are you ready to dive into the exciting world of coding? Let’s get started!</p>
+            
+                <a href="./javascript.html#javascript-why-learn-tutorial" class="next-section-link">Ready to learn why JavaScript is so powerful? Click here!</a>
+            </div>
+            <div id="javascript-why-learn-tutorial" class="detailed-plan-klm123">
+                <h1>Why Learn JavaScript?</h1>
+                <p>JavaScript is more than just a programming language; it's the key to unlocking the full potential of the web. Whether you're starting your coding journey or looking to expand your skills, JavaScript offers limitless possibilities.</p>
+            
+                <h2>1. It Powers the Web</h2>
+                <p>JavaScript is the backbone of interactive and dynamic websites. From sleek animations to real-time data updates, JavaScript brings websites to life. Here's what you can achieve:</p>
+                <ul>
+                    <li>Interactive forms that validate user input.</li>
+                    <li>Dynamic content updates without reloading the page (think live sports scores or social media feeds).</li>
+                    <li>Beautiful animations and transitions.</li>
+                </ul>
+                <p>If you've used Google Maps, YouTube, or any modern web application, you've experienced the magic of JavaScript in action.</p>
+            
+                <h2>2. It's Easy to Start</h2>
+                <p>You don’t need fancy tools or setups to start learning JavaScript. All you need is a web browser, which you already have! You can write and test JavaScript code directly in the browser’s developer tools. This makes it one of the most accessible languages for beginners.</p>
+            
+                <h2>3. It's Versatile</h2>
+                <p>JavaScript is everywhere! It's not limited to web development. Here’s what you can do with it:</p>
+                <ul>
+                    <li><strong>Front-End Development:</strong> Build stunning user interfaces with JavaScript frameworks like React and Vue.</li>
+                    <li><strong>Back-End Development:</strong> Create powerful server-side applications using Node.js.</li>
+                    <li><strong>Mobile App Development:</strong> Develop cross-platform apps with React Native.</li>
+                    <li><strong>Game Development:</strong> Create fun browser-based games.</li>
+                    <li><strong>IoT and Robotics:</strong> Control hardware devices with JavaScript.</li>
+                </ul>
+            
+                <h2>4. High Demand in the Job Market</h2>
+                <p>JavaScript is one of the most sought-after skills in the tech industry. With millions of companies relying on JavaScript, learning it can open doors to lucrative job opportunities. Roles like front-end developer, full-stack developer, and mobile app developer often require JavaScript expertise.</p>
+                <blockquote>
+                    <strong>Did You Know?</strong> JavaScript consistently ranks as the <strong>most popular programming language</strong> in developer surveys.
+                </blockquote>
+            
+                <h2>5. It's Fun and Creative</h2>
+                <p>With JavaScript, you can turn your ideas into reality. Whether it’s a portfolio site, a fun game, or a groundbreaking app, JavaScript gives you the tools to create. The immediate feedback you get while coding makes it exciting and rewarding.</p>
+            
+                <h2>6. A Gateway to Advanced Technologies</h2>
+                <p>Once you're comfortable with JavaScript, you'll be ready to explore advanced topics like:</p>
+                <ul>
+                    <li>Building single-page applications with Angular or React.</li>
+                    <li>Learning TypeScript for large-scale projects.</li>
+                    <li>Developing progressive web apps (PWAs).</li>
+                    <li>Working with machine learning libraries like TensorFlow.js.</li>
+                </ul>
+            
+                <h2>How JavaScript Transforms Careers</h2>
+                <p>Learning JavaScript can be life-changing. Whether you're a hobbyist, freelancer, or aiming for a full-time tech career, JavaScript can take you places. Many developers start with JavaScript and grow into senior roles, building software used by millions of people worldwide.</p>
+            
+                <p>Ready to take your first steps into JavaScript? In the next section, we’ll set up everything you need to start coding. Let’s make it happen!</p>
+            
+                <a href="./javascript.html#javascript-setting-up-tutorial" class="next-section-link">Let’s set up your JavaScript environment!</a>
+            </div>
+            <div id="javascript-setting-up-tutorial" class="detailed-plan-klm123">
+                <h1>Setting Up JavaScript</h1>
+                <p>Before we start writing JavaScript, let's make sure you’re all set up. The best part? You don’t need to install anything fancy—your web browser is all you need to begin!</p>
+            
+                <h2>1. JavaScript in the Browser</h2>
+                <p>Every modern browser, like Chrome, Firefox, Edge, or Safari, comes with a built-in JavaScript engine. This means you can write and run JavaScript code directly in your browser.</p>
+                <p>Here’s how to do it:</p>
+                <ol>
+                    <li>Open your web browser (we’ll use Chrome for this example).</li>
+                    <li>Right-click anywhere on the page and select <strong>Inspect</strong> or press <strong>Ctrl+Shift+I</strong> (Windows/Linux) or <strong>Cmd+Option+I</strong> (Mac).</li>
+                    <li>Go to the <strong>Console</strong> tab. You should see a space where you can type JavaScript code.</li>
+                    <li>Type <code>console.log('Hello, JavaScript!');</code> and press Enter.</li>
+                    <li>Congratulations! You just ran your first JavaScript code!</li>
+                </ol>
+            
+                <h2>2. Setting Up a Simple HTML File</h2>
+                <p>While the browser console is great for quick experiments, you’ll soon want to write JavaScript in real projects. Let’s create a simple HTML file and link a JavaScript file to it.</p>
+            
+                <h3>Step 1: Create the HTML File</h3>
+                <p>Open your favorite text editor (like VS Code, Sublime Text, or even Notepad) and create a new file. Save it as <code>index.html</code>. Copy and paste the following code into the file:</p>
+            
+                <div class="code-example-html">
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html&gt;<br>
+                    &nbsp;&nbsp;&lt;head&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;My First JavaScript Page&lt;/title&gt;<br>
+                    &nbsp;&nbsp;&lt;/head&gt;<br>
+                    &nbsp;&nbsp;&lt;body&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Welcome to JavaScript!&lt;/h1&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="script.js"&gt;&lt;/script&gt;<br>
+                    &nbsp;&nbsp;&lt;/body&gt;<br>
+                    &lt;/html&gt;
+                </div>
+            
+                <h3>Step 2: Create the JavaScript File</h3>
+                <p>In the same folder as <code>index.html</code>, create a new file and name it <code>script.js</code>. Add the following code:</p>
+            
+                <div class="code-example-html">
+                    console.log('Hello, JavaScript!');
+                </div>
+            
+                <h3>Step 3: Open the HTML File</h3>
+                <p>Open <code>index.html</code> in your web browser by double-clicking it. Open the browser’s Console (right-click → Inspect → Console tab) and you should see the message <strong>"Hello, JavaScript!"</strong>. 🎉</p>
+            
+                <h2>3. Working with VS Code (Optional)</h2>
+                <p>If you plan to do more extensive coding, we recommend using a text editor like <strong>Visual Studio Code</strong> (VS Code). It’s free, powerful, and widely used by developers. Here’s how to set it up:</p>
+                <ol>
+                    <li>Download and install <a href="https://code.visualstudio.com/" target="_blank">VS Code</a>.</li>
+                    <li>Open <code>index.html</code> in VS Code.</li>
+                    <li>Install the "Live Server" extension in VS Code.</li>
+                    <li>Right-click <code>index.html</code> and select <strong>Open with Live Server</strong>.</li>
+                    <li>Your browser will open the file, and any changes you make will update in real-time!</li>
+                </ol>
+            
+                <h2>4. Next Steps</h2>
+                <p>You’ve just set up your first JavaScript environment! With a browser and a text editor, you’re ready to start coding. In the next lesson, we’ll write your very first JavaScript script and explore how JavaScript interacts with the browser.</p>
+            
+                <a href="./javascript.html#javascript-first-script-tutorial" class="next-section-link">Let’s write your first JavaScript script!</a>
+            </div>
+            <div id="javascript-first-script-tutorial" class="detailed-plan-klm123">
+                <h1>Your First JavaScript Script</h1>
+                <p>Now that your environment is set up, it’s time to write your first JavaScript script! Don’t worry, we’ll walk you through every step.</p>
+            
+                <h2>1. Adding JavaScript to Your HTML</h2>
+                <p>JavaScript can be added to your HTML file in two ways:</p>
+                <ul>
+                    <li><strong>Inline:</strong> Adding JavaScript directly inside the HTML.</li>
+                    <li><strong>External:</strong> Linking a separate JavaScript file.</li>
+                </ul>
+                <p>We’ll use the external method, as it’s cleaner and better for larger projects.</p>
+            
+                <h3>Step 1: Edit Your HTML File</h3>
+                <p>Update your <code>index.html</code> file to include a <code>button</code> that interacts with your JavaScript:</p>
+            
+                <div class="code-example-html">
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html&gt;<br>
+                    &nbsp;&nbsp;&lt;head&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;My First JavaScript Script&lt;/title&gt;<br>
+                    &nbsp;&nbsp;&lt;/head&gt;<br>
+                    &nbsp;&nbsp;&lt;body&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Welcome to JavaScript!&lt;/h1&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;button onclick="displayMessage()"&gt;Click Me!&lt;/button&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="script.js"&gt;&lt;/script&gt;<br>
+                    &nbsp;&nbsp;&lt;/body&gt;<br>
+                    &lt;/html&gt;
+                </div>
+            
+                <h3>Step 2: Write Your JavaScript</h3>
+                <p>Open your <code>script.js</code> file and add the following code:</p>
+            
+                <div class="code-example-html">
+                    function displayMessage() {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;alert('Hello, JavaScript!');<br>
+                    }
+                </div>
+            
+                <h3>Step 3: Test Your Script</h3>
+                <p>Open your <code>index.html</code> file in your browser. Click the <strong>Click Me!</strong> button, and you should see a pop-up message that says <strong>"Hello, JavaScript!"</strong>. 🎉</p>
+            
+                <h2>2. How It Works</h2>
+                <p>Let’s break down what’s happening:</p>
+                <ul>
+                    <li><strong>Inline JavaScript:</strong> The <code>onclick="displayMessage()"</code> in the button tells the browser to run the <code>displayMessage</code> function when the button is clicked.</li>
+                    <li><strong>Function:</strong> A function is a block of reusable code. In this case, <code>displayMessage</code> is a function that shows an alert with the text "Hello, JavaScript!"</li>
+                    <li><strong>Alert:</strong> The <code>alert()</code> method creates a pop-up message in the browser.</li>
+                </ul>
+            
+                <h2>3. Let’s Customize It</h2>
+                <p>Try changing the message inside the <code>alert</code>. For example:</p>
+            
+                <div class="code-example-html">
+                    function displayMessage() {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;alert('You are awesome!');<br>
+                    }
+                </div>
+            
+                <p>Save the file, reload the page, and click the button again to see your custom message. Have fun experimenting!</p>
+            
+                <h2>4. JavaScript in the Console</h2>
+                <p>Did you know you can also test JavaScript directly in the browser console? Open the console (right-click → Inspect → Console tab) and type:</p>
+            
+                <div class="code-example-html">
+                    alert('JavaScript is amazing!');
+                </div>
+            
+                <p>Press Enter, and you’ll see the alert pop up!</p>
+            
+                <h2>5. What’s Next?</h2>
+                <p>Congratulations! You’ve just written your first JavaScript script. In the next section, we’ll dive into one of the most commonly used JavaScript tools: <code>console.log</code>. Let’s explore how it can help you debug and understand your code.</p>
+            
+                <a href="./javascript.html#javascript-console-log-tutorial" class="next-section-link">Learn about <code>console.log</code> here!</a>
+            </div>
+            <div id="javascript-console-log-tutorial" class="detailed-plan-klm123">
+                <h1>Using <code>console.log</code></h1>
+                <p>As you write JavaScript, you'll often need to check what’s happening in your code. That’s where <code>console.log</code> comes in! It’s like your personal notepad for JavaScript—it helps you see what's going on behind the scenes.</p>
+            
+                <h2>1. What is <code>console.log</code>?</h2>
+                <p>The <code>console.log</code> method allows you to display messages, variables, and other information in the browser’s Console. It’s incredibly useful for debugging and understanding how your code works.</p>
+            
+                <h3>Example: Logging a Message</h3>
+                <p>Let’s try it out! Add this to your <code>script.js</code> file:</p>
+            
+                <div class="code-example-html">
+                    console.log('Hello from console.log!');
+                </div>
+            
+                <p>Save the file, reload your <code>index.html</code> page in the browser, and open the Console (right-click → Inspect → Console tab). You should see:</p>
+                <div class="code-example-html">
+                    Hello from console.log!
+                </div>
+            
+                <h2>2. Logging Variables</h2>
+                <p>One of the most common uses of <code>console.log</code> is to check the values of variables. Here’s an example:</p>
+            
+                <div class="code-example-html">
+                    const name = 'Taylor';<br>
+                    const age = 25;<br>
+                    console.log('Name:', name);<br>
+                    console.log('Age:', age);
+                </div>
+            
+                <p>In the Console, you’ll see:</p>
+                <div class="code-example-html">
+                    Name: Taylor<br>
+                    Age: 25
+                </div>
+            
+                <h2>3. Logging Multiple Values</h2>
+                <p>You can also log multiple values at once, which is useful for debugging complex data:</p>
+            
+                <div class="code-example-html">
+                    const city = 'New York';<br>
+                    const hobby = 'painting';<br>
+                    console.log('City:', city, 'Hobby:', hobby);
+                </div>
+            
+                <p>The output will look like this:</p>
+                <div class="code-example-html">
+                    City: New York Hobby: painting
+                </div>
+            
+                <h2>4. Debugging with <code>console.log</code></h2>
+                <p>Let’s use <code>console.log</code> to debug a simple program:</p>
+            
+                <div class="code-example-html">
+                    function addNumbers(a, b) {<br>
+                    &nbsp;&nbsp;console.log('Adding:', a, 'and', b);<br>
+                    &nbsp;&nbsp;return a + b;<br>
+                    }<br>
+                    <br>
+                    const result = addNumbers(5, 10);<br>
+                    console.log('Result:', result);
+                </div>
+            
+                <p>In the Console, you’ll see:</p>
+                <div class="code-example-html">
+                    Adding: 5 and 10<br>
+                    Result: 15
+                </div>
+            
+                <p>By logging the input and output, you can see exactly what’s happening inside your program!</p>
+            
+                <h2>5. Styling Your Logs</h2>
+                <p>Did you know you can add styles to your <code>console.log</code>? Here’s how:</p>
+            
+                <div class="code-example-html">
+                    console.log('%cThis is a styled message!', 'color: blue; font-size: 16px;');
+                </div>
+            
+                <p>The <code>%c</code> lets you apply CSS styles to the text. Experiment with colors, fonts, and sizes to make debugging more fun!</p>
+            
+                <h2>6. When to Use <code>console.log</code></h2>
+                <p><code>console.log</code> is a must-have tool for:</p>
+                <ul>
+                    <li>Checking the flow of your program.</li>
+                    <li>Verifying the values of variables.</li>
+                    <li>Understanding how functions are called and return values.</li>
+                    <li>Debugging errors.</li>
+                </ul>
+            
+                <h2>7. What’s Next?</h2>
+                <p>You’ve mastered <code>console.log</code>, one of the most essential tools for JavaScript developers. As you write more complex code, <code>console.log</code> will help you troubleshoot and learn faster.</p>
+            
+                <p>In the next section, we’ll bring all the pieces together to write interactive scripts that respond to user actions. Let’s take the next step!</p>
+            
+                <a href="./javascript.html#javascript-advanced-logging-tutorial" class="next-section-link">Ready to explore more advanced JavaScript topics? Click here!</a>
+            </div>
+        </div>
+    </main>
+    <div id="footer-container"></div>
+    </body>
+</html>
