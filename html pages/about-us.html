@@ -3,67 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Niche Blog</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <title>Manage Subscriptions</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="../styles/manage.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8345072588628632"
      crossorigin="anonymous"></script>
 </head>
-<body>
-    <!-- Header Section -->
-    <header id="main-header">
-        <link rel="stylesheet" href="../css/header.css">
-        <div class="header-container">
+
+
+   
+<div class="ad-above-header"></div>
+    <header id="sticky-header">
+        <link rel="stylesheet" href="../styles/header.css">
+        <div class="sticky-header-container">
             <!-- Left Section: Logo -->
-            <div class="logo-section">
-                <a href="../index.html" class="logo">STROMAYER</a>
+            <div class="sticky-logo-section">
+                <a href="../index.html" class="sticky-logo">
+                    <img src="/images/stromayer (2).png" class="logo" alt="Stromayer Logo">
+                </a>
             </div>
 
             <!-- Right Section: Contains Top Row and Navigation Links -->
-            <div class="header-right">
-                <!-- Top Row: Slogan and Icons -->
-                <div class="top-row">
-                    <a href="../html pages/about-us.html" class="tagline-link">
-                        <span class="tagline">
-                            <span>shaping the future one step</span>
-                            <span>at a time</span>
-                        </span>
-                    </a>
-                    <div class="header-icons">
-                        <button class="icon-navigation"><a href="html pages/language.html" class="icon" title="Language">🌐</a></button>
-                        <button class="icon-navigation"><a href="search.html" class="icon" title="Search">🔍</a></button>
-                        <button class="icon-navigation"><a href="html pages/profile.html" class="icon" title="Profile">👤</a></button> 
-                        <button class="icon-navigation"><a href="menu.html" class="icon" title="Menu">🔲</a></button> 
-                    </div>
+            <div class="sticky-header-right">
+              
+                <div class="sticky-navigation-shelf"> 
+                        <button onclick="window.location.href='../html pages/news.html'" class="sticky-c-sitePrimaryMenu_item">
+                            <span class="c-sitePrimaryMenu_text">News</span>
+                        </button>
+                        <button onclick="window.location.href='../html pages/projects.html'" class="sticky-c-sitePrimaryMenu_item">
+                            <span class="c-sitePrimaryMenu_text">Projects</span>
+                        </button>
+                        <button onclick="window.location.href='../html pages/reviews.html'" class="sticky-c-sitePrimaryMenu_item">
+                            <span class="c-sitePrimaryMenu_text">Reviews</span>
+                        </button>
+                        <button onclick="window.location.href='../html pages/releases.html'" class="sticky-c-sitePrimaryMenu_item">
+                            <span class="c-sitePrimaryMenu_text">Releases</span>
+                        </button>
+                        <button onclick="window.location.href='../html pages/guides.html'" class="sticky-c-sitePrimaryMenu_item">
+                            <span class="c-sitePrimaryMenu_text">Guides</span>
+                        </button>
                 </div>
 
-                <!-- Bottom Row: Navigation Links -->
-                <div class="navigation-shelf"> 
-                    <button onclick="window.location.href='../html pages/trending.html'" class="c-sitePrimaryMenu_item">
-                        <span class="sticky-c-sitePrimaryMenu_text">NEWS</span>
-                    </button>
-                    <button onclick="window.location.href='../html pages/tech.html'" class="c-sitePrimaryMenu_item">
-                        <span class="c-sitePrimaryMenu_text">TRENDING</span>
-                    </button>
-                    <button onclick="window.location.href='../html pages/innovation.html'" class="c-sitePrimaryMenu_item">
-                        <span class="c-sitePrimaryMenu_text">PROJECTS</span>
-                    </button>
-                    <button onclick="window.location.href='../html pages/security.html'" class="c-sitePrimaryMenu_item">
-                        <span class="c-sitePrimaryMenu_text">SECURITY</span>
-                    </button>
-                    <button onclick="window.location.href='../html pages/advice.html'" class="c-sitePrimaryMenu_item">
-                        <span class="c-sitePrimaryMenu_text">RELEASES</span>
-                    </button>
-                    <button onclick="window.location.href='../html pages/buying-guides.html'" class="c-sitePrimaryMenu_item">
-                        <span class="c-sitePrimaryMenu_text">BUYING GUIDES</span>
-                    </button>
-            </div>
+                    <div class="sticky-header-icons">
+                        <button class="sticky-icon-navigation"><a href="manage-subscriptions.html" class="sticky-icon" title="Profile"><img  class="icon-images" src="/images/profile-icon.webp" alt=""></a></button>
+                        <button class="menu-button">
+                            <img src="/images/hamburger-menu-icon.webp" id="menu-button" alt="Menu Icon" class="icon-images">
+                          </button>
+                    </div>
             </div>
         </div>
+    
     </header>
+    <div id="dropdown-menu" class="dropdown-menu">
+        <header id="sticky-header">
+            <link rel="stylesheet" href="../styles/header.css">
+            <div class="sticky-header-container">
+                <!-- Left Section: Logo -->
+                <div class="sticky-logo-section">
+                    <a href="../index.html" class="sticky-logo">
+                        <img src="/images/stromayer (2).png" class="logo" alt="Stromayer Logo">
+                    </a>
+                </div>
+    
+                <!-- Right Section: Contains Top Row and Navigation Links -->
+                <div class="sticky-header-right">
+                  
+    
+    
+                        <div class="sticky-header-icons">
+                            <button id="close-button" class="close-button">X</button>
+                        </div>
+                </div>
+            </div>
+        </header>
+       <div class="dropdown-links" >
+        <!-- Current Nav Links -->
+        <ul class="dropdown-nav-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="../html pages/projects.html">Projects</a></li>
+            <li><a href="../html pages/reviews.html">Reviews</a></li>
+            <li><a href="../html pages/releases.html">Releases</a></li>
+            <li><a href="../html pages/guides.html">Guides</a></li>
+          </ul>
+        
+          <!-- Footer Nav Links -->
+          <ul class="dropdown-footer-links">
+            <li><a href="../html pages/contact-us.html">Contact Us</a></li>
+            <li><a href="../html pages/about-us.html">About Us</a></li>
+            <li><a href="../html pages/privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../html pages/terms-of-service.html">Terms and Conditions</a></li>
+            <li><a href="../html pages/manage-subscriptions.html">Manage Preferences</a></li>
+          </ul>
+      </div>
+      </div>
+
 
     <!-- Sticky Header Section -->
     <header id="sticky-header">
-        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="styles/header.css">
         <div class="sticky-header-container">
             <!-- Left Section: Logo -->
             <div class="sticky-logo-section">
@@ -107,7 +144,7 @@
     </header>
 
     <main>
-        <link rel="stylesheet" href="/css/about-us.css">
+        <link rel="stylesheet" href="/styles/about-us.css">
         <section id="about-us">
             <h1>About Us</h1>
             <h2>Meet the Team</h2>
@@ -180,6 +217,6 @@
         }
         </script>
 
-        <script src="../javascript/scipt.js"></script>
+        <script src="/script.js?v=2"></script>
         </body>
         </html>

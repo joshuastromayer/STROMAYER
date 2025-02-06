@@ -1,0 +1,232 @@
+.section-divider {
+    width: 100%;
+    height: 1px;
+    background-color: black; /* Black line */
+    margin: 2rem 0; /* Space above and below the line */
+}
+
+.project-contentc29304 {
+display: flex;
+flex-direction: row;
+margin: 40px;
+}
+
+.project-displayedc9304 {
+    width: 570px; 
+    height: 510px; 
+    overflow: hidden;
+    position: relative;
+}
+
+.project-displayedc9304 iframe {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    zoom: 0.65;
+}
+
+#iframe13124342342497 {
+    zoom: 0.6;
+}
+
+.project-informationc9304 {
+    padding: 40px;
+}
+
+.project-informationc9304 p {
+    font-size: 16px;
+}
+
+.project-informationc9304 h2 {
+    font-size: 52px;
+}
+
+.how-to-play9304 {
+    margin-top: 30px;
+}
+
+.how-to-play9304 h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.how-to-play9304 li {
+    margin-bottom: 10px;
+}
+
+.project-code-wrapper-c3293482jdfsdfsdfss {
+    display: flex;
+    flex-direction: row;
+}
+
+.project-wrapper-c3293482jdfsdfsdfss {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    padding-left: 200px;
+    height: auto;
+    max-width: 800px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.project-title-c3293482jdfsdfsdfss {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#view-more-projectsy2345 a {
+    color: white;
+    text-decoration: none;
+}
+
+.button-c3293482jdfsdss {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 40px;
+}
+
+
+.tabs-c3293482jdfsdfsdfss {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.tab-c3293482jdfsdfsdfss {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background: #eee;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.tab-c3293482jdfsdfsdfss.active {
+    background: #333;
+    color: white;
+}
+
+.content-c3293482jdfsdfsdfss {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.code-block-c3293482jdfsdfsdfss {
+    display: none;
+    font-family: monospace;
+    font-size: 14px;
+    padding: 15px;
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.code-block-c3293482jdfsdfsdfss.active {
+    display: block;
+}
+
+.more-projects9304 {
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    margin-left: auto;
+    margin-top: 90px;
+}
+
+.more-project9304 {
+    display: flex;
+    flex-direction: row;
+}
+
+.more-projects-preview-container {
+    position: relative;
+    width: 130px;
+    height: 110px;
+    overflow: hidden; /* Ensures no overflow issues */
+}
+
+.more-projects-preview-container iframe {
+    width: 100%; /* Adjust to fit the container */
+    height: 100%;
+    transform: scale(0.8); /* Scales the iframe */
+    transform-origin: top left; /* Ensures proper scaling origin */
+    border: 0; /* Removes default border */
+    zoom: 0.15;
+}
+
+.link-to-project9304 {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.bottom-cta-section {
+    padding: 40px 20px; 
+    text-align: center; 
+    border-top: 1px solid black; 
+    width: 98%;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.bottom-cta-section h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); 
+}
+
+.cta-button {
+    display: inline-block;
+    background: #333; 
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px; 
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    background: #444; 
+}
+
+.ad-placeholder {
+    height: 590px; 
+    background-color: #f0f0f0;
+    border: 1px dashed #ccc;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    padding: 0;
+}
+
+#asad12sd {
+    font-style: italic;
+}
+
+#a5 {
+    bottom: 0;
+    width: 200px;
+    margin-left: auto;
+    margin-top: 60px;
+}

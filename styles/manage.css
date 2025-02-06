@@ -1,0 +1,215 @@
+body {
+    background-color: rgb(250, 250, 250);
+}
+
+/* Preferences Container Styling */
+.preferences-container {
+    max-width: 800px; /* Center the container */
+    margin: 50px auto; /* Add spacing around */
+    padding: 20px; /* Inner spacing */
+    background-color: #ffffff; /* White background */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Header and Section Titles */
+#preferences-intro h1,
+#preferences-info h2,
+#preferences-form-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+}
+
+/* Paragraphs */
+#preferences-intro p,
+#preferences-info p  {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.preferences-form-section-disclaimer {
+    font-size: 12px;
+}
+
+.preferences-form-section-p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* List Styling */
+#preferences-list {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+#preferences-list li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Form Styling */
+#preferences-form {
+    margin-top: 20px;
+}
+
+#preferences-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#preferences-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#preferences-form button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#preferences-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Basic Reset */
+body, h1, h2, p, a, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.contact-main {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+/* Section Titles */
+h1, h2 {
+    margin-bottom: 15px;
+    color: #222;
+}
+
+/* Intro Section */
+.contact-intro {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-intro p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Contact Info */
+.contact-info {
+    margin-bottom: 30px;
+}
+
+.email-link {
+    display: inline-block;
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.email-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Contact Form */
+.contact-form {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: bold;
+    color: #222;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+.subscription-form {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-top: 1rem;
+    flex-wrap: wrap; /* Ensures responsive behavior */
+}
+
+.subscription-form input[type="email"] {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1; /* Expands to take available space */
+    min-width: 200px; /* Ensures reasonable width on small screens */
+}
+
+.subscription-form button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscription-form button:hover {
+    background-color: #e58900;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Subscriptions</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="../styles/manage.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8345072588628632"
+     crossorigin="anonymous"></script>
+</head>
+
+<div id="header-container"></div>
+<body>
+    <main>
+        <div class="preferences-container">
+            <section id="preferences-intro">
+                <h1>Manage Your Preferences</h1>
+                <p>
+                    Customize your preferences to receive updates tailored to your interests. 
+                    You have full control over what you’d like to hear from us.
+                </p>
+            </section>
+    
+            <section id="preferences-info">
+                <h2>What You Can Update</h2>
+                <p>
+                    Use the options below to manage your email preferences or unsubscribe if you no longer wish to receive updates.
+                </p>
+                <ul id="preferences-list">
+                    <li><strong>Newsletter Preferences:</strong> Choose the types of updates you want to receive.</li>
+                    <li><strong>Email Frequency:</strong> Control how often you hear from us.</li>
+                    <li><strong>Unsubscribe:</strong> Opt out of all updates anytime.</li>
+                </ul>
+            </section>
+            
+    
+            <section id="preferences-form-section">
+                <h2>Update Your Preferences</h2>
+               
+                <form id="preferences-form">
+                    <label for="preferences-name">Your Name</label>
+                    <input type="text" id="preferences-name" name="name" placeholder="Enter your name" required />
+            
+                    <label for="preferences-email">Your Email</label>
+                    <input type="email" id="preferences-email" name="email" placeholder="Enter your email" required />
+            
+                    <label for="preferences-message">Your Message</label>
+                    <textarea id="preferences-message" name="message" placeholder="Enter your preferences or message" rows="6" required></textarea>
+            
+                    <button type="submit">Update Preferences</button>
+                    <p class="preferences-form-section-disclaimer" >Messages sent through this form will only apply to the email attached. 
+                        </p>
+                    <p id="preferences-status-message" class="preferences-form-section-p" ></p>
+                </form>
+            </section>
+
+
+            <h2>Want to Unsubscribe?</h2>
+            <form id="unsubscribe-form">
+                <label for="unsubscribe-email">Enter your email here:</label>
+                <input type="email" id="unsubscribe-email" placeholder="Enter your email" required />
+                <button type="submit">Unsubscribe</button>
+                <p id="unsubscribe-status"></p>
+              </form>
+        </div>
+    </main>
+<div id="footer-container"></div>
+
+<script src="/script.js?v=2"></script>
+</body>
+</html>

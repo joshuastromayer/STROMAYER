@@ -1,0 +1,732 @@
+@font-face {
+    font-family: 'Fredoka';
+    src: url('../fonts/Fredoka-VariableFont_wdth,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: none;
+}
+
+.webpage-icon {
+    border-radius: 16px;
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: white;
+}
+
+
+
+
+#sticky-header {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%; /* Fixed width based on your reference screen width */
+    height: 72px; /* 4vw converted to px: 4% of 1470px */
+    background-color: white; /* Adjust to match your design */
+}
+
+/* Header Styling */
+.sticky-header {
+    background-color: white; /* Adjust color as needed */
+    color: black;
+    height: 72px; /* 7vh converted to px: 7% of 840px */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center header content horizontally */
+    z-index: 1000;
+}
+
+.sticky-header-container {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Fixed width based on your reference screen width */
+    max-width: 100vw;
+    height: 72px; /* 7vh converted to px */
+    padding: 0; /* Adjust padding as needed */
+    white-space: nowrap;
+}
+
+/* Sticky Logo */
+.sticky-logo {
+    margin-left: 100px;
+    width: 150.81px; /* Define container width */
+    height: 43px; /* Define container height */
+    overflow: hidden; /* Ensure cropping */
+    display: flex; /* Center image */
+    align-items: center; /* Vertically center */
+    justify-content: center; /* Horizontally center */
+}
+
+.sticky-logo:hover {
+    color: grey;
+    text-decoration: none;
+}
+
+.logo {
+    height: 100%; /* Scale image to fill container height */
+    width: 100%; /* Scale image to fill container width */
+    object-fit: cover; /* Crop image proportionally */
+    display: block;
+}
+
+.beta-badge {
+  background-color: #ffcc00;
+  color: #333;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 5px;
+  margin-left: 5px;
+  text-transform: uppercase;
+}
+
+/* Sticky Header Right Section */
+.sticky-header-right {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin: 0;
+    max-width: 75%;
+    max-height: 58.8px; /* 7vh converted to px: 7% of 840px */
+    height: 58.8px; /* Fixed height */
+    margin-right: 39.69px; /* 2.7vw converted to px: 2.7% of 1470px */
+}
+
+/* Sticky Header Icons Section */
+.sticky-header-icons {
+    display: flex;
+    gap: 32.34px; /* 2.2vw converted to px: 2.2% of 1470px */
+    margin-left: 79.38px; /* 5.4vw converted to px: 5.4% of 1470px */
+    height: 100%;
+}
+
+/* Sticky Icon Styling */
+.sticky-icon {
+    font-size: 16.17px; /* 1.1vw converted to px: 1.1% of 1470px */
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-images {
+    height: 20px;
+}
+
+/* Sticky Icon Navigation */
+.sticky-icon-navigation {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Navigation buttons */
+
+.sticky-c-sitePrimaryMenu_item {
+    height: 33.6px; /* 4vh converted to px: 4% of 840px */
+    background-color: white;
+    border: none;
+    font-size: 14.11px; /* 0.96vw converted to px: 0.96% of 1470px */
+
+    color: black;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Active Menu Item (adds a red underline) */
+.sticky-c-sitePrimaryMenu_item.active {
+    border-bottom: 3px solid red; 
+}
+
+/* Hover Effect for Menu Items */
+.sticky-c-sitePrimaryMenu_item:hover {
+    color: #c8c8c8; /* Example hover color */
+}
+
+/* Sticky Navigation Shelf */
+.sticky-navigation-shelf {
+    display: flex;
+    justify-content: right;
+    gap: 40px;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-left: auto; /* 3.4vw converted to px: 3.4% of 1470px */
+}
+
+/* Fullscreen Menu */
+.fullscreen-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100%);
+    transition: transform 0.4s ease-in-out;
+    z-index: 3000;
+}
+
+.fullscreen-menu nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+.fullscreen-menu nav ul li {
+    margin: 20px 0;
+}
+
+.fullscreen-menu nav ul li a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.fullscreen-menu nav ul li a:hover {
+    color: #f4a261;
+}
+
+/* Active Menu State */
+.fullscreen-menu.active {
+    transform: translateY(0);
+}
+
+.dropdown-nav-links {
+    z-index: 3000;
+}
+
+/* Menu Button */
+.menu-button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    height: 20px;
+    margin: auto 0;
+  }
+  
+ /* Dropdown Menu */
+.dropdown-menu {
+    position: sticky;
+    margin-top: 0px;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white; /* Change background to white */
+    color: black; /* Change text color to black */
+    display: none; /* Initially hidden */
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    gap: 40px;
+    overflow-y: auto; /* Allow scrolling if needed */
+    z-index: 6000;
+  }
+
+.dropdown-menu header {
+    background-color: blue;
+}
+  
+  /* Nav Links */
+  .dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dropdown-menu li {
+    margin: 20px 0;
+  }
+  
+  .dropdown-menu a {
+    color: black; /* Change link color to black */
+    text-decoration: none;
+    font-size: 22px; /* Larger font for main nav links */
+    transition: color 0.3s ease;
+  }
+  
+  .dropdown-menu a:hover {
+    color: grey;
+  }
+
+  .dropdown-links {
+    z-index: 2001;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Footer Links Section */
+.dropdown-footer-links a {
+    font-size: 18px; /* Smaller font for footer links */
+    opacity: 0.8;
+  }
+  
+  .dropdown-footer-links a:hover {
+    opacity: 1;
+  }
+
+  /* Close Button */
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 39.69px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .close-button:hover {
+    color: grey;
+  }
+
+  /* Styling for the extension */
+  .coding-extension-9321pookie {
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    top: 0;
+    z-index: 1000;
+    overflow-x: auto; /* Add horizontal scrolling */
+    overflow-y: hidden; /* Prevent vertical scrolling */
+  }
+  
+  .coding-languages-list-9321pookie {
+    position: relative;
+    width: max-content; /* Ensure the list doesn't stretch unnecessarily */
+    height: auto;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    gap: 30px;
+    margin: 0;
+    z-index: 1000;
+  }
+  
+  .coding-languages-list-9321pookie a.active {
+    background-color: #4a90e2;
+  }
+  
+  .coding-languages-list-9321pookie li {
+    margin: 0;
+    height: auto;
+  }
+  
+  .coding-languages-list-9321pookie li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    padding: 10px 15px;
+    background-color: black;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    text-transform: uppercase;
+  }
+  
+  .coding-languages-list-9321pookie li:hover {
+    transform: scale(1.05); /* Add slight zoom effect */
+  }
+  
+  .coding-languages-list-9321pookie a:hover {
+    background-color: rgb(40, 40, 40);
+  }
+
+.nav-item {
+  position: relative; /* Essential for positioning the sub-menu */
+}
+#hamburger-item {
+  padding: 0;
+}
+
+.sub-menu {
+  all: unset;
+  list-style: none;
+  position: absolute;
+  background-color: white;
+  top: 100%;
+  margin-top: 6px; /* Aligns the sub-menu right below the parent link */
+  left: 50%; /* Position the sub-menu in the center relative to the parent */
+  transform: translateX(-50%); /* Shift the sub-menu's center to align with the parent */
+  width: max-content;
+  padding: 2px;
+  display: none; /* Initially hidden */
+  z-index: 10;
+  border-top: 3px solid black;
+}
+
+.sub-menu li {
+  margin: 5px 5px;
+}
+
+.sub-menu a {
+  all: unset;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 11px !important;
+  padding: 8px 12px; /* Adjust padding for better spacing */
+  border-radius: 4px;
+  color: #fff; /* White text for contrast */
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.sub-menu a:hover {
+  background-color: rgb(40, 40, 40); /* Highlight effect */
+  transform: scale(1.00000005); /* Add slight zoom effect */
+
+}
+
+.nav-item:hover .sub-menu {
+  display: flex; /* Show the sub-menu on hover */
+}
+
+#unavailable-course-nav-link {
+  background-color: rgba(128, 128, 128, 0.24);
+  color: grey;
+}
+
+.tooltip {
+  position: relative;
+  color: #aaa;
+  cursor: not-allowed;
+}
+.tooltip-text {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+.tooltip:hover .tooltip-text {
+  display: block;
+}
+
+/* Styling for different variations of header */
+
+.course-page #header-container .coding-extension-9321pookie {
+  display: none;
+}
+
+.course-page #header-container {
+  height: 72px;
+}
+
+/* For screens at 70% width or smaller (e.g., laptops shrinking horizontally) */
+@media (max-width: 1029px) { /* 70% of 1470px */
+    .sticky-header-container {
+      justify-content: space-between; /* Space out logo and nav links */
+    }
+  
+    .sticky-header-right {
+      max-width: 1300px; /* Reduce the space allocated for nav links */
+      gap: 15px; /* Reduce spacing between nav items */
+    }
+
+    .sticky-header-icons {
+        margin-left: 20px; /* Adjust icons to fit better */
+      }
+  }
+  
+  /* For screens at 30% width or smaller (e.g., small laptops or very narrow browsers) */
+  @media (max-width: 441px) { /* 30% of 1470px */
+    .sticky-header-right {
+      display: none; /* Hide the nav links */
+    }
+  
+    .sticky-header-icons {
+      margin-left: 0; /* Adjust icon spacing for smaller screens */
+    }
+  }
+  
+  /* For tablets (max-width: 768px) */
+  @media (max-width: 768px) {
+    .sticky-header-container {
+      justify-content: space-between;
+    }
+  
+    .sticky-logo {
+      margin-left: 40px; /* Center logo */
+    }
+  
+    .sticky-navigation-shelf {
+        display: none;
+    }
+
+    .sticky-header-right {
+        display: flex; /* Ensure icons remain visible */
+        justify-content: flex-end; /* Align icons to the right */
+        align-items: center; /* Vertically align with logo */
+        gap: 20px; /* Add spacing between icons */
+    }
+
+    .sticky-header-icons {
+        margin-left: 40px; /* Adjust icons to fit better */
+      }
+  
+    .hamburger-menu {
+      display: block; /* Show hamburger menu */
+      font-size: 24px;
+      margin-top: 10px;
+      cursor: pointer;
+      background-color: white;
+    }
+  }
+  
+  /* For phones (max-width: 576px) */
+  @media (max-width: 576px) {
+    .sticky-header-container {
+      flex-direction: row; /* Stack elements */
+      padding: 5px 10px; /* Smaller padding */
+    }
+  
+    .hamburger-menu {
+      font-size: 20px; /* Adjust hamburger menu size */
+    }
+  }
+
+
+  /* Basic Footer Styles */
+  footer {
+    background-color: black;
+    color: white; /* White text */
+    padding: 20px;
+    padding-top: 30px;
+    font-family: Arial, sans-serif;
+}
+
+/* Top Section - Logo and Description */
+.footer-top {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-logo {
+    width: 150.81px; /* Define container width */
+    height: 43px; /* Define container height */
+    overflow: hidden; /* Ensure cropping */
+    display: flex; /* Center image */
+    align-items: center; /* Vertically center */
+    justify-content: center; /* Horizontally center */
+    margin: 0 auto;
+    
+}
+
+.footer-social-icon {
+    height: 24px;
+}
+
+.footer-description {
+    font-size: 14px;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+/* Navigation Links */
+.footer-nav {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    padding: 0px 20px;
+    padding-right: 120px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0 10px;
+}
+
+.footer-nav li {
+    margin: 15px 0;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-nav a:hover {
+    color: grey;
+}
+
+/* Bottom Section - Copyright Information */
+.footer-bottom {
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    padding: 10px 0;
+    border-bottom: 1px solid black;
+}
+
+.footer-bottom p {
+    font-size: 10px;
+}
+
+/* Social Links and Preferences */
+.footer-social {
+    text-align: center;
+
+}
+
+.footer-social p {
+
+    font-size: 14px;
+}
+
+.p {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.social-links {
+    color: white;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: grey;
+}
+
+.footer-logo-div {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    padding-bottom: 15px;
+}
+
+.footer-logo {
+    height: 70px;
+    width: 250px;
+    object-fit: cover;
+}
+
+/* adjustments for course pages */
+
+/* Default footer styling */
+#footer-container {
+  width: 100%;
+  background-color: #222;
+  color: white;
+}
+
+/* Adjust footer width for course pages */
+.course-page #footer-container {
+  width: calc(100% - 260px); /* Adjust based on your course layout */
+  margin-left: 260px; /* To align with sidebar or other elements */
+}
+
+.html-page-klm123 #footer-container {
+  width: calc(100% - 249px);
+  margin-left: 254px;
+}
+
+/* MEDIA QUERIES */
+
+/* Medium Screens (max-width: 1080px) */
+@media (max-width: 1080px) {
+    .footer-nav {
+      gap: 20px; /* Reduce spacing between columns */
+      padding: 15px 0; /* Reduce vertical padding */
+      flex-wrap: wrap; /* Allow wrapping of columns */
+      justify-content: center; /* Center align all columns */
+      width: auto;
+    }
+  
+    .footer-nav ul {
+      width: 30%; /* Make columns narrower */
+      min-width: 150px; /* Ensure columns don't shrink too much */
+      text-align: center; /* Center-align text */
+    }
+  
+    .footer-nav li {
+      margin: 8px 0; /* Add more spacing between items */
+    }
+  
+    .footer-social {
+      padding: 10px 0; /* Adjust padding for consistency */
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .html-page-klm123 #footer-container {
+      width: 100%; /* Full width */
+    margin-left: 0; /* No margin to align centrally */
+    }
+  }
+
+/* Tablet View (max-width: 768px) */
+@media (max-width: 768px) {
+  .course-page #footer-container,
+  .html-page-klm123 #footer-container {
+    width: 100%; /* Full width */
+    margin-left: 0; /* No margin to align centrally */
+  }
+}
+
+/* Mobile View (max-width: 576px) */
+@media (max-width: 576px) {
+    .footer-nav {
+        flex-direction: column; /* Stack all links vertically */
+        gap: 10px;
+        margin: 0 auto;
+        align-items: center;
+        width: auto;
+        max-width: 576px;
+    }
+
+    .footer-nav ul {
+        text-align: center;
+    }
+
+    .footer-nav li {
+        margin: 8px 0; /* Add some space between items */
+    }
+
+    .footer-top {
+        padding: 10px 0;
+    }
+
+    .footer-social {
+        padding: 5px 0;
+    }
+}
