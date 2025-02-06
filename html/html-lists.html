@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lists - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="../styles/coding.css">
+</head>
+<div id="header-container"></div>
+      <body class="html-page-klm123">
+<link rel="stylesheet" href="../styles/coding.css">
+
+    
+        <main class="html-main-klm123">
+            <!-- Quick Start Plan -->
+            <div id="html-quick-menu"></div>
+    
+            <!-- Detailed Plan -->
+            <div class="main-tutorial-content">
+                <div class="detailed-plan-klm123" id="html-lists-tutorial">
+                    <h2>HTML Lists</h2>
+                    
+                    <p>
+                        Lists are a fundamental feature of HTML, allowing you to organize and display content in a structured and readable format. HTML supports three types of lists:
+                    </p>
+                    <ul>
+                        <li><strong>Unordered Lists:</strong> Items are displayed with bullet points.</li>
+                        <li><strong>Ordered Lists:</strong> Items are displayed with numbers or letters, indicating their order.</li>
+                        <li><strong>Definition Lists:</strong> Used to display terms and their descriptions.</li>
+                    </ul>
+                
+                    <h3>Unordered Lists</h3>
+                    <p>
+                        Unordered lists are created using the <code>&lt;ul&gt;</code> tag. Each item in the list is wrapped in an <code>&lt;li&gt;</code> (list item) tag.
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;ul&gt;<br>
+                            &nbsp;&nbsp;&lt;li&gt;HTML&lt;/li&gt;<br>
+                            &nbsp;&nbsp;&lt;li&gt;CSS&lt;/li&gt;<br>
+                            &nbsp;&nbsp;&lt;li&gt;JavaScript&lt;/li&gt;<br>
+                            &lt;/ul&gt;
+                        </code>
+                    </div>
+                    <p>This code creates a list like this:</p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                
+                    <h3>Ordered Lists</h3>
+                    <p>
+                        Ordered lists are created using the <code>&lt;ol&gt;</code> tag. Items are numbered automatically.
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;ol&gt;<br>
+                            &nbsp;&nbsp;&lt;li&gt;Step 1: Open your editor.&lt;/li&gt;<br>
+                            &nbsp;&nbsp;&lt;li&gt;Step 2: Write some code.&lt;/li&gt;<br>
+                            &nbsp;&nbsp;&lt;li&gt;Step 3: Save your file.&lt;/li&gt;<br>
+                            &lt;/ol&gt;
+                        </code>
+                    </div>
+                    <p>This code produces the following list:</p>
+                    <ol>
+                        <li>Step 1: Open your editor.</li>
+                        <li>Step 2: Write some code.</li>
+                        <li>Step 3: Save your file.</li>
+                    </ol>
+                
+                    <h3>Definition Lists</h3>
+                    <p>
+                        Definition lists consist of terms and their definitions. They use the <code>&lt;dl&gt;</code> (definition list), <code>&lt;dt&gt;</code> (definition term), and <code>&lt;dd&gt;</code> (definition description) tags.
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;dl&gt;<br>
+                            &nbsp;&nbsp;&lt;dt&gt;HTML&lt;/dt&gt;<br>
+                            &nbsp;&nbsp;&lt;dd&gt;The standard markup language for web pages.&lt;/dd&gt;<br>
+                            &nbsp;&nbsp;&lt;dt&gt;CSS&lt;/dt&gt;<br>
+                            &nbsp;&nbsp;&lt;dd&gt;Styles the content of web pages.&lt;/dd&gt;<br>
+                            &nbsp;&nbsp;&lt;dt&gt;JavaScript&lt;/dt&gt;<br>
+                            &nbsp;&nbsp;&lt;dd&gt;Adds interactivity to web pages.&lt;/dd&gt;<br>
+                            &lt;/dl&gt;
+                        </code>
+                    </div>
+                    <p>This code creates a list like this:</p>
+                    <dl>
+                        <dt>HTML</dt>
+                        <dd>The standard markup language for web pages.</dd>
+                        <dt>CSS</dt>
+                        <dd>Styles the content of web pages.</dd>
+                        <dt>JavaScript</dt>
+                        <dd>Adds interactivity to web pages.</dd>
+                    </dl>
+                
+                    <h3>When to Use Each List Type</h3>
+                    <ul>
+                        <li><strong>Unordered Lists:</strong> Use when the order of items doesn’t matter.</li>
+                        <li><strong>Ordered Lists:</strong> Use when the order or sequence of items is important.</li>
+                        <li><strong>Definition Lists:</strong> Use for glossaries, descriptions, or term definitions.</li>
+                    </ul>
+
+                    <h3>Nested Lists</h3>
+<p>Sometimes, you might need to create a list inside another list. This is called a <strong>nested list</strong>. You can nest both ordered (<code>&lt;ol&gt;</code>) and unordered (<code>&lt;ul&gt;</code>) lists.</p>
+
+<h4>Example: A Nested Unordered List</h4>
+<div class="code-example-html">
+    <code>
+        &lt;ul&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;Fruits<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Apples&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Bananas&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Oranges&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
+        &nbsp;&nbsp;&lt;/li&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;Vegetables<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Carrots&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Broccoli&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
+        &nbsp;&nbsp;&lt;/li&gt;<br>
+        &lt;/ul&gt;
+    </code>
+</div>
+
+<h4>Example: A Nested Ordered List</h4>
+<div class="code-example-html">
+    <code>
+        &lt;ol&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;Morning Routine<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;ol&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Wake up&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Brush teeth&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Exercise&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/ol&gt;<br>
+        &nbsp;&nbsp;&lt;/li&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;Evening Routine<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;ol&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Dinner&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Read a book&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Go to bed&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/ol&gt;<br>
+        &nbsp;&nbsp;&lt;/li&gt;<br>
+        &lt;/ol&gt;
+    </code>
+</div>
+
+<h4>Output</h4>
+<p>For the unordered list:</p>
+<ul>
+    <li><strong>Fruits</strong>
+        <ul>
+            <li>Apples</li>
+            <li>Bananas</li>
+            <li>Oranges</li>
+        </ul>
+    </li>
+    <li><strong>Vegetables</strong>
+        <ul>
+            <li>Carrots</li>
+            <li>Broccoli</li>
+        </ul>
+    </li>
+</ul>
+<p>For the ordered list:</p>
+<ol>
+    <li><strong>Morning Routine</strong>
+        <ol>
+            <li>Wake up</li>
+            <li>Brush teeth</li>
+            <li>Exercise</li>
+        </ol>
+    </li>
+    <li><strong>Evening Routine</strong>
+        <ol>
+            <li>Dinner</li>
+            <li>Read a book</li>
+            <li>Go to bed</li>
+        </ol>
+    </li>
+</ol>
+                
+                    <h3>Styling Lists</h3>
+                    <p>
+                        Lists can be styled with CSS. For example, you can change bullet points to other symbols, adjust spacing, or even remove the default list markers entirely.
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;ul style="list-style-type: square;"&gt;<br>
+                            &nbsp;&nbsp;&lt;li&gt;HTML&lt;/li&gt;<br>
+                            &nbsp;&nbsp;&lt;li&gt;CSS&lt;/li&gt;<br>
+                            &nbsp;&nbsp;&lt;li&gt;JavaScript&lt;/li&gt;<br>
+                            &lt;/ul&gt;
+                        </code>
+                    </div>
+                    <p>The above example changes the bullets to squares instead of circles. But we will go further in detail about styling in our <a href="/css/css-introduction.html">CSS</a> tutorials.</p>
+                
+                    <h3>Next Steps</h3>
+                    <p>
+                        Now that you know how to create lists, it's time to test your knowledge with some hands-on exercises.
+                    </p>
+                    <p>
+                        <a href="./html-lists.html#html-lists-exercises" class="neutral">
+                            Ready to practice? Head to the exercises section!
+                        </a>
+                    </p>
+                </div>
+
+                <div class="detailed-plan-klm123" id="html-lists-exercises">
+                    <h2>HTML Lists: Exercises</h2>
+                
+                    <h3>1. Create an Unordered List</h3>
+                    <p>
+                        Create an unordered list to display the following items: "Apples", "Bananas", "Cherries".
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-1">Reveal Answer</button>
+                    <div id="answer-1" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;ul&gt;<br>
+                            &nbsp;&nbsp;&lt;li&gt;Apples&lt;/li&gt;<br>
+                            &nbsp;&nbsp;&lt;li&gt;Bananas&lt;/li&gt;<br>
+                            &nbsp;&nbsp;&lt;li&gt;Cherries&lt;/li&gt;<br>
+                            &lt;/ul&gt;
+                        </code>
+                    </div>
+                
+                    <h3>2. Create an Ordered List</h3>
+                    <p>
+                        Write HTML to create an ordered list showing the steps of making tea:
+                        <ul>
+                            <li>Boil water</li>
+                            <li>Add a tea bag to a cup</li>
+                            <li>Pour the boiled water into the cup</li>
+                            <li>Wait 3–5 minutes</li>
+                            <li>Remove the tea bag and enjoy</li>
+                        </ul>
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-2">Reveal Answer</button>
+                    <div id="answer-2" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;ol&gt;<br>
+                            &nbsp;&nbsp;&lt;li&gt;Boil water&lt;/li&gt;<br>
+                            &nbsp;&nbsp;&lt;li&gt;Add a tea bag to a cup&lt;/li&gt;<br>
+                            &nbsp;&nbsp;&lt;li&gt;Pour the boiled water into the cup&lt;/li&gt;<br>
+                            &nbsp;&nbsp;&lt;li&gt;Wait 3–5 minutes&lt;/li&gt;<br>
+                            &nbsp;&nbsp;&lt;li&gt;Remove the tea bag and enjoy&lt;/li&gt;<br>
+                            &lt;/ol&gt;
+                        </code>
+                    </div>
+                
+                    <h3>3. Create a Definition List</h3>
+                    <p>
+                        Write a definition list for the following terms:
+                        <ul>
+                            <li><strong>HTML:</strong> The standard markup language for web pages.</li>
+                            <li><strong>CSS:</strong> Styles the content of web pages.</li>
+                            <li><strong>JavaScript:</strong> Adds interactivity to web pages.</li>
+                        </ul>
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-3">Reveal Answer</button>
+                    <div id="answer-3" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;dl&gt;<br>
+                            &nbsp;&nbsp;&lt;dt&gt;HTML&lt;/dt&gt;<br>
+                            &nbsp;&nbsp;&lt;dd&gt;The standard markup language for web pages.&lt;/dd&gt;<br>
+                            &nbsp;&nbsp;&lt;dt&gt;CSS&lt;/dt&gt;<br>
+                            &nbsp;&nbsp;&lt;dd&gt;Styles the content of web pages.&lt;/dd&gt;<br>
+                            &nbsp;&nbsp;&lt;dt&gt;JavaScript&lt;/dt&gt;<br>
+                            &nbsp;&nbsp;&lt;dd&gt;Adds interactivity to web pages.&lt;/dd&gt;<br>
+                            &lt;/dl&gt;
+                        </code>
+                    </div>
+                
+                    <h3>4. Style a List</h3>
+                    <p>
+                        Create an unordered list with the items "Red", "Green", and "Blue". Use inline CSS to change the bullet points to squares.
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-4">Reveal Answer</button>
+                    <div id="answer-4" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;ul style="list-style-type: square;"&gt;<br>
+                            &nbsp;&nbsp;&lt;li&gt;Red&lt;/li&gt;<br>
+                            &nbsp;&nbsp;&lt;li&gt;Green&lt;/li&gt;<br>
+                            &nbsp;&nbsp;&lt;li&gt;Blue&lt;/li&gt;<br>
+                            &lt;/ul&gt;
+                        </code>
+                    </div>
+                
+                    <h3>5. Combine List Types</h3>
+                    <p>
+                        Create a list structure where the main list is ordered, and one of the items contains an unordered sublist. For example:
+                        <ol>
+                            <li>Plan a meal</li>
+                            <li>
+                                Buy groceries:
+                                <ul>
+                                    <li>Vegetables</li>
+                                    <li>Fruits</li>
+                                    <li>Spices</li>
+                                </ul>
+                            </li>
+                            <li>Cook and enjoy</li>
+                        </ol>
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-5">Reveal Answer</button>
+                    <div id="answer-5" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;ol&gt;<br>
+                            &nbsp;&nbsp;&lt;li&gt;Plan a meal&lt;/li&gt;<br>
+                            &nbsp;&nbsp;&lt;li&gt;Buy groceries:&lt;/li&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Vegetables&lt;/li&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Fruits&lt;/li&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Spices&lt;/li&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
+                            &nbsp;&nbsp;&lt;li&gt;Cook and enjoy&lt;/li&gt;<br>
+                            &lt;/ol&gt;
+                        </code>
+                    </div>
+                
+                    <p>
+                        <a href="./html-tables.html" class="neutral">
+                            Ready to move on to Tables? Let's go!
+                        </a>
+                    </p>
+                </div>
+        </main>
+
+        <div id="footer-container"></div>
+    
+        <script src="/script.js?v=2"></script>
+    </body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="/styles/coding.css">
+</head>
+
+<div id="header-container"></div>
+<body class="html-page-klm123">
+    <link rel="stylesheet" href="../styles/coding.css">
+<main class="html-main-klm123">
+    <!-- Quick Start Plan -->
+    <div id="css-quick-menu"></div>
+
+    <!-- Detailed Plan -->
+    <div class="main-tutorial-content">
+        <div class="detailed-plan-klm123" id="css-overflow-tutorial">
+            <h2>CSS Overflow</h2>
+            <p>
+                The <code>overflow</code> property in CSS controls what happens when the content of an element exceeds its container's size. It is commonly used to manage scrollbars or hide excess content.
+            </p>
+        
+            <h3>Overflow Property Values</h3>
+            <p>
+                The <code>overflow</code> property can take the following values:
+                <ul>
+                    <li><strong>visible</strong> (default): The content overflows the container and is fully visible.</li>
+                    <li><strong>hidden</strong>: The content that overflows the container is clipped and not visible.</li>
+                    <li><strong>scroll</strong>: Adds scrollbars to the container to allow scrolling through the overflowing content.</li>
+                    <li><strong>auto</strong>: Adds scrollbars only if the content overflows the container.</li>
+                </ul>
+            </p>
+        
+            <h3>Visible Overflow</h3>
+            <p>
+                By default, overflow is set to <code>visible</code>, meaning that the content will extend beyond the container without being clipped.
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    .visible-box {<br>
+                    &nbsp;&nbsp;width: 150px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;overflow: visible;<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;border: 1px solid black;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="visible-box"&gt;<br>
+                    &nbsp;&nbsp;This is some content that overflows the box.<br>
+                    &nbsp;&nbsp;It will be visible outside the container.<br>
+                    &lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>Hidden Overflow</h3>
+            <p>
+                Setting <code>overflow: hidden</code> clips any content that extends beyond the container, preventing it from being displayed.
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    .hidden-box {<br>
+                    &nbsp;&nbsp;width: 150px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;overflow: hidden;<br>
+                    &nbsp;&nbsp;background-color: lightcoral;<br>
+                    &nbsp;&nbsp;border: 1px solid black;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="hidden-box"&gt;<br>
+                    &nbsp;&nbsp;This is some content that overflows the box.<br>
+                    &nbsp;&nbsp;It will be clipped and not visible outside the container.<br>
+                    &lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>Scroll Overflow</h3>
+            <p>
+                Using <code>overflow: scroll</code> adds scrollbars to the container, allowing the user to scroll through the overflowing content.
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    .scroll-box {<br>
+                    &nbsp;&nbsp;width: 150px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;overflow: scroll;<br>
+                    &nbsp;&nbsp;background-color: lightgreen;<br>
+                    &nbsp;&nbsp;border: 1px solid black;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="scroll-box"&gt;<br>
+                    &nbsp;&nbsp;This is some content that overflows the box.<br>
+                    &nbsp;&nbsp;Scrollbars will appear to let you view the hidden content.<br>
+                    &lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>Auto Overflow</h3>
+            <p>
+                The <code>auto</code> value adds scrollbars only if the content overflows the container. If the content fits within the container, no scrollbars will appear.
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    .auto-box {<br>
+                    &nbsp;&nbsp;width: 150px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;overflow: auto;<br>
+                    &nbsp;&nbsp;background-color: lightyellow;<br>
+                    &nbsp;&nbsp;border: 1px solid black;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="auto-box"&gt;<br>
+                    &nbsp;&nbsp;This is some content that overflows the box.<br>
+                    &nbsp;&nbsp;Scrollbars will appear if needed.<br>
+                    &lt;/div&gt;
+                </code>
+            </div>
+        
+            <p>
+                <a href="./css-overflow.html#css-overflow-exercises" class="neutral">
+                    Ready to test your knowledge? Head to the exercises section!
+                </a>
+            </p>
+        </div>
+
+        <div class="detailed-plan-klm123" id="css-overflow-exercises">
+            <h2>CSS Overflow: Exercises</h2>
+        
+            <h3>1. Visible Overflow</h3>
+            <p>
+                Create a box with the following styles:
+                <ul>
+                    <li>Width: 200px</li>
+                    <li>Height: 100px</li>
+                    <li>Background color: lightblue</li>
+                    <li>Overflow: visible</li>
+                </ul>
+                Add content that exceeds the box size and observe how it overflows the container.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-1">Reveal Answer</button>
+            <div id="answer-1" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .visible-box {<br>
+                    &nbsp;&nbsp;width: 200px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;overflow: visible;<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;border: 1px solid black;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="visible-box"&gt;<br>
+                    &nbsp;&nbsp;This content exceeds the box size and will overflow visibly.<br>
+                    &lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>2. Hidden Overflow</h3>
+            <p>
+                Create a box with the following styles:
+                <ul>
+                    <li>Width: 200px</li>
+                    <li>Height: 100px</li>
+                    <li>Background color: lightcoral</li>
+                    <li>Overflow: hidden</li>
+                </ul>
+                Add content that exceeds the box size and observe how it gets clipped.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-2">Reveal Answer</button>
+            <div id="answer-2" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .hidden-box {<br>
+                    &nbsp;&nbsp;width: 200px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;overflow: hidden;<br>
+                    &nbsp;&nbsp;background-color: lightcoral;<br>
+                    &nbsp;&nbsp;border: 1px solid black;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="hidden-box"&gt;<br>
+                    &nbsp;&nbsp;This content exceeds the box size and will be clipped.<br>
+                    &lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>3. Scroll Overflow</h3>
+            <p>
+                Create a box with the following styles:
+                <ul>
+                    <li>Width: 200px</li>
+                    <li>Height: 100px</li>
+                    <li>Background color: lightgreen</li>
+                    <li>Overflow: scroll</li>
+                </ul>
+                Add enough content to make scrollbars appear. Test both horizontal and vertical scrolling.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-3">Reveal Answer</button>
+            <div id="answer-3" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .scroll-box {<br>
+                    &nbsp;&nbsp;width: 200px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;overflow: scroll;<br>
+                    &nbsp;&nbsp;background-color: lightgreen;<br>
+                    &nbsp;&nbsp;border: 1px solid black;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="scroll-box"&gt;<br>
+                    &nbsp;&nbsp;This content exceeds the box size.<br>
+                    &nbsp;&nbsp;Scrollbars allow you to view the rest of the content.<br>
+                    &nbsp;&nbsp;This tests both horizontal and vertical scrolling.<br>
+                    &lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>4. Auto Overflow</h3>
+            <p>
+                Create a box with the following styles:
+                <ul>
+                    <li>Width: 200px</li>
+                    <li>Height: 100px</li>
+                    <li>Background color: lightyellow</li>
+                    <li>Overflow: auto</li>
+                </ul>
+                Add enough content to make the box overflow and observe how scrollbars appear only when necessary.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-4">Reveal Answer</button>
+            <div id="answer-4" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .auto-box {<br>
+                    &nbsp;&nbsp;width: 200px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;overflow: auto;<br>
+                    &nbsp;&nbsp;background-color: lightyellow;<br>
+                    &nbsp;&nbsp;border: 1px solid black;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="auto-box"&gt;<br>
+                    &nbsp;&nbsp;This content exceeds the box size.<br>
+                    &nbsp;&nbsp;Scrollbars will appear only if needed.<br>
+                    &lt;/div&gt;
+                </code>
+            </div>
+        
+            <div class="navigation-buttons">
+                <a href="./css-float-clear.html" class="navigation-button prev-button neutral">← CSS Float and Clear</a>
+                <a href="./css-adv-selectors.html" class="navigation-button next-button neutral">CSS Advanced Selectors →</a>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+    <div id="footer-container"></div>
+    
+    <script src="/script.js?v=2"></script>
+</body>
+</html>

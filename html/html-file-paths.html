@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML File Paths - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="../styles/coding.css">
+</head>
+<div id="header-container"></div>
+      <body class="html-page-klm123">
+<link rel="stylesheet" href="../styles/coding.css">
+
+    
+        <main class="html-main-klm123">
+            <!-- Quick Start Plan -->
+            <div id="html-quick-menu"></div>
+    
+            <!-- Detailed Plan -->
+            <div class="main-tutorial-content">
+                <div class="detailed-plan-klm123" id="html-file-paths-tutorial">
+                    <h2>HTML File Paths</h2>
+                    <p>
+                        File paths are essential in HTML when linking to other files, such as images, stylesheets, or scripts. They tell the browser where to find the files that you are referencing.
+                    </p>
+                
+                    <h3>Types of File Paths</h3>
+                    <p>There are three main types of file paths in HTML:</p>
+                    <ul>
+                        <li><strong>Absolute Paths:</strong> Specify the full URL to a file. For example:
+                            <div class="code-example-html">
+                                <code>
+                                    &lt;a href="https://www.example.com/page.html"&gt;Visit Example&lt;/a&gt;
+                                </code>
+                            </div>
+                        </li>
+                        <li><strong>Relative Paths:</strong> Specify the file location relative to the current file. For example:
+                            <div class="code-example-html">
+                                <code>
+                                    &lt;a href="about.html"&gt;About Us&lt;/a&gt; <br>
+                                    &lt;img src="images/logo.png" alt="Logo"&gt;
+                                </code>
+                            </div>
+                        </li>
+                        <li><strong>Root Paths:</strong> Start from the root directory and usually begin with a slash `/`. For example:
+                            <div class="code-example-html">
+                                <code>
+                                    &lt;link rel="stylesheet" href="/styles/main.css"&gt;
+                                </code>
+                            </div>
+                        </li>
+                    </ul>
+                
+                    <h3>Relative Paths Explained</h3>
+                    <p>
+                        Relative paths are the most commonly used type of file paths. They describe the location of a file relative to the file you are currently editing.
+                    </p>
+                    <ul>
+                        <li><strong>Same Folder:</strong>
+                            <div class="code-example-html">
+                                <code>
+                                    &lt;img src="image.jpg" alt="Example Image"&gt;
+                                </code>
+                            </div>
+                            The file `image.jpg` is in the same folder as the HTML file.
+                        </li>
+                        <li><strong>Subfolder:</strong>
+                            <div class="code-example-html">
+                                <code>
+                                    &lt;img src="images/picture.jpg" alt="Example Image"&gt;
+                                </code>
+                            </div>
+                            The file `picture.jpg` is in a folder named `images` within the current directory.
+                        </li>
+                        <li><strong>Parent Folder:</strong>
+                            <div class="code-example-html">
+                                <code>
+                                    &lt;img src="../image.jpg" alt="Example Image"&gt;
+                                </code>
+                            </div>
+                            The file `image.jpg` is located in the parent directory of the current folder.
+                        </li>
+                    </ul>
+                
+                    <h3>Why File Paths Matter</h3>
+                    <p>
+                        Using correct file paths ensures that your resources are loaded properly. If the path is incorrect, the browser won’t find the file, and your content (like images or links) won’t work.
+                    </p>
+                
+                    <h3>Best Practices for File Paths</h3>
+                    <ul>
+                        <li>Organize your files into folders to keep your project clean and manageable.</li>
+                        <li>Use descriptive names for your folders and files.</li>
+                        <li>Stick to lowercase letters and avoid spaces in file and folder names for better compatibility.</li>
+                        <li>Test your file paths in the browser to make sure they work as expected.</li>
+                    </ul>
+                
+                    <h3>Example: Linking a CSS File</h3>
+                    <p>Here’s an example of linking a CSS file located in a subfolder named `styles`:</p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;link rel="stylesheet" href="styles/main.css"&gt;
+                        </code>
+                    </div>
+                
+                    <h3>Example: Linking an Image</h3>
+                    <p>Here’s an example of referencing an image located in a folder named `images`:</p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;img src="images/logo.png" alt="Company Logo"&gt;
+                        </code>
+                    </div>
+                
+                    <h3>Example: Linking a File in Another Folder</h3>
+                    <p>If your HTML file is in a folder and you need to reference a file in a sibling folder, you can do this:</p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;a href="../documents/report.pdf"&gt;Download Report&lt;/a&gt;
+                        </code>
+                    </div>
+                
+                    <p>
+                        <a href="./html-head.html" class="neutral">
+                            Ready to move on? Head to the HTML IDs tutorial!
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <div id="footer-container"></div>
+    
+        <script src="/script.js?v=2"></script>
+    </body>
+</html>

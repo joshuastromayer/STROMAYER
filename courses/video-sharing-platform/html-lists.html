@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists | CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="/styles/courses.css">
+  </head>
+<body class="course-page">
+    <div id="header-container"></div>
+    <div id="vsp-quick-menu"></div>
+    <main class="html-introduction-template">
+      <div id="unique-html-lists-001" class="unique-section-container-001">
+        <h2>What Are Lists?</h2>
+        <p>Lists are a way to organize content in HTML. They allow you to group related items together in a structured and readable way.</p>
+        
+        <br>
+        
+        <h3>Types of Lists</h3>
+        <p>In HTML, there are two main types of lists:</p>
+        <ul>
+            <li><strong>Ordered Lists (<code>&lt;ol&gt;</code>):</strong> A numbered list, where each item has a sequence number.</li>
+            <li><strong>Unordered Lists (<code>&lt;ul&gt;</code>):</strong> A bulleted list, where the items have no specific order.</li>
+        </ul>
+    
+        <br>
+    
+        <h3>List Items</h3>
+        <p>Both ordered and unordered lists use <strong>List Items</strong> (`&lt;li&gt;`) to define each individual item within the list.</p>
+    
+        <br>
+        
+        <h3>Examples</h3>
+        <p>Here’s an example of each type of list:</p>
+        <div class="code-example-html">
+            <strong>Ordered List:</strong><br>
+            &lt;ol&gt;<br>
+            &nbsp;&nbsp;&lt;li&gt;First Item&lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;li&gt;Second Item&lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;li&gt;Third Item&lt;/li&gt;<br>
+            &lt;/ol&gt;<br>
+            <br>
+            <strong>Unordered List:</strong><br>
+            &lt;ul&gt;<br>
+            &nbsp;&nbsp;&lt;li&gt;First Item&lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;li&gt;Second Item&lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;li&gt;Third Item&lt;/li&gt;<br>
+            &lt;/ul&gt;
+        </div>
+        
+        <button class="unique-completion-button-001">Next</button>
+      </div>
+
+      <div id="unique-html-lists-002" class="unique-section-container-001" style="display: none;">
+      <h2>Unordered Lists</h2>
+      <p>An <strong>unordered list</strong> displays a list of items without any specific order. Each item is typically marked with a bullet point.</p>
+      
+      <br>
+      
+      <p>To create an unordered list, use the <code>&lt;ul&gt;</code> tag. Inside the unordered list, use the <code>&lt;li&gt;</code> tag to define each item.</p>
+      
+      <br>
+      
+      <p>For example:</p>
+      <div class="code-example-html">
+          &lt;ul&gt;<br>
+          &nbsp;&nbsp;&lt;li&gt;Apples&lt;/li&gt;<br>
+          &nbsp;&nbsp;&lt;li&gt;Bananas&lt;/li&gt;<br>
+          &nbsp;&nbsp;&lt;li&gt;Oranges&lt;/li&gt;<br>
+          &lt;/ul&gt;
+      </div>
+      
+      <br>
+      
+      <p>This code will render the following list:</p>
+      <ul>
+          <li>Apples</li>
+          <li>Bananas</li>
+          <li>Oranges</li>
+      </ul>
+      
+      <br>
+      
+      <h3>Key Points:</h3>
+      <ul>
+          <li>The <code>&lt;ul&gt;</code> tag defines the unordered list.</li>
+          <li>The <code>&lt;li&gt;</code> tag defines each individual item within the list.</li>
+          <li>Unordered lists are useful for displaying items where the order does not matter.</li>
+      </ul>
+      
+      <button class="unique-completion-button-001">Next</button>
+      </div>
+
+      <div id="unique-html-lists-003" class="unique-section-container-001" style="display: none;">
+    <h2>Ordered Lists</h2>
+    <p>An <strong>ordered list</strong> displays a list of items in a specific order. Each item is typically marked with a number.</p>
+    
+    <br>
+    
+    <p>To create an ordered list, use the <code>&lt;ol&gt;</code> tag. Inside the ordered list, use the <code>&lt;li&gt;</code> tag to define each item.</p>
+    
+    <br>
+    
+    <p>For example:</p>
+    <div class="code-example-html">
+        &lt;ol&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;Preheat the oven&lt;/li&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;Mix the ingredients&lt;/li&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;Bake for 30 minutes&lt;/li&gt;<br>
+        &lt;/ol&gt;
+    </div>
+    
+    <br>
+    
+    <p>This code will render the following list:</p>
+    <ol>
+        <li>Preheat the oven</li>
+        <li>Mix the ingredients</li>
+        <li>Bake for 30 minutes</li>
+    </ol>
+    
+    <br>
+    
+    <h3>Key Points:</h3>
+    <ul>
+        <li>The <code>&lt;ol&gt;</code> tag defines the ordered list.</li>
+        <li>The <code>&lt;li&gt;</code> tag defines each individual item within the list.</li>
+        <li>Ordered lists are useful for steps, instructions, or any content where the order matters.</li>
+    </ul>
+    
+    <button class="unique-completion-button-001">Next</button>
+      </div>
+
+      <div id="unique-html-lists-004" class="unique-section-container-001" style="display: none;">
+        <h2>Nested Lists</h2>
+        <p>Sometimes, you might want to create a list within another list. This is called a <strong>nested list</strong>.</p>
+        
+        <br>
+        
+        <p>You can nest either <code>&lt;ul&gt;</code> (unordered lists) or <code>&lt;ol&gt;</code> (ordered lists) inside each other—or even mix them!</p>
+        
+        <br>
+        
+        <p>For example:</p>
+        <div class="code-example-html">
+            &lt;ul&gt;<br>
+            &nbsp;&nbsp;&lt;li&gt;Fruits&lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;ul&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Apple&lt;/li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Banana&lt;/li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Orange&lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;/ul&gt;<br>
+            &nbsp;&nbsp;&lt;li&gt;Vegetables&lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;ul&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Carrot&lt;/li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Broccoli&lt;/li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Spinach&lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;/ul&gt;<br>
+            &lt;/ul&gt;
+        </div>
+        
+        <br>
+        
+        <p>This code will render the following list:</p>
+        <ul>
+            <li>Fruits
+                <ul>
+                    <li>Apple</li>
+                    <li>Banana</li>
+                    <li>Orange</li>
+                </ul>
+            </li>
+            <li>Vegetables
+                <ul>
+                    <li>Carrot</li>
+                    <li>Broccoli</li>
+                    <li>Spinach</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <br>
+        
+        <h3>Key Points:</h3>
+        <ul>
+            <li>To create a nested list, place a new <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code> inside an <code>&lt;li&gt;</code> tag.</li>
+            <li>Nested lists are useful for organizing hierarchical information.</li>
+        </ul>
+        
+        <button class="unique-completion-button-001">Next</button>
+      </div>
+
+      <div id="unique-html-lists-006" class="unique-section-container-001 exercise-question mcq-question" style="display: none;">
+        <h2>Exercise:</h2>
+        <p>Select the correct code that produces the following output:</p>
+        
+        <p>The output:</p>
+        <ol>
+            <li>Start the project</li>
+            <li>Follow instructions
+                <ul>
+                    <li>Step 1</li>
+                    <li>Step 2</li>
+                </ul>
+            </li>
+            <li>Submit work</li>
+        </ol>
+        
+        <br>
+        
+        <div id="mcq-options-horizontal" class="mcq-options">
+            <!-- Option 1 -->
+            <input type="radio" id="option1" name="mcq" value="Option 1" data-correct-answer="Option 2">
+            <label for="option1">
+                <code>
+                  &lt;ul&gt;<br>
+                  &nbsp;&nbsp;&lt;li&gt;Start the project&lt;/li&gt;<br>
+                  &nbsp;&nbsp;&lt;li&gt;Follow instructions<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;ol&gt;<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Step 1&lt;/li&gt;<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Step 2&lt;/li&gt;<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/ol&gt;<br>
+                  &nbsp;&nbsp;&lt;/li&gt;<br>
+                  &nbsp;&nbsp;&lt;li&gt;Submit work&lt;/li&gt;<br>
+                  &lt;/ul&gt;
+                </code>
+            </label>
+    
+            <!-- Option 2 -->
+            <input type="radio" id="option2" name="mcq" value="Option 2" data-correct-answer="Option 2">
+            <label for="option2">
+                <code>
+                    &lt;ol&gt;<br>
+                    &nbsp;&nbsp;&lt;li&gt;Start the project&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&lt;li&gt;Follow instructions<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Step 1&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Step 2&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
+                    &nbsp;&nbsp;&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&lt;li&gt;Submit work&lt;/li&gt;<br>
+                    &lt;/ol&gt;
+                </code>
+            </label>
+        </div>
+        
+        <button class="submit-answers">Check</button>
+        <span class="feedback"></span>
+        <div class="answer-display"></div>
+        <button class="unique-completion-button-001" style="display: none;">Next</button>
+      </div>
+
+      <div id="unique-html-lists-005" class="unique-section-container-001 project-task-container" style="display: none;">
+        <h2>Project Task</h2>
+        <p>Let’s put your knowledge of <strong>HTML lists</strong> into practice! This task is all about creating a description page for a video titled <strong>"HTML Basics Tutorial"</strong>.</p>
+        
+        <p><strong>Your Task:</strong></p>
+        <ul>
+            <li>Open the example page linked below to see the finished product.</li>
+            <li>Recreate the page using both <strong>unordered</strong> and <strong>ordered lists</strong>.</li>
+            <li>Ensure your HTML file looks as close as possible to the example.</li>
+        </ul>
+    
+        <br>
+    
+        <p><strong>Hint:</strong> Pay close attention to the use of <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, and <code>&lt;li&gt;</code> tags.</p>
+    
+        <p><a href="/courses/video-sharing-platform/project-tasks/lists-task.html" target="_blank" style="color: #007bff; text-decoration: none;">Open the Example Page</a></p>
+    
+        <br>
+    
+        <p>Take your time and test your work! This is a great way to solidify your understanding of lists in HTML.</p>
+    
+        <button class="unique-completion-button-001" id="final-completion-button">Complete Section</button>
+    </div>
+    <div id="unique-preview-section" class="unique-preview-container" style="display: none;">
+      <h2>Additional Resources</h2>
+      <p>You are not expected to memorise all this content, or read through the additional resources, but they are always available for you.</p>
+      <ul style="list-style-type: none; padding: 0; margin: 10px 0;">
+          <li>
+              <a href="/html/html-lists.html" style="color: #007bff; text-decoration: none;" target="_blank">
+                  HTML Lists
+              </a>
+          </li>
+      </ul>
+      <hr>
+      <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+          <a href="/courses/video-sharing-platform/overview.html" class="unique-course-button" style="padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px;">
+              View Course
+          </a>
+          <a href="/courses/video-sharing-platform/html-attributes.html" class="unique-next-lesson-button" style="padding: 10px 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px;">
+              Next Lesson
+          </a>
+      </div>
+  </div>
+    </main>
+    <div id="footer-container"></div>
+<script src="/script.js?v=2"></script>    
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Formatting - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="../styles/coding.css">
+</head>
+<div id="header-container"></div>
+      <body class="html-page-klm123">
+<link rel="stylesheet" href="../styles/coding.css">
+
+    
+        <main class="html-main-klm123">
+            <!-- Quick Start Plan -->
+            <div id="html-quick-menu"></div>
+    
+            <!-- Detailed Plan -->
+            <div class="main-tutorial-content">
+                <div class="detailed-plan-klm123" id="html-formatting-tutorial">
+                    <h2>HTML Formatting</h2>
+                    <p>
+                        Formatting in HTML allows you to style and emphasize text to make it more visually appealing and semantically meaningful. In this lesson, we’ll cover several key formatting tags and their usage.
+                    </p>
+                
+                    <h3>1. Bold and Strong Text</h3>
+                    <p>
+                        Use <code>&lt;b&gt;</code> to make text bold and <code>&lt;strong&gt;</code> to indicate important text. While both visually bolden the text, <code>&lt;strong&gt;</code> also has semantic importance, which helps screen readers emphasize the content.
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            <b>This text is bold using &lt;b&gt;.</b><br>
+                            <strong>This text is bold and important using &lt;strong&gt;.</strong>
+                        </code>
+                    </div>
+                
+                    <h3>2. Italicized and Emphasized Text</h3>
+                    <p>
+                        Use <code>&lt;i&gt;</code> to italicize text and <code>&lt;em&gt;</code> to add emphasis. Similar to <code>&lt;b&gt;</code> and <code>&lt;strong&gt;</code>, <code>&lt;em&gt;</code> carries semantic meaning.
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            <i>This text is italicized using &lt;i&gt;.</i><br>
+                            <em>This text is emphasized using &lt;em&gt;.</em>
+                        </code>
+                    </div>
+                
+                    <h3>3. Highlighted and Underlined Text</h3>
+                    <p>
+                        Use <code>&lt;mark&gt;</code> to highlight text and <code>&lt;u&gt;</code> to underline it. Highlighting is often used to grab attention, while underlining is more traditional.
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            <mark>This text is highlighted using &lt;mark&gt;.</mark><br>
+                            <u>This text is underlined using &lt;u&gt;.</u>
+                        </code>
+                    </div>
+                
+                    <h3>4. Monospaced (Teletype) Text</h3>
+                    <p>
+                        The <code>&lt;tt&gt;</code> tag is used to display text in a monospaced font, similar to how code snippets are styled.
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            <tt>This text is displayed in a monospaced font using &lt;tt&gt;.</tt>
+                        </code>
+                    </div>
+                
+                    <h3>5. Strikethrough and Deleted Text</h3>
+                    <p>
+                        Use <code>&lt;strike&gt;</code> or <code>&lt;del&gt;</code> to indicate that text is no longer valid. <code>&lt;strike&gt;</code> is deprecated, so use <code>&lt;del&gt;</code> for modern HTML.
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            <strike>This text is struck through using &lt;strike&gt; (deprecated).</strike><br>
+                            <del>This text is struck through using &lt;del&gt;.</del>
+                        </code>
+                    </div>
+                
+                    <h3>6. Inserted Text</h3>
+                    <p>
+                        Use <code>&lt;ins&gt;</code> to indicate new or added text.
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            <ins>This text is newly added using &lt;ins&gt;.</ins> Your browser would normally underline ins text.
+                        </code>
+                    </div>
+                
+                    <h3>7. Superscript and Subscript</h3>
+                    <p>
+                        Use <code>&lt;sup&gt;</code> for superscript (e.g., exponents) and <code>&lt;sub&gt;</code> for subscript (e.g., chemical formulas).
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            E = mc<sup>2</sup> (Superscript)<br>
+                            H<sub>2</sub>O (Subscript)
+                        </code>
+                    </div>
+                
+                    <h3>8. Big and Small Text</h3>
+                    <p>
+                        Use <code>&lt;big&gt;</code> to enlarge text and <code>&lt;small&gt;</code> to shrink it slightly.
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            <big>This text is larger using &lt;big&gt;.</big><br>
+                            <small>This text is smaller using &lt;small&gt;.</small>
+                        </code>
+                    </div>
+                
+                    <h3>Summary</h3>
+                    <p>
+                        Formatting tags help style and emphasize text for better readability and meaning. While some tags like <code>&lt;strike&gt;</code> are deprecated, others like <code>&lt;strong&gt;</code> and <code>&lt;em&gt;</code> offer both visual and semantic benefits. Remember to use formatting tags appropriately based on the content and context.
+                    </p>
+                
+                    <p>
+                        Ready to test your knowledge? <a href="./html-formatting.html#html-formatting-exercises" class="neutral">Head to the exercises!</a>
+                    </p>
+                </div>
+
+
+                <div class="detailed-plan-klm123" id="html-formatting-exercises">
+                    <h2>HTML Formatting: Exercises</h2>
+                
+                    <h3>1. Make Text Bold and Emphasized</h3>
+                    <p>
+                        Write HTML to display the following sentence:
+                        <br>"Learning HTML is <strong>important</strong> and <em>exciting</em>."
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-1">Reveal Answer</button>
+                    <div id="answer-1" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;p&gt;Learning HTML is &lt;strong&gt;important&lt;/strong&gt; and &lt;em&gt;exciting&lt;/em&gt;.&lt;/p&gt;
+                        </code>
+                    </div>
+                
+                    <h3>2. Highlight and Underline Text</h3>
+                    <p>
+                        Write HTML to display the following sentence with appropriate tags:
+                        <br>"This text is <mark>highlighted</mark> and <u>underlined</u>."
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-2">Reveal Answer</button>
+                    <div id="answer-2" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;p&gt;This text is &lt;mark&gt;highlighted&lt;/mark&gt; and &lt;u&gt;underlined&lt;/u&gt;.&lt;/p&gt;
+                        </code>
+                    </div>
+                
+                    <h3>3. Superscript and Subscript</h3>
+                    <p>
+                        Write HTML to display the following text correctly:
+                        <ul>
+                            <li>"E = mc<sup>2</sup>"</li>
+                            <li>"H<sub>2</sub>O"</li>
+                        </ul>
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-3">Reveal Answer</button>
+                    <div id="answer-3" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;p&gt;E = mc&lt;sup&gt;2&lt;/sup&gt;&lt;/p&gt;<br>
+                            &lt;p&gt;H&lt;sub&gt;2&lt;/sub&gt;O&lt;/p&gt;
+                        </code>
+                    </div>
+                
+                    <h3>4. Strikethrough and Inserted Text</h3>
+                    <p>
+                        Write HTML to display the following text:
+                        <br>"This text is <del>removed</del> and <ins>added</ins>."
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-4">Reveal Answer</button>
+                    <div id="answer-4" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;p&gt;This text is &lt;del&gt;removed&lt;/del&gt; and &lt;ins&gt;added&lt;/ins&gt;.&lt;/p&gt;
+                        </code>
+                    </div>
+                
+                    <h3>5. Big and Small Text</h3>
+                    <p>
+                        Write HTML to display the following text:
+                        <br>"This is <big>larger</big> and this is <small>smaller</small>."
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-5">Reveal Answer</button>
+                    <div id="answer-5" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;p&gt;This is &lt;big&gt;larger&lt;/big&gt; and this is &lt;small&gt;smaller&lt;/small&gt;.&lt;/p&gt;
+                        </code>
+                    </div>
+                
+                    <p>
+                        <a href="./html-comments.html#html-comments-tutorial" class="neutral">
+                            Ready to learn about Comments? Let's go!
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <div id="footer-container"></div>
+    
+        <script src="/script.js?v=2"></script>
+    </body>
+</html>

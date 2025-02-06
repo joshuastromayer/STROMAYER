@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags and Elements | CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="/styles/courses.css">
+  </head>
+<body class="course-page">
+    <div id="header-container"></div>
+    <div id="vsp-quick-menu"></div>
+    <main class="html-introduction-template">
+
+        <div id="unique-html-tags-elements-001" class="unique-section-container-001">
+            <h2>What Are Tags and Elements?</h2>
+            <p>HTML is built using <strong>tags</strong> and <strong>elements</strong>. These are the building blocks of every webpage you see online.</p>
+            
+            <br>
+            
+            <h3>Tags</h3>
+            <p>A tag is used to mark the beginning and (sometimes) the end of an HTML element. Tags tell the browser how to display content.</p>
+            <p>Tags are written inside angle brackets, like this: <code>&lt;tagname&gt;</code>.</p>
+            <p>For example, the <code>&lt;h1&gt;</code> tag tells the browser to display a heading.</p>
+            
+            <br>
+            
+            <h3>Elements</h3>
+            <p>An element in HTML is the combination of a <strong>start tag</strong>, content, and an optional <strong>end tag</strong>.</p>
+            <p>For example:</p>
+            <div class="code-example-html">
+                &lt;h1&gt;This is a heading&lt;/h1&gt;<br>
+                &lt;p&gt;This is a paragraph.&lt;/p&gt;
+            </div>
+            <p>In this example:</p>
+            <ul>
+                <li>The <code>&lt;h1&gt;</code> tag is the start tag.</li>
+                <li>The text <code>This is a heading</code> is the content.</li>
+                <li>The <code>&lt;/h1&gt;</code> tag is the end tag.</li>
+            </ul>
+            <button class="unique-completion-button-001">Next</button>
+        </div>
+
+        <div id="unique-html-tags-elements-002" class="unique-section-container-001 exercise-question" style="display: none;">
+            <h2>Exercise:</h2>
+            <label for="html-tags-elements-q1">Complete the line of code:</label>
+            <div class="input-text-check-button">
+                <div class="inline-code-container">
+                    <code>&lt;p&gt;This is a paragraph</code>
+                    <input
+                        type="text"
+                        id="html-tags-elements-q1"
+                        class="inline-code-input user-answer"
+                    />
+                </div>
+                <button class="submit-answers">Check</button>
+            </div>
+            <span class="feedback"></span>
+            <div class="answer-display"></div>
+            <button class="unique-completion-button-001" style="display: none;">Next</button>
+        </div>
+        
+            <div id="unique-html-tags-elements-003" class="unique-section-container-001" style="display: none;">
+        
+            <h2>Self-Closing Tags</h2>
+            <p>Some tags don’t need an end tag because they don’t have any content. These are called <strong>self-closing tags</strong>.</p>
+            <p>For example:</p>
+            <div class="code-example-html">
+                &lt;br&gt; (line break)<br>
+                &lt;img src="image.jpg" alt="Description"&gt; (image tag)
+            </div>
+            <p>Self-closing tags are often used for elements that don’t contain any content, like images or line breaks.</p>
+        
+            <br>
+        
+            <h3>Understanding the Structure</h3>
+            <p>Here’s a simple example that uses tags and elements:</p>
+            <div class="code-example-html">
+                &lt;html&gt;<br>
+                &nbsp;&nbsp;&lt;head&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;My First Page&lt;/title&gt;<br>
+                &nbsp;&nbsp;&lt;/head&gt;<br>
+                &nbsp;&nbsp;&lt;body&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Welcome to My Website&lt;/h1&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is my first webpage.&lt;/p&gt;<br>
+                &nbsp;&nbsp;&lt;/body&gt;<br>
+                &lt;/html&gt;
+            </div>
+            <p>In this example:</p>
+            <ul>
+                <li>The <code>&lt;html&gt;</code> element contains the entire document.</li>
+                <li>The <code>&lt;head&gt;</code> element contains metadata (like the page title).</li>
+                <li>The <code>&lt;body&gt;</code> element contains the visible content of the webpage.</li>
+            </ul>
+        
+            <br>
+        
+            <h3>Key Takeaway</h3>
+            <p>Every webpage is built with HTML tags and elements. By understanding these building blocks, you’ll be able to create and structure content for any webpage!</p>
+            
+            <button class="unique-completion-button-001">Next</button>
+        </div>
+
+        <div id="unique-html-tags-elements-004" class="unique-section-container-001" style="display: none;">
+            <h2>HTML Structure Trick</h2>
+            <p>Did you know that many code editors have built-in shortcuts to save you time? Here's a quick trick:</p>
+            
+            <p>If you're working in a code editor like <strong>VS Code</strong>, you can type <code>!</code> in an empty HTML file and press <strong>Enter</strong>.</p>
+            
+            <br>
+            
+            <p>This will automatically generate the basic HTML structure for your file:</p>
+            <div class="code-example-html">
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html lang="en"&gt;<br>
+                &nbsp;&nbsp;&lt;head&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Document&lt;/title&gt;<br>
+                &nbsp;&nbsp;&lt;/head&gt;<br>
+                &nbsp;&nbsp;&lt;body&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Your content goes here --&gt;<br>
+                &nbsp;&nbsp;&lt;/body&gt;<br>
+                &lt;/html&gt;
+            </div>
+            
+            <br>
+            
+            <p>This trick is a great alternative until we dive deeper into <strong>HTML structure</strong> in a future lesson.</p>
+            <p>Give it a try and see how much time it saves you!</p>
+            
+            <button class="unique-completion-button-001">Next</button>
+        </div>
+
+        <div id="unique-html-tags-elements-005" class="unique-section-container-001 project-task-container" style="display: none;">
+            <h2>Project Task</h2>
+            <p>Now it's time to take what you've learned about <strong>tags</strong> and <strong>elements</strong> and apply it to your video-sharing platform!</p>
+            
+            <p><strong>Your Task:</strong></p>
+            <ul>
+                <li>Open the <code>index.html</code> file you created earlier.</li>
+                <li>Use the HTML Structure Trick to make a HTML template</li>
+                <li>Change the title of the document to "Video Sharing Platform"</li>
+            </ul>
+        
+            <br>
+            
+            <p>Fantastic work! You're building the foundation of your video-sharing platform. Keep going, you're doing great!</p>
+            
+            <button class="unique-completion-button-001" id="final-completion-button">Complete Section</button>
+        </div>
+        
+        <div id="unique-preview-section" class="unique-preview-container" style="display: none;">
+            <h2>Additional Resources</h2>
+            <p>You are not expected to memorise all this content, or read through the additional resources, but they are always available for you.</p>
+            <ul style="list-style-type: none; padding: 0; margin: 10px 0;">
+                <li><a href="/html/html-introduction.html" style="color: #007bff; text-decoration: none;" target="_blank">HTML Introduction</a></li>
+                <li><a href="/html/html-tags-and-elements.html" style="color: #007bff; text-decoration: none;" target="_blank">HTML Tags and Elements</a></li>
+            </ul>
+            <hr>
+            <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+                <a href="/courses/video-sharing-platform/overview.html" class="unique-course-button" style="padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px;">
+                    View Course
+                </a>
+                <a href="/courses/video-sharing-platform/html-headings-paragraphs.html" class="unique-next-lesson-button" style="padding: 10px 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px;">
+                    Next Lesson
+                </a>
+            </div>
+        </div>
+    </main>
+    
+
+    <div id="footer-container"></div>
+<script src="/script.js?v=2"></script>    
+</body>
+</html>

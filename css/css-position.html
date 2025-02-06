@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="/styles/coding.css">
+</head>
+
+<div id="header-container"></div>
+<body class="html-page-klm123">
+    <link rel="stylesheet" href="../styles/coding.css">
+<main class="html-main-klm123">
+    <!-- Quick Start Plan -->
+    <div id="css-quick-menu"></div>
+
+    <!-- Detailed Plan -->
+    <div class="main-tutorial-content">
+        <div class="detailed-plan-klm123" id="css-position-tutorial">
+            <h2>CSS Position</h2>
+            <p>
+                The <code>position</code> property in CSS is used to control the placement of an element on a webpage. It defines how an element is positioned in the document and interacts with other elements. There are five main values for the <code>position</code> property:
+                <strong>static</strong>, <strong>relative</strong>, <strong>absolute</strong>, <strong>fixed</strong>, and <strong>sticky</strong>.
+            </p>
+        
+            <h3>Static Positioning</h3>
+            <p>
+                This is the default positioning method. Elements are positioned according to the normal document flow, and the <code>top</code>, <code>right</code>, <code>bottom</code>, and <code>left</code> properties do not apply.
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;border: 1px solid black;<br>
+                    &nbsp;&nbsp;padding: 10px;<br>
+                    &nbsp;&nbsp;margin: 10px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;This is a static element.&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>Relative Positioning</h3>
+            <p>
+                An element positioned relatively is moved relative to its normal position in the document flow. You can use the <code>top</code>, <code>right</code>, <code>bottom</code>, and <code>left</code> properties to adjust its position.
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;position: relative;<br>
+                    &nbsp;&nbsp;top: 20px;<br>
+                    &nbsp;&nbsp;left: 15px;<br>
+                    &nbsp;&nbsp;border: 1px solid black;<br>
+                    &nbsp;&nbsp;padding: 10px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;This is a relatively positioned element.&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>Absolute Positioning</h3>
+            <p>
+                An element positioned absolutely is removed from the normal document flow and positioned relative to the nearest positioned ancestor (an element with <code>position</code> set to <code>relative</code>, <code>absolute</code>, or <code>sticky</code>). If no positioned ancestor exists, it is positioned relative to the <code>&lt;html&gt;</code> element.
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    .container {<br>
+                    &nbsp;&nbsp;position: relative;<br>
+                    &nbsp;&nbsp;border: 1px solid black;<br>
+                    &nbsp;&nbsp;padding: 10px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    }<br>
+                    .absolute-box {<br>
+                    &nbsp;&nbsp;position: absolute;<br>
+                    &nbsp;&nbsp;top: 10px;<br>
+                    &nbsp;&nbsp;right: 10px;<br>
+                    &nbsp;&nbsp;border: 1px solid red;<br>
+                    &nbsp;&nbsp;padding: 5px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="container"&gt;<br>
+                    &nbsp;&nbsp;Container Box<br>
+                    &nbsp;&nbsp;&lt;div class="absolute-box"&gt;Absolute Box&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>Fixed Positioning</h3>
+            <p>
+                An element positioned with <code>fixed</code> is removed from the document flow and positioned relative to the viewport. It remains in the same position even when the page is scrolled.
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;position: fixed;<br>
+                    &nbsp;&nbsp;top: 0;<br>
+                    &nbsp;&nbsp;right: 0;<br>
+                    &nbsp;&nbsp;border: 1px solid blue;<br>
+                    &nbsp;&nbsp;padding: 10px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;This is a fixed element.&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>Sticky Positioning</h3>
+            <p>
+                A sticky element toggles between relative and fixed positioning depending on the scroll position. It behaves like a relatively positioned element until it crosses a specified threshold, after which it behaves like a fixed element.
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;position: sticky;<br>
+                    &nbsp;&nbsp;top: 50px;<br>
+                    &nbsp;&nbsp;border: 1px solid green;<br>
+                    &nbsp;&nbsp;padding: 10px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;This is a sticky element.&lt;/div&gt;
+                </code>
+            </div>
+        
+            <p>
+                <a href="./css-position.html#css-position-exercises" class="neutral">
+                    Ready to test your knowledge? Head to the exercises section!
+                </a>
+            </p>
+        </div>
+
+        <div class="detailed-plan-klm123" id="css-position-exercises">
+            <h2>CSS Position: Exercises</h2>
+        
+            <h3>1. Static Position</h3>
+            <p>
+                Create a `&lt;div&gt;` with a static position and add the following styles:
+            </p>
+            <ul>
+                <li>Width: 200px</li>
+                <li>Height: 100px</li>
+                <li>Background color: lightblue</li>
+            </ul>
+            <p>Observe how it follows the normal document flow.</p>
+            <button class="reveal-answer-btn" data-answer-id="answer-1">Reveal Answer</button>
+            <div id="answer-1" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 200px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;Static Box&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>2. Relative Position</h3>
+            <p>
+                Create a `&lt;div&gt;` with a relative position and add the following styles:
+            </p>
+            <ul>
+                <li>Width: 250px</li>
+                <li>Height: 120px</li>
+                <li>Background color: lightcoral</li>
+                <li>Move it 20px down and 15px to the right using the <code>top</code> and <code>left</code> properties.</li>
+            </ul>
+            <button class="reveal-answer-btn" data-answer-id="answer-2">Reveal Answer</button>
+            <div id="answer-2" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 250px;<br>
+                    &nbsp;&nbsp;height: 120px;<br>
+                    &nbsp;&nbsp;background-color: lightcoral;<br>
+                    &nbsp;&nbsp;position: relative;<br>
+                    &nbsp;&nbsp;top: 20px;<br>
+                    &nbsp;&nbsp;left: 15px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;Relative Box&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>3. Absolute Position</h3>
+            <p>
+                Create a parent `&lt;div&gt;` with relative positioning and an inner `&lt;div&gt;` with absolute positioning. Add the following styles:
+            </p>
+            <ul>
+                <li>Parent width: 300px, height: 150px, background color: lightgray</li>
+                <li>Child width: 100px, height: 50px, background color: lightgreen</li>
+                <li>Position the child at the bottom-right corner of the parent.</li>
+            </ul>
+            <button class="reveal-answer-btn" data-answer-id="answer-3">Reveal Answer</button>
+            <div id="answer-3" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .parent {<br>
+                    &nbsp;&nbsp;position: relative;<br>
+                    &nbsp;&nbsp;width: 300px;<br>
+                    &nbsp;&nbsp;height: 150px;<br>
+                    &nbsp;&nbsp;background-color: lightgray;<br>
+                    }<br>
+                    .child {<br>
+                    &nbsp;&nbsp;position: absolute;<br>
+                    &nbsp;&nbsp;width: 100px;<br>
+                    &nbsp;&nbsp;height: 50px;<br>
+                    &nbsp;&nbsp;background-color: lightgreen;<br>
+                    &nbsp;&nbsp;bottom: 0;<br>
+                    &nbsp;&nbsp;right: 0;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="parent"&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="child"&gt;Absolute Box&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>4. Fixed Position</h3>
+            <p>
+                Create a `&lt;div&gt;` with a fixed position and add the following styles:
+            </p>
+            <ul>
+                <li>Width: 200px</li>
+                <li>Height: 50px</li>
+                <li>Background color: lightyellow</li>
+                <li>Position it at the top-right corner of the viewport.</li>
+            </ul>
+            <button class="reveal-answer-btn" data-answer-id="answer-4">Reveal Answer</button>
+            <div id="answer-4" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;position: fixed;<br>
+                    &nbsp;&nbsp;width: 200px;<br>
+                    &nbsp;&nbsp;height: 50px;<br>
+                    &nbsp;&nbsp;background-color: lightyellow;<br>
+                    &nbsp;&nbsp;top: 0;<br>
+                    &nbsp;&nbsp;right: 0;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;Fixed Box&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>5. Sticky Position</h3>
+            <p>
+                Create a sticky header and add the following styles:
+            </p>
+            <ul>
+                <li>Width: 100%</li>
+                <li>Height: 60px</li>
+                <li>Background color: lightpink</li>
+                <li>The header should stick to the top of the page when scrolling down.</li>
+            </ul>
+            <button class="reveal-answer-btn" data-answer-id="answer-5">Reveal Answer</button>
+            <div id="answer-5" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    header {<br>
+                    &nbsp;&nbsp;position: sticky;<br>
+                    &nbsp;&nbsp;top: 0;<br>
+                    &nbsp;&nbsp;width: 100%;<br>
+                    &nbsp;&nbsp;height: 60px;<br>
+                    &nbsp;&nbsp;background-color: lightpink;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;header&gt;Sticky Header&lt;/header&gt;
+                </code>
+            </div>
+        
+            <div class="navigation-buttons">
+                <a href="./css-lists.html" class="navigation-button prev-button neutral">← CSS Lists</a>
+                <a href="./css-display.html" class="navigation-button next-button neutral">CSS Display →</a>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+    <div id="footer-container"></div>
+    
+    <script src="/script.js?v=2"></script>
+</body>
+</html>

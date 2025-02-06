@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Z-index - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="/styles/coding.css">
+</head>
+
+<div id="header-container"></div>
+<body class="html-page-klm123">
+    <link rel="stylesheet" href="../styles/coding.css">
+<main class="html-main-klm123">
+    <!-- Quick Start Plan -->
+    <div id="css-quick-menu"></div>
+
+    <!-- Detailed Plan -->
+    <div class="main-tutorial-content">
+        <div class="detailed-plan-klm123" id="css-z-index-tutorial">
+            <h2>CSS Z-Index</h2>
+            <p>
+                The <code>z-index</code> property in CSS controls the stacking order of elements on a webpage. Elements with a higher <code>z-index</code> value are displayed in front of elements with a lower value. This is particularly useful when elements overlap.
+            </p>
+        
+            <h3>Default Stacking Order</h3>
+            <p>
+                By default, elements are stacked according to the order they appear in the document. Later elements are displayed on top of earlier ones unless <code>z-index</code> is used to change this behavior.
+            </p>
+        
+            <h3>Using Z-Index</h3>
+            <p>
+                The <code>z-index</code> property works only on elements that have a position value other than <code>static</code> (e.g., <code>relative</code>, <code>absolute</code>, <code>fixed</code>, or <code>sticky</code>). Here’s the syntax:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    .box1 {<br>
+                    &nbsp;&nbsp;width: 100px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;position: absolute;<br>
+                    &nbsp;&nbsp;top: 50px;<br>
+                    &nbsp;&nbsp;left: 50px;<br>
+                    &nbsp;&nbsp;z-index: 1;<br>
+                    }<br>
+                    .box2 {<br>
+                    &nbsp;&nbsp;width: 100px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightcoral;<br>
+                    &nbsp;&nbsp;position: absolute;<br>
+                    &nbsp;&nbsp;top: 80px;<br>
+                    &nbsp;&nbsp;left: 80px;<br>
+                    &nbsp;&nbsp;z-index: 2;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="box1"&gt;Box 1&lt;/div&gt;<br>
+                    &lt;div class="box2"&gt;Box 2&lt;/div&gt;
+                </code>
+            </div>
+            <p>
+                In this example, Box 2 overlaps Box 1 because it has a higher <code>z-index</code> value.
+            </p>
+        
+            <h3>Negative Z-Index</h3>
+            <p>
+                You can assign a negative value to the <code>z-index</code> property, which places the element behind others with a <code>z-index</code> of 0 or greater:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    .background {<br>
+                    &nbsp;&nbsp;width: 200px;<br>
+                    &nbsp;&nbsp;height: 200px;<br>
+                    &nbsp;&nbsp;background-color: lightgray;<br>
+                    &nbsp;&nbsp;position: relative;<br>
+                    &nbsp;&nbsp;z-index: -1;<br>
+                    }<br>
+                    .foreground {<br>
+                    &nbsp;&nbsp;width: 100px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightpink;<br>
+                    &nbsp;&nbsp;position: relative;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="foreground"&gt;Foreground&lt;/div&gt;<br>
+                    &lt;div class="background"&gt;Background&lt;/div&gt;
+                </code>
+            </div>
+            <p>
+                In this example, the background element is placed behind the foreground element due to its negative <code>z-index</code>.
+            </p>
+        
+            <h3>Managing Complex Stacking</h3>
+            <p>
+                When dealing with multiple overlapping elements, the stacking order is determined by the <code>z-index</code> value. However, elements within the same stacking context cannot overlap based on their parent’s <code>z-index</code>. A new stacking context is created when:
+            </p>
+            <ul>
+                <li>An element has a <code>z-index</code> value other than <code>auto</code> and a <code>position</code> value other than <code>static</code>.</li>
+                <li>An element has certain CSS properties like <code>opacity</code> less than 1 or <code>transform</code> applied.</li>
+            </ul>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    .parent {<br>
+                    &nbsp;&nbsp;width: 200px;<br>
+                    &nbsp;&nbsp;height: 200px;<br>
+                    &nbsp;&nbsp;background-color: lightgreen;<br>
+                    &nbsp;&nbsp;position: relative;<br>
+                    &nbsp;&nbsp;z-index: 1;<br>
+                    }<br>
+                    .child {<br>
+                    &nbsp;&nbsp;width: 100px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;position: absolute;<br>
+                    &nbsp;&nbsp;top: 50px;<br>
+                    &nbsp;&nbsp;left: 50px;<br>
+                    &nbsp;&nbsp;z-index: 2;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="parent"&gt;<br>
+                    &nbsp;&nbsp;Parent<br>
+                    &nbsp;&nbsp;&lt;div class="child"&gt;Child&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                </code>
+            </div>
+            <p>
+                In this example, the child element has a higher <code>z-index</code> than its parent, but its stacking is still confined within the parent’s stacking context.
+            </p>
+        
+            <h3>Practical Example</h3>
+            <p>
+                Use the <code>z-index</code> property to create a layered design:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    .layer1 {<br>
+                    &nbsp;&nbsp;width: 150px;<br>
+                    &nbsp;&nbsp;height: 150px;<br>
+                    &nbsp;&nbsp;background-color: lightcoral;<br>
+                    &nbsp;&nbsp;position: absolute;<br>
+                    &nbsp;&nbsp;z-index: 1;<br>
+                    }<br>
+                    .layer2 {<br>
+                    &nbsp;&nbsp;width: 100px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;position: absolute;<br>
+                    &nbsp;&nbsp;z-index: 2;<br>
+                    &nbsp;&nbsp;top: 25px;<br>
+                    &nbsp;&nbsp;left: 25px;<br>
+                    }<br>
+                    .layer3 {<br>
+                    &nbsp;&nbsp;width: 50px;<br>
+                    &nbsp;&nbsp;height: 50px;<br>
+                    &nbsp;&nbsp;background-color: lightgreen;<br>
+                    &nbsp;&nbsp;position: absolute;<br>
+                    &nbsp;&nbsp;z-index: 3;<br>
+                    &nbsp;&nbsp;top: 50px;<br>
+                    &nbsp;&nbsp;left: 50px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="layer1"&gt;Layer 1&lt;/div&gt;<br>
+                    &lt;div class="layer2"&gt;Layer 2&lt;/div&gt;<br>
+                    &lt;div class="layer3"&gt;Layer 3&lt;/div&gt;
+                </code>
+            </div>
+            <p>
+                This creates a layered structure where each layer is positioned above the previous one using the <code>z-index</code> property.
+            </p>
+        
+            <p>
+                <a href="./css-z-index.html#css-z-index-exercises" class="neutral">
+                    Ready to test your knowledge? Head to the exercises section!
+                </a>
+            </p>
+        </div>
+
+        <div class="detailed-plan-klm123" id="css-z-index-exercises">
+            <h2>CSS Z-Index: Exercises</h2>
+        
+            <h3>1. Basic Z-Index</h3>
+            <p>
+                Create two overlapping boxes with the following styles:
+                <ul>
+                    <li>Box 1: Width 150px, height 150px, background color lightblue, <code>z-index</code> 1.</li>
+                    <li>Box 2: Width 100px, height 100px, background color lightcoral, <code>z-index</code> 2.</li>
+                </ul>
+                Position them so Box 2 overlaps Box 1.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-1">Reveal Answer</button>
+            <div id="answer-1" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .box1 {<br>
+                    &nbsp;&nbsp;width: 150px;<br>
+                    &nbsp;&nbsp;height: 150px;<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;position: absolute;<br>
+                    &nbsp;&nbsp;top: 50px;<br>
+                    &nbsp;&nbsp;left: 50px;<br>
+                    &nbsp;&nbsp;z-index: 1;<br>
+                    }<br>
+                    .box2 {<br>
+                    &nbsp;&nbsp;width: 100px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightcoral;<br>
+                    &nbsp;&nbsp;position: absolute;<br>
+                    &nbsp;&nbsp;top: 80px;<br>
+                    &nbsp;&nbsp;left: 80px;<br>
+                    &nbsp;&nbsp;z-index: 2;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="box1"&gt;Box 1&lt;/div&gt;<br>
+                    &lt;div class="box2"&gt;Box 2&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>2. Negative Z-Index</h3>
+            <p>
+                Create a background box with a <code>z-index</code> of -1 and a foreground box with a <code>z-index</code> of 1. Use the following styles:
+                <ul>
+                    <li>Background: Width 200px, height 200px, background color lightgray.</li>
+                    <li>Foreground: Width 100px, height 100px, background color lightpink.</li>
+                </ul>
+                Observe how the background box is behind the foreground box.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-2">Reveal Answer</button>
+            <div id="answer-2" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .background {<br>
+                    &nbsp;&nbsp;width: 200px;<br>
+                    &nbsp;&nbsp;height: 200px;<br>
+                    &nbsp;&nbsp;background-color: lightgray;<br>
+                    &nbsp;&nbsp;position: relative;<br>
+                    &nbsp;&nbsp;z-index: -1;<br>
+                    }<br>
+                    .foreground {<br>
+                    &nbsp;&nbsp;width: 100px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightpink;<br>
+                    &nbsp;&nbsp;position: relative;<br>
+                    &nbsp;&nbsp;z-index: 1;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="foreground"&gt;Foreground&lt;/div&gt;<br>
+                    &lt;div class="background"&gt;Background&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>3. Stacking Context</h3>
+            <p>
+                Create a parent container and two child elements:
+                <ul>
+                    <li>Parent: Width 250px, height 250px, background color lightgreen, <code>z-index</code> 1.</li>
+                    <li>Child 1: Width 100px, height 100px, background color lightblue, <code>z-index</code> 2.</li>
+                    <li>Child 2: Width 100px, height 100px, background color lightcoral, <code>z-index</code> 1.</li>
+                </ul>
+                Ensure Child 1 overlaps Child 2, and both are confined within the parent container’s stacking context.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-3">Reveal Answer</button>
+            <div id="answer-3" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .parent {<br>
+                    &nbsp;&nbsp;width: 250px;<br>
+                    &nbsp;&nbsp;height: 250px;<br>
+                    &nbsp;&nbsp;background-color: lightgreen;<br>
+                    &nbsp;&nbsp;position: relative;<br>
+                    &nbsp;&nbsp;z-index: 1;<br>
+                    }<br>
+                    .child1 {<br>
+                    &nbsp;&nbsp;width: 100px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;position: absolute;<br>
+                    &nbsp;&nbsp;top: 50px;<br>
+                    &nbsp;&nbsp;left: 50px;<br>
+                    &nbsp;&nbsp;z-index: 2;<br>
+                    }<br>
+                    .child2 {<br>
+                    &nbsp;&nbsp;width: 100px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightcoral;<br>
+                    &nbsp;&nbsp;position: absolute;<br>
+                    &nbsp;&nbsp;top: 120px;<br>
+                    &nbsp;&nbsp;left: 120px;<br>
+                    &nbsp;&nbsp;z-index: 1;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="parent"&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="child1"&gt;Child 1&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="child2"&gt;Child 2&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>4. Practical Application</h3>
+            <p>
+                Create a layered design with the following structure:
+                <ul>
+                    <li>Layer 1: Width 200px, height 200px, background color lightcoral, <code>z-index</code> 1.</li>
+                    <li>Layer 2: Width 150px, height 150px, background color lightblue, <code>z-index</code> 2, offset by 25px from Layer 1.</li>
+                    <li>Layer 3: Width 100px, height 100px, background color lightgreen, <code>z-index</code> 3, offset by 50px from Layer 2.</li>
+                </ul>
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-4">Reveal Answer</button>
+            <div id="answer-4" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .layer1 {<br>
+                    &nbsp;&nbsp;width: 200px;<br>
+                    &nbsp;&nbsp;height: 200px;<br>
+                    &nbsp;&nbsp;background-color: lightcoral;<br>
+                    &nbsp;&nbsp;position: absolute;<br>
+                    &nbsp;&nbsp;z-index: 1;<br>
+                    }<br>
+                    .layer2 {<br>
+                    &nbsp;&nbsp;width: 150px;<br>
+                    &nbsp;&nbsp;height: 150px;<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;position: absolute;<br>
+                    &nbsp;&nbsp;top: 25px;<br>
+                    &nbsp;&nbsp;left: 25px;<br>
+                    &nbsp;&nbsp;z-index: 2;<br>
+                    }<br>
+                    .layer3 {<br>
+                    &nbsp;&nbsp;width: 100px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightgreen;<br>
+                    &nbsp;&nbsp;position: absolute;<br>
+                    &nbsp;&nbsp;top: 50px;<br>
+                    &nbsp;&nbsp;left: 50px;<br>
+                    &nbsp;&nbsp;z-index: 3;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="layer1"&gt;Layer 1&lt;/div&gt;<br>
+                    &lt;div class="layer2"&gt;Layer 2&lt;/div&gt;<br>
+                    &lt;div class="layer3"&gt;Layer 3&lt;/div&gt;
+                </code>
+            </div>
+        
+            <div class="navigation-buttons">
+                <a href="./css-variables.html" class="navigation-button prev-button neutral">← CSS Variables</a>
+                <a href="./css-clipping.html" class="navigation-button next-button neutral">CSS Clipping →</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <div id="footer-container"></div>
+    
+    <script src="/script.js?v=2"></script>
+</body>
+</html>

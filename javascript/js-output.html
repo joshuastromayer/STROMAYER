@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Output - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="/styles/coding.css">
+</head>
+
+<div id="header-container"></div>
+<body class="html-page-klm123">
+    <link rel="stylesheet" href="/styles/coding.css">
+    <main class="html-main-klm123">
+        <!-- Quick Start Plan -->
+        <div id="js-quick-menu"></div>
+    
+        <!-- Detailed Plan -->
+        <div class="main-tutorial-content">
+            <div class="detailed-plan-klm123" id="js-output-tutorial">
+                <h2>JS Output</h2>
+                <p>
+                    JavaScript provides multiple ways to display output on a web page. Whether you want to show text on the screen, display messages in pop-ups, or log information in the console, JavaScript has built-in methods to handle output.
+                </p>
+            
+                <h3>1. Using <b>console.log()</b></h3>
+                <p>
+                    The <b>console.log()</b> method prints messages to the <b>browser's console</b>. This is useful for debugging and testing JavaScript code.
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        &lt;script&gt;<br>
+                        &nbsp;&nbsp;console.log("Hello, World!"); // Output appears in the browser console<br>
+                        &lt;/script&gt;
+                    </code>
+                </div>
+                <p>
+                    To view the output, <b>open the browser's developer tools</b> (press <b>F12</b> or <b>Ctrl + Shift + I</b> on most browsers) and go to the <b>Console</b> tab.
+                </p>
+            
+                <h3>2. Using <b>document.write()</b></h3>
+                <p>
+                    The <b>document.write()</b> method writes directly to the <b>HTML page</b>. It is mostly used for testing because it <b>overwrites</b> the existing content of the document.
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        &lt;script&gt;<br>
+                        &nbsp;&nbsp;document.write("This text is written to the page!");<br>
+                        &lt;/script&gt;
+                    </code>
+                </div>
+                <p>
+                    <b>Warning:</b> Using <b>document.write()</b> after the page has loaded will <b>erase all existing content</b>.
+                </p>
+            
+                <h3>3. Using <b>alert()</b></h3>
+                <p>
+                    The <b>alert()</b> method displays a <b>pop-up message</b> in the browser. It is useful for simple notifications or warnings.
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        &lt;script&gt;<br>
+                        &nbsp;&nbsp;alert("This is an alert message!");<br>
+                        &lt;/script&gt;
+                    </code>
+                </div>
+                <p>
+                    When executed, this code shows a dialog box with an <b>OK</b> button. The user must click OK to continue.
+                </p>
+            
+                <h3>4. Using <b>innerHTML</b></h3>
+                <p>
+                    The <b>innerHTML</b> property allows you to change the <b>content of an HTML element</b> dynamically.
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        &lt;!-- HTML --&gt;<br>
+                        &lt;p id="demo"&gt;Original Text&lt;/p&gt;<br>
+                        &lt;button onclick="changeText()"&gt;Click Me&lt;/button&gt;<br><br>
+            
+                        &lt;!-- JavaScript --&gt;<br>
+                        &lt;script&gt;<br>
+                        function changeText() {<br>
+                        &nbsp;&nbsp;document.getElementById("demo").innerHTML = "Text changed!";<br>
+                        }<br>
+                        &lt;/script&gt;
+                    </code>
+                </div>
+                <p>
+                    Clicking the button <b>modifies the paragraph's content</b>.
+                </p>
+            
+                <h3>5. Using <b>window.prompt()</b></h3>
+                <p>
+                    The <b>prompt()</b> method allows users to <b>input a value</b> in a dialog box.
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        &lt;script&gt;<br>
+                        &nbsp;&nbsp;let userName = prompt("Enter your name:");<br>
+                        &nbsp;&nbsp;alert("Hello, " + userName + "!");<br>
+                        &lt;/script&gt;
+                    </code>
+                </div>
+                <p>
+                    The user enters their name, and JavaScript <b>displays a greeting</b> with the inputted name.
+                </p>
+            
+                <h3>6. Using <b>window.confirm()</b></h3>
+                <p>
+                    The <b>confirm()</b> method displays a dialog box with <b>OK and Cancel</b> buttons, allowing users to make a choice.
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        &lt;script&gt;<br>
+                        &nbsp;&nbsp;let response = confirm("Do you want to proceed?");<br>
+                        &nbsp;&nbsp;if (response) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;alert("You clicked OK!");<br>
+                        &nbsp;&nbsp;} else {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;alert("You clicked Cancel!");<br>
+                        &nbsp;&nbsp;}<br>
+                        &lt;/script&gt;
+                    </code>
+                </div>
+                <p>
+                    The <b>confirm dialog</b> helps get user confirmation before performing an action.
+                </p>
+            
+                <h3>Next Steps</h3>
+                <p>
+                    Now that you know how to display output in JavaScript, let's move on to <b>comments in JavaScript</b> and understand how they help in writing clean and understandable code.
+                </p>
+            
+                <div class="navigation-buttons">
+                    <a href="./js-syntax.html" class="navigation-button prev-button neutral">&lt; JS Syntax</a>
+                    <a href="./js-comments.html" class="navigation-button next-button neutral">JS Comments &gt;</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-container"></div>
+    
+    <script src="/script.js?v=2"></script>
+</body>
+</html>

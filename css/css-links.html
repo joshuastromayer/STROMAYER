@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Links - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="/styles/coding.css">
+</head>
+
+<div id="header-container"></div>
+<body class="html-page-klm123">
+    <link rel="stylesheet" href="../styles/coding.css">
+<main class="html-main-klm123">
+    <!-- Quick Start Plan -->
+    <div id="css-quick-menu"></div>
+
+    <!-- Detailed Plan -->
+    <div class="main-tutorial-content">
+        <div class="detailed-plan-klm123" id="css-links-tutorial">
+            <h2>CSS Links</h2>
+            <p>
+                Links are an essential part of any website, allowing users to navigate between pages or sections. With CSS, you can style links to make them more visually appealing and interactive. 
+            </p>
+        
+            <h3>Basic Link Styling</h3>
+            <p>
+                The most common link element in HTML is the `&lt;a&gt;` tag. By default, links are styled with an underline and a specific color. You can customize these styles using CSS.
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    a {<br>
+                    &nbsp;&nbsp;color: blue;<br>
+                    &nbsp;&nbsp;text-decoration: none;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;a href="#"&gt;Styled Link&lt;/a&gt;
+                </code>
+            </div>
+        
+            <h3>Interactive Link States</h3>
+            <p>
+                Links have different states that can be styled individually:
+            </p>
+            <ul>
+                <li><code>:link</code> - Applies to unvisited links.</li>
+                <li><code>:visited</code> - Applies to links the user has already visited.</li>
+                <li><code>:hover</code> - Applies when the user hovers over the link.</li>
+                <li><code>:active</code> - Applies to the link being clicked.</li>
+            </ul>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    a:link {<br>
+                    &nbsp;&nbsp;color: blue;<br>
+                    }<br>
+                    a:visited {<br>
+                    &nbsp;&nbsp;color: purple;<br>
+                    }<br>
+                    a:hover {<br>
+                    &nbsp;&nbsp;color: orange;<br>
+                    &nbsp;&nbsp;text-decoration: underline;<br>
+                    }<br>
+                    a:active {<br>
+                    &nbsp;&nbsp;color: red;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;a href="#"&gt;Interactive Link&lt;/a&gt;
+                </code>
+            </div>
+        
+            <h3>Removing Link Underlines</h3>
+            <p>
+                By default, links are underlined. To remove the underline, use the <code>text-decoration</code> property and set it to <code>none</code>.
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    a {<br>
+                    &nbsp;&nbsp;text-decoration: none;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;a href="#"&gt;No Underline&lt;/a&gt;
+                </code>
+            </div>
+        
+            <h3>Hover Effects</h3>
+            <p>
+                Adding hover effects to links makes them more interactive and provides a better user experience. For example, you can change the text color or add an underline when the user hovers over a link.
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    a:hover {<br>
+                    &nbsp;&nbsp;color: orange;<br>
+                    &nbsp;&nbsp;text-decoration: underline;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;a href="#"&gt;Hover Me&lt;/a&gt;
+                </code>
+            </div>
+        
+            <h3>Styling Button-Like Links</h3>
+            <p>
+                You can style links to look like buttons by adding padding, background colors, and rounded corners.
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    a {<br>
+                    &nbsp;&nbsp;display: inline-block;<br>
+                    &nbsp;&nbsp;padding: 10px 20px;<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;color: black;<br>
+                    &nbsp;&nbsp;text-decoration: none;<br>
+                    &nbsp;&nbsp;border-radius: 5px;<br>
+                    }<br>
+                    a:hover {<br>
+                    &nbsp;&nbsp;background-color: deepskyblue;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;a href="#"&gt;Button Link&lt;/a&gt;
+                </code>
+            </div>
+        
+            <p>
+                <a href="./css-links.html#css-links-exercises" class="neutral">
+                    Ready to test your knowledge? Head to the exercises section!
+                </a>
+            </p>
+        </div>
+
+        <div class="detailed-plan-klm123" id="css-links-exercises">
+            <h2>CSS Links: Exercises</h2>
+            
+            <h3>1. Style a Basic Link</h3>
+            <p>
+                Create a link that has the following styles:
+            </p>
+            <ul>
+                <li>Text color: green</li>
+                <li>No underline</li>
+                <li>Font size: 18px</li>
+            </ul>
+            <button class="reveal-answer-btn" data-answer-id="answer-1">Reveal Answer</button>
+            <div id="answer-1" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    a {<br>
+                    &nbsp;&nbsp;color: green;<br>
+                    &nbsp;&nbsp;text-decoration: none;<br>
+                    &nbsp;&nbsp;font-size: 18px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;a href="#"&gt;Styled Link&lt;/a&gt;
+                </code>
+            </div>
+        
+            <h3>2. Create Interactive States</h3>
+            <p>
+                Style a link so that it:
+            </p>
+            <ul>
+                <li>Is blue when unvisited</li>
+                <li>Turns purple after visiting</li>
+                <li>Becomes orange when hovered over</li>
+                <li>Turns red when clicked</li>
+            </ul>
+            <button class="reveal-answer-btn" data-answer-id="answer-2">Reveal Answer</button>
+            <div id="answer-2" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    a:link {<br>
+                    &nbsp;&nbsp;color: blue;<br>
+                    }<br>
+                    a:visited {<br>
+                    &nbsp;&nbsp;color: purple;<br>
+                    }<br>
+                    a:hover {<br>
+                    &nbsp;&nbsp;color: orange;<br>
+                    }<br>
+                    a:active {<br>
+                    &nbsp;&nbsp;color: red;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;a href="#"&gt;Interactive Link&lt;/a&gt;
+                </code>
+            </div>
+        
+            <h3>3. Create a Button-Like Link</h3>
+            <p>
+                Create a link that looks like a button with the following styles:
+            </p>
+            <ul>
+                <li>Background color: lightblue</li>
+                <li>Padding: 10px 15px</li>
+                <li>Rounded corners</li>
+                <li>Turns darker blue on hover</li>
+            </ul>
+            <button class="reveal-answer-btn" data-answer-id="answer-3">Reveal Answer</button>
+            <div id="answer-3" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    a {<br>
+                    &nbsp;&nbsp;display: inline-block;<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;padding: 10px 15px;<br>
+                    &nbsp;&nbsp;border-radius: 5px;<br>
+                    &nbsp;&nbsp;text-decoration: none;<br>
+                    &nbsp;&nbsp;color: black;<br>
+                    }<br>
+                    a:hover {<br>
+                    &nbsp;&nbsp;background-color: deepskyblue;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;a href="#"&gt;Button Link&lt;/a&gt;
+                </code>
+            </div>
+        
+            <h3>4. Add a Hover Effect</h3>
+            <p>
+                Create a link that:
+            </p>
+            <ul>
+                <li>Starts with black text</li>
+                <li>Changes to red and underlines when hovered over</li>
+            </ul>
+            <button class="reveal-answer-btn" data-answer-id="answer-4">Reveal Answer</button>
+            <div id="answer-4" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    a {<br>
+                    &nbsp;&nbsp;color: black;<br>
+                    &nbsp;&nbsp;text-decoration: none;<br>
+                    }<br>
+                    a:hover {<br>
+                    &nbsp;&nbsp;color: red;<br>
+                    &nbsp;&nbsp;text-decoration: underline;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;a href="#"&gt;Hover Effect Link&lt;/a&gt;
+                </code>
+            </div>
+        
+            <div class="navigation-buttons">
+                <a href="./css-text.html" class="navigation-button prev-button neutral">← CSS Text</a>
+                <a href="./css-lists.html" class="navigation-button next-button neutral">CSS Lists →</a>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+    <div id="footer-container"></div>
+    
+    <script src="/script.js?v=2"></script>
+</body>
+</html>

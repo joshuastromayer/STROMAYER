@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="/styles/coding.css">
+</head>
+
+<div id="header-container"></div>
+<body class="html-page-klm123">
+    <link rel="stylesheet" href="../styles/coding.css">
+<main class="html-main-klm123">
+    <!-- Quick Start Plan -->
+    <div id="css-quick-menu"></div>
+
+    <!-- Detailed Plan -->
+    <div class="main-tutorial-content">
+        <div class="detailed-plan-klm123" id="css-selectors-tutorial">
+            <h2>CSS Selectors</h2>
+            <p>
+                CSS selectors are patterns used to select and style specific elements on your web page. They are one of the most powerful tools in CSS, allowing you to target elements based on their type, class, ID, attributes, and more.
+            </p>
+        
+            <h3>Types of Selectors</h3>
+            <p>
+                Below are some of the most commonly used CSS selectors:
+            </p>
+            <ul>
+                <li><strong>Universal Selector (<code>*</code>):</strong> Selects all elements on the page.</li>
+                <li><strong>Type Selector:</strong> Selects all elements of a specific type (e.g., <code>h1</code>, <code>p</code>).</li>
+                <li><strong>Class Selector (<code>.</code>):</strong> Selects all elements with a specific class (e.g., <code>.classname</code>).</li>
+                <li><strong>ID Selector (<code>#</code>):</strong> Selects the element with a specific ID (e.g., <code>#idname</code>).</li>
+            </ul>
+        
+            <h3>Universal Selector</h3>
+            <p>
+                The universal selector applies styles to all elements on the page. For example:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    * {<br>
+                    &nbsp;&nbsp;margin: 0;<br>
+                    &nbsp;&nbsp;padding: 0;<br>
+                    }
+                </code>
+            </div>
+        
+            <h3>Type Selector</h3>
+            <p>
+                The type selector targets all elements of a specific type. For example:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    p {<br>
+                    &nbsp;&nbsp;color: blue;<br>
+                    }
+                </code>
+            </div>
+        
+            <h3>Class Selector</h3>
+            <p>
+                The class selector targets elements with a specific class. Use a dot (<code>.</code>) followed by the class name. For example:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    .highlight {<br>
+                    &nbsp;&nbsp;background-color: yellow;<br>
+                    }
+                </code>
+            </div>
+        
+            <h3>ID Selector</h3>
+            <p>
+                The ID selector targets an element with a specific ID. Use a hash symbol (<code>#</code>) followed by the ID name. For example:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    #main-title {<br>
+                    &nbsp;&nbsp;font-size: 24px;<br>
+                    &nbsp;&nbsp;color: green;<br>
+                    }
+                </code>
+            </div>
+        
+            <h3>Grouping Selectors</h3>
+            <p>
+                You can group selectors to apply the same styles to multiple elements. Use a comma to separate the selectors. For example:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    h1, p, .highlight {<br>
+                    &nbsp;&nbsp;text-align: center;<br>
+                    }
+                </code>
+            </div>
+        
+            <h3>Combining Selectors</h3>
+            <p>
+                You can combine selectors to target elements more specifically. For example:
+            </p>
+            <ul>
+                <li><strong>Descendant Selector:</strong> Targets elements nested inside others (e.g., <code>div p</code> selects all <code>p</code> elements inside a <code>div</code>).</li>
+                <li><strong>Child Selector (<code>&gt;</code>):</strong> Targets direct children of an element (e.g., <code>div &gt; p</code>).</li>
+                <li><strong>Adjacent Sibling Selector (<code>+</code>):</strong> Targets the next sibling element (e.g., <code>h1 + p</code>).</li>
+                <li><strong>General Sibling Selector (<code>~</code>):</strong> Targets all siblings of an element (e.g., <code>h1 ~ p</code>).</li>
+            </ul>
+
+            <p>We will cover these advanced selectors in a <a href="/css/css-adv-selectors.html">later topic</a>.</p>
+        
+            <h3>Practical Example</h3>
+<p>Here's an example of using multiple selectors to style different parts of your web page:</p>
+<div class="code-example-html">
+    <code>
+        body {<br>
+        &nbsp;&nbsp;font-family: Arial, sans-serif;<br>
+        }<br><br>
+        .header {<br>
+        &nbsp;&nbsp;background-color: lightblue;<br>
+        }<br><br>
+        #main-title {<br>
+        &nbsp;&nbsp;color: darkblue;<br>
+        }<br><br>
+        p {<br>
+        &nbsp;&nbsp;line-height: 1.6;<br>
+        }<br><br>
+        .container p {<br>
+        &nbsp;&nbsp;color: gray;<br>
+        }
+    </code>
+</div>
+<p>
+    In this example:
+</p>
+<ul>
+    <li><strong>body</strong>: Styles the entire page's font family.</li>
+    <li><strong>.header</strong>: Targets an element with the class "header" and sets its background color.</li>
+    <li><strong>#main-title</strong>: Styles an element with the ID "main-title" to change the text color.</li>
+    <li><strong>p</strong>: Styles all <code>&lt;p&gt;</code> elements globally by setting the line height.</li>
+    <li><strong>.container p</strong>: Demonstrates a descendant selector, targeting only <code>&lt;p&gt;</code> elements inside an element with the class "container" and setting their color to gray.</li>
+</ul>
+<p>
+    Descendant selectors are helpful when you want to style specific elements based on their location in the document hierarchy.
+</p>
+        
+            <p>
+                CSS selectors are incredibly powerful and allow you to style your web pages with great precision. Explore more advanced selectors in the future to unlock their full potential!
+            </p>
+        
+            <p>
+                <a href="./css-selectors.html#css-selectors-exercises" class="neutral">Ready to test your knowledge? Head to the exercises section!</a>
+            </p>
+        </div>
+        <div class="detailed-plan-klm123" id="css-selectors-exercises">
+            <h2>CSS Selectors: Exercises</h2>
+        
+            <h3>1. Select All Paragraphs</h3>
+            <p>
+                Write CSS to change the font "color" of all paragraphs on the page to blue.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-1">Reveal Answer</button>
+            <div id="answer-1" class="code-example-html blurred-answer">
+                <code>
+                    p {<br>
+                    &nbsp;&nbsp;color: blue;<br>
+                    }
+                </code>
+            </div>
+        
+            <h3>2. Target a Specific ID</h3>
+            <p>
+                Use CSS to set the "background-color" of the element with the ID <code>#main-heading</code> to yellow.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-2">Reveal Answer</button>
+            <div id="answer-2" class="code-example-html blurred-answer">
+                <code>
+                    #main-heading {<br>
+                    &nbsp;&nbsp;background-color: yellow;<br>
+                    }
+                </code>
+            </div>
+        
+            <h3>3. Apply Styles to a Class</h3>
+            <p>
+                Create a CSS rule to make all elements with the class <code>.highlight</code> have italic text (use font-style) and a "font-size" of 18px.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-3">Reveal Answer</button>
+            <div id="answer-3" class="code-example-html blurred-answer">
+                <code>
+                    .highlight {<br>
+                    &nbsp;&nbsp;font-style: italic;<br>
+                    &nbsp;&nbsp;font-size: 18px;<br>
+                    }
+                </code>
+            </div>
+        
+            <h3>4. Combine Selectors</h3>
+            <p>
+                Write CSS to make all <code>&lt;h1&gt;</code> elements inside a <code>&lt;div&gt;</code> with the class <code>.header</code> have a text color of red.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-4">Reveal Answer</button>
+            <div id="answer-4" class="code-example-html blurred-answer">
+                <code>
+                    .header h1 {<br>
+                    &nbsp;&nbsp;color: red;<br>
+                    }
+                </code>
+            </div>
+        
+            <h3>5. Group Selectors</h3>
+            <p>
+                Use CSS to apply the same background color of light gray to all <code>&lt;h2&gt;</code> and <code>&lt;p&gt;</code> elements on the page.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-5">Reveal Answer</button>
+            <div id="answer-5" class="code-example-html blurred-answer">
+                <code>
+                    h2, p {<br>
+                    &nbsp;&nbsp;background-color: lightgray;<br>
+                    }
+                </code>
+            </div>
+        
+            <div class="navigation-buttons">
+                <a href="./css-syntax.html" class="navigation-button prev-button neutral">← CSS Syntax</a>
+                <a href="./css-in-html.html" class="navigation-button next-button neutral">CSS in HTML →</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <div id="footer-container"></div>
+    
+    <script src="/script.js?v=2"></script>
+</body>
+</html>

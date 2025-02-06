@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float and CLear - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="/styles/coding.css">
+</head>
+
+<div id="header-container"></div>
+<body class="html-page-klm123">
+    <link rel="stylesheet" href="../styles/coding.css">
+<main class="html-main-klm123">
+    <!-- Quick Start Plan -->
+    <div id="css-quick-menu"></div>
+
+    <!-- Detailed Plan -->
+    <div class="main-tutorial-content">
+        <div class="detailed-plan-klm123" id="css-float-clear-tutorial">
+            <h2>CSS Float and Clear</h2>
+            <p>
+                The <code>float</code> property in CSS allows elements to be positioned to the left or right of their container, while text or other inline elements wrap around them. The <code>clear</code> property is used to control the behavior of elements around floated elements.
+            </p>
+        
+            <h3>Float Property</h3>
+            <p>
+                The <code>float</code> property is commonly used to create layouts or to wrap text around images. It can take the following values:
+            </p>
+            <ul>
+                <li><code>none</code>: Default. The element does not float.</li>
+                <li><code>left</code>: Floats the element to the left of its container.</li>
+                <li><code>right</code>: Floats the element to the right of its container.</li>
+            </ul>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    .float-left {<br>
+                    &nbsp;&nbsp;float: left;<br>
+                    &nbsp;&nbsp;width: 150px;<br>
+                    &nbsp;&nbsp;margin: 10px;<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    }<br>
+                    .float-right {<br>
+                    &nbsp;&nbsp;float: right;<br>
+                    &nbsp;&nbsp;width: 150px;<br>
+                    &nbsp;&nbsp;margin: 10px;<br>
+                    &nbsp;&nbsp;background-color: lightcoral;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="float-left"&gt;This floats left.&lt;/div&gt;<br>
+                    &lt;div class="float-right"&gt;This floats right.&lt;/div&gt;<br>
+                    &lt;p&gt;Content wraps around floated elements.&lt;/p&gt;
+                </code>
+            </div>
+        
+            <h3>Clear Property</h3>
+            <p>
+                The <code>clear</code> property is used to prevent elements from wrapping around floated elements. It can take the following values:
+            </p>
+            <ul>
+                <li><code>none</code>: Default. Allows elements to wrap around floats.</li>
+                <li><code>left</code>: Prevents wrapping around elements floated to the left.</li>
+                <li><code>right</code>: Prevents wrapping around elements floated to the right.</li>
+                <li><code>both</code>: Prevents wrapping around elements floated to either side.</li>
+            </ul>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    .cleared {<br>
+                    &nbsp;&nbsp;clear: both;<br>
+                    &nbsp;&nbsp;margin-top: 10px;<br>
+                    &nbsp;&nbsp;background-color: lightgreen;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="float-left"&gt;Floated left.&lt;/div&gt;<br>
+                    &lt;div class="float-right"&gt;Floated right.&lt;/div&gt;<br>
+                    &lt;div class="cleared"&gt;Cleared both sides.&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>Common Float Issues</h3>
+            <p>
+                Floating elements can sometimes cause layout issues. For example, a parent container may collapse if its child elements are floated. To fix this, you can use the "clearfix" technique.
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    .clearfix::after {<br>
+                    &nbsp;&nbsp;content: "";<br>
+                    &nbsp;&nbsp;display: block;<br>
+                    &nbsp;&nbsp;clear: both;<br>
+                    }<br>
+                    .clearfix {<br>
+                    &nbsp;&nbsp;background-color: lightgray;<br>
+                    &nbsp;&nbsp;padding: 10px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="clearfix"&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="float-left"&gt;Floated left.&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="float-right"&gt;Floated right.&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                </code>
+            </div>
+        
+            <p>
+                <a href="./css-float-clear.html#css-float-clear-exercises" class="neutral">
+                    Ready to test your knowledge? Head to the exercises section!
+                </a>
+            </p>
+        </div>
+
+        <div class="detailed-plan-klm123" id="css-float-clear-exercises">
+            <h2>CSS Float and Clear: Exercises</h2>
+        
+            <h3>1. Float Left</h3>
+            <p>
+                Create a &lt;div&gt; element with the following styles:
+            </p>
+            <ul>
+                <li>Width: 200px</li>
+                <li>Height: 100px</li>
+                <li>Background color: lightblue</li>
+                <li>Float: left</li>
+                <li>Margin: 10px</li>
+            </ul>
+            <p>Observe how the content wraps around the floated element.</p>
+            <button class="reveal-answer-btn" data-answer-id="answer-1">Reveal Answer</button>
+            <div id="answer-1" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .float-left {<br>
+                    &nbsp;&nbsp;width: 200px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;float: left;<br>
+                    &nbsp;&nbsp;margin: 10px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="float-left"&gt;Floated Left&lt;/div&gt;<br>
+                    &lt;p&gt;This text wraps around the floated element.&lt;/p&gt;
+                </code>
+            </div>
+        
+            <h3>2. Float Right</h3>
+            <p>
+                Create a &lt;div&gt; element with the following styles:
+            </p>
+            <ul>
+                <li>Width: 150px</li>
+                <li>Height: 80px</li>
+                <li>Background color: lightcoral</li>
+                <li>Float: right</li>
+                <li>Margin: 10px</li>
+            </ul>
+            <p>Observe how the content wraps around the floated element on the opposite side.</p>
+            <button class="reveal-answer-btn" data-answer-id="answer-2">Reveal Answer</button>
+            <div id="answer-2" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .float-right {<br>
+                    &nbsp;&nbsp;width: 150px;<br>
+                    &nbsp;&nbsp;height: 80px;<br>
+                    &nbsp;&nbsp;background-color: lightcoral;<br>
+                    &nbsp;&nbsp;float: right;<br>
+                    &nbsp;&nbsp;margin: 10px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="float-right"&gt;Floated Right&lt;/div&gt;<br>
+                    &lt;p&gt;This text wraps around the floated element on the right side.&lt;/p&gt;
+                </code>
+            </div>
+        
+            <h3>3. Clear Both</h3>
+            <p>
+                Create two floated &lt;div&gt; elements (one floated left and the other floated right) followed by a &lt;div&gt; with <code>clear: both</code>. Style them with:
+            </p>
+            <ul>
+                <li>Floated elements: Width 100px, Height 50px, Background color lightgreen, Margin 5px</li>
+                <li>Cleared element: Width 100%, Background color lightgray</li>
+            </ul>
+            <p>Observe how the cleared element starts below the floated elements.</p>
+            <button class="reveal-answer-btn" data-answer-id="answer-3">Reveal Answer</button>
+            <div id="answer-3" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .float-left {<br>
+                    &nbsp;&nbsp;width: 100px;<br>
+                    &nbsp;&nbsp;height: 50px;<br>
+                    &nbsp;&nbsp;background-color: lightgreen;<br>
+                    &nbsp;&nbsp;float: left;<br>
+                    &nbsp;&nbsp;margin: 5px;<br>
+                    }<br>
+                    .float-right {<br>
+                    &nbsp;&nbsp;width: 100px;<br>
+                    &nbsp;&nbsp;height: 50px;<br>
+                    &nbsp;&nbsp;background-color: lightgreen;<br>
+                    &nbsp;&nbsp;float: right;<br>
+                    &nbsp;&nbsp;margin: 5px;<br>
+                    }<br>
+                    .cleared {<br>
+                    &nbsp;&nbsp;clear: both;<br>
+                    &nbsp;&nbsp;width: 100%;<br>
+                    &nbsp;&nbsp;background-color: lightgray;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="float-left"&gt;Left&lt;/div&gt;<br>
+                    &lt;div class="float-right"&gt;Right&lt;/div&gt;<br>
+                    &lt;div class="cleared"&gt;Cleared Element&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>4. Clearfix</h3>
+            <p>
+                Create a container &lt;div&gt; with two floated child &lt;div&gt; elements. Use the clearfix technique to ensure the container fully wraps around its floated children. Style:
+            </p>
+            <ul>
+                <li>Container: Background color lightgray</li>
+                <li>Child elements: Width 120px, Height 60px, Background color lightpink, Float left</li>
+            </ul>
+            <button class="reveal-answer-btn" data-answer-id="answer-4">Reveal Answer</button>
+            <div id="answer-4" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .container::after {<br>
+                    &nbsp;&nbsp;content: "";<br>
+                    &nbsp;&nbsp;display: block;<br>
+                    &nbsp;&nbsp;clear: both;<br>
+                    }<br>
+                    .container {<br>
+                    &nbsp;&nbsp;background-color: lightgray;<br>
+                    &nbsp;&nbsp;padding: 10px;<br>
+                    }<br>
+                    .child {<br>
+                    &nbsp;&nbsp;width: 120px;<br>
+                    &nbsp;&nbsp;height: 60px;<br>
+                    &nbsp;&nbsp;background-color: lightpink;<br>
+                    &nbsp;&nbsp;float: left;<br>
+                    &nbsp;&nbsp;margin: 5px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="container"&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="child"&gt;Child 1&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="child"&gt;Child 2&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                </code>
+            </div>
+        
+            <div class="navigation-buttons">
+                <a href="./css-flex.html" class="navigation-button prev-button neutral">← CSS Flex</a>
+                <a href="./css-overflow.html" class="navigation-button next-button neutral">CSS Overflow →</a>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+    <div id="footer-container"></div>
+    
+    <script src="/script.js?v=2"></script>
+</body>
+</html>

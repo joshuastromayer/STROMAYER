@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Syntax - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="/styles/coding.css">
+</head>
+
+<div id="header-container"></div>
+<body class="html-page-klm123">
+    <link rel="stylesheet" href="/styles/coding.css">
+    <main class="html-main-klm123">
+        <!-- Quick Start Plan -->
+        <div id="js-quick-menu"></div>
+    
+        <!-- Detailed Plan -->
+        <div class="main-tutorial-content">
+            <div class="detailed-plan-klm123" id="js-syntax-tutorial">
+                <h2>JS Syntax</h2>
+                <p>
+                    Every programming language has a set of rules that define how code should be written. JavaScript follows a structured syntax that allows developers to write clean, readable, and functional code.
+                </p>
+            
+                <h3>JavaScript Statements</h3>
+                <p>
+                    JavaScript code consists of <b>statements</b>, which are instructions the browser executes. Each statement typically ends with a <b>semicolon</b> though it's not always required.
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        &lt;script&gt;<br>
+                        &nbsp;&nbsp;console.log("Hello, World!"); // This is a JavaScript statement<br>
+                        &lt;/script&gt;
+                    </code>
+                </div>
+                <p>
+                    JavaScript statements are executed <b>one by one, in order from top to bottom</b>.
+                </p>
+            
+                <h3>Case Sensitivity</h3>
+                <p>
+                    JavaScript is <b>case-sensitive</b>, meaning variables, functions, and keywords must be written with consistent capitalization.
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        &lt;script&gt;<br>
+                        &nbsp;&nbsp;let myVariable = 10;<br>
+                        &nbsp;&nbsp;console.log(MyVariable); // ❌ Error: MyVariable is not defined<br>
+                        &lt;/script&gt;
+                    </code>
+                </div>
+                <p>
+                    In this example, <b>myVariable</b> and <b>MyVariable</b> are treated as different identifiers.
+                </p>
+            
+                <h3>JavaScript Keywords</h3>
+                <p>
+                    JavaScript has <b>reserved keywords</b> that have special meanings. You cannot use these words as variable or function names.
+                </p>
+                <ul>
+                    <li><b>var</b> – Declares a variable.</li>
+                    <li><b>let</b> – Declares a block-scoped variable.</li>
+                    <li><b>const</b> – Declares a constant (unchangeable) variable.</li>
+                    <li><b>function</b> – Defines a function.</li>
+                    <li><b>return</b> – Returns a value from a function.</li>
+                    <li><b>if</b>, <b>else</b>, <b>switch</b> – Used for conditional statements.</li>
+                    <li><b>for</b>, <b>while</b> – Used for loops.</li>
+                </ul>
+            
+                <h3>Comments in JavaScript</h3>
+                <p>
+                    Comments are ignored by JavaScript but are useful for explaining code. JavaScript supports:
+                </p>
+                <ul>
+                    <li><b>Single-line comments</b> using <code>//</code>.</li>
+                    <li><b>Multi-line comments</b> using <code>/* ... */</code>.</li>
+                </ul>
+                <div class="code-example-html">
+                    <code>
+                        &lt;script&gt;<br>
+                        &nbsp;&nbsp;// This is a single-line comment<br>
+                        &nbsp;&nbsp;let x = 10; // Variable declaration<br><br>
+            
+                        &nbsp;&nbsp;/*<br>
+                        &nbsp;&nbsp;This is a multi-line comment.<br>
+                        &nbsp;&nbsp;It spans multiple lines.<br>
+                        &nbsp;&nbsp;*/<br>
+                        &lt;/script&gt;
+                    </code>
+                </div>
+            
+                <h3>JavaScript Variables</h3>
+                <p>
+                    Variables store data that can be used and modified in JavaScript. You can declare variables using:
+                </p>
+                <ul>
+                    <li><b>var</b> – The old way of declaring variables (not recommended).</li>
+                    <li><b>let</b> – The modern way to declare a variable that can be updated.</li>
+                    <li><b>const</b> – Used for values that should not be changed.</li>
+                </ul>
+                <div class="code-example-html">
+                    <code>
+                        &lt;script&gt;<br>
+                        &nbsp;&nbsp;var oldVar = "I am outdated";<br>
+                        &nbsp;&nbsp;let modernVar = "I can be updated";<br>
+                        &nbsp;&nbsp;const constantVar = "I cannot be changed";<br>
+                        &lt;/script&gt;
+                    </code>
+                </div>
+            
+                <h3>Data Types in JavaScript</h3>
+                <p>
+                    JavaScript supports different data types, including:
+                </p>
+                <ul>
+                    <li><b>String</b> – Text values, written inside quotes (<code>"Hello"</code> or <code>'World'</code>).</li>
+                    <li><b>Number</b> – Numeric values (<code>42</code>, <code>3.14</code>).</li>
+                    <li><b>Boolean</b> – True or false values (<code>true</code>, <code>false</code>).</li>
+                    <li><b>Array</b> – A collection of values (<code>[1, 2, 3]</code>).</li>
+                    <li><b>Object</b> – A collection of key-value pairs (<code>{ name: "John", age: 30 }</code>).</li>
+                </ul>
+            
+                <h3>JavaScript Functions</h3>
+                <p>
+                    A function is a block of code that runs when called. Functions allow you to reuse code.
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        &lt;script&gt;<br>
+                        &nbsp;&nbsp;function greet() {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;console.log("Hello, world!");<br>
+                        &nbsp;&nbsp;}<br><br>
+            
+                        &nbsp;&nbsp;greet(); // Calls the function<br>
+                        &lt;/script&gt;
+                    </code>
+                </div>
+            
+                <h3>JavaScript Operators</h3>
+                <p>
+                    JavaScript provides different types of <b>operators</b> to perform operations on values.
+                </p>
+                <ul>
+                    <li><b>Arithmetic Operators</b>: <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code></li>
+                    <li><b>Comparison Operators</b>: <code>==</code>, <code>===</code>, <code>!=</code>, <code>&gt;</code>, <code>&lt;</code></li>
+                    <li><b>Logical Operators</b>: <code>&amp;&amp;</code> (AND), <code>||</code> (OR), <code>!</code> (NOT)</li>
+                </ul>
+            
+                <h3>Next Steps</h3>
+                <p>
+                    Now that you understand JavaScript syntax, let's explore how JavaScript handles output.
+                </p>
+            
+                <div class="navigation-buttons">
+                    <a href="./js-setting-up.html" class="navigation-button prev-button neutral">&lt; JS Setup</a>
+                    <a href="./js-output.html" class="navigation-button next-button neutral">JS Output &gt;</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-container"></div>
+    
+    <script src="/script.js?v=2"></script>
+</body>
+</html>

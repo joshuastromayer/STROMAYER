@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Links - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="../styles/coding.css">
+</head>
+<div id="header-container"></div>
+      <body class="html-page-klm123">
+<link rel="stylesheet" href="../styles/coding.css">
+
+    
+        <main class="html-main-klm123">
+            <!-- Quick Start Plan -->
+            <div id="html-quick-menu"></div>
+    
+            <!-- Detailed Plan -->
+            <div class="main-tutorial-content">
+                <div class="detailed-plan-klm123" id="html-links-tutorial">
+                    <h2>HTML Links</h2>
+                
+                    <p>
+                        Links are one of the most important elements in HTML, allowing users to navigate between pages, documents, or external websites. They are created using the <code>&lt;a&gt;</code> (anchor) tag.
+                    </p>
+                
+                    <h3>Basic Syntax of Links</h3>
+                    <p>
+                        A basic link requires an <code>href</code> attribute that specifies the URL to navigate to. Here’s the general structure:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;
+                        </code>
+                    </div>
+                    <p>
+                        When this code is rendered in a browser, it creates a clickable link with the text "Visit Example." Clicking on the link will take you to <code>https://example.com</code>.
+                    </p>
+                
+                    <h3>Opening Links in a New Tab</h3>
+                    <p>
+                        To open a link in a new tab, add the <code>target="_blank"</code> attribute to the anchor tag:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;a href="https://example.com" target="_blank"&gt;Visit Example&lt;/a&gt;
+                        </code>
+                    </div>
+                    <p>
+                        The <code>target="_blank"</code> attribute instructs the browser to open the link in a new tab or window, depending on the browser settings.
+                    </p>
+                
+                    <h3>Linking to Other Pages in Your Website</h3>
+                    <p>
+                        When linking to other pages within your website, you can use relative file paths. For example:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;a href="about.html"&gt;About Us&lt;/a&gt;
+                        </code>
+                    </div>
+                    <p>
+                        This link assumes that the file <code>about.html</code> is in the same directory as the current file.
+                    </p>
+                    <p>
+                        You can also link to files located in different folders or directories, as long as they are accessible from the current file's location:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;a href="./images/logo.png"&gt;View Logo&lt;/a&gt;<br>
+                            &lt;a href="../styles/styles.css"&gt;View Stylesheet&lt;/a&gt;
+                        </code>
+                    </div>
+                    <p>
+                        <strong>Explanation:</strong>
+                        <ul>
+                            <li><code>./images/logo.png</code>: Refers to the <code>images</code> folder in the current directory.</li>
+                            <li><code>../styles/styles.css</code>: Refers to the <code>css</code> folder one level above the current directory.</li>
+                        </ul>
+                    </p>
+                    <p>
+                        While this approach works, it is generally good practice to organize your files in a way that uses consistent and clear paths to avoid confusion when linking between directories.
+                    </p>
+                    <h3>Adding Tooltips</h3>
+                    <p>
+                        You can add a tooltip to your links using the <code>title</code> attribute. When users hover over the link, the tooltip will appear:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;a href="https://example.com" title="Click to visit Example"&gt;Visit Example&lt;/a&gt;
+                        </code>
+                    </div>
+                
+                    <h3>Clickable Email Links</h3>
+                    <p>
+                        You can create links that allow users to send an email by using the <code>mailto:</code> prefix:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;a href="mailto:example@example.com"&gt;Email Us&lt;/a&gt;
+                        </code>
+                    </div>
+                    <p>
+                        Clicking on this link will open the user’s default email client with a new message addressed to <code>example@example.com</code>.
+                    </p>
+                
+                    <h3>Linking to Specific Sections</h3>
+                    <p>
+                        You can create links to specific sections of a page by using the <code>id</code> attribute and the <code>#</code> symbol. For example:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;a href="#section1"&gt;Go to Section 1&lt;/a&gt;<br>
+                            &lt;h2 id="section1"&gt;Section 1&lt;/h2&gt;
+                        </code>
+                    </div>
+                    <p>
+                        When users click on the link, the browser will scroll to the element with the <code>id="section1"</code>.
+                    </p>
+                    <p>
+                        You can also link to a specific section on a different page by including the file name followed by the <code>#</code> symbol and the section's <code>id</code>. For example:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;a href="about-us.html#section2"&gt;Go to Section 2 on About Us&lt;/a&gt;<br>
+                            &lt;!-- In a different file --&gt; <br>
+                            &lt;h2 id="section2"&gt;Section 2&lt;/h2&gt;
+                        </code>
+                    </div>
+                    <p>
+                        This link assumes that there is a file named <code>about-us.html</code> in the same directory, and it contains an element with <code>id="section2"</code>. When clicked, the browser will navigate to that page and scroll directly to the specified section.
+                    </p>
+                    <h3>Best Practices for Links</h3>
+                    <ul>
+                        <li>Always use meaningful link text. Instead of "Click Here," use descriptive text like "Learn More About Us."</li>
+                        <li>Use relative paths for internal links and absolute paths for external links.</li>
+                        <li>Test your links to ensure they lead to the correct destination.</li>
+                        <li>Use CSS to style your links for better visual appeal.</li>
+                    </ul>
+                
+                    <h3>Accessibility and Links</h3>
+                    <p>
+                        Links should be accessible to everyone, including users relying on screen readers. Ensure that:
+                    </p>
+                    <ul>
+                        <li>The link text describes its destination clearly.</li>
+                        <li>The <code>tabindex</code> attribute is used, if necessary, to ensure proper tab navigation.</li>
+                        <li>All important links are keyboard accessible.</li>
+                    </ul>
+                
+                    <h3>Next Steps</h3>
+                    <p>
+                        Now that you've learned about HTML Links, it's time to explore "Unordered Lists" in the next tutorial.
+                    </p>
+                    <p>
+                        <a href="#html-links-exercises" class="neutral">
+                            Ready to practice HTML Links? Head to the exercises!
+                        </a>
+                    </p>
+                </div>
+
+                <div class="detailed-plan-klm123" id="html-links-exercises">
+                    <h2>HTML Links: Exercises</h2>
+                
+                    <h3>1. Create a Link to an External Website</h3>
+                    <p>
+                        Create an anchor tag that links to <code>https://example.com</code>. The link text should say "Visit Example". Make sure it opens in a new tab.
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-1">Reveal Answer</button>
+                    <div id="answer-1" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;a href="https://example.com" target="_blank"&gt;Visit Example&lt;/a&gt;
+                        </code>
+                    </div>
+                
+                    <h3>2. Link to an Internal Page</h3>
+                    <p>
+                        Create a link that navigates to a page called <code>about.html</code>. The link text should say "Learn More About Us".
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-2">Reveal Answer</button>
+                    <div id="answer-2" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;a href="about.html"&gt;Learn More About Us&lt;/a&gt;
+                        </code>
+                    </div>
+                
+                    <h3>3. Add a Tooltip to a Link</h3>
+                    <p>
+                        Create a link to <code>https://example.com</code> with the text "Hover Over Me". Add a tooltip that says "This is an example link".
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-3">Reveal Answer</button>
+                    <div id="answer-3" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;a href="https://example.com" title="This is an example link"&gt;Hover Over Me&lt;/a&gt;
+                        </code>
+                    </div>
+                
+                    <h3>4. Create an Email Link</h3>
+                    <p>
+                        Create a link that allows users to send an email to <code>info@stromayer.com</code>. The link text should say "Contact Us".
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-4">Reveal Answer</button>
+                    <div id="answer-4" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;a href="mailto:info@stromayer.com"&gt;Contact Us&lt;/a&gt;
+                        </code>
+                    </div>
+                
+                    <h3>5. Link to a Specific Section</h3>
+                    <p>
+                        Create a link that navigates to a section with the ID <code>features</code> on the same page. The link text should say "Go to Features".
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-5">Reveal Answer</button>
+                    <div id="answer-5" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;a href="#features"&gt;Go to Features&lt;/a&gt;<br>
+                            &lt;h2 id="features"&gt;Features&lt;/h2&gt;
+                        </code>
+                    </div>
+                
+                    <p>
+                        <a href="./html-images.html" class="neutral">
+                            Ready to learn about HTML Images? Let’s go!
+                        </a>
+                    </p>
+                </div>
+
+            </div>
+        </main>
+
+        <div id="footer-container"></div>
+    
+        <script src="/script.js?v=2"></script>
+    </body>
+</html>

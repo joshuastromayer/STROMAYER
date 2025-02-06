@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Masking - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="/styles/coding.css">
+</head>
+
+<div id="header-container"></div>
+<body class="html-page-klm123">
+    <link rel="stylesheet" href="../styles/coding.css">
+<main class="html-main-klm123">
+    <!-- Quick Start Plan -->
+    <div id="css-quick-menu"></div>
+
+    <!-- Detailed Plan -->
+    <div class="main-tutorial-content">
+        <div class="detailed-plan-klm123" id="css-masking-tutorial">
+            <h2>CSS Masking</h2>
+            <p>
+                CSS Masking allows you to hide or reveal parts of an element by applying a mask image or clip path. This is especially useful for creating complex visual effects and designs.
+            </p>
+        
+            <h3>The mask Property</h3>
+            <p>
+                The <code>mask</code> property defines how an element is masked. Masks can use gradients, patterns, or images to define visible and hidden areas. The syntax is:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    .masked {<br>
+                    &nbsp;&nbsp;width: 300px;<br>
+                    &nbsp;&nbsp;height: 200px;<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;mask-image: url('mask.png');<br>
+                    &nbsp;&nbsp;-webkit-mask-image: url('mask.png');<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="masked"&gt;&lt;/div&gt;
+                </code>
+            </div>
+            <p>
+                In this example, the element is masked using an image file, <code>mask.png</code>. The visible parts of the element correspond to the non-transparent parts of the mask image.
+            </p>
+        
+            <h3>Using Gradients as Masks</h3>
+            <p>
+                Gradients can also be used as masks to create smooth transitions between visible and hidden areas:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    .gradient-mask {<br>
+                    &nbsp;&nbsp;width: 300px;<br>
+                    &nbsp;&nbsp;height: 200px;<br>
+                    &nbsp;&nbsp;background-color: lightcoral;<br>
+                    &nbsp;&nbsp;mask-image: linear-gradient(to right, transparent, black);<br>
+                    &nbsp;&nbsp;-webkit-mask-image: linear-gradient(to right, transparent, black);<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="gradient-mask"&gt;&lt;/div&gt;
+                </code>
+            </div>
+            <p>
+                In this example, the mask gradually reveals the element from left to right.
+            </p>
+        
+            <h3>Masking with Shapes</h3>
+            <p>
+                You can also use shapes, such as circles or polygons, as masks with the <code>mask-image</code> and <code>clip-path</code> properties:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    .shape-mask {<br>
+                    &nbsp;&nbsp;width: 300px;<br>
+                    &nbsp;&nbsp;height: 300px;<br>
+                    &nbsp;&nbsp;background-color: lightgreen;<br>
+                    &nbsp;&nbsp;mask-image: radial-gradient(circle, black 50%, transparent 51%);<br>
+                    &nbsp;&nbsp;-webkit-mask-image: radial-gradient(circle, black 50%, transparent 51%);<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="shape-mask"&gt;&lt;/div&gt;
+                </code>
+            </div>
+            <p>
+                This creates a circular mask where only the center of the element is visible.
+            </p>
+        
+            <h3>Mask Repeat, Position, and Size</h3>
+            <p>
+                Similar to background images, masks can have additional properties to control their appearance:
+            </p>
+            <ul>
+                <li><strong>mask-repeat</strong>: Specifies whether the mask repeats (<code>repeat</code>, <code>no-repeat</code>, <code>repeat-x</code>, or <code>repeat-y</code>).</li>
+                <li><strong>mask-position</strong>: Specifies the starting position of the mask.</li>
+                <li><strong>mask-size</strong>: Specifies the size of the mask.</li>
+            </ul>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    .repeated-mask {<br>
+                    &nbsp;&nbsp;width: 300px;<br>
+                    &nbsp;&nbsp;height: 200px;<br>
+                    &nbsp;&nbsp;background-color: lightpink;<br>
+                    &nbsp;&nbsp;mask-image: url('pattern.png');<br>
+                    &nbsp;&nbsp;mask-repeat: repeat;<br>
+                    &nbsp;&nbsp;-webkit-mask-image: url('pattern.png');<br>
+                    &nbsp;&nbsp;-webkit-mask-repeat: repeat;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="repeated-mask"&gt;&lt;/div&gt;
+                </code>
+            </div>
+            <p>
+                In this example, the mask repeats across the entire element using the image <code>pattern.png</code>.
+            </p>
+        
+            <h3>Masking Images</h3>
+            <p>
+                Apply a mask to an image for creative effects:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    .masked-image {<br>
+                    &nbsp;&nbsp;width: 300px;<br>
+                    &nbsp;&nbsp;height: 300px;<br>
+                    &nbsp;&nbsp;mask-image: radial-gradient(circle, black 50%, transparent 51%);<br>
+                    &nbsp;&nbsp;-webkit-mask-image: radial-gradient(circle, black 50%, transparent 51%);<br>
+                    &nbsp;&nbsp;overflow: hidden;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;img class="masked-image" src="image.jpg" alt="Masked Image"&gt;
+                </code>
+            </div>
+            <p>
+                This example uses a circular mask to hide the edges of the image.
+            </p>
+        
+            <h3>Practical Applications</h3>
+            <p>
+                CSS masking is used in a variety of scenarios, including:
+            </p>
+            <ul>
+                <li>Creating visually appealing UI elements like buttons and cards.</li>
+                <li>Designing custom shapes and animations.</li>
+                <li>Hiding or highlighting specific areas of images or text.</li>
+            </ul>
+        
+            <p>
+                <a href="./css-masking.html#css-masking-exercises" class="neutral">
+                    Ready to test your knowledge? Head to the exercises section!
+                </a>
+            </p>
+        </div>
+
+        <div class="detailed-plan-klm123" id="css-masking-exercises">
+            <h2>CSS Masking: Exercises</h2>
+        
+            <h3>1. Basic Image Masking</h3>
+            <p>
+                Create an image with the following styles:
+                <ul>
+                    <li>Width: 300px</li>
+                    <li>Height: 300px</li>
+                </ul>
+                Apply a circular mask using a <code>radial-gradient</code> to reveal only the central part of the image.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-1">Reveal Answer</button>
+            <div id="answer-1" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .image-mask {<br>
+                    &nbsp;&nbsp;width: 300px;<br>
+                    &nbsp;&nbsp;height: 300px;<br>
+                    &nbsp;&nbsp;mask-image: radial-gradient(circle, black 50%, transparent 51%);<br>
+                    &nbsp;&nbsp;-webkit-mask-image: radial-gradient(circle, black 50%, transparent 51%);<br>
+                    &nbsp;&nbsp;overflow: hidden;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;img class="image-mask" src="image.jpg" alt="Masked Image"&gt;
+                </code>
+            </div>
+        
+            <h3>2. Gradient Masking</h3>
+            <p>
+                Create a rectangular box with the following styles:
+                <ul>
+                    <li>Width: 300px</li>
+                    <li>Height: 150px</li>
+                    <li>Background color: lightblue</li>
+                </ul>
+                Apply a linear gradient mask to gradually reveal the element from left to right.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-2">Reveal Answer</button>
+            <div id="answer-2" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .gradient-mask {<br>
+                    &nbsp;&nbsp;width: 300px;<br>
+                    &nbsp;&nbsp;height: 150px;<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;mask-image: linear-gradient(to right, black, transparent);<br>
+                    &nbsp;&nbsp;-webkit-mask-image: linear-gradient(to right, black, transparent);<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="gradient-mask"&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>3. Repeating Masks</h3>
+            <p>
+                Create a rectangular box with the following styles:
+                <ul>
+                    <li>Width: 300px</li>
+                    <li>Height: 200px</li>
+                    <li>Background color: lightpink</li>
+                </ul>
+                Apply a repeating pattern mask using an image file named <code>pattern.png</code>.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-3">Reveal Answer</button>
+            <div id="answer-3" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .repeated-mask {<br>
+                    &nbsp;&nbsp;width: 300px;<br>
+                    &nbsp;&nbsp;height: 200px;<br>
+                    &nbsp;&nbsp;background-color: lightpink;<br>
+                    &nbsp;&nbsp;mask-image: url('pattern.png');<br>
+                    &nbsp;&nbsp;mask-repeat: repeat;<br>
+                    &nbsp;&nbsp;-webkit-mask-image: url('pattern.png');<br>
+                    &nbsp;&nbsp;-webkit-mask-repeat: repeat;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="repeated-mask"&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>4. Combined Mask Properties</h3>
+            <p>
+                Create a rectangular box with the following styles:
+                <ul>
+                    <li>Width: 300px</li>
+                    <li>Height: 200px</li>
+                    <li>Background color: lightyellow</li>
+                </ul>
+                Apply a mask with the following properties:
+                <ul>
+                    <li><strong>Mask image:</strong> Use a linear gradient.</li>
+                    <li><strong>Mask size:</strong> Cover.</li>
+                    <li><strong>Mask position:</strong> Center.</li>
+                </ul>
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-4">Reveal Answer</button>
+            <div id="answer-4" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .combined-mask {<br>
+                    &nbsp;&nbsp;width: 300px;<br>
+                    &nbsp;&nbsp;height: 200px;<br>
+                    &nbsp;&nbsp;background-color: lightyellow;<br>
+                    &nbsp;&nbsp;mask-image: linear-gradient(to bottom, black, transparent);<br>
+                    &nbsp;&nbsp;mask-size: cover;<br>
+                    &nbsp;&nbsp;mask-position: center;<br>
+                    &nbsp;&nbsp;-webkit-mask-image: linear-gradient(to bottom, black, transparent);<br>
+                    &nbsp;&nbsp;-webkit-mask-size: cover;<br>
+                    &nbsp;&nbsp;-webkit-mask-position: center;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="combined-mask"&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>5. Creative Masking</h3>
+            <p>
+                Use an image of your choice and apply a polygonal mask to create a star-shaped clipping effect. The polygon should define a 5-point star.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-5">Reveal Answer</button>
+            <div id="answer-5" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .star-mask {<br>
+                    &nbsp;&nbsp;width: 300px;<br>
+                    &nbsp;&nbsp;height: 300px;<br>
+                    &nbsp;&nbsp;mask-image: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);<br>
+                    &nbsp;&nbsp;-webkit-mask-image: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);<br>
+                    &nbsp;&nbsp;overflow: hidden;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;img class="star-mask" src="image.jpg" alt="Star Mask"&gt;
+                </code>
+            </div>
+        
+            <div class="navigation-buttons">
+                <a href="./css-clipping.html" class="navigation-button prev-button neutral">← CSS Clipping</a>
+                <a href="./css-filters.html" class="navigation-button next-button neutral">CSS Filters →</a>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+    <div id="footer-container"></div>
+    
+    <script src="/script.js?v=2"></script>
+</body>
+</html>

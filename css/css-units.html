@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="/styles/coding.css">
+</head>
+
+<div id="header-container"></div>
+<body class="html-page-klm123">
+    <link rel="stylesheet" href="../styles/coding.css">
+<main class="html-main-klm123">
+    <!-- Quick Start Plan -->
+    <div id="css-quick-menu"></div>
+
+    <!-- Detailed Plan -->
+    <div class="main-tutorial-content">
+        <div class="detailed-plan-klm123" id="css-units-tutorial">
+            <h2>CSS Units</h2>
+            <p>
+                In CSS, units are used to define the dimensions of elements, such as width, height, margin, padding, and font size. Understanding CSS units is crucial for creating responsive and flexible designs.
+            </p>
+        
+            <h3>Types of CSS Units</h3>
+            <p>
+                CSS provides two main types of units:
+            </p>
+            <ul>
+                <li><strong>Absolute Units:</strong> Fixed sizes that do not change regardless of the viewport or parent element.</li>
+                <li><strong>Relative Units:</strong> Flexible sizes that depend on other elements, such as the viewport or parent element.</li>
+            </ul>
+        
+            <h3>Absolute Units</h3>
+            <p>
+                Absolute units have fixed sizes and are not influenced by the viewport or parent element. They are best used when the exact size of an element needs to be defined.
+            </p>
+            <ul>
+                <li><strong>px:</strong> Pixels. The most common unit for web design.</li>
+                <li><strong>cm:</strong> Centimeters. Useful for print media.</li>
+                <li><strong>mm:</strong> Millimeters. Useful for print media.</li>
+                <li><strong>in:</strong> Inches. Primarily for print.</li>
+                <li><strong>pt:</strong> Points. 1 point = 1/72 inch. Often used for fonts in print.</li>
+                <li><strong>pc:</strong> Picas. 1 pica = 12 points.</li>
+            </ul>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 100px;<br>
+                    &nbsp;&nbsp;height: 50px;<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;Fixed size with px&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>Relative Units</h3>
+            <p>
+                Relative units adjust based on other elements, making them ideal for responsive designs.
+            </p>
+            <ul>
+                <li><strong>em:</strong> Relative to the font size of the parent element.</li>
+                <li><strong>rem:</strong> Relative to the root element's font size (usually the <code>&lt;html&gt;</code> element).</li>
+                <li><strong>%:</strong> Percentage of the parent element's size.</li>
+                <li><strong>vw:</strong> Percentage of the viewport width.</li>
+                <li><strong>vh:</strong> Percentage of the viewport height.</li>
+                <li><strong>vmin:</strong> The smaller value of <code>vw</code> and <code>vh</code>.</li>
+                <li><strong>vmax:</strong> The larger value of <code>vw</code> and <code>vh</code>.</li>
+            </ul>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 50%;<br>
+                    &nbsp;&nbsp;height: 20vh;<br>
+                    &nbsp;&nbsp;background-color: lightgreen;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;Responsive size with % and vh&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>Combining Units</h3>
+            <p>
+                You can combine different units to achieve the desired layout and responsiveness. For example:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: calc(100% - 20px);<br>
+                    &nbsp;&nbsp;height: 10rem;<br>
+                    &nbsp;&nbsp;background-color: lightcoral;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;Combined units example&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>When to Use Each Unit</h3>
+            <ul>
+                <li>Use <strong>px</strong> for precise control over dimensions.</li>
+                <li>Use <strong>em</strong> or <strong>rem</strong> for scalable typography.</li>
+                <li>Use <strong>%</strong> for relative sizes within a container.</li>
+                <li>Use <strong>vw</strong> and <strong>vh</strong> for full-page layouts.</li>
+            </ul>
+        
+            <a href="./css-units.html#css-units-exercises" class="neutral">
+                Ready to test your knowledge? Head to the exercises section!
+            </a>
+        </div>
+
+        <div class="detailed-plan-klm123" id="css-units-exercises">
+            <h2>CSS Units: Exercises</h2>
+        
+            <h3>1. Using Absolute Units</h3>
+            <p>Create a &lt;div&gt; with the following properties:</p>
+            <ul>
+                <li>Width: 5cm</li>
+                <li>Height: 2in</li>
+                <li>Background color: lightblue</li>
+            </ul>
+            <button class="reveal-answer-btn" data-answer-id="answer-1">Reveal Answer</button>
+            <div id="answer-1" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 5cm;<br>
+                    &nbsp;&nbsp;height: 2in;<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;Absolute Units Example&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>2. Using Relative Units</h3>
+            <p>Create a &lt;div&gt; with the following properties:</p>
+            <ul>
+                <li>Width: 50% of the parent container</li>
+                <li>Height: 20vh</li>
+                <li>Background color: lightgreen</li>
+            </ul>
+            <button class="reveal-answer-btn" data-answer-id="answer-2">Reveal Answer</button>
+            <div id="answer-2" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 50%;<br>
+                    &nbsp;&nbsp;height: 20vh;<br>
+                    &nbsp;&nbsp;background-color: lightgreen;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;Relative Units Example&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>3. Using em and rem</h3>
+            <p>Create a &lt;p&gt; element inside a &lt;div&gt; and apply the following styles:</p>
+            <ul>
+                <li>The &lt;div&gt; should have a font size of 16px</li>
+                <li>The &lt;p&gt; should have a font size of 1.5em</li>
+                <li>The &lt;p&gt; text color should be red</li>
+            </ul>
+            <button class="reveal-answer-btn" data-answer-id="answer-3">Reveal Answer</button>
+            <div id="answer-3" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;font-size: 16px;<br>
+                    }<br>
+                    p {<br>
+                    &nbsp;&nbsp;font-size: 1.5em;<br>
+                    &nbsp;&nbsp;color: red;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;<br>
+                    &nbsp;&nbsp;&lt;p&gt;Text with em units&lt;/p&gt;<br>
+                    &lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>4. Combining Units</h3>
+            <p>Create a &lt;div&gt; with the following properties:</p>
+            <ul>
+                <li>A width of 50px less than 100% of the viewport</li>
+                <li>A height of 30rem</li>
+            </ul>
+            <button class="reveal-answer-btn" data-answer-id="answer-4">Reveal Answer</button>
+            <div id="answer-4" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: calc(100% - 50px);<br>
+                    &nbsp;&nbsp;height: 30rem;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;Combined Units Example&lt;/div&gt;
+                </code>
+            </div>
+        
+            <div class="navigation-buttons">
+                <a href="./css-width-height.html" class="navigation-button prev-button neutral">← CSS Width and Height</a>
+                <a href="./css-fonts.html" class="navigation-button next-button neutral">CSS Fonts →</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <div id="footer-container"></div>
+    
+    <script src="/script.js?v=2"></script>
+</body>
+</html>

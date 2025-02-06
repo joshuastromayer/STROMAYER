@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS In HTML - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="/styles/coding.css">
+</head>
+
+<div id="header-container"></div>
+<body class="html-page-klm123">
+    <link rel="stylesheet" href="../styles/coding.css">
+<main class="html-main-klm123">
+    <!-- Quick Start Plan -->
+    <div id="css-quick-menu"></div>
+
+    <!-- Detailed Plan -->
+    <div class="main-tutorial-content">
+        <div class="detailed-plan-klm123" id="css-with-html-tutorial">
+            <h2>CSS in HTML</h2>
+        
+            <p>
+                CSS (Cascading Style Sheets) is used to style and visually enhance HTML content. 
+                While HTML structures the content of your webpage, CSS determines how it looks, 
+                including colors, fonts, spacing, layout, and more. To apply CSS to HTML, you need to link 
+                them together. This tutorial covers the various ways to use CSS with HTML.
+            </p>
+        
+            <h3>Inline CSS</h3>
+            <p>
+                Inline CSS is applied directly within an HTML element using the <code>style</code> attribute. 
+                This method is useful for applying quick styles to specific elements, but it can make your code harder to maintain.
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;p style="color: blue; font-size: 18px;"&gt;This is styled using inline CSS.&lt;/p&gt;
+                </code>
+            </div>
+            <p><strong>Note:</strong> Inline CSS should be used sparingly to keep your HTML and CSS code organized.</p>
+        
+            <h3>Internal CSS</h3>
+            <p>
+                Internal CSS is written within a <code>&lt;style&gt;</code> tag inside the <code>&lt;head&gt;</code> section of your HTML document. 
+                This method is ideal for small projects or when styling a single webpage.
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html&gt;<br>
+                    &nbsp;&nbsp;&lt;head&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;style&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: green;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-weight: bold;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/style&gt;<br>
+                    &nbsp;&nbsp;&lt;/head&gt;<br>
+                    &nbsp;&nbsp;&lt;body&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is styled using internal CSS.&lt;/p&gt;<br>
+                    &nbsp;&nbsp;&lt;/body&gt;<br>
+                    &lt;/html&gt;
+                </code>
+            </div>
+        
+            <h3>External CSS</h3>
+            <p>
+                External CSS is stored in a separate file with the extension <code>.css</code>. 
+                It is linked to your HTML file using the <code>&lt;link&gt;</code> tag in the <code>&lt;head&gt;</code> section. 
+                This method is the best practice for larger projects as it allows for easy reusability and better organization of styles.
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html&gt;<br>
+                    &nbsp;&nbsp;&lt;head&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="styles.css"&gt;<br>
+                    &nbsp;&nbsp;&lt;/head&gt;<br>
+                    &nbsp;&nbsp;&lt;body&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is styled using external CSS.&lt;/p&gt;<br>
+                    &nbsp;&nbsp;&lt;/body&gt;<br>
+                    &lt;/html&gt;
+                </code>
+            </div>
+        
+            <h3>Choosing the Right Method</h3>
+            <p>
+                The choice of CSS method depends on the size and complexity of your project:
+            </p>
+            <ul>
+                <li><strong>Inline CSS:</strong> Quick fixes or styling single elements.</li>
+                <li><strong>Internal CSS:</strong> Small projects or single-page designs.</li>
+                <li><strong>External CSS:</strong> Larger projects or when reusability and organization are key.</li>
+            </ul>
+        
+            <h3>Best Practices</h3>
+            <p>
+                To ensure your code is clean and maintainable:
+            </p>
+            <ul>
+                <li>Use external CSS whenever possible.</li>
+                <li>Keep your styles organized and use meaningful class or ID names.</li>
+                <li>Avoid using inline CSS unless absolutely necessary.</li>
+            </ul>
+        
+            <p><strong>Ready to style your HTML?</strong> Let’s move on to learn more about CSS!</p>
+        
+            <div class="navigation-buttons">
+                <a href="./css-selectors.html" class="navigation-button prev-button neutral">← CSS Selectors</a>
+                <a href="./css-colors.html" class="navigation-button next-button neutral">CSS Colors →</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <div id="footer-container"></div>
+    
+    <script src="/script.js?v=2"></script>
+</body>
+</html>

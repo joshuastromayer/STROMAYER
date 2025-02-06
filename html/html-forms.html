@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="../styles/coding.css">
+</head>
+<div id="header-container"></div>
+      <body class="html-page-klm123">
+<link rel="stylesheet" href="../styles/coding.css">
+
+    
+        <main class="html-main-klm123">
+            <!-- Quick Start Plan -->
+            <div id="html-quick-menu"></div>
+    
+            <!-- Detailed Plan -->
+            <div class="main-tutorial-content">
+                <div class="detailed-plan-klm123" id="html-forms-tutorial">
+                    <h2>HTML Forms</h2>
+                    <p>
+                        Forms are an essential part of web development, allowing users to input data and interact with your website. Whether you're collecting feedback, registering users, or processing orders, forms are the backbone of user interaction.
+                    </p>
+                
+                    <h3>Structure of a Form</h3>
+                    <p>
+                        Forms in HTML are enclosed within the <code>&lt;form&gt;</code> tag. Each form can include different input elements, such as text fields, checkboxes, radio buttons, and submit buttons.
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;form action="/submit-data" method="POST"&gt;<br>
+                            &nbsp;&nbsp;&lt;label for="username"&gt;Username:&lt;/label&gt;<br>
+                            &nbsp;&nbsp;&lt;input type="text" id="username" name="username"&gt;&lt;br&gt;<br>
+                            &nbsp;&nbsp;&lt;label for="password"&gt;Password:&lt;/label&gt;<br>
+                            &nbsp;&nbsp;&lt;input type="password" id="password" name="password"&gt;&lt;br&gt;<br>
+                            &nbsp;&nbsp;&lt;button type="submit"&gt;Submit&lt;/button&gt;<br>
+                            &lt;/form&gt;
+                        </code>
+                    </div>
+                
+                    <h3>Common Form Attributes</h3>
+                    <ul>
+                        <li><strong>action:</strong> Specifies where the form data is sent when the user submits the form.</li>
+                        <li><strong>method:</strong> Defines how the form data is sent (e.g., <code>GET</code> or <code>POST</code>).</li>
+                        <li><strong>enctype:</strong> Specifies the encoding type of the form data (used for file uploads).</li>
+                    </ul>
+                
+                    <h3>Input Elements</h3>
+                    <p>
+                        Forms can contain a variety of input elements to collect user data. Here are some common examples:
+                    </p>
+                    <ul>
+                        <li><code>&lt;input type="text"&gt;</code>: A single-line text input field.</li>
+                        <li><code>&lt;input type="password"&gt;</code>: A field for entering passwords, where input is obscured.</li>
+                        <li><code>&lt;textarea&gt;</code>: A multi-line text input field.</li>
+                        <li><code>&lt;input type="checkbox"&gt;</code>: A checkbox for selecting options.</li>
+                        <li><code>&lt;input type="radio"&gt;</code>: Radio buttons for selecting one option from a group.</li>
+                        <li><code>&lt;input type="submit"&gt;</code>: A button to submit the form.</li>
+                    </ul>
+                
+                    <div class="code-example-html code-example-html-w-image">
+                        <div class="code-block">
+                        <code>
+                            &lt;form&gt;<br>
+                            &nbsp;&nbsp;&lt;label for="email"&gt;Email:&lt;/label&gt;<br>
+                            &nbsp;&nbsp;&lt;input type="email" id="email" name="email"&gt;&lt;br&gt;<br>
+                            &nbsp;&nbsp;&lt;label&gt;Gender:&lt;/label&gt;&lt;br&gt;<br>
+                            &nbsp;&nbsp;&lt;input type="radio" id="male" name="gender" value="male"&gt; Male&lt;br&gt;<br>
+                            &nbsp;&nbsp;&lt;input type="radio" id="female" name="gender" value="female"&gt; Female&lt;br&gt;<br>
+                            &nbsp;&nbsp;&lt;label&gt;Subscribe:&lt;/label&gt;<br>
+                            &nbsp;&nbsp;&lt;input type="checkbox" name="subscribe" value="newsletter"&gt; Newsletter&lt;br&gt;<br>
+                            &nbsp;&nbsp;&lt;button type="submit"&gt;Submit&lt;/button&gt;<br>
+                            &lt;/form&gt;
+                        </code>
+                        </div>
+                        <div class="image-block">
+                            <form id="fake-form">
+                                <!-- Email Section -->
+                                <div>
+                                  <label for="email">Email:</label>
+                                  <input type="email" id="email" name="email">
+                                </div>
+                              
+                                <!-- Gender Section -->
+                                <div>
+                                  <label>Gender:</label>
+                                  <input type="radio" id="male" name="gender" value="male">
+                                  <label for="male">Male</label>
+                                  <input type="radio" id="female" name="gender" value="female">
+                                  <label for="female">Female</label>
+                                </div>
+                              
+                                <!-- Subscription Section -->
+                                <div>
+                                  <input type="checkbox" id="subscribe" name="subscribe" value="newsletter">
+                                  <label for="subscribe">Subscribe to Newsletter</label>
+                                </div>
+                              
+                                <!-- Submit Button -->
+                                <div>
+                                  <button type="button" id="fake-submit">Submit</button>
+                                </div>
+                              </form>
+                              
+                              <script>
+                                // Prevent default form submission behavior
+                                document.getElementById('fake-submit').addEventListener('click', () => {
+                                    alert('This is a demo button. You can customize its functionality with JavaScript.');
+                                });
+                              </script>
+                        </div>
+                    </div>
+                
+                    <h3>Best Practices</h3>
+                    <ul>
+                        <li>Always use <code>&lt;label&gt;</code> tags to associate labels with input fields for better accessibility.</li>
+                        <li>Group related inputs using <code>&lt;fieldset&gt;</code> and <code>&lt;legend&gt;</code> tags.</li>
+                        <li>Validate inputs using HTML attributes like <code>required</code>, <code>maxlength</code>, or <code>pattern</code>.</li>
+                        <li>Use the <code>name</code> attribute to identify data on the server-side.</li>
+                    </ul>
+                
+                    <h3>Example: A Complete Form</h3>
+                    <p>
+                        Below is an example of a complete form:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;form action="/submit" method="POST"&gt;<br>
+                            &nbsp;&nbsp;&lt;fieldset&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;legend&gt;Sign Up&lt;/legend&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="fullname"&gt;Full Name:&lt;/label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="fullname" name="fullname" required&gt;&lt;br&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="email"&gt;Email:&lt;/label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="email" id="email" name="email" required&gt;&lt;br&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="password"&gt;Password:&lt;/label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="password" id="password" name="password" required&gt;&lt;br&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="submit"&gt;Register&lt;/button&gt;<br>
+                            &nbsp;&nbsp;&lt;/fieldset&gt;<br>
+                            &lt;/form&gt;
+                        </code>
+                    </div>
+                
+                    <p>
+                        Forms enable user interaction and provide a way to send data to the server. With practice, you'll be able to create dynamic, user-friendly forms.
+                    </p>
+                
+                    <p>
+                        <a href="./html-forms.html#html-forms-exercises" class="neutral">
+                            Ready to practice? Check out the exercises!
+                        </a>
+                    </p>
+                </div>
+
+                <div class="detailed-plan-klm123" id="html-forms-exercises">
+                    <h2>HTML Forms: Exercises</h2>
+                
+                    <h3>1. Create a Simple Contact Form</h3>
+                    <p>
+                        Design a form with the following fields:
+                        <ul>
+                            <li>A text input for the user's name.</li>
+                            <li>An email input for the user's email address.</li>
+                            <li>A message textarea for user feedback.</li>
+                            <li>A submit button to send the form.</li>
+                        </ul>
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-1">Reveal Answer</button>
+                    <div id="answer-1" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;form action="#" method="post"&gt;<br>
+                            &nbsp;&nbsp;&lt;label for="name"&gt;Name:&lt;/label&gt;<br>
+                            &nbsp;&nbsp;&lt;input type="text" id="name" name="name"&gt;&lt;br&gt;<br>
+                            &nbsp;&nbsp;&lt;label for="email"&gt;Email:&lt;/label&gt;<br>
+                            &nbsp;&nbsp;&lt;input type="email" id="email" name="email"&gt;&lt;br&gt;<br>
+                            &nbsp;&nbsp;&lt;label for="message"&gt;Message:&lt;/label&gt;<br>
+                            &nbsp;&nbsp;&lt;textarea id="message" name="message"&gt;&lt;/textarea&gt;&lt;br&gt;<br>
+                            &nbsp;&nbsp;&lt;button type="submit"&gt;Submit&lt;/button&gt;<br>
+                            &lt;/form&gt;
+                        </code>
+                    </div>
+                
+                    <h3>2. Create a Login Form</h3>
+                    <p>
+                        Create a form with the following fields:
+                        <ul>
+                            <li>A text input for the username.</li>
+                            <li>A password input for the password.</li>
+                            <li>A checkbox to "Remember Me".</li>
+                            <li>A submit button to log in.</li>
+                        </ul>
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-2">Reveal Answer</button>
+                    <div id="answer-2" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;form action="#" method="post"&gt;<br>
+                            &nbsp;&nbsp;&lt;label for="username"&gt;Username:&lt;/label&gt;<br>
+                            &nbsp;&nbsp;&lt;input type="text" id="username" name="username"&gt;&lt;br&gt;<br>
+                            &nbsp;&nbsp;&lt;label for="password"&gt;Password:&lt;/label&gt;<br>
+                            &nbsp;&nbsp;&lt;input type="password" id="password" name="password"&gt;&lt;br&gt;<br>
+                            &nbsp;&nbsp;&lt;label&gt;&lt;input type="checkbox" name="remember"&gt; Remember Me&lt;/label&gt;&lt;br&gt;<br>
+                            &nbsp;&nbsp;&lt;button type="submit"&gt;Log In&lt;/button&gt;<br>
+                            &lt;/form&gt;
+                        </code>
+                    </div>
+                
+                    <h3>3. Add Form Validation</h3>
+                    <p>
+                        Modify a form to include the following validation:
+                        <ul>
+                            <li>Ensure the name field cannot be empty.</li>
+                            <li>Ensure the email field contains a valid email address.</li>
+                            <li>Ensure the message field has a minimum of 10 characters.</li>
+                        </ul>
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-3">Reveal Answer</button>
+                    <div id="answer-3" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;form action="#" method="post"&gt;<br>
+                            &nbsp;&nbsp;&lt;label for="name"&gt;Name:&lt;/label&gt;<br>
+                            &nbsp;&nbsp;&lt;input type="text" id="name" name="name" required&gt;&lt;br&gt;<br>
+                            &nbsp;&nbsp;&lt;label for="email"&gt;Email:&lt;/label&gt;<br>
+                            &nbsp;&nbsp;&lt;input type="email" id="email" name="email" required&gt;&lt;br&gt;<br>
+                            &nbsp;&nbsp;&lt;label for="message"&gt;Message:&lt;/label&gt;<br>
+                            &nbsp;&nbsp;&lt;textarea id="message" name="message" minlength="10" required&gt;&lt;/textarea&gt;&lt;br&gt;<br>
+                            &nbsp;&nbsp;&lt;button type="submit"&gt;Submit&lt;/button&gt;<br>
+                            &lt;/form&gt;
+                        </code>
+                    </div>
+                
+                    <h3>4. Add Radio Buttons</h3>
+                    <p>
+                        Create a form that includes a question: "What is your favorite programming language?" with radio buttons for the following options:
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-4">Reveal Answer</button>
+                    <div id="answer-4" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;form action="#" method="post"&gt;<br>
+                            &nbsp;&nbsp;&lt;p&gt;What is your favorite programming language?&lt;/p&gt;<br>
+                            &nbsp;&nbsp;&lt;label&gt;&lt;input type="radio" name="language" value="html"&gt; HTML&lt;/label&gt;&lt;br&gt;<br>
+                            &nbsp;&nbsp;&lt;label&gt;&lt;input type="radio" name="language" value="css"&gt; CSS&lt;/label&gt;&lt;br&gt;<br>
+                            &nbsp;&nbsp;&lt;label&gt;&lt;input type="radio" name="language" value="javascript"&gt; JavaScript&lt;/label&gt;&lt;br&gt;<br>
+                            &nbsp;&nbsp;&lt;button type="submit"&gt;Submit&lt;/button&gt;<br>
+                            &lt;/form&gt;
+                        </code>
+                    </div>
+                
+                    <h3>5. Use a Dropdown Menu</h3>
+                    <p>
+                        Create a form that asks the user to select their preferred method of communication (Email, Phone, or Text) using a dropdown menu.
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-5">Reveal Answer</button>
+                    <div id="answer-5" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;form action="#" method="post"&gt;<br>
+                            &nbsp;&nbsp;&lt;label for="contact-method"&gt;Preferred Contact Method:&lt;/label&gt;<br>
+                            &nbsp;&nbsp;&lt;select id="contact-method" name="contact-method"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="email"&gt;Email&lt;/option&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="phone"&gt;Phone&lt;/option&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="text"&gt;Text&lt;/option&gt;<br>
+                            &nbsp;&nbsp;&lt;/select&gt;&lt;br&gt;<br>
+                            &nbsp;&nbsp;&lt;button type="submit"&gt;Submit&lt;/button&gt;<br>
+                            &lt;/form&gt;
+                        </code>
+                    </div>
+                
+                    <p>
+                        <a href="./html-divs.html" class="neutral">
+                            Ready to move on? Head to the HTML Divs tutorial!
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <div id="footer-container"></div>
+    
+        <script src="/script.js?v=2"></script>
+    </body>
+</html>

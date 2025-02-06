@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Margins - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="/styles/coding.css">
+</head>
+
+<div id="header-container"></div>
+<body class="html-page-klm123">
+    <link rel="stylesheet" href="../styles/coding.css">
+<main class="html-main-klm123">
+    <!-- Quick Start Plan -->
+    <div id="css-quick-menu"></div>
+
+    <!-- Detailed Plan -->
+    <div class="main-tutorial-content">
+        <div class="detailed-plan-klm123" id="css-margins-tutorial">
+            <h2>CSS Margins</h2>
+            <p>
+                Margins are used to create space around elements, outside of their borders. With margins, you can control the spacing between elements and create visually appealing layouts.
+            </p>
+        
+            <h3>What Are Margins?</h3>
+            <p>
+                A margin is the space between an element's border and its surrounding elements. Margins are completely transparent and do not have any background or visible structure.
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;border: 1px solid black;<br>
+                    &nbsp;&nbsp;margin: 20px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;This is a div with a 20px margin.&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>Setting Margins</h3>
+            <p>
+                Margins can be set using the <code>margin</code> property. You can specify margins in multiple ways:
+            </p>
+            <ul>
+                <li><strong>Single Value:</strong> Applies the same margin to all four sides.</li>
+                <li><strong>Two Values:</strong> The first value applies to the top and bottom margins, and the second value applies to the left and right margins.</li>
+                <li><strong>Four Values:</strong> Apply margins in this order: top, right, bottom, and left.</li>
+            </ul>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;margin: 10px; /* Single value */<br>
+                    &nbsp;&nbsp;margin: 10px 20px; /* Two values */<br>
+                    &nbsp;&nbsp;margin: 10px 15px 20px 25px; /* Four values */<br>
+                    }<br>
+                    &lt;/style&gt;
+                </code>
+            </div>
+        
+            <h3>Margin Shorthand</h3>
+            <p>
+                You can use shorthand to set all four margins in one declaration. The order for the values is:
+            </p>
+            <ol>
+                <li>Top</li>
+                <li>Right</li>
+                <li>Bottom</li>
+                <li>Left</li>
+            </ol>
+            <p>For example:</p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;margin: 10px 15px 20px 25px;<br>
+                    }<br>
+                    &lt;/style&gt;
+                </code>
+            </div>
+        
+            <h3>Auto Margins</h3>
+            <p>
+                Margins can also be set to <code>auto</code>. This is particularly useful for centering elements horizontally within their container.
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 50%;<br>
+                    &nbsp;&nbsp;margin: 0 auto;<br>
+                    &nbsp;&nbsp;border: 1px solid black;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;This div is horizontally centered.&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>Negative Margins</h3>
+            <p>
+                Margins can take negative values to pull elements closer together or even overlap them.
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;margin: -10px;<br>
+                    &nbsp;&nbsp;border: 1px solid black;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;This div has a negative margin.&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>Practical Example</h3>
+            <p>
+                Below is an example of how margins can be used to create spacing between elements:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    .box {<br>
+                    &nbsp;&nbsp;border: 1px solid black;<br>
+                    &nbsp;&nbsp;margin: 20px;<br>
+                    &nbsp;&nbsp;padding: 10px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="box"&gt;Box 1&lt;/div&gt;<br>
+                    &lt;div class="box"&gt;Box 2&lt;/div&gt;
+                </code>
+            </div>
+        
+            <p>
+                <a href="./css-margins.html#css-margins-exercises" class="">Ready to test your knowledge? Head to the exercises section!</a>
+            </p>
+        </div>
+
+        <div class="detailed-plan-klm123" id="css-margins-exercises">
+            <h2>CSS Margins: Exercises</h2>
+        
+            <h3>1. Add Margins to a Paragraph</h3>
+            <p>
+                Create a paragraph with 20px margin on all sides. Add some text inside the paragraph.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-1">Reveal Answer</button>
+            <div id="answer-1" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    p {<br>
+                    &nbsp;&nbsp;margin: 20px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;p&gt;This paragraph has a margin of 20px on all sides.&lt;/p&gt;
+                </code>
+            </div>
+        
+            <h3>2. Add Different Margins</h3>
+            <p>
+                Create a div with different margins: 10px on the top, 15px on the right, 20px on the bottom, and 25px on the left.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-2">Reveal Answer</button>
+            <div id="answer-2" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;margin: 10px 15px 20px 25px;<br>
+                    &nbsp;&nbsp;border: 1px solid black;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;This div has different margins.&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>3. Center a Div with Margins</h3>
+            <p>
+                Use margins to horizontally center a div with a width of 200px.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-3">Reveal Answer</button>
+            <div id="answer-3" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 200px;<br>
+                    &nbsp;&nbsp;margin: 0 auto;<br>
+                    &nbsp;&nbsp;border: 1px solid black;<br>
+                    &nbsp;&nbsp;text-align: center;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;This div is horizontally centered.&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>4. Add Vertical Margins</h3>
+            <p>
+                Create two div elements stacked vertically with 30px margin between them.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-4">Reveal Answer</button>
+            <div id="answer-4" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .box {<br>
+                    &nbsp;&nbsp;margin-bottom: 30px;<br>
+                    &nbsp;&nbsp;border: 1px solid black;<br>
+                    &nbsp;&nbsp;height: 50px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="box"&gt;First div&lt;/div&gt;<br>
+                    &lt;div class="box"&gt;Second div&lt;/div&gt;
+                </code>
+            </div>
+        
+            <div class="navigation-buttons">
+                <a href="./css-borders.html" class="navigation-button prev-button neutral">← CSS Borders</a>
+                <a href="./css-padding.html" class="navigation-button next-button neutral">CSS Padding →</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <div id="footer-container"></div>
+    
+    <script src="/script.js?v=2"></script>
+</body>
+</html>

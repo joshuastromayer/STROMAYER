@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Quick Menu</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+</head>
+
+<body>
+    <section class="quick-start-klm123">
+        <div class="quick-plan-list-klm123">
+            <div id="tutorials-section">
+                <h3>JavaScript Tutorial</h3>
+    
+                <div class="chapter"> <!-- JavaScript Basics -->
+                    <button class="toggle-button" onclick="toggleChapter('javascript-basics')">JavaScript Basics</button>
+                    <ul id="javascript-basics" class="collapsible-content">
+                        <li class="menu-item">
+                            <a href="./js-introduction.html" class="menu-link neutral">JS Introduction </a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-setting-up.html" class="menu-link neutral">JS Setting Up</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-syntax.html" class="menu-link neutral">JS Syntax</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-output.html" class="menu-link neutral">JS Output</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-comments.html" class="menu-link neutral">JS Comments</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="chapter"> <!-- Variables and Data Types -->
+                    <button class="toggle-button" onclick="toggleChapter('javascript-variables')">Variables and Data Types</button>
+                    <ul id="javascript-variables" class="collapsible-content">
+                        <li class="menu-item">
+                            <a href="./js-variables.html" class="menu-link neutral">JS Variables</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-let-var.html" class="menu-link neutral">JS Let and Var</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-const.html" class="menu-link neutral">JS Const</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-data-types.html" class="menu-link neutral">JS Data Types</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-type-conversion.html" class="menu-link neutral">JS Type Conversion</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="chapter"> <!-- Operators -->
+                    <button class="toggle-button" onclick="toggleChapter('javascript-operators')">Operators</button>
+                    <ul id="javascript-operators" class="collapsible-content">
+                        <li class="menu-item">
+                            <a href="./js-arithmetic-operators.html" class="menu-link neutral">Arithmetic Operators</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-assignment-operators.html" class="menu-link neutral">Assignment Operators</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-comparison-operators.html" class="menu-link neutral">Comparison Operators</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-logical-operators.html" class="menu-link neutral">Logical Operators</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-bitwise-operators.html" class="menu-link neutral">Bitwise Operators</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="chapter"> <!-- Control Flow & Loops -->
+                    <button class="toggle-button" onclick="toggleChapter('javascript-control-flow')">Control Flow & Loops</button>
+                    <ul id="javascript-control-flow" class="collapsible-content">
+                        <li class="menu-item">
+                            <a href="./js-if-else.html" class="menu-link neutral">If, Else, and Else If</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-switch.html" class="menu-link neutral">Switch Statements</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-ternary-operator.html" class="menu-link neutral">Ternary Operator</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-loops-introduction.html" class="menu-link neutral">Introduction to Loops</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-for-loops.html" class="menu-link neutral">For Loops</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-while-loops.html" class="menu-link neutral">While Loops</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-do-while-loops.html" class="menu-link neutral">Do While Loops</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-break-continue.html" class="menu-link neutral">Break and Continue</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="chapter"> <!-- Objects & Arrays -->
+                    <button class="toggle-button" onclick="toggleChapter('javascript-objects-arrays')">Objects & Arrays</button>
+                    <ul id="javascript-objects-arrays" class="collapsible-content">
+                        <li class="menu-item">
+                            <a href="./js-introduction-objects.html" class="menu-link neutral">Introduction to Objects</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-creating-objects.html" class="menu-link neutral">Creating Objects ({} vs new Object())</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-accessing-properties.html" class="menu-link neutral">Accessing Object Properties</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-modifying-properties.html" class="menu-link neutral">Modifying Object Properties</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-object-methods.html" class="menu-link neutral">Object Methods (this keyword)</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-object-constructors.html" class="menu-link neutral">Object Constructors</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-object-prototypes.html" class="menu-link neutral">Object Prototypes</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-classes-inheritance.html" class="menu-link neutral">Classes and Inheritance</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-introduction-arrays.html" class="menu-link neutral">Introduction to Arrays</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-creating-modifying-arrays.html" class="menu-link neutral">Creating and Modifying Arrays</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-array-methods.html" class="menu-link neutral">Array Methods (push, pop, shift, unshift)</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-iterating-arrays.html" class="menu-link neutral">Iterating Over Arrays (forEach, map, filter, reduce)</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-sorting-searching-arrays.html" class="menu-link neutral">Sorting and Searching Arrays</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-multidimensional-arrays.html" class="menu-link neutral">Multidimensional Arrays</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="chapter"> <!-- Advanced JavaScript Concepts -->
+                    <button class="toggle-button" onclick="toggleChapter('javascript-advanced')">Advanced JavaScript Concepts</button>
+                    <ul id="javascript-advanced" class="collapsible-content">
+                        <li class="menu-item">
+                            <a href="./js-this-keyword.html" class="menu-link neutral">this Keyword and Function Context</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-es6-modules.html" class="menu-link neutral">ES6 Modules (import and export)</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-destructuring.html" class="menu-link neutral">Destructuring Objects and Arrays</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-spread-rest-operators.html" class="menu-link neutral">Spread and Rest Operators</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-default-parameters.html" class="menu-link neutral">Default Parameters</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-template-literals.html" class="menu-link neutral">Template Literals</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-error-handling.html" class="menu-link neutral">Error Handling (try, catch, finally)</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-strict-mode.html" class="menu-link neutral">JavaScript Strict Mode</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-json.html" class="menu-link neutral">JSON (Parsing and Stringifying)</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-regex.html" class="menu-link neutral">Regular Expressions (RegExp)</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-date-time.html" class="menu-link neutral">JavaScript Date and Time</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="chapter"> <!-- Asynchronous JavaScript -->
+                    <button class="toggle-button" onclick="toggleChapter('javascript-async')">Asynchronous JavaScript</button>
+                    <ul id="javascript-async" class="collapsible-content">
+                        <li class="menu-item">
+                            <a href="./js-async-introduction.html" class="menu-link neutral">Introduction to Asynchronous JavaScript</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-callbacks.html" class="menu-link neutral">Callbacks and Callback Hell</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-promises.html" class="menu-link neutral">Promises in JavaScript</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-async-await.html" class="menu-link neutral">Async/Await</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-fetch-api.html" class="menu-link neutral">Fetch API for HTTP Requests</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-async-error-handling.html" class="menu-link neutral">Error Handling in Asynchronous Code</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="chapter"> <!-- JavaScript in the Browser (DOM & BOM) -->
+                    <button class="toggle-button" onclick="toggleChapter('javascript-browser')">JavaScript in the Browser (DOM & BOM)</button>
+                    <ul id="javascript-browser" class="collapsible-content">
+                        <li class="menu-item">
+                            <a href="./js-dom-introduction.html" class="menu-link neutral">Introduction to the DOM</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-selecting-elements.html" class="menu-link neutral">Selecting Elements (getElementById, querySelector, etc.)</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-modifying-elements.html" class="menu-link neutral">Modifying Elements (innerHTML, textContent, style)</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-adding-removing-elements.html" class="menu-link neutral">Adding and Removing Elements (appendChild, removeChild)</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-event-handling.html" class="menu-link neutral">Handling Events (onclick, addEventListener)</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-event-bubbling.html" class="menu-link neutral">Event Bubbling and Capturing</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-event-delegation.html" class="menu-link neutral">Event Delegation</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-working-with-forms.html" class="menu-link neutral">Working with Forms (submit, input, validation)</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-bom-introduction.html" class="menu-link neutral">The Browser Object Model (BOM)</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-window-object.html" class="menu-link neutral">Window Object and Methods</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-local-session-storage.html" class="menu-link neutral">Local Storage and Session Storage</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-cookies.html" class="menu-link neutral">Cookies in JavaScript</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="chapter"> <!-- Advanced Topics & Best Practices -->
+                    <button class="toggle-button" onclick="toggleChapter('javascript-advanced-topics')">Advanced Topics & Best Practices</button>
+                    <ul id="javascript-advanced-topics" class="collapsible-content">
+                        <li class="menu-item">
+                            <a href="./js-debugging.html" class="menu-link neutral">Debugging in JavaScript (console.log, Breakpoints)</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-performance-optimization.html" class="menu-link neutral">Performance Optimization in JavaScript</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-best-practices.html" class="menu-link neutral">Best Practices for Clean Code</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-common-mistakes.html" class="menu-link neutral">Common Mistakes in JavaScript</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-style-guide.html" class="menu-link neutral">JavaScript Style Guide</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-reserved-keywords.html" class="menu-link neutral">Reserved Keywords in JavaScript</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="chapter"> <!-- JavaScript Frameworks & Libraries -->
+                    <button class="toggle-button" onclick="toggleChapter('javascript-frameworks')">JavaScript Frameworks & Libraries</button>
+                    <ul id="javascript-frameworks" class="collapsible-content">
+                        <li class="menu-item">
+                            <a href="./js-frameworks-introduction.html" class="menu-link neutral">Introduction to JavaScript Frameworks</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-frameworks-overview.html" class="menu-link neutral">Overview of React, Vue, and Angular</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-jquery.html" class="menu-link neutral">Working with jQuery (Selectors, Events, Animations)</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="chapter"> <!-- Web APIs & AJAX -->
+                    <button class="toggle-button" onclick="toggleChapter('javascript-web-apis')">Web APIs & AJAX</button>
+                    <ul id="javascript-web-apis" class="collapsible-content">
+                        <li class="menu-item">
+                            <a href="./js-web-apis-introduction.html" class="menu-link neutral">Introduction to Web APIs</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-fetch-vs-xmlhttprequest.html" class="menu-link neutral">Fetch API vs XMLHttpRequest</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-api-responses.html" class="menu-link neutral">Handling API Responses (JSON & XML)</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-websockets.html" class="menu-link neutral">WebSockets for Real-Time Communication</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="chapter"> <!-- JavaScript for Advanced Web Development -->
+                    <button class="toggle-button" onclick="toggleChapter('javascript-advanced-web-dev')">JavaScript for Advanced Web Development</button>
+                    <ul id="javascript-advanced-web-dev" class="collapsible-content">
+                        <li class="menu-item">
+                            <a href="./js-node-introduction.html" class="menu-link neutral">Introduction to Node.js</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-working-with-apis.html" class="menu-link neutral">Working with APIs and Backend Data</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-websockets-real-time.html" class="menu-link neutral">Introduction to WebSockets and Real-Time Apps</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="chapter"> <!-- Final Projects & Practice -->
+                    <button class="toggle-button" onclick="toggleChapter('javascript-final-projects')">Final Projects & Practice</button>
+                    <ul id="javascript-final-projects" class="collapsible-content">
+                        <li class="menu-item">
+                            <a href="./js-mini-projects.html" class="menu-link neutral">JavaScript Mini Projects (To-Do List, Calculator, etc.)</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./js-interview-prep.html" class="menu-link neutral">JavaScript Interview Questions & Preparation</a>
+                            <button class="status-button" onclick="changeStatus(this)"></button>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+<script src="/script.js"></script>
+</body>
+</html>

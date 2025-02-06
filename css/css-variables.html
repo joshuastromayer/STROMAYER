@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="/styles/coding.css">
+</head>
+
+<div id="header-container"></div>
+<body class="html-page-klm123">
+    <link rel="stylesheet" href="../styles/coding.css">
+<main class="html-main-klm123">
+    <!-- Quick Start Plan -->
+    <div id="css-quick-menu"></div>
+
+    <!-- Detailed Plan -->
+    <div class="main-tutorial-content">
+        <div class="detailed-plan-klm123" id="css-variables-tutorial">
+            <h2>CSS Variables</h2>
+            <p>
+                CSS Variables, also known as custom properties, are reusable values defined in your CSS that can be applied throughout your stylesheet. They make it easier to manage and maintain consistent styling, especially for themes, colors, or repeated values.
+            </p>
+        
+            <h3>Defining and Using Variables</h3>
+            <p>
+                CSS Variables are defined using the <code>--</code> prefix and are applied using the <code>var()</code> function. Variables are typically declared inside a <code>:root</code> selector for global scope:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    :root {<br>
+                    &nbsp;&nbsp;--main-bg-color: lightblue;<br>
+                    &nbsp;&nbsp;--main-text-color: darkblue;<br>
+                    }<br>
+                    body {<br>
+                    &nbsp;&nbsp;background-color: var(--main-bg-color);<br>
+                    &nbsp;&nbsp;color: var(--main-text-color);<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;body&gt;This is a CSS Variables example.&lt;/body&gt;
+                </code>
+            </div>
+            <p>
+                In this example, the background color and text color of the <code>body</code> element are set using CSS Variables.
+            </p>
+        
+            <h3>Variable Scope</h3>
+            <p>
+                CSS Variables are scoped, meaning they can be declared within specific selectors and applied only within those selectors:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    .card {<br>
+                    &nbsp;&nbsp;--card-bg-color: lightyellow;<br>
+                    &nbsp;&nbsp;--card-border-color: darkgoldenrod;<br>
+                    }<br>
+                    .card {<br>
+                    &nbsp;&nbsp;background-color: var(--card-bg-color);<br>
+                    &nbsp;&nbsp;border: 2px solid var(--card-border-color);<br>
+                    &nbsp;&nbsp;padding: 20px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="card"&gt;This is a card.&lt;/div&gt;
+                </code>
+            </div>
+            <p>
+                In this example, the variables <code>--card-bg-color</code> and <code>--card-border-color</code> are applied only within elements with the <code>card</code> class.
+            </p>
+        
+            <h3>Fallback Values</h3>
+            <p>
+                The <code>var()</code> function allows you to specify a fallback value in case the variable is not defined:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    body {<br>
+                    &nbsp;&nbsp;background-color: var(--undefined-bg-color, lightgray);<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;body&gt;This uses a fallback value.&lt;/body&gt;
+                </code>
+            </div>
+            <p>
+                If <code>--undefined-bg-color</code> is not defined, the background color will default to <code>lightgray</code>.
+            </p>
+        
+            <h3>Updating Variables Dynamically</h3>
+            <p>
+                You can update CSS Variables dynamically using JavaScript to create interactive designs:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    :root {<br>
+                    &nbsp;&nbsp;--main-bg-color: lightblue;<br>
+                    }<br>
+                    body {<br>
+                    &nbsp;&nbsp;background-color: var(--main-bg-color);<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;button onclick="changeColor()"&gt;Change Color&lt;/button&gt;<br>
+                    &lt;script&gt;<br>
+                    function changeColor() {<br>
+                    &nbsp;&nbsp;document.documentElement.style.setProperty('--main-bg-color', 'lightcoral');<br>
+                    }<br>
+                    &lt;/script&gt;
+                </code>
+            </div>
+            <p>
+                Clicking the button changes the background color dynamically by updating the <code>--main-bg-color</code> variable.
+            </p>
+        
+            <h3>Advantages of CSS Variables</h3>
+            <p>
+                CSS Variables offer several advantages:
+            </p>
+            <ul>
+                <li>Reusability: Define once and use across multiple elements.</li>
+                <li>Maintainability: Easily update styles by changing variable values.</li>
+                <li>Dynamic Updates: Change values dynamically with JavaScript.</li>
+                <li>Customizable Themes: Quickly implement and switch between design themes.</li>
+            </ul>
+        
+            <p>
+                <a href="./css-variables.html#css-variables-exercises" class="neutral">
+                    Ready to test your knowledge? Head to the exercises section!
+                </a>
+            </p>
+        </div>
+
+        <div class="detailed-plan-klm123" id="css-variables-exercises">
+            <h2>CSS Variables: Exercises</h2>
+        
+            <h3>1. Basic Variable Usage</h3>
+            <p>
+                Define two CSS variables in the <code>:root</code> selector:
+                <ul>
+                    <li><code>--primary-color</code>: lightblue</li>
+                    <li><code>--text-color</code>: darkblue</li>
+                </ul>
+                Apply these variables to style a <code>&lt;div&gt;</code> with:
+                <ul>
+                    <li>Background color: <code>--primary-color</code></li>
+                    <li>Text color: <code>--text-color</code></li>
+                </ul>
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-1">Reveal Answer</button>
+            <div id="answer-1" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    :root {<br>
+                    &nbsp;&nbsp;--primary-color: lightblue;<br>
+                    &nbsp;&nbsp;--text-color: darkblue;<br>
+                    }<br>
+                    div {<br>
+                    &nbsp;&nbsp;background-color: var(--primary-color);<br>
+                    &nbsp;&nbsp;color: var(--text-color);<br>
+                    &nbsp;&nbsp;padding: 20px;<br>
+                    &nbsp;&nbsp;text-align: center;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;This is a CSS Variables example.&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>2. Scoped Variables</h3>
+            <p>
+                Create a card with the following styles:
+                <ul>
+                    <li>Define two scoped variables in the <code>.card</code> class:</li>
+                    <ul>
+                        <li><code>--card-bg</code>: lightyellow</li>
+                        <li><code>--card-border</code>: darkgoldenrod</li>
+                    </ul>
+                    <li>Use these variables for the card's background color and border color.</li>
+                </ul>
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-2">Reveal Answer</button>
+            <div id="answer-2" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .card {<br>
+                    &nbsp;&nbsp;--card-bg: lightyellow;<br>
+                    &nbsp;&nbsp;--card-border: darkgoldenrod;<br>
+                    &nbsp;&nbsp;background-color: var(--card-bg);<br>
+                    &nbsp;&nbsp;border: 2px solid var(--card-border);<br>
+                    &nbsp;&nbsp;padding: 20px;<br>
+                    &nbsp;&nbsp;width: 200px;<br>
+                    &nbsp;&nbsp;text-align: center;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="card"&gt;This is a card.&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>3. Fallback Values</h3>
+            <p>
+                Use the <code>var()</code> function with a fallback value to style a box. Define:
+                <ul>
+                    <li>Background color: A CSS variable named <code>--box-bg</code>.</li>
+                    <li>Fallback color: lightgray (if <code>--box-bg</code> is not defined).</li>
+                </ul>
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-3">Reveal Answer</button>
+            <div id="answer-3" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;background-color: var(--box-bg, lightgray);<br>
+                    &nbsp;&nbsp;width: 100px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;text-align: center;<br>
+                    &nbsp;&nbsp;line-height: 100px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;Fallback Example&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>4. Dynamic Updates with JavaScript</h3>
+            <p>
+                Create a button that dynamically changes the background color of the page to lightcoral when clicked. Use the following steps:
+                <ul>
+                    <li>Define a CSS variable <code>--bg-color</code> in the <code>:root</code> selector with an initial value of lightblue.</li>
+                    <li>Use JavaScript to update <code>--bg-color</code> to lightcoral when the button is clicked.</li>
+                </ul>
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-4">Reveal Answer</button>
+            <div id="answer-4" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    :root {<br>
+                    &nbsp;&nbsp;--bg-color: lightblue;<br>
+                    }<br>
+                    body {<br>
+                    &nbsp;&nbsp;background-color: var(--bg-color);<br>
+                    &nbsp;&nbsp;margin: 0;<br>
+                    &nbsp;&nbsp;padding: 20px;<br>
+                    }<br>
+                    button {<br>
+                    &nbsp;&nbsp;padding: 10px 20px;<br>
+                    &nbsp;&nbsp;background-color: darkblue;<br>
+                    &nbsp;&nbsp;color: white;<br>
+                    &nbsp;&nbsp;border: none;<br>
+                    &nbsp;&nbsp;cursor: pointer;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;button onclick="changeColor()"&gt;Change Background&lt;/button&gt;<br>
+                    &lt;script&gt;<br>
+                    function changeColor() {<br>
+                    &nbsp;&nbsp;document.documentElement.style.setProperty('--bg-color', 'lightcoral');<br>
+                    }<br>
+                    &lt;/script&gt;
+                </code>
+            </div>
+        
+            <h3>5. Practical Example: Themed Cards</h3>
+            <p>
+                Create two cards with the same structure but different themes. Define:
+                <ul>
+                    <li>Variables for each theme (e.g., light and dark) inside their respective classes.</li>
+                    <li>Apply these variables to style the cards differently.</li>
+                </ul>
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-5">Reveal Answer</button>
+            <div id="answer-5" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .light-theme {<br>
+                    &nbsp;&nbsp;--card-bg: white;<br>
+                    &nbsp;&nbsp;--card-text: black;<br>
+                    &nbsp;&nbsp;--card-border: gray;<br>
+                    }<br>
+                    .dark-theme {<br>
+                    &nbsp;&nbsp;--card-bg: black;<br>
+                    &nbsp;&nbsp;--card-text: white;<br>
+                    &nbsp;&nbsp;--card-border: lightgray;<br>
+                    }<br>
+                    .card {<br>
+                    &nbsp;&nbsp;background-color: var(--card-bg);<br>
+                    &nbsp;&nbsp;color: var(--card-text);<br>
+                    &nbsp;&nbsp;border: 1px solid var(--card-border);<br>
+                    &nbsp;&nbsp;padding: 20px;<br>
+                    &nbsp;&nbsp;width: 200px;<br>
+                    &nbsp;&nbsp;text-align: center;<br>
+                    &nbsp;&nbsp;margin-bottom: 20px;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="card light-theme"&gt;Light Theme&lt;/div&gt;<br>
+                    &lt;div class="card dark-theme"&gt;Dark Theme&lt;/div&gt;
+                </code>
+            </div>
+        
+            <div class="navigation-buttons">
+                <a href="./css-shadows.html" class="navigation-button prev-button neutral">← CSS Shadows</a>
+                <a href="./css-z-index.html" class="navigation-button next-button neutral">CSS Z-Index →</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <div id="footer-container"></div>
+    
+    <script src="/script.js?v=2"></script>
+</body>
+</html>

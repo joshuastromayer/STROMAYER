@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Ids - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="../styles/coding.css">
+</head>
+<div id="header-container"></div>
+      <body class="html-page-klm123">
+<link rel="stylesheet" href="../styles/coding.css">
+
+    
+        <main class="html-main-klm123">
+            <!-- Quick Start Plan -->
+            <div id="html-quick-menu"></div>
+    
+            <!-- Detailed Plan -->
+            <div class="main-tutorial-content">
+                <div class="detailed-plan-klm123" id="html-ids-tutorial">
+                    <h2>HTML IDs</h2>
+                    <p>
+                        The <code>id</code> attribute is used to uniquely identify an element on a web page. Unlike classes, which can be shared by multiple elements, an <code>id</code> must be unique within the document.
+                    </p>
+                
+                    <h3>What is an ID?</h3>
+                    <p>
+                        An <code>id</code> is an attribute that provides a unique identifier for an HTML element. This identifier can be used for styling, scripting, or linking to specific parts of a page. IDs are especially useful for JavaScript operations or when creating anchor links.
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;div id="unique-id"&gt;<br>
+                            &nbsp;&nbsp;&lt;p&gt;This div has a unique ID.&lt;/p&gt;<br>
+                            &lt;/div&gt;
+                        </code>
+                    </div>
+                
+                    <h3>Using IDs for Styling</h3>
+                    <p>
+                        You can target an element with a specific <code>id</code> in CSS using the <code>#</code> selector. For example:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;style&gt;<br>
+                            &nbsp;&nbsp;#unique-id { color: red; }<br>
+                            &lt;/style&gt;<br><br>
+                            &lt;div id="unique-id"&gt;This text is red.&lt;/div&gt;
+                        </code>
+                    </div>
+                
+                    <h3>Using IDs for JavaScript</h3>
+                    <p>
+                        IDs are commonly used to target elements in JavaScript. For example, you can change the text of a specific element using its ID:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;div id="greeting"&gt;Hello!&lt;/div&gt;<br>
+                            &lt;script&gt;<br>
+                            &nbsp;&nbsp;document.getElementById("greeting").innerText = "Welcome!";<br>
+                            &lt;/script&gt;
+                        </code>
+                    </div>
+
+                    <h3>Important Note on Styling with IDs and Classes</h3>
+<p>
+    When using CSS to style elements:
+</p>
+<ul>
+    <li>To target an element with a specific <code>id</code>, use the <strong>#</strong> symbol followed by the ID name.</li>
+    <li>To target elements with a specific <code>class</code>, use the <strong>.</strong> (dot) symbol followed by the class name.</li>
+</ul>
+<div class="code-example-html">
+    <code>
+        /* Targeting an ID */<br>
+        #unique-id {<br>
+        &nbsp;&nbsp;color: blue;<br>
+        }<br><br>
+        /* Targeting a class */<br>
+        .shared-class {<br>
+        &nbsp;&nbsp;font-size: 16px;<br>
+        }
+    </code>
+</div>
+                
+                    <h3>Using IDs for Anchor Links</h3>
+                    <p>
+                        IDs can also be used to create anchor links that jump to specific sections of a page. For example:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;a href="#section1"&gt;Go to Section 1&lt;/a&gt;<br>
+                            &lt;h2 id="section1"&gt;Section 1&lt;/h2&gt;
+                        </code>
+                    </div>
+                
+                    <h3>Best Practices for Using IDs</h3>
+                    <p>
+                        While IDs are powerful, they should be used carefully to ensure clean and maintainable code:
+                    </p>
+                    <ul>
+                        <li>Use IDs for unique elements that need to be targeted specifically.</li>
+                        <li>Avoid using IDs for styling multiple elements; use classes for that purpose.</li>
+                        <li>Ensure that each ID is unique within the document to prevent conflicts.</li>
+                        <li>Use meaningful names for IDs to make your code easier to understand.</li>
+                    </ul>
+                
+                    <h3>Example: Combining IDs and Classes</h3>
+                    <p>
+                        You can use both classes and IDs on the same element to combine their benefits. For example:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;style&gt;<br>
+                            &nbsp;&nbsp;#special-text { color: blue; font-weight: bold; }<br>
+                            &nbsp;&nbsp;.highlight { background-color: yellow; }<br>
+                            &lt;/style&gt;<br><br>
+                            &lt;p id="special-text" class="highlight"&gt;This text is blue, bold, and highlighted.&lt;/p&gt;
+                        </code>
+                    </div>
+                
+                    <p>
+                        <a href="./html-ids.html#html-ids-exercises" class="neutral">
+                            Ready to test your knowledge? Head to the exercises section!
+                        </a>
+                    </p>
+                </div>
+
+                <div class="detailed-plan-klm123" id="html-ids-exercises">
+                    <h2>HTML IDs: Exercises</h2>
+                
+                    <h3>1. Create a Unique ID</h3>
+                    <p>
+                        Create a <code>&lt;div&gt;</code> with the ID "welcome-message" that contains the text "Welcome to My Website!".
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-1">Reveal Answer</button>
+                    <div id="answer-1" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;div id="welcome-message"&gt;Welcome to My Website!&lt;/div&gt;
+                        </code>
+                    </div>
+                
+                    <h3>2. Use an ID for Styling</h3>
+                    <p>
+                        Create a <code>&lt;p&gt;</code> element with the ID "highlighted-text" that says "This is important text.". Try use CSS to make the text bold and red.
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-2">Reveal Answer</button>
+                    <div id="answer-2" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;style&gt;<br>
+                            &nbsp;&nbsp;#highlighted-text { color: red; font-weight: bold; }<br>
+                            &lt;/style&gt;<br><br>
+                            &lt;p id="highlighted-text"&gt;This is important text.&lt;/p&gt;
+                        </code>
+                    </div>
+                
+                    <h3>3. Use an ID in JavaScript</h3>
+                    <p>
+                        Create a <code>&lt;button&gt;</code> with the ID "change-text-button". Add a <code>&lt;div&gt;</code> with the ID "target-div" that says "Original Text". Then take a look at the JavaScript below that changes the text inside the <code>&lt;div&gt;</code> to "Updated Text" when the button is clicked.
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-3">Reveal Answer</button>
+                    <div id="answer-3" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;div id="target-div"&gt;Original Text&lt;/div&gt;<br>
+                            &lt;button id="change-text-button"&gt;Change Text&lt;/button&gt;<br>
+                            &lt;script&gt;<br>
+                            &nbsp;&nbsp;document.getElementById("change-text-button").addEventListener("click", function() {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;document.getElementById("target-div").innerText = "Updated Text";<br>
+                            &nbsp;&nbsp;});<br>
+                            &lt;/script&gt;
+                        </code>
+                    </div>
+                
+                    <h3>4. Create an Anchor Link</h3>
+                    <p>
+                        Create a link that jumps to a section on the same page. The link should say "Go to About Section". Create a section with the ID "about-section" that contains the text "About Us".
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-4">Reveal Answer</button>
+                    <div id="answer-4" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;a href="#about-section"&gt;Go to About Section&lt;/a&gt;<br>
+                            &lt;div id="about-section"&gt;About Us&lt;/div&gt;
+                        </code>
+                    </div>
+                
+                    <h3>5. Combine IDs and Classes</h3>
+                    <p>
+                        Create a <code>&lt;p&gt;</code> element with the ID "unique-paragraph" and the class "highlight". Make the text say "This is a unique highlighted paragraph.". Try use CSS to style it with a yellow background (class) and blue text (ID).
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-5">Reveal Answer</button>
+                    <div id="answer-5" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;style&gt;<br>
+                            &nbsp;&nbsp;#unique-paragraph { color: blue; }<br>
+                            &nbsp;&nbsp;.highlight { background-color: yellow; }<br>
+                            &lt;/style&gt;<br><br>
+                            &lt;p id="unique-paragraph" class="highlight"&gt;This is a unique highlighted paragraph.&lt;/p&gt;
+                        </code>
+                    </div>
+                
+                    <p>
+                        <a href="./html-iframe.html" class="neutral">
+                            Ready to move on to Iframes? Let’s go!
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <div id="footer-container"></div>
+    
+        <script src="/script.js?v=2"></script>
+    </body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Head - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="../styles/coding.css">
+</head>
+<div id="header-container"></div>
+      <body class="html-page-klm123">
+<link rel="stylesheet" href="../styles/coding.css">
+
+    
+        <main class="html-main-klm123">
+            <!-- Quick Start Plan -->
+            <div id="html-quick-menu"></div>
+    
+            <!-- Detailed Plan -->
+            <div class="main-tutorial-content">
+                <div class="detailed-plan-klm123" id="html-head-tutorial">
+                    <h2>HTML Head</h2>
+                    <p>
+                        The &lt;head&gt; element in HTML is a container for metadata (data about data) and links to external resources. While the &lt;head&gt; element doesn’t render anything on the webpage itself, it is critical for defining how the webpage behaves and appears.
+                    </p>
+                
+                    <h3>What is the Head Section?</h3>
+                    <p>
+                        The &lt;head&gt; section is placed at the top of an HTML document, before the &lt;body&gt; section. It contains information about the document, such as its title, character encoding, linked stylesheets, scripts, and more.
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="en"&gt;<br>
+                            &nbsp;&nbsp;&lt;head&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;My Webpage&lt;/title&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="styles.css"&gt;<br>
+                            &nbsp;&nbsp;&lt;/head&gt;<br>
+                            &nbsp;&nbsp;&lt;body&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Hello, world!&lt;/p&gt;<br>
+                            &nbsp;&nbsp;&lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </code>
+                    </div>
+                
+                    <h3>Key Elements of the Head Section</h3>
+                    <ul>
+                        <li>
+                            <strong>The Title:</strong> Defines the title of the document, which appears on the browser tab.
+                            <div class="code-example-html">
+                                <code>
+                                    &lt;title&gt;My Website&lt;/title&gt;
+                                </code>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>Meta Tags:</strong> Provide metadata about the document, such as character encoding, description, or viewport settings.
+                            <div class="code-example-html">
+                                <code>
+                                    &lt;meta charset="UTF-8"&gt;<br>
+                                    &lt;meta name="description" content="Learn HTML tutorials"&gt;<br>
+                                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                                </code>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>Linking Stylesheets:</strong> Connect an external CSS file to style your webpage.
+                            <div class="code-example-html">
+                                <code>
+                                    &lt;link rel="stylesheet" href="styles.css"&gt;
+                                </code>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>Adding Scripts:</strong> Link external JavaScript files or add inline JavaScript.
+                            <div class="code-example-html">
+                                <code>
+                                    &lt;script src="script.js"&gt;&lt;/script&gt;
+                                </code>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>Favicon:</strong> Add a small icon that appears in the browser tab.
+                            <div class="code-example-html">
+                                <code>
+                                    &lt;link rel="icon" href="favicon.ico" type="image/x-icon"&gt;
+                                </code>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>SEO Metadata:</strong> Provide keywords and descriptions to help search engines understand your page.
+                            <div class="code-example-html">
+                                <code>
+                                    &lt;meta name="keywords" content="HTML, CSS, Web Development"&gt;<br>
+                                    &lt;meta name="author" content="Your Name"&gt;
+                                </code>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>Other Resources:</strong> Link fonts, icons, or other external resources.
+                            <div class="code-example-html">
+                                <code>
+                                    &lt;link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"&gt;
+                                </code>
+                            </div>
+                        </li>
+                    </ul>
+                
+                    <h3>Importance of the Head Section</h3>
+                    <p>
+                        The &lt;head&gt; section provides critical information that helps browsers, search engines, and other technologies understand your webpage. It also allows you to link external files and define global settings for your page.
+                    </p>
+                
+                    <h3>Example: A Fully Configured Head Section</h3>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="en"&gt;<br>
+                            &nbsp;&nbsp;&lt;head&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;My Webpage&lt;/title&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="description" content="Learn HTML tutorials"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="icon" href="favicon.ico" type="image/x-icon"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="styles.css"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="script.js"&gt;&lt;/script&gt;<br>
+                            &nbsp;&nbsp;&lt;/head&gt;<br>
+                            &nbsp;&nbsp;&lt;body&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Welcome to my webpage!&lt;/p&gt;<br>
+                            &nbsp;&nbsp;&lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div id="footer-container"></div>
+    
+        <script src="/script.js?v=2"></script>
+    </body>
+</html>

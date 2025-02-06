@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Variables - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="/styles/coding.css">
+</head>
+
+<div id="header-container"></div>
+<body class="html-page-klm123">
+    <link rel="stylesheet" href="/styles/coding.css">
+    <main class="html-main-klm123">
+        <!-- Quick Start Plan -->
+        <div id="js-quick-menu"></div>
+    
+        <!-- Detailed Plan -->
+        <div class="main-tutorial-content">
+            <div class="detailed-plan-klm123" id="js-variables-tutorial">
+                <h2>JS Variables</h2>
+                <p>
+                    Variables in JavaScript allow you to store and manage data in your programs. They act as containers for values that can be used and manipulated throughout your code.
+                </p>
+            
+                <h3>Declaring Variables</h3>
+                <p>
+                    JavaScript provides three keywords for declaring variables: <b>var</b>, <b>let</b>, and <b>const</b>. Each has different rules and use cases.
+                </p>
+            
+                <h3>Using <b>var</b></h3>
+                <p>
+                    The <b>var</b> keyword was traditionally used to declare variables in JavaScript. However, it has some quirks related to scoping, so it is now less commonly used.
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        &lt;script&gt;<br>
+                        var name = "John"; // Declaring a variable<br>
+                        console.log(name); // Output: John<br>
+                        &lt;/script&gt;
+                    </code>
+                </div>
+            
+                <h3>Using <b>let</b></h3>
+                <p>
+                    The <b>let</b> keyword is now the preferred way to declare variables in JavaScript. It allows you to create variables that can be reassigned later.
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        &lt;script&gt;<br>
+                        let age = 25;<br>
+                        age = 26; // Reassigning a new value<br>
+                        console.log(age); // Output: 26<br>
+                        &lt;/script&gt;
+                    </code>
+                </div>
+            
+                <h3>Using <b>const</b></h3>
+                <p>
+                    The <b>const</b> keyword is used for variables that should not change once they are assigned.
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        &lt;script&gt;<br>
+                        const country = "USA";<br>
+                        console.log(country); // Output: USA<br>
+                        &lt;/script&gt;
+                    </code>
+                </div>
+            
+                <h3>Rules for Naming Variables</h3>
+                <ul>
+                    <li>Variable names must start with a letter, <b>_</b> (underscore), or <b>$</b> (dollar sign).</li>
+                    <li>They cannot start with a number.</li>
+                    <li>JavaScript is case-sensitive: <b>age</b> and <b>Age</b> are different variables.</li>
+                    <li>Variable names should be descriptive (e.g., <b>userName</b> instead of <b>x</b>).</li>
+                </ul>
+            
+                <h3>Next Steps</h3>
+                <p>
+                    In the next section, we’ll explore <b>Let and Var</b> in detail to understand their key differences.
+                </p>
+            
+                <p>
+                    <a href="./js-variables.html#js-variables-exercises" class="neutral">
+                        Ready to test your knowledge? Head to the exercises section!
+                    </a>
+                </p>
+            </div>
+            
+            <div class="detailed-plan-klm123" id="js-variables-exercises">
+                <h2>JS Variables: Exercises</h2>
+            
+                <h3>1. Declare a Variable</h3>
+                <p>
+                    Declare a variable named <b>favoriteColor</b> and assign it the value <b>"blue"</b>. Then, log it to the console.
+                </p>
+                <button class="reveal-answer-btn" data-answer-id="answer-1">Reveal Answer</button>
+                <div id="answer-1" class="code-example-html blurred-answer">
+                    <code>
+                        &lt;script&gt;<br>
+                        let favoriteColor = "blue";<br>
+                        console.log(favoriteColor);<br>
+                        &lt;/script&gt;
+                    </code>
+                </div>
+            
+                <h3>2. Reassign a Variable</h3>
+                <p>
+                    Declare a variable named <b>userAge</b> using <b>let</b>, assign it a value of <b>30</b>, and then change it to <b>31</b>.
+                </p>
+                <button class="reveal-answer-btn" data-answer-id="answer-2">Reveal Answer</button>
+                <div id="answer-2" class="code-example-html blurred-answer">
+                    <code>
+                        &lt;script&gt;<br>
+                        let userAge = 30;<br>
+                        userAge = 31;<br>
+                        console.log(userAge); // Output: 31<br>
+                        &lt;/script&gt;
+                    </code>
+                </div>
+            
+                <h3>3. Create a Constant</h3>
+                <p>
+                    Declare a constant variable named <b>PI</b> with the value <b>3.14159</b> and log it to the console.
+                </p>
+                <button class="reveal-answer-btn" data-answer-id="answer-3">Reveal Answer</button>
+                <div id="answer-3" class="code-example-html blurred-answer">
+                    <code>
+                        &lt;script&gt;<br>
+                        const PI = 3.14159;<br>
+                        console.log(PI);<br>
+                        &lt;/script&gt;
+                    </code>
+                </div>
+            
+                <h3>4. Incorrect Variable Naming</h3>
+                <p>
+                    Which of the following variable names are invalid in JavaScript?
+                </p>
+                <ul>
+                    <li><b>1name</b></li>
+                    <li><b>user-name</b></li>
+                    <li><b>_private</b></li>
+                    <li><b>$price</b></li>
+                </ul>
+                <p>
+                    <b>Hint:</b> Numbers cannot be at the start, and hyphens are not allowed in variable names.
+                </p>
+                <button class="reveal-answer-btn" data-answer-id="answer-4">Reveal Answer</button>
+                <div id="answer-4" class="code-example-html blurred-answer">
+                    <code>
+                        &lt;!-- Invalid variable names: 1name and user-name --&gt;<br>
+                        &lt;!-- Valid variable names: _private and $price --&gt;
+                    </code>
+                </div>
+            
+                <div class="navigation-buttons">
+                    <a href="./js-comments.html" class="navigation-button prev-button neutral">&lt; JS Comments</a>
+                    <a href="./js-let-var.html" class="navigation-button next-button neutral">JS Let and Var &gt;</a>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <div id="footer-container"></div>
+    
+    <script src="/script.js?v=2"></script>
+</body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Queries - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="/styles/coding.css">
+</head>
+
+<div id="header-container"></div>
+<body class="html-page-klm123">
+    <link rel="stylesheet" href="../styles/coding.css">
+<main class="html-main-klm123">
+    <!-- Quick Start Plan -->
+    <div id="css-quick-menu"></div>
+
+    <!-- Detailed Plan -->
+    <div class="main-tutorial-content">
+        <div class="detailed-plan-klm123" id="css-media-queries-tutorial">
+            <h2>CSS Media Queries</h2>
+            <p>
+                Media queries in CSS allow you to apply styles based on the characteristics of the user's device or viewport, such as its width, height, orientation, or resolution. This makes it a powerful tool for creating responsive designs that adapt to different screen sizes and devices.
+            </p>
+        
+            <h3>Basic Syntax</h3>
+            <p>
+                A media query consists of a <code>@media</code> rule followed by a condition and a block of CSS rules to apply if the condition is true. For example:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    @media (max-width: 600px) {<br>
+                    &nbsp;&nbsp;body {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;}<br>
+                    }<br>
+                    &lt;/style&gt;
+                </code>
+            </div>
+            <p>
+                In this example, the background color of the body changes to lightblue if the viewport width is 600px or less.
+            </p>
+        
+            <h3>Using Multiple Conditions</h3>
+            <p>
+                You can use logical operators like <code>and</code>, <code>or</code>, and <code>not</code> to combine or negate conditions in media queries:
+            </p>
+            <ul>
+                <li><code>and</code>: Combine multiple conditions.</li>
+                <li><code>or</code> (comma-separated queries): Apply if any condition is true.</li>
+                <li><code>not</code>: Negate a condition.</li>
+            </ul>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    @media (min-width: 601px) and (max-width: 1200px) {<br>
+                    &nbsp;&nbsp;body {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;background-color: lightgreen;<br>
+                    &nbsp;&nbsp;}<br>
+                    }<br>
+                    @media not (min-width: 601px) {<br>
+                    &nbsp;&nbsp;body {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;background-color: lightcoral;<br>
+                    &nbsp;&nbsp;}<br>
+                    }<br>
+                    &lt;/style&gt;
+                </code>
+            </div>
+            <p>
+                In these examples, the first rule applies when the viewport width is between 601px and 1200px. The second rule applies when the viewport width is less than 601px.
+            </p>
+        
+            <h3>Common Use Cases</h3>
+            <p>
+                Media queries are commonly used to create responsive designs. Here are some typical use cases:
+            </p>
+            <ul>
+                <li>Changing font sizes or styles based on screen size.</li>
+                <li>Adjusting the layout for mobile, tablet, and desktop devices.</li>
+                <li>Hiding or showing elements based on device characteristics.</li>
+            </ul>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    @media (max-width: 768px) {<br>
+                    &nbsp;&nbsp;nav {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;display: none;<br>
+                    &nbsp;&nbsp;}<br>
+                    }<br>
+                    @media (orientation: landscape) {<br>
+                    &nbsp;&nbsp;body {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;font-size: 18px;<br>
+                    &nbsp;&nbsp;}<br>
+                    }<br>
+                    &lt;/style&gt;
+                </code>
+            </div>
+            <p>
+                The first rule hides the navigation bar on screens 768px or smaller. The second rule increases the font size when the device is in landscape orientation.
+            </p>
+        
+            <h3>Breakpoints</h3>
+            <p>
+                Breakpoints are specific widths where your design adapts to different devices. Common breakpoints include:
+            </p>
+            <ul>
+                <li><strong>320px–480px</strong>: Small devices (e.g., phones).</li>
+                <li><strong>481px–768px</strong>: Medium devices (e.g., tablets).</li>
+                <li><strong>769px–1024px</strong>: Large devices (e.g., small laptops).</li>
+                <li><strong>1025px–1200px</strong>: Extra-large devices (e.g., desktops).</li>
+            </ul>
+            <p>
+                For example:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    @media (max-width: 480px) {<br>
+                    &nbsp;&nbsp;body {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;}<br>
+                    }<br>
+                    @media (min-width: 481px) and (max-width: 768px) {<br>
+                    &nbsp;&nbsp;body {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;background-color: lightgreen;<br>
+                    &nbsp;&nbsp;}<br>
+                    }<br>
+                    @media (min-width: 769px) {<br>
+                    &nbsp;&nbsp;body {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;background-color: lightcoral;<br>
+                    &nbsp;&nbsp;}<br>
+                    }<br>
+                    &lt;/style&gt;
+                </code>
+            </div>
+        
+            <p>
+                <a href="./css-media-queries.html#css-media-queries-exercises" class="neutral">
+                    Ready to test your knowledge? Head to the exercises section!
+                </a>
+            </p>
+        </div>
+
+        <div class="detailed-plan-klm123" id="css-media-queries-exercises">
+            <h2>CSS Media Queries: Exercises</h2>
+        
+            <h3>1. Basic Media Query</h3>
+            <p>
+                Create a media query that changes the background color of the page to lightblue when the viewport width is 600px or smaller. Write the CSS rule and test it by resizing your browser window.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-1">Reveal Answer</button>
+            <div id="answer-1" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    @media (max-width: 600px) {<br>
+                    &nbsp;&nbsp;body {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;}<br>
+                    }<br>
+                    &lt;/style&gt;
+                </code>
+            </div>
+        
+            <h3>2. Multiple Conditions</h3>
+            <p>
+                Write a media query that applies the following styles only when the viewport width is between 601px and 1200px:
+                <ul>
+                    <li>Change the font size of all <code>&lt;p&gt;</code> elements to 18px.</li>
+                    <li>Set the background color of the body to lightgreen.</li>
+                </ul>
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-2">Reveal Answer</button>
+            <div id="answer-2" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    @media (min-width: 601px) and (max-width: 1200px) {<br>
+                    &nbsp;&nbsp;p {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;font-size: 18px;<br>
+                    &nbsp;&nbsp;}<br>
+                    &nbsp;&nbsp;body {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;background-color: lightgreen;<br>
+                    &nbsp;&nbsp;}<br>
+                    }<br>
+                    &lt;/style&gt;
+                </code>
+            </div>
+        
+            <h3>3. Orientation-Based Styles</h3>
+            <p>
+                Create a media query that applies the following styles when the device is in landscape orientation:
+                <ul>
+                    <li>Set the text color of all headings (<code>&lt;h1&gt;</code>–<code>&lt;h6&gt;</code>) to darkblue.</li>
+                    <li>Change the background color of the body to lightyellow.</li>
+                </ul>
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-3">Reveal Answer</button>
+            <div id="answer-3" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    @media (orientation: landscape) {<br>
+                    &nbsp;&nbsp;h1, h2, h3, h4, h5, h6 {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;color: darkblue;<br>
+                    &nbsp;&nbsp;}<br>
+                    &nbsp;&nbsp;body {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;background-color: lightyellow;<br>
+                    &nbsp;&nbsp;}<br>
+                    }<br>
+                    &lt;/style&gt;
+                </code>
+            </div>
+        
+            <h3>4. Hiding Elements</h3>
+            <p>
+                Create a media query that hides the navigation bar (a <code>&lt;nav&gt;</code> element) when the viewport width is smaller than 768px. Use the <code>display: none</code> property to hide the element.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-4">Reveal Answer</button>
+            <div id="answer-4" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    @media (max-width: 768px) {<br>
+                    &nbsp;&nbsp;nav {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;display: none;<br>
+                    &nbsp;&nbsp;}<br>
+                    }<br>
+                    &lt;/style&gt;
+                </code>
+            </div>
+        
+            <h3>5. Breakpoints for Layout</h3>
+            <p>
+                Use media queries to implement the following layout adjustments:
+                <ul>
+                    <li>For viewports smaller than 600px, set the font size of the body to 14px.</li>
+                    <li>For viewports between 600px and 1200px, set the font size of the body to 16px.</li>
+                    <li>For viewports larger than 1200px, set the font size of the body to 18px.</li>
+                </ul>
+                Write the CSS code for these breakpoints.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-5">Reveal Answer</button>
+            <div id="answer-5" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    @media (max-width: 600px) {<br>
+                    &nbsp;&nbsp;body {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;font-size: 14px;<br>
+                    &nbsp;&nbsp;}<br>
+                    }<br>
+                    @media (min-width: 601px) and (max-width: 1200px) {<br>
+                    &nbsp;&nbsp;body {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;font-size: 16px;<br>
+                    &nbsp;&nbsp;}<br>
+                    }<br>
+                    @media (min-width: 1201px) {<br>
+                    &nbsp;&nbsp;body {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;font-size: 18px;<br>
+                    &nbsp;&nbsp;}<br>
+                    }<br>
+                    &lt;/style&gt;
+                </code>
+            </div>
+        
+            <h3>6. Complex Media Query</h3>
+            <p>
+                Write a media query that applies the following styles only when the viewport width is between 768px and 1024px, and the device is in portrait orientation:
+                <ul>
+                    <li>Set the background color of the body to lightgray.</li>
+                    <li>Set the font size of all paragraphs (<code>&lt;p&gt;</code>) to 20px.</li>
+                </ul>
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-6">Reveal Answer</button>
+            <div id="answer-6" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {<br>
+                    &nbsp;&nbsp;body {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;background-color: lightgray;<br>
+                    &nbsp;&nbsp;}<br>
+                    &nbsp;&nbsp;p {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;font-size: 20px;<br>
+                    &nbsp;&nbsp;}<br>
+                    }<br>
+                    &lt;/style&gt;
+                </code>
+            </div>
+        
+            <div class="navigation-buttons">
+                <a href="./css-adv-selectors.html" class="navigation-button prev-button neutral">← CSS Advanced Selectors</a>
+                <a href="./css-responsive.html" class="navigation-button next-button neutral">CSS Responsive →</a>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+    <div id="footer-container"></div>
+    
+    <script src="/script.js?v=2"></script>
+</body>
+</html>
