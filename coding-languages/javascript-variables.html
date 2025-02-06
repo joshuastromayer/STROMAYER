@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Javascript - Variables</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <script src="/script.js" defer></script>
+    <style>
+        #header-container {
+          height: 72px; /* Match header height */
+          background-color: white; /* Same as header's background */
+          width: 100%; /* Full width */
+          position: sticky;
+          top: 0;
+          z-index: 1000;
+        }
+      </style>
+</head>
+
+<div id="header-container"></div>
+<body class="html-page-klm123">
+    <link rel="stylesheet" href="../styles/coding.css">
+        <header class="html-header-klm123">
+        <h1>Master JavaScript: Build Dynamic Experiences</h1>
+        <p>Step into the world of dynamic and interactive web development.</p>
+    </header>
+
+    <main class="html-main-klm123">
+        <!-- Quick Start Plan -->
+        <section class="quick-start-klm123">
+            <div class="quick-plan-list-klm123">
+                <div id="tutorials-section">
+                    <h3>JS Tutorial</h3>
+                    <div class="chapter"> <!-- Introduction -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-introduction')">Introduction</button>
+                        <ul id="javascript-introduction" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript.html#javascript-introduction-tutorial" class="menu-link neutral">What is JavaScript?</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript.html#javascript-why-learn-tutorial" class="menu-link neutral">Why Learn JavaScript?</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript.html#javascript-setting-up-tutorial" class="menu-link neutral">Setting Up JavaScript</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript.html#javascript-first-script-tutorial" class="menu-link neutral">Your First JavaScript Script</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript.html#javascript-console-log-tutorial" class="menu-link neutral">Using console.log</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- Variables and Data Types -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-variables-section')">Variables and Data Types</button>
+                        <ul id="javascript-variables-section" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-variables.html#javascript-variables-intro-tutorial" class="menu-link neutral">Introduction to Variables</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-variables.html#javascript-const-let-var-tutorial" class="menu-link neutral">Const, Let, and Var</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-variables.html#javascript-dynamic-typing-tutorial" class="menu-link neutral">Dynamic Typing in JavaScript</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-variables.html#javascript-variable-scope-tutorial" class="menu-link neutral">Variable Scope</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- Operators -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-operators')">Operators</button>
+                        <ul id="javascript-operators" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-operators.html#javascript-arithmetic-operators-tutorial" class="menu-link neutral">Arithmetic Operators</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-operators.html#javascript-comparison-operators-tutorial" class="menu-link neutral">Comparison Operators</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-operators.html#javascript-logical-operators-tutorial" class="menu-link neutral">Logical Operators</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-operators.html#javascript-assignment-operators-tutorial" class="menu-link neutral">Assignment Operators</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-operators.html#javascript-bitwise-operators-tutorial" class="menu-link neutral">Bitwise Operators</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-operators.html#javascript-ternary-operators-tutorial" class="menu-link neutral">Ternary Operators</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- Control Flow -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-control-flow')">Control Flow</button>
+                        <ul id="javascript-control-flow" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-control-flow.html#javascript-if-else-tutorial" class="menu-link neutral">If, Else, and Else If</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-control-flow.html#javascript-switch-tutorial" class="menu-link neutral">Switch Statements</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-control-flow.html#javascript-ternary-operator-tutorial" class="menu-link neutral">Ternary Operator</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-control-flow.html#javascript-nested-conditionals-tutorial" class="menu-link neutral">Nested Conditionals</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-control-flow.html#javascript-short-circuiting-tutorial" class="menu-link neutral">Short-Circuiting</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- Loops -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-loops')">Loops</button>
+                        <ul id="javascript-loops" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-loops.html#javascript-for-loops-tutorial" class="menu-link neutral">For Loops</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-loops.html#javascript-while-loops-tutorial" class="menu-link neutral">While Loops</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-loops.html#javascript-do-while-loops-tutorial" class="menu-link neutral">Do While Loops</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-loops.html#javascript-break-and-continue-tutorial" class="menu-link neutral">Break and Continue</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-loops.html#javascript-nested-loops-tutorial" class="menu-link neutral">Nested Loops</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- Functions -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-functions')">Functions</button>
+                        <ul id="javascript-functions" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-functions.html#javascript-what-are-functions-tutorial" class="menu-link neutral">What are Functions?</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-functions.html#javascript-function-declarations-tutorial" class="menu-link neutral">Function Declarations</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-functions.html#javascript-function-expressions-tutorial" class="menu-link neutral">Function Expressions</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-functions.html#javascript-arrow-functions-tutorial" class="menu-link neutral">Arrow Functions</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-functions.html#javascript-parameters-and-arguments-tutorial" class="menu-link neutral">Parameters and Arguments</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-functions.html#javascript-return-values-tutorial" class="menu-link neutral">Return Values</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- Objects -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-objects')">Objects</button>
+                        <ul id="javascript-objects" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-objects.html#javascript-what-are-objects-tutorial" class="menu-link neutral">What are Objects?</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-objects.html#javascript-creating-objects-tutorial" class="menu-link neutral">Creating Objects</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-objects.html#javascript-accessing-properties-tutorial" class="menu-link neutral">Accessing Properties</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-objects.html#javascript-modifying-objects-tutorial" class="menu-link neutral">Modifying Objects</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-objects.html#javascript-nested-objects-tutorial" class="menu-link neutral">Nested Objects</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-objects.html#javascript-object-methods-tutorial" class="menu-link neutral">Object Methods</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- Arrays -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-arrays')">Arrays</button>
+                        <ul id="javascript-arrays" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-arrays.html#javascript-what-are-arrays-tutorial" class="menu-link neutral">What are Arrays?</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-arrays.html#javascript-creating-arrays-tutorial" class="menu-link neutral">Creating Arrays</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-arrays.html#javascript-accessing-elements-tutorial" class="menu-link neutral">Accessing Elements</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-arrays.html#javascript-modifying-arrays-tutorial" class="menu-link neutral">Modifying Arrays</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-arrays.html#javascript-array-methods-tutorial" class="menu-link neutral">Array Methods</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-arrays.html#javascript-multidimensional-arrays-tutorial" class="menu-link neutral">Multidimensional Arrays</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- Events -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-events')">Events</button>
+                        <ul id="javascript-events" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-events.html#javascript-introduction-to-events-tutorial" class="menu-link neutral">Introduction to Events</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-events.html#javascript-event-listeners-tutorial" class="menu-link neutral">Event Listeners</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-events.html#javascript-common-events-tutorial" class="menu-link neutral">Common Events</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-events.html#javascript-event-bubbling-capturing-tutorial" class="menu-link neutral">Event Bubbling and Capturing</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-events.html#javascript-preventing-default-tutorial" class="menu-link neutral">Preventing Default Behavior</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-events.html#javascript-delegation-tutorial" class="menu-link neutral">Event Delegation</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- DOM Manipulation -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-dom-manipulation')">DOM Manipulation</button>
+                        <ul id="javascript-dom-manipulation" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-dom-manipulation.html#javascript-what-is-dom-tutorial" class="menu-link neutral">What is the DOM?</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-dom-manipulation.html#javascript-selecting-elements-tutorial" class="menu-link neutral">Selecting Elements</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-dom-manipulation.html#javascript-modifying-elements-tutorial" class="menu-link neutral">Modifying Elements</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-dom-manipulation.html#javascript-adding-removing-elements-tutorial" class="menu-link neutral">Adding and Removing Elements</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-dom-manipulation.html#javascript-styling-elements-tutorial" class="menu-link neutral">Styling Elements</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-dom-manipulation.html#javascript-navigating-dom-tutorial" class="menu-link neutral">Navigating the DOM</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Exercise Section -->
+            </div>
+        </section>
+ 
+        <!-- Detailed Plan -->
+        <div class="main-tutorial-content">
+            <!-- Tutorials -->
+            <div id="javascript-variables-intro-tutorial" class="detailed-plan-klm123">
+                <h2>Introduction to Variables</h2>
+                <p>
+                    Variables are the foundation of any programming language. They allow you to store and manipulate data throughout your code. Think of variables as containers where you can temporarily keep information, such as numbers, text, or other types of data, to use whenever you need.
+                </p>
+            
+                <h3>Why Use Variables?</h3>
+                <p>
+                    Imagine you want to calculate the total price of items in a shopping cart. Instead of writing the same numbers repeatedly, you can store these values in variables and use them in calculations. Variables make your code reusable, readable, and flexible.
+                </p>
+            
+                <h3>How Do Variables Work?</h3>
+                <p>
+                    In JavaScript, variables are created using specific keywords, which tell the browser that you're defining a new container for data. You can then assign a value to this variable, and the browser remembers it for later use.
+                </p>
+            
+                <h3>Declaring Variables</h3>
+                <p>
+                    To create (or declare) a variable in JavaScript, you use one of three keywords: <strong><code>var</code></strong>, <strong><code>let</code></strong>, or <strong><code>const</code></strong>. Here’s an example of declaring a variable:
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        let name = "John";<br>
+                        let age = 25;<br>
+                        let isStudent = true;
+                    </code>
+                </div>
+                <p>
+                    In this example:
+                    <ul>
+                        <li><code>name</code> is a variable that stores the string <code>"John"</code>.</li>
+                        <li><code>age</code> is a variable that stores the number <code>25</code>.</li>
+                        <li><code>isStudent</code> is a variable that stores the boolean value <code>true</code> (true or false).</li>
+                    </ul>
+                </p>
+            
+                <h3>Assigning Values</h3>
+                <p>
+                    When you declare a variable, you can immediately assign it a value using the <code>=</code> (assignment) operator. For example:
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        let favoriteColor;<br>
+                        favoriteColor = "blue";
+                    </code>
+                </div>
+                <p>
+                    Here:
+                    <ul>
+                        <li>The variable <code>favoriteColor</code> is declared without a value initially.</li>
+                        <li>Later, the value <code>"blue"</code> is assigned to it using <code>=</code>.</li>
+                    </ul>
+                </p>
+            
+                <h3>Rules for Naming Variables</h3>
+                <p>
+                    JavaScript has a few rules for naming variables:
+                </p>
+                <ul>
+                    <li>Variable names can only contain letters, numbers, underscores (<code>_</code>), or dollar signs (<code>$</code>).</li>
+                    <li>Variable names cannot start with a number.</li>
+                    <li>JavaScript is case-sensitive, so <code>myVariable</code> and <code>MyVariable</code> are different.</li>
+                    <li>Avoid using JavaScript keywords like <code>let</code>, <code>function</code>, or <code>return</code> as variable names.</li>
+                </ul>
+            
+                <h3>Good Practices for Variables</h3>
+                <p>
+                    - Use descriptive names: Instead of <code>x</code>, use <code>totalPrice</code>.<br>
+                    - Follow consistent naming conventions like camelCase: <code>firstName</code>, <code>itemCount</code>.
+                </p>
+            
+                <h3>Next Steps</h3>
+                <p>
+                    Now that you’ve learned the basics of variables, the next section will explore the difference between <code>var</code>, <code>let</code>, and <code>const</code> in JavaScript.
+                </p>
+                <a href="#javascript-variables.html#javascript-const-let-var-tutorial" class="neutral">Ready to explore <code>var</code>, <code>let</code>, and <code>const</code>?</a>
+                <h3>Questions</h3>
+    <ol>
+        <li><strong>What is the purpose of variables in programming?</strong></li>
+        <li><strong>What are the three keywords used to declare variables in JavaScript?</strong></li>
+        <li><strong>Can a variable name start with a number? Why or why not?</strong></li>
+        <li><strong>What will happen if you declare two variables with the same name using <code>let</code>?</strong></li>
+        <li><strong>Write an example of a variable that stores the name of a city.</strong></li>
+    </ol>
+    <a href="#javascript-introduction-to-variables-exercises" class="neutral">Ready to see how you did? View the answers here!</a>
+
+            </div>
+            <div id="javascript-const-let-var-tutorial" class="detailed-plan-klm123">
+                <h2>Const, let, and var</h2>
+                <p>
+                    In JavaScript, variables are declared using one of three keywords: <code>var</code>, <code>let</code>, and <code>const</code>. Each of these has specific use cases and behaves differently. Understanding their differences is crucial for writing clean, efficient, and bug-free code.
+                </p>
+            
+                <h3>The Old Way: <code>var</code></h3>
+                <p>
+                    Before ES6 (released in 2015), JavaScript only had the <code>var</code> keyword for declaring variables. However, <code>var</code> has certain limitations and quirks that often lead to bugs.
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        var name = "Alice";<br>
+                        var age = 30;<br>
+                        console.log(name, age); // Output: Alice 30
+                    </code>
+                </div>
+                <p>
+                    **Key Characteristics of <code>var</code>:**
+                    <ul>
+                        <li>**Function Scope**: Variables declared with <code>var</code> are scoped to the function they are declared in, not the block (e.g., <code>if</code> or <code>for</code>).</li>
+                        <li>**Re-declaration**: You can declare the same variable multiple times using <code>var</code>, which can lead to accidental overwrites.</li>
+                        <li>**Hoisting**: Variables declared with <code>var</code> are "hoisted" to the top of their scope, meaning they can be used before they are declared (though their value will be <code>undefined</code>).</li>
+                    </ul>
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        console.log(greeting); // Output: undefined<br>
+                        var greeting = "Hello, world!";
+                    </code>
+                </div>
+            
+                <h3>The Modern Way: <code>let</code> and <code>const</code></h3>
+                <p>
+                    With ES6, two new keywords—<code>let</code> and <code>const</code>—were introduced to fix the shortcomings of <code>var</code>. These are now the preferred ways to declare variables.
+                </p>
+            
+                <h4><code>let</code></h4>
+                <p>
+                    Use <code>let</code> when you need a variable that can be reassigned. It is block-scoped, meaning it is limited to the block, statement, or expression where it is declared.
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        let count = 0;<br>
+                        count = count + 1;<br>
+                        console.log(count); // Output: 1
+                    </code>
+                </div>
+                <p>
+                    **Key Characteristics of <code>let</code>:**
+                    <ul>
+                        <li>**Block Scope**: Variables declared with <code>let</code> are only accessible within the block they are defined in.</li>
+                        <li>**No Re-declaration**: You cannot declare a variable with the same name in the same scope using <code>let</code>.</li>
+                        <li>**Hoisting**: Like <code>var</code>, <code>let</code> is hoisted, but it cannot be accessed before its declaration (this is called the Temporal Dead Zone).</li>
+                    </ul>
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        console.log(value); // ReferenceError: Cannot access 'value' before initialization<br>
+                        let value = 10;
+                    </code>
+                </div>
+            
+                <h4><code>const</code></h4>
+                <p>
+                    Use <code>const</code> when you want to declare a variable that should not be reassigned. Like <code>let</code>, <code>const</code> is block-scoped.
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        const pi = 3.14;<br>
+                        // pi = 3.15; // Error: Assignment to constant variable
+                    </code>
+                </div>
+                <p>
+                    **Key Characteristics of <code>const</code>:**
+                    <ul>
+                        <li>**Block Scope**: Just like <code>let</code>, it is limited to the block it is defined in.</li>
+                        <li>**No Reassignment**: Once a value is assigned to a <code>const</code> variable, it cannot be changed. However, for objects and arrays, their contents can still be modified.</li>
+                    </ul>
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        const person = { name: "John", age: 25 };<br>
+                        person.age = 26; // This works<br>
+                        console.log(person.age); // Output: 26
+                    </code>
+                </div>
+            
+                <h3>When to Use Each</h3>
+                <p>
+                    - Use <code>const</code> by default for variables that should not be reassigned.<br>
+                    - Use <code>let</code> when you know the variable's value will change.<br>
+                    - Avoid <code>var</code> unless you're working with older code or need function-scoped behavior.
+                </p>
+            
+                <h3>Next Steps</h3>
+                <p>
+                    Now that you understand the differences between <code>const</code>, <code>let</code>, and <code>var</code>, the next section will introduce JavaScript's dynamic typing, which allows variables to change their type dynamically.
+                </p>
+                <a href="./javascript-variables.html#javascript-dynamic-typing-tutorial" class="neutral">Ready to explore dynamic typing?</a>
+                <h3>Questions</h3>
+<ol>
+    <li><strong>What are the three keywords used to declare variables in JavaScript?</strong></li>
+    <li><strong>How does <code>var</code> differ from <code>let</code>?</strong></li>
+    <li><strong>What will happen if you try to reassign a <code>const</code> variable?</strong></li>
+    <li><strong>Explain the concept of "block scope" in JavaScript. Which keywords follow this scope?</strong></li>
+    <li><strong>Write an example showing how to modify a property of a <code>const</code> object.</strong></li>
+</ol>
+
+<!-- Link to the exercises -->
+<p>
+    <a href="./javascript-variables.html#javascript-const-let-var-exercises" class="neutral">
+        Ready to check your answers? Head to the exercises section!
+    </a>
+</p>
+            </div>
+            <div id="javascript-dynamic-typing-tutorial" class="detailed-plan-klm123">
+                <h2>Dynamic Typing in JavaScript</h2>
+                <p>
+                    JavaScript is a dynamically typed language, which means that variables are not bound to any specific data type. 
+                    Instead, the type of a variable is determined at runtime, based on the value assigned to it. This flexibility can 
+                    make JavaScript both powerful and challenging to work with.
+                </p>
+            
+                <h3>What Does "Dynamic Typing" Mean?</h3>
+                <p>
+                    In statically typed languages like Java or C++, you must declare the type of a variable when defining it. In JavaScript, 
+                    you don't need to specify a type. The same variable can hold values of different types during its lifetime.
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        let value = 42; // value is a number<br>
+                        console.log(typeof value); // Output: "number"<br><br>
+            
+                        value = "Hello, world!"; // value is now a string<br>
+                        console.log(typeof value); // Output: "string"
+                    </code>
+                </div>
+            
+                <h3>Advantages of Dynamic Typing</h3>
+                <ul>
+                    <li><strong>Flexibility:</strong> You can reassign variables to different types without errors.</li>
+                    <li><strong>Conciseness:</strong> Less boilerplate code since you don’t need to declare types explicitly.</li>
+                </ul>
+            
+                <h3>Challenges of Dynamic Typing</h3>
+                <ul>
+                    <li><strong>Type Errors:</strong> Since types are determined at runtime, unexpected errors can occur if the wrong type is used.</li>
+                    <li><strong>Debugging Complexity:</strong> Bugs related to type mismatches can be harder to identify.</li>
+                </ul>
+            
+                <h3>Common Type Conversion Scenarios</h3>
+                <p>
+                    JavaScript often converts data types automatically (known as type coercion). This can lead to surprising results if you're not careful.
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        console.log(5 + "5"); // Output: "55" (number + string → string concatenation)<br>
+                        console.log(5 - "3"); // Output: 2 (string → number for subtraction)<br>
+                        console.log(true + 1); // Output: 2 (boolean → number)<br>
+                        console.log(false + " is false"); // Output: "false is false" (boolean → string)
+                    </code>
+                </div>
+            
+                <h3>Using <code>typeof</code> to Check Types</h3>
+                <p>
+                    You can use the <code>typeof</code> operator to check the type of a variable at runtime:
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        let value = 10;<br>
+                        console.log(typeof value); // Output: "number"<br><br>
+            
+                        value = "JavaScript";<br>
+                        console.log(typeof value); // Output: "string"
+                    </code>
+                </div>
+            
+                <h3>Best Practices</h3>
+                <ul>
+                    <li>Use <code>typeof</code> to validate types when needed.</li>
+                    <li>Avoid unnecessary type coercion by using strict equality (<code>===</code>) instead of loose equality (<code>==</code>).</li>
+                    <li>Use descriptive variable names to clarify their intended type or purpose.</li>
+                </ul>
+
+                
+                <h3>Next Steps</h3>
+                <p>
+                    Now that you’ve learned about dynamic typing, the next section will explore variable scope in JavaScript, which determines where variables are accessible in your code.
+                </p>
+                <a href="./javascript-variables.html#javascript-variable-scope-tutorial" class="neutral">Ready to learn about variable scope?</a>
+            
+            <h3>Questions</h3>
+<ol>
+<li><strong>What does it mean for JavaScript to be dynamically typed?</strong></li>
+<li><strong>How can you check the type of a variable in JavaScript?</strong></li>
+<li><strong>What is type coercion in JavaScript? Provide an example.</strong></li>
+<li><strong>Why might dynamic typing lead to unexpected errors?</strong></li>
+<li><strong>Write an example showing how the same variable can hold values of different types.</strong></li>
+</ol>
+<p></p>
+    <a href="./javascript-variables.html#javascript-dynamic-typing-exercises" class="neutral">
+        Ready to check your answers? Head to the exercises section!
+    </a>
+</p>
+            </div>
+            <div id="javascript-variable-scope-tutorial" class="detailed-plan-klm123">
+                <h2>Variable Scope</h2>
+                <p>
+                    Variable scope in JavaScript determines where a variable is accessible in your code. 
+                    It is one of the most important concepts to understand for writing clean, bug-free programs.
+                </p>
+            
+                <h3>Types of Scope</h3>
+                <p>
+                    In JavaScript, there are three main types of scope:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Global Scope:</strong> Variables declared outside of any function or block are in the global scope 
+                        and can be accessed anywhere in the program.
+                    </li>
+                    <li>
+                        <strong>Function Scope:</strong> Variables declared inside a function using <code>var</code> are limited 
+                        to that function.
+                    </li>
+                    <li>
+                        <strong>Block Scope:</strong> Variables declared with <code>let</code> or <code>const</code> are only accessible 
+                        within the block where they are defined (e.g., inside a loop or an <code>if</code> statement).
+                    </li>
+                </ul>
+            
+                <h3>Examples of Each Scope</h3>
+                <h4>Global Scope</h4>
+                <div class="code-example-html">
+                    <code>
+                        let globalVar = "I am global";<br><br>
+            
+                        function testScope() {<br>
+                            console.log(globalVar); // Output: "I am global"<br>
+                        }<br><br>
+            
+                        testScope();<br>
+                        console.log(globalVar); // Output: "I am global"
+                    </code>
+                </div>
+            
+                <h4>Function Scope</h4>
+                <div class="code-example-html">
+                    <code>
+                        function testFunctionScope() {<br>
+                            var localVar = "I am local";<br>
+                            console.log(localVar); // Output: "I am local"<br>
+                        }<br><br>
+            
+                        testFunctionScope();<br>
+                        console.log(localVar); // ReferenceError: localVar is not defined
+                    </code>
+                </div>
+            
+                <h4>Block Scope</h4>
+                <div class="code-example-html">
+                    <code>
+                        if (true) {<br>
+                            let blockVar = "I am block scoped";<br>
+                            console.log(blockVar); // Output: "I am block scoped"<br>
+                        }<br><br>
+            
+                        console.log(blockVar); // ReferenceError: blockVar is not defined
+                    </code>
+                </div>
+            
+                <h3>Scope Rules with <code>var</code>, <code>let</code>, and <code>const</code></h3>
+                <ul>
+                    <li>
+                        <strong><code>var</code>:</strong> Has function scope. If declared outside a function, it becomes globally scoped. 
+                        <code>var</code> variables are also hoisted but initialized with <code>undefined</code>.
+                    </li>
+                    <li>
+                        <strong><code>let</code>:</strong> Has block scope. It is hoisted but remains in the "temporal dead zone" until declared.
+                    </li>
+                    <li>
+                        <strong><code>const</code>:</strong> Like <code>let</code>, it has block scope, but its value cannot be reassigned.
+                    </li>
+                </ul>
+            
+                <h3>Common Pitfalls</h3>
+                <ul>
+                    <li>
+                        Declaring variables with <code>var</code> inside loops can cause unexpected behavior due to function scope.
+                    </li>
+                    <li>
+                        Forgetting to declare a variable (e.g., <code>x = 10</code>) automatically creates a global variable, 
+                        which can lead to bugs. Always use <code>let</code> or <code>const</code>.
+                    </li>
+                </ul>
+            
+                <h3>Best Practices</h3>
+                <ul>
+                    <li>Use <code>const</code> for values that won't change, and <code>let</code> for values that might change.</li>
+                    <li>Minimize the use of global variables to avoid unexpected interactions between different parts of your code.</li>
+                    <li>Always declare variables explicitly to avoid creating unintended globals.</li>
+                </ul>
+            
+                <h3>Next Steps</h3>
+<p>
+    Now that you’ve learned about dynamic typing, the next section will explore **Arithmetic Operators** in JavaScript, 
+    which are used for performing basic mathematical operations.
+</p>
+<a href="./javascript-operators.html#javascript-arithmetic-operators-tutorial" class="neutral">Ready to learn about Arithmetic Operators?</a>
+                <h3>Questions</h3>
+<ol>
+    <li><strong>What are the three main types of scope in JavaScript?</strong></li>
+    <li><strong>What is the difference between global scope and function scope?</strong></li>
+    <li><strong>Which keywords in JavaScript are block-scoped?</strong></li>
+    <li><strong>Why is it considered a bad practice to create global variables?</strong></li>
+    <li><strong>Write an example showing the difference between function scope and block scope.</strong></li>
+</ol>
+
+<p>
+    <a href="./javascript-variables.html#javascript-variable-scope-exercises" class="neutral">
+        Ready to check your answers? Head to the exercises section!
+    </a>
+</p>
+            </div>
+            <!-- Exercises -->
+            <div id="javascript-introduction-to-variables-exercises" class="detailed-plan-klm123">
+                <h2>Introduction to Variables: Exercises</h2>
+            
+                <!-- Question 1 -->
+                <h3>What is the purpose of variables in programming?</h3>
+                <div class="code-example-html">
+                    <p>Variables are used to store and manage data in a program. They allow developers to reference and manipulate this data throughout their code, making programs dynamic and reusable.</p>
+                </div>
+            
+                <!-- Question 2 -->
+                <h3>What are the three keywords used to declare variables in JavaScript?</h3>
+                <div class="code-example-html">
+                    <p>The three keywords are:</p>
+                    <ul>
+                        <li><code>var</code>: The old way of declaring variables (global or function-scoped).</li>
+                        <li><code>let</code>: Block-scoped variable declaration introduced in ES6.</li>
+                        <li><code>const</code>: Block-scoped constant declaration introduced in ES6.</li>
+                    </ul>
+                </div>
+            
+                <!-- Question 3 -->
+                <h3>Can a variable name start with a number? Why or why not?</h3>
+                <div class="code-example-html">
+                    <p>No, a variable name cannot start with a number because JavaScript syntax rules do not allow it. Variable names must begin with a letter, underscore (<code>_</code>), or dollar sign (<code>$</code>).</p>
+                </div>
+            
+                <!-- Question 4 -->
+                <h3>What will happen if you declare two variables with the same name using <code>let</code>?</h3>
+                <div class="code-example-html">
+                    <p>An error will occur if you declare two variables with the same name in the same scope using <code>let</code>. This is because <code>let</code> does not allow redeclaration within the same block scope.</p>
+                </div>
+            
+                <!-- Question 5 -->
+                <h3>Write an example of a variable that stores the name of a city.</h3>
+                <div class="code-example-html">
+                    <code>
+                        let city = "New York";
+                    </code>
+                </div>
+                <p>
+                    <a href="./javascript-variables.html#javascript-const-let-var-tutorial" class="neutral">
+                        Ready to move on to <strong>const, let, and var</strong>?
+                    </a>
+                </p>
+            </div>
+            <div id="javascript-const-let-var-exercises" class="detailed-plan-klm123">
+                <h2>Const, Let, and Var: Exercises</h2>
+            
+                <!-- Question 1 -->
+                <h3>What are the three keywords used to declare variables in JavaScript?</h3>
+                <div class="code-example-html">
+                    <p>The three keywords are:</p>
+                    <ul>
+                        <li><code>var</code>: The old way of declaring variables (global or function-scoped).</li>
+                        <li><code>let</code>: Block-scoped variable declaration introduced in ES6.</li>
+                        <li><code>const</code>: Block-scoped constant declaration introduced in ES6.</li>
+                    </ul>
+                </div>
+            
+                <!-- Question 2 -->
+                <h3>How does <code>var</code> differ from <code>let</code>?</h3>
+                <div class="code-example-html">
+                    <p><code>var</code> is function-scoped and allows re-declaration, while <code>let</code> is block-scoped and does not allow re-declaration within the same scope. Additionally, variables declared with <code>var</code> are hoisted to the top of their scope, whereas <code>let</code> variables are also hoisted but remain in the "temporal dead zone" until declared.</p>
+                </div>
+            
+                <!-- Question 3 -->
+                <h3>What will happen if you try to reassign a <code>const</code> variable?</h3>
+                <div class="code-example-html">
+                    <p>Reassigning a <code>const</code> variable will result in a TypeError because variables declared with <code>const</code> cannot be reassigned after their initial value is set.</p>
+                </div>
+            
+                <!-- Question 4 -->
+                <h3>Explain the concept of "block scope" in JavaScript. Which keywords follow this scope?</h3>
+                <div class="code-example-html">
+                    <p>Block scope means that a variable is only accessible within the block (e.g., <code>{}</code>) in which it is defined. Both <code>let</code> and <code>const</code> follow block scope, whereas <code>var</code> does not.</p>
+                </div>
+            
+                <!-- Question 5 -->
+                <h3>Write an example showing how to modify a property of a <code>const</code> object.</h3>
+                <div class="code-example-html">
+                    <code>
+                        const person = { name: "John", age: 25 };<br>
+                        person.age = 26; // This works<br>
+                        console.log(person.age); // Output: 26
+                    </code>
+                </div>
+            
+                <!-- Link to the next tutorial -->
+                <p>
+                    <a href="./javascript-variables.html#javascript-dynamic-typing-tutorial" class="neutral">
+                        Ready to move on to <strong>Dynamic Typing in JavaScript</strong>?
+                    </a>
+                </p>
+            </div>
+            <div id="javascript-dynamic-typing-exercises" class="detailed-plan-klm123">
+                <h2>Dynamic Typing in JavaScript: Exercises</h2>
+            
+                <!-- Question 1 -->
+                <h3>What does it mean for JavaScript to be dynamically typed?</h3>
+                <div class="code-example-html">
+                    <p>
+                        JavaScript is dynamically typed, meaning that variables are not bound to a specific type. 
+                        The type of a variable is determined at runtime, allowing the same variable to hold values 
+                        of different types during its lifetime.
+                    </p>
+                </div>
+            
+                <!-- Question 2 -->
+                <h3>How can you check the type of a variable in JavaScript?</h3>
+                <div class="code-example-html">
+                    <p>
+                        You can use the <code>typeof</code> operator to check the type of a variable at runtime. For example:
+                    </p>
+                    <code>
+                        let value = 42;<br>
+                        console.log(typeof value); // Output: "number"<br><br>
+            
+                        value = "Hello";<br>
+                        console.log(typeof value); // Output: "string"
+                    </code>
+                </div>
+            
+                <!-- Question 3 -->
+                <h3>What is type coercion in JavaScript? Provide an example.</h3>
+                <div class="code-example-html">
+                    <p>
+                        Type coercion is JavaScript's automatic conversion of one data type to another. For example:
+                    </p>
+                    <code>
+                        console.log(5 + "5"); // Output: "55" (number converted to string)<br>
+                        console.log(5 - "3"); // Output: 2 (string converted to number)
+                    </code>
+                </div>
+            
+                <!-- Question 4 -->
+                <h3>Why might dynamic typing lead to unexpected errors?</h3>
+                <div class="code-example-html">
+                    <p>
+                        Dynamic typing can lead to unexpected errors because the type of a variable can change at runtime. 
+                        For example, if a variable that was expected to hold a number suddenly contains a string, operations 
+                        like arithmetic can produce incorrect or unintended results.
+                    </p>
+                </div>
+            
+                <!-- Question 5 -->
+                <h3>Write an example showing how the same variable can hold values of different types.</h3>
+                <div class="code-example-html">
+                    <code>
+                        let data = 42;<br>
+                        console.log(typeof data); // Output: "number"<br><br>
+            
+                        data = "Hello, world!";<br>
+                        console.log(typeof data); // Output: "string"
+                    </code>
+                </div>
+            
+                <!-- Link to the next tutorial -->
+                <p>
+                    <a href="./javascript-variables.html#javascript-variable-scope-tutorial" class="neutral">
+                        Ready to move on to <strong>Variable Scope</strong>?
+                    </a>
+                </p>
+            </div>
+            <div id="javascript-variable-scope-exercises" class="detailed-plan-klm123">
+                <h2>Variable Scope: Exercises</h2>
+            
+                <!-- Question 1 -->
+                <h3>What are the three main types of scope in JavaScript?</h3>
+                <div class="code-example-html">
+                    <p>The three main types of scope are:</p>
+                    <ul>
+                        <li><strong>Global Scope:</strong> Variables declared outside of any function or block.</li>
+                        <li><strong>Function Scope:</strong> Variables declared inside a function using <code>var</code>.</li>
+                        <li><strong>Block Scope:</strong> Variables declared inside a block (e.g., <code>{}</code>) using <code>let</code> or <code>const</code>.</li>
+                    </ul>
+                </div>
+            
+                <!-- Question 2 -->
+                <h3>What is the difference between global scope and function scope?</h3>
+                <div class="code-example-html">
+                    <p>
+                        Global scope means the variable is accessible anywhere in the program, whereas function scope restricts the 
+                        variable’s accessibility to the function where it is declared.
+                    </p>
+                </div>
+            
+                <!-- Question 3 -->
+                <h3>Which keywords in JavaScript are block-scoped?</h3>
+                <div class="code-example-html">
+                    <p>
+                        The keywords <code>let</code> and <code>const</code> are block-scoped in JavaScript. Variables declared with 
+                        these keywords are only accessible within the block where they are defined.
+                    </p>
+                </div>
+            
+                <!-- Question 4 -->
+                <h3>Why is it considered a bad practice to create global variables?</h3>
+                <div class="code-example-html">
+                    <p>
+                        Creating global variables is discouraged because:
+                    </p>
+                    <ul>
+                        <li>They can lead to naming conflicts, especially in larger programs.</li>
+                        <li>They make debugging harder since any part of the code can modify them.</li>
+                        <li>They increase the risk of unintended side effects, as they are accessible from anywhere in the program.</li>
+                    </ul>
+                </div>
+            
+                <!-- Question 5 -->
+                <h3>Write an example showing the difference between function scope and block scope.</h3>
+                <div class="code-example-html">
+                    <code>
+                        function testScope() {<br>
+                            var functionScoped = "I am function scoped";<br>
+                            if (true) {<br>
+                                let blockScoped = "I am block scoped";<br>
+                                console.log(blockScoped); // Output: "I am block scoped"<br>
+                            }<br>
+                            console.log(functionScoped); // Output: "I am function scoped"<br>
+                            // console.log(blockScoped); // ReferenceError: blockScoped is not defined<br>
+                        }<br>
+                        testScope();
+                    </code>
+                </div>
+            
+                <!-- Link to the next tutorial -->
+                <p>
+                    <a href="./javascript-operators.html#javascript-arithmetic-operators-tutorial" class="neutral">
+                        Ready to move on to the next topic?
+                    </a>
+                </p>
+            </div>
+    </main>
+
+    <div id="footer-container"></div>
+    </body>
+</html>

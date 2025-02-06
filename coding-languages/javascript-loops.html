@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Javascript - Control Flow</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <script src="/script.js" defer></script>
+</head>
+
+<div id="header-container"></div>
+<body class="html-page-klm123">
+    <link rel="stylesheet" href="../styles/coding.css">
+        <header class="html-header-klm123">
+        <h1>Master JavaScript: Build Dynamic Experiences</h1>
+        <p>Step into the world of dynamic and interactive web development.</p>
+    </header>
+
+    <main class="html-main-klm123">
+        <!-- Quick Start Plan -->
+        <section class="quick-start-klm123">
+            <div class="quick-plan-list-klm123">
+                <div id="tutorials-section">
+                    <h3>JS Tutorial</h3>
+                    <div class="chapter"> <!-- Introduction -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-introduction')">Introduction</button>
+                        <ul id="javascript-introduction" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript.html#javascript-introduction-tutorial" class="menu-link neutral">What is JavaScript?</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript.html#javascript-why-learn-tutorial" class="menu-link neutral">Why Learn JavaScript?</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript.html#javascript-setting-up-tutorial" class="menu-link neutral">Setting Up JavaScript</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript.html#javascript-first-script-tutorial" class="menu-link neutral">Your First JavaScript Script</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript.html#javascript-console-log-tutorial" class="menu-link neutral">Using console.log</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- Variables and Data Types -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-variables-section')">Variables and Data Types</button>
+                        <ul id="javascript-variables-section" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-variables.html#javascript-variables-intro-tutorial" class="menu-link neutral">Introduction to Variables</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-variables.html#javascript-const-let-var-tutorial" class="menu-link neutral">Const, Let, and Var</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-variables.html#javascript-dynamic-typing-tutorial" class="menu-link neutral">Dynamic Typing in JavaScript</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-variables.html#javascript-variable-scope-tutorial" class="menu-link neutral">Variable Scope</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- Operators -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-operators')">Operators</button>
+                        <ul id="javascript-operators" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-operators.html#javascript-arithmetic-operators-tutorial" class="menu-link neutral">Arithmetic Operators</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-operators.html#javascript-comparison-operators-tutorial" class="menu-link neutral">Comparison Operators</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-operators.html#javascript-logical-operators-tutorial" class="menu-link neutral">Logical Operators</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-operators.html#javascript-assignment-operators-tutorial" class="menu-link neutral">Assignment Operators</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-operators.html#javascript-bitwise-operators-tutorial" class="menu-link neutral">Bitwise Operators</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-operators.html#javascript-ternary-operators-tutorial" class="menu-link neutral">Ternary Operators</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- Control Flow -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-control-flow')">Control Flow</button>
+                        <ul id="javascript-control-flow" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-control-flow.html#javascript-if-else-tutorial" class="menu-link neutral">If, Else, and Else If</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-control-flow.html#javascript-switch-tutorial" class="menu-link neutral">Switch Statements</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-control-flow.html#javascript-ternary-operator-tutorial" class="menu-link neutral">Ternary Operator</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-control-flow.html#javascript-nested-conditionals-tutorial" class="menu-link neutral">Nested Conditionals</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-control-flow.html#javascript-short-circuiting-tutorial" class="menu-link neutral">Short-Circuiting</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- Loops -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-loops')">Loops</button>
+                        <ul id="javascript-loops" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-loops.html#javascript-for-loops-tutorial" class="menu-link neutral">For Loops</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-loops.html#javascript-while-loops-tutorial" class="menu-link neutral">While Loops</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-loops.html#javascript-do-while-loops-tutorial" class="menu-link neutral">Do While Loops</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-loops.html#javascript-break-and-continue-tutorial" class="menu-link neutral">Break and Continue</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-loops.html#javascript-nested-loops-tutorial" class="menu-link neutral">Nested Loops</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- Functions -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-functions')">Functions</button>
+                        <ul id="javascript-functions" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-functions.html#javascript-what-are-functions-tutorial" class="menu-link neutral">What are Functions?</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-functions.html#javascript-function-declarations-tutorial" class="menu-link neutral">Function Declarations</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-functions.html#javascript-function-expressions-tutorial" class="menu-link neutral">Function Expressions</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-functions.html#javascript-arrow-functions-tutorial" class="menu-link neutral">Arrow Functions</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-functions.html#javascript-parameters-and-arguments-tutorial" class="menu-link neutral">Parameters and Arguments</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-functions.html#javascript-return-values-tutorial" class="menu-link neutral">Return Values</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- Objects -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-objects')">Objects</button>
+                        <ul id="javascript-objects" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-objects.html#javascript-what-are-objects-tutorial" class="menu-link neutral">What are Objects?</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-objects.html#javascript-creating-objects-tutorial" class="menu-link neutral">Creating Objects</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-objects.html#javascript-accessing-properties-tutorial" class="menu-link neutral">Accessing Properties</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-objects.html#javascript-modifying-objects-tutorial" class="menu-link neutral">Modifying Objects</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-objects.html#javascript-nested-objects-tutorial" class="menu-link neutral">Nested Objects</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-objects.html#javascript-object-methods-tutorial" class="menu-link neutral">Object Methods</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- Arrays -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-arrays')">Arrays</button>
+                        <ul id="javascript-arrays" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-arrays.html#javascript-what-are-arrays-tutorial" class="menu-link neutral">What are Arrays?</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-arrays.html#javascript-creating-arrays-tutorial" class="menu-link neutral">Creating Arrays</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-arrays.html#javascript-accessing-elements-tutorial" class="menu-link neutral">Accessing Elements</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-arrays.html#javascript-modifying-arrays-tutorial" class="menu-link neutral">Modifying Arrays</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-arrays.html#javascript-array-methods-tutorial" class="menu-link neutral">Array Methods</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-arrays.html#javascript-multidimensional-arrays-tutorial" class="menu-link neutral">Multidimensional Arrays</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- Events -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-events')">Events</button>
+                        <ul id="javascript-events" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-events.html#javascript-introduction-to-events-tutorial" class="menu-link neutral">Introduction to Events</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-events.html#javascript-event-listeners-tutorial" class="menu-link neutral">Event Listeners</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-events.html#javascript-common-events-tutorial" class="menu-link neutral">Common Events</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-events.html#javascript-event-bubbling-capturing-tutorial" class="menu-link neutral">Event Bubbling and Capturing</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-events.html#javascript-preventing-default-tutorial" class="menu-link neutral">Preventing Default Behavior</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-events.html#javascript-delegation-tutorial" class="menu-link neutral">Event Delegation</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chapter"> <!-- DOM Manipulation -->
+                        <button class="toggle-button" onclick="toggleChapter('javascript-dom-manipulation')">DOM Manipulation</button>
+                        <ul id="javascript-dom-manipulation" class="collapsible-content">
+                            <li class="menu-item">
+                                <a href="./javascript-dom-manipulation.html#javascript-what-is-dom-tutorial" class="menu-link neutral">What is the DOM?</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-dom-manipulation.html#javascript-selecting-elements-tutorial" class="menu-link neutral">Selecting Elements</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-dom-manipulation.html#javascript-modifying-elements-tutorial" class="menu-link neutral">Modifying Elements</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-dom-manipulation.html#javascript-adding-removing-elements-tutorial" class="menu-link neutral">Adding and Removing Elements</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-dom-manipulation.html#javascript-styling-elements-tutorial" class="menu-link neutral">Styling Elements</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./javascript-dom-manipulation.html#javascript-navigating-dom-tutorial" class="menu-link neutral">Navigating the DOM</a>
+                                <button class="status-button" onclick="changeStatus(this)"></button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Exercise Section -->
+            </div>
+        </section>
+        <div class="main-tutorial-content">
+            <!-- Tutorials -->
+            <div class="detailed-plan-klm123" id="javascript-for-loops-tutorial">
+                <h2>JavaScript For Loops</h2>
+                <p>Loops are one of the most important tools in programming. They allow you to execute a block of code multiple times without writing repetitive statements. In JavaScript, the <code>for</code> loop is a powerful and flexible loop that is often used to iterate over arrays, run a block of code a specific number of times, or perform tasks in a sequential manner.</p>
+                
+                <h3>How the For Loop Works</h3>
+                <p>A <code>for</code> loop in JavaScript has the following syntax:</p>
+                <div class="code-example-html">
+                    <code>
+                        for (initialization; condition; increment/decrement) {<br>
+                            &nbsp;&nbsp;// Code to be executed<br>
+                        }
+                    </code>
+                </div>
+                <p>The loop consists of three main parts:</p>
+                <ul>
+                    <li><strong>Initialization:</strong> This sets up the loop variable, typically as <code>let i = 0;</code>.</li>
+                    <li><strong>Condition:</strong> The loop continues running as long as this condition evaluates to <code>true</code>.</li>
+                    <li><strong>Increment/Decrement:</strong> This is where you update the loop variable, such as <code>i++</code> (increment by 1).</li>
+                </ul>
+            
+                <h3>Example of a For Loop</h3>
+                <p>Here’s a basic example that prints numbers from 1 to 5 in the console:</p>
+                <div class="code-example-html">
+                    <code>
+                        for (let i = 1; i <= 5; i++) {<br>
+                            &nbsp;&nbsp;console.log(i);<br>
+                        }
+                    </code>
+                </div>
+                <p>Output:</p>
+                <div class="code-example-html">
+                    <code>
+                        1<br>
+                        2<br>
+                        3<br>
+                        4<br>
+                        5
+                    </code>
+                </div>
+            
+                <h3>When to Use For Loops</h3>
+                <p>For loops are particularly useful when you know how many times you need to execute a block of code. For example:</p>
+                <ul>
+                    <li>Iterating over an array of items.</li>
+                    <li>Performing tasks a fixed number of times.</li>
+                    <li>Generating sequences or patterns.</li>
+                </ul>
+            
+                <h3>Common Mistakes</h3>
+                <ul>
+                    <li>Forgetting to update the loop variable, which can lead to infinite loops.</li>
+                    <li>Incorrect condition that either ends the loop too soon or doesn’t end it at all.</li>
+                    <li>Off-by-one errors (e.g., using <code>&lt;</code> instead of <code>&lt;=</code>).</li>
+                </ul>
+                <p>
+                    <a href="./javascript-loops.html#javascript-for-loops-exercise" class="neutral">
+                        Ready to check your answers? Head to the exercises section!
+                    </a>
+                </p>
+            </div>
+            <div class="detailed-plan-klm123" id="javascript-while-loops-tutorial">
+                <h2>While Loops</h2>
+            
+                <p>
+                    Loops are an essential part of programming, allowing us to execute a block of code repeatedly based on a condition. 
+                    The <code>while</code> loop continues to run as long as the specified condition evaluates to <code>true</code>.
+                </p>
+            
+                <h3>What Is a While Loop?</h3>
+                <p>
+                    A <code>while</code> loop evaluates a condition before executing its code block. If the condition is <code>true</code>, 
+                    the code inside the loop runs. This process repeats until the condition becomes <code>false</code>.
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        let count = 0;<br>
+                        while (count < 5) {<br>
+                        &nbsp;&nbsp;console.log("Count is: " + count);<br>
+                        &nbsp;&nbsp;count++;<br>
+                        }
+                    </code>
+                </div>
+                <p>In this example, the <code>while</code> loop runs as long as <code>count</code> is less than 5. The variable <code>count</code> increments by 1 in each iteration.</p>
+            
+                <h3>Infinite Loops</h3>
+                <p>
+                    If the condition in a <code>while</code> loop never becomes <code>false</code>, it will result in an infinite loop. 
+                    Always ensure the loop has a way to terminate.
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        let x = 10;<br>
+                        while (x > 0) {<br>
+                        &nbsp;&nbsp;console.log(x);<br>
+                        // Missing decrement of x!<br>
+                        }
+                    </code>
+                </div>
+                <p>This example will run indefinitely because <code>x</code> never decreases.</p>
+            
+                <h3>Practical Use Case</h3>
+                <p>
+                    While loops are useful when you don’t know the exact number of iterations in advance. For example, reading user input until a valid value is provided:
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        let number;<br>
+                        while (!number || number <= 0) {<br>
+                        &nbsp;&nbsp;number = parseInt(prompt("Enter a positive number:"));<br>
+                        }<br>
+                        console.log("You entered: " + number);
+                    </code>
+                </div>
+                <p>This loop keeps asking the user for input until they provide a positive number.</p>
+            
+                <h3>Key Points</h3>
+                <ul>
+                    <li><strong>Initialization:</strong> Make sure the condition uses a properly initialized variable.</li>
+                    <li><strong>Condition:</strong> Ensure the condition eventually evaluates to <code>false</code>.</li>
+                    <li><strong>Iteration:</strong> Update the variable inside the loop to prevent infinite loops.</li>
+                </ul>
+            
+                <h3>Common Mistakes</h3>
+                <ul>
+                    <li><strong>Infinite loops:</strong> Forgetting to update the variable or using a condition that is always <code>true</code>.</li>
+                    <li><strong>Logic errors:</strong> Incorrect conditions that stop the loop prematurely.</li>
+                </ul>
+            
+                <h3>Next Steps</h3>
+                <p>
+                    Now that you've learned about <code>while</code> loops, it's time to explore <code>do...while</code> loops, which execute their code block at least once before checking the condition.
+                </p>
+                <p>
+                    <a href="./javascript-loops.html#javascript-do-while-loops-tutorial" class="neutral">
+                        Ready to learn about <code>do...while</code> loops? Let's go!
+                    </a>
+                </p>
+            
+                <h3>Questions</h3>
+                <ol>
+                    <li><strong>What is the primary difference between a <code>while</code> loop and an <code>if</code> statement?</strong></li>
+                    <li><strong>What will happen if the condition in a <code>while</code> loop is always <code>true</code>?</strong></li>
+                    <li><strong>Write a simple <code>while</code> loop that prints numbers from 1 to 10.</strong></li>
+                    <li><strong>How can you prevent a <code>while</code> loop from running indefinitely?</strong></li>
+                    <li><strong>Consider the following code. What will be logged to the console?</strong>
+                        <div class="code-example-html">
+                            <code>
+                                let i = 0;<br>
+                                while (i < 3) {<br>
+                                &nbsp;&nbsp;console.log("Iteration: " + i);<br>
+                                &nbsp;&nbsp;i++;<br>
+                                }
+                            </code>
+                        </div>
+                    </li>
+                </ol>
+            
+                <p>
+                    <a href="./javascript-loops.html#javascript-while-loops-exercises" class="neutral">
+                        Ready to check your answers? Head to the exercises section!
+                    </a>
+                </p>
+            </div>
+            <div class="detailed-plan-klm123" id="javascript-do-while-loops-tutorial">
+                <h2>Do...While Loops</h2>
+            
+                <p>
+                    A <code>do...while</code> loop is a variant of the <code>while</code> loop. It ensures that the loop body executes at least once, regardless of whether the condition is <code>true</code> or <code>false</code>. This makes it useful in scenarios where you want the code to run before checking the condition.
+                </p>
+            
+                <h3>Syntax of a Do...While Loop</h3>
+                <div class="code-example-html">
+                    <code>
+                        do {<br>
+                        &nbsp;&nbsp;// code block to be executed<br>
+                        } while (condition);
+                    </code>
+                </div>
+            
+                <h3>How It Works</h3>
+                <p>
+                    The <code>do...while</code> loop starts by executing the block of code inside the <code>do</code> section. After the block has executed, the condition in the <code>while</code> part is evaluated. If the condition is <code>true</code>, the loop continues; otherwise, it terminates.
+                </p>
+            
+                <h3>Basic Example</h3>
+                <div class="code-example-html">
+                    <code>
+                        let count = 1;<br>
+                        do {<br>
+                        &nbsp;&nbsp;console.log("Count is: " + count);<br>
+                        &nbsp;&nbsp;count++;<br>
+                        } while (count <= 5);
+                    </code>
+                </div>
+                <p>In this example, the loop will print the count from 1 to 5.</p>
+            
+                <h3>Key Difference Between <code>while</code> and <code>do...while</code></h3>
+                <p>
+                    The main difference is that the <code>do...while</code> loop executes the code block at least once, even if the condition is <code>false</code>. Here's an example:
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        let x = 10;<br>
+                        while (x < 5) {<br>
+                        &nbsp;&nbsp;console.log("This won't run.");<br>
+                        }<br>
+                        <br>
+                        do {<br>
+                        &nbsp;&nbsp;console.log("This will run at least once.");<br>
+                        } while (x < 5);
+                    </code>
+                </div>
+            
+                <h3>Practical Use Case</h3>
+                <p>
+                    A common use case for a <code>do...while</code> loop is to prompt a user for input until a valid value is provided (though user input is not covered yet, we’re illustrating the logic here):
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        let number;<br>
+                        do {<br>
+                        &nbsp;&nbsp;number = prompt("Enter a number greater than 0:");<br>
+                        } while (number <= 0);
+                    </code>
+                </div>
+                <p>This example ensures the user is prompted at least once.</p>
+            
+                <h3>Tips for Using Do...While Loops</h3>
+                <ul>
+                    <li><strong>Use when at least one execution is guaranteed:</strong> If the logic requires the loop to run at least once, a <code>do...while</code> loop is the best choice.</li>
+                    <li><strong>Watch for infinite loops:</strong> Ensure the condition eventually evaluates to <code>false</code>.</li>
+                    <li><strong>Keep it readable:</strong> Avoid overly complex conditions that make the loop hard to understand.</li>
+                </ul>
+            
+                <h3>Common Mistakes</h3>
+                <ul>
+                    <li>Not updating the loop variable inside the <code>do</code> block, leading to infinite loops.</li>
+                    <li>Misunderstanding the behavior of the loop executing at least once.</li>
+                </ul>
+            
+                <h3>Next Steps</h3>
+                <p>
+                    Now that you've mastered <code>do...while</code> loops, it's time to learn about "Break and Continue" statements, which give you greater control over your loops.
+                </p>
+                <p>
+                    <a href="./javascript-loops.html#javascript-break-and-continue-tutorial" class="neutral">
+                        Ready to learn Break and Continue? Let's go!
+                    </a>
+                </p>
+            
+                <h3>Questions</h3>
+                <ol>
+                    <li><strong>What is the primary difference between a <code>while</code> loop and a <code>do...while</code> loop?</strong></li>
+                    <li><strong>Write a simple example of a <code>do...while</code> loop that prints "Hello, World!" five times.</strong></li>
+                    <li><strong>Why might you choose to use a <code>do...while</code> loop instead of a <code>while</code> loop?</strong></li>
+                    <li><strong>In the following code, what will be logged to the console?</strong>
+                        <div class="code-example-html">
+                            <code>
+                                let i = 0;<br>
+                                do {<br>
+                                &nbsp;&nbsp;console.log("Value of i: " + i);<br>
+                                &nbsp;&nbsp;i++;<br>
+                                } while (i < 3);
+                            </code>
+                        </div>
+                    </li>
+                    <li><strong>How can you ensure a <code>do...while</code> loop doesn't run indefinitely?</strong></li>
+                </ol>
+            
+                <p>
+                    <a href="./javascript-loops.html#javascript-do-while-loops-exercises" class="neutral">
+                        Ready to check your answers? Head to the exercises section!
+                    </a>
+                </p>
+            </div>
+            <div class="detailed-plan-klm123" id="javascript-break-and-continue-tutorial">
+                <h2>Break and Continue</h2>
+            
+                <p>
+                    The <code>break</code> and <code>continue</code> statements are powerful tools in JavaScript that allow you to control the flow of loops. They help you manage complex looping behavior by providing ways to exit a loop early or skip certain iterations.
+                </p>
+            
+                <h3>What Is the <code>break</code> Statement?</h3>
+                <p>
+                    The <code>break</code> statement is used to immediately exit a loop, regardless of the loop's condition. Once the <code>break</code> statement is executed, the program jumps to the next statement after the loop.
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        for (let i = 0; i < 10; i++) {<br>
+                        &nbsp;&nbsp;if (i === 5) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;break; // Exit the loop when i equals 5<br>
+                        &nbsp;&nbsp;}<br>
+                        &nbsp;&nbsp;console.log(i);<br>
+                        }<br>
+                        // Output: 0 1 2 3 4
+                    </code>
+                </div>
+                <p>
+                    In this example, the loop stops as soon as <code>i</code> equals 5, and no further iterations are executed.
+                </p>
+            
+                <h3>What Is the <code>continue</code> Statement?</h3>
+                <p>
+                    The <code>continue</code> statement skips the current iteration of the loop and moves to the next iteration. It allows you to bypass specific parts of the loop without exiting it entirely.
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        for (let i = 0; i < 10; i++) {<br>
+                        &nbsp;&nbsp;if (i % 2 === 0) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;continue; // Skip even numbers<br>
+                        &nbsp;&nbsp;}<br>
+                        &nbsp;&nbsp;console.log(i);<br>
+                        }<br>
+                        // Output: 1 3 5 7 9
+                    </code>
+                </div>
+                <p>
+                    In this example, the loop skips over even numbers and only logs the odd ones.
+                </p>
+            
+                <h3>When to Use <code>break</code> and <code>continue</code></h3>
+                <ul>
+                    <li>
+                        Use <code>break</code> when you want to exit a loop early, for example, when a specific condition is met, and further iterations are unnecessary.
+                    </li>
+                    <li>
+                        Use <code>continue</code> when you want to skip certain iterations based on a condition but still continue looping for other cases.
+                    </li>
+                </ul>
+            
+                <h3>Practical Use Case</h3>
+                <p>
+                    Imagine you're processing a list of numbers and want to skip negative numbers but stop the process entirely if you encounter a zero:
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        const numbers = [10, -5, 20, 0, 15];<br>
+                        for (let num of numbers) {<br>
+                        &nbsp;&nbsp;if (num === 0) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;break; // Stop the loop when encountering zero<br>
+                        &nbsp;&nbsp;}<br>
+                        &nbsp;&nbsp;if (num < 0) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;continue; // Skip negative numbers<br>
+                        &nbsp;&nbsp;}<br>
+                        &nbsp;&nbsp;console.log(num);<br>
+                        }<br>
+                        // Output: 10 20
+                    </code>
+                </div>
+            
+                <h3>Common Mistakes</h3>
+                <ul>
+                    <li>
+                        Using <code>break</code> or <code>continue</code> unnecessarily, which can make the code harder to read and maintain.
+                    </li>
+                    <li>
+                        Forgetting to update loop variables, leading to infinite loops or unintended behavior.
+                    </li>
+                </ul>
+            
+                <h3>Next Steps</h3>
+                <p>
+                    Now that you've learned about <code>break</code> and <code>continue</code>, it's time to explore "Nested Loops" and understand how loops can work together to handle multidimensional data and other complex scenarios.
+                </p>
+                <p>
+                    <a href="./javascript-loops.html#javascript-nested-loops-tutorial" class="neutral">
+                        Ready to learn about Nested Loops? Let's go!
+                    </a>
+                </p>
+            
+                <h3>Questions</h3>
+                <ol>
+                    <li><strong>What does the <code>break</code> statement do in a loop?</strong></li>
+                    <li><strong>What does the <code>continue</code> statement do in a loop?</strong></li>
+                    <li><strong>Write an example of a loop that uses <code>break</code> to stop when a specific number is encountered.</strong></li>
+                    <li><strong>Write an example of a loop that uses <code>continue</code> to skip over even numbers.</strong></li>
+                    <li><strong>When should you use <code>break</code> instead of <code>continue</code>?</strong></li>
+                </ol>
+            
+                <p>
+                    <a href="./javascript-loops.html#javascript-break-and-continue-exercises" class="neutral">
+                        Ready to check your answers? Head to the exercises section!
+                    </a>
+                </p>
+            </div>
+            <div class="detailed-plan-klm123" id="javascript-nested-loops-tutorial">
+                <h2>Nested Loops</h2>
+            
+                <p>
+                    Nested loops are loops inside other loops. They are used when we need to perform repeated actions within a repeated action. Although powerful, nested loops can increase complexity, so use them judiciously.
+                </p>
+            
+                <h3>What Are Nested Loops?</h3>
+                <p>
+                    A nested loop is when one loop runs inside another. The outer loop runs first, and for each iteration of the outer loop, the inner loop completes all its iterations. 
+                </p>
+            
+                <h3>Basic Example</h3>
+                <div class="code-example-html">
+                    <code>
+                        for (let i = 1; i <= 3; i++) {<br>
+                        &nbsp;&nbsp;for (let j = 1; j <= 2; j++) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;console.log(`i = ${i}, j = ${j}`);<br>
+                        &nbsp;&nbsp;}<br>
+                        }<br>
+                        // Output:<br>
+                        // i = 1, j = 1<br>
+                        // i = 1, j = 2<br>
+                        // i = 2, j = 1<br>
+                        // i = 2, j = 2<br>
+                        // i = 3, j = 1<br>
+                        // i = 3, j = 2
+                    </code>
+                </div>
+                <p>
+                    In this example, the outer loop controls the variable <code>i</code>, while the inner loop controls <code>j</code>. The inner loop runs to completion for every iteration of the outer loop.
+                </p>
+            
+                <h3>Common Use Cases</h3>
+                <p>Nested loops are commonly used for:</p>
+                <ul>
+                    <li>Iterating through 2D grids or tables.</li>
+                    <li>Creating patterns with loops.</li>
+                    <li>Performing comparisons between multiple elements.</li>
+                </ul>
+            
+                <h3>Example: Printing a Pattern</h3>
+                <div class="code-example-html">
+                    <code>
+                        for (let i = 1; i <= 3; i++) {<br>
+                        &nbsp;&nbsp;let row = "";<br>
+                        &nbsp;&nbsp;for (let j = 1; j <= i; j++) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;row += "*";<br>
+                        &nbsp;&nbsp;}<br>
+                        &nbsp;&nbsp;console.log(row);<br>
+                        }<br>
+                        // Output:<br>
+                        // *<br>
+                        // **<br>
+                        // ***
+                    </code>
+                </div>
+                <p>In this example, the outer loop determines the number of rows, and the inner loop controls the number of asterisks per row.</p>
+            
+                <h3>Potential Issues with Nested Loops</h3>
+                <ul>
+                    <li><strong>Performance:</strong> Nested loops can slow down your program, especially if they iterate over large data sets.</li>
+                    <li><strong>Readability:</strong> Deeply nested loops can be difficult to read and debug.</li>
+                </ul>
+            
+                <h3>Tips for Using Nested Loops</h3>
+                <ul>
+                    <li>Use comments to explain the purpose of each loop.</li>
+                    <li>Break down complex logic into smaller functions to reduce nesting.</li>
+                    <li>Avoid more than two levels of nesting unless absolutely necessary.</li>
+                </ul>
+            
+                <h3>Next Steps</h3>
+                <p>
+                    Now that you've learned about nested loops, you're ready to explore how to solve real-world problems using them.
+                </p>
+                <p>
+                    <a href="./javascript-loops.html#javascript-nested-loops-exercises" class="neutral">
+                        Ready to practice Nested Loops? Let's go!
+                    </a>
+                </p>
+            
+                <h3>Questions</h3>
+                <ol>
+                    <li><strong>What are nested loops, and how do they work?</strong></li>
+                    <li><strong>Write an example of a nested loop that prints the following pattern:
+                        <br>*<br>**<br>***<br>****</strong>
+                    </li>
+                    <li><strong>What is a common use case for nested loops?</strong></li>
+                    <li><strong>In the following code, how many times will <code>console.log()</code> be executed?</strong>
+                        <div class="code-example-html">
+                            <code>
+                                for (let i = 0; i < 3; i++) {<br>
+                                &nbsp;&nbsp;for (let j = 0; j < 4; j++) {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;console.log("Hello!");<br>
+                                &nbsp;&nbsp;}<br>
+                                }
+                            </code>
+                        </div>
+                    </li>
+                    <li><strong>How can you simplify or optimize nested loops for better readability and performance?</strong></li>
+                </ol>
+            
+                <p>
+                    <a href="./javascript-loops.html#javascript-nested-loops-exercises" class="neutral">
+                        Ready to check your answers? Head to the exercises section!
+                    </a>
+                </p>
+            </div>
+
+            <!-- Exercises -->
+            <div class="detailed-plan-klm123" id="javascript-for-loops-exercise">
+                <h2>For Loops: Exercises</h2>
+                <ol>
+                    <li>
+                        <h3>Write a for loop that prints numbers from 1 to 10.</h3>
+                        <div class="code-example-html">
+                            <code>
+                                for (let i = 1; i <= 10; i++) {<br>
+                                &nbsp;&nbsp;console.log(i);<br>
+                                }
+                            </code>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Create a for loop that prints only the odd numbers between 1 and 10.</h3>
+                        <div class="code-example-html">
+                            <code>
+                                for (let i = 1; i <= 10; i += 2) {<br>
+                                &nbsp;&nbsp;console.log(i);<br>
+                                }
+                            </code>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Write a for loop that counts backwards from 10 to 1.</h3>
+                        <div class="code-example-html">
+                            <code>
+                                for (let i = 10; i >= 1; i--) {<br>
+                                &nbsp;&nbsp;console.log(i);<br>
+                                }
+                            </code>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Given the following for loop, what will it print in the console?</h3>
+                        <div class="code-example-html">
+                            <code>
+                                for (let i = 0; i < 5; i++) {<br>
+                                &nbsp;&nbsp;console.log("Hello, World!");<br>
+                                }
+                            </code>
+                        </div>
+                        <div class="code-example-html">
+                            <code>
+                                // Output:<br>
+                                Hello, World!<br>
+                                Hello, World!<br>
+                                Hello, World!<br>
+                                Hello, World!<br>
+                                Hello, World!
+                            </code>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Challenge: Write a for loop that prints the multiplication table of 2 (from 2x1 to 2x10).</h3>
+                        <div class="code-example-html">
+                            <code>
+                                for (let i = 1; i <= 10; i++) {<br>
+                                &nbsp;&nbsp;console.log("2 x " + i + " = " + (2 * i));<br>
+                                }
+                            </code>
+                        </div>
+                    </li>
+                </ol>
+            
+                <p>
+                    <a href="./javascript-loops.html#javascript-while-loops-tutorial" class="neutral">
+                        Ready to move on to While Loops? Start learning now!
+                    </a>
+                </p>
+            </div>
+            <div class="detailed-plan-klm123" id="javascript-while-loops-exercises">
+                <h2>While Loops: Exercises</h2>
+            
+                <h3>1. What is the primary difference between a <code>while</code> loop and an <code>if</code> statement?</h3>
+                <div class="code-example-html">
+                    <p>
+                        A <code>while</code> loop repeatedly executes a block of code as long as its condition is <code>true</code>. 
+                        An <code>if</code> statement executes the block only once, based on the condition.
+                    </p>
+                </div>
+            
+                <h3>2. What will happen if the condition in a <code>while</code> loop is always <code>true</code>?</h3>
+                <div class="code-example-html">
+                    <p>
+                        If the condition is always <code>true</code>, the loop will run indefinitely, leading to an infinite loop.
+                    </p>
+                </div>
+            
+                <h3>3. Write a simple <code>while</code> loop that prints numbers from 1 to 10.</h3>
+                <div class="code-example-html">
+                    <code>
+                        let num = 1;<br>
+                        while (num <= 10) {<br>
+                        &nbsp;&nbsp;console.log(num);<br>
+                        &nbsp;&nbsp;num++;<br>
+                        }
+                    </code>
+                </div>
+            
+                <h3>4. How can you prevent a <code>while</code> loop from running indefinitely?</h3>
+                <div class="code-example-html">
+                    <p>
+                        To prevent an infinite loop, ensure that:
+                    </p>
+                    <ul>
+                        <li>The condition in the loop eventually evaluates to <code>false</code>.</li>
+                        <li>The loop variable is updated correctly in each iteration.</li>
+                        <li>You verify that there are no logic errors causing the condition to remain <code>true</code>.</li>
+                    </ul>
+                </div>
+            
+                <h3>5. Consider the following code. What will be logged to the console?</h3>
+                <div class="code-example-html">
+                    <code>
+                        let i = 0;<br>
+                        while (i < 3) {<br>
+                        &nbsp;&nbsp;console.log("Iteration: " + i);<br>
+                        &nbsp;&nbsp;i++;<br>
+                        }
+                    </code>
+                </div>
+                <div class="code-example-html">
+                    <p>Output:</p>
+                    <p>
+                        Iteration: 0<br>
+                        Iteration: 1<br>
+                        Iteration: 2
+                    </p>
+                </div>
+            
+                <p>
+                    <a href="./javascript-loops.html#javascript-do-while-loops-tutorial" class="neutral">
+                        Ready to move on to <code>do...while</code> loops? Let's go!
+                    </a>
+                </p>
+            </div>
+            <div class="detailed-plan-klm123" id="javascript-do-while-loops-exercises">
+                <h2>Do...While Loops: Exercises</h2>
+            
+                <h3>1. What is the primary difference between a <code>while</code> loop and a <code>do...while</code> loop?</h3>
+                <div class="code-example-html">
+                    <p>The primary difference is that a <code>do...while</code> loop executes the code block at least once, even if the condition is <code>false</code>, whereas a <code>while</code> loop checks the condition before executing the block.</p>
+                </div>
+            
+                <h3>2. Write a simple example of a <code>do...while</code> loop that prints "Hello, World!" five times.</h3>
+                <div class="code-example-html">
+                    <code>
+                        let count = 0;<br>
+                        do {<br>
+                        &nbsp;&nbsp;console.log("Hello, World!");<br>
+                        &nbsp;&nbsp;count++;<br>
+                        } while (count < 5);
+                    </code>
+                </div>
+            
+                <h3>3. Why might you choose to use a <code>do...while</code> loop instead of a <code>while</code> loop?</h3>
+                <div class="code-example-html">
+                    <p>
+                        You might choose a <code>do...while</code> loop when you want the code block to execute at least once, regardless of whether the condition is <code>true</code> or <code>false</code>. It ensures that the loop body is always run initially.
+                    </p>
+                </div>
+            
+                <h3>4. In the following code, what will be logged to the console?</h3>
+                <div class="code-example-html">
+                    <code>
+                        let i = 0;<br>
+                        do {<br>
+                        &nbsp;&nbsp;console.log("Value of i: " + i);<br>
+                        &nbsp;&nbsp;i++;<br>
+                        } while (i < 3);
+                    </code>
+                </div>
+                <div class="code-example-html">
+                    <p>Output:</p>
+                    <p>
+                        "Value of i: 0"<br>
+                        "Value of i: 1"<br>
+                        "Value of i: 2"
+                    </p>
+                </div>
+            
+                <h3>5. How can you ensure a <code>do...while</code> loop doesn't run indefinitely?</h3>
+                <div class="code-example-html">
+                    <ul>
+                        <li>Ensure the condition in the <code>while</code> part eventually evaluates to <code>false</code>.</li>
+                        <li>Update the loop variable inside the <code>do</code> block to avoid infinite loops.</li>
+                        <li>Debug and test the loop logic to verify correctness.</li>
+                    </ul>
+                </div>
+            
+                <p>
+                    <a href="./javascript-loops.html#javascript-break-and-continue-tutorial" class="neutral">
+                        Ready to move on to Break and Continue? Let's go!
+                    </a>
+                </p>
+            </div>
+            <div class="detailed-plan-klm123" id="javascript-break-and-continue-exercises">
+                <h2>Break and Continue: Exercises</h2>
+            
+                <h3>1. What does the <code>break</code> statement do in a loop?</h3>
+                <div class="code-example-html">
+                    <p>The <code>break</code> statement immediately exits a loop, regardless of the loop's condition, and moves the program to the next statement after the loop.</p>
+                </div>
+            
+                <h3>2. What does the <code>continue</code> statement do in a loop?</h3>
+                <div class="code-example-html">
+                    <p>The <code>continue</code> statement skips the current iteration of a loop and moves directly to the next iteration without exiting the loop.</p>
+                </div>
+            
+                <h3>3. Write an example of a loop that uses <code>break</code> to stop when a specific number is encountered.</h3>
+                <div class="code-example-html">
+                    <code>
+                        for (let i = 0; i < 10; i++) {<br>
+                        &nbsp;&nbsp;if (i === 7) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;break; // Exit the loop when i equals 7<br>
+                        &nbsp;&nbsp;}<br>
+                        &nbsp;&nbsp;console.log(i);<br>
+                        }<br>
+                        // Output: 0 1 2 3 4 5 6
+                    </code>
+                </div>
+            
+                <h3>4. Write an example of a loop that uses <code>continue</code> to skip over even numbers.</h3>
+                <div class="code-example-html">
+                    <code>
+                        for (let i = 0; i < 10; i++) {<br>
+                        &nbsp;&nbsp;if (i % 2 === 0) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;continue; // Skip even numbers<br>
+                        &nbsp;&nbsp;}<br>
+                        &nbsp;&nbsp;console.log(i);<br>
+                        }<br>
+                        // Output: 1 3 5 7 9
+                    </code>
+                </div>
+            
+                <h3>5. When should you use <code>break</code> instead of <code>continue</code>?</h3>
+                <div class="code-example-html">
+                    <ul>
+                        <li><strong>Use <code>break</code>:</strong> When you need to exit a loop completely, such as when a specific condition is met, and further iterations are unnecessary.</li>
+                        <li><strong>Use <code>continue</code>:</strong> When you want to skip specific iterations but still continue looping for other cases.</li>
+                    </ul>
+                </div>
+            
+                <p>
+                    <a href="./javascript-loops.html#javascript-nested-loops-tutorial" class="neutral">
+                        Ready to move on to Nested Loops? Let's go!
+                    </a>
+                </p>
+            </div>
+            <div class="detailed-plan-klm123" id="javascript-nested-loops-exercises">
+                <h2>Nested Loops: Exercises</h2>
+            
+                <h3>1. What are nested loops, and how do they work?</h3>
+                <div class="code-example-html">
+                    <p>
+                        Nested loops are loops inside other loops. The outer loop runs first, and for every iteration of the outer loop, the inner loop completes all its iterations. They are useful for handling multi-dimensional data or repetitive actions within repeated actions.
+                    </p>
+                </div>
+            
+                <h3>2. Write an example of a nested loop that prints the following pattern:</h3>
+                <div class="code-example-html">
+                    <p>*<br>**<br>***<br>****</p>
+                    <code>
+                        for (let i = 1; i <= 4; i++) {<br>
+                        &nbsp;&nbsp;let row = "";<br>
+                        &nbsp;&nbsp;for (let j = 1; j <= i; j++) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;row += "*";<br>
+                        &nbsp;&nbsp;}<br>
+                        &nbsp;&nbsp;console.log(row);<br>
+                        }
+                    </code>
+                </div>
+            
+                <h3>3. What is a common use case for nested loops?</h3>
+                <div class="code-example-html">
+                    <p>
+                        Common use cases include:
+                        <ul>
+                            <li>Iterating through 2D arrays or grids.</li>
+                            <li>Generating patterns (e.g., triangles, pyramids).</li>
+                            <li>Comparing or processing multiple sets of data.</li>
+                        </ul>
+                    </p>
+                </div>
+            
+                <h3>4. In the following code, how many times will <code>console.log()</code> be executed?</h3>
+                <div class="code-example-html">
+                    <code>
+                        for (let i = 0; i < 3; i++) {<br>
+                        &nbsp;&nbsp;for (let j = 0; j < 4; j++) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;console.log("Hello!");<br>
+                        &nbsp;&nbsp;}<br>
+                        }
+                    </code>
+                    <p><strong>Answer:</strong> <code>console.log()</code> will be executed 12 times (3 iterations of the outer loop × 4 iterations of the inner loop).</p>
+                </div>
+            
+                <h3>5. How can you simplify or optimize nested loops for better readability and performance?</h3>
+                <div class="code-example-html">
+                    <ul>
+                        <li>Break down complex logic into smaller functions.</li>
+                        <li>Use a single loop with calculated indices when possible.</li>
+                        <li>Eliminate unnecessary iterations by adding conditions early.</li>
+                        <li>Refactor nested loops into flat structures, if feasible.</li>
+                    </ul>
+                </div>
+            
+                <p>
+                    <a href="./javascript-loops.html#javascript-for-loops-tutorial" class="neutral">
+                        Ready to move on to the next tutorial? Let's go!
+                    </a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-container"></div>
+    </body>
+</html>
