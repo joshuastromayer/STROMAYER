@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Paragraphs - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="../styles/coding.css">
+</head>
+<div id="header-container"></div>
+      <body class="html-page-klm123">
+<link rel="stylesheet" href="../styles/coding.css">
+
+    
+        <main class="html-main-klm123">
+            <!-- Quick Start Plan -->
+            <div id="html-quick-menu"></div>
+    
+            <!-- Detailed Plan -->
+            <div class="main-tutorial-content">
+                <div class="detailed-plan-klm123" id="html-paragraphs-tutorial">
+                    <h2>HTML Paragraphs</h2>
+                    
+                    <p>
+                        Paragraphs in HTML are defined using the <code>&lt;p&gt;</code> tag. Paragraphs help structure text content, making it easier to read and organize. Each paragraph you write will automatically be separated by some space in most browsers, ensuring clear readability.
+                    </p>
+                
+                    <h3>Creating a Paragraph</h3>
+                    <p>
+                        To create a paragraph in HTML, you simply wrap your text with <code>&lt;p&gt;</code> and <code>&lt;/p&gt;</code> tags. Here is an example:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+                            &lt;p&gt;This is another paragraph.&lt;/p&gt;
+                        </code>
+                    </div>
+                
+                    <p>
+                        The above code will result in two distinct paragraphs on the web page, each with a space between them, as shown below:
+                    </p>
+                    <br>
+                    <p>This is a paragraph.</p>
+                    <p>This is another paragraph.</p>
+                    <hr>
+                    <br>
+                
+                    <h3>Spaces and Line Breaks</h3>
+                    <p>
+                        In HTML, extra spaces or line breaks in your code do not affect the display of your text. For example, even if you add multiple spaces or write text on separate lines, the browser will treat it as a single space. Consider this code:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;p&gt;This&nbsp;&nbsp;&nbsp;is a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;paragraph.&lt;/p&gt;<br>
+                            &lt;p&gt;This<br>is written<br>on multiple<br>lines.&lt;/p&gt;
+                        </code>
+                    </div>
+                    <p>
+                        The browser will render the above code as:
+                    </p>
+                    <ul>
+                        <li>Single spaces between words, even if you include extra spaces in your code.</li>
+                        <li>Line breaks will only appear if you explicitly use the <code>&lt;br&gt;</code> tag.</li>
+                    </ul>
+                
+                    <h3>Forcing Line Breaks</h3>
+                    <p>
+                        To force a line break within a paragraph, use the <code>&lt;br&gt;</code> tag. Unlike <code>&lt;p&gt;</code>, which creates a new paragraph with extra space, <code>&lt;br&gt;</code> only breaks the line:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;p&gt;This is the first line.&lt;br&gt;This is the second line.&lt;br&gt;And this is the third.&lt;/p&gt;
+                        </code>
+                    </div>
+                    <p>The browser will display:</p>
+                    
+                        <p>This is the first line.</p>
+                        <p>This is the second line.</p>
+                        <p>And this is the third.</p>
+                
+                    <h3>Tips for Using Paragraphs</h3>
+                    <ul>
+                        <li><strong>Keep it concise:</strong> Break your text into multiple paragraphs for better readability.</li>
+                        <li><strong>Use semantic structure:</strong> Use <code>&lt;p&gt;</code> for paragraphs, not other tags like <code>&lt;div&gt;</code>.</li>
+                        <li><strong>Combine with CSS:</strong> Style your paragraphs using CSS for font, color, and spacing adjustments.</li>
+                    </ul>
+                
+                    <p>
+                        Now that you've learned how to create and use paragraphs in HTML, you can practice your skills in the exercise section.
+                    </p>
+                    <p>
+                        <a href="./html-paragraphs.html#html-paragraphs-exercises" class="neutral">
+                            Ready to practice? Head to the exercises section!
+                        </a>
+                    </p>
+                </div>
+
+
+
+                <div class="detailed-plan-klm123" id="html-paragraphs-exercises">
+                    <h2>HTML Paragraphs: Exercises</h2>
+                
+                    <h3>1. Create Three Paragraphs</h3>
+                    <p>
+                        Write HTML to create three separate paragraphs with the following content:
+                        <ul>
+                            <li>The first paragraph should say: "Learning HTML is fun!"</li>
+                            <li>The second paragraph should say: "I love coding challenges."</li>
+                            <li>The third paragraph should say: "I can't wait to learn CSS."</li>
+                        </ul>
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-1">Reveal Answer</button>
+                    <div id="answer-1" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;p&gt;Learning HTML is fun!&lt;/p&gt;<br>
+                            &lt;p&gt;I love coding challenges.&lt;/p&gt;<br>
+                            &lt;p&gt;I can't wait to learn CSS.&lt;/p&gt;
+                        </code>
+                    </div>
+                
+                    <h3>2. Add Line Breaks</h3>
+                    <p>
+                        Create a single paragraph that prints the following text:
+                        <ul>
+                            <li>"HTML is awesome!"</li>
+                            <li>On the next line: "Line breaks are so helpful."</li>
+                            <li>On the third line: "Let's master HTML!"</li>
+                        </ul>
+                        Use line breaks (<code>&lt;br&gt;</code>) to display each line correctly.
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-2">Reveal Answer</button>
+                    <div id="answer-2" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;p&gt;<br>
+                            HTML is awesome!&lt;br&gt;<br>
+                            Line breaks are so helpful.&lt;br&gt;<br>
+                            Let's master HTML!<br>
+                            &lt;/p&gt;
+                        </code>
+                    </div>
+                    <p>
+                        <a href="./html-formatting.html" class="neutral">
+                            Ready to move on to Formatting? Let’s go!
+                        </a>
+                    </p>
+                </div>
+        </main>
+
+<div id="footer-container"></div>
+    
+    <script src="/script.js?v=2"></script>
+</body>
+
+    </html>

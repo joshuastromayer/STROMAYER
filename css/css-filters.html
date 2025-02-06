@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="/styles/coding.css">
+</head>
+
+<div id="header-container"></div>
+<body class="html-page-klm123">
+    <link rel="stylesheet" href="../styles/coding.css">
+<main class="html-main-klm123">
+    <!-- Quick Start Plan -->
+    <div id="css-quick-menu"></div>
+
+    <!-- Detailed Plan -->
+    <div class="main-tutorial-content">
+        <div class="detailed-plan-klm123" id="css-filters-tutorial">
+            <h2>CSS Filters</h2>
+            <p>
+                CSS Filters allow you to apply visual effects to elements, such as blurring, brightness adjustment, color shifting, and more. These effects can be combined to create creative and visually appealing designs.
+            </p>
+        
+            <h3>The filter Property</h3>
+            <p>
+                The <code>filter</code> property applies graphical effects to an element. It can accept one or multiple filter functions. The basic syntax is:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    img {<br>
+                    &nbsp;&nbsp;filter: blur(5px);<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;img src="image.jpg" alt="Blurred Image"&gt;
+                </code>
+            </div>
+            <p>
+                In this example, the image is blurred with a radius of 5 pixels.
+            </p>
+        
+            <h3>Common Filter Functions</h3>
+            <p>
+                Here are some commonly used filter functions:
+            </p>
+            <ul>
+                <li><strong>blur(px):</strong> Applies a Gaussian blur to the element. The higher the value, the stronger the blur.</li>
+                <li><strong>brightness(%):</strong> Adjusts the brightness of the element. Values above 100% increase brightness, and values below 100% decrease it.</li>
+                <li><strong>contrast(%):</strong> Adjusts the contrast of the element. Values above 100% increase contrast, and values below 100% decrease it.</li>
+                <li><strong>grayscale(%):</strong> Converts the element to grayscale. A value of 100% makes it fully grayscale, while 0% keeps the original color.</li>
+                <li><strong>sepia(%):</strong> Converts the element to sepia tones. A value of 100% makes it fully sepia.</li>
+                <li><strong>hue-rotate(deg):</strong> Rotates the hue of the element’s colors. The value is specified in degrees (e.g., <code>90deg</code>).</li>
+                <li><strong>invert(%):</strong> Inverts the colors of the element. A value of 100% fully inverts the colors.</li>
+                <li><strong>saturate(%):</strong> Adjusts the color saturation. Values above 100% increase saturation, and values below 100% decrease it.</li>
+                <li><strong>opacity(%):</strong> Adjusts the transparency of the element. A value of 100% is fully opaque, and 0% is fully transparent.</li>
+            </ul>
+        
+            <h3>Examples of Filter Effects</h3>
+        
+            <h4>1. Blur Effect</h4>
+            <p>
+                Apply a blur effect to an image:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    .blur {<br>
+                    &nbsp;&nbsp;filter: blur(10px);<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;img class="blur" src="image.jpg" alt="Blurred Image"&gt;
+                </code>
+            </div>
+        
+            <h4>2. Brightness Adjustment</h4>
+            <p>
+                Adjust the brightness of an image:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    .bright {<br>
+                    &nbsp;&nbsp;filter: brightness(150%);<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;img class="bright" src="image.jpg" alt="Bright Image"&gt;
+                </code>
+            </div>
+        
+            <h4>3. Grayscale Effect</h4>
+            <p>
+                Convert an image to grayscale:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    .grayscale {<br>
+                    &nbsp;&nbsp;filter: grayscale(100%);<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;img class="grayscale" src="image.jpg" alt="Grayscale Image"&gt;
+                </code>
+            </div>
+        
+            <h4>4. Multiple Filters</h4>
+            <p>
+                Combine multiple filters to create unique effects:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    .combined {<br>
+                    &nbsp;&nbsp;filter: brightness(120%) contrast(90%) sepia(50%);<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;img class="combined" src="image.jpg" alt="Combined Filters Image"&gt;
+                </code>
+            </div>
+        
+            <h3>Practical Applications</h3>
+            <p>
+                CSS Filters can be used for:
+            </p>
+            <ul>
+                <li>Creating hover effects (e.g., brighten an image when hovered).</li>
+                <li>Adjusting images for different themes (e.g., making them grayscale for a monochromatic theme).</li>
+                <li>Highlighting specific elements with color adjustments.</li>
+            </ul>
+        
+            <p>
+                <a href="./css-filters.html#css-filters-exercises" class="neutral">
+                    Ready to test your knowledge? Head to the exercises section!
+                </a>
+            </p>
+        </div>
+
+        <div class="detailed-plan-klm123" id="css-filters-exercises">
+            <h2>CSS Filters: Exercises</h2>
+        
+            <h3>1. Blur Effect</h3>
+            <p>
+                Apply a blur effect to an image. Use the following styles:
+                <ul>
+                    <li>Width: 300px</li>
+                    <li>Height: 200px</li>
+                    <li>Blur: 8px</li>
+                </ul>
+                Observe how the image becomes blurry.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-1">Reveal Answer</button>
+            <div id="answer-1" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .blur {<br>
+                    &nbsp;&nbsp;width: 300px;<br>
+                    &nbsp;&nbsp;height: 200px;<br>
+                    &nbsp;&nbsp;filter: blur(8px);<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;img class="blur" src="image.jpg" alt="Blurred Image"&gt;
+                </code>
+            </div>
+        
+            <h3>2. Brightness Adjustment</h3>
+            <p>
+                Adjust the brightness of an image. Use the following styles:
+                <ul>
+                    <li>Width: 300px</li>
+                    <li>Height: 200px</li>
+                    <li>Brightness: 150%</li>
+                </ul>
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-2">Reveal Answer</button>
+            <div id="answer-2" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .bright {<br>
+                    &nbsp;&nbsp;width: 300px;<br>
+                    &nbsp;&nbsp;height: 200px;<br>
+                    &nbsp;&nbsp;filter: brightness(150%);<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;img class="bright" src="image.jpg" alt="Brightened Image"&gt;
+                </code>
+            </div>
+        
+            <h3>3. Grayscale Effect</h3>
+            <p>
+                Convert an image to grayscale. Use the following styles:
+                <ul>
+                    <li>Width: 300px</li>
+                    <li>Height: 200px</li>
+                    <li>Grayscale: 100%</li>
+                </ul>
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-3">Reveal Answer</button>
+            <div id="answer-3" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .grayscale {<br>
+                    &nbsp;&nbsp;width: 300px;<br>
+                    &nbsp;&nbsp;height: 200px;<br>
+                    &nbsp;&nbsp;filter: grayscale(100%);<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;img class="grayscale" src="image.jpg" alt="Grayscale Image"&gt;
+                </code>
+            </div>
+        
+            <h3>4. Combining Filters</h3>
+            <p>
+                Combine multiple filters to create a unique effect. Apply the following filters to an image:
+                <ul>
+                    <li>Brightness: 120%</li>
+                    <li>Contrast: 90%</li>
+                    <li>Sepia: 50%</li>
+                </ul>
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-4">Reveal Answer</button>
+            <div id="answer-4" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .combined {<br>
+                    &nbsp;&nbsp;width: 300px;<br>
+                    &nbsp;&nbsp;height: 200px;<br>
+                    &nbsp;&nbsp;filter: brightness(120%) contrast(90%) sepia(50%);<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;img class="combined" src="image.jpg" alt="Filtered Image"&gt;
+                </code>
+            </div>
+        
+            <h3>5. Hover Effect with Filters</h3>
+            <p>
+                Create a hover effect for an image where the following filters are applied on hover:
+                <ul>
+                    <li>Brightness: 120%</li>
+                    <li>Contrast: 110%</li>
+                </ul>
+                Ensure the filters are not applied when the image is not hovered.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-5">Reveal Answer</button>
+            <div id="answer-5" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .hover-filter {<br>
+                    &nbsp;&nbsp;width: 300px;<br>
+                    &nbsp;&nbsp;height: 200px;<br>
+                    &nbsp;&nbsp;transition: filter 0.3s;<br>
+                    }<br>
+                    .hover-filter:hover {<br>
+                    &nbsp;&nbsp;filter: brightness(120%) contrast(110%);<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;img class="hover-filter" src="image.jpg" alt="Hover Filter Image"&gt;
+                </code>
+            </div>
+        
+            <div class="navigation-buttons">
+                <a href="./css-masking.html" class="navigation-button prev-button neutral">← CSS Masking</a>
+                <a href="./css-shapes.html" class="navigation-button next-button neutral">CSS Shapes →</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <div id="footer-container"></div>
+    
+    <script src="/script.js?v=2"></script>
+</body>
+</html>

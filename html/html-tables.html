@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="../styles/coding.css">
+</head>
+<div id="header-container"></div>
+      <body class="html-page-klm123">
+<link rel="stylesheet" href="../styles/coding.css">
+
+    
+        <main class="html-main-klm123">
+            <!-- Quick Start Plan -->
+            <div id="html-quick-menu"></div>
+    
+            <!-- Detailed Plan -->
+            <div class="main-tutorial-content">
+                <div class="detailed-plan-klm123" id="html-tables-tutorial">
+                    <h2>HTML Tables</h2>
+                
+                    <p>Tables in HTML are used to organize and display data in rows and columns. They are helpful for presenting structured information like schedules, pricing details, or comparisons.</p>
+                
+                    <h3>Basic Table Structure</h3>
+                    <p>To create a table in HTML, use the <code>&lt;table&gt;</code> element. A table is made up of rows (<code>&lt;tr&gt;</code>) and columns (<code>&lt;td&gt;</code> for data cells and <code>&lt;th&gt;</code> for header cells).</p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;table&gt;<br>
+                            &nbsp;&nbsp;&lt;tr&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Name&lt;/th&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Age&lt;/th&gt;<br>
+                            &nbsp;&nbsp;&lt;/tr&gt;<br>
+                            &nbsp;&nbsp;&lt;tr&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;John&lt;/td&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;25&lt;/td&gt;<br>
+                            &nbsp;&nbsp;&lt;/tr&gt;<br>
+                            &nbsp;&nbsp;&lt;tr&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jane&lt;/td&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;30&lt;/td&gt;<br>
+                            &nbsp;&nbsp;&lt;/tr&gt;<br>
+                            &lt;/table&gt;
+                        </code>
+                    </div>
+
+                    <p>Output: </p>
+                    <table>
+                        <tr>
+                          <th>Name</th>
+                          <th>Age</th>
+                        </tr>
+                        <tr>
+                          <td>John</td>
+                          <td>25</td>
+                        </tr>
+                        <tr>
+                          <td>Jane</td>
+                          <td>30</td>
+                        </tr>
+                      </table>
+                
+                    <h3>Table Headers</h3>
+                    <p>Header cells are created using the <code>&lt;th&gt;</code> tag. They make the table more meaningful and improve accessibility.</p>
+                
+                    <h3>Adding Borders</h3>
+                    <p>To add borders to your table, you can use the <code>border</code> attribute (not recommended in modern HTML) or CSS for styling. Here's an example:</p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;table border="1"&gt;<br>
+                            &nbsp;&nbsp;&lt;tr&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Name&lt;/th&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Age&lt;/th&gt;<br>
+                            &nbsp;&nbsp;&lt;/tr&gt;<br>
+                            &nbsp;&nbsp;&lt;tr&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;John&lt;/td&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;25&lt;/td&gt;<br>
+                            &nbsp;&nbsp;&lt;/tr&gt;<br>
+                            &nbsp;&nbsp;&lt;tr&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jane&lt;/td&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;30&lt;/td&gt;<br>
+                            &nbsp;&nbsp;&lt;/tr&gt;<br>
+                            &lt;/table&gt;
+                        </code>
+                    </div>
+                    <p>Output: </p>
+                    <table border="1">
+                        <tr>
+                          <th>Name</th>
+                          <th>Age</th>
+                        </tr>
+                        <tr>
+                          <td>John</td>
+                          <td>25</td>
+                        </tr>
+                        <tr>
+                          <td>Jane</td>
+                          <td>30</td>
+                        </tr>
+                      </table>
+
+                    <h3>Spanning Rows and Columns</h3>
+                    <p>You can use the <code>rowspan</code> and <code>colspan</code> attributes to make a cell span across multiple rows or columns.</p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;table border="1"&gt;<br>
+                            &nbsp;&nbsp;&lt;tr&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Name&lt;/th&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th colspan="2"&gt;Details&lt;/th&gt;<br>
+                            &nbsp;&nbsp;&lt;/tr&gt;<br>
+                            &nbsp;&nbsp;&lt;tr&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;John&lt;/td&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Age: 25&lt;/td&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;City: New York&lt;/td&gt;<br>
+                            &nbsp;&nbsp;&lt;/tr&gt;<br>
+                            &nbsp;&nbsp;&lt;tr&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jane&lt;/td&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td colspan="2"&gt;Age: 30, City: LA&lt;/td&gt;<br>
+                            &nbsp;&nbsp;&lt;/tr&gt;<br>
+                            &lt;/table&gt;
+                        </code>
+                    </div>
+                    <p>Output: </p>
+                    <table border="1">
+                        <tr>
+                          <th>Name</th>
+                          <th colspan="2">Details</th>
+                        </tr>
+                        <tr>
+                          <td>John</td>
+                          <td>Age: 25</td>
+                          <td>City: New York</td>
+                        </tr>
+                        <tr>
+                          <td>Jane</td>
+                          <td colspan="2">Age: 30, City: LA</td>
+                        </tr>
+                      </table>
+
+                    <h3>Accessibility in Tables</h3>
+                    <p>Adding captions (<code>&lt;caption&gt;</code>) and summaries improves accessibility. Screen readers can use these elements to describe the content of the table.</p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;table border="1"&gt;<br>
+                            &nbsp;&nbsp;&lt;caption&gt;Student Information&lt;/caption&gt;<br>
+                            &nbsp;&nbsp;&lt;tr&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Name&lt;/th&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Age&lt;/th&gt;<br>
+                            &nbsp;&nbsp;&lt;/tr&gt;<br>
+                            &nbsp;&nbsp;&lt;tr&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;John&lt;/td&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;25&lt;/td&gt;<br>
+                            &nbsp;&nbsp;&lt;/tr&gt;<br>
+                            &nbsp;&nbsp;&lt;tr&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jane&lt;/td&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;30&lt;/td&gt;<br>
+                            &nbsp;&nbsp;&lt;/tr&gt;<br>
+                            &lt;/table&gt;
+                        </code>
+                    </div>
+                    <p>Output: </p>
+                    <table border="1">
+                        <caption>Student Information</caption>
+                        <tr>
+                          <th>Name</th>
+                          <th>Age</th>
+                        </tr>
+                        <tr>
+                          <td>John</td>
+                          <td>25</td>
+                        </tr>
+                        <tr>
+                          <td>Jane</td>
+                          <td>30</td>
+                        </tr>
+                      </table>
+                      <br>
+                    <p>
+                        <a href="./html-tables.html#html-tables-exercises" class="neutral">
+                            Ready to check your understanding? Head to the exercises section!
+                        </a>
+                    </p>
+                </div>
+
+                <div class="detailed-plan-klm123" id="html-tables-exercises">
+                    <h2>HTML Tables: Exercises</h2>
+                
+                    <h3>1. Create a Simple Table</h3>
+                    <p>
+                        Create a table with the following details:
+                        <ul>
+                            <li>A header row with columns: <strong>Product</strong> and <strong>Price</strong>.</li>
+                            <li>Two rows: one for a "Laptop - $1200" and another for a "Phone - $800".</li>
+                        </ul>
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-1">Reveal Answer</button>
+                    <div id="answer-1" class="code-example-html blurred-answer code-example-html-w-image">
+                        <div class="code-block">
+                        <code>
+                            &lt;table border="1"&gt;<br>
+                            &nbsp;&nbsp;&lt;tr&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Product&lt;/th&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Price&lt;/th&gt;<br>
+                            &nbsp;&nbsp;&lt;/tr&gt;<br>
+                            &nbsp;&nbsp;&lt;tr&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Laptop&lt;/td&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;$1200&lt;/td&gt;<br>
+                            &nbsp;&nbsp;&lt;/tr&gt;<br>
+                            &nbsp;&nbsp;&lt;tr&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Phone&lt;/td&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;$800&lt;/td&gt;<br>
+                            &nbsp;&nbsp;&lt;/tr&gt;<br>
+                            &lt;/table&gt;
+                        </code>
+                        </div>
+                        <div class="image-block">
+                            <table border="1">
+                                <tr>
+                                  <th>Product</th>
+                                  <th>Price</th>
+                                </tr>
+                                <tr>
+                                  <td>Laptop</td>
+                                  <td>$1200</td>
+                                </tr>
+                                <tr>
+                                  <td>Phone</td>
+                                  <td>$800</td>
+                                </tr>
+                              </table>
+                        </div>
+                    </div>
+                
+                    <h3>2. Add a Caption</h3>
+                    <p>
+                        Modify the previous table to include a caption that says: <strong>"Product Price List"</strong>.
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-2">Reveal Answer</button>
+                    <div id="answer-2" class="code-example-html blurred-answer code-example-html-w-image">
+                        <div class="code-block">
+                        <code>
+                            &lt;table border="1"&gt;<br>
+                            &nbsp;&nbsp;&lt;caption&gt;Product Price List&lt;/caption&gt;<br>
+                            &nbsp;&nbsp;&lt;tr&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Product&lt;/th&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Price&lt;/th&gt;<br>
+                            &nbsp;&nbsp;&lt;/tr&gt;<br>
+                            &nbsp;&nbsp;&lt;tr&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Laptop&lt;/td&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;$1200&lt;/td&gt;<br>
+                            &nbsp;&nbsp;&lt;/tr&gt;<br>
+                            &nbsp;&nbsp;&lt;tr&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Phone&lt;/td&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;$800&lt;/td&gt;<br>
+                            &nbsp;&nbsp;&lt;/tr&gt;<br>
+                            &lt;/table&gt;
+                        </code>
+                        </div>
+                        <div class="image-block">
+                            <table border="1">
+                                <caption>Product Price List</caption>
+                                <tr>
+                                  <th>Product</th>
+                                  <th>Price</th>
+                                </tr>
+                                <tr>
+                                  <td>Laptop</td>
+                                  <td>$1200</td>
+                                </tr>
+                                <tr>
+                                  <td>Phone</td>
+                                  <td>$800</td>
+                                </tr>
+                              </table>
+                        </div>
+                    </div>
+                
+                    <h3>3. Use Rowspan</h3>
+                    <p>
+                        Create a table for a weekly schedule with two columns: <strong>Day</strong> and <strong>Activity</strong>. Use <code>rowspan</code> to merge cells for the same activity on Monday and Tuesday.
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-3">Reveal Answer</button>
+                    <div id="answer-3" class="code-example-html blurred-answer code-example-html-w-image">
+                        <div class="code">
+                        <code>
+                            &lt;table border="1"&gt;<br>
+                            &nbsp;&nbsp;&lt;tr&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Day&lt;/th&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Activity&lt;/th&gt;<br>
+                            &nbsp;&nbsp;&lt;/tr&gt;<br>
+                            &nbsp;&nbsp;&lt;tr&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td rowspan="2"&gt;Monday, Tuesday&lt;/td&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Study&lt;/td&gt;<br>
+                            &nbsp;&nbsp;&lt;/tr&gt;<br>
+                            &nbsp;&nbsp;&lt;tr&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Exercise&lt;/td&gt;<br>
+                            &nbsp;&nbsp;&lt;/tr&gt;<br>
+                            &lt;/table&gt;
+                        </code>
+                        </div>
+                        <div class="image-block"><table border="1">
+                            <tr>
+                              <th>Day</th>
+                              <th>Activity</th>
+                            </tr>
+                            <tr>
+                              <td rowspan="2">Monday, Tuesday</td>
+                              <td>Study</td>
+                            </tr>
+                            <tr>
+                              <td>Exercise</td>
+                            </tr>
+                          </table></div>
+                    </div>
+                
+                    <h3>4. Use Colspan</h3>
+                    <p>
+                        Create a table for a monthly expense report with three columns: <strong>Category</strong>, <strong>Amount</strong>, and <strong>Total</strong>. Use <code>colspan</code> to merge the header cells of the last column.
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-4">Reveal Answer</button>
+                    <div class="code-example-html blurred-answer code-example-html-w-image" id="answer-4">
+                        <div class="code-block">
+                        <code>
+                            &lt;table border="1"&gt;<br>
+                            &nbsp;&nbsp;&lt;tr&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Category&lt;/th&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Amount&lt;/th&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th colspan="2"&gt;Total&lt;/th&gt;<br>
+                            &nbsp;&nbsp;&lt;/tr&gt;<br>
+                            &nbsp;&nbsp;&lt;tr&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Food&lt;/td&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;$300&lt;/td&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;$500&lt;/td&gt;<br>
+                            &nbsp;&nbsp;&lt;/tr&gt;<br>
+                            &lt;/table&gt;
+                        </code>
+                        </div>
+                        <div class="image-block">
+                        <table border="1">
+                        <tr>
+                            <th>Category</th>
+                            <th>Amount</th>
+                            <th>Total</th>
+                        </tr>
+                        <tr>
+                            <td>Food</td>
+                            <td>$300</td>
+                            <td rowspan="2">$500</td>
+                        </tr>
+                        <tr>
+                            <td>Groceries</td>
+                            <td>$200</td>
+                        </tr>
+                    </table>
+                        </div>
+                    </div>
+                    
+                    <p>
+                        <a href="./html-forms.html" class="neutral">
+                            Ready for the next topic? Head to the HTML Forms tutorial!
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <div id="footer-container"></div>
+    
+        <script src="/script.js?v=2"></script>
+    </body>
+</html>

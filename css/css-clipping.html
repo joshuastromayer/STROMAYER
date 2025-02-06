@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Clipping - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="/styles/coding.css">
+</head>
+
+<div id="header-container"></div>
+<body class="html-page-klm123">
+    <link rel="stylesheet" href="../styles/coding.css">
+<main class="html-main-klm123">
+    <!-- Quick Start Plan -->
+    <div id="css-quick-menu"></div>
+
+    <!-- Detailed Plan -->
+    <div class="main-tutorial-content">
+        <div class="detailed-plan-klm123" id="css-clipping-tutorial">
+            <h2>CSS Clipping</h2>
+            <p>
+                CSS Clipping allows you to control the visibility of specific parts of an element by defining a clipping region. This can be achieved using the <code>clip-path</code> property, which provides a variety of ways to define complex shapes and boundaries for elements.
+            </p>
+        
+            <h3>The clip-path Property</h3>
+            <p>
+                The <code>clip-path</code> property defines a visible area for an element. Anything outside this area is hidden. Common values include:
+            </p>
+            <ul>
+                <li><strong>circle()</strong>: Defines a circular clipping area.</li>
+                <li><strong>ellipse()</strong>: Defines an elliptical clipping area.</li>
+                <li><strong>inset()</strong>: Defines a rectangular clipping area with optional rounded corners.</li>
+                <li><strong>polygon()</strong>: Defines a custom polygonal clipping area.</li>
+            </ul>
+        
+            <h3>Using clip-path with Shapes</h3>
+        
+            <h4>1. Circle</h4>
+            <p>
+                Clip an element to a circular shape using the <code>circle()</code> function:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    .circle {<br>
+                    &nbsp;&nbsp;width: 200px;<br>
+                    &nbsp;&nbsp;height: 200px;<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;clip-path: circle(50%);<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="circle"&gt;&lt;/div&gt;
+                </code>
+            </div>
+            <p>
+                In this example, the element is clipped into a circular shape with a radius of 50% of its width and height.
+            </p>
+        
+            <h4>2. Ellipse</h4>
+            <p>
+                Clip an element to an elliptical shape using the <code>ellipse()</code> function:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    .ellipse {<br>
+                    &nbsp;&nbsp;width: 300px;<br>
+                    &nbsp;&nbsp;height: 200px;<br>
+                    &nbsp;&nbsp;background-color: lightcoral;<br>
+                    &nbsp;&nbsp;clip-path: ellipse(50% 30% at 50% 50%);<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="ellipse"&gt;&lt;/div&gt;
+                </code>
+            </div>
+            <p>
+                This clips the element into an ellipse with the specified horizontal and vertical radii.
+            </p>
+        
+            <h4>3. Inset</h4>
+            <p>
+                Clip an element to a rectangular shape using the <code>inset()</code> function:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    .inset {<br>
+                    &nbsp;&nbsp;width: 300px;<br>
+                    &nbsp;&nbsp;height: 200px;<br>
+                    &nbsp;&nbsp;background-color: lightgreen;<br>
+                    &nbsp;&nbsp;clip-path: inset(20px 30px 20px 30px round 10px);<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="inset"&gt;&lt;/div&gt;
+                </code>
+            </div>
+            <p>
+                This creates a rectangular clipping area with 20px padding on the top and bottom, 30px padding on the left and right, and rounded corners of 10px.
+            </p>
+        
+            <h4>4. Polygon</h4>
+            <p>
+                Clip an element to a custom polygonal shape using the <code>polygon()</code> function:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    .polygon {<br>
+                    &nbsp;&nbsp;width: 300px;<br>
+                    &nbsp;&nbsp;height: 200px;<br>
+                    &nbsp;&nbsp;background-color: lightpink;<br>
+                    &nbsp;&nbsp;clip-path: polygon(50% 0, 100% 100%, 0 100%);<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="polygon"&gt;&lt;/div&gt;
+                </code>
+            </div>
+            <p>
+                This clips the element into a triangular shape by defining three points.
+            </p>
+        
+            <h3>Using clip-path with Images</h3>
+            <p>
+                You can also apply clipping to images to create visually interesting effects:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    .image {<br>
+                    &nbsp;&nbsp;width: 300px;<br>
+                    &nbsp;&nbsp;height: 300px;<br>
+                    &nbsp;&nbsp;clip-path: circle(50%);<br>
+                    &nbsp;&nbsp;overflow: hidden;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;img class="image" src="image.jpg" alt="Clipped Image"&gt;
+                </code>
+            </div>
+            <p>
+                This clips the image into a circular shape.
+            </p>
+        
+            <h3>Practical Applications</h3>
+            <p>
+                The <code>clip-path</code> property is often used in UI design for:
+            </p>
+            <ul>
+                <li>Creating decorative shapes for elements or images.</li>
+                <li>Customizing masks for interactive design elements.</li>
+                <li>Highlighting specific areas in animations or transitions.</li>
+            </ul>
+        
+            <p>
+                <a href="./css-clipping.html#css-clipping-exercises" class="neutral">
+                    Ready to test your knowledge? Head to the exercises section!
+                </a>
+            </p>
+        </div>
+
+        <div class="detailed-plan-klm123" id="css-clipping-exercises">
+            <h2>CSS Clipping: Exercises</h2>
+        
+            <h3>1. Circle Clipping</h3>
+            <p>
+                Create a square box with the following styles:
+                <ul>
+                    <li>Width: 200px</li>
+                    <li>Height: 200px</li>
+                    <li>Background color: lightblue</li>
+                </ul>
+                Use the <code>clip-path</code> property to clip the box into a circular shape.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-1">Reveal Answer</button>
+            <div id="answer-1" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .circle {<br>
+                    &nbsp;&nbsp;width: 200px;<br>
+                    &nbsp;&nbsp;height: 200px;<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;clip-path: circle(50%);<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="circle"&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>2. Ellipse Clipping</h3>
+            <p>
+                Create a rectangular box with the following styles:
+                <ul>
+                    <li>Width: 300px</li>
+                    <li>Height: 200px</li>
+                    <li>Background color: lightcoral</li>
+                </ul>
+                Use the <code>clip-path</code> property to clip the box into an elliptical shape with radii of 50% (horizontal) and 30% (vertical), centered in the element.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-2">Reveal Answer</button>
+            <div id="answer-2" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .ellipse {<br>
+                    &nbsp;&nbsp;width: 300px;<br>
+                    &nbsp;&nbsp;height: 200px;<br>
+                    &nbsp;&nbsp;background-color: lightcoral;<br>
+                    &nbsp;&nbsp;clip-path: ellipse(50% 30% at 50% 50%);<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="ellipse"&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>3. Inset Clipping</h3>
+            <p>
+                Create a rectangular box with the following styles:
+                <ul>
+                    <li>Width: 300px</li>
+                    <li>Height: 200px</li>
+                    <li>Background color: lightgreen</li>
+                </ul>
+                Use the <code>clip-path</code> property to clip the box with an inset of 20px on the top and bottom, and 30px on the left and right.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-3">Reveal Answer</button>
+            <div id="answer-3" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .inset {<br>
+                    &nbsp;&nbsp;width: 300px;<br>
+                    &nbsp;&nbsp;height: 200px;<br>
+                    &nbsp;&nbsp;background-color: lightgreen;<br>
+                    &nbsp;&nbsp;clip-path: inset(20px 30px 20px 30px);<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="inset"&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>4. Polygon Clipping</h3>
+            <p>
+                Create a rectangular box with the following styles:
+                <ul>
+                    <li>Width: 300px</li>
+                    <li>Height: 200px</li>
+                    <li>Background color: lightpink</li>
+                </ul>
+                Use the <code>clip-path</code> property to clip the box into a triangle by defining three points: <code>(50% 0, 100% 100%, 0 100%)</code>.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-4">Reveal Answer</button>
+            <div id="answer-4" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .polygon {<br>
+                    &nbsp;&nbsp;width: 300px;<br>
+                    &nbsp;&nbsp;height: 200px;<br>
+                    &nbsp;&nbsp;background-color: lightpink;<br>
+                    &nbsp;&nbsp;clip-path: polygon(50% 0, 100% 100%, 0 100%);<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div class="polygon"&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>5. Clipping an Image</h3>
+            <p>
+                Use the <code>clip-path</code> property to clip an image into a circular shape. The image should have a width and height of 300px and should maintain its circular clipping area.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-5">Reveal Answer</button>
+            <div id="answer-5" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    .image {<br>
+                    &nbsp;&nbsp;width: 300px;<br>
+                    &nbsp;&nbsp;height: 300px;<br>
+                    &nbsp;&nbsp;clip-path: circle(50%);<br>
+                    &nbsp;&nbsp;overflow: hidden;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;img class="image" src="image.jpg" alt="Clipped Image"&gt;
+                </code>
+            </div>
+        
+            <div class="navigation-buttons">
+                <a href="./css-z-index.html" class="navigation-button prev-button neutral">← CSS Z-Index</a>
+                <a href="./css-masking.html" class="navigation-button next-button neutral">CSS Masking →</a>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+    <div id="footer-container"></div>
+    
+    <script src="/script.js?v=2"></script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Classes - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="../styles/coding.css">
+</head>
+<div id="header-container"></div>
+      <body class="html-page-klm123">
+<link rel="stylesheet" href="../styles/coding.css">
+
+    
+        <main class="html-main-klm123">
+            <!-- Quick Start Plan -->
+            <div id="html-quick-menu"></div>
+    
+            <!-- Detailed Plan -->
+            <div class="main-tutorial-content">
+                <div class="detailed-plan-klm123" id="html-classes-tutorial">
+                    <h2>HTML Classes</h2>
+                    <p>
+                        Classes in HTML are used to group elements that share the same styling or behavior. By assigning a class to one or more elements, you can target them collectively using CSS or JavaScript. Classes make it easy to create reusable styles and behaviors across your webpage.
+                    </p>
+                
+                    <h3>What is a Class?</h3>
+                    <p>
+                        A class is an attribute that you can add to an HTML element. It allows you to group multiple elements under the same name for styling or scripting purposes. Classes are defined using the <code>class</code> attribute and can be applied to any HTML element.
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;p class="highlight"&gt;This paragraph has a class.&lt;/p&gt;<br>
+                            &lt;div class="highlight"&gt;This div has the same class.&lt;/div&gt;
+                        </code>
+                    </div>
+                
+                    <h3>Adding Classes to HTML Elements</h3>
+                    <p>
+                        To assign a class to an element, use the <code>class</code> attribute followed by the name of the class in quotation marks. You can apply the same class to multiple elements to group them together.
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;h1 class="title"&gt;Welcome to My Website&lt;/h1&gt;<br>
+                            &lt;p class="description"&gt;This is the first paragraph.&lt;/p&gt;<br>
+                            &lt;p class="description"&gt;This is another paragraph with the same class.&lt;/p&gt;
+                        </code>
+                    </div>
+                
+                    <h3>Using Multiple Classes</h3>
+                    <p>
+                        You can assign multiple classes to a single element by separating the class names with a space. This allows you to combine different styles or behaviors for the same element.
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;div class="box rounded shadow"&gt;<br>
+                            &nbsp;&nbsp;This div has multiple classes.<br>
+                            &lt;/div&gt;
+                        </code>
+                    </div>
+                
+                    <h3>Why Use Classes?</h3>
+                    <p>
+                        Classes are incredibly useful for:
+                        <ul>
+                            <li>Applying consistent styling to multiple elements.</li>
+                            <li>Grouping elements for JavaScript interactions.</li>
+                            <li>Creating reusable styles for easier maintenance.</li>
+                        </ul>
+                    </p>
+                
+                    <h3>Difference Between Classes and IDs</h3>
+                    <p>
+                        While both classes and IDs can be used to identify elements, they serve different purposes:
+                        <ul>
+                            <li><strong>Classes:</strong> Can be applied to multiple elements and are used for grouping and styling.</li>
+                            <li><strong>IDs:</strong> Should be unique within a page and are used to target a single, specific element.</li>
+                        </ul>
+                    </p>
+                
+                    <div class="code-example-html">
+                        <code>
+                            &lt;div id="unique-container"&gt;This div has an ID.&lt;/div&gt;<br>
+                            &lt;p class="common-style"&gt;This paragraph has a class.&lt;/p&gt;<br>
+                            &lt;p class="common-style"&gt;This paragraph shares the same class.&lt;/p&gt;
+                        </code>
+                    </div>
+                
+                    <h3>Example: Styling with Classes</h3>
+                    <p>
+                        Here’s an example of how classes can be used in HTML and styled using CSS:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;style&gt;<br>
+                            &nbsp;&nbsp;.highlight { color: red; }<br>
+                            &nbsp;&nbsp;.box { border: 1px solid black; padding: 10px; }<br>
+                            &lt;/style&gt;<br><br>
+                            &lt;p class="highlight"&gt;This text will be red.&lt;/p&gt;<br>
+                            &lt;div class="box"&gt;This div has a border and padding.&lt;/div&gt;
+                        </code>
+                    </div>
+                
+                    <h3>Best Practices for Classes</h3>
+                    <p>
+                        When using classes, keep these best practices in mind:
+                        <ul>
+                            <li>Use meaningful class names that describe the purpose of the element (e.g., <code>header</code>, <code>footer</code>).</li>
+                            <li>Avoid overly generic names like <code>box</code> or <code>container</code> unless the class is truly generic.</li>
+                            <li>Use kebab-case (e.g., <code>main-header</code>) for class names to maintain consistency and readability.</li>
+                        </ul>
+                    </p>
+                
+                    <p>
+                        <a href="./html-classes.html#html-classes-exercises" class="neutral">
+                            Ready to test your knowledge? Head to the exercises section!
+                        </a>
+                    </p>
+                </div>
+                <div class="detailed-plan-klm123" id="html-classes-exercises">
+                    <h2>HTML Classes: Exercises</h2>
+                
+                    <h3>1. Create and Apply a Class</h3>
+                    <p>
+                        Create a paragraph with the class <code>"highlight"</code>. Try use CSS to change the text color of the class to blue.
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-1">Reveal Answer</button>
+                    <div id="answer-1" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;style&gt;<br>
+                            &nbsp;&nbsp;.highlight { color: blue; }<br>
+                            &lt;/style&gt;<br><br>
+                            &lt;p class="highlight"&gt;This text is blue.&lt;/p&gt;
+                        </code>
+                    </div>
+                
+                    <h3>2. Apply Multiple Classes</h3>
+                    <p>
+                        Create a div with the classes <code>"box"</code> and <code>"shadow"</code>. Try use CSS to give <code>"box"</code> a border and <code>"shadow"</code> a shadow effect.
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-2">Reveal Answer</button>
+                    <div id="answer-2" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;style&gt;<br>
+                            &nbsp;&nbsp;.box { border: 2px solid black; padding: 10px; }<br>
+                            &nbsp;&nbsp;.shadow { box-shadow: 2px 2px 5px gray; }<br>
+                            &lt;/style&gt;<br><br>
+                            &lt;div class="box shadow"&gt;This div has a border and shadow.&lt;/div&gt;
+                        </code>
+                    </div>
+                
+                    <h3>3. Reuse a Class</h3>
+                    <p>
+                        Create three paragraphs and apply the same class, <code>"description"</code>, to all of them. Try use CSS to change the font size of the class to 18px.
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-3">Reveal Answer</button>
+                    <div id="answer-3" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;style&gt;<br>
+                            &nbsp;&nbsp;.description { font-size: 18px; }<br>
+                            &lt;/style&gt;<br><br>
+                            &lt;p class="description"&gt;Paragraph 1.&lt;/p&gt;<br>
+                            &lt;p class="description"&gt;Paragraph 2.&lt;/p&gt;<br>
+                            &lt;p class="description"&gt;Paragraph 3.&lt;/p&gt;
+                        </code>
+                    </div>
+                
+                    <h3>4. Combine Classes</h3>
+                    <p>
+                        Create a div with the classes <code>"highlight"</code> and <code>"rounded"</code>. Try use CSS to set the text color for <code>"highlight"</code> to red and add rounded corners for <code>"rounded"</code>.
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-4">Reveal Answer</button>
+                    <div id="answer-4" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;style&gt;<br>
+                            &nbsp;&nbsp;.highlight { color: red; }<br>
+                            &nbsp;&nbsp;.rounded { border-radius: 10px; padding: 10px; border: 1px solid black; }<br>
+                            &lt;/style&gt;<br><br>
+                            &lt;div class="highlight rounded"&gt;This div has red text and rounded corners.&lt;/div&gt;
+                        </code>
+                    </div>
+                
+                    <h3>5. Differentiate Classes and IDs</h3>
+                    <p>
+                        Create two divs: one with the class <code>"container"</code> and another with the ID <code>"main-container"</code>. Try use CSS to give the class a blue border and the ID a green background.
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-5">Reveal Answer</button>
+                    <div id="answer-5" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;style&gt;<br>
+                            &nbsp;&nbsp;.container { border: 2px solid blue; padding: 10px; }<br>
+                            &nbsp;&nbsp;#main-container { background-color: lightgreen; padding: 10px; }<br>
+                            &lt;/style&gt;<br><br>
+                            &lt;div class="container"&gt;This div has a blue border.&lt;/div&gt;<br>
+                            &lt;div id="main-container"&gt;This div has a green background.&lt;/div&gt;
+                        </code>
+                    </div>
+                
+                    <p>
+                        <a href="./html-ids.html" class="neutral">
+                            Ready to move on? Head to the HTML IDs tutorial!
+                        </a>
+                    </p>
+                </div>
+
+            </div>
+        </main>
+
+        <div id="footer-container"></div>
+    
+        <script src="/script.js?v=2"></script>
+    </body>
+</html>

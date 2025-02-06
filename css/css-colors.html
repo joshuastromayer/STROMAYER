@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Colors - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="/styles/coding.css">
+</head>
+
+<div id="header-container"></div>
+<body class="html-page-klm123">
+    <link rel="stylesheet" href="../styles/coding.css">
+<main class="html-main-klm123">
+    <!-- Quick Start Plan -->
+    <div id="css-quick-menu"></div>
+
+    <!-- Detailed Plan -->
+    <div class="main-tutorial-content">
+        <div class="detailed-plan-klm123" id="css-colors-tutorial">
+            <h2>CSS Colors</h2>
+            <p>
+                Colors play a vital role in the design and user experience of a webpage. With CSS, you can apply colors to text, backgrounds, borders, and other elements to enhance the visual appeal and readability of your content.
+            </p>
+        
+            <h3>Ways to Define Colors in CSS</h3>
+            <p>CSS provides several methods to define colors. Here are the most commonly used:</p>
+            <ul>
+                <li>
+                    <strong>Color Names:</strong> CSS supports a variety of predefined color names like <code>red</code>, <code>blue</code>, and <code>green</code>.
+                </li>
+                <li>
+                    <strong>HEX Values:</strong> Colors can be defined using a hexadecimal format like <code>#FF5733</code>. This format is widely used for precise color control.
+                </li>
+                <li>
+                    <strong>RGB Values:</strong> The <code>rgb()</code> function allows you to define colors using red, green, and blue values ranging from 0 to 255, e.g., <code>rgb(255, 87, 51)</code>.
+                </li>
+                <li>
+                    <strong>RGBA Values:</strong> Similar to <code>rgb()</code>, but includes an alpha channel for transparency, e.g., <code>rgba(255, 87, 51, 0.5)</code>.
+                </li>
+                <li>
+                    <strong>HSL Values:</strong> The <code>hsl()</code> function defines colors using hue, saturation, and lightness, e.g., <code>hsl(10, 70%, 50%)</code>.
+                </li>
+                <li>
+                    <strong>HSLA Values:</strong> Similar to <code>hsl()</code>, but includes an alpha channel for transparency, e.g., <code>hsla(10, 70%, 50%, 0.5)</code>.
+                </li>
+            </ul>
+        
+            <h3>Examples</h3>
+            <p>Here’s how you can apply different colors using CSS:</p>
+            <div class="code-example-html">
+                <code>
+                    /* Applying color to text */<br>
+                    p {<br>
+                    &nbsp;&nbsp;color: red;<br>
+                    }<br><br>
+                    /* Applying background color */<br>
+                    body {<br>
+                    &nbsp;&nbsp;background-color: #F5F5F5;<br>
+                    }<br><br>
+                    /* Using RGB for borders */<br>
+                    div {<br>
+                    &nbsp;&nbsp;border: 2px solid rgb(0, 123, 255);<br>
+                    }<br><br>
+                    /* Transparent background with RGBA */<br>
+                    span {<br>
+                    &nbsp;&nbsp;background-color: rgba(0, 0, 0, 0.3);<br>
+                    }<br><br>
+                    /* Styling with HSL */<br>
+                    h1 {<br>
+                    &nbsp;&nbsp;color: hsl(240, 60%, 50%);<br>
+                    }
+                </code>
+            </div>
+        
+            <h3>Practical Application</h3>
+            <p>Combining colors effectively can make your website visually appealing. Consider experimenting with various color combinations to find what works best for your design.</p>
+        
+            <h3>Best Practices for Using Colors</h3>
+            <ul>
+                <li>Maintain contrast between text and background for readability.</li>
+                <li>Use a consistent color palette to ensure a unified design.</li>
+                <li>Leverage transparency (RGBA or HSLA) for overlays or subtle effects.</li>
+                <li>Test your colors for accessibility, especially for users with color blindness.</li>
+            </ul>
+        
+            <p>
+                <a href="./css-colors.html#css-colors-exercises" class="neutral">
+                    Ready to test your knowledge? Head to the exercises section!
+                </a>
+            </p>
+        </div>
+        <div class="detailed-plan-klm123" id="css-colors-exercises">
+            <h2>CSS Colors: Exercises</h2>
+        
+            <h3>1. Apply a Text Color</h3>
+            <p>
+                Create a paragraph with the text "CSS is amazing!" and make the text color blue using a CSS color name.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-1">Reveal Answer</button>
+            <div id="answer-1" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    p {<br>
+                    &nbsp;&nbsp;color: blue;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;p&gt;CSS is amazing!&lt;/p&gt;
+                </code>
+            </div>
+        
+            <h3>2. Use a HEX Value</h3>
+            <p>
+                Create a div with the text "Welcome to CSS!" and set its background color to <code>#FFD700</code> (gold).
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-2">Reveal Answer</button>
+            <div id="answer-2" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;background-color: #FFD700;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;Welcome to CSS!&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>3. Apply Transparency</h3>
+            <p>
+                Create a button with the text "Click Me!" and make its background color light blue with 50% transparency using RGBA.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-3">Reveal Answer</button>
+            <div id="answer-3" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    button {<br>
+                    &nbsp;&nbsp;background-color: rgba(173, 216, 230, 0.5);<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;button&gt;Click Me!&lt;/button&gt;
+                </code>
+            </div>
+        
+            <h3>4. Experiment with HSL</h3>
+            <p>
+                Create a heading with the text "Colorful Heading" and set its color to <code>hsl(300, 80%, 60%)</code>.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-4">Reveal Answer</button>
+            <div id="answer-4" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    h1 {<br>
+                    &nbsp;&nbsp;color: hsl(300, 80%, 60%);<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;h1&gt;Colorful Heading&lt;/h1&gt;
+                </code>
+            </div>
+        
+            <h3>5. Combine Colors</h3>
+            <p>
+                Create a blockquote element with a border color of <code>rgb(0, 123, 255)</code> and a background color of <code>#F0F8FF</code> (Alice Blue).
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-5">Reveal Answer</button>
+            <div id="answer-5" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    blockquote {<br>
+                    &nbsp;&nbsp;border-left: 5px solid rgb(0, 123, 255);<br>
+                    &nbsp;&nbsp;background-color: #F0F8FF;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;blockquote&gt;Your quote here.&lt;/blockquote&gt;
+                </code>
+            </div>
+        
+            <div class="navigation-buttons">
+                <a href="./css-in-html.html" class="navigation-button prev-button neutral">← CSS In HTML</a>
+                <a href="./css-backgrounds.html" class="navigation-button next-button neutral">CSS Backgrounds →</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <div id="footer-container"></div>
+    
+    <script src="/script.js?v=2"></script>
+</body>
+</html>

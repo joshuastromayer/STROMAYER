@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Introduction - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="/styles/coding.css">
+</head>
+
+<div id="header-container"></div>
+<body class="html-page-klm123">
+    <link rel="stylesheet" href="/styles/coding.css">
+    <header class="html-header-klm123" id="css-header">
+        <h1>Master JavaScript: Build Dynamic Experiences</h1>
+        <p>Step into the world of dynamic and interactive web development.</p>
+    </header>
+    <main class="html-main-klm123">
+        <!-- Quick Start Plan -->
+        <div id="js-quick-menu"></div>
+    
+        <!-- Detailed Plan -->
+        <div class="main-tutorial-content">
+            <div class="detailed-plan-klm123" id="js-introduction-tutorial">
+                <h2>JS Introduction</h2>
+                <p>
+                    Welcome to JavaScript! JavaScript (JS) is one of the core technologies of the web, alongside HTML and CSS. It is a powerful, versatile programming language used to make web pages interactive, dynamic, and functional.
+                </p>
+            
+                <h3>What is JavaScript?</h3>
+                <p>
+                    JavaScript is a <b>high-level, interpreted programming language</b> primarily used for web development. It allows you to:
+                </p>
+                <ul>
+                    <li>Make web pages interactive (e.g., buttons, animations, pop-ups).</li>
+                    <li>Modify HTML and CSS dynamically.</li>
+                    <li>Handle user inputs and events (e.g., mouse clicks, keyboard presses).</li>
+                    <li>Fetch data from servers and update web pages in real-time.</li>
+                    <li>Build full-stack applications using frameworks like Node.js.</li>
+                </ul>
+            
+                <h3>Why Learn JavaScript?</h3>
+                <p>
+                    JavaScript is one of the most widely used programming languages in the world. Learning JavaScript is essential because:
+                </p>
+                <ul>
+                    <li>It runs in all modern web browsers, no installation required.</li>
+                    <li>It is a beginner-friendly language with simple syntax.</li>
+                    <li>It is highly versatile, allowing you to build everything from websites to mobile apps.</li>
+                    <li>It has a massive community, with many resources and libraries available.</li>
+                </ul>
+            
+                <h3>How JavaScript Works in a Web Page</h3>
+                <p>
+                    JavaScript runs inside web browsers and interacts with HTML and CSS to change how a webpage behaves. Here’s a simple example of JavaScript modifying an HTML element:
+                </p>
+                <div class="code-example-html">
+                    <code>
+                        &lt;!-- HTML --&gt;<br>
+                        &lt;button onclick="changeText()"&gt;Click Me!&lt;/button&gt;<br>
+                        &lt;p id="message"&gt;Hello, World!&lt;/p&gt;<br><br>
+            
+                        &lt;!-- JavaScript --&gt;<br>
+                        &lt;script&gt;<br>
+                        function changeText() {<br>
+                        &nbsp;&nbsp;document.getElementById("message").innerHTML = "You clicked the button!";<br>
+                        }<br>
+                        &lt;/script&gt; <br> <br>
+                        <p>Output: </p> 
+                        <!-- HTML -->
+<button onclick="changeText()">Click Me!</button>
+<p id="message">Hello, World!</p>
+
+<!-- JavaScript -->
+<script>
+function changeText() {
+  document.getElementById("message").innerHTML = "You clicked the button!";
+}
+</script>
+                    </code>
+                </div>
+                <p>
+                    In this example, clicking the button changes the text inside the paragraph. JavaScript can manipulate HTML elements dynamically, making websites more interactive.
+                </p>
+            
+                <h3>Where to Use JavaScript?</h3>
+                <p>
+                    JavaScript is used in a variety of fields, including:
+                </p>
+                <ul>
+                    <li><b>Web Development</b> – Creating dynamic websites with frameworks like React, Vue, and Angular.</li>
+                    <li><b>Mobile App Development</b> – Building cross-platform apps with React Native.</li>
+                    <li><b>Game Development</b> – Making browser-based games with libraries like Phaser.js.</li>
+                    <li><b>Server-Side Programming</b> – Using Node.js to build backend applications.</li>
+                    <li><b>Machine Learning & AI</b> – Developing AI-powered web applications with TensorFlow.js.</li>
+                </ul>
+            
+                <h3>Getting Started with JavaScript</h3>
+                <p>
+                    In the next section, we’ll cover how to <b>set up JavaScript</b> and start writing your first JS program.
+                </p>
+            
+                <div class="navigation-buttons">
+                    <a href="./js-setting-up.html" class="navigation-button next-button neutral">JS Setup &gt;</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-container"></div>
+    
+    <script src="/script.js?v=2"></script>
+</body>
+</html>

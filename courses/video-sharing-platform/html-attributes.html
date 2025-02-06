@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes | CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="/styles/courses.css">
+  </head>
+<body class="course-page">
+    <div id="header-container"></div>
+    <div id="vsp-quick-menu"></div>
+    <main class="html-introduction-template">
+        <div id="unique-html-attributes-001" class="unique-section-container-001">
+            <h2>What Are Attributes?</h2>
+            <p>In HTML, <strong>attributes</strong> provide additional information about elements. They define an element’s behavior, modify its appearance, or store extra data that enhances its functionality.</p>
+            
+            <br>
+        
+            <h3>Attribute Syntax</h3>
+            <p>Attributes are always placed inside the <strong>opening tag</strong> of an element and follow this structure:</p>
+        
+            <div class="code-example-html">
+                &lt;elementName attributeName="value"&gt; Content &lt;/elementName&gt;
+            </div>
+        
+            <br>
+        
+            <h3>Example of an Attribute</h3>
+            <p>In the following example, the <code>href</code> attribute specifies the destination URL for a link:</p>
+        
+            <div class="code-example-html">
+                &lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;
+            </div>
+        
+            <p>When a browser reads this code, it knows that clicking the link will take the user to <code>https://www.example.com</code>.</p>
+        
+            <br>
+        
+            <h3>Why Are Attributes Important?</h3>
+            <p>Attributes allow developers to control the behavior and appearance of elements. They help enhance accessibility, define styling, and improve the user experience on a webpage.</p>
+        
+            <button class="unique-completion-button-001">Next</button>
+        </div>
+
+        <div id="unique-html-attributes-002" class="unique-section-container-001" style="display: none;">
+            <h2>Common HTML Attributes</h2>
+            <p>There are many different attributes in HTML, but some are used more frequently than others. These attributes help modify elements in various ways, such as linking to other pages, adding styles, or providing additional information.</p>
+        
+            <br>
+        
+            <h3>Commonly Used Attributes</h3>
+            <p>Here are some of the most commonly used attributes in HTML:</p>
+        
+            <ul>
+                <li><strong><code>href</code>:</strong> Specifies the URL of a link (<code>&lt;a&gt;</code> tag).</li>
+                <li><strong><code>src</code>:</strong> Specifies the file path of an image or media element (<code>&lt;img&gt;</code>, <code>&lt;video&gt;</code>).</li>
+                <li><strong><code>alt</code>:</strong> Provides alternative text for an image (<code>&lt;img&gt;</code>), improving accessibility.</li>
+                <li><strong><code>title</code>:</strong> Adds a tooltip when hovering over an element.</li>
+                <li><strong><code>style</code>:</strong> Allows inline CSS styling directly on an element.</li>
+            </ul>
+        
+            <br>
+        
+            <h3>Examples of Common Attributes</h3>
+            <p>Below are examples of how these attributes are used:</p>
+        
+            <div class="code-example-html">
+                <strong>Using the <code>href</code> attribute:</strong><br>
+                &lt;a href="https://www.example.com"&gt;Click here to visit Example&lt;/a&gt;<br>
+                <br>
+                <strong>Using the <code>src</code> and <code>alt</code> attributes:</strong><br>
+                &lt;img src="image.jpg" alt="A beautiful landscape"&gt;<br>
+                <br>
+                <strong>Using the <code>title</code> attribute:</strong><br>
+                &lt;p title="This is a tooltip"&gt;Hover over this text&lt;/p&gt;<br>
+                <br>
+                <strong>Using the <code>style</code> attribute:</strong><br>
+                &lt;p style="color: blue;"&gt;This text is blue&lt;/p&gt;
+            </div>
+        
+            <button class="unique-completion-button-001">Next</button>
+        </div>
+
+        <div id="unique-html-attributes-003" class="unique-section-container-001" style="display: none;">
+            <h2>Attribute Syntax</h2>
+            <p>In HTML, attributes follow a simple syntax. Every attribute consists of a <strong>name</strong> and a <strong>value</strong>. The value is always enclosed in <code>"double quotes"</code> or <code>'single quotes'</code>.</p>
+        
+            <br>
+        
+            <h3>Basic Attribute Syntax</h3>
+            <p>The general structure of an attribute looks like this:</p>
+        
+            <div class="code-example-html">
+                &lt;elementName attributeName="value"&gt; Content &lt;/elementName&gt;
+            </div>
+        
+            <p>Here’s an example using the <code>href</code> attribute in a link:</p>
+        
+            <div class="code-example-html">
+                &lt;a href="https://www.example.com"&gt; Visit Example &lt;/a&gt;
+            </div>
+        
+            <p>In this example:</p>
+            <ul>
+                <li><strong><code>&lt;a&gt;</code></strong>: The anchor (link) element.</li>
+                <li><strong><code>href</code></strong>: The attribute that specifies the link’s destination.</li>
+                <li><strong><code>"https://www.example.com"</code></strong>: The value of the attribute, indicating where the link leads.</li>
+            </ul>
+        
+            <br>
+        
+            <h3>Multiple Attributes</h3>
+            <p>An element can have multiple attributes. Each attribute is separated by a space:</p>
+        
+            <div class="code-example-html">
+                &lt;img src="image.jpg" alt="A scenic landscape" width="300" height="200"&gt;
+            </div>
+        
+            <p>In this example, the <code>&lt;img&gt;</code> tag has multiple attributes:</p>
+            <ul>
+                <li><code>src</code>: Defines the image source file.</li>
+                <li><code>alt</code>: Provides alternative text for accessibility.</li>
+                <li><code>width</code> and <code>height</code>: Specify the image dimensions.</li>
+            </ul>
+        
+            <button class="unique-completion-button-001">Next</button>
+        </div>
+
+        <div id="unique-html-attributes-004" class="unique-section-container-001 exercise-question mcq-question" style="display: none;">
+            <h2>Exercise:</h2>
+            <p>Select the correct code that properly creates a hyperlink that opens in a new tab.</p>
+        
+            <p>The correct hyperlink should:</p>
+            <ul>
+                <li>Use the <code>&lt;a&gt;</code> tag.</li>
+                <li>Have a valid <code>href</code> attribute with a URL.</li>
+                <li>Use <code>target="_blank"</code> correctly to open the link in a new tab.</li>
+            </ul>
+        
+            <br>
+        
+            <div id="mcq-options-horizontal" class="mcq-options">
+                <!-- Option 1 (Incorrect Code) -->
+                <input type="radio" id="option1" name="mcq" value="Option 1" data-correct-answer="Option 2">
+                <label for="option1">
+                    <code>
+                        &lt;a href="https://www.example.com"&gt; Visit Example &lt;/a  target="_blank"&gt;
+                    </code>
+                </label>
+        
+                <!-- Option 2 (Correct Code) -->
+                <input type="radio" id="option2" name="mcq" value="Option 2" data-correct-answer="Option 2">
+                <label for="option2">
+                    <code>
+                        &lt;a href="https://www.example.com" target="_blank"&gt; Visit Example &lt;/a&gt;
+                    </code>
+                </label>
+            </div>
+        
+            <button class="submit-answers">Check</button>
+            <span class="feedback"></span>
+            <div class="answer-display"></div>
+            <button class="unique-completion-button-001" style="display: none;">Next</button>
+        </div>
+
+        <div id="unique-html-attributes-005" class="unique-section-container-001" style="display: none;">
+            <h2>Global Attributes</h2>
+            <p>HTML provides several attributes that can be applied to almost any element. These are known as <strong>global attributes</strong> because they are not limited to specific tags.</p>
+        
+            <br>
+        
+            <h3>Common Global Attributes</h3>
+            <p>Here are some widely used global attributes:</p>
+        
+            <ul>
+                <li><strong><code>id</code></strong>: Assigns a unique identifier to an element.</li>
+                <li><strong><code>class</code></strong>: Specifies one or more class names for styling or JavaScript targeting.</li>
+                <li><strong><code>style</code></strong>: Adds inline CSS styles to an element.</li>
+                <li><strong><code>title</code></strong>: Provides extra information when the user hovers over the element.</li>
+                <li><strong><code>hidden</code></strong>: Hides the element from view.</li>
+            </ul>
+        
+            <br>
+        
+            <h3>Examples of Global Attributes</h3>
+            <p>Below are examples of how these attributes are used:</p>
+        
+            <div class="code-example-html">
+                <strong>Using the <code>id</code> and <code>class</code> attributes:</strong><br>
+                &lt;p id="intro" class="highlight"&gt;This is an important paragraph.&lt;/p&gt;<br>
+                <br>
+                <strong>Using the <code>style</code> attribute:</strong><br>
+                &lt;p style="color: red; font-size: 18px;"&gt;This text is red and larger.&lt;/p&gt;<br>
+                <br>
+                <strong>Using the <code>title</code> attribute:</strong><br>
+                &lt;button title="Click to submit"&gt;Submit&lt;/button&gt;<br>
+                <br>
+                <strong>Using the <code>hidden</code> attribute:</strong><br>
+                &lt;p hidden&gt;This paragraph is hidden from view.&lt;/p&gt;
+            </div>
+        
+            <p>Global attributes make elements more flexible and easier to manipulate with CSS and JavaScript.</p>
+        
+            <button class="unique-completion-button-001">Next</button>
+        </div>
+
+        <div id="unique-html-attributes-006" class="unique-section-container-001" style="display: none;">
+            <h2>Boolean Attributes</h2>
+            <p>Boolean attributes are a special type of HTML attribute that do not require a value. If a boolean attribute is present, its mere existence means it is enabled or set to true.</p>
+        
+            <br>
+        
+            <h3>How Boolean Attributes Work</h3>
+            <p>Unlike regular attributes, boolean attributes don’t need an explicit value. Writing them inside an element automatically applies their effect.</p>
+        
+            <br>
+        
+            <h3>Common Boolean Attributes</h3>
+            <p>Here are some commonly used boolean attributes:</p>
+        
+            <ul>
+                <li><strong><code>checked</code></strong>: Marks an input checkbox or radio button as selected.</li>
+                <li><strong><code>disabled</code></strong>: Disables a form element (e.g., input, button, select) so it cannot be used.</li>
+                <li><strong><code>readonly</code></strong>: Makes an input field uneditable.</li>
+                <li><strong><code>required</code></strong>: Specifies that a form input must be filled out before submission.</li>
+                <li><strong><code>autofocus</code></strong>: Automatically places the cursor inside an input field when the page loads.</li>
+            </ul>
+        
+            <br>
+        
+            <h3>Examples of Boolean Attributes</h3>
+            <p>Here’s how boolean attributes work in real HTML code:</p>
+        
+            <div class="code-example-html">
+                <strong>Using the <code>checked</code> attribute:</strong><br>
+                &lt;input type="checkbox" checked&gt; I agree to the terms<br>
+                <br>
+                <strong>Using the <code>disabled</code> attribute:</strong><br>
+                &lt;button disabled&gt;Submit&lt;/button&gt;<br>
+                <br>
+                <strong>Using the <code>readonly</code> attribute:</strong><br>
+                &lt;input type="text" value="Cannot edit this" readonly&gt;<br>
+                <br>
+                <strong>Using the <code>required</code> attribute:</strong><br>
+                &lt;input type="text" placeholder="Enter your name" required&gt;
+            </div>
+        
+            <p>Boolean attributes help control element behavior in forms and interactive elements. Since they are either present or absent, you do not need to assign them a value.</p>
+        
+            <button class="unique-completion-button-001">Next</button>
+        </div>
+
+        <div id="unique-html-attributes-007" class="unique-section-container-001" style="display: none;">
+            <h2>Data Attributes</h2>
+            <p>Sometimes, you need to store extra information inside an HTML element that doesn’t affect its appearance or behavior directly. This is where <strong>data attributes</strong> come in.</p>
+        
+            <br>
+        
+            <h3>What Are Data Attributes?</h3>
+            <p>Data attributes allow you to store custom data inside an element. They always start with <code>data-</code> followed by a custom name.</p>
+        
+            <br>
+        
+            <h3>How to Use Data Attributes</h3>
+            <p>The syntax follows this structure:</p>
+        
+            <div class="code-example-html">
+                &lt;element data-name="value"&gt;Content&lt;/element&gt;
+            </div>
+        
+            <br>
+        
+            <h3>Example of Data Attributes</h3>
+            <p>Let’s say we have a button, and we want to store extra information inside it:</p>
+        
+            <div class="code-example-html">
+                &lt;button data-user-id="12345"&gt;Click Me&lt;/button&gt;
+            </div>
+        
+            <p>In this example:</p>
+            <ul>
+                <li><code>data-user-id</code> is a custom attribute storing a unique user ID.</li>
+                <li>It does not affect how the button looks or works until JavaScript reads or modifies it.</li>
+            </ul>
+        
+            <br>
+        
+            <h3>Accessing Data Attributes with JavaScript</h3>
+            <p>Data attributes are commonly used with JavaScript. You can retrieve them using the <code>dataset</code> property:</p>
+        
+            <div class="code-example-html">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let button = document.querySelector("button");<br>
+                &nbsp;&nbsp;console.log(button.dataset.userId); // Outputs: "12345"<br>
+                &lt;/script&gt;
+            </div>
+        
+            <p>This allows developers to store extra information inside elements without affecting the HTML structure.</p>
+        
+            <button class="unique-completion-button-001">Next</button>
+        </div>
+    </main>
+    <div id="footer-container"></div>
+<script src="/script.js?v=2"></script>    
+</body>
+</html>

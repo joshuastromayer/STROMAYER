@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Images - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="../styles/coding.css">
+</head>
+<div id="header-container"></div>
+      <body class="html-page-klm123">
+<link rel="stylesheet" href="../styles/coding.css">
+
+    
+        <main class="html-main-klm123">
+            <!-- Quick Start Plan -->
+            <div id="html-quick-menu"></div>
+    
+            <!-- Detailed Plan -->
+            <div class="main-tutorial-content">
+                <div class="detailed-plan-klm123" id="html-images-tutorial">
+                    <h2>HTML Images</h2>
+                
+                    <h3>Introduction to Images</h3>
+                    <p>
+                        Images play a significant role in making websites visually appealing and informative. In HTML, the <code>&lt;img&gt;</code> tag is used to embed images in a webpage. Images can be used for decorative purposes, convey information, or enhance the overall user experience.
+                    </p>
+                
+                    <h3>Basic Syntax</h3>
+                    <p>
+                        The <code>&lt;img&gt;</code> tag is a self-closing tag in HTML and requires at least two attributes:
+                    </p>
+                    <ul>
+                        <li><code>src</code>: Specifies the path or URL to the image file.</li>
+                        <li><code>alt</code>: Provides alternative text for the image, which is crucial for accessibility and is displayed when the image cannot be loaded.</li>
+                    </ul>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;img src="images/example.jpg" alt="An example image"&gt;
+                        </code>
+                    </div>
+                
+                    <h3>Image Sources</h3>
+                    <p>
+                        The <code>src</code> attribute can accept:
+                    </p>
+                    <ul>
+                        <li><strong>Relative paths</strong>: When the image file is in the same directory or a subdirectory of your HTML file.
+                            <div class="code-example-html">
+                                <code>
+                                    &lt;img src="images/example.jpg" alt="Relative path example"&gt;
+                                </code>
+                            </div>
+                        </li>
+                        <li><strong>Absolute paths</strong>: When the image is hosted on an external server.
+                            <div class="code-example-html">
+                                <code>
+                                    &lt;img src="https://example.com/images/example.jpg" alt="Absolute path example"&gt;
+                                </code>
+                            </div>
+                        </li>
+                    </ul>
+                
+                    <h3>Adding a Title</h3>
+                    <p>
+                        The <code>title</code> attribute can be used to provide additional information about the image. When the user hovers over the image, the title text will appear as a tooltip.
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;img src="images/example.jpg" alt="An example image" title="This is an example image"&gt;
+                        </code>
+                    </div>
+                
+                    <h3>Resizing Images</h3>
+                    <p>
+                        You can resize images using the <code>width</code> and <code>height</code> attributes. These attributes accept values in pixels or percentages.
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;img src="images/example.jpg" alt="Resized image" width="300" height="200"&gt;
+                        </code>
+                    </div>
+                    <p>
+                        However, it is recommended to use CSS for resizing to separate content from styling:
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;img src="images/example.jpg" alt="Resized image" class="custom-image"&gt;<br><br>
+                            &lt;style&gt;<br>
+                            &nbsp;&nbsp;.custom-image {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;width: 300px;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;height: auto;<br>
+                            &nbsp;&nbsp;}<br>
+                            &lt;/style&gt;
+                        </code>
+                    </div>
+                
+                    <h3>Images as Links</h3>
+                    <p>
+                        You can use images as links by wrapping the <code>&lt;img&gt;</code> tag inside an <code>&lt;a&gt;</code> tag.
+                    </p>
+                    <div class="code-example-html">
+                        <code>
+                            &lt;a href="https://example.com"&gt;<br>
+                            &nbsp;&nbsp;&lt;img src="images/example.jpg" alt="Click to visit Example"&gt;<br>
+                            &lt;/a&gt;
+                        </code>
+                    </div>
+                
+                    <h3>Best Practices for Using Images</h3>
+                    <p>
+                        To optimize the use of images in your webpage:
+                    </p>
+                    <ul>
+                        <li>Always include the <code>alt</code> attribute for accessibility and to improve SEO.</li>
+                        <li>Use appropriately sized images to ensure fast loading times.</li>
+                        <li>Compress images to reduce file size without compromising quality.</li>
+                        <li>Choose the right format for your image:
+                            <ul>
+                                <li><code>.jpg</code> or <code>.jpeg</code>: Best for photographs.</li>
+                                <li><code>.png</code>: Best for images with transparency or text.</li>
+                                <li><code>.gif</code>: Best for simple animations.</li>
+                                <li><code>.svg</code>: Best for vector graphics and logos.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                
+                    <h3>Common Mistakes to Avoid</h3>
+                    <ul>
+                        <li>Using large, uncompressed images that slow down page loading times.</li>
+                        <li>Not providing an <code>alt</code> attribute, making the webpage inaccessible to screen readers.</li>
+                        <li>Distorting the image by not maintaining the correct aspect ratio when resizing.</li>
+                    </ul>
+                
+                    <h3>Conclusion</h3>
+                    <p>
+                        Images are an essential part of any website, helping to engage users and convey information effectively. By mastering the <code>&lt;img&gt;</code> tag and its attributes, you can create visually appealing and accessible webpages.
+                    </p>
+                
+                    <p>
+                        <a href="./html-images.html#html-images-exercises" class="neutral">
+                            Ready to test your knowledge? Head to the exercises section!
+                        </a>
+                    </p>
+                </div>
+
+                <div class="detailed-plan-klm123" id="html-images-exercises">
+                    <h2>HTML Images: Exercises</h2>
+                    
+                    <h3>1. Add an Image with Alt Text</h3>
+                    <p>
+                        Create an image element that displays an image named "sunrise.jpg" located in an <code>images</code> folder. The alt text should say: "A beautiful sunrise".
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-1">Reveal Answer</button>
+                    <div id="answer-1" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;img src="images/sunrise.jpg" alt="A beautiful sunrise"&gt;
+                        </code>
+                    </div>
+                    
+                    <h3>2. Resize an Image</h3>
+                    <p>
+                        Add an image with the file name "forest.jpg" located in the <code>images</code> folder. Set its width to 400 pixels and maintain its aspect ratio. Use the <code>width</code> attribute in HTML for this exercise.
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-2">Reveal Answer</button>
+                    <div id="answer-2" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;img src="images/forest.jpg" alt="A forest view" width="400"&gt;
+                        </code>
+                    </div>
+                    
+                    <h3>3. Use an Image as a Link</h3>
+                    <p>
+                        Create an image named "logo.png" located in the <code>images</code> folder. Make the image clickable and link it to <code>https://example.com</code>.
+                    </p>
+                    <button class="reveal-answer-btn" data-answer-id="answer-3">Reveal Answer</button>
+                    <div id="answer-3" class="code-example-html blurred-answer">
+                        <code>
+                            &lt;a href="https://example.com"&gt;<br>
+                            &nbsp;&nbsp;&lt;img src="images/logo.png" alt="Example logo"&gt;<br>
+                            &lt;/a&gt;
+                        </code>
+                    </div>
+                
+                    <p>
+                        <a href="./html-lists.html#html-lists-tutorial" class="neutral">
+                            Ready to learn about lists? Let's go!
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <div id="footer-container"></div>
+    
+        <script src="/script.js?v=2"></script>
+    </body>
+</html>

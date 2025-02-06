@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="/styles/coding.css">
+</head>
+
+<div id="header-container"></div>
+<body class="html-page-klm123">
+    <link rel="stylesheet" href="../styles/coding.css">
+<main class="html-main-klm123">
+    <!-- Quick Start Plan -->
+    <div id="css-quick-menu"></div>
+
+    <!-- Detailed Plan -->
+    <div class="main-tutorial-content">
+        <div class="detailed-plan-klm123" id="css-animations-tutorial">
+            <h2>CSS Animations</h2>
+            <p>
+                CSS Animations allow you to create complex animations by defining keyframes that specify the styles at various points in the animation. They provide more control and flexibility than transitions, enabling you to animate multiple properties and create continuous effects.
+            </p>
+        
+            <h3>Basic Syntax</h3>
+            <p>
+                A CSS Animation is defined using the <code>@keyframes</code> rule and applied to an element using the <code>animation</code> property. The <code>@keyframes</code> rule specifies the animation's behavior at different points, called keyframes.
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    @keyframes example {<br>
+                    &nbsp;&nbsp;from { background-color: lightblue; }<br>
+                    &nbsp;&nbsp;to { background-color: lightcoral; }<br>
+                    }<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 200px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;animation: example 2s ease-in-out infinite;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+            <p>
+                In this example, the background color transitions between lightblue and lightcoral over 2 seconds, repeating infinitely.
+            </p>
+        
+            <h3>Defining Keyframes</h3>
+            <p>
+                Keyframes define the intermediate steps of an animation. You can use percentages to specify when each keyframe occurs:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    @keyframes slide {<br>
+                    &nbsp;&nbsp;0% { transform: translateX(0); }<br>
+                    &nbsp;&nbsp;50% { transform: translateX(100px); }<br>
+                    &nbsp;&nbsp;100% { transform: translateX(0); }<br>
+                    }<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 100px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightgreen;<br>
+                    &nbsp;&nbsp;animation: slide 3s ease infinite;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+            <p>
+                In this example, the element moves 100px to the right at 50% of the animation and returns to its starting position at 100%.
+            </p>
+        
+            <h3>Animation Properties</h3>
+            <p>
+                The <code>animation</code> shorthand property combines several individual animation properties:
+            </p>
+            <ul>
+                <li><code>animation-name</code>: Specifies the name of the <code>@keyframes</code> animation.</li>
+                <li><code>animation-duration</code>: Specifies how long the animation takes (e.g., <code>2s</code>).</li>
+                <li><code>animation-timing-function</code>: Specifies the speed curve (e.g., <code>ease</code>, <code>linear</code>).</li>
+                <li><code>animation-delay</code>: Specifies a delay before the animation starts.</li>
+                <li><code>animation-iteration-count</code>: Specifies the number of times the animation repeats (<code>infinite</code> for continuous looping).</li>
+                <li><code>animation-direction</code>: Specifies whether the animation alternates direction (<code>normal</code>, <code>reverse</code>, <code>alternate</code>).</li>
+            </ul>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    @keyframes bounce {<br>
+                    &nbsp;&nbsp;0%, 100% { transform: translateY(0); }<br>
+                    &nbsp;&nbsp;50% { transform: translateY(-50px); }<br>
+                    }<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 100px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightpink;<br>
+                    &nbsp;&nbsp;animation: bounce 1s ease infinite alternate;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>Controlling Animations</h3>
+            <p>
+                You can pause, play, or restart animations using the <code>animation-play-state</code> property:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 100px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightyellow;<br>
+                    &nbsp;&nbsp;animation: example 2s infinite;<br>
+                    &nbsp;&nbsp;animation-play-state: paused;<br>
+                    }<br>
+                    div:hover {<br>
+                    &nbsp;&nbsp;animation-play-state: running;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+            <p>
+                In this example, the animation starts only when you hover over the element.
+            </p>
+        
+            <h3>Practical Example</h3>
+            <p>
+                Combine multiple properties to create a more complex animation:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    @keyframes grow-shrink {<br>
+                    &nbsp;&nbsp;0%, 100% { transform: scale(1); }<br>
+                    &nbsp;&nbsp;50% { transform: scale(1.5); }<br>
+                    }<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 150px;<br>
+                    &nbsp;&nbsp;height: 150px;<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;animation: grow-shrink 2s ease-in-out infinite;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <p>
+                <a href="./css-animations.html#css-animations-exercises" class="neutral">
+                    Ready to test your knowledge? Head to the exercises section!
+                </a>
+            </p>
+        </div>
+
+        <div class="detailed-plan-klm123" id="css-animations-exercises">
+            <h2>CSS Animations: Exercises</h2>
+        
+            <h3>1. Simple Animation</h3>
+            <p>
+                Create a box that changes its background color from blue to green over 3 seconds. The animation should repeat infinitely.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-1">Reveal Answer</button>
+            <div id="answer-1" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    @keyframes color-change {<br>
+                    &nbsp;&nbsp;from { background-color: blue; }<br>
+                    &nbsp;&nbsp;to { background-color: green; }<br>
+                    }<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 150px;<br>
+                    &nbsp;&nbsp;height: 150px;<br>
+                    &nbsp;&nbsp;background-color: blue;<br>
+                    &nbsp;&nbsp;animation: color-change 3s infinite;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>2. Keyframes with Percentages</h3>
+            <p>
+                Create a box that:
+                <ul>
+                    <li>Starts with a width of 100px.</li>
+                    <li>Expands to 200px at 50% of the animation.</li>
+                    <li>Returns to 100px at the end of the animation.</li>
+                </ul>
+                The animation should last 2 seconds and loop infinitely.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-2">Reveal Answer</button>
+            <div id="answer-2" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    @keyframes expand {<br>
+                    &nbsp;&nbsp;0% { width: 100px; }<br>
+                    &nbsp;&nbsp;50% { width: 200px; }<br>
+                    &nbsp;&nbsp;100% { width: 100px; }<br>
+                    }<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 100px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;animation: expand 2s infinite;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>3. Timing Functions</h3>
+            <p>
+                Create a circle that grows to 1.5 times its original size over 1 second. Use the <code>ease-in-out</code> timing function and make the animation alternate directions.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-3">Reveal Answer</button>
+            <div id="answer-3" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    @keyframes grow {<br>
+                    &nbsp;&nbsp;0%, 100% { transform: scale(1); }<br>
+                    &nbsp;&nbsp;50% { transform: scale(1.5); }<br>
+                    }<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 100px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightpink;<br>
+                    &nbsp;&nbsp;border-radius: 50%;<br>
+                    &nbsp;&nbsp;animation: grow 1s ease-in-out infinite alternate;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>4. Delay and Iteration Count</h3>
+            <p>
+                Create a square that rotates 45 degrees. The animation should:
+                <ul>
+                    <li>Start after a 1-second delay.</li>
+                    <li>Last for 1.5 seconds.</li>
+                    <li>Repeat exactly 3 times.</li>
+                </ul>
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-4">Reveal Answer</button>
+            <div id="answer-4" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    @keyframes rotate {<br>
+                    &nbsp;&nbsp;from { transform: rotate(0); }<br>
+                    &nbsp;&nbsp;to { transform: rotate(45deg); }<br>
+                    }<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 100px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightgreen;<br>
+                    &nbsp;&nbsp;animation: rotate 1.5s 1s 3;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>5. Animation Direction</h3>
+            <p>
+                Create a rectangle that alternates between moving left and right. Use <code>animation-direction: alternate</code> to achieve this effect, and set the duration to 2 seconds.
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-5">Reveal Answer</button>
+            <div id="answer-5" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    @keyframes slide {<br>
+                    &nbsp;&nbsp;0% { transform: translateX(0); }<br>
+                    &nbsp;&nbsp;100% { transform: translateX(100px); }<br>
+                    }<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 150px;<br>
+                    &nbsp;&nbsp;height: 75px;<br>
+                    &nbsp;&nbsp;background-color: lightyellow;<br>
+                    &nbsp;&nbsp;animation: slide 2s ease infinite alternate;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <div class="navigation-buttons">
+                <a href="./css-transitions.html" class="navigation-button prev-button neutral">← CSS Transitions</a>
+                <a href="./css-transform.html" class="navigation-button next-button neutral">CSS Transform →</a>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+    <div id="footer-container"></div>
+    
+    <script src="/script.js?v=2"></script>
+</body>
+</html>

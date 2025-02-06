@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Setting Up - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="/styles/coding.css">
+</head>
+
+<div id="header-container"></div>
+<body class="html-page-klm123">
+    <link rel="stylesheet" href="/styles/coding.css">
+    <main class="html-main-klm123">
+        <!-- Quick Start Plan -->
+        <div id="js-quick-menu"></div>
+    
+        <!-- Detailed Plan -->
+        <div class="main-tutorial-content">
+            <div class="detailed-plan-klm123" id="js-setting-up-tutorial">
+                <h2>JS Setup</h2>
+                <p>
+                    Before writing JavaScript, you need to know where and how to include it in your web pages. JavaScript can be added directly inside an HTML document or stored in an external file.
+                </p>
+            
+                <h3>Using JavaScript Inside HTML</h3>
+                <p>
+                    JavaScript can be placed inside an HTML file using the <b>&lt;script&gt;</b> tag. It can be written in two ways:
+                </p>
+                <ul>
+                    <li><b>Inline JavaScript</b>: Inside an HTML element.</li>
+                    <li><b>Internal JavaScript</b>: Inside a <b>&lt;script&gt;</b> tag.</li>
+                </ul>
+            
+                <p><b>Example of Inline JavaScript:</b></p>
+                <div class="code-example-html">
+                    <code>
+                        &lt;button onclick="alert('Hello, World!')"&gt;Click Me&lt;/button&gt;
+                    </code>
+                </div>
+                <p>
+                    In this example, JavaScript is directly inside the HTML button element. When the button is clicked, an alert box appears.
+                </p>
+            
+                <p><b>Example of Internal JavaScript:</b></p>
+                <div class="code-example-html">
+                    <code>
+                        &lt;!DOCTYPE html&gt;<br>
+                        &lt;html&gt;<br>
+                        &nbsp;&nbsp;&lt;head&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;JavaScript Example&lt;/title&gt;<br>
+                        &nbsp;&nbsp;&lt;/head&gt;<br>
+                        &nbsp;&nbsp;&lt;body&gt;<br><br>
+            
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;button onclick="showMessage()"&gt;Click Me&lt;/button&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;p id="output"&gt;&lt;/p&gt;<br><br>
+            
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;script&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;function showMessage() {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById("output").innerHTML = "Hello from JavaScript!";<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/script&gt;<br><br>
+            
+                        &nbsp;&nbsp;&lt;/body&gt;<br>
+                        &lt;/html&gt;
+                    </code>
+                </div>
+                <p>
+                    Here, JavaScript is placed inside the <b>&lt;script&gt;</b> tag in the HTML document.
+                </p>
+            
+                <h3>External JavaScript</h3>
+                <p>
+                    Instead of writing JavaScript inside an HTML file, you can store it in an external file with a <b>.js</b> extension and link it using the <b>src</b> attribute inside a <b>&lt;script&gt;</b> tag.
+                </p>
+                <p><b>Example of External JavaScript:</b></p>
+                <div class="code-example-html">
+                    <code>
+                        &lt;!DOCTYPE html&gt;<br>
+                        &lt;html&gt;<br>
+                        &nbsp;&nbsp;&lt;head&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;JavaScript Example&lt;/title&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="script.js"&gt;&lt;/script&gt;<br>
+                        &nbsp;&nbsp;&lt;/head&gt;<br>
+                        &nbsp;&nbsp;&lt;body&gt;<br><br>
+            
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;button onclick="showMessage()"&gt;Click Me&lt;/button&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;p id="output"&gt;&lt;/p&gt;<br><br>
+            
+                        &nbsp;&nbsp;&lt;/body&gt;<br>
+                        &lt;/html&gt;
+                    </code>
+                </div>
+            
+                <p><b>External JavaScript File (script.js):</b></p>
+                <div class="code-example-html">
+                    <code>
+                        function showMessage() {<br>
+                        &nbsp;&nbsp;document.getElementById("output").innerHTML = "Hello from an external file!";<br>
+                        }
+                    </code>
+                </div>
+                <p>
+                    Here, the JavaScript code is written in a separate file named <b>script.js</b>. The HTML file links to it using the <b>&lt;script src="script.js"&gt;</b> tag.
+                </p>
+            
+                <h3>Where to Place JavaScript in HTML?</h3>
+                <p>
+                    JavaScript can be placed in two main locations in an HTML document:
+                </p>
+                <ul>
+                    <li><b>Inside the &lt;head&gt; tag</b>: The script runs before the page loads. This can cause issues if it tries to manipulate elements that haven’t loaded yet.</li>
+                    <li><b>At the end of the &lt;body&gt; tag</b>: Recommended, because it allows the HTML to load first before JavaScript runs.</li>
+                </ul>
+                <p><b>Example of JavaScript at the bottom of the page:</b></p>
+                <div class="code-example-html">
+                    <code>
+                        &lt;body&gt;<br>
+                        &nbsp;&nbsp;&lt;h1&gt;My Web Page&lt;/h1&gt;<br><br>
+            
+                        &nbsp;&nbsp;&lt;script src="script.js"&gt;&lt;/script&gt;<br>
+                        &lt;/body&gt;
+                    </code>
+                </div>
+            
+                <h3>Best Practices</h3>
+                <p>
+                    When setting up JavaScript in your project, follow these best practices:
+                </p>
+                <ul>
+                    <li>Use external JavaScript files for better organization and reusability.</li>
+                    <li>Place JavaScript at the end of the <b>&lt;body&gt;</b> tag to avoid delaying page rendering.</li>
+                    <li>Always test your JavaScript in different browsers to ensure compatibility.</li>
+                </ul>
+            
+                <h3>Next Steps</h3>
+                <p>
+                    Now that you know how to set up JavaScript, let’s move on to understanding its syntax.
+                </p>
+            
+                <div class="navigation-buttons">
+                    <a href="./js-introduction.html" class="navigation-button prev-button neutral">&lt; JS Introduction</a>
+                    <a href="./js-syntax.html" class="navigation-button next-button neutral">JS Syntax &gt;</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-container"></div>
+    
+    <script src="/script.js?v=2"></script>
+</body>
+</html>

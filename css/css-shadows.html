@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadows - CodeItClear</title>
+    <link rel="icon" class="webpage-icon" href="/images/stromayer-icon.png" type="image/png">
+    <link rel="stylesheet" href="/styles/coding.css">
+</head>
+
+<div id="header-container"></div>
+<body class="html-page-klm123">
+    <link rel="stylesheet" href="../styles/coding.css">
+<main class="html-main-klm123">
+    <!-- Quick Start Plan -->
+    <div id="css-quick-menu"></div>
+
+    <!-- Detailed Plan -->
+    <div class="main-tutorial-content">
+        <div class="detailed-plan-klm123" id="css-shadows-tutorial">
+            <h2>CSS Shadows</h2>
+            <p>
+                CSS Shadows allow you to add depth and dimension to your designs by applying shadows to elements. You can use shadows on both text and boxes, with customizable properties like size, blur, color, and position.
+            </p>
+        
+            <h3>Text Shadows</h3>
+            <p>
+                The <code>text-shadow</code> property adds a shadow to text. It takes the following values:
+            </p>
+            <ul>
+                <li><strong>Horizontal Offset:</strong> Moves the shadow horizontally.</li>
+                <li><strong>Vertical Offset:</strong> Moves the shadow vertically.</li>
+                <li><strong>Blur Radius:</strong> Controls the blur of the shadow (optional).</li>
+                <li><strong>Color:</strong> Specifies the color of the shadow.</li>
+            </ul>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    h1 {<br>
+                    &nbsp;&nbsp;text-shadow: 2px 2px 5px gray;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;h1&gt;Text Shadow Example&lt;/h1&gt;
+                </code>
+            </div>
+            <p>
+                In this example, the text shadow is offset by 2px horizontally and vertically, with a 5px blur radius and a gray color.
+            </p>
+        
+            <h3>Box Shadows</h3>
+            <p>
+                The <code>box-shadow</code> property adds a shadow to boxes. It takes the following values:
+            </p>
+            <ul>
+                <li><strong>Horizontal Offset:</strong> Moves the shadow horizontally.</li>
+                <li><strong>Vertical Offset:</strong> Moves the shadow vertically.</li>
+                <li><strong>Blur Radius:</strong> Controls the blur of the shadow (optional).</li>
+                <li><strong>Spread Radius:</strong> Expands or contracts the size of the shadow (optional).</li>
+                <li><strong>Color:</strong> Specifies the color of the shadow.</li>
+                <li><strong>Inset:</strong> Makes the shadow appear inside the element instead of outside (optional).</li>
+            </ul>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 200px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;box-shadow: 4px 4px 10px gray;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+            <p>
+                This box shadow is offset by 4px horizontally and vertically, with a 10px blur radius and a gray color.
+            </p>
+        
+            <h3>Adding Multiple Shadows</h3>
+            <p>
+                You can add multiple shadows to the same element by separating them with commas. For example:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 200px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightgreen;<br>
+                    &nbsp;&nbsp;box-shadow: 2px 2px 5px gray, -2px -2px 5px lightgray;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+            <p>
+                In this example, the element has two shadows: one offset positively and one offset negatively.
+            </p>
+        
+            <h3>Inset Shadows</h3>
+            <p>
+                The <code>inset</code> keyword makes the shadow appear inside the element:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 200px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightcoral;<br>
+                    &nbsp;&nbsp;box-shadow: inset 3px 3px 5px black;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+            <p>
+                This creates a shadow that appears inside the box.
+            </p>
+        
+            <h3>Practical Example</h3>
+            <p>
+                Combine box shadows and text shadows to create a visually appealing design:
+            </p>
+            <div class="code-example-html">
+                <code>
+                    &lt;style&gt;<br>
+                    h1 {<br>
+                    &nbsp;&nbsp;text-shadow: 2px 2px 5px gray;<br>
+                    }<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 250px;<br>
+                    &nbsp;&nbsp;height: 150px;<br>
+                    &nbsp;&nbsp;background-color: lightyellow;<br>
+                    &nbsp;&nbsp;box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;h1&gt;Shadow Example&lt;/h1&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <p>
+                <a href="./css-shadows.html#css-shadows-exercises" class="neutral">
+                    Ready to test your knowledge? Head to the exercises section!
+                </a>
+            </p>
+        </div>
+
+        <div class="detailed-plan-klm123" id="css-shadows-exercises">
+            <h2>CSS Shadows: Exercises</h2>
+        
+            <h3>1. Simple Text Shadow</h3>
+            <p>
+                Add a shadow to a heading (<code>&lt;h1&gt;</code>) with the following properties:
+                <ul>
+                    <li>Horizontal offset: 3px</li>
+                    <li>Vertical offset: 3px</li>
+                    <li>Blur radius: 5px</li>
+                    <li>Shadow color: gray</li>
+                </ul>
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-1">Reveal Answer</button>
+            <div id="answer-1" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    h1 {<br>
+                    &nbsp;&nbsp;text-shadow: 3px 3px 5px gray;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;h1&gt;Shadow Example&lt;/h1&gt;
+                </code>
+            </div>
+        
+            <h3>2. Simple Box Shadow</h3>
+            <p>
+                Create a square box with the following styles:
+                <ul>
+                    <li>Width: 100px</li>
+                    <li>Height: 100px</li>
+                    <li>Background color: lightblue</li>
+                </ul>
+                Add a shadow with:
+                <ul>
+                    <li>Horizontal offset: 4px</li>
+                    <li>Vertical offset: 4px</li>
+                    <li>Blur radius: 8px</li>
+                    <li>Shadow color: black</li>
+                </ul>
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-2">Reveal Answer</button>
+            <div id="answer-2" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 100px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;&nbsp;box-shadow: 4px 4px 8px black;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>3. Multiple Box Shadows</h3>
+            <p>
+                Create a rectangular box with the following styles:
+                <ul>
+                    <li>Width: 150px</li>
+                    <li>Height: 75px</li>
+                    <li>Background color: lightgreen</li>
+                </ul>
+                Add two shadows:
+                <ul>
+                    <li>The first shadow should have a 5px horizontal offset, 5px vertical offset, and 10px blur radius in gray.</li>
+                    <li>The second shadow should have a -5px horizontal offset, -5px vertical offset, and 10px blur radius in lightgray.</li>
+                </ul>
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-3">Reveal Answer</button>
+            <div id="answer-3" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 150px;<br>
+                    &nbsp;&nbsp;height: 75px;<br>
+                    &nbsp;&nbsp;background-color: lightgreen;<br>
+                    &nbsp;&nbsp;box-shadow: 5px 5px 10px gray, -5px -5px 10px lightgray;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>4. Inset Shadow</h3>
+            <p>
+                Create a box with the following styles:
+                <ul>
+                    <li>Width: 150px</li>
+                    <li>Height: 100px</li>
+                    <li>Background color: lightyellow</li>
+                </ul>
+                Add an inset shadow with:
+                <ul>
+                    <li>Horizontal offset: 3px</li>
+                    <li>Vertical offset: 3px</li>
+                    <li>Blur radius: 6px</li>
+                    <li>Shadow color: darkgray</li>
+                </ul>
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-4">Reveal Answer</button>
+            <div id="answer-4" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    &nbsp;&nbsp;width: 150px;<br>
+                    &nbsp;&nbsp;height: 100px;<br>
+                    &nbsp;&nbsp;background-color: lightyellow;<br>
+                    &nbsp;&nbsp;box-shadow: inset 3px 3px 6px darkgray;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;div&gt;&lt;/div&gt;
+                </code>
+            </div>
+        
+            <h3>5. Practical Shadow Combination</h3>
+            <p>
+                Create a button with the following styles:
+                <ul>
+                    <li>Padding: 10px 20px</li>
+                    <li>Background color: lightcoral</li>
+                    <li>Border: none</li>
+                    <li>Text color: white</li>
+                    </ul>
+                Add:
+                <ul>
+                    <li>A text shadow with 1px horizontal offset, 1px vertical offset, and 3px blur radius in black.</li>
+                    <li>A box shadow with 2px horizontal offset, 2px vertical offset, and 5px blur radius in rgba(0, 0, 0, 0.5).</li>
+                </ul>
+            </p>
+            <button class="reveal-answer-btn" data-answer-id="answer-5">Reveal Answer</button>
+            <div id="answer-5" class="code-example-html blurred-answer">
+                <code>
+                    &lt;style&gt;<br>
+                    button {<br>
+                    &nbsp;&nbsp;padding: 10px 20px;<br>
+                    &nbsp;&nbsp;background-color: lightcoral;<br>
+                    &nbsp;&nbsp;border: none;<br>
+                    &nbsp;&nbsp;color: white;<br>
+                    &nbsp;&nbsp;text-shadow: 1px 1px 3px black;<br>
+                    &nbsp;&nbsp;box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;button&gt;Shadow Button&lt;/button&gt;
+                </code>
+            </div>
+        
+            <div class="navigation-buttons">
+                <a href="./css-transform.html" class="navigation-button prev-button neutral">← CSS Transform</a>
+                <a href="./css-variables.html" class="navigation-button next-button neutral">CSS Variables →</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <div id="footer-container"></div>
+    
+    <script src="/script.js?v=2"></script>
+</body>
+</html>
